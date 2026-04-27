@@ -1,13 +1,48 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 100000,
+    "cash": 75360.0,
     "currency": "DKK",
-    "positions": [],
-    "last_updated": "2026-04-28"
+    "positions": [
+      {
+        "symbol": "NOVO-B.CO",
+        "name": "Novo Nordisk B",
+        "shares": 44,
+        "purchase_price": 560.0,
+        "current_price": 560.0,
+        "value": 24640.0
+      }
+    ],
+    "last_updated": "2026-04-27"
   },
   "history": [
-    {"date": "2026-04-28", "portfolio_value": 100000}
+    {
+      "date": "2026-04-28",
+      "portfolio_value": 100000
+    },
+    {
+      "date": "2026-04-27",
+      "portfolio_value": 100000.0
+    }
   ],
-  "trades": []
+  "trades": [
+    {
+      "id": "trade-20260427-NOVOBCO",
+      "date": "2026-04-27",
+      "action": "BUY",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": 44,
+      "price": 560.0,
+      "value": 24640.0,
+      "is_new": true,
+      "reasoning": {
+        "bull": "GLP-1/obesity franchise (Ozempic/Wegovy) retains dominant market position with expanding global reimbursement coverage",
+        "bear": "US IRA drug pricing negotiation threatens margin compression on flagship GLP-1 products",
+        "verdict": "BULL",
+        "confidence": 65,
+        "summary": "Long-term GLP-1 dominance intact despite near-term competition headwinds and pricing reform risk"
+      }
+    }
+  ]
 }
