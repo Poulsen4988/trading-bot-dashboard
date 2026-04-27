@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Trading Bot Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg: #0d1117; --surface: #161b22; --surface2: #21262d;
+      --border: #30363d; --text: #e6edf3; --muted: #8b949e;
+      --green: #3fb950; --red: #f85149; --blue: #58a6ff; --yellow: #e3b341;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 24px; }
+
+    header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+    h1 { font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .sub { color: var(--muted); font-weight: 400; font-size: 14px; }
+    .last-updated { font-size: 12px; color: var(--muted); }
+
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .stat-label { font-size: 11px; color: var(--muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: .6px; }
+    .stat-value { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .stat-sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .positive { color: var(--green); } .negative { color: var(--red); } .neutral { color: var(--text); }
+
+    .main-grid { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
+    @media(max-width:900px){.main-grid{grid-template-columns:1fr}}
+
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+    .card:last-child { margin-bottom: 0; }
+    .card-title { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .6px; margin-bottom: 16px; }
+    .chart-wrap { position: relative; height: 260px; }
+
+    /* Trade feed */
+    .feed { display: flex; flex-direction: column; gap: 8px; max-height: 520px; overflow-y: auto; padding-right: 4px; }
+    .trade-card { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 14px; cursor: pointer; transition: border-color .15s, transform .1s; }
+    .trade-card:hover { border-color: var(--blue); transform: translateX(3px); }
+    .trade-card.is-new { border-left: 3px solid var(--blue); }
+    .tc-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .tc-left { display: flex; align-items: center; gap: 7px; }
+    .tc-symbol { font-weight: 600; font-size: 14px; }
+    .tc-date { font-size: 11px; color: var(--muted); }
+    .tc-detail { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
+    .tc-value { font-weight: 600; color: var(--text); }
+
+    .badge { font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 4px; text-transform: uppercase; letter-spacing: .4px; }
+    .b-buy { background: rgba(63,185,80,.18); color: var(--green); }
+    .b-sell { background: rgba(248,81,73,.18); color: var(--red); }
+    .b-hold { background: rgba(227,179,65,.18); color: var(--yellow); }
+    .b-new { background: rgba(88,166,255,.18); color: var(--blue); font-size: 10px; }
+
+    /* Positions */
+    .pos-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .pos-row:last-child { border-bottom: none; }
+    .pos-name { font-weight: 600; font-size: 14px; }
+    .pos-shares { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .pos-pnl { text-align: right; }
+    .pos-val { font-weight: 600; font-size: 14px; }
+    .pos-pct { font-size: 12px; margin-top: 2px; }
+
+    .empty { text-align: center; padding: 28px; color: var(--muted); font-size: 13px; }
+
+    /* Modal */
+    .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.75); z-index: 100; backdrop-filter: blur(6px); align-items: center; justify-content: center; }
+    .overlay.on { display: flex; }
+    .modal { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px; max-width: 560px; width: 92%; max-height: 88vh; overflow-y: auto; }
+    .modal-hdr { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; gap: 12px; }
+    .modal-title { font-size: 17px; font-weight: 700; line-height: 1.3; }
+    .close { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 22px; line-height: 1; flex-shrink: 0; }
+    .close:hover { color: var(--text); }
+
+    .debate { padding: 14px; border-radius: 8px; margin-bottom: 12px; }
+    .debate.bull { background: rgba(63,185,80,.07); border-left: 3px solid var(--green); }
+    .debate.bear { background: rgba(248,81,73,.07); border-left: 3px solid var(--red); }
+    .debate.verdict { background: rgba(88,166,255,.07); border-left: 3px solid var(--blue); }
+    .debate-lbl { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+    .debate.bull .debate-lbl { color: var(--green); }
+    .debate.bear .debate-lbl { color: var(--red); }
+    .debate.verdict .debate-lbl { color: var(--blue); }
+    .debate-txt { font-size: 13px; line-height: 1.65; }
+
+    .conf-row { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+    .conf-track { flex: 1; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }
+    .conf-fill { height: 100%; background: var(--blue); border-radius: 3px; }
+    .conf-lbl { font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+    .trade-meta { margin-top: 14px; padding: 12px; background: var(--surface2); border-radius: 6px; font-size: 12px; color: var(--muted); }
+
+    ::-webkit-scrollbar{width:5px} ::-webkit-scrollbar-track{background:transparent} ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><div class="dot"></div> AI Trading Bot <span class="sub">— Virtuelt Portfolio</span></h1>
+  <div class="last-updated" id="lu">Indlæser...</div>
+</header>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-label">Porteføljeværdi</div>
+    <div class="stat-value neutral" id="s-total">—</div>
+    <div class="stat-sub">Startkapital: 100.000 kr.</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Samlet afkast</div>
+    <div class="stat-value" id="s-ret">—</div>
+    <div class="stat-sub" id="s-ret-dkk">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Kontant</div>
+    <div class="stat-value neutral" id="s-cash">—</div>
+    <div class="stat-sub" id="s-pos">0 åbne positioner</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Antal handler</div>
+    <div class="stat-value neutral" id="s-count">—</div>
+    <div class="stat-sub" id="s-buysell">—</div>
+  </div>
+</div>
+
+<div class="main-grid">
+  <div>
+    <div class="card">
+      <div class="card-title">Porteføljeværdi over tid</div>
+      <div class="chart-wrap"><canvas id="chart"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Åbne positioner</div>
+      <div id="pos-list"><div class="empty">Ingen åbne positioner endnu</div></div>
+    </div>
+  </div>
+  <div class="card" style="margin-bottom:0">
+    <div class="card-title">Handelsoversigt — klik for begrundelse</div>
+    <div class="feed" id="feed"><div class="empty">Ingen handler endnu — botten starter snart</div></div>
+  </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="maybeClose(event)">
+  <div class="modal">
+    <div class="modal-hdr">
+      <div class="modal-title" id="m-title"></div>
+      <button class="close" onclick="close_()">✕</button>
+    </div>
+    <div id="m-body"></div>
+  </div>
+</div>
+
+<script>
+let allTrades = [];
+let chart = null;
+
+const fmt = n => new Intl.NumberFormat('da-DK',{maximumFractionDigits:0}).format(n) + ' kr.';
+const pct = n => (n>=0?'+':'')+n.toFixed(2)+'%';
+
+async function load() {
+  try {
+    const r = await fetch('data.json?t='+Date.now());
+    const d = await r.json();
+    allTrades = d.trades || [];
+    render(d);
+  } catch(e) { document.getElementById('lu').textContent = 'Fejl ved indlæsning'; }
+}
+
+function render(d) {
+  const {portfolio:p, history:h, trades:t} = d;
+  const posVal = (p.positions||[]).reduce((s,x)=>s+(x.current_price||x.avg_price)*x.shares,0);
+  const total = p.cash + posVal;
+  const start = p.initial_cash||100000;
+  const ret = (total-start)/start*100;
+  const retDkk = total-start;
+
+  document.getElementById('s-total').textContent = fmt(total);
+  const re = document.getElementById('s-ret');
+  re.textContent = pct(ret); re.className = 'stat-value '+(ret>=0?'positive':'negative');
+  document.getElementById('s-ret-dkk').textContent = (retDkk>=0?'+':'')+fmt(retDkk);
+  document.getElementById('s-cash').textContent = fmt(p.cash);
+  document.getElementById('s-pos').textContent = (p.positions||[]).length+' åbne positioner';
+  document.getElementById('s-count').textContent = t.length;
+  const buys = t.filter(x=>x.action==='BUY').length;
+  document.getElementById('s-buysell').textContent = buys+' køb, '+(t.length-buys)+' salg';
+  document.getElementById('lu').textContent = 'Sidst opdateret: '+(p.last_updated||'—');
+
+  renderChart(h||[], start);
+  renderPos(p.positions||[]);
+  renderFeed(t);
+}
+
+function renderChart(h, start) {
+  const labels = h.length ? h.map(x=>x.date) : ['Start'];
+  const vals = h.length ? h.map(x=>x.portfolio_value) : [start];
+  const color = vals[vals.length-1] >= start ? '#3fb950' : '#f85149';
+  if (chart) chart.destroy();
+  chart = new Chart(document.getElementById('chart').getContext('2d'),{
+    type:'line',
+    data:{
+      labels,
+      datasets:[
+        {label:'Portefølje',data:vals,borderColor:color,backgroundColor:color+'18',borderWidth:2,pointRadius:4,pointBackgroundColor:color,fill:true,tension:.35},
+        {label:'Start',data:labels.map(()=>start),borderColor:'#30363d',borderWidth:1,borderDash:[6,4],pointRadius:0,fill:false}
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{display:false},tooltip:{backgroundColor:'#161b22',borderColor:'#30363d',borderWidth:1,callbacks:{label:c=>c.dataset.label+': '+fmt(c.parsed.y)}}},
+      scales:{
+        x:{grid:{color:'#21262d'},ticks:{color:'#8b949e',maxTicksLimit:7}},
+        y:{grid:{color:'#21262d'},ticks:{color:'#8b949e',callback:v=>fmt(v)}}
+      }
+    }
+  });
+}
+
+function renderPos(positions) {
+  const el = document.getElementById('pos-list');
+  if (!positions.length){el.innerHTML='<div class="empty">Ingen åbne positioner</div>';return;}
+  el.innerHTML = positions.map(p=>{
+    const cur = p.current_price||p.avg_price;
+    const val = cur*p.shares;
+    const pp = p.avg_price?((cur/p.avg_price)-1)*100:0;
+    return `<div class="pos-row">
+      <div><div class="pos-name">${p.name}</div><div class="pos-shares">${p.shares} aktier @ ${p.avg_price?.toFixed(2)} kr.</div></div>
+      <div class="pos-pnl">
+        <div class="pos-val">${fmt(val)}</div>
+        <div class="pos-pct ${pp>=0?'positive':'negative'}">${pct(pp)}</div>
+      </div></div>`;
+  }).join('');
+}
+
+function renderFeed(trades) {
+  const el = document.getElementById('feed');
+  if (!trades.length){el.innerHTML='<div class="empty">Ingen handler endnu — botten starter snart</div>';return;}
+  el.innerHTML = [...trades].reverse().map(t=>{
+    const bc = t.action==='BUY'?'b-buy':t.action==='SELL'?'b-sell':'b-hold';
+    const lbl = t.action==='BUY'?'KØB':t.action==='SELL'?'SÆLG':'HOLD';
+    return `<div class="trade-card ${t.is_new?'is-new':''}" onclick="openModal(${t.id})">
+      <div class="tc-header">
+        <div class="tc-left">
+          <span class="badge ${bc}">${lbl}</span>
+          <span class="tc-symbol">${t.name||t.symbol}</span>
+          ${t.is_new?'<span class="badge b-new">NY</span>':''}
+        </div>
+        <span class="tc-date">${t.date}</span>
+      </div>
+      <div class="tc-detail">
+        <span>${t.shares?t.shares+' aktier':''} ${t.price?'@ '+t.price.toFixed(2)+' kr.':''}</span>
+        <span class="tc-value">${t.value?fmt(t.value):''}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openModal(id) {
+  const t = allTrades.find(x=>x.id===id); if(!t) return;
+  const lbl = t.action==='BUY'?'KØB ':t.action==='SELL'?'SÆLG ':'HOLD ';
+  document.getElementById('m-title').textContent = lbl+(t.name||t.symbol)+' — '+t.date;
+  const r = t.reasoning||{};
+  document.getElementById('m-body').innerHTML = `
+    ${r.bull?`<div class="debate bull"><div class="debate-lbl">🟢 Bull — argument for KØB</div><div class="debate-txt">${r.bull}</div></div>`:''}
+    ${r.bear?`<div class="debate bear"><div class="debate-lbl">🔴 Bear — argument for SALG</div><div class="debate-txt">${r.bear}</div></div>`:''}
+    ${r.verdict?`<div class="debate verdict">
+      <div class="debate-lbl">⚡ Afgørelse: ${r.verdict}</div>
+      <div class="debate-txt">${r.summary||''}</div>
+      ${r.confidence?`<div class="conf-row"><span class="conf-lbl">Sikkerhed</span><div class="conf-track"><div class="conf-fill" style="width:${r.confidence*10}%"></div></div><span class="conf-lbl">${r.confidence}/10</span></div>`:''}
+    </div>`:''}
+    <div class="trade-meta">${t.shares?t.shares+' aktier':''} ${t.price?'@ '+t.price.toFixed(2)+' kr.':''} ${t.value?'= '+fmt(t.value):''}</div>`;
+  document.getElementById('overlay').classList.add('on');
+}
+
+function close_(){document.getElementById('overlay').classList.remove('on');}
+function maybeClose(e){if(e.target===document.getElementById('overlay'))close_();}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close_();});
+
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>
