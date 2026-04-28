@@ -1,27 +1,1415 @@
 {
   "date": "2026-04-28",
-  "fetched_at": "2026-04-28T20:32:44.142111Z",
+  "fetched_at": "2026-04-28T20:52:43.648434Z",
+  "universe": 25,
+  "fetched_ok": 23,
   "stocks": {
     "NOVO-B.CO": {
       "name": "Novo Nordisk B",
       "price": 265.15,
       "prev_close": 263.5,
-      "pct_change": 0.63,
+      "pct_1d": 0.63,
+      "pct_5d": 7.3,
+      "pct_20d": 15.52,
+      "volume": 3438582,
+      "avg_volume": 6101861,
+      "volume_ratio": 0.56,
+      "pe_trailing": 11.513243,
+      "pe_forward": 12.496447,
+      "market_cap": 1175728685056,
+      "52w_high": 533.4,
+      "52w_low": 224.25,
+      "pct_from_52w_high": -50.29,
+      "pct_from_52w_low": 18.24,
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "beta": 0.272,
+      "div_yield": 6.03,
+      "revenue_growth": -0.076,
+      "earnings_growth": -0.047,
       "source": "yfinance"
     },
     "MAERSK-B.CO": {
-      "name": "Maersk B",
+      "name": "A.P. Moller-Maersk B",
       "price": 14990.0,
       "prev_close": 14755.0,
-      "pct_change": 1.59,
+      "pct_1d": 1.59,
+      "pct_5d": 0.0,
+      "pct_20d": -10.38,
+      "volume": 12780,
+      "avg_volume": 17200,
+      "volume_ratio": 0.74,
+      "pe_trailing": 13.193796,
+      "pe_forward": -43.3129,
+      "market_cap": 217075810304,
+      "52w_high": 18865.0,
+      "52w_low": 10810.0,
+      "pct_from_52w_high": -20.54,
+      "pct_from_52w_low": 38.67,
+      "sector": "Industrials",
+      "industry": "Marine Shipping",
+      "beta": 0.578,
+      "div_yield": 3.25,
+      "revenue_growth": -0.087,
+      "earnings_growth": null,
+      "source": "yfinance"
+    },
+    "MAERSK-A.CO": {
+      "name": "A.P. Moller-Maersk A",
+      "price": 14850.0,
+      "prev_close": 14650.0,
+      "pct_1d": 1.37,
+      "pct_5d": -0.27,
+      "pct_20d": -9.23,
+      "volume": 3201,
+      "avg_volume": 10087,
+      "volume_ratio": 0.32,
+      "pe_trailing": 13.062525,
+      "pe_forward": null,
+      "market_cap": 215048421376,
+      "52w_high": 18320.0,
+      "52w_low": 10710.0,
+      "pct_from_52w_high": -18.94,
+      "pct_from_52w_low": 38.66,
+      "sector": "Industrials",
+      "industry": "Marine Shipping",
+      "beta": 0.578,
+      "div_yield": 3.28,
+      "revenue_growth": -0.087,
+      "earnings_growth": null,
       "source": "yfinance"
     },
     "DSV.CO": {
       "name": "DSV",
       "price": 1665.5,
       "prev_close": 1659.0,
-      "pct_change": 0.39,
+      "pct_1d": 0.39,
+      "pct_5d": -2.35,
+      "pct_20d": 7.9,
+      "volume": 215555,
+      "avg_volume": 321184,
+      "volume_ratio": 0.67,
+      "pe_trailing": 46.915493,
+      "pe_forward": 19.131075,
+      "market_cap": 394297999360,
+      "52w_high": 1913.5,
+      "52w_low": 1233.0,
+      "pct_from_52w_high": -12.96,
+      "pct_from_52w_low": 35.08,
+      "sector": "Industrials",
+      "industry": "Integrated Freight & Logistics",
+      "beta": 1.025,
+      "div_yield": 0.42,
+      "revenue_growth": 0.647,
+      "earnings_growth": -0.592,
       "source": "yfinance"
+    },
+    "ORSTED.CO": {
+      "name": "Oersted",
+      "price": 166.9,
+      "prev_close": 167.7,
+      "pct_1d": -0.48,
+      "pct_5d": 3.12,
+      "pct_20d": 20.94,
+      "volume": 1034907,
+      "avg_volume": 1452160,
+      "volume_ratio": 0.71,
+      "pe_trailing": 87.8421,
+      "pe_forward": 18.245262,
+      "market_cap": 220484780032,
+      "52w_high": 327.5,
+      "52w_low": 102.82325,
+      "pct_from_52w_high": -49.04,
+      "pct_from_52w_low": 62.32,
+      "sector": "Utilities",
+      "industry": "Utilities - Renewable",
+      "beta": 0.583,
+      "div_yield": null,
+      "revenue_growth": 0.098,
+      "earnings_growth": null,
+      "source": "yfinance"
+    },
+    "CARL-B.CO": {
+      "name": "Carlsberg B",
+      "price": 815.4,
+      "prev_close": 805.6,
+      "pct_1d": 1.22,
+      "pct_5d": -0.92,
+      "pct_20d": 2.8,
+      "volume": 195501,
+      "avg_volume": 250784,
+      "volume_ratio": 0.78,
+      "pe_trailing": 18.172499,
+      "pe_forward": 11.475466,
+      "market_cap": 107773108224,
+      "52w_high": 1015.0,
+      "52w_low": 737.4,
+      "pct_from_52w_high": -19.67,
+      "pct_from_52w_low": 10.58,
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Brewers",
+      "beta": 0.647,
+      "div_yield": 3.6,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "source": "yfinance"
+    },
+    "PNDORA.CO": {
+      "name": "Pandora",
+      "price": 487.0,
+      "prev_close": 486.5,
+      "pct_1d": 0.1,
+      "pct_5d": -7.13,
+      "pct_20d": 10.46,
+      "volume": 220507,
+      "avg_volume": 333806,
+      "volume_ratio": 0.66,
+      "pe_trailing": 7.1702003,
+      "pe_forward": 11.72129,
+      "market_cap": 36315693056,
+      "52w_high": 1225.5,
+      "52w_low": 430.0,
+      "pct_from_52w_high": -60.26,
+      "pct_from_52w_low": 13.26,
+      "sector": "Consumer Cyclical",
+      "industry": "Luxury Goods",
+      "beta": 1.258,
+      "div_yield": 4.52,
+      "revenue_growth": -0.01,
+      "earnings_growth": 0.025,
+      "source": "yfinance"
+    },
+    "TRYG.CO": {
+      "name": "Tryg",
+      "price": 151.1,
+      "prev_close": 155.5,
+      "pct_1d": -2.83,
+      "pct_5d": -4.06,
+      "pct_20d": -1.38,
+      "volume": 1584802,
+      "avg_volume": 990722,
+      "volume_ratio": 1.6,
+      "pe_trailing": 17.672516,
+      "pe_forward": 14.900691,
+      "market_cap": 90094354432,
+      "52w_high": 173.9,
+      "52w_low": 146.6,
+      "pct_from_52w_high": -13.11,
+      "pct_from_52w_low": 3.07,
+      "sector": "Financial Services",
+      "industry": "Insurance - Diversified",
+      "beta": 0.086,
+      "div_yield": 5.53,
+      "revenue_growth": 0.022,
+      "earnings_growth": -0.139,
+      "source": "yfinance"
+    },
+    "COLO-B.CO": {
+      "name": "Coloplast B",
+      "price": 408.2,
+      "prev_close": 403.9,
+      "pct_1d": 1.06,
+      "pct_5d": -4.67,
+      "pct_20d": -4.36,
+      "volume": 215424,
+      "avg_volume": 355825,
+      "volume_ratio": 0.61,
+      "pe_trailing": 23.075184,
+      "pe_forward": 15.229873,
+      "market_cap": 91994734592,
+      "52w_high": 748.0,
+      "52w_low": 401.0,
+      "pct_from_52w_high": -45.43,
+      "pct_from_52w_low": 1.8,
+      "sector": "Healthcare",
+      "industry": "Medical Instruments & Supplies",
+      "beta": 0.584,
+      "div_yield": 5.69,
+      "revenue_growth": 0.002,
+      "earnings_growth": 0.339,
+      "source": "yfinance"
+    },
+    "GMAB.CO": {
+      "name": "Genmab",
+      "price": 1690.0,
+      "prev_close": 1707.0,
+      "pct_1d": -1.0,
+      "pct_5d": -2.42,
+      "pct_20d": 3.24,
+      "volume": 90483,
+      "avg_volume": 125876,
+      "volume_ratio": 0.72,
+      "pe_trailing": 17.218542,
+      "pe_forward": 15.563148,
+      "market_cap": 103750885376,
+      "52w_high": 2257.0,
+      "52w_low": 1204.5,
+      "pct_from_52w_high": -25.12,
+      "pct_from_52w_low": 40.31,
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "beta": 0.742,
+      "div_yield": null,
+      "revenue_growth": 0.03,
+      "earnings_growth": -0.944,
+      "source": "yfinance"
+    },
+    "GN.CO": {
+      "name": "GN Store Nord",
+      "price": 98.74,
+      "prev_close": 97.92,
+      "pct_1d": 0.84,
+      "pct_5d": -5.33,
+      "pct_20d": 2.32,
+      "volume": 353312,
+      "avg_volume": 630765,
+      "volume_ratio": 0.56,
+      "pe_trailing": 22.040178,
+      "pe_forward": 14.693453,
+      "market_cap": 14377782272,
+      "52w_high": 125.9,
+      "52w_low": 85.12,
+      "pct_from_52w_high": -21.57,
+      "pct_from_52w_low": 16.0,
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "beta": 1.446,
+      "div_yield": null,
+      "revenue_growth": -0.068,
+      "earnings_growth": -0.065,
+      "source": "yfinance"
+    },
+    "DEMANT.CO": {
+      "name": "Demant",
+      "price": 200.0,
+      "prev_close": 203.6,
+      "pct_1d": -1.77,
+      "pct_5d": -9.58,
+      "pct_20d": 10.19,
+      "volume": 282121,
+      "avg_volume": 439467,
+      "volume_ratio": 0.64,
+      "pe_trailing": 17.857143,
+      "pe_forward": 13.641159,
+      "market_cap": 42179723264,
+      "52w_high": 293.0,
+      "52w_low": 175.0,
+      "pct_from_52w_high": -31.74,
+      "pct_from_52w_low": 14.29,
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "beta": 0.742,
+      "div_yield": null,
+      "revenue_growth": 0.034,
+      "earnings_growth": -0.634,
+      "source": "yfinance"
+    },
+    "RBREW.CO": {
+      "name": "Royal Unibrew",
+      "price": 426.4,
+      "prev_close": 421.2,
+      "pct_1d": 1.23,
+      "pct_5d": 2.75,
+      "pct_20d": -19.4,
+      "volume": 406187,
+      "avg_volume": 319776,
+      "volume_ratio": 1.27,
+      "pe_trailing": 13.197152,
+      "pe_forward": 11.259204,
+      "market_cap": 20791099392,
+      "52w_high": 653.5,
+      "52w_low": 394.6,
+      "pct_from_52w_high": -34.75,
+      "pct_from_52w_low": 8.06,
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Brewers",
+      "beta": 0.52,
+      "div_yield": 3.8,
+      "revenue_growth": 0.033,
+      "earnings_growth": 0.4,
+      "source": "yfinance"
+    },
+    "NDA-DK.CO": {
+      "name": "Nordea Bank",
+      "price": 118.0,
+      "prev_close": 118.2,
+      "pct_1d": -0.17,
+      "pct_5d": -0.38,
+      "pct_20d": 3.98,
+      "volume": 167515,
+      "avg_volume": 333931,
+      "volume_ratio": 0.5,
+      "pe_trailing": 11.602753,
+      "pe_forward": 11.660079,
+      "market_cap": 400462938112,
+      "52w_high": 127.75,
+      "52w_low": 89.0,
+      "pct_from_52w_high": -7.63,
+      "pct_from_52w_low": 32.58,
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "beta": 0.601,
+      "div_yield": 6.07,
+      "revenue_growth": 0.014,
+      "earnings_growth": -0.086,
+      "source": "yfinance"
+    },
+    "FLS.CO": {
+      "name": "FLSmidth",
+      "price": 476.0,
+      "prev_close": 485.0,
+      "pct_1d": -1.86,
+      "pct_5d": -10.1,
+      "pct_20d": 4.34,
+      "volume": 307348,
+      "avg_volume": 106229,
+      "volume_ratio": 2.89,
+      "pe_trailing": 38.636364,
+      "pe_forward": 14.662464,
+      "market_cap": 25802907648,
+      "52w_high": 619.5,
+      "52w_low": 302.0,
+      "pct_from_52w_high": -23.16,
+      "pct_from_52w_low": 57.62,
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "beta": 1.368,
+      "div_yield": 0.82,
+      "revenue_growth": -0.039,
+      "earnings_growth": null,
+      "source": "yfinance"
+    },
+    "VWS.CO": {
+      "name": "Vestas Wind Systems",
+      "price": 191.35,
+      "prev_close": 192.0,
+      "pct_1d": -0.34,
+      "pct_5d": -0.85,
+      "pct_20d": 23.14,
+      "volume": 1740353,
+      "avg_volume": 2764921,
+      "volume_ratio": 0.63,
+      "pe_trailing": 33.220486,
+      "pe_forward": 17.988739,
+      "market_cap": 188448620544,
+      "52w_high": 203.0,
+      "52w_low": 85.78,
+      "pct_from_52w_high": -5.74,
+      "pct_from_52w_low": 123.07,
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "beta": 0.986,
+      "div_yield": 0.39,
+      "revenue_growth": 0.021,
+      "earnings_growth": -0.207,
+      "source": "yfinance"
+    },
+    "AMBU-B.CO": {
+      "name": "Ambu B",
+      "price": 64.8,
+      "prev_close": 64.9,
+      "pct_1d": -0.15,
+      "pct_5d": -6.56,
+      "pct_20d": -3.86,
+      "volume": 572494,
+      "avg_volume": 889005,
+      "volume_ratio": 0.64,
+      "pe_trailing": 31.764708,
+      "pe_forward": 19.84364,
+      "market_cap": 17178431488,
+      "52w_high": 125.0,
+      "52w_low": 64.3,
+      "pct_from_52w_high": -48.16,
+      "pct_from_52w_low": 0.78,
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "beta": 1.37,
+      "div_yield": 0.63,
+      "revenue_growth": 0.032,
+      "earnings_growth": -0.353,
+      "source": "yfinance"
+    },
+    "NSIS-B.CO": {
+      "name": "Novonesis B",
+      "price": 378.0,
+      "prev_close": 380.6,
+      "pct_1d": -0.68,
+      "pct_5d": -0.84,
+      "pct_20d": 7.82,
+      "volume": 455453,
+      "avg_volume": 790722,
+      "volume_ratio": 0.58,
+      "pe_trailing": 40.55794,
+      "pe_forward": 21.717373,
+      "market_cap": 176115499008,
+      "52w_high": 489.4,
+      "52w_low": 336.8,
+      "pct_from_52w_high": -22.76,
+      "pct_from_52w_low": 12.23,
+      "sector": "Basic Materials",
+      "industry": "Specialty Chemicals",
+      "beta": 0.65,
+      "div_yield": 1.71,
+      "revenue_growth": 0.015,
+      "earnings_growth": -0.15,
+      "source": "yfinance"
+    },
+    "ROCK-B.CO": {
+      "name": "Rockwool B",
+      "price": 185.8,
+      "prev_close": 190.9,
+      "pct_1d": -2.67,
+      "pct_5d": -4.72,
+      "pct_20d": 13.86,
+      "volume": 357364,
+      "avg_volume": 579355,
+      "volume_ratio": 0.62,
+      "pe_trailing": 251.08109,
+      "pe_forward": 12.684612,
+      "market_cap": 39352426496,
+      "52w_high": 323.8,
+      "52w_low": 165.96,
+      "pct_from_52w_high": -42.62,
+      "pct_from_52w_low": 11.95,
+      "sector": "Industrials",
+      "industry": "Building Products & Equipment",
+      "beta": 1.534,
+      "div_yield": 2.17,
+      "revenue_growth": -0.003,
+      "earnings_growth": null,
+      "source": "yfinance"
+    },
+    "BAVA.CO": {
+      "name": "Bavarian Nordic",
+      "price": 185.7,
+      "prev_close": 186.1,
+      "pct_1d": -0.21,
+      "pct_5d": -3.73,
+      "pct_20d": -2.42,
+      "volume": 141038,
+      "avg_volume": 239255,
+      "volume_ratio": 0.59,
+      "pe_trailing": 10.545144,
+      "pe_forward": 17.038448,
+      "market_cap": 14245598208,
+      "52w_high": 244.8,
+      "52w_low": 150.85,
+      "pct_from_52w_high": -24.14,
+      "pct_from_52w_low": 23.1,
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "beta": 0.998,
+      "div_yield": null,
+      "revenue_growth": -0.307,
+      "earnings_growth": null,
+      "source": "yfinance"
+    },
+    "JYSK.CO": {
+      "name": "Jyske Bank",
+      "price": 878.0,
+      "prev_close": 878.0,
+      "pct_1d": 0.0,
+      "pct_5d": -4.82,
+      "pct_20d": 4.28,
+      "volume": 112369,
+      "avg_volume": 94959,
+      "volume_ratio": 1.18,
+      "pe_trailing": 10.266604,
+      "pe_forward": 9.7167225,
+      "market_cap": 50411888640,
+      "52w_high": 981.0,
+      "52w_low": 526.0,
+      "pct_from_52w_high": -10.5,
+      "pct_from_52w_low": 66.92,
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "beta": 0.362,
+      "div_yield": 2.85,
+      "revenue_growth": 0.127,
+      "earnings_growth": 0.178,
+      "source": "yfinance"
+    },
+    "ISS.CO": {
+      "name": "ISS",
+      "price": 232.8,
+      "prev_close": 231.4,
+      "pct_1d": 0.61,
+      "pct_5d": -0.34,
+      "pct_20d": 5.97,
+      "volume": 226610,
+      "avg_volume": 396083,
+      "volume_ratio": 0.57,
+      "pe_trailing": 15.107074,
+      "pe_forward": 11.098647,
+      "market_cap": 36819750912,
+      "52w_high": 262.6,
+      "52w_low": 161.3,
+      "pct_from_52w_high": -11.35,
+      "pct_from_52w_low": 44.33,
+      "sector": "Industrials",
+      "industry": "Specialty Business Services",
+      "beta": 0.857,
+      "div_yield": 1.38,
+      "revenue_growth": -0.0,
+      "earnings_growth": 0.001,
+      "source": "yfinance"
+    },
+    "SYDB.CO": {
+      "name": "Sydbank",
+      "error": "no data returned"
+    },
+    "NNIT.CO": {
+      "name": "NNIT",
+      "price": 43.6,
+      "prev_close": 43.4,
+      "pct_1d": 0.46,
+      "pct_5d": -1.36,
+      "pct_20d": -5.11,
+      "volume": 18036,
+      "avg_volume": 9446,
+      "volume_ratio": 1.91,
+      "pe_trailing": null,
+      "pe_forward": 8.870804,
+      "market_cap": 1085804800,
+      "52w_high": 76.4,
+      "52w_low": 38.85,
+      "pct_from_52w_high": -42.93,
+      "pct_from_52w_low": 12.23,
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "beta": 0.506,
+      "div_yield": null,
+      "revenue_growth": -0.057,
+      "earnings_growth": null,
+      "source": "yfinance"
+    },
+    "CHR.CO": {
+      "name": "Chr. Hansen",
+      "error": "no data returned"
+    }
+  },
+  "news": {
+    "NOVO-B.CO": {
+      "name": "Novo Nordisk B",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "MAERSK-B.CO": {
+      "name": "A.P. Moller-Maersk B",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "MAERSK-A.CO": {
+      "name": "A.P. Moller-Maersk A",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "DSV.CO": {
+      "name": "DSV",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "ORSTED.CO": {
+      "name": "Oersted",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "CARL-B.CO": {
+      "name": "Carlsberg B",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "PNDORA.CO": {
+      "name": "Pandora",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "TRYG.CO": {
+      "name": "Tryg",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "COLO-B.CO": {
+      "name": "Coloplast B",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "GMAB.CO": {
+      "name": "Genmab",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "GN.CO": {
+      "name": "GN Store Nord",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "DEMANT.CO": {
+      "name": "Demant",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "RBREW.CO": {
+      "name": "Royal Unibrew",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "NDA-DK.CO": {
+      "name": "Nordea Bank",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "FLS.CO": {
+      "name": "FLSmidth",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "VWS.CO": {
+      "name": "Vestas Wind Systems",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "AMBU-B.CO": {
+      "name": "Ambu B",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "NSIS-B.CO": {
+      "name": "Novonesis B",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "ROCK-B.CO": {
+      "name": "Rockwool B",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "BAVA.CO": {
+      "name": "Bavarian Nordic",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "JYSK.CO": {
+      "name": "Jyske Bank",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "ISS.CO": {
+      "name": "ISS",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "SYDB.CO": {
+      "name": "Sydbank",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
+    },
+    "NNIT.CO": {
+      "name": "NNIT",
+      "headlines": [
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        },
+        {
+          "title": "",
+          "publisher": "",
+          "link": "",
+          "published": 0
+        }
+      ]
     }
   }
 }
