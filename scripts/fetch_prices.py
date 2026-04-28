@@ -1,32 +1,113 @@
-import yfinance as yf, json
+import yfinance as yf
+import json
 from datetime import date, datetime
+import os
 
-stocks = [
+# OMX Copenhagen C25 index constituents (Yahoo Finance tickers)
+STOCKS = [
     ("NOVO-B.CO",   "Novo Nordisk B"),
-    ("MAERSK-B.CO", "Maersk B"),
+    ("MAERSK-B.CO", "A.P. Moller-Maersk B"),
+    ("MAERSK-A.CO", "A.P. Moller-Maersk A"),
     ("DSV.CO",      "DSV"),
+    ("ORSTED.CO",   "Oersted"),
+    ("CARL-B.CO",   "Carlsberg B"),
+    ("PNDORA.CO",   "Pandora"),
+    ("TRYG.CO",     "Tryg"),
+    ("COLO-B.CO",   "Coloplast B"),
+    ("GMAB.CO",     "Genmab"),
+    ("GN.CO",       "GN Store Nord"),
+    ("DEMANT.CO",   "Demant"),
+    ("RBREW.CO",    "Royal Unibrew"),
+    ("NDA-DK.CO",   "Nordea Bank"),
+    ("FLS.CO",      "FLSmidth"),
+    ("VWS.CO",      "Vestas Wind Systems"),
+    ("AMBU-B.CO",   "Ambu B"),
+    ("NSIS-B.CO",   "Novonesis B"),
+    ("ROCK-B.CO",   "Rockwool B"),
+    ("BAVA.CO",     "Bavarian Nordic"),
+    ("JYSK.CO",     "Jyske Bank"),
+    ("ISS.CO",      "ISS"),
+    ("SYDB.CO",     "Sydbank"),
+    ("NNIT.CO",     "NNIT"),
+    ("CHR.CO",      "Chr. Hansen"),
 ]
+
 results = {}
-for sym, name in stocks:
+for sym, name in STOCKS:
     try:
         t = yf.Ticker(sym)
-        h = t.history(period="5d")
+        h = t.history(period="25d")
+        info = {}
+        try:
+            raw = t.info
+            # Only keep lightweight fields to avoid bloat
+            info = {k: raw.get(k) for k in [
+                "trailingPE", "forwardPE", "marketCap",
+                "fiftyTwoWeekHigh", "fiftyTwoWeekLow",
+                "sector", "industry", "shortName",
+                "dividendYield", "beta",
+                "revenueGrowth", "earningsGrowth",
+            ]}
+        except Exception:
+            pass
+
         if not h.empty:
-            price = round(float(h["Close"].iloc[-1]), 2)
-            prev  = round(float(h["Close"].iloc[-2]), 2) if len(h) > 1 else price
-            pct   = round((price - prev) / prev * 100, 2)
-            results[sym] = {"name": name, "price": price, "prev_close": prev, "pct_change": pct, "source": "yfinance"}
-            print(f"{sym}: {price} DKK ({pct:+.2f}%)")
+            closes = h["Close"].tolist()
+            vols   = h["Volume"].tolist() if "Volume" in h.columns else []
+
+            price   = round(float(closes[-1]), 2)
+            prev    = round(float(closes[-2]), 2) if len(closes) > 1 else price
+            pct_1d  = round((price - prev) / prev * 100, 2)
+            pct_5d  = round((price - float(closes[-6])) / float(closes[-6]) * 100, 2) if len(closes) >= 6 else None
+            pct_20d = round((price - float(closes[0]))  / float(closes[0])  * 100, 2) if len(closes) >= 20 else None
+
+            vol      = int(vols[-1])     if vols else None
+            avg_vol  = int(sum(vols) / len(vols)) if vols else None
+            vol_ratio = round(vol / avg_vol, 2) if vol and avg_vol and avg_vol > 0 else None
+
+            hi52 = info.get("fiftyTwoWeekHigh")
+            lo52 = info.get("fiftyTwoWeekLow")
+
+            results[sym] = {
+                "name":            name,
+                "price":           price,
+                "prev_close":      prev,
+                "pct_1d":          pct_1d,
+                "pct_5d":          pct_5d,
+                "pct_20d":         pct_20d,
+                "volume":          vol,
+                "avg_volume":      avg_vol,
+                "volume_ratio":    vol_ratio,
+                "pe_trailing":     info.get("trailingPE"),
+                "pe_forward":      info.get("forwardPE"),
+                "market_cap":      info.get("marketCap"),
+                "52w_high":        hi52,
+                "52w_low":         lo52,
+                "pct_from_52w_high": round((price - hi52) / hi52 * 100, 2) if hi52 else None,
+                "pct_from_52w_low":  round((price - lo52) / lo52 * 100, 2) if lo52 else None,
+                "sector":          info.get("sector"),
+                "industry":        info.get("industry"),
+                "beta":            info.get("beta"),
+                "div_yield":       info.get("dividendYield"),
+                "revenue_growth":  info.get("revenueGrowth"),
+                "earnings_growth": info.get("earningsGrowth"),
+                "source":          "yfinance",
+            }
         else:
-            results[sym] = {"name": name, "error": "no data"}
+            results[sym] = {"name": name, "error": "no data returned"}
     except Exception as e:
         results[sym] = {"name": name, "error": str(e)}
-        print(f"{sym}: ERROR {e}")
 
-import os
+ok = sum(1 for v in results.values() if "price" in v)
+print(f"Fetched {ok}/{len(STOCKS)} stocks successfully", flush=True)
+
 os.makedirs("prices", exist_ok=True)
-out = {"date": str(date.today()), "fetched_at": datetime.utcnow().isoformat() + "Z", "stocks": results}
+out = {
+    "date":       str(date.today()),
+    "fetched_at": datetime.utcnow().isoformat() + "Z",
+    "universe":   len(STOCKS),
+    "fetched_ok": ok,
+    "stocks":     results,
+}
 with open("prices/latest.json", "w") as f:
     json.dump(out, f, indent=2)
-print("Saved prices/latest.json")
-print(json.dumps(out, indent=2))
