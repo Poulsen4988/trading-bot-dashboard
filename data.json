@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 74810.75,
+    "cash": 50079.55,
     "currency": "DKK",
     "positions": [
       {
@@ -11,13 +11,25 @@
         "purchase_price": 265.15,
         "current_price": 265.15,
         "value": 25189.25
+      },
+      {
+        "symbol": "RBREW.CO",
+        "name": "Royal Unibrew",
+        "shares": 58,
+        "purchase_price": 426.4,
+        "current_price": 426.4,
+        "value": 24731.2
       }
     ],
-    "last_updated": "2026-04-27"
+    "last_updated": "2026-04-28"
   },
   "history": [
     {
       "date": "2026-04-27",
+      "portfolio_value": 100000.0
+    },
+    {
+      "date": "2026-04-28",
       "portfolio_value": 100000.0
     }
   ],
@@ -38,6 +50,96 @@
         "verdict": "BULL",
         "confidence": 65,
         "summary": "Long-term GLP-1 dominance intact despite near-term competition headwinds and pricing reform risk"
+      }
+    },
+    {
+      "id": "trade-20260428-RBREWCO",
+      "date": "2026-04-28",
+      "action": "BUY",
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "shares": 58,
+      "price": 426.4,
+      "value": 24731.2,
+      "is_new": true,
+      "reasoning": {
+        "bull": "40% earnings growth at 11.26x forward PE is the sharpest growth-to-value mismatch in today's screen: a company growing earnings 40% should trade at a premium to the Consumer Defensive sector norm (~20x), not at a 44% discount — this mispricing is severe and typically corrects sharply.",
+        "bear": "A -34.75% decline from the 52-week high in Consumer Defensive — the most stable of all equity sectors — signals something fundamentally wrong; the 40% earnings growth is likely a non-recurring item (commodity tailwind, one-time restructuring) that will not repeat.",
+        "verdict": "BULL",
+        "confidence": 73,
+        "summary": "Royal Unibrew presents the strongest combined fundamental and technical setup in today's screen — 40% earnings growth at barely half the Consumer Defensive sector PE, with a volume-confirmed reversal beginning after a -19.4% oversold washout; the 3.8% yield provides downside insulation while the growth-to-value mismatch supports a 25-30% re-rating. Consumer Defensive brewing resilience reduces scenario risk materially."
+      }
+    },
+    {
+      "id": "trade-20260428-FLSCO",
+      "date": "2026-04-28",
+      "action": "HOLD",
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "shares": 0,
+      "price": 476.0,
+      "value": 0,
+      "is_new": true,
+      "reasoning": {
+        "bull": "Volume Capitulation Signal: 2.89x average volume on a -10.1% five-day decline is statistically rare and historically marks institutional selling exhaustion — the classic precursor to a reversal when combined with valuation support.",
+        "bear": "Revenue contraction of -3.9% means forward earnings estimates may be too optimistic; a 10% downward revision to consensus alone pushes the real forward PE above 16x, eroding the valuation support argument.",
+        "verdict": "BULL",
+        "confidence": 64,
+        "summary": "FLSmidth's 2.89x volume spike into a sharp -10% decline at a 19% forward PE discount to Industrials sector creates a high-probability capitulation/reversal setup, with 25% upside to prior trading levels if the selloff proves overdone. The mining technology investment cycle provides structural support for multi-year order book recovery."
+      }
+    },
+    {
+      "id": "trade-20260428-TRYGCO",
+      "date": "2026-04-28",
+      "action": "HOLD",
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "shares": 0,
+      "price": 151.1,
+      "value": 0,
+      "is_new": true,
+      "reasoning": {
+        "bull": "5.53% dividend yield just 3.07% above the 52-week low creates an asymmetric total-return floor: if support holds, buyers earn 5.53% yield plus capital appreciation; maximum downside to the annual low is effectively neutralized by one dividend cycle.",
+        "bear": "Earnings declining -13.9% despite +2.2% revenue growth signals structural margin deterioration — claims costs, reinsurance costs, or operating expenses expanding faster than premiums — not a temporary issue.",
+        "verdict": "NEUTRAL",
+        "confidence": 52,
+        "summary": "Tryg's 5.53% yield and near-zero beta provide genuine defensive appeal, but -13.9% earnings contraction and a position just 3% above the 52-week low create insufficient upside conviction for a buy signal today. Watch for a confirmed bounce above 155 on elevated volume before upgrading to BULL."
+      }
+    },
+    {
+      "id": "trade-20260428-COLOBCO",
+      "date": "2026-04-28",
+      "action": "HOLD",
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "shares": 0,
+      "price": 408.2,
+      "value": 0,
+      "is_new": true,
+      "reasoning": {
+        "bull": "33.9% earnings growth priced at 15.23x forward PE represents a 40% discount to the Healthcare sector norm of ~25x — the most extreme growth-to-multiple dislocation in today's screen, typically correcting sharply upward when discovered by institutional allocators.",
+        "bear": "Revenue growth of only +0.2% versus +33.9% earnings growth is the critical red flag: every dollar of earnings gain came from cost cuts, not business expansion; this is unsustainable and when cost savings exhaust, forward estimates collapse.",
+        "verdict": "BULL",
+        "confidence": 71,
+        "summary": "Coloplast's 33.9% earnings growth priced at a 40% discount to Healthcare sector multiples with a 5.69% yield at multi-year price lows represents the clearest fundamental dislocation in today's universe; a partial re-rating toward sector norms implies 35%+ upside with income on top. The dominant franchise in structurally growing medical supply markets makes permanent impairment pricing unlikely."
+      }
+    },
+    {
+      "id": "trade-20260428-PNDORACO",
+      "date": "2026-04-28",
+      "action": "HOLD",
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "shares": 0,
+      "price": 487.0,
+      "value": 0,
+      "is_new": true,
+      "reasoning": {
+        "bull": "Forward PE of 11.72x vs Consumer Cyclical sector norm of ~20x means Pandora is priced for near-structural collapse that is not materializing — earnings are still growing (+2.5%) and any multiple normalization toward even 15x implies 28% upside.",
+        "bear": "Revenue growth of -1% is the most damaging data point: if Pandora cannot grow revenues in an environment where affordable luxury should outperform, there is genuine market share loss to Chinese competitors and indie jewelry brands.",
+        "verdict": "NEUTRAL",
+        "confidence": 53,
+        "summary": "Pandora's 11.72x forward PE and 4.52% yield create theoretical value at extreme compression levels, but negative revenue growth and a low-volume recovery bounce after a 60% drawdown do not provide sufficient conviction for a buy signal today. The risk/reward is better than average but requires evidence of revenue growth stabilization before upgrading to BULL."
       }
     }
   ]
