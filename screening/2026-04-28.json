@@ -1,0 +1,118 @@
+{
+  "date": "2026-04-28",
+  "screened_at": "2026-04-28T20:54:40.491620+00:00",
+  "universe_size": 23,
+  "selected": [
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "price": 476.0,
+      "pct_1d": -1.86,
+      "pct_5d": -10.1,
+      "pe_forward": 14.662464,
+      "volume_ratio": 2.89,
+      "pct_from_52w_high": -23.16,
+      "pct_from_52w_low": 57.62,
+      "news_headlines": [],
+      "screening_signals": [
+        "VOLUME_ANOMALY: volume_ratio 2.89x — highest in universe",
+        "MOMENTUM: -10.1% in 5 days (sharp selloff)",
+        "VALUATION: PE forward 14.66x below Industrials norm ~18x",
+        "PATTERN: High volume on down-move suggests capitulation/accumulation"
+      ],
+      "screening_rationale": "FLSmidth is experiencing an extraordinary volume spike (2.89x average) coinciding with a sharp -10.1% five-day decline, creating a potential capitulation setup. The forward PE of 14.66x is comfortably below the industrial sector norm, offering a margin of safety if the selloff is overdone.",
+      "priority": 1
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "price": 151.1,
+      "pct_1d": -2.83,
+      "pct_5d": -4.06,
+      "pe_forward": 14.900691,
+      "volume_ratio": 1.6,
+      "pct_from_52w_high": -13.11,
+      "pct_from_52w_low": 3.07,
+      "news_headlines": [],
+      "screening_signals": [
+        "VOLUME_ANOMALY: volume_ratio 1.60x — above 1.5 threshold",
+        "52W_POSITION: Only +3.1% above 52-week low of 146.6",
+        "MOMENTUM: -2.83% today, -4.06% over 5 days (selling into support)",
+        "YIELD: 5.53% dividend yield provides significant cushion"
+      ],
+      "screening_rationale": "Tryg is testing critical support just 3% above its 52-week low with elevated volume (1.6x) amplifying the -2.83% daily drop; this volume-at-support dynamic is a classic reversal watch setup. The 5.53% dividend yield offers downside protection and attractive total-return potential if the selling exhausts.",
+      "priority": 2
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "price": 408.2,
+      "pct_1d": 1.06,
+      "pct_5d": -4.67,
+      "pe_forward": 15.229873,
+      "volume_ratio": 0.61,
+      "pct_from_52w_high": -45.43,
+      "pct_from_52w_low": 1.8,
+      "news_headlines": [],
+      "screening_signals": [
+        "52W_POSITION: Only +1.8% above 52-week low — essentially at floor",
+        "VALUATION: PE forward 15.23x vs Healthcare sector norm ~25x (40% discount)",
+        "EARNINGS: +33.9% earnings growth — strong operational improvement",
+        "MOMENTUM: Tentative reversal signal: +1.06% today after sustained decline"
+      ],
+      "screening_rationale": "Coloplast is trading near its 52-week low (408.2 vs low of 401.0) while offering a Healthcare PE of only 15.23x — a steep 40% discount to sector norms — backed by 33.9% earnings growth that suggests the fundamental outlook is improving. Today's +1.06% bounce after the low could mark a turning point.",
+      "priority": 3
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "price": 487.0,
+      "pct_1d": 0.1,
+      "pct_5d": -7.13,
+      "pe_forward": 11.72129,
+      "volume_ratio": 0.66,
+      "pct_from_52w_high": -60.26,
+      "pct_from_52w_low": 13.26,
+      "news_headlines": [],
+      "screening_signals": [
+        "VALUATION: PE forward 11.72x vs Consumer Cyclical norm ~20x (extremely cheap)",
+        "52W_POSITION: -60.26% from 52-week high — deep reset from peak",
+        "MOMENTUM: 20d recovery +10.46% paused; 5d pullback -7.13% = potential re-entry",
+        "YIELD: 4.52% dividend yield at deeply compressed valuation"
+      ],
+      "screening_rationale": "Pandora is trading at a PE of 11.72x forward — barely half the consumer discretionary sector norm — after a brutal 60% drawdown from its 52-week high, creating extreme value. The 20-day recovery (+10.46%) that stalled into a 5-day -7.13% pullback presents a textbook pullback-in-uptrend entry opportunity.",
+      "priority": 4
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "price": 426.4,
+      "pct_1d": 1.23,
+      "pct_5d": 2.75,
+      "pe_forward": 11.259204,
+      "volume_ratio": 1.27,
+      "pct_from_52w_high": -34.75,
+      "pct_from_52w_low": 8.06,
+      "news_headlines": [],
+      "screening_signals": [
+        "MOMENTUM: -19.4% over 20 days — large recent selloff creating potential value",
+        "VALUATION: PE forward 11.26x vs Consumer Defensive norm ~20x (deeply cheap)",
+        "EARNINGS: +40% earnings growth — strong fundamental improvement",
+        "REVERSAL: Short-term momentum turning positive: +1.23% today, +2.75% 5d"
+      ],
+      "screening_rationale": "Royal Unibrew suffered a -19.4% selloff over 20 days to trade at 11.26x forward earnings — less than 60% of the consumer defensive sector multiple — despite 40% earnings growth, making this a compelling value/growth mispricing. The nascent positive momentum (1d and 5d now both positive) suggests the selling may be exhausted.",
+      "priority": 5
+    }
+  ],
+  "portfolio_cash": 74810.75,
+  "portfolio_positions": [
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": 95,
+      "purchase_price": 265.15,
+      "current_price": 265.15,
+      "value": 25189.25
+    }
+  ]
+}
