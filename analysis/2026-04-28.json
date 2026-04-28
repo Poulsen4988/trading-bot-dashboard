@@ -1,65 +1,136 @@
 {
   "date": "2026-04-28",
+  "analyzed_at": "2026-04-28T21:00:23.857045+00:00",
   "stocks": {
-    "NOVO-B.CO": {
-      "name": "Novo Nordisk B",
-      "price": 265.15,
-      "prev_close": 263.5,
-      "pct_change": 0.63,
-      "source": "yfinance",
+    "FLS.CO": {
+      "name": "FLSmidth",
+      "price": 476.0,
+      "pct_1d": -1.86,
+      "pe_forward": 14.662464,
+      "volume_ratio": 2.89,
+      "screening_rationale": "FLSmidth is experiencing an extraordinary volume spike (2.89x average) coinciding with a sharp -10.1% five-day decline, creating a potential capitulation setup. The forward PE of 14.66x is comfortably below the industrial sector norm, offering a margin of safety if the selloff is overdone.",
       "bull": [
-        "GLP-1 demand (Ozempic/Wegovy) remains structurally intact with multi-year pipeline capacity expanding.",
-        "0.63% move above prev_close signals continued buying pressure after recent consolidation.",
-        "Strong FCF and dividend growth history supports institutional accumulation."
+        "Volume Capitulation Signal: 2.89x average volume on a -10.1% five-day decline is statistically rare and historically marks institutional selling exhaustion — the classic precursor to a reversal when combined with valuation support.",
+        "Forward PE of 14.66x represents a 19% discount to the Industrials sector norm of ~18x; the gap between trailing PE (38.6x) and forward PE (14.66x) implies consensus expects a major earnings normalization that is not yet reflected in the price.",
+        "Mining Technology Super-Cycle Tailwind: FLSmidth's pivot to pure-play mining technology positions it at the center of the copper/lithium/rare-earth equipment cycle driven by the global energy transition, supporting multi-year order book recovery.",
+        "52-week asymmetry with the stock +57.62% above its low but -23.16% from its high (619.5) means mean-reversion to even 80% of the prior high implies +5% upside, while a full recovery to 619 implies +30%."
       ],
+      "bull_upside_pct": 25,
       "bear": [
-        "Competitive pressure from Eli Lilly's tirzepatide continues to erode market share narrative.",
-        "DKK strength vs. USD could weigh on reported earnings.",
-        "Stock near lower end of 52-week range — momentum is fragile."
+        "Revenue contraction of -3.9% means forward earnings estimates may be too optimistic; a 10% downward revision to consensus alone pushes the real forward PE above 16x, eroding the valuation support argument.",
+        "Trailing PE of 38.6x reveals extremely thin actual earnings, meaning the bull case depends on near-tripling of earnings — an enormous execution bar with no confirmed order book acceleration visible.",
+        "High beta (1.37) means FLSmidth falls ~14% in a 10% market selloff; in a risk-off environment driven by trade tensions and mining capex deferrals, the volume spike may be institutional distribution, not capitulation.",
+        "No news catalyst identified — without a contract win, earnings beat, or guidance reaffirmation, the stock can continue drifting lower as negative momentum reinforces seller pressure."
       ],
+      "bear_downside_pct": -18,
       "verdict": "BULL",
-      "confidence": 62,
-      "summary": "Modest uptick suggests stabilization; GLP-1 secular tailwind keeps bias bullish despite competitive headwinds."
+      "confidence": 64,
+      "summary": "FLSmidth's 2.89x volume spike into a sharp -10% decline at a 19% forward PE discount to Industrials sector creates a high-probability capitulation/reversal setup, with 25% upside to prior trading levels if the selloff proves overdone. The mining technology investment cycle provides structural support for multi-year order book recovery.",
+      "key_risk": "High volume may represent institutional distribution rather than capitulation; if forward earnings estimates are revised down 15%+ due to continued revenue weakness, the valuation floor disappears and the stock tests the 390 level."
     },
-    "MAERSK-B.CO": {
-      "name": "Maersk B",
-      "price": 14990.0,
-      "prev_close": 14755.0,
-      "pct_change": 1.59,
-      "source": "yfinance",
+    "TRYG.CO": {
+      "name": "Tryg",
+      "price": 151.1,
+      "pct_1d": -2.83,
+      "pe_forward": 14.900691,
+      "volume_ratio": 1.6,
+      "screening_rationale": "Tryg is testing critical support just 3% above its 52-week low with elevated volume (1.6x) amplifying the -2.83% daily drop; this volume-at-support dynamic is a classic reversal watch setup. The 5.53% dividend yield offers downside protection and attractive total-return potential if the selling exhausts.",
       "bull": [
-        "1.59% is the strongest mover today — container freight rates showing signs of recovery after multi-quarter trough.",
-        "Cost-cutting and logistics diversification are improving margin resilience.",
-        "Red Sea/Suez rerouting continues to inflate ton-mile demand, keeping spot rates elevated."
+        "5.53% dividend yield just 3.07% above the 52-week low creates an asymmetric total-return floor: if support holds, buyers earn 5.53% yield plus capital appreciation; maximum downside to the annual low is effectively neutralized by one dividend cycle.",
+        "Beta of 0.086 makes Tryg the ultimate defensive anchor in an uncertain macro environment — institutional investors rotate into near-zero-beta income stocks precisely like Tryg during risk-off periods.",
+        "Nordic premium repricing tailwind: insurers have been raising rates materially in response to claims inflation; these increases take 6-18 months to flow through combined ratios, setting up a potential H2 2026 earnings rebound from current -13.9% earnings decline.",
+        "Forward PE of 14.9x sits below European insurance peers trading at 16-18x, making Tryg inexpensive relative to its Nordic market leadership, high retention rates, and diversified product mix."
       ],
+      "bull_upside_pct": 15,
       "bear": [
-        "Global trade slowdown risk from US tariff escalation could compress volumes through H2 2026.",
-        "Overcapacity still entering the market (new vessel deliveries) — structural ceiling on rates.",
-        "High absolute price (14,990 DKK) creates large drawdown risk on negative macro news."
+        "Earnings declining -13.9% despite +2.2% revenue growth signals structural margin deterioration — claims costs, reinsurance costs, or operating expenses expanding faster than premiums — not a temporary issue.",
+        "At just 3.07% above the 52-week low of 146.6, a breakdown triggers stop-loss selling and momentum-driven acceleration; insurance stocks that breach annual lows typically extend -15% to -20% before finding real institutional support.",
+        "1.6x volume selloff on -2.83% drop without any news suggests either undisclosed institutional exit or pre-positioning ahead of negative news (catastrophe event, earnings warning) not yet public.",
+        "Rising global reinsurance premiums (post-2024 catastrophe events) compress primary insurer margins when competitive markets limit premium pass-through to policyholders — structural pressure on combined ratios."
       ],
-      "verdict": "BULL",
-      "confidence": 68,
-      "summary": "Strongest daily gain of the three; freight rate recovery and rerouting tailwinds outweigh overcapacity risk near-term."
-    },
-    "DSV.CO": {
-      "name": "DSV",
-      "price": 1665.5,
-      "prev_close": 1659.0,
-      "pct_change": 0.39,
-      "source": "yfinance",
-      "bull": [
-        "DSV's DB Schenker integration continues to build scale — largest logistics player in Europe.",
-        "Margin expansion story intact as synergies from acquisition are realized over 2026-2027.",
-        "Small positive move on a quiet day shows resilience — not selling off."
-      ],
-      "bear": [
-        "0.39% is the weakest performer today, suggesting relative underperformance vs. peers.",
-        "Integration execution risk remains elevated — DB Schenker is a massive bolt-on.",
-        "Slowing European manufacturing output (Germany) is a headwind for B2B freight volumes."
-      ],
+      "bear_downside_pct": -10,
       "verdict": "NEUTRAL",
       "confidence": 52,
-      "summary": "Integration upside is real but priced in; weak relative performance today warrants a wait-and-see stance."
+      "summary": "Tryg's 5.53% yield and near-zero beta provide genuine defensive appeal, but -13.9% earnings contraction and a position just 3% above the 52-week low create insufficient upside conviction for a buy signal today. Watch for a confirmed bounce above 155 on elevated volume before upgrading to BULL.",
+      "key_risk": "If Tryg breaks below 146.6 on a future session, the bear case accelerates toward 130-135 as stop-losses trigger; a Q2 claims surprise (flood, storm, elevated auto claims) is the specific catalyst that would make the bear case correct."
+    },
+    "COLO-B.CO": {
+      "name": "Coloplast B",
+      "price": 408.2,
+      "pct_1d": 1.06,
+      "pe_forward": 15.229873,
+      "volume_ratio": 0.61,
+      "screening_rationale": "Coloplast is trading near its 52-week low (408.2 vs low of 401.0) while offering a Healthcare PE of only 15.23x — a steep 40% discount to sector norms — backed by 33.9% earnings growth that suggests the fundamental outlook is improving. Today's +1.06% bounce after the low could mark a turning point.",
+      "bull": [
+        "33.9% earnings growth priced at 15.23x forward PE represents a 40% discount to the Healthcare sector norm of ~25x — the most extreme growth-to-multiple dislocation in today's screen, typically correcting sharply upward when discovered by institutional allocators.",
+        "5.69% dividend yield at a multi-year price low is historically elevated for Coloplast; with earnings growing 33.9%, the dividend is not only safe but likely growing, making this yield a compounding return engine on top of any price recovery.",
+        "Today's +1.06% positive close just 1.8% above the 52-week low of 401.0 is a potential inflection signal — the first green candle after a sustained downtrend at a critical support level frequently marks institutional accumulation beginning.",
+        "Dominant #1-2 global positions in ostomy, continence, and wound care — structurally growing markets driven by aging demographics, obesity-related conditions, and emerging-market healthcare expansion — justify healthcare-sector multiples, not a 40% discount."
+      ],
+      "bull_upside_pct": 35,
+      "bear": [
+        "Revenue growth of only +0.2% versus +33.9% earnings growth is the critical red flag: every dollar of earnings gain came from cost cuts, not business expansion; this is unsustainable and when cost savings exhaust, forward estimates collapse.",
+        "A -45.43% decline from the 52-week high reflects persistent institutional selling over 12 months — the market has been right about Coloplast for a full year, likely reflecting EU reimbursement pressure and competitive threats from ConvaTec and Smith+Nephew.",
+        "EU healthcare payers are actively squeezing medical device and supply pricing across stoma care and wound management — Coloplast's core categories — creating structural margin pressure that trailing cost-cut earnings gains are masking.",
+        "Volume of only 0.61x average at the 52-week low signals no institutional accumulation; if smart money saw genuine value, buying volume would be elevated — the below-average volume says institutional consensus has not yet turned positive."
+      ],
+      "bear_downside_pct": -15,
+      "verdict": "BULL",
+      "confidence": 71,
+      "summary": "Coloplast's 33.9% earnings growth priced at a 40% discount to Healthcare sector multiples with a 5.69% yield at multi-year price lows represents the clearest fundamental dislocation in today's universe; a partial re-rating toward sector norms implies 35%+ upside with income on top. The dominant franchise in structurally growing medical supply markets makes permanent impairment pricing unlikely.",
+      "key_risk": "Revenue growth near zero (+0.2%) reveals earnings gains are cost-driven, not revenue-driven; if H2 2026 cost savings exhaust or EU reimbursement cuts accelerate, forward earnings estimates collapse and the 52-week low at 401 breaks with further downside to 340-350."
+    },
+    "PNDORA.CO": {
+      "name": "Pandora",
+      "price": 487.0,
+      "pct_1d": 0.1,
+      "pe_forward": 11.72129,
+      "volume_ratio": 0.66,
+      "screening_rationale": "Pandora is trading at a PE of 11.72x forward — barely half the consumer discretionary sector norm — after a brutal 60% drawdown from its 52-week high, creating extreme value. The 20-day recovery (+10.46%) that stalled into a 5-day -7.13% pullback presents a textbook pullback-in-uptrend entry opportunity.",
+      "bull": [
+        "Forward PE of 11.72x vs Consumer Cyclical sector norm of ~20x means Pandora is priced for near-structural collapse that is not materializing — earnings are still growing (+2.5%) and any multiple normalization toward even 15x implies 28% upside.",
+        "At -60.26% from the 52-week high of 1225.5, Pandora is at full capitulation pricing — every piece of bad news has been priced in multiple times; the binary setup is: if the business doesn't collapse, the stock is dramatically undervalued.",
+        "The 20-day +10.46% recovery before the current 5-day pullback establishes a higher-low pattern — the technical precursor to an emerging recovery trend; the -7.13% pullback is normal consolidation/re-test, not a breakdown of the recovery.",
+        "Affordable luxury pivot (Pandora Brilliance lab-grown diamonds at accessible price points) positions the brand uniquely resilient to consumer downtrading, with direct leverage to any improvement in European or Chinese consumer sentiment."
+      ],
+      "bull_upside_pct": 40,
+      "bear": [
+        "Revenue growth of -1% is the most damaging data point: if Pandora cannot grow revenues in an environment where affordable luxury should outperform, there is genuine market share loss to Chinese competitors and indie jewelry brands.",
+        "A full-year -60% decline in a stable luxury goods company reflects institutional consensus that earnings power is permanently impaired — not a temporary dislocation; the market has been right about Pandora for 12 months.",
+        "High beta (1.258) means Pandora falls disproportionately in any risk-off scenario — trade tensions, European recession, or broader market selloff will hit consumer discretionary with high beta first and hardest.",
+        "The 20-day recovery came on below-average volume (0.66x), indicating a dead-cat bounce rather than institutional accumulation; low-volume recoveries in bear markets consistently fail to sustain."
+      ],
+      "bear_downside_pct": -20,
+      "verdict": "NEUTRAL",
+      "confidence": 53,
+      "summary": "Pandora's 11.72x forward PE and 4.52% yield create theoretical value at extreme compression levels, but negative revenue growth and a low-volume recovery bounce after a 60% drawdown do not provide sufficient conviction for a buy signal today. The risk/reward is better than average but requires evidence of revenue growth stabilization before upgrading to BULL.",
+      "key_risk": "If the current 5-day pullback continues to break below the 52-week low of 430 on elevated volume, the bull thesis collapses and Pandora enters a new downleg toward 350-380, confirming the bear case of structural revenue impairment."
+    },
+    "RBREW.CO": {
+      "name": "Royal Unibrew",
+      "price": 426.4,
+      "pct_1d": 1.23,
+      "pe_forward": 11.259204,
+      "volume_ratio": 1.27,
+      "screening_rationale": "Royal Unibrew suffered a -19.4% selloff over 20 days to trade at 11.26x forward earnings — less than 60% of the consumer defensive sector multiple — despite 40% earnings growth, making this a compelling value/growth mispricing. The nascent positive momentum (1d and 5d now both positive) suggests the selling may be exhausted.",
+      "bull": [
+        "40% earnings growth at 11.26x forward PE is the sharpest growth-to-value mismatch in today's screen: a company growing earnings 40% should trade at a premium to the Consumer Defensive sector norm (~20x), not at a 44% discount — this mispricing is severe and typically corrects sharply.",
+        "Volume-confirmed reversal: both 1-day (+1.23%) and 5-day (+2.75%) momentum are now positive on 1.27x above-average volume after a -19.4% oversold washout — the combination of oversold technicals, positive price action, and above-average buying volume is the strongest reversal signal available without a specific news catalyst.",
+        "Consumer Defensive brewing business (Nordic and Baltic beer, soft drinks, distribution partnerships) is among the most recession-resistant revenue streams globally — Royal Unibrew can grow through a European slowdown via market share gains even if volumes soften.",
+        "3.8% yield on a 40% earnings grower almost certainly rises at the next dividend cycle, creating a re-rating catalyst as income investors step up allocation; even moving to 13x forward PE — still 35% below sector norm — implies +15% price appreciation."
+      ],
+      "bull_upside_pct": 30,
+      "bear": [
+        "A -34.75% decline from the 52-week high in Consumer Defensive — the most stable of all equity sectors — signals something fundamentally wrong; the 40% earnings growth is likely a non-recurring item (commodity tailwind, one-time restructuring) that will not repeat.",
+        "Revenue growth of only +3.3% versus +40% earnings growth creates a 12x multiple between top-line and bottom-line — structurally unsustainable; when cost savings exhaust, earnings will revert toward revenue growth rates and the PE suddenly looks expensive.",
+        "The 5-day bounce (+2.75%) after a -19.4% decline is within the noise of a bear trend; bear market dead-cat bounces typically fail within 5-7 days without a specific fundamental catalyst to sustain buying interest.",
+        "Mid-cap size (DKK 20.8 billion market cap) creates disproportionate liquidity risk during market stress — bid/ask spreads widen and market makers step back, amplifying drawdowns beyond what fundamentals would justify."
+      ],
+      "bear_downside_pct": -15,
+      "verdict": "BULL",
+      "confidence": 73,
+      "summary": "Royal Unibrew presents the strongest combined fundamental and technical setup in today's screen — 40% earnings growth at barely half the Consumer Defensive sector PE, with a volume-confirmed reversal beginning after a -19.4% oversold washout; the 3.8% yield provides downside insulation while the growth-to-value mismatch supports a 25-30% re-rating. Consumer Defensive brewing resilience reduces scenario risk materially.",
+      "key_risk": "If the 40% earnings growth is non-recurring (one-time cost savings, favorable raw material prices), forward consensus revisions will compress the PE benefit and the reversal thesis fails; Q2 results revealing <10% earnings growth would be the specific bear catalyst to watch."
     }
   }
 }
