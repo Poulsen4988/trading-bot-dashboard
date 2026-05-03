@@ -3,6 +3,7 @@ Screener Agent.
 
 Kør: python screener.py
 - Opdaterer prices/latest.json lokalt med tekniske indikatorer.
+- Gemmer prices/latest.json til GitHub hvis token er tilgængelig.
 - Vælger 3-5 mest interessante C25-aktier.
 - Gemmer screening/YYYY-MM-DD.json via GitHub token hvis tilgængelig,
   ellers lokalt.
@@ -124,6 +125,8 @@ def score_stock(sym: str, s: dict) -> tuple[float, list[str]]:
 def main():
     run_price_fetch()
     prices = load_prices()
+    github_store.put_json("prices/latest.json", prices, f"Prices+TA {prices.get('date', date.today().isoformat())}")
+
     rows = []
     for sym, s in prices.get("stocks", {}).items():
         score, reasons = score_stock(sym, s)
