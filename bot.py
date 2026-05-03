@@ -1,15 +1,21 @@
 """
-Hoved-bot: køres af GitHub Actions (eller lokalt til test).
+Hoved-bot til analyse/paper trading.
+
 Kald med argument: python bot.py [premarket|open|midday|close]
+
+Botten laver analyser og anbefalinger, logger dem i journal.jsonl og opdaterer
+dashboardet. Den sender ingen live-ordrer og bruger ikke Saxo.
 """
 import json
 import os
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
 
 import anthropic
 import knowledge_manager as km
+import risk_manager
 from watchlist import C25, WATCHLIST
 
 LOG_FILE = "journal.jsonl"
@@ -21,21 +27,42 @@ def run_script(script):
         [sys.executable, os.path.join(SCRIPT_DIR, script)],
         capture_output=True, text=True, cwd=SCRIPT_DIR,
     )
+    if result.stderr:
+        print(result.stderr.strip(), file=sys.stderr)
     return result.stdout.strip()
 
 
 def ask_claude(prompt):
     client = anthropic.Anthropic()
     msg = client.messages.create(
-        model="claude-sonnet-4-6",
+        model=os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-6"),
         max_tokens=2048,
         messages=[{"role": "user", "content": prompt}],
     )
     return msg.content[0].text.strip()
 
 
+def parse_json_object(text):
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", text, re.DOTALL)
+        if match:
+            return json.loads(match.group())
+        raise
+
+
+def load_market():
+    raw = run_script("research.py")
+    try:
+        return json.loads(raw), raw
+    except json.JSONDecodeError:
+        return {"error": "Kunne ikke parse research.py output", "raw": raw}, raw
+
+
 def log_entry(entry):
-    entry["timestamp"] = datetime.now(timezone.utc).isoformat()
+    entry = dict(entry)
+    entry.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
     with open(os.path.join(SCRIPT_DIR, LOG_FILE), "a", encoding="utf-8") as f:
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
     print(f"[{entry['timestamp']}] {entry.get('action', 'LOG')}: {entry.get('reason', '')}")
@@ -65,14 +92,18 @@ def tradeable_list():
     return ", ".join(f"{s['name']}={s['uic']}" for s in WATCHLIST)
 
 
+def sync_outputs():
+    run_script("sync_dashboard.py")
+
+
 def run_premarket():
     print("=== PRE-MARKET ANALYSE ===")
     ensure_knowledge()
     news_json = run_script("news.py")
-    market_json = run_script("research.py")
+    market, market_json = load_market()
     knowledge = build_knowledge_block()
 
-    prompt = f"""Du er en disciplineret aktiehandler der analyserer C25-indekset.
+    prompt = f"""Du er en disciplineret aktieanalytiker der analyserer C25-indekset.
 
 {knowledge}
 
@@ -91,19 +122,18 @@ Svar på dansk. Vær konkret og kortfattet."""
 
     analyse = ask_claude(prompt)
     print(analyse)
-    log_entry({"action": "PREMARKET", "analyse": analyse, "reason": "Pre-market nyhedsanalyse"})
-    run_script("sync_dashboard.py")
-    run_script("gist_update.py")
+    log_entry({"action": "PREMARKET", "analyse": analyse, "reason": "Pre-market nyhedsanalyse", "execution": "none"})
+    sync_outputs()
 
 
 def run_market_open():
     print("=== MARKEDSÅBNING ===")
     ensure_knowledge()
-    market_json = run_script("research.py")
+    market, market_json = load_market()
     news_json = run_script("news.py")
     knowledge = build_knowledge_block()
 
-    prompt = f"""Du er en disciplineret aktiehandler med adgang til Saxo Bank.
+    prompt = f"""Du er en disciplineret aktieanalytiker. Du laver paper-trading/anbefalinger, ikke live handler.
 
 {knowledge}
 
@@ -114,117 +144,118 @@ AKTUELLE NYHEDER:
 {news_json}
 
 Analyser situationen og tag én beslutning.
-Du kan KUN handle aktier med kendte UIC-koder: {tradeable_list()}
+Du kan KUN anbefale aktier med kendte UIC-koder: {tradeable_list()}
 
-- Køb: {{"action": "BUY", "uic": <nummer>, "symbol": "<navn>", "amount": <antal>, "reason": "<begrundelse>"}}
-- Sælg: {{"action": "SELL", "uic": <nummer>, "symbol": "<navn>", "amount": <antal>, "reason": "<begrundelse>"}}
-- Vent: {{"action": "HOLD", "reason": "<begrundelse>"}}
+Vælg kun BUY eller SELL hvis der er en tydelig, konkret edge. Ellers vælg HOLD.
+Regler:
+- Ingen tvangssalg ved et fast procenttab; vurder om den oprindelige thesis er brudt.
+- Ingen fast grænse på antal åbne positioner; vurder koncentrationsrisiko.
+- Undgå enkeltidéer over ca. 25% af porteføljen.
+- Vær konservativ ved manglende pris-, nyheds- eller regnskabsdata.
+- Dette er analyse/paper trading og må ikke beskrives som en udført live handel.
 
-Regler: maks 10 aktier per handel, maks 3 åbne positioner, sælg ved -5% tab.
-Svar KUN med JSON-objektet."""
+Svar KUN med JSON:
+{{
+  "action": "BUY/SELL/HOLD",
+  "uic": <nummer eller null>,
+  "symbol": "<symbol eller null>",
+  "name": "<selskabsnavn eller null>",
+  "amount": <foreslået antal eller 0>,
+  "reason": "<kort begrundelse>",
+  "reasoning": {{
+    "bull": "<stærkeste argument for>",
+    "bear": "<stærkeste argument imod>",
+    "verdict": "BUY/SELL/HOLD",
+    "confidence": <1-10>,
+    "summary": "<kort konklusion>"
+  }}
+}}"""
 
     response = ask_claude(prompt)
     print(f"Claude beslutning: {response}")
 
     try:
-        decision = json.loads(response)
-    except json.JSONDecodeError:
-        log_entry({"action": "ERROR", "reason": f"Kunne ikke parse svar: {response}"})
+        decision = parse_json_object(response)
+    except Exception:
+        log_entry({"action": "ERROR", "reason": f"Kunne ikke parse svar: {response}", "execution": "none"})
         return
 
-    action = decision.get("action", "HOLD").upper()
-    if action in ("BUY", "SELL"):
-        uic = decision.get("uic")
-        amount = decision.get("amount", 1)
-        trade_result = subprocess.run(
-            [sys.executable, os.path.join(SCRIPT_DIR, "trade.py"), action, str(uic), str(amount)],
-            capture_output=True, text=True, cwd=SCRIPT_DIR,
-        )
-        print(f"Trade resultat: {trade_result.stdout}")
-        log_entry({
-            "action": action, "symbol": decision.get("symbol"),
-            "uic": uic, "amount": amount, "reason": decision.get("reason"),
-            "trade_response": trade_result.stdout[:500],
-        })
-    else:
-        log_entry({"action": "HOLD", "reason": decision.get("reason", "Ingen handling")})
-
-    run_script("sync_dashboard.py")
-    run_script("gist_update.py")
+    normalized = risk_manager.normalize_decision(decision, market)
+    log_entry(normalized)
+    sync_outputs()
 
 
 def run_midday():
     print("=== MIDDAG CHECK ===")
-    market_json = run_script("research.py")
+    market, market_json = load_market()
     knowledge = build_knowledge_block()
+    risk_flags = risk_manager.review_portfolio_risk(market)
 
-    prompt = f"""Du er en aktiehandler med åbne positioner i C25-aktier.
+    prompt = f"""Du er en aktieanalytiker der overvåger en paper-trading portefølje.
 
 {knowledge}
 
 AKTUELLE POSITIONER OG KURSER:
 {market_json}
 
-Gennemgå positionerne:
-- Er der nogen position der er faldet mere end 5%? (sælg straks)
-- Er der andre ændringer der kræver handling?
+RISIKOFLAG FRA KODEN:
+{json.dumps(risk_flags, ensure_ascii=False, indent=2)}
 
-Handlebare aktier: {tradeable_list()}
+Gennemgå porteføljen:
+- Er en thesis brudt?
+- Er der overkoncentration eller ny informationsrisiko?
+- Er der en grund til at reducere, øge eller holde?
 
-Svar med JSON: {{"action": "BUY/SELL/HOLD", "uic": <eller null>, "symbol": "<eller null>", "amount": <eller 0>, "reason": "<begrundelse>"}}
-Svar KUN med JSON."""
+Handlebare/anbefalbare aktier: {tradeable_list()}
+
+Svar KUN med JSON:
+{{"action": "BUY/SELL/HOLD", "uic": <eller null>, "symbol": "<eller null>", "name": "<eller null>", "amount": <eller 0>, "reason": "<begrundelse>", "reasoning": {{"verdict": "BUY/SELL/HOLD", "confidence": <1-10>, "summary": "<kort>"}}}}"""
 
     response = ask_claude(prompt)
     print(f"Claude beslutning: {response}")
 
     try:
-        decision = json.loads(response)
-    except json.JSONDecodeError:
-        log_entry({"action": "ERROR", "reason": f"Parse fejl: {response}"})
+        decision = parse_json_object(response)
+    except Exception:
+        log_entry({"action": "ERROR", "reason": f"Parse fejl: {response}", "execution": "none"})
         return
 
-    action = decision.get("action", "HOLD").upper()
-    if action in ("BUY", "SELL") and decision.get("uic"):
-        subprocess.run(
-            [sys.executable, os.path.join(SCRIPT_DIR, "trade.py"),
-             action, str(decision["uic"]), str(decision.get("amount", 1))],
-            cwd=SCRIPT_DIR,
-        )
-    log_entry({"action": action, "symbol": decision.get("symbol"), "reason": decision.get("reason")})
-    run_script("sync_dashboard.py")
-    run_script("gist_update.py")
+    log_entry(risk_manager.normalize_decision(decision, market))
+    sync_outputs()
 
 
 def run_close():
     print("=== DAGENS AFSLUTNING ===")
-    market_json = run_script("research.py")
+    market, market_json = load_market()
     knowledge = build_knowledge_block()
 
-    with open(os.path.join(SCRIPT_DIR, LOG_FILE), "r", encoding="utf-8") as f:
-        todays_log = [l for l in f.readlines() if datetime.now().strftime("%Y-%m-%d") in l]
+    try:
+        with open(os.path.join(SCRIPT_DIR, LOG_FILE), "r", encoding="utf-8") as f:
+            todays_log = [l for l in f.readlines() if datetime.now().strftime("%Y-%m-%d") in l]
+    except FileNotFoundError:
+        todays_log = []
 
-    prompt = f"""Afslut handelsdagen som en disciplineret aktiehandler.
+    prompt = f"""Afslut handelsdagen som en disciplineret aktieanalytiker.
 
 {knowledge}
 
 SLUTKURSER OG POSITIONER:
 {market_json}
 
-DAGENS HANDLER:
+DAGENS BESLUTNINGER:
 {"".join(todays_log[-10:])}
 
 Lav en kort dagsoversigt (maks 150 ord):
-1. Hvad handlede du i dag og hvorfor?
-2. Hvad er resultatet?
-3. Hvad holder du over natten og hvorfor?
+1. Hvilke anbefalinger kom i dag og hvorfor?
+2. Hvad er status på porteføljen?
+3. Hvad bør følges næste handelsdag?
 
 Svar på dansk."""
 
     summary = ask_claude(prompt)
     print(summary)
-    log_entry({"action": "EOD_SUMMARY", "reason": summary})
-    run_script("sync_dashboard.py")
-    run_script("gist_update.py")
+    log_entry({"action": "EOD_SUMMARY", "reason": summary, "execution": "none"})
+    sync_outputs()
 
 
 MODES = {
