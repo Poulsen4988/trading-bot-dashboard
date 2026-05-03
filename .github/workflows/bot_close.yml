@@ -1,0 +1,62 @@
+name: Bot — Dagens afslutning (16:00 CET)
+
+on:
+  schedule:
+    - cron: '0 15 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installer afhængigheder
+        run: pip install -r requirements.txt
+
+      - name: Hent friske priser
+        run: python scripts/fetch_prices.py
+
+      - name: Hent Saxo tokens fra Gist
+        run: |
+          python - <<'EOF'
+          import urllib.request, json, os
+          req = urllib.request.Request(
+              f"https://api.github.com/gists/{os.environ['GIST_ID']}",
+              headers={"Authorization": f"Bearer {os.environ['GIST_PAT']}", "User-Agent": "TradingBot/1.0"}
+          )
+          with urllib.request.urlopen(req) as r:
+              g = json.loads(r.read())
+          open("tokens.json", "w").write(g["files"]["tokens.json"]["content"])
+          print("Tokens hentet")
+          EOF
+        env:
+          GIST_ID: ${{ secrets.GIST_ID }}
+          GIST_PAT: ${{ secrets.GIST_PAT }}
+
+      - name: Kør bot
+        run: python bot.py close
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SAXO_APP_KEY: ${{ secrets.SAXO_APP_KEY }}
+          SAXO_APP_SECRET: ${{ secrets.SAXO_APP_SECRET }}
+          SAXO_TOKEN_URL: ${{ secrets.SAXO_TOKEN_URL }}
+          SAXO_API_BASE: ${{ secrets.SAXO_API_BASE }}
+          SAXO_AUTH_URL: ${{ secrets.SAXO_AUTH_URL }}
+          SAXO_REDIRECT_URI: ${{ secrets.SAXO_REDIRECT_URI }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          GIST_PAT: ${{ secrets.GIST_PAT }}
+          DASHBOARD_PAT: ${{ secrets.DASHBOARD_PAT }}
+
+      - name: Gem journal og videnbase
+        if: always()
+        run: |
+          git config user.name "Trading Bot"
+          git config user.email "bot@github-actions"
+          git add journal.jsonl knowledge/ prices/ 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "Close $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
