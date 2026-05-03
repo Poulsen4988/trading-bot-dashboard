@@ -16,26 +16,25 @@ python analyst.py
 python paper_trader.py
 ```
 
+Important: `analyst.py` is only a data-prep helper. It does not call Anthropic API. The Claude Routine itself performs the deep analysis and writes `analysis/YYYY-MM-DD.json`.
+
 Optional dashboard sync from journal entries:
 
 ```bash
 python sync_dashboard.py
 ```
 
-## Environment variables
+## Secrets
 
-Use environment variables rather than hardcoded secrets:
+Do not hardcode GitHub PATs, API keys or OAuth tokens in prompts or code.
 
-- `GITHUB_TOKEN` or `DASHBOARD_PAT` for writing JSON files back to this repo.
-- `ANTHROPIC_API_KEY` for analyst routines.
-- `ANTHROPIC_MODEL` optional model override.
-- `DASHBOARD_REPO` optional repo override.
+When running inside Claude Routines with the repository selected, the routines should update files in the repo and then use `git add`, `git commit`, and `git push`.
 
 ## Core files
 
 - `watchlist.py` is the single source of truth for the C25 universe.
 - `scripts/fetch_prices.py` fetches prices, fundamentals and technical indicators.
 - `screener.py` selects 3-5 stocks for deep analysis.
-- `analyst.py` creates bull/bear/head analyst analysis.
+- `analyst.py` prints the selected analysis input for the Claude Routine.
 - `paper_trader.py` updates the virtual portfolio in `data.json`.
 - `data.json` powers the GitHub Pages dashboard.
