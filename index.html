@@ -92,6 +92,13 @@
     .trade-meta { margin-top: 14px; padding: 12px; background: var(--surface2); border-radius: 6px; font-size: 12px; color: var(--muted); }
 
     ::-webkit-scrollbar{width:5px} ::-webkit-scrollbar-track{background:transparent} ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+
+    .feed-tabs { display: flex; gap: 6px; }
+    .feed-tab { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 4px; border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer; letter-spacing: .3px; }
+    .feed-tab.active { background: var(--surface2); color: var(--text); border-color: var(--blue); }
+    .feed-tab:hover:not(.active) { border-color: var(--muted); color: var(--text); }
+    .card-hdr { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .card-hdr .card-title { margin-bottom: 0; }
   </style>
 </head>
 <body>
@@ -136,7 +143,13 @@
     </div>
   </div>
   <div class="card" style="margin-bottom:0">
-    <div class="card-title">Handelsoversigt — klik for begrundelse</div>
+    <div class="card-hdr">
+      <div class="card-title">Handelsoversigt — klik for begrundelse</div>
+      <div class="feed-tabs">
+        <button class="feed-tab active" id="tab-trades" onclick="setTab('trades')">Faktiske handler</button>
+        <button class="feed-tab" id="tab-all" onclick="setTab('all')">Anbefalinger</button>
+      </div>
+    </div>
     <div class="feed" id="feed"><div class="empty">Ingen handler endnu — botten starter snart</div></div>
   </div>
 </div>
@@ -154,6 +167,7 @@
 <script>
 let allTrades = [];
 let chart = null;
+let feedTab = 'trades';
 
 const fmt = n => new Intl.NumberFormat('da-DK',{maximumFractionDigits:0}).format(n) + ' kr.';
 const pct = n => (n>=0?'+':'')+n.toFixed(2)+'%';
@@ -181,14 +195,15 @@ function render(d) {
   document.getElementById('s-ret-dkk').textContent = (retDkk>=0?'+':'')+fmt(retDkk);
   document.getElementById('s-cash').textContent = fmt(p.cash);
   document.getElementById('s-pos').textContent = (p.positions||[]).length+' åbne positioner';
-  document.getElementById('s-count').textContent = t.length;
-  const buys = t.filter(x=>x.action==='BUY').length;
-  document.getElementById('s-buysell').textContent = buys+' køb, '+(t.length-buys)+' salg';
+  const actual = t.filter(x=>x.action==='BUY'||x.action==='SELL');
+  document.getElementById('s-count').textContent = actual.length;
+  const buys = actual.filter(x=>x.action==='BUY').length;
+  document.getElementById('s-buysell').textContent = buys+' køb, '+(actual.length-buys)+' salg';
   document.getElementById('lu').textContent = 'Sidst opdateret: '+(p.last_updated||'—');
 
   renderChart(h||[], start);
   renderPos(p.positions||[]);
-  renderFeed(t);
+  renderFeed(allTrades);
 }
 
 function renderChart(h, start) {
@@ -233,10 +248,18 @@ function renderPos(positions) {
   }).join('');
 }
 
+function setTab(tab) {
+  feedTab = tab;
+  document.getElementById('tab-trades').classList.toggle('active', tab==='trades');
+  document.getElementById('tab-all').classList.toggle('active', tab==='all');
+  renderFeed(allTrades);
+}
+
 function renderFeed(trades) {
   const el = document.getElementById('feed');
-  if (!trades.length){el.innerHTML='<div class="empty">Ingen handler endnu — botten starter snart</div>';return;}
-  el.innerHTML = [...trades].reverse().map(t=>{
+  const visible = feedTab==='trades' ? trades.filter(t=>t.action==='BUY'||t.action==='SELL') : trades;
+  if (!visible.length){el.innerHTML='<div class="empty">'+(feedTab==='trades'?'Ingen faktiske handler endnu':'Ingen anbefalinger endnu')+'</div>';return;}
+  el.innerHTML = [...visible].reverse().map(t=>{
     const bc = t.action==='BUY'?'b-buy':t.action==='SELL'?'b-sell':'b-hold';
     const lbl = t.action==='BUY'?'KØB':t.action==='SELL'?'SÆLG':'HOLD';
     return `<div class="trade-card ${t.is_new?'is-new':''}" onclick="openModal(${t.id})">
@@ -260,7 +283,7 @@ function openModal(id) {
   const t = allTrades.find(x=>x.id===id); if(!t) return;
   const lbl = t.action==='BUY'?'KØB ':t.action==='SELL'?'SÆLG ':'HOLD ';
   document.getElementById('m-title').textContent = lbl+(t.name||t.symbol)+' — '+t.date;
-  const r = t.reasoning||{};
+  const r = t.reasoning || (t.reason ? {verdict: t.action, summary: t.reason} : {});
   document.getElementById('m-body').innerHTML = `
     ${r.bull?`<div class="debate bull"><div class="debate-lbl">🟢 Bull — argument for KØB</div><div class="debate-txt">${r.bull}</div></div>`:''}
     ${r.bear?`<div class="debate bear"><div class="debate-lbl">🔴 Bear — argument for SALG</div><div class="debate-txt">${r.bear}</div></div>`:''}
