@@ -1,6 +1,12 @@
 import json
 import os
+import sys
 from datetime import date, datetime
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
 
 import yfinance as yf
 from ta.momentum import RSIIndicator, StochasticOscillator
@@ -177,8 +183,8 @@ def main():
         "news": all_news,
     }
 
-    os.makedirs("prices", exist_ok=True)
-    with open("prices/latest.json", "w", encoding="utf-8") as f:
+    os.makedirs(os.path.join(REPO_ROOT, "prices"), exist_ok=True)
+    with open(os.path.join(REPO_ROOT, "prices", "latest.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
 
     print(f"Priser+TA gemt lokalt: {ok}/{len(C25)} aktier")
