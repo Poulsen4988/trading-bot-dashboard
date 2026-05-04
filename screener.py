@@ -123,7 +123,10 @@ def score_stock(sym: str, s: dict) -> tuple[float, list[str]]:
 
 
 def main():
-    run_price_fetch()
+    try:
+        run_price_fetch()
+    except Exception as e:
+        print(f"[screener] Prisopdatering fejlede ({e}) — bruger eksisterende prices/latest.json")
     prices = load_prices()
     github_store.put_json("prices/latest.json", prices, f"Prices+TA {prices.get('date', date.today().isoformat())}")
 
