@@ -5,6 +5,9 @@ on:
     - cron: '30 7 * * 1-5'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -15,7 +18,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Installer afhængigheder
+      - name: Installer afhaengigheder
         run: pip install yfinance pandas ta requests
 
       - name: Hent priser
