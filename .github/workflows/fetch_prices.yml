@@ -1,8 +1,8 @@
-name: Hent priser (08:30 CET)
+name: Hent priser (08:30 CEST)
 
 on:
   schedule:
-    - cron: '30 7 * * 1-5'
+    - cron: '30 6 * * 1-5'
   workflow_dispatch:
 
 permissions:
