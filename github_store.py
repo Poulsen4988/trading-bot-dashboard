@@ -33,6 +33,12 @@ def get_json(path: str, default: Any = None) -> tuple[Any, str | None]:
         content = base64.b64decode(payload["content"]).decode("utf-8")
         return json.loads(content), payload.get("sha")
     except Exception:
+        pass
+    local_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), path)
+    try:
+        with open(local_path, encoding="utf-8") as f:
+            return json.load(f), None
+    except Exception:
         return default, None
 
 
