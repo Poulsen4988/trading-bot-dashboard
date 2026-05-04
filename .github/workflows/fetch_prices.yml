@@ -1,33 +1,30 @@
-name: Fetch Stock Prices
+name: Hent priser (08:30 CET)
 
 on:
   schedule:
-    - cron: "0 6 * * 1-5"
+    - cron: '30 7 * * 1-5'
   workflow_dispatch:
 
 jobs:
-  fetch-prices:
+  run:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Install yfinance
-        run: pip install yfinance --quiet
+      - name: Installer afhængigheder
+        run: pip install yfinance pandas ta requests
 
-      - name: Fetch prices
-        run: python3 scripts/fetch_prices.py
+      - name: Hent priser
+        run: python scripts/fetch_prices.py
 
-      - name: Commit prices
+      - name: Gem priser
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Trading Bot"
+          git config user.email "bot@github-actions"
           git add prices/latest.json
-          git diff --cached --quiet || git commit -m "chore: update stock prices $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "Prices $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
