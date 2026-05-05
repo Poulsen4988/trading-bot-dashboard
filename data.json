@@ -9,7 +9,7 @@
         "name": "Novo Nordisk B",
         "shares": 95,
         "purchase_price": 265.15,
-        "current_price": 265.15,
+        "current_price": 282.95,
         "value": 25189.25
       },
       {
@@ -17,11 +17,11 @@
         "name": "Royal Unibrew",
         "shares": 58,
         "purchase_price": 426.4,
-        "current_price": 426.4,
+        "current_price": 416.0,
         "value": 24731.2
       }
     ],
-    "last_updated": "2026-05-03 09:24 UTC"
+    "last_updated": "2026-05-05 07:45 UTC"
   },
   "history": [
     {
@@ -35,6 +35,10 @@
     {
       "date": "2026-04-29",
       "portfolio_value": 100000.0
+    },
+    {
+      "date": "2026-05-05",
+      "portfolio_value": 101087.8
     }
   ],
   "trades": [
@@ -181,6 +185,156 @@
         "confidence": 0,
         "summary": "No analysis file available for 2026-04-29. Stop-loss not triggered (0.00%). Holding position."
       }
+    },
+    {
+      "date": "2026-05-05",
+      "action": "HOLD",
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "shares": 0,
+      "price": 416.0,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "Forward P/E på 10.98x er historisk lavt for et defensivt forbrugerselskab og indikerer attraktiv value-indgang; den aktuelle kurs prissætter næsten ingen vækst på trods af 40% earnings growth det seneste år.",
+          "40% earnings growth YoY er exceptionelt for en bryggerikoncern og antyder operationelle forbedringer eller markante effektiviseringsgevinster; selv halveret vækst fremover retfærdiggør en solid re-rating mod sektornormen på 15-18x PE.",
+          "Volumen på 2.39x gennemsnit kombineret med RSI 33.88 og stochastic K 22.82 nær oversold-niveau tyder på potentiel institutionel akkumulation frem for panik-salg — store aktører positionerer sig typisk ved sådanne oversold-niveauer.",
+          "Udbytte på ~3.7% giver solid indkomststøtte til aktionærer, mens virksomheden genererer cash til fortsat investeringer; det reducerer den reelle nedsiderisiko ved at holde aktien igennem den aktuelle korrektion."
+        ],
+        "bear": [
+          "Kursen er 36.3% under 52-ugers højdepunkt og kun 5.4% over 52-ugers lavpunkt — et brud ned gennem lavpunktet vil udløse tekniske stop-loss og potentielt accelerere salget markant med yderligere 10-15% nedsiderisiko.",
+          "MACD er negativt (-33.99 mod signal -32.13) med negativt histogram og kurs langt under SMA200 (511.88); den overordnede trend er klart nedadgående på tværs af alle tidshorisonter uden synlige vende-signaler endnu.",
+          "Det høje volumen på en down-dag kan ligeså vel signalere distribution (institutionelle aktører der sælger ud) som akkumulation — uden klarhed om retning er dette tvetydigt og ikke en bekræftet bull-signal.",
+          "Omsætningsvækst på kun 3.3% i et lavvækstmiljø giver begrænset organisk drivestart; Royal Unibrew er eksponeret mod handels- og valutarisici på tværs af Norden og emerging markets, der kan komprimere marginer yderligere."
+        ],
+        "verdict": "BULL",
+        "confidence": 65,
+        "summary": "Royal Unibrew handles til 11x forward PE med 40% earnings growth og defensiv sektorplacering, hvilket udgør et overbevisende value-case efter en -36% korrektion fra toppen. Momentum er fortsat negativt med bearish MACD og kurs under 200-DMA, men den ekstremt lave prissætning og høje volumen giver tilstrækkelig margin of safety til en forsigtig bullish position.",
+        "key_risk": "Et brud ned under 52-ugers lavpunkt (~394 DKK) vil invalidere value-caset og udløse tekniske salg; eller afsløringen af, at 40% earnings growth var en one-off snarere end en vedvarende trend.",
+        "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
+      },
+      "id": 9,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-05",
+      "action": "HOLD",
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "shares": 0,
+      "price": 1451.5,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "RSI på 28.31 og stochastic K på 0.0 er ekstremt oversold — sådanne niveauer er sjældne for en large-cap og har historisk forudgået skarpe bounce på 10-20%; mean reversion alene er en stærk taktisk catalyst.",
+          "Omsætningsvækst på 68.9% afspejler formentlig den transformative overtagelse af DB Schenker, der gør DSV til en af verdens tre største logistikvirksomheder med langt større synergipotentiale end markedet aktuelt prissætter.",
+          "Forward P/E på 16.66x mod trailing 40.89x indebærer, at analytikere forventer en massiv resultatfremgang efterhånden som integrationsomkostninger falder og synergier materialiseres — dette er et credibelt scenario over 12-18 måneder.",
+          "Globale logistics-sekulære vinde (e-commerce, nearshoring, supply chain-diversificering) spiller direkte i DSVs hænder; med DB Schenker er DSV bedre positioneret end nogensinde til at vinde kontrakterne."
+        ],
+        "bear": [
+          "Earnings growth er -42.9% trods rekordomsætning — integrationen af DB Schenker belaster driftsresultatet kraftigt, og det er uklart hvornår synergier overstiger omkostningerne; markedet sælger usikkerheden, ikke selskabet.",
+          "Kurs er signifikant under SMA50 (1616) og SMA200 (1524) med MACD-histogram på -21.2; Bollinger Band pct på -0.25 viser kursen er breaket under nedre band, hvilket bekræfter momentum med kraftig styrke nedad.",
+          "Et fald på -7.6% på én dag og -12.5% over 5 dage er ekstremt for et large-cap selskab; dette indikerer enten en alvorlig selskabsspecifik negativ catalyst eller en fundamental repricing af logistikaktier, som kan have yderligere at gå.",
+          "Global makrorisiko: tariffer, potentiel recession og normalisering af fragtrater post-pandemi kan komprimere DSVs marginer strukturelt over de kommende kvartaler, selv efter fuldført integration."
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 58,
+        "summary": "DSV befinder sig i et ekstremt teknisk oversold territorium (RSI 28, stoch 0) efter en transformativ acquisition-drevet omsætningsvækst på 69%, men den -42.9% earnings decline og kraftige negative momentum signalerer, at markedet endnu ikke ser synergirealisering som nært forestående. En neutral position er berettiget, mens integrationsforløbet afklares.",
+        "key_risk": "Hvis DB Schenker-integrationen skuffer yderligere via uventede nedskrivninger eller forsinket synergirealisering, kan aktien bryde ned til nye 52-ugers lavpunkter på trods af allerede ekstreme oversold-readings.",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 10,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-05",
+      "action": "HOLD",
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "shares": 0,
+      "price": 443.2,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "RSI på 29.59 og stochastic K på 1.19 er historisk ekstreme oversold-niveauer for FLSmidth; sådanne tekniske niveauer forudgår ofte skarpe kortsigtet bounce på 10-20% i cykliske industriaktier.",
+          "Forward P/E på 13.65x mod trailing 35.97x antyder en analytiker-konsensus om massiv resultatfremgang; markedet prissætter en turnaround, og enhver positiv ordrebog-update kan virke som stærk catalyst.",
+          "FLSmidths dominante position i mineudstyr til kobber- og guldmining spiller direkte ind i energitransitionstemaet; stigende efterspørgsel efter kritiske mineraler til batterier og vedvarende energi bør drive langsigtet orderintake.",
+          "Golden cross er fortsat intakt (SMA50 over SMA200 på langsigt basisniveau), hvilket viser, at den overordnede bull-struktur ikke er brudt på trods af den aktuelle kortsigtede svaghed."
+        ],
+        "bear": [
+          "Omsætningsvækst er negativ på -3.9%, og earnings growth data er ikke tilgængeligt — denne mangel på transparens er i sig selv bekymrende og tyder på, at virksomheden underpræsterer i forhold til forventningerne.",
+          "MACD er negativt med histogram på -7.32 og bearish cross; kursen er under SMA200 (466.34) og Bollinger Band pct er -0.0546, hvilket viser brud under nedre band — alle momentum-indikatorer peger nedad.",
+          "Stochastic K på 1.19 er så ekstremt, at det kan afspejle fundamental forretningsforringelse snarere end teknisk overshooting; i cykliske industriaktier sker ekstreme stochastic-niveauer ofte ved genuine profitwarnings.",
+          "Global kapitaludgifts-cyklus i mining og cement er tæt knyttet til kinesisk vækst og globale råvarepriser; en fortsat vækstopbremsning vil reducere FLSmidths ordrebog og presse omsætningen yderligere."
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 55,
+        "summary": "FLSmidth er teknisk ekstremt oversold med RSI 30 og stochastic 1, hvilket giver spekulativ reversal-potentiale, men negativ omsætningsvækst, manglende earnings-synlighed og kraftig downside-momentum underminerer overbevisningen i et nært forestående vendepunkt. Positionen kræver en fundamentalt positiv catalyst for at begrunde en aktiv position.",
+        "key_risk": "Fortsatte reduktioner i globale mining- og cement-kapitalinvesteringer kombineret med en decideret resultatadvarsel ville nullificere den forventede earnings-recovery og sende kursen væsentligt lavere end de aktuelle niveauer.",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 11,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-05",
+      "action": "HOLD",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": 0,
+      "price": 282.95,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "Forward P/E på 13.36x og trailing 12.29x er historisk lave prissætningsniveauer for verdens ledende GLP-1-producent; markedet har aggressivt de-ratet aktien til niveauer, der implicit prissætter strukturelt tab af markedsandele, som endnu ikke er bekræftet.",
+          "MACD har vendt bullish med positivt histogram (3.78) og bullish cross, og kursen er steget 19.4% over 20 dage og 7.4% over 5 dage — dette er en stærk momentum-reversal-signal, der indikerer, at det institutionelle salgs-pres kan være ophørt.",
+          "GLP-1-markedet (semaglutid i Ozempic og Wegovy) forbliver strukturelt enormt med milliarder af potentielle patienter globalt; Novos pipeline (CagriSema, oral semaglutid) kan genskabe vækstmomentum og begrunde en kraftig re-rating.",
+          "47% fald fra 52-ugers top har skabt en margin of safety, der er ekstraordinær for et blue-chip pharma-selskab; risiko/belønning på 12-18 måneder favoriserer bull-caset givet den strukturelle styrke af GLP-1-franchisen."
+        ],
+        "bear": [
+          "Omsætningsvækst er negativ (-7.6%) og earnings growth er -4.7% — Novo Nordisk er i fundamental nedvækstfase, ikke recovery; markedet sælger reel forretningsforringelse, ikke irrationel frygt.",
+          "Death cross er bekræftet (SMA50 under SMA200) og kursen er under SMA200 på 311.64; den langsigtede trend-struktur er nedadgående på trods af den seneste bounce, som kan være et klassisk 'dead cat bounce'.",
+          "Bollinger Band pct på 1.04 indikerer kursen handles OVER øvre Bollinger Band — et historisk mean reversion-signal; stochastic K på 89.35 og D på 95.03 er dybt i overbought-territoriet og signalerer sandsynlig kortsigtet korrektion.",
+          "Eli Lillys tirzepatid (Mounjaro/Zepbound) vinder markedsandele aggressivt i USA; fortsat konkurrencepres kan begrænse Novos evne til at genvinde vækst, og pipeline-skuffelser (CagriSema trial-data) har allerede skadet tilliden markant."
+        ],
+        "verdict": "BULL",
+        "confidence": 62,
+        "summary": "Novo Nordisk handles til 12-13x forward P/E med bullish MACD-momentum og en +19% recovery over 20 dage, hvilket signalerer en potentiel bund efter den massive de-rating fra toppen. Den kortsigtede overbought-advarsel (over øvre Bollinger Band, stoch 89) og death cross indikerer, at en konsolidering er sandsynlig på kortere sigt, men det mellemfristede risk/reward favoriserer bullish positionering ved pullbacks.",
+        "key_risk": "Fortsat negativ revenue-vækst i kommende kvartalsrapporter kombineret med pipeline-skuffelser i CagriSema-programmet ville bekræfte, at den nuværende recovery er et dead cat bounce snarere end en reel vendning.",
+        "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
+      },
+      "id": 12,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-05",
+      "action": "HOLD",
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "shares": 0,
+      "price": 212.8,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "Forward P/E på 14.44x er attraktivt for en global leder inden for høreapparater og audiologiske løsninger; med en aldrende verdensbefolkning som strukturel vind er denne prissætning lav i et historisk perspektiv.",
+          "Kortsigtet momentum er positivt: +4.5% over 5 dage og +8.8% over 20 dage kombineret med RSI 59.1 og stochastic K 63.9 — momentum er reelt men ikke overbought, hvilket giver rum til yderligere opside.",
+          "Omsætningsvækst på 3.4% i en sektor med stærke demografiske medvinde er et tegn på, at kerneforretningen fungerer; et fald i earnings fra en høj base eller store engangsomkostninger kan give mulighed for genopretning fremad.",
+          "Kursen er steget over SMA50 (194.71) og handles i øvre halvdel af Bollinger Båndet (BB pct 0.67) — teknisk set er dette en bedre position end de øvrige screenede aktier og antyder relativ styrke."
+        ],
+        "bear": [
+          "Earnings growth på -63.4% er katastrofalt lavt og indikerer enten massive nedskrivninger, tab af markedsandele eller strukturelle margin-problemer; en earnings recovery til forward PE-niveauet forudsætter en fremgang, der endnu ikke er dokumenteret.",
+          "Death cross er bekræftet og kursen er under SMA200 (221.07); MACD har netop vendt negativt med histogram -0.70 midt i en rally — dette er et advarselssignal om, at den aktuelle optur mangler momentum-understøttelse.",
+          "OTC-høreapparatsmarkedet (over-the-counter) i USA, muliggjort af FDA-regulering, udsætter Demant for strukturel konkurrence fra lavprisalternativer, hvilket kan komprimere markedsandele og marginer permanent.",
+          "Volumen ratio på 1.02x er marginalt over gennemsnittet og understøtter ikke en convincing bull-rally; uden institutionel akkumulation-signal bag den seneste prisstigning er recovery'en sårbar over for omvending."
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 57,
+        "summary": "Demant viser positiv kortsigtet prisdynamik og handler til en tilsyneladende rimelig 14.4x forward P/E, men den -63.4% earnings growth-kollaps rejser alvorlige spørgsmål om, hvorvidt den forventede earnings-recovery er realistisk. MACD der vender negativt under en rally og death cross-bekræftelse tilsiger forsigtighed, og en neutral position er berettiget indtil earnings-billedet klarer sig.",
+        "key_risk": "Hvis de -63.4% earnings-fald afspejler strukturelle problemer (OTC-konkurrence, markedsandels-tab) snarere end cykliske engangseffekter, vil forward PE-antagelserne vise sig for optimistiske og aktien returnerer til 52-ugers lavpunkter.",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 13,
+      "is_new": true
     }
   ]
 }
