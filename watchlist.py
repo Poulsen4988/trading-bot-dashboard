@@ -1,6 +1,6 @@
 """
 Eneste sted at definere C25-watchlisten.
-Importeres af research.py, news.py og scripts/fetch_prices.py.
+Importeres af screener.py, research.py, news.py og scripts/fetch_prices.py.
 
 uic: Saxo Bank UIC-kode. None = ikke opsat endnu (kan researches men ikke handles).
 """
@@ -38,3 +38,6 @@ WATCHLIST = [
     {"symbol": s["saxo"], "name": s["name"], "uic": s["uic"]}
     for s in C25 if s["uic"] is not None
 ]
+
+# Simple (yf_ticker, name) tuples used by screener.py
+STOCKS = [(s["yf"], s["name"]) for s in C25]
