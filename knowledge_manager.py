@@ -55,7 +55,12 @@ def prune_news(news_list):
     result = []
     for item in news_list:
         try:
-            d = datetime.fromisoformat(item["date"].replace("Z", "+00:00"))
+            raw = item["date"].replace("Z", "+00:00")
+            if len(raw) == 10:
+                raw += "T00:00:00+00:00"
+            d = datetime.fromisoformat(raw)
+            if d.tzinfo is None:
+                d = d.replace(tzinfo=timezone.utc)
             if d >= cutoff:
                 result.append(item)
         except (ValueError, KeyError):
