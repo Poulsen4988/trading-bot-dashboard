@@ -9,7 +9,7 @@
         "name": "Novo Nordisk B",
         "shares": 95,
         "purchase_price": 265.15,
-        "current_price": 302.75,
+        "current_price": 291.45,
         "value": 25189.25
       },
       {
@@ -17,11 +17,11 @@
         "name": "Royal Unibrew",
         "shares": 58,
         "purchase_price": 426.4,
-        "current_price": 416.8,
+        "current_price": 412.2,
         "value": 24731.2
       }
     ],
-    "last_updated": "2026-05-07 07:45 UTC"
+    "last_updated": "2026-05-08 07:45 UTC"
   },
   "history": [
     {
@@ -47,6 +47,10 @@
     {
       "date": "2026-05-07",
       "portfolio_value": 103015.2
+    },
+    {
+      "date": "2026-05-08",
+      "portfolio_value": 101674.9
     }
   ],
   "trades": [
@@ -642,6 +646,156 @@
         "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
       },
       "id": 23,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-08",
+      "action": "HOLD",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": 0,
+      "price": 291.45,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "Deep fundamental value: forward PE 13.8x is a 45% discount to the Healthcare sector norm (~25x) while earnings growth of +67% and revenue growth of +24% remain exceptional — the market appears to have aggressively over-discounted risks relative to fundamentals.",
+          "GLP-1 secular growth story intact: Novo remains the global leader in obesity (Wegovy/Ozempic) and diabetes (insulin) markets, with a maturing pipeline (CagriSema, amycretin) supporting multi-year revenue visibility; the addressable market is expected to exceed USD 100 billion by 2030.",
+          "Strong 20-day momentum reversal (+22.4%) suggests a potential bottom has formed: a 7-week rally from oversold levels at significantly depressed valuations is consistent with institutional accumulation and a thesis re-rating after excessive prior sell-off.",
+          "MACD bullish cross with positive histogram (+4.20): technical momentum indicators confirm directional shift; stock has broken above SMA50 (245.8), which is constructive and may attract systematic/momentum buyers."
+        ],
+        "bear": [
+          "RSI overbought at 70.8 combined with BB% at 0.95 (near upper Bollinger Band): after a 22% rally in 20 days, technical indicators signal near-term exhaustion; a 5-10% pullback to digest gains is probable before any further upside.",
+          "Death cross in effect and stock remains 6.4% below SMA200 (309.9): the long-term trend remains structurally bearish; the 45% decline from peak reflects deep institutional conviction in a negative thesis that has not fully reversed.",
+          "Very low volume ratio (0.25): the entire 22% recovery has occurred on just one-quarter of average volume, which undermines the conviction of the move and raises the risk of a reversal when selling pressure re-emerges.",
+          "GLP-1 competitive intensification: Eli Lilly (Mounjaro/Zepbound) continues gaining market share and new entrants (Roche, AstraZeneca, Pfizer) in the incretin space risk compressing both Novo's pricing power and revenue growth below current consensus forecasts."
+        ],
+        "verdict": "BULL",
+        "confidence": 65,
+        "summary": "Novo Nordisk offers a rare combination of +67% earnings growth, +24% revenue expansion, and a 45%-discounted forward PE at a historically depressed price — fundamental value is genuine and the 20-day momentum shift suggests a bottom may be in place. Near-term overbought technicals and low volume are the main caution, but the 12-month risk/reward favors bulls for patient holders.",
+        "key_risk": "Low volume on the recovery rally and RSI overbought conditions increase the probability of a near-term 5-10% pullback; a GLP-1 sales miss or competitor approval could re-accelerate the downtrend.",
+        "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
+      },
+      "id": 24,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-08",
+      "action": "HOLD",
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "shares": 0,
+      "price": 412.2,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "Extreme valuation discount at near-annual lows: forward PE 10.9x is 36% below the Consumer Defensive sector norm (17x) while earnings growth of +40% implies substantial margin expansion — historically, this combination has offered attractive mean-reversion returns in defensive sectors.",
+          "Stochastic deeply oversold (K: 21.2 / D: 22.4) and MACD histogram just turned positive (+1.18): dual early-reversal signals suggest selling exhaustion; the MACD bullish cross at deeply oversold stochastic levels is a classic setup for mean-reversion bounces.",
+          "Consumer Defensive sector resilience: Royal Unibrew's Nordic/European beer and soft-drink portfolio provides predictable, recurring revenues with strong pricing power; defensive names historically outperform in late-cycle slowdowns.",
+          "Strong dividend yield at current depressed levels provides income support and a floor for long-term holders, reducing downside risk and attracting income-oriented institutional buyers."
+        ],
+        "bear": [
+          "Severe 20-day decline of -22.6% in a defensive stock strongly implies a fundamental negative surprise: such a sharp drawdown for a stable consumer company typically reflects a profit warning, major guidance cut, or structural market share loss — risks not fully visible in the snapshot data.",
+          "Stock trading 19.5% below SMA50 (512.1) and 19.3% below SMA200 (510.7): despite a notional golden cross between the MAs, the current price is far below both — the technical structure is severely damaged and the golden cross signal is irrelevant to near-term price action.",
+          "RSI at 33 approaching oversold but not yet there: stocks in strong fundamental downtrends can stay below RSI 35 for weeks; without a clear catalyst or volume confirmation, this proximity to oversold is not sufficient to confirm a bottom.",
+          "Proximity to 52-week low (just 4.5% above 394.6) means any further negative news could send the stock to multi-year lows, triggering systematic stop-losses and accelerating the decline."
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 50,
+        "summary": "Royal Unibrew is technically oversold and fundamentally cheap, but the magnitude of the 20-day decline (-22.6%) in a defensive sector raises serious concerns about undisclosed fundamental problems not captured in the current data snapshot. Without volume confirmation of a bottom or a clear positive catalyst, the directional conviction is too low to take a position.",
+        "key_risk": "The -22.6% 20-day decline may reflect an unobserved profit warning or structural deterioration; buying into this weakness without catalyst confirmation risks catching a falling knife.",
+        "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
+      },
+      "id": 25,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-08",
+      "action": "HOLD",
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "shares": 0,
+      "price": 538.8,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "Meaningful 20-day momentum (+14%) with price breaking above SMA50 (479.5): the 14% rally from deeply depressed levels has cleared the first major technical resistance level; if the move can be sustained, the next target is 600+ DKK.",
+          "Forward PE 13.0x represents a 35% discount to Consumer Cyclical sector norm (20x) despite Pandora's globally recognized brand, extensive retail network, and leading position in the accessible jewelry segment — valuation appears to price in a permanent demand collapse.",
+          "Affordable luxury positioning offers relative resilience in consumer downturns: consumers trading down from high-end luxury brands to Pandora's accessible price point creates a potential market-share gain thesis in weak macro environments.",
+          "Potential for buybacks or M&A at these depressed levels: trailing PE of 8.1x and a globally recognized brand make Pandora an attractive acquisition or aggressive buyback candidate, both of which would be positively re-rating catalysts."
+        ],
+        "bear": [
+          "Dual fundamental deterioration — revenue growth -3.2% AND earnings growth -10%: this combination is a genuine structural red flag, not cyclical softness; shrinking revenues and declining profits simultaneously suggest competitive market share erosion and pricing power loss.",
+          "Today's -5.27% single-day drop after a strong 5-day rally near upper Bollinger Band (BB% 0.90) is a distribution signal: the sharp intraday decline at the top of the near-term range suggests institutional selling into the rally rather than sustained accumulation.",
+          "Death cross in effect with stock 20.4% below SMA200 (677.2): the structural downtrend is severe and the 56% decline from peak reflects deep institutional conviction; mean-reversion in stocks this far from SMA200 typically takes 18-24 months.",
+          "Consumer Cyclical sector faces macro and FX headwinds: Pandora derives significant revenue from US, UK, and Asian markets; a strong DKK/USD and subdued global consumer confidence could further pressure both volume and margins."
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 52,
+        "summary": "Pandora shows compelling valuation metrics and recent technical momentum, but the fundamental picture of simultaneously declining revenues (-3.2%) and earnings (-10%) combined with today's -5.27% reversal near the Bollinger upper band undermines conviction in the bull case. The directional setup is ambiguous and warrants a NEUTRAL stance until fundamental stabilization is confirmed.",
+        "key_risk": "Continued revenue and earnings deterioration would invalidate the valuation re-rating thesis; today's sharp single-day decline near technical resistance increases the probability that the recent rally was a counter-trend move rather than a sustainable reversal.",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 26,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-08",
+      "action": "HOLD",
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "shares": 0,
+      "price": 408.6,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "Forward PE 15.3x at a 39% discount to the Healthcare sector norm (25x) combined with +33.9% earnings growth is a powerful value signal: Coloplast's margin expansion story suggests operational excellence in a high-moat MedTech segment (ostomy, continence care) with recurring, inelastic demand.",
+          "Early MACD and stochastic reversal signals near near-annual lows: MACD histogram just turned positive (+0.69) and stoch K (35.0) is slightly above D (31.5) while both approach oversold territory — a potential base-formation pattern.",
+          "Recurring revenue moat in ostomy and continence care: patients using Coloplast's products for chronic conditions have very low switching rates, providing high-visibility cash flows, predictable renewal demand, and strong pricing power in reimbursed healthcare systems.",
+          "5-day recovery of +3.7% from near 52-week lows with MACD turning bullish suggests nascent buying interest: even a partial mean-reversion toward SMA50 (437.6) would deliver a 7% return from current levels."
+        ],
+        "bear": [
+          "Near-zero revenue growth (+0.2%) is a fundamental concern for a premium MedTech business: the +33.9% earnings growth is largely a product of cost-cutting that has a ceiling; without top-line growth, earnings expansion cannot continue and multiple contraction risk is elevated.",
+          "Death cross with stock 6.6% below SMA50 (437.6) and 23.3% below SMA200 (532.3): the structural downtrend is deep and recovery requires multiple positive quarters of fundamental re-rating; the SMA200 overhang represents massive technical resistance.",
+          "Critically low volume ratio (0.324): the 5-day recovery has occurred on less than one-third of average trading volume, making all technical signals unreliable and suggesting the move lacks institutional conviction.",
+          "European healthcare system reimbursement pressure and potential for generic/lower-cost competition in mature ostomy/continence categories could compress both pricing power and the margin expansion story over the next 12-18 months."
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 54,
+        "summary": "Coloplast trades at a meaningful discount with solid earnings growth, but near-zero revenue growth and critically low volume undermine the conviction of the early technical reversal signals. The stock is in a structurally damaged trend with significant SMA50/200 overhead resistance, and the data quality concerns from sub-0.4 volume ratio make positioning premature.",
+        "key_risk": "Revenue stagnation proving structural rather than cyclical would erode the margin expansion thesis and could trigger further multiple de-rating from current already-depressed levels.",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 27,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-08",
+      "action": "HOLD",
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "shares": 0,
+      "price": 62.35,
+      "value": 0.0,
+      "reasoning": {
+        "bull": [
+          "Above-average volume (1.14x) near the 52-week low with BB% at 0.14 (near lower Bollinger Band): this combination sometimes signals capitulation selling — high-volume price stabilization near lows can precede short-term mean-reversion bounces.",
+          "Stochastic deeply oversold (K: 18.5 / D: 25.6) and RSI at 36.5: multiple simultaneous oversold readings suggest near-term technical exhaustion of sellers; a mean-reversion bounce toward the 20-period average is a plausible short-term outcome.",
+          "Structural growth story in single-use endoscopy: Ambu pioneered the aScope category and hospitals increasingly mandating single-use scopes for infection control creates a multi-year secular tailwind independent of short-term earnings noise.",
+          "Forward PE 19.3x is a 23% discount to Healthcare sector norm (25x), and the -35% earnings decline may reflect one-time transition costs or elevated R&D that normalizes as the single-use endoscopy market matures."
+        ],
+        "bear": [
+          "Severe earnings deterioration (-35.2%) with minimal revenue growth (+1.2%) is a deeply concerning fundamental signal: Ambu is generating almost no growth while profits collapse rapidly, suggesting intense price competition from Boston Scientific, Olympus single-use, and other entrants is structurally eroding margins.",
+          "Bearish MACD cross confirmed (histogram -0.05, negative): while barely negative, the bearish MACD crossover in a stock already in a death cross and 44% below its 52-week high confirms continued downward pressure; absence of a bullish crossover is itself a negative signal.",
+          "Death cross confirmed with stock 10.5% below SMA50 (69.7) and 28.0% below SMA200 (86.6): the multi-year structural downtrend shows no sign of reversal; above-average volume near lows may reflect institutional distribution rather than capitulation.",
+          "Trailing PE of 34.8x is expensive in absolute terms for a company with deeply negative earnings trajectory; forward PE of 19.3x assumes earnings recovery that requires the -35% earnings decline to reverse — an assumption not supported by current revenue growth of just +1.2%."
+        ],
+        "verdict": "BEAR",
+        "confidence": 62,
+        "summary": "Ambu is fundamentally deteriorating with -35% earnings growth on +1.2% revenue — the core business is under severe competitive pressure and the margin structure is weakening, not recovering. The bearish MACD cross, death cross, and trailing PE of 34.8x all point to continued downside risk despite oversold technical readings.",
+        "key_risk": "Above-average volume near the 52-week low could indicate institutional capitulation selling completing rather than distribution — a positive catalyst from the single-use endoscopy pipeline could trigger a sharp short-squeeze reversal.",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 28,
       "is_new": true
     }
   ]
