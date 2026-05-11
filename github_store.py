@@ -12,6 +12,12 @@ import os
 import urllib.request
 from typing import Any
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
+except Exception:
+    pass
+
 REPO = os.environ.get("DASHBOARD_REPO", "Poulsen4988/trading-bot-dashboard")
 TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("DASHBOARD_PAT") or ""
 API_BASE = f"https://api.github.com/repos/{REPO}/contents"
