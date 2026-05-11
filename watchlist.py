@@ -1,6 +1,6 @@
 """
 Eneste sted at definere C25-watchlisten.
-Importeres af screener.py, research.py, news.py og scripts/fetch_prices.py.
+Importeres af research.py, news.py og scripts/fetch_prices.py.
 
 uic: Saxo Bank UIC-kode. None = ikke opsat endnu (kan researches men ikke handles).
 """
