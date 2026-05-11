@@ -2,9 +2,12 @@ name: Hent priser og nyheder (hver time)
 
 on:
   schedule:
-    # Kører hvert hele time 07:00-16:00 UTC (09:00-18:00 CET) på hverdage
+    # Koerer hvert hele time 07:00-16:00 UTC (09:00-18:00 CET) paa hverdage
     - cron: '0 7-16 * * 1-5'
-  workflow_dispatch:  # Kan også trigges manuelt
+  workflow_dispatch:  # Kan ogsaa trigges manuelt
+
+permissions:
+  contents: write
 
 jobs:
   fetch:
@@ -16,7 +19,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Installer afhængigheder
+      - name: Installer afhaengigheder
         run: pip install -r requirements.txt
 
       - name: Hent priser (yfinance)
@@ -34,6 +37,6 @@ jobs:
         run: |
           git config user.name "Trading Bot"
           git config user.email "bot@github-actions"
-          git add prices/ knowledge/ dashboard/data.json 2>/dev/null || true
+          git add prices/ knowledge/ data.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "Data update $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
