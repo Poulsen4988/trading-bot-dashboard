@@ -21,7 +21,7 @@
         "value": 24731.2
       }
     ],
-    "last_updated": "2026-05-08 18:08 UTC"
+    "last_updated": "2026-05-11 07:46 UTC"
   },
   "history": [
     {
@@ -50,6 +50,10 @@
     },
     {
       "date": "2026-05-08",
+      "portfolio_value": 101674.9
+    },
+    {
+      "date": "2026-05-11",
       "portfolio_value": 101674.9
     }
   ],
@@ -810,8 +814,53 @@
         "verdict": "HOLD",
         "summary": "Token-opdatering fejlede: denne host er ikke på Saxo SIM-applikationens tilladelsesliste. Adgangstoken udløbet (udstedt for ~3.9 timer siden, gyldighed 20 min). Refresh-token ligeledes udløbet (gyldighed 1 time). Ingen handler mulige i dag."
       },
-      "is_new": true,
+      "is_new": false,
       "id": 29
+    },
+    {
+      "id": 30,
+      "date": "2026-05-11",
+      "action": "HOLD",
+      "symbol": "NOVOb:xcse",
+      "name": "NOVOb:xcse",
+      "shares": 0,
+      "price": 292.05,
+      "value": null,
+      "is_new": false,
+      "reasoning": {
+        "verdict": "HOLD",
+        "summary": "NOVO +9.92% — stærk position; RSI-proxy 71.2 nærmer sig overkøbt, tilbageholdenhed med yderligere køb; holder eksisterende 95 aktier."
+      }
+    },
+    {
+      "id": 31,
+      "date": "2026-05-11",
+      "action": "HOLD",
+      "symbol": "RBREW.CO",
+      "name": "RBREW.CO",
+      "shares": 0,
+      "price": 412.2,
+      "value": null,
+      "is_new": false,
+      "reasoning": {
+        "verdict": "HOLD",
+        "summary": "RBREW -3.33%, over stop-loss grænse (405.08 DKK); ikke handlebar via Saxo — holder passivt. Score 72.4 men ingen exit mulig via trade.py."
+      }
+    },
+    {
+      "id": 32,
+      "date": "2026-05-11",
+      "action": "HOLD",
+      "symbol": "DSV:xcse",
+      "name": "DSV:xcse",
+      "shares": 0,
+      "price": 1499.5,
+      "value": null,
+      "is_new": true,
+      "reasoning": {
+        "verdict": "HOLD",
+        "summary": "DSV score 9.3 — negativ trend (-4.6% 5d, -10.4% 20d), earnings -42.9% YoY; ingen åbning af ny position."
+      }
     }
   ],
   "stocks": [
