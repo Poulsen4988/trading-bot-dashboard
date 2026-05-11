@@ -2,8 +2,10 @@ name: Hent priser og nyheder (hver time)
 
 on:
   schedule:
-    # Koerer hvert hele time 07:00-16:00 UTC (09:00-18:00 CET) paa hverdage
-    - cron: '0 7-16 * * 1-5'
+    # Dedikeret koersel 09:05 CEST (07:05 UTC) saa data er frisk til Analyse-rutinen kl. 09:15
+    - cron: '5 7 * * 1-5'
+    # Koerer hvert hele time 08:00-16:00 UTC (10:00-18:00 CEST) paa hverdage
+    - cron: '0 8-16 * * 1-5'
   workflow_dispatch:  # Kan ogsaa trigges manuelt
 
 permissions:
