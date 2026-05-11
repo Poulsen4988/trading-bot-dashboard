@@ -28,15 +28,16 @@ jobs:
       - name: Hent nyheder (yfinance)
         run: python news.py > /dev/null
 
-      - name: Opdater dashboard (GitHub Pages)
-        run: python sync_dashboard.py
-        env:
-          DASHBOARD_PAT: ${{ secrets.DASHBOARD_PAT }}
-
       - name: Gem priser og nyheder til repo
         run: |
           git config user.name "Trading Bot"
           git config user.email "bot@github-actions"
-          git add prices/ knowledge/ data.json 2>/dev/null || true
+          git add prices/ knowledge/ 2>/dev/null || true
           git diff --staged --quiet || git commit -m "Data update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
           git push
+
+      - name: Opdater dashboard (GitHub Pages)
+        run: python sync_dashboard.py
+        env:
+          DASHBOARD_PAT: ${{ secrets.DASHBOARD_PAT }}
