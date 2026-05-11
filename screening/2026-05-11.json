@@ -1,0 +1,90 @@
+{
+  "date": "2026-05-11",
+  "screened_at": "2026-05-11T06:48:00Z",
+  "price_data_date": "2026-05-08",
+  "data_note": "Live priser utilgængelige (netværk blokeret). Priser er fra sidst kendte close (2026-05-08).",
+  "candidates": [
+    {
+      "symbol": "NOVOb:xcse",
+      "name": "Novo Nordisk B",
+      "uic": 15629,
+      "tradeable": true,
+      "price": 291.45,
+      "signal": "WATCH",
+      "bull": "Fortsat stærk fundamentalcase: fwd PE 13.8x vs. sektornorm 25x (45% rabat), +67% earnings growth YoY. 5-dages momentum +7.1%, 20-dages +22.4% — stærkt trækpres. Aktuelt holdt med +9.92% urealiseret gevinst. Deep value på -45% fra 52-ugers høj.",
+      "bear": "RSI-proxy 71.2 — nærmer sig oversolgt. Momentum-divergens -15.3pp (5d/20d gap) antyder kortsigtede afmatning. Allerede holdt — yderligere eksponering øger koncentrationsrisiko. Max 3 positioner: 1 slot tilbage til anden kandidat.",
+      "confidence": 7
+    },
+    {
+      "symbol": "MAERSKb:xcse",
+      "name": "A.P. Møller-Mærsk B",
+      "uic": 6041,
+      "tradeable": true,
+      "price": 8950.0,
+      "signal": "AVOID",
+      "bull": "Stor global shippingaktør med diversificeret forretning (logistik, terminal). Eventuel global handelsnormalisering ville gavne.",
+      "bear": "Screeningscore 26.2 — konsekvent lavscorer de seneste 5 sessioner. Ingen momentum-signaler. Fragtrater under pres fra global handelsbremse. Ingen earnings-vækst-signal. Undgå i nuværende markedsklima.",
+      "confidence": 6
+    },
+    {
+      "symbol": "DSV:xcse",
+      "name": "DSV",
+      "uic": 3955,
+      "tradeable": true,
+      "price": 1451.5,
+      "signal": "WATCH",
+      "bull": "RSI 28.3 på 2026-05-05 = teknisk oversolgt. Volumen 1.78x gennemsnit — institutionel interesse mulig. Kursen er faldet -12.5% over 5 dage (maj 5) = potentielt reversal-niveau. Screeningscore steg fra 6.8 (maj 5) til 34.2 (maj 7), men faldt til 9.3 (maj 8).",
+      "bear": "Earnings growth -42.9% YoY — alvorligt fundamentalt svaghedstegn. PE 16.7x vs. sektornorm — ingen klar rabat. Score volatil og generelt lav. Bearish MACD-kryds observeret. Under 200-dages gns. Ingen klar indgang endnu — vent på bekræftelse.",
+      "confidence": 4
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "uic": null,
+      "tradeable": false,
+      "price": 538.8,
+      "signal": "WATCH",
+      "bull": "Fwd PE 13.0x vs. sektornorm 20x (35% rabat). 5-dages momentum +11.4%, 20-dages +14.0%. Stochastic-proxy 14 = oversolgt på årsband. -56% fra 52-ugers høj = massiv kompression med mean-reversion potentiale.",
+      "bear": "Earnings growth -10% YoY og revenue -3.2% — fundamentalt svaghedstegn. Ikke handlebar i Saxo SIM (ingen UIC). WATCH til UIC registrering.",
+      "confidence": 6
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "uic": null,
+      "tradeable": false,
+      "price": 408.6,
+      "signal": "WATCH",
+      "bull": "Pris kun +4.7% over 52-ugers lav (390.1) — kritisk support-zone. Fwd PE 15.3x vs. sektornorm 25x (39% rabat). +34% earnings growth YoY. Stochastic-proxy 7 = stærkt oversolgt.",
+      "bear": "Revenue growth kun +0.2% — topplinjevækst svag trods earnings bounce. Ikke handlebar (ingen UIC). Markedssentiment for healthcare fortsat blandet.",
+      "confidence": 6
+    }
+  ],
+  "held_positions": [
+    {
+      "symbol": "NOVO-B.CO",
+      "shares": 95,
+      "avg_price": 265.15,
+      "current_price": 291.45,
+      "pnl_pct": 9.92,
+      "stop_loss_price": 252.0,
+      "action": "HOLD — over stop-loss, positiv momentum"
+    },
+    {
+      "symbol": "RBREW.CO",
+      "shares": 58,
+      "avg_price": 426.4,
+      "current_price": 412.2,
+      "pnl_pct": -3.33,
+      "stop_loss_price": 405.08,
+      "action": "WATCH TÆT — 1.7% til stop-loss (405.08 DKK). Sælg automatisk ved 405 DKK."
+    }
+  ],
+  "account_snapshot": {
+    "cash": 50079.55,
+    "open_positions": 2,
+    "max_positions": 3,
+    "available_slots": 1
+  },
+  "market_comment": "Mandag 11. maj 2026. Ingen live priser tilgængelige (netværk utilgængeligt) — screening baseret på sidst kendte priser fra fredag 8. maj. C25 viser fortsat bred kompression: flertallet af indeksaktier handles 30-56% under deres 52-ugers høj, hvilket afspejler global usikkerhed og sektorsvagheder. Den aktive portefølje er polariseret: NOVO i stærk recovery (+9.92%), RBREW derimod presset ned mod stop-loss-niveauet (-3.33%, kun 1.7% fra 5%-grænsen). Af de tre handlebare aktier er NOVO allerede holdt, MAERSK-B scorer svagt og undgås, og DSV er teknisk oversolgt men fundamentalt svag — ingen klar indgang. Konservativ tilgang anbefales: hold NOVO, overvåg RBREW tæt, hold 1 slot åbent til stærkere signal. HOLD er den rigtige beslutning i dag."
+}
