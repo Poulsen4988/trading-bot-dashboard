@@ -621,7 +621,7 @@ def main():
 
     with open(out_path, "w") as f:
         json.dump(output, f, indent=2)
-    print(f"\nStep 6: Saved → {out_path}")
+    print(f"\nStep 6: Saved -> {out_path}")
 
     return output, valid_count, selected
 
