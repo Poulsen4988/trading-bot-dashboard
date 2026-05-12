@@ -21,7 +21,7 @@
         "value": 24731.2
       }
     ],
-    "last_updated": "2026-05-11 22:17 UTC"
+    "last_updated": "2026-05-12 07:45 UTC"
   },
   "history": [
     {
@@ -54,6 +54,10 @@
     },
     {
       "date": "2026-05-11",
+      "portfolio_value": 101674.9
+    },
+    {
+      "date": "2026-05-12",
       "portfolio_value": 101674.9
     }
   ],
@@ -814,8 +818,149 @@
         "verdict": "HOLD",
         "summary": "Token-opdatering fejlede: denne host er ikke på Saxo SIM-applikationens tilladelsesliste. Adgangstoken udløbet (udstedt for ~3.9 timer siden, gyldighed 20 min). Refresh-token ligeledes udløbet (gyldighed 1 time). Ingen handler mulige i dag."
       },
-      "is_new": true,
+      "is_new": false,
       "id": 29
+    },
+    {
+      "date": "2026-05-12",
+      "action": "HOLD",
+      "symbol": "NNIT.CO",
+      "name": "NNIT.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Forward PE 8.2x er en 54% rabat til sektornormen — ekstrem lavvurdering",
+          "Volume spike på 2.87x kan signalere institutionel akkumulation nær bunden",
+          "Kurs +7.2% over 52u-lav — potentiel teknisk støttezone"
+        ],
+        "bear": [
+          "Omsætningen falder -5.7% YoY — strukturelle udfordringer i IT-serviceforretning",
+          "Kurs ned 45% fra 52u-high uden tegn på bund — faldende kniv",
+          "Ingen udbyttecushion, ingen handelsmulighed via Saxo SIM"
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 3,
+        "summary": "NNIT er billig men har fundamentale problemer med faldende omsætning. Volume-spiket er interessant men utilstrækkeligt til en BULL-position uden handleadgang.",
+        "key_risk": "Faldende omsætning kan fortsætte og presse PE yderligere ned — value trap",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 30,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-12",
+      "action": "HOLD",
+      "symbol": "ISS.CO",
+      "name": "ISS.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Stærkt momentum: +10% på 5 dage — klar directional move",
+          "Near 52u-high (-1.9%) med breakout-potentiale ved volumenbekræftelse",
+          "Forward PE 12.2x vs. sektornorm 18x — 32% rabat"
+        ],
+        "bear": [
+          "RSI proxy 80 — overbought efter 10%-rally, sandsynlig korrektion",
+          "Earnings growth kun +0.1% — momentumet er ikke fundamentalt underbygget",
+          "Nær historisk modstand; breakout-svigt kan udløse skarp tilbagegang"
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "summary": "ISS har momentum men er teknisk udstrakt. Afvent en pullback til 240-245 for bedre risiko/belønning. Ikke handlebar via Saxo SIM.",
+        "key_risk": "Overbought breakdown efter svagt earnings-fundament",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 31,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-12",
+      "action": "HOLD",
+      "symbol": "RBREW.CO",
+      "name": "RBREW.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Earnings +40% YoY med forward PE 10.6x — vækst til dyb value-pris",
+          "Dividend yield 3.92% giver downside cushion og støtter kursen",
+          "Nær 52u-lav (+3.5%) — historisk støttezone med potentiel bundformation"
+        ],
+        "bear": [
+          "Omsætningsvækst begrænset til +3.3% — engangseffekter kan forklare earnings-hop",
+          "Kursen er faldet 37.5% fra toppen — downtrend ikke brudt",
+          "Ikke handlebar via Saxo SIM"
+        ],
+        "verdict": "BULL",
+        "confidence": 6,
+        "summary": "Royal Unibrew tilbyder overbevisende value med 40% earnings-vækst og lav PE. Bunden ser tæt på, men manglende handelsmulighed begrænser relevansen.",
+        "key_risk": "Earnings-væksten er ikke omsætningsdrevet — risiko for regression til normalen",
+        "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
+      },
+      "id": 32,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-12",
+      "action": "HOLD",
+      "symbol": "NOVO-B.CO",
+      "name": "NOVO-B.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Earnings vækst +67% YoY med PE 14.1x — exceptionel vækst til rimelig pris",
+          "Omsætningsvækst +24% bekræfter at GLP-1-efterspørgslen (Ozempic/Wegovy) er strukturel",
+          "Dividend yield 5.48% giver stærk downside cushion og langsigtet attraktivitet",
+          "Kurs ned 45% fra toppen skaber mean-reversion-potentiale — historisk oversolgt"
+        ],
+        "bear": [
+          "Kursen er i et etableret downtrend (-45% fra 52u-high) — momentum er modvind",
+          "Konkurrence fra Eli Lilly (tirzepatid) og pipeline-risici kan presse markedsandele",
+          "Prisforhandlinger i USA og Europa kan komprimere marginerne fremover"
+        ],
+        "verdict": "BULL",
+        "confidence": 7,
+        "summary": "Novo Nordisk kombinerer exceptionel vækst (EPS +67%, omsætning +24%) med en attraktiv yield på 5.48% og PE under sektornormen. Drawdown på 45% er overdrevet ift. fundamentals — handlebar position er relevant.",
+        "key_risk": "GLP-1-konkurrence fra Eli Lilly og potentielle US-prisreguleringer kan udfordre vækstforventningerne",
+        "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
+      },
+      "id": 33,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-12",
+      "action": "HOLD",
+      "symbol": "COLO-B.CO",
+      "name": "COLO-B.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Dividend yield 5.71% er attraktiv og giver stabil afkastsandsynlighed",
+          "Earnings +34% YoY — solid vækst i medikal udstyrssegment",
+          "Forward PE 15.0x under sektornorm — en vis rabat"
+        ],
+        "bear": [
+          "Omsætningsvækst på kun +0.2% — earnings-vækst ikke understøttet af topline",
+          "Nær 52u-lav (+3.2%) med downward momentum — risiko for brud nedad",
+          "Ikke handlebar via Saxo SIM"
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "summary": "Coloplast har god yield og earnings-vækst men omsætningen er nærmest stagneret. Nær 52u-lav giver teknisk usikkerhed. NEUTRAL indtil omsætningsvækst genopstår.",
+        "key_risk": "Teknisk brud under 52u-lav kan accelerere fald — manglende topline-vækst giver ingen buffer",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 34,
+      "is_new": true
     }
   ],
   "stocks": [
