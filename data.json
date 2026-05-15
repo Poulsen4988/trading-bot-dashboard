@@ -21,7 +21,7 @@
         "value": 24731.2
       }
     ],
-    "last_updated": "2026-05-14 20:17 UTC"
+    "last_updated": "2026-05-15 07:45 UTC"
   },
   "history": [
     {
@@ -66,6 +66,10 @@
     },
     {
       "date": "2026-05-14",
+      "portfolio_value": 101674.9
+    },
+    {
+      "date": "2026-05-15",
       "portfolio_value": 101674.9
     }
   ],
@@ -1258,6 +1262,180 @@
         "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
       },
       "id": 44,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-15",
+      "action": "HOLD",
+      "symbol": "NNIT.CO",
+      "name": "NNIT.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Stærkt oversold signal: RSI-proxy 21, kursen kun +6.6% over 52-ugers lav — mean-reversion potentiale",
+          "Forward PE 9.0x er 50% under sektornormen (18x) — markant value-discount for et profitabelt IT-firma",
+          "Teknisk bounce-setup: -9.8% på 5 dage med lav volume (0.61x) antyder udmattelse hos sælgere"
+        ],
+        "bear": [
+          "Omsætningsvækst -5.7% viser strukturel modvind i kernemarked",
+          "-45.8% fra 52-ugers høj indikerer langvarig og systematisk sælgerpres",
+          "Ikke handlebar via kendte UIC-koder — kun relevant som markedsindikator"
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "summary": "NNIT er teknisk oversold og billig på PE, men declining revenue underminerer value-casen. Interessant bounce-kandidat men ikke handlebar — hold øje med 39 DKK som støtteniveau.",
+        "key_risk": "Fortsatte omsætningsfald kan retfærdiggøre den lave PE — valuefælde-risiko",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 45,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-15",
+      "action": "HOLD",
+      "symbol": "PNDORA.CO",
+      "name": "PNDORA.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Trailing PE 7.8x og forward PE 13.1x antyder dyb value efter 58% kursnedsæt fra peak",
+          "Dividendeafkast 4.26% giver indkomstcushion og begrænser downside",
+          "RSI-proxy 22 i stærkt oversold zone — teknisk bounce mulig efter -9.25% på 5 dage"
+        ],
+        "bear": [
+          "Earnings growth -10% og revenue growth -3.2% — grundlæggende forretning er i tilbagegang",
+          "-57.9% fra 52-ugers høj er et alarmerende signal om strukturelle problemer",
+          "Smykkesektor presset af forbrugsadfærd og handelstariffer — makro-modvind",
+          "Ikke handlebar via kendte UIC-koder"
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "summary": "Pandora ser billig ud på overfladen, men selve forretningens momentum er negativt. Oversold bounce er mulig men ikke en sikker satsning. Foretrækker at se Q2-indikationer inden stillingtagen.",
+        "key_risk": "Strukturel efterspørgselsnedgang i premium smykker kan forlænge nedtrenden yderligere",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 46,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-15",
+      "action": "HOLD",
+      "symbol": "RBREW.CO",
+      "name": "RBREW.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Earnings growth +40% YoY er exceptionel — stærk fundamentalvækst understøtter kurspotentiale",
+          "Forward PE 10.7x (41% discount til sector) kombineret med 40% vækst er sjælden kombination",
+          "Dividendeafkast 3.95% giver konkret downside-beskyttelse ved 52-ugers lav (+2.74%)",
+          "Defensiv forbrugssektor (øl/drikkevarer) er modstandsdygtig under makrousikkerhed"
+        ],
+        "bear": [
+          "Kurs kun 2.74% over 52-ugers lav — bryder den ned, er næste støtte ukendt",
+          "Royal Unibrew er ikke handlebar via kendte UIC-koder — kun til overvågning"
+        ],
+        "verdict": "BULL",
+        "confidence": 6,
+        "summary": "Royal Unibrew kombinerer sjældent: stærk fundamentalvækst (+40% earnings), dyb value-discount og defensiv forretningsmodel. Primær kandidat hvis UIC tilføjes. Bryder kursen under 394 DKK er casen ugyldig.",
+        "key_risk": "52-ugers lav-brud ville åbne for yderligere teknisk salg uden synlig bundstøtte",
+        "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
+      },
+      "id": 47,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-15",
+      "action": "HOLD",
+      "symbol": "NOVO-B.CO",
+      "name": "NOVO-B.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Positiv klinisk data fra OASIS 4 og STEP UP præsenteret på ECO2026: oral Wegovy (25mg) viser ~28% vægttab hos early responders — klart bedre end orforglipron",
+          "Q1 2026 beat med hævet helårsguidance — viser at GLP-1 vækstmotor er intakt trods Lilly-konkurrence",
+          "Earnings growth +67.1% YoY med forward PE 14.0x — enestående vækst/pris-kombination",
+          "Dividendeafkast 5.31% er rekordhøjt for Novo — signalerer kursen er presset unødigt ned",
+          "Kurs +2.12% på 5 dage viser begyndende momentum-vending fra bunden"
+        ],
+        "bear": [
+          "Eli Lilly (Tirzepatide/Mounjaro) intensiverer konkurrencen i obesity-segment med bredere indikationer",
+          "-45.8% fra 52-ugers høj: der er stadig et stort sælgeroverhaeng der kan limitere opsidepotentiale",
+          "Politisk risiko: US GLP-1 prispres fra Medicare/Medicaid-reformer kan ramme marginer"
+        ],
+        "verdict": "BULL",
+        "confidence": 7,
+        "summary": "Novo Nordisk er den stærkeste handlebare kandidat i dag. ECO2026-data bekræfter oral Wegovy differentiering, Q1 beat + hævet guidance, og 67% earnings growth med PE 14x er en overbevisende risk/reward. Handlebar via UIC 15629.",
+        "key_risk": "Lilly-konkurrence kan accelerere markedsandels-tab i injicerbart segment mens oral pipeline modnes",
+        "trade_reason": "Eksisterende position beholdes; ingen klar sell-trigger."
+      },
+      "id": 48,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-15",
+      "action": "HOLD",
+      "symbol": "DSV.CO",
+      "name": "DSV.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Analytikere sætter fair value til ~2.038 DKK vs. nuværende 1.591 DKK — 28% potentiel opsideog",
+          "Stærkt Q1 2026 med robust omsætningsvækst trods geopolitisk turbulens",
+          "Schenker-integration tilføjer massiv skala og synergier — midlertidig earnings-belastning",
+          "Momentum stærkt: +5.78% på 5 dage viser markedet prissætter integration-upside"
+        ],
+        "bear": [
+          "Earnings growth -42.9% skyldes primært Schenker-integrationomkostninger — men usikkert hvornår det normaliseres",
+          "Forward PE 18.4x er ved fuld sektornorm — ingen value-cushion ved skuffelse",
+          "Iran-krig forstyrrer globale logistikruter og øger operationelle omkostninger",
+          "Handlebar via UIC 3955 men med begrænset klar buy-trigger i dag"
+        ],
+        "verdict": "NEUTRAL",
+        "confidence": 5,
+        "summary": "DSV har en interessant opsidecase (28% til fair value) og god momentum, men earnings-usikkerhed fra Schenker gør timing svær. Foretrækker at afvente næste kvartalsrapport for bekræftelse af integrationsfremgang.",
+        "key_risk": "Schenker-integration tager længere tid end ventet og trækker earnings ned i H2 2026",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 49,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-15",
+      "action": "HOLD",
+      "symbol": "MAERSK-B.CO",
+      "name": "MAERSK-B.CO",
+      "shares": 0,
+      "price": null,
+      "value": 0,
+      "reasoning": {
+        "bull": [
+          "Dividendeafkast 3.27% giver minimal indkomststøtte",
+          "Kurs +2.83% i dag antyder kortvarig teknisk rebound"
+        ],
+        "bear": [
+          "Earnings growth -94.6% er katastrofal — selskabet mister næsten al indtjening",
+          "Negativ forward PE (-37.3x) indikerer forventet regnskabsmæssigt tab",
+          "Iran-krigen tilføjer $500M i månedlige ekstraomkostninger ifølge Maersk CEO",
+          "Hapag-Lloyd (konkurrent) rapporterer svagt kvartal med -18% liner shipping revenue",
+          "Svagere ocean freight-rater og Hormuz-omvejsrouter presser hele sektoren"
+        ],
+        "verdict": "BEAR",
+        "confidence": 7,
+        "summary": "Maersk er i en perfekt storm: Iran-krigen ødelægger operationelle marginer, ocean-rater falder, og earnings er i frit fald. Handlebar via UIC 6041 men HOLD/UNDGÅ er den rigtige beslutning.",
+        "key_risk": "Geopolitisk eskalering i Hormuz-strædet kan accelerere tab yderligere uden synlig botton",
+        "trade_reason": "Ingen stærk nok edge til at ændre porteføljen."
+      },
+      "id": 50,
       "is_new": true
     }
   ],
