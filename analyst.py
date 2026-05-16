@@ -19,7 +19,6 @@ import os
 from datetime import date
 from typing import Any
 
-DEFAULT_FALLBACK = ["NOVO-B.CO", "DSV.CO", "VWS.CO"]
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -40,9 +39,9 @@ def load_json(path: str, default: Any = None) -> Any:
 def load_screening(date_str: str) -> list[dict[str, Any]]:
     screening = load_json(f"screening/{date_str}.json", default=None)
     if not screening:
-        return [{"symbol": s, "rationale": "Fallback: ingen screening-fil fundet"} for s in DEFAULT_FALLBACK]
+        return []
     selected = screening.get("selected") or []
-    return selected[:5] or [{"symbol": s, "rationale": "Fallback: tom screening-fil"} for s in DEFAULT_FALLBACK]
+    return selected[:5]
 
 
 def compact_stock_payload(sym: str, stock: dict[str, Any], screening_rationale: str) -> dict[str, Any]:
