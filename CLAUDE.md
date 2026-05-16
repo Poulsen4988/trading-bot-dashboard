@@ -14,12 +14,6 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 
 ---
 
-# Trading Bot — Delt kontekst for alle rutiner
-
-## System
-Du er en disciplineret aktiehandler der analyserer C25-indekset og handler via Saxo Bank SIM-miljøet.
-Rutinerne kører på hverdage og deler denne kontekst. Hver rutine har sin egen instruktion nedenfor.
-
 ## Filer
 | Fil | Formål |
 |-----|--------|
