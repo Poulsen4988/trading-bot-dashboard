@@ -1,3 +1,19 @@
+# Trading Bot — Start her (ny session)
+
+## VIGTIGT: Filstruktur
+Al kode ligger **udelukkende på GitHub** — den lokale mappe indeholder kun denne fil.
+
+| Hvad | Hvor |
+|------|------|
+| GitHub repo | `Poulsen4988/trading-bot-dashboard` |
+| Dashboard | https://poulsen4988.github.io/trading-bot-dashboard/ |
+| Credentials (.env) | `C:\Users\andre\Mit drev\Claude\.env` |
+
+Læs altid filer via GitHub API. Skriv altid via GitHub API (Contents API med SHA).
+Brug DASHBOARD_PAT fra `.env` til autentificering.
+
+---
+
 # Trading Bot — Delt kontekst for alle rutiner
 
 ## System
@@ -18,11 +34,19 @@ Rutinerne kører på hverdage og deler denne kontekst. Hver rutine har sin egen 
 | `news.py` | Henter nyheder via yfinance → gemmer i `knowledge/<symbol>.json` |
 | `research.py` | Henter kurser + positioner + kontostatus |
 | `trade.py` | Udfører handel: `python trade.py <BUY\|SELL> <UIC> <ANTAL>` |
-| `sync_dashboard.py` | Pusher dashboard til GitHub Pages |
-| `journal.jsonl` | Handelslog — tilføj altid en linje efter beslutning |
+| `sync_dashboard.py` | Bygger stocks-data + pusher dashboard til GitHub Pages |
+| `watchlist.py` | Eneste kilde til C25-symboler — importer altid herfra |
 | `knowledge/<symbol>.json` | Videnbase per selskab (nyheder, regnskab, analyse) |
+| `prices/latest.json` | Seneste C25-priser — opdateres af fetch_data workflow (hver time) |
 | `screening/YYYY-MM-DD.json` | Screener-output — top-kandidater med bull/bear-tese |
-| `tokens.json` | OAuth tokens — må ikke slettes |
+| `data.json` | Dashboard-data (portfolio, trades, stocks) |
+
+## GitHub Actions
+`fetch_data.yml` kører hver time (07-16 UTC, hverdage):
+1. Henter priser → `prices/latest.json`
+2. Henter nyheder → `knowledge/*.json`
+3. Kører `sync_dashboard.py` → opdaterer `data.json` med priser + nyheder
+4. Committer og pusher til GitHub
 
 ## Handlebare aktier (kendte UIC-koder)
 | Navn | Saxo-symbol | UIC |
@@ -32,10 +56,11 @@ Rutinerne kører på hverdage og deler denne kontekst. Hver rutine har sin egen 
 | DSV | DSV:xcse | 3955 |
 
 ## Fuld C25-watchlist (til screening — ikke alle er handlebare)
-NOVO-B.CO, MAERSK-B.CO, MAERSK-A.CO, DSV.CO, ORSTED.CO, CARL-B.CO, PNDORA.CO,
-TRYG.CO, COLO-B.CO, GMAB.CO, GN.CO, DEMANT.CO, RBREW.CO, NDA-DK.CO, FLS.CO,
-VWS.CO, AMBU-B.CO, NSIS-B.CO, ROCK-B.CO, BAVA.CO, JYSK.CO, ISS.CO, SYDB.CO,
-NNIT.CO, CHR.CO
+Se `watchlist.py` på GitHub for autoritative liste.
+Aktuelle symboler: NOVO-B.CO, MAERSK-B.CO, MAERSK-A.CO, DSV.CO, ORSTED.CO,
+CARL-B.CO, PNDORA.CO, TRYG.CO, COLO-B.CO, GMAB.CO, GN.CO, DEMANT.CO,
+RBREW.CO, NDA-DK.CO, DANSKE.CO, FLS.CO, VWS.CO, AMBU-B.CO, NSIS-B.CO,
+ROCK-B.CO, BAVA.CO, JYSK.CO, ISS.CO, ALSYDB.CO, NNIT.CO
 
 ## Journal-format
 ```json
