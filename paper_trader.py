@@ -1,26 +1,20 @@
 """
-Trader Agent til virtuel paper trading.
+Paper Trader — dumb executor.
 
-Kør: python paper_trader.py
+Læser decisions/YYYY-MM-DD.json (AI-output fra handels-rutinen) og
+eksekverer beslutningerne mekanisk mod data.json.
 
-Læser analysis/YYYY-MM-DD.json og data.json, anvender paper-trading-regler,
-opdaterer data.json og printer beslutningerne.
+Ingen handelsregler her — al beslutningslogik ligger hos AI-rutinen.
 """
 from __future__ import annotations
 
-import json
+import sys
 from datetime import date, datetime, timezone
 from math import floor
 
 import github_store
 
 INITIAL_CASH = 100_000
-MAX_SINGLE_BUY_WEIGHT = 0.25
-MIN_CASH_AFTER_BUY = 2_500
-MIN_BUY_CONFIDENCE = 65
-MIN_SELL_CONFIDENCE = 60
-REVIEW_STOP_LOSS_PCT = -8.0
-MAX_BUYS_PER_DAY = 1
 
 
 def today():
@@ -29,19 +23,26 @@ def today():
 
 def default_data():
     return {
-        "portfolio": {"initial_cash": INITIAL_CASH, "cash": INITIAL_CASH, "currency": "DKK", "positions": []},
+        "portfolio": {
+            "initial_cash": INITIAL_CASH,
+            "cash": INITIAL_CASH,
+            "currency": "DKK",
+            "positions": [],
+        },
         "history": [],
         "trades": [],
     }
 
 
-def position_value(position, prices):
-    sym = position["symbol"]
-    price = prices.get(sym, {}).get("price") or position.get("current_price") or position.get("purchase_price")
+def position_value(position, prices=None):
+    price = None
+    if prices:
+        price = prices.get(position.get("symbol", ""), {}).get("price")
+    price = price or position.get("current_price") or position.get("purchase_price")
     return float(position.get("shares", 0)) * float(price or 0)
 
 
-def portfolio_value(data, prices):
+def portfolio_value(data, prices=None):
     p = data.get("portfolio", {})
     cash = float(p.get("cash", INITIAL_CASH))
     return cash + sum(position_value(pos, prices) for pos in p.get("positions", []))
@@ -52,13 +53,6 @@ def find_position(data, sym):
         if p.get("symbol") == sym:
             return p
     return None
-
-
-def pnl_pct(position, price):
-    purchase = float(position.get("purchase_price") or 0)
-    if not purchase or price is None:
-        return None
-    return (float(price) / purchase - 1) * 100
 
 
 def next_trade_id(data):
@@ -73,151 +67,176 @@ def add_trade(data, trade):
     data["trades"].append(trade)
 
 
-def reasoning_from_analysis(stock):
-    return {
-        "bull": stock.get("bull", []),
-        "bear": stock.get("bear", []),
-        "verdict": stock.get("verdict"),
-        "confidence": stock.get("confidence"),
-        "summary": stock.get("summary"),
-        "key_risk": stock.get("key_risk"),
-    }
+def execute_decisions(decisions_data, data):
+    date_str = decisions_data.get("date") or today()
+    decisions = decisions_data.get("decisions", [])
 
-
-def make_trade(date_str, action, sym, stock, shares, price, reason):
-    value = round((shares or 0) * (price or 0), 2)
-    r = reasoning_from_analysis(stock)
-    r["trade_reason"] = reason
-    return {
-        "date": date_str,
-        "action": action,
-        "symbol": sym,
-        "name": stock.get("name", sym),
-        "shares": shares,
-        "price": price,
-        "value": value,
-        "reasoning": r,
-    }
-
-
-def apply_decisions(analysis, data):
-    date_str = analysis.get("date") or today()
-    stocks = analysis.get("stocks", {})
-    prices = {sym: s for sym, s in stocks.items()}
     portfolio = data.setdefault("portfolio", {})
     portfolio.setdefault("initial_cash", INITIAL_CASH)
     portfolio.setdefault("cash", INITIAL_CASH)
     portfolio.setdefault("currency", "DKK")
     positions = portfolio.setdefault("positions", [])
 
-    total_value = portfolio_value(data, prices)
-    buys_done = 0
-    decisions = []
+    executed = []
 
-    # Først vurder alle analyserede aktier.
-    for sym, stock in stocks.items():
-        verdict = str(stock.get("verdict", "NEUTRAL")).upper()
-        confidence = int(stock.get("confidence") or 0)
-        price = stock.get("price")
+    for decision in decisions:
+        sym = decision.get("symbol")
+        if not sym:
+            continue
+        action = str(decision.get("action", "HOLD")).upper()
+        shares = int(decision.get("shares") or 0)
+        price = decision.get("price")
         price = float(price) if price else None
+        name = decision.get("name", sym)
+        investment_plan = decision.get("investment_plan", {})
+        reasoning_text = decision.get("reasoning", "")
+        confidence = decision.get("confidence")
+        bull = decision.get("bull", [])
+        bear = decision.get("bear", [])
+
         pos = find_position(data, sym)
-
-        action = "HOLD"
-        shares = 0
-        reason = "Ingen stærk nok edge til at ændre porteføljen."
-
-        if pos:
-            p = pnl_pct(pos, price)
-            if verdict == "BEAR" and confidence >= MIN_SELL_CONFIDENCE:
-                action = "SELL"
-                shares = int(pos.get("shares", 0))
-                reason = f"BEAR verdict med confidence {confidence}; thesis bør lukkes/reduceres."
-            elif p is not None and p <= REVIEW_STOP_LOSS_PCT and verdict != "BULL":
-                action = "SELL"
-                shares = int(pos.get("shares", 0))
-                reason = f"Positionen er nede {round(p,2)}% og analysen er ikke BULL."
-            else:
-                reason = "Eksisterende position beholdes; ingen klar sell-trigger."
-
-        elif verdict == "BULL" and confidence >= MIN_BUY_CONFIDENCE and buys_done < MAX_BUYS_PER_DAY and price:
-            cash = float(portfolio.get("cash", 0))
-            trade_budget = min(total_value * MAX_SINGLE_BUY_WEIGHT, max(0, cash - MIN_CASH_AFTER_BUY))
-            shares = floor(trade_budget / price) if price else 0
-            if shares > 0:
-                action = "BUY"
-                buys_done += 1
-                reason = f"BULL verdict med confidence {confidence}; position sizing maks {MAX_SINGLE_BUY_WEIGHT:.0%} af porteføljen."
-            else:
-                reason = "BULL case, men for lidt kontantbeholdning til ny position."
+        skip_reason = None
 
         if action == "BUY":
-            cost = round(shares * price, 2)
-            portfolio["cash"] = round(float(portfolio.get("cash", 0)) - cost, 2)
-            positions.append({
-                "symbol": sym,
-                "name": stock.get("name", sym),
-                "shares": shares,
-                "purchase_price": price,
-                "current_price": price,
-                "purchase_date": date_str,
-            })
-        elif action == "SELL" and pos:
-            proceeds = round(shares * price, 2) if price else 0
-            portfolio["cash"] = round(float(portfolio.get("cash", 0)) + proceeds, 2)
-            positions.remove(pos)
+            if not price or shares <= 0:
+                skip_reason = f"BUY afvist: manglende pris eller shares."
+                action = "HOLD"
+            else:
+                cost = round(shares * price, 2)
+                cash = float(portfolio.get("cash", 0))
+                if cost > cash:
+                    shares = floor(cash / price)
+                    if shares <= 0:
+                        skip_reason = f"BUY afvist: ikke nok kontanter ({cash:.0f} DKK)."
+                        action = "HOLD"
+                    else:
+                        cost = round(shares * price, 2)
 
-        trade = make_trade(date_str, action, sym, stock, shares, price, reason)
+                if action == "BUY":
+                    portfolio["cash"] = round(float(portfolio.get("cash", 0)) - cost, 2)
+                    if pos:
+                        old_shares = float(pos.get("shares", 0))
+                        old_price = float(pos.get("purchase_price", price))
+                        new_shares = old_shares + shares
+                        avg_price = round((old_shares * old_price + shares * price) / new_shares, 4)
+                        pos["shares"] = new_shares
+                        pos["purchase_price"] = avg_price
+                        pos["current_price"] = price
+                        pos["investment_plan"] = investment_plan
+                        pos["last_review"] = {
+                            "date": date_str,
+                            "reasoning": reasoning_text,
+                            "confidence": confidence,
+                        }
+                    else:
+                        positions.append({
+                            "symbol": sym,
+                            "name": name,
+                            "shares": shares,
+                            "purchase_price": price,
+                            "current_price": price,
+                            "purchase_date": date_str,
+                            "investment_plan": investment_plan,
+                            "last_review": {
+                                "date": date_str,
+                                "reasoning": reasoning_text,
+                                "confidence": confidence,
+                            },
+                        })
+
+        elif action == "SELL":
+            if not pos:
+                skip_reason = f"SELL afvist: ingen åben position i {sym}."
+                action = "HOLD"
+            else:
+                sell_price = price or pos.get("current_price") or pos.get("purchase_price")
+                sell_price = float(sell_price)
+                sell_shares = shares if 0 < shares <= int(pos.get("shares", 0)) else int(pos.get("shares", 0))
+                proceeds = round(sell_shares * sell_price, 2)
+                portfolio["cash"] = round(float(portfolio.get("cash", 0)) + proceeds, 2)
+                if sell_shares >= int(pos.get("shares", 0)):
+                    positions.remove(pos)
+                else:
+                    pos["shares"] = int(pos.get("shares", 0)) - sell_shares
+                    pos["current_price"] = sell_price
+                shares = sell_shares
+                price = sell_price
+
+        elif action == "HOLD":
+            if pos:
+                if price:
+                    pos["current_price"] = price
+                pos["last_review"] = {
+                    "date": date_str,
+                    "reasoning": reasoning_text,
+                    "confidence": confidence,
+                }
+                if investment_plan:
+                    pos["investment_plan"] = investment_plan
+
+        value = round((shares or 0) * (price or 0), 2)
+        trade = {
+            "date": date_str,
+            "action": action,
+            "symbol": sym,
+            "name": name,
+            "shares": shares,
+            "price": price,
+            "value": value,
+            "reasoning": {
+                "summary": skip_reason or reasoning_text,
+                "confidence": confidence,
+                "bull": bull,
+                "bear": bear,
+            },
+            "investment_plan": investment_plan,
+        }
         add_trade(data, trade)
-        decisions.append(trade)
+        executed.append(trade)
 
-    # Stop-loss review for positioner der ikke indgår i dagens analyse.
-    analyzed = set(stocks.keys())
-    for pos in list(positions):
-        sym = pos.get("symbol")
-        if sym in analyzed:
-            continue
-        price = pos.get("current_price") or pos.get("purchase_price")
-        p = pnl_pct(pos, price)
-        if p is not None and p <= REVIEW_STOP_LOSS_PCT:
-            shares = int(pos.get("shares", 0))
-            stock = {"name": pos.get("name", sym), "price": price, "verdict": "RISK_REVIEW", "confidence": 0, "summary": "Stop-loss review uden dagens dybanalyse."}
-            proceeds = round(shares * float(price), 2)
-            portfolio["cash"] = round(float(portfolio.get("cash", 0)) + proceeds, 2)
-            positions.remove(pos)
-            trade = make_trade(date_str, "SELL", sym, stock, shares, float(price), f"Ikke analyseret i dag og nede {round(p,2)}%.")
-            add_trade(data, trade)
-            decisions.append(trade)
-
-    # Opdater aktuelle priser for positioner der blev analyseret.
-    for pos in positions:
-        sym = pos.get("symbol")
-        if sym in stocks and stocks[sym].get("price"):
-            pos["current_price"] = stocks[sym]["price"]
-
-    new_total = round(portfolio_value(data, prices), 2)
+    # Opdater historik
+    prices_map = {
+        d.get("symbol"): {"price": d.get("price")}
+        for d in decisions
+        if d.get("price")
+    }
+    new_total = round(portfolio_value(data, prices_map), 2)
     history = data.setdefault("history", [])
     history = [h for h in history if h.get("date") != date_str]
     history.append({"date": date_str, "portfolio_value": new_total})
     data["history"] = history
     portfolio["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    return decisions, new_total
+    return executed, new_total
 
 
 def main():
     date_str = today()
-    analysis, _ = github_store.get_json(f"analysis/{date_str}.json", default=None)
-    if not analysis:
-        raise SystemExit(f"Ingen analysis/{date_str}.json fundet. Kør analyst-routinen først.")
+
+    decisions_data, _ = github_store.get_json(f"decisions/{date_str}.json", default=None)
+    if not decisions_data:
+        raise SystemExit(
+            f"Ingen decisions/{date_str}.json fundet. "
+            "Handels-rutinen skal skrive denne fil, før paper_trader.py køres."
+        )
 
     data, _ = github_store.get_json("data.json", default=default_data())
-    decisions, new_total = apply_decisions(analysis, data)
+    executed, new_total = execute_decisions(decisions_data, data)
     github_store.put_json("data.json", data, f"Paper trades {date_str}")
 
-    print("=== PAPER TRADE SUMMARY ===")
-    for d in decisions:
-        print(f"{d['action']} {d['symbol']} shares={d['shares']} price={d['price']} value={d['value']} — {d['reasoning'].get('trade_reason')}")
-    print(f"Ny porteføljeværdi: {new_total} DKK")
+    print(f"=== PAPER TRADE SUMMARY {date_str} ===")
+    for t in executed:
+        plan = t.get("investment_plan", {})
+        print(
+            f"{t['action']:4} {t['symbol']:14} "
+            f"shares={t['shares']} price={t['price']} value={t['value']} DKK"
+        )
+        if plan.get("thesis"):
+            print(f"     Thesis: {plan['thesis'][:120]}")
+        if plan.get("stop_loss"):
+            print(f"     Stop-loss: {plan['stop_loss']} | Target: {plan.get('price_target', '?')} | Tidshorisont: {plan.get('timeframe', '?')}")
+    print(f"
+Ny porteføljeværdi: {new_total} DKK")
 
 
 if __name__ == "__main__":
