@@ -20,6 +20,7 @@ C25 = [
     {"yf": "DEMANT.CO",   "saxo": "DEMANT:xcse",    "uic": None,  "name": "Demant"},
     {"yf": "RBREW.CO",    "saxo": "RBREW:xcse",     "uic": None,  "name": "Royal Unibrew"},
     {"yf": "NDA-DK.CO",   "saxo": "NDA-DK:xcse",    "uic": None,  "name": "Nordea Bank"},
+    {"yf": "DANSKE.CO",   "saxo": "DANSKE:xcse",    "uic": None,  "name": "Danske Bank"},
     {"yf": "FLS.CO",      "saxo": "FLS:xcse",       "uic": None,  "name": "FLSmidth"},
     {"yf": "VWS.CO",      "saxo": "VWS:xcse",       "uic": None,  "name": "Vestas Wind Systems"},
     {"yf": "AMBU-B.CO",   "saxo": "AMBUb:xcse",     "uic": None,  "name": "Ambu B"},
