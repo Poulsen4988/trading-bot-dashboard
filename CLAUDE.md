@@ -17,15 +17,18 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 ## Filer
 | Fil | Formål |
 |-----|--------|
-| `scripts/fetch_prices.py` | Henter live C25-kurser via yfinance → `prices/latest.json` |
-| `news.py` | Henter nyheder via yfinance → gemmer i `knowledge/<symbol>.json` |
+| `watchlist.py` | Eneste kilde til C25-symboler — importer altid herfra |
+| `screener.py` | Screener alle C25-aktier → `screening/DATO.json` |
+| `analyst.py` | Printer top-kandidater + priser til stdout |
+| `paper_trader.py` | Læser analyse, anvender handelsregler, opdaterer `data.json` |
 | `research.py` | Henter kurser + positioner + kontostatus |
 | `trade.py` | Udfører handel: `python trade.py <BUY\|SELL> <UIC> <ANTAL>` |
 | `sync_dashboard.py` | Bygger stocks-data + pusher dashboard til GitHub Pages |
-| `watchlist.py` | Eneste kilde til C25-symboler — importer altid herfra |
+| `github_store.py` | Al GitHub-kommunikation (read/write) — bruges af rutiner |
+| `prices/latest.json` | C25-priser — opdateres automatisk af GitHub Actions |
 | `knowledge/<symbol>.json` | Videnbase per selskab (nyheder, regnskab, analyse) |
-| `prices/latest.json` | Seneste C25-priser — opdateres af fetch_data workflow (hver time) |
-| `screening/YYYY-MM-DD.json` | Screener-output — top-kandidater med bull/bear-tese |
+| `screening/DATO.json` | Screener-output fra `trading-bot-analyse` |
+| `analysis/DATO.json` | Bull/bear-analyse — input til `paper_trader.py` |
 | `data.json` | Dashboard-data (portfolio, trades, stocks) |
 
 ## Claude Code Routines
