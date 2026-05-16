@@ -28,6 +28,17 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 | `screening/YYYY-MM-DD.json` | Screener-output — top-kandidater med bull/bear-tese |
 | `data.json` | Dashboard-data (portfolio, trades, stocks) |
 
+## Claude Code Routines
+Kører via Claude Code desktop-app (Routines). Kræver ikke PC — kører på Anthropic-infrastruktur.
+
+| Rutine | Tid (CET) | Job |
+|--------|-----------|-----|
+| Trading Bot - Screener | 08:45 | Screener C25, gem `screening/YYYY-MM-DD.json` |
+| Trading Bot - Deep Analyst | 09:00 | Analyser screening, gem `analysis/YYYY-MM-DD.json` |
+| Trading Bot - Handel | 09:45 | Læs analyse, udfør BUY/SELL/HOLD, opdater `data.json` |
+
+Rutinerne bruger DASHBOARD_PAT (sat som GitHub Secret) til at læse/skrive GitHub-filer.
+
 ## GitHub Actions
 `fetch_data.yml` kører hver time (07-16 UTC, hverdage):
 1. Henter priser → `prices/latest.json`
