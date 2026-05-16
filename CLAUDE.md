@@ -31,12 +31,14 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 ## Claude Code Routines
 Kører via Claude Code desktop-app (Scheduled Tasks). Kræver ikke PC — kører på Anthropic-infrastruktur.
 
-| Task ID | Tid (CET) | Cron |
-|---------|-----------|------|
-| `trading-bot-analyse` | ~09:34 | `30 9 * * 1-5` |
-| `trading-bot-handel` | ~10:39 | `30 10 * * 1-5` |
+| Task ID | Tid (CET) | Job |
+|---------|-----------|-----|
+| `trading-bot-analyse` | ~09:34 | Kører `screener.py` → `screening/DATO.json`, derefter `analyst.py` + bull/bear-analyse → `analysis/DATO.json` |
+| `trading-bot-handel` | ~10:39 | Kører `paper_trader.py` → læser `analysis/DATO.json`, anvender handelsregler, opdaterer `data.json` |
 
-Rutinerne bruger DASHBOARD_PAT (sat som GitHub Secret) til at læse/skrive GitHub-filer.
+**Handelsregler (paper_trader.py):** BULL confidence ≥ 65 → KØB, BEAR confidence ≥ 60 → SÆLG, stop-loss -8%, max 1 køb/dag, max 3 åbne positioner.
+
+**Vigtigt:** Rutinerne bruger `github_store.py` til al GitHub-kommunikation — aldrig git-kommandoer. Kør aldrig `fetch_prices.py` eller `news.py` fra rutiner — GitHub Actions håndterer det.
 
 ## GitHub Actions
 `fetch_data.yml` kører hver time (07-16 UTC, hverdage):
