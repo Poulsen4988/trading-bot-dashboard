@@ -29,13 +29,12 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 | `data.json` | Dashboard-data (portfolio, trades, stocks) |
 
 ## Claude Code Routines
-Kører via Claude Code desktop-app (Routines). Kræver ikke PC — kører på Anthropic-infrastruktur.
+Kører via Claude Code desktop-app (Scheduled Tasks). Kræver ikke PC — kører på Anthropic-infrastruktur.
 
-| Rutine | Tid (CET) | Job |
-|--------|-----------|-----|
-| Trading Bot - Screener | 08:45 | Screener C25, gem `screening/YYYY-MM-DD.json` |
-| Trading Bot - Deep Analyst | 09:00 | Analyser screening, gem `analysis/YYYY-MM-DD.json` |
-| Trading Bot - Handel | 09:45 | Læs analyse, udfør BUY/SELL/HOLD, opdater `data.json` |
+| Task ID | Tid (CET) | Cron |
+|---------|-----------|------|
+| `trading-bot-analyse` | ~09:34 | `30 9 * * 1-5` |
+| `trading-bot-handel` | ~10:39 | `30 10 * * 1-5` |
 
 Rutinerne bruger DASHBOARD_PAT (sat som GitHub Secret) til at læse/skrive GitHub-filer.
 
