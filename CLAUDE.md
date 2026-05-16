@@ -55,12 +55,8 @@ Rutinerne kører på hverdage og deler denne kontekst. Hver rutine har sin egen 
 | A.P. Møller-Mærsk B | MAERSKb:xcse | 6041 |
 | DSV | DSV:xcse | 3955 |
 
-## Fuld C25-watchlist (til screening — ikke alle er handlebare)
-Se `watchlist.py` på GitHub for autoritative liste.
-Aktuelle symboler: NOVO-B.CO, MAERSK-B.CO, MAERSK-A.CO, DSV.CO, ORSTED.CO,
-CARL-B.CO, PNDORA.CO, TRYG.CO, COLO-B.CO, GMAB.CO, GN.CO, DEMANT.CO,
-RBREW.CO, NDA-DK.CO, DANSKE.CO, FLS.CO, VWS.CO, AMBU-B.CO, NSIS-B.CO,
-ROCK-B.CO, BAVA.CO, JYSK.CO, ISS.CO, ALSYDB.CO, NNIT.CO
+## Fuld C25-watchlist
+Se `watchlist.py` på GitHub — eneste autoritative kilde.
 
 ## Journal-format
 ```json
