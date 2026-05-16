@@ -28,6 +28,7 @@ C25 = [
     {"yf": "BAVA.CO",     "saxo": "BAVA:xcse",      "uic": None,  "name": "Bavarian Nordic"},
     {"yf": "JYSK.CO",     "saxo": "JYSK:xcse",      "uic": None,  "name": "Jyske Bank"},
     {"yf": "ISS.CO",      "saxo": "ISS:xcse",       "uic": None,  "name": "ISS"},
+    {"yf": "ALSYDB.CO",   "saxo": "SYDB:xcse",      "uic": None,  "name": "Sydbank"},
     {"yf": "NNIT.CO",     "saxo": "NNIT:xcse",      "uic": None,  "name": "NNIT"},
 ]
 
