@@ -28,9 +28,7 @@ C25 = [
     {"yf": "BAVA.CO",     "saxo": "BAVA:xcse",      "uic": None,  "name": "Bavarian Nordic"},
     {"yf": "JYSK.CO",     "saxo": "JYSK:xcse",      "uic": None,  "name": "Jyske Bank"},
     {"yf": "ISS.CO",      "saxo": "ISS:xcse",       "uic": None,  "name": "ISS"},
-    {"yf": "SYDB.CO",     "saxo": "SYDB:xcse",      "uic": None,  "name": "Sydbank"},
     {"yf": "NNIT.CO",     "saxo": "NNIT:xcse",      "uic": None,  "name": "NNIT"},
-    {"yf": "CHR.CO",      "saxo": "CHR:xcse",       "uic": None,  "name": "Chr. Hansen"},
 ]
 
 # Bagudkompatibel liste til eksisterende kode — kun aktier med kendte UICs
