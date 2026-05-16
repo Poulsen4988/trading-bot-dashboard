@@ -48,14 +48,7 @@ Rutinerne kører på hverdage og deler denne kontekst. Hver rutine har sin egen 
 3. Kører `sync_dashboard.py` → opdaterer `data.json` med priser + nyheder
 4. Committer og pusher til GitHub
 
-## Handlebare aktier (kendte UIC-koder)
-| Navn | Saxo-symbol | UIC |
-|------|-------------|-----|
-| Novo Nordisk B | NOVOb:xcse | 15629 |
-| A.P. Møller-Mærsk B | MAERSKb:xcse | 6041 |
-| DSV | DSV:xcse | 3955 |
-
-## Fuld C25-watchlist
+## C25-watchlist
 Se `watchlist.py` på GitHub — eneste autoritative kilde.
 
 ## Journal-format
