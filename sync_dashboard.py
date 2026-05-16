@@ -123,6 +123,50 @@ def update_history(data):
     portfolio["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
 
+def build_stocks():
+    try:
+        from watchlist import C25
+        import knowledge_manager as km
+    except ImportError:
+        return []
+
+    prices_file = os.path.join(SCRIPT_DIR, "prices", "latest.json")
+    raw = load_json_file(prices_file, {})
+    prices = raw.get("stocks", {})
+    prices_age = raw.get("fetched_at")
+
+    stocks = []
+    for s in C25:
+        yf_sym = s["yf"]
+        saxo = s["saxo"]
+        pdata = prices.get(yf_sym, {})
+        kb = km.load(saxo) or {}
+        stocks.append({
+            "symbol": saxo,
+            "name": s["name"],
+            "uic": s["uic"],
+            "tradeable": s["uic"] is not None,
+            "price": pdata.get("price"),
+            "pct_1d": pdata.get("pct_1d"),
+            "pct_5d": pdata.get("pct_5d"),
+            "pe_forward": pdata.get("pe_forward"),
+            "pe_trailing": pdata.get("pe_trailing"),
+            "div_yield": pdata.get("div_yield"),
+            "volume_ratio": pdata.get("volume_ratio"),
+            "pct_from_52w_high": pdata.get("pct_from_52w_high"),
+            "pct_from_52w_low": pdata.get("pct_from_52w_low"),
+            "revenue_growth": pdata.get("revenue_growth"),
+            "earnings_growth": pdata.get("earnings_growth"),
+            "overview": kb.get("overview", ""),
+            "fin_summary": kb.get("financials", {}).get("summary", ""),
+            "news": kb.get("news", [])[:8],
+            "prices_age": prices_age,
+        })
+
+    print(f"[sync_dashboard] Stocks bygget: {len(stocks)} aktier, prices_age={prices_age}")
+    return stocks
+
+
 def fetch_remote_sha():
     if not GITHUB_PAT:
         return None
@@ -174,6 +218,7 @@ def sync():
         "portfolio": {"initial_cash": INITIAL_CASH, "cash": INITIAL_CASH, "currency": "DKK", "positions": []},
         "history": [],
         "trades": [],
+        "stocks": [],
     })
 
     trades = data.setdefault("trades", [])
@@ -194,6 +239,7 @@ def sync():
 
     mark_latest_new(trades)
     update_history(data)
+    data["stocks"] = build_stocks()
 
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
