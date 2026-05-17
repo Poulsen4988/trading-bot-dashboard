@@ -212,7 +212,7 @@ def main() -> None:
     out["sector_exposure_pct"] = {k: round(v, 1) for k, v in sector_weights.items()}
 
     out["instructions"] = (
-        "Du skal skrive decisions/{date}.json via github_store med dine beslutninger. "
+        f"Du skal skrive decisions/{date_str}.json via github_store med dine beslutninger. "
         "Format: {date, market_summary, decisions: [{symbol, name, action, shares, price, confidence, "
         "reasoning, bull, bear, investment_plan: {term, basis, thesis, price_target, stop_loss, "
         "expected_return_pct, timeframe, exit_conditions}}]}. "
@@ -220,7 +220,7 @@ def main() -> None:
         "sector_exposure_pct viser nuværende sektorfordeling — vurder selv koncentrationsrisiko. "
         "Alle åbne positioner SKAL have en entry (HOLD eller SELL). "
         "Derefter køres python paper_trader.py."
-    ).format(date=date_str)
+    )
 
     print(json.dumps(out, ensure_ascii=False, indent=2))
 
