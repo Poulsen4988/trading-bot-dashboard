@@ -418,6 +418,7 @@ function renderStockTab() {
       ['Pris', fmtPrice(s.price), ''],
       ['Daglig ændring', fmtPct(s.pct_1d, false), s.pct_1d != null ? (s.pct_1d >= 0 ? 'positive' : 'negative') : ''],
       ['5-dages ændring', fmtPct(s.pct_5d, false), s.pct_5d != null ? (s.pct_5d >= 0 ? 'positive' : 'negative') : ''],
+      ['20-dages ændring', fmtPct(s.pct_20d, false), s.pct_20d != null ? (s.pct_20d >= 0 ? 'positive' : 'negative') : ''],
       ['P/E (forward)', fmtNum(s.pe_forward), ''],
       ['P/E (trailing)', fmtNum(s.pe_trailing), ''],
       ['Udbytteafkast', s.div_yield != null ? (s.div_yield * 100).toFixed(2) + '%' : '—', ''],
@@ -426,6 +427,9 @@ function renderStockTab() {
       ['Over 52-ugers lav', s.pct_from_52w_low != null ? '+' + s.pct_from_52w_low.toFixed(2) + '%' : '—', 'positive'],
       ['Omsætningsvækst', s.revenue_growth != null ? (s.revenue_growth * 100).toFixed(1) + '%' : '—', s.revenue_growth != null ? (s.revenue_growth >= 0 ? 'positive' : 'negative') : ''],
       ['Indtjeningsvækst', s.earnings_growth != null ? (s.earnings_growth * 100).toFixed(1) + '%' : '—', s.earnings_growth != null ? (s.earnings_growth >= 0 ? 'positive' : 'negative') : ''],
+      ['Sektor', s.sector || '—', ''],
+      ['Industri', s.industry || '—', ''],
+      ['Markedsværdi', s.market_cap != null ? (s.market_cap / 1e9).toFixed(1) + ' mia.' : '—', ''],
     ];
 
     let html = '<table class="stats-table">';
@@ -433,6 +437,35 @@ function renderStockTab() {
       html += `<tr><td class="st-label">${label}</td><td class="st-value ${cls}">${value}</td></tr>`;
     }
     html += '</table>';
+
+    if (s.technical) {
+      const t = s.technical;
+      const trows = [
+        ['Screener-score', fmtNum(t.score, 1)],
+        ['RSI', fmtNum(t.rsi_proxy, 0)],
+        ['Stokastisk', fmtNum(t.stoch_proxy, 0)],
+        ['Bollinger-position', t.bb_position != null ? fmtNum(t.bb_position, 0) + '%' : '—'],
+        ['Pris vs SMA50', t.sma50_vs_price != null ? fmtPct(t.sma50_vs_price, false) : '—'],
+        ['Pris vs SMA200', t.sma200_vs_price != null ? fmtPct(t.sma200_vs_price, false) : '—'],
+        ['MACD-linje', fmtNum(t.macd_line, 3)],
+        ['ATR', fmtNum(t.atr, 2)],
+        ['Momentum-divergens', t.momentum_divergence != null ? fmtNum(t.momentum_divergence, 1) + ' pp' : '—'],
+      ];
+      html += `<div class="text-block"><div class="text-block-lbl">Tekniske indikatorer${t.screening_date ? ' (screener ' + t.screening_date + ')' : ''}</div><table class="stats-table">`;
+      for (const [label, value] of trows) {
+        html += `<tr><td class="st-label">${label}</td><td class="st-value">${value}</td></tr>`;
+      }
+      html += '</table>';
+      if (t.signals && t.signals.length) {
+        html += '<div class="text-block-body" style="margin-top:8px">' + t.signals.map(x => '• ' + x).join('<br>') + '</div>';
+      }
+      if (t.rationale) {
+        html += '<div class="text-block-body" style="margin-top:8px;font-style:italic">' + t.rationale + '</div>';
+      }
+      html += '</div>';
+    } else {
+      html += '<div class="text-block"><div class="text-block-body" style="color:#888">Ikke blandt screenerens udvalg ved seneste kørsel — ingen dybe tekniske indikatorer beregnet.</div></div>';
+    }
 
     if (s.overview) {
       html += `<div class="text-block"><div class="text-block-lbl">Om selskabet</div><div class="text-block-body">${s.overview}</div></div>`;
