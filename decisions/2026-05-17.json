@@ -1,0 +1,74 @@
+{
+  "date": "2026-05-17",
+  "market_summary": "C25-screeneren er tynd i dag: kun Novo Nordisk er BULL, men teknisk overbought (RSI 79,5), mens resten af feltet (Royal Unibrew, Pandora, NNIT, Coloplast) ligger i tekniske nedtrende uden klare katalysatorer. Vi indtager en defensiv position: afvikler den brudte RBREW-case, hæver kontantandelen og åbner ingen nye positioner indtil et mere attraktivt indgangspunkt opstår.",
+  "decisions": [
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 299.2,
+      "confidence": 70,
+      "reasoning": "Positionen er +12,8% i gevinst og er dagens eneste BULL-aktie. Fundamentalt deep value: forward PE 14x (44% rabat til Healthcare-norm), +67% earnings-vækst YoY og 5,3% udbytte giver solid downside-buffer. Teknisk er aktien dog kortsigtet overbought (RSI 79,5, Stoch 81,1, BB 86,2) og møder modstand i SMA200 (-2,7% under). Momentum-divergens (-16,7pp) signalerer aftagende kortsigtet fremdrift. GLP-1-konkurrence (Eli Lilly retatrutide, Kailera-IPO) er en reel langsigtet risiko, men bryder ikke casen. Vi fastholder hele beholdningen men tilføjer IKKE på overbought-niveau — afventer pullback mod SMA50 (~250) som mere attraktiv tilføjelse.",
+      "bull": [
+        "Forward PE 14x — 44% rabat til Healthcare-sektornorm trods +67% earnings-vækst YoY.",
+        "Stærk 20-dages momentum (+18,8%) og positiv MACD (13,3) bekræfter ny opadgående trend.",
+        "Pris +19,3% over SMA50, som nu fungerer som dynamisk support.",
+        "5,31% udbytte giver downside-buffer og institutionelt købsincitament."
+      ],
+      "bear": [
+        "RSI 79,5 og Stoch 81,1 er overbought — kortsigtet korrektion er sandsynlig.",
+        "SMA200 (~307,6) udgør nær modstand; afvisning kan sende aktien tilbage mod SMA50.",
+        "Momentum-divergens -16,7pp signalerer aftagende kortsigtet fremdrift.",
+        "GLP-1-konkurrence fra Eli Lilly og nye spillere presser den langsigtede markedsandel."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Novo Nordisk er en deep-value GLP-1-leder i bedring efter et -44% drawdown. Forward PE 14x med +67% earnings-vækst og 5,3% udbytte. Stærk 20d-momentum og pris over SMA50 bekræfter trendskifte. Vi holder gennem recovery mod og forbi SMA200.",
+        "price_target": 350,
+        "stop_loss": 248,
+        "expected_return_pct": 17,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under SMA50/stop-loss 248 (trendbrud), ved fundamental forværring i GLP-1-konkurrenceposition (guidance-cut eller markant negativ konkurrent-katalysator), eller tag profit nær 350 hvis SMA200 afvises med tab af momentum."
+      }
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "action": "SELL",
+      "shares": 58,
+      "price": 405.4,
+      "confidence": 78,
+      "reasoning": "Vi afvikler hele positionen. Casen er fundamentalt brudt: tabet af PepsiCo-aftapnings- og distributionsaftalen til Carlsberg svækker Royal Unibrews position i værdikæden strukturelt. Dagens verdict er BEAR med feltets højeste confidence (7), og alle tekniske indikatorer peger nedad: MACD -27,2 og accelererende, pris -18,1% under SMA50 og -20,3% under SMA200, 20d-momentum -22,9%. Aktien ligger kun +2,7% over 52-ugers lav (394,6) — et brud herunder åbner for yderligere -9% mod 360-370. Lav volumen (0,42x) viser ingen institutionel købsinteresse. PE-rabatten er reel, men en aktie kan forblive billig længe i en nedtrend — dette er et klassisk value-trap-scenarie. Bedre at realisere det begrænsede tab (-4,9%) og frigøre kapital end at risikere teknisk kapitulation.",
+      "bull": [
+        "Forward PE 10,7x (37% rabat til sektornorm) og +40% earnings-vækst er fundamentalt attraktivt — hvis trenden vender.",
+        "3,95% udbytte giver yield-støtte ved fortsat kursafmatning.",
+        "Momentum-divergens +20,5pp kan antyde at sælgerne træthed."
+      ],
+      "bear": [
+        "Tabt PepsiCo-aftale til Carlsberg svækker positionen i værdikæden strukturelt — casen er brudt.",
+        "MACD -27,2 dybt negativ og accelererende nedad uden tegn på vending.",
+        "Pris -18,1% under SMA50 og -20,3% under SMA200 — tung modstand overhead.",
+        "Kun +2,7% over 52-ugers lav (394,6); brud herunder åbner for yderligere -9%.",
+        "Lav volumen (0,42x) viser ingen institutionel købsinteresse."
+      ],
+      "investment_plan": {
+        "term": "short",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Exit. Den oprindelige value-thesis er brudt af tabet af PepsiCo-aftalen, og teknisk er aktien i en bekræftet nedtrend nær 52-ugers lav uden katalysator. Kapital frigøres til mere attraktive muligheder.",
+        "price_target": 0,
+        "stop_loss": 0,
+        "expected_return_pct": 0,
+        "timeframe": "lukket",
+        "exit_conditions": "Position lukkes i dag. Revurder kun ny indgang ved volumen-bekræftet bund, MACD-vending og en konkret katalysator (stærke Q-tal eller strategisk modtræk på den tabte distributionsaftale)."
+      }
+    }
+  ]
+}
