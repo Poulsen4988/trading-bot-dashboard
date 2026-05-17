@@ -300,14 +300,8 @@ def score_stock(sym, data, ind):
     eg          = data.get("earnings_growth")
     rg          = data.get("revenue_growth")
     sector      = data.get("sector", "")
-    raw_dy = data.get("div_yield") or 0
-    # Sanitize: yfinance sometimes returns dividend amount (not yield); cap at 30%
-    if raw_dy and raw_dy <= 1.0:
-        div_yield = raw_dy * 100   # decimal → percent
-    elif raw_dy and raw_dy <= 30.0:
-        div_yield = raw_dy         # already in percent
-    else:
-        div_yield = 0              # bogus value (e.g. annual dividend in currency)
+    # div_yield er allerede normaliseret til procent i fetch_prices.py.
+    div_yield = data.get("div_yield") or 0
 
     # 1. Volume anomaly — max 30 pts
     if vol_ratio >= 2.5:
