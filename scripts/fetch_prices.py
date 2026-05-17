@@ -37,6 +37,20 @@ for s in C25:
         lo52 = info.get("fiftyTwoWeekLow")
         avg_vol = info.get("averageVolume")
         vol = info.get("regularMarketVolume")
+
+        # Normaliser udbytteafkast til procent ÉN gang her — eneste sandhed.
+        # yfinance returnerer enten decimal (0.0153) eller procent (1.53);
+        # >30 antages at være et bogus dividendbeløb.
+        raw_dy = info.get("dividendYield")
+        if raw_dy is None:
+            div_yield = None
+        elif raw_dy <= 1.0:
+            div_yield = round(raw_dy * 100, 2)
+        elif raw_dy <= 30.0:
+            div_yield = round(raw_dy, 2)
+        else:
+            div_yield = None
+
         stocks[sym] = {
             "price": round(price, 2) if price is not None else None,
             "pct_1d": round(pct_1d, 2) if pct_1d is not None else None,
@@ -44,7 +58,7 @@ for s in C25:
             "pct_20d": round(pct_20d, 2) if pct_20d is not None else None,
             "pe_forward": info.get("forwardPE"),
             "pe_trailing": info.get("trailingPE"),
-            "div_yield": info.get("dividendYield"),
+            "div_yield": div_yield,
             "volume_ratio": round(vol / avg_vol, 2) if vol and avg_vol else None,
             "52w_high": hi52,
             "52w_low": lo52,
