@@ -133,6 +133,15 @@ def load_latest_screening():
     return by_sym, raw.get("date")
 
 
+def load_latest_analysis():
+    """Returnerer agent-analyse for seneste analysis-fil, keyet på yf-symbol."""
+    files = sorted(glob.glob(os.path.join(SCRIPT_DIR, "analysis", "*.json")))
+    if not files:
+        return {}, None
+    raw = load_json_file(files[-1], {})
+    return raw.get("stocks", {}), raw.get("date")
+
+
 def build_stocks():
     try:
         from watchlist import C25
@@ -145,6 +154,7 @@ def build_stocks():
     prices = raw.get("stocks", {})
     prices_age = raw.get("fetched_at")
     screening, screening_date = load_latest_screening()
+    analysis_map, analysis_date = load_latest_analysis()
 
     stocks = []
     for s in C25:
@@ -152,6 +162,19 @@ def build_stocks():
         saxo = s["saxo"]
         pdata = prices.get(yf_sym, {})
         kb = km.load(saxo) or {}
+
+        adata = analysis_map.get(yf_sym)
+        analysis = None
+        if adata:
+            analysis = {
+                "analysis_date": analysis_date,
+                "verdict": adata.get("verdict"),
+                "confidence": adata.get("confidence"),
+                "bull": adata.get("bull", []),
+                "bear": adata.get("bear", []),
+                "summary": adata.get("summary"),
+                "key_risk": adata.get("key_risk"),
+            }
 
         scr = screening.get(yf_sym)
         technical = None
@@ -196,6 +219,7 @@ def build_stocks():
             "fin_summary": kb.get("financials", {}).get("summary", ""),
             "news": kb.get("news", [])[:8],
             "technical": technical,
+            "analysis": analysis,
             "prices_age": prices_age,
         })
 
