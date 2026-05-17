@@ -430,7 +430,7 @@ function renderStockTab() {
       ['Indtjeningsvækst', s.earnings_growth != null ? (s.earnings_growth * 100).toFixed(1) + '%' : '—', s.earnings_growth != null ? (s.earnings_growth >= 0 ? 'positive' : 'negative') : '', 'Vækst i indtjening (overskud) år-til-år. Positiv = stigende profitabilitet; negativ = faldende.'],
       ['Sektor', s.sector || '—', '', 'Selskabets overordnede branche. Bruges til at sammenligne værdiansættelse mod sektornormen.'],
       ['Industri', s.industry || '—', '', 'Selskabets specifikke industrigruppe inden for sektoren.'],
-      ['Markedsværdi', s.market_cap != null ? (s.market_cap / 1e9).toFixed(1) + ' mia.' : '—', '', 'Samlet markedsværdi af alle aktier (kurs × antal aktier). Stor = etableret og typisk mere stabil; lille = ofte mere volatil.'],
+      ['Markedsværdi', s.market_cap != null ? (s.market_cap / 1e9).toFixed(1) + ' mia. DKK' : '—', '', 'Samlet markedsværdi af alle aktier (kurs × antal aktier), opgjort i DKK. Stor = etableret og typisk mere stabil; lille = ofte mere volatil.'],
     ];
 
     let html = '<table class="stats-table">';
