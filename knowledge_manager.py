@@ -74,20 +74,28 @@ def add_news(symbol, name, articles):
         "symbol": symbol, "name": name,
         "overview": "", "financials": {}, "news": [],
     }
-    existing = {n["title"] for n in kb.get("news", [])}
+    by_title = {n["title"]: n for n in kb.get("news", [])}
     added = 0
     for a in articles:
         title = a.get("title", "")
-        if title and title not in existing:
-            kb["news"].append({
-                "date": a.get("date", datetime.now(timezone.utc).isoformat()),
-                "title": title,
-                "source": a.get("source", ""),
-                "summary": (a.get("description") or "")[:400],
-                "url": a.get("url", ""),
-            })
-            existing.add(title)
-            added += 1
+        if not title:
+            continue
+        if title in by_title:
+            # Backfill manglende url på eksisterende artikel
+            entry = by_title[title]
+            if not entry.get("url") and a.get("url"):
+                entry["url"] = a["url"]
+            continue
+        entry = {
+            "date": a.get("date", datetime.now(timezone.utc).isoformat()),
+            "title": title,
+            "source": a.get("source", ""),
+            "summary": (a.get("description") or "")[:400],
+            "url": a.get("url", ""),
+        }
+        kb["news"].append(entry)
+        by_title[title] = entry
+        added += 1
     kb["news"] = sorted(prune_news(kb["news"]), key=lambda x: x.get("date", ""), reverse=True)
     if added:
         kb["last_updated"] = datetime.now(timezone.utc).isoformat()
