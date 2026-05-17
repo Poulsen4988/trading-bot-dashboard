@@ -4,37 +4,38 @@ AI paper-trading dashboard for OMX Copenhagen/C25.
 
 Dashboard: https://poulsen4988.github.io/trading-bot-dashboard/
 
-## Current flow
+## Flow
 
-This project is now a virtual paper-trading setup. It does not place live orders and has no Saxo integration.
+Virtuel papirhandel. Ingen live-ordrer, ingen Saxo-integration.
 
-Run the routines in this order:
+To Claude Code Routines kører dagligt på Anthropic-infrastruktur:
 
-```bash
-python screener.py
-python analyst.py
-python paper_trader.py
-```
+1. **Analyse (~09:15 CET)** — `screener.py` udvælger 3-5 aktier → `screening/DATO.json`.
+   `analyst.py` printer analysegrundlag; rutinen laver bull/bear-analyse → `analysis/DATO.json`.
+2. **Handel (~10:45 CET)** — `decision_prep.py` bygger beslutningspakke; rutinen træffer
+   BUY/SELL/HOLD → `decisions/DATO.json`; `paper_trader.py` eksekverer → `data.json`.
 
-Important: `analyst.py` is only a data-prep helper. It does not call Anthropic API. The Claude Routine itself performs the deep analysis and writes `analysis/YYYY-MM-DD.json`.
+GitHub Actions (`fetch_data.yml`) henter priser + nyheder hver time og kører `sync_dashboard.py`.
 
-Optional dashboard sync from journal entries:
+## GitHub I/O
 
-```bash
-python sync_dashboard.py
-```
+Al læsning og skrivning til repoet sker via `github_store.py` (Contents API med SHA).
+Rutinerne bruger **aldrig** git-kommandoer. Token læses fra env-var `DASHBOARD_PAT` /
+`GITHUB_TOKEN` — må aldrig hardcodes i kode eller rutine-prompts.
+
+## Kernefiler
+
+- `watchlist.py` — eneste kilde til C25-universet.
+- `scripts/fetch_prices.py` — henter priser + fundamentale nøgletal via yfinance.
+- `news.py` — henter nyheder til `knowledge/`.
+- `screener.py` — score-model, vælger 3-5 aktier til dybdeanalyse.
+- `analyst.py` — printer analysegrundlag til handels-rutinen.
+- `decision_prep.py` — bygger beslutningspakke (portefølje + analyse).
+- `paper_trader.py` — eksekverer rutinens beslutninger mod `data.json`.
+- `sync_dashboard.py` — bygger dashboard-data og pusher til GitHub Pages.
+- `github_store.py` — al GitHub-kommunikation.
+- `data.json` — driver dashboardet.
 
 ## Secrets
 
-Do not hardcode GitHub PATs, API keys or OAuth tokens in prompts or code.
-
-When running inside Claude Routines with the repository selected, the routines should update files in the repo and then use `git add`, `git commit`, and `git push`.
-
-## Core files
-
-- `watchlist.py` is the single source of truth for the C25 universe.
-- `scripts/fetch_prices.py` fetches prices, fundamentals and technical indicators.
-- `screener.py` selects 3-5 stocks for deep analysis.
-- `analyst.py` prints the selected analysis input for the Claude Routine.
-- `paper_trader.py` updates the virtual portfolio in `data.json`.
-- `data.json` powers the GitHub Pages dashboard.
+Hardcode aldrig GitHub PATs, API-nøgler eller OAuth-tokens i prompts eller kode.
