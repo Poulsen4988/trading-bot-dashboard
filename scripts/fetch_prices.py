@@ -38,18 +38,14 @@ for s in C25:
         avg_vol = info.get("averageVolume")
         vol = info.get("regularMarketVolume")
 
-        # Normaliser udbytteafkast til procent ÉN gang her — eneste sandhed.
-        # yfinance returnerer enten decimal (0.0153) eller procent (1.53);
-        # >30 antages at være et bogus dividendbeløb.
+        # Udbytteafkast — eneste sandhed. yfinance returnerer dividendYield
+        # som procent-tal direkte (0.44 = 0.44%, 5.31 = 5.31%).
+        # >30 antages at være et bogus dividendbeløb i valuta.
         raw_dy = info.get("dividendYield")
-        if raw_dy is None:
+        if raw_dy is None or raw_dy < 0 or raw_dy > 30:
             div_yield = None
-        elif raw_dy <= 1.0:
-            div_yield = round(raw_dy * 100, 2)
-        elif raw_dy <= 30.0:
-            div_yield = round(raw_dy, 2)
         else:
-            div_yield = None
+            div_yield = round(raw_dy, 2)
 
         stocks[sym] = {
             "price": round(price, 2) if price is not None else None,
