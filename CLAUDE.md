@@ -1,4 +1,4 @@
-﻿# Trading Bot — Start her (ny session)
+# Trading Bot — Start her (ny session)
 
 ## VIGTIGT: Filstruktur
 Al kode ligger **udelukkende på GitHub** — den lokale mappe indeholder kun denne fil.
@@ -34,7 +34,7 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 | `data.json` | Dashboard-data (portfolio, trades, stocks) |
 
 ## Claude Code Routines
-Kører som "Remote" på Anthropic-infrastruktur — PC behøver ikke være tændt.
+Kører som "Remote" på Anthropic-infrastructur — PC behøver ikke være tændt.
 Repo er automatisk cloned og tilgængeligt i rutinen — scripts kan køres direkte med `python script.py`.
 
 | Navn | Tid (CET) | Trigger ID | Job |
@@ -79,10 +79,10 @@ RemoteTrigger → action: "update" → trigger_id: "<ID>" → body: {
 }
 ```
 
-**Vigtige IDs:**
-- `environment_id`: `env_01NKM1bRZAkortPH3EDsuGbw` (skal altid med ved update)
-- Handel trigger: `trig_01MwB6pNkZRedHNBQFA8TmGK`
-- Analyse trigger: `trig_01JipAUsb9pcQqLDVuGX9MzK`
+**Vigtige IDs** (se `C:\Users\andre\Mit drev\Claude\.env`):
+- `ROUTINE_ENV_ID` — skal altid med i body ved update
+- `ROUTINE_HANDEL_ID` — Trading Bot - Handel trigger
+- `ROUTINE_ANALYSE_ID` — Trading Bot - Analyse trigger
 
 ## GitHub Actions
 `fetch_data.yml` kører hver time (07-16 UTC, hverdage):
