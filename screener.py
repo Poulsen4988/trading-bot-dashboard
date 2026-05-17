@@ -502,9 +502,18 @@ def main():
     print(f"  Stocks in file : {len(stocks_data)}")
 
     # Step 3: Try to fetch historical data for full technical indicators
-    print("\nStep 3: Attempting yfinance historical download for technical indicators ...")
-    valid_symbols = [s for s, _ in STOCKS if "price" in stocks_data.get(s, {})]
-    hist = try_fetch_history(valid_symbols, period="250d")
+    print("\nStep 3: Checking for pre-computed indicators in latest.json ...")
+    have_prefetched = any(
+        isinstance(stocks_data.get(s, {}).get("technical"), dict)
+        for s, _ in STOCKS
+    )
+    if have_prefetched:
+        print("  Found pre-computed indicators from fetch_prices.py — using those.")
+        hist = None
+    else:
+        print("  None found — falling back to live yfinance history / snapshot proxy.")
+        valid_symbols = [s for s, _ in STOCKS if "price" in stocks_data.get(s, {})]
+        hist = try_fetch_history(valid_symbols, period="250d")
 
     # Step 4: Compute indicators and score every stock
     print("\nStep 4: Computing indicators and scoring ...")
@@ -517,7 +526,10 @@ def main():
             continue
         valid_count += 1
 
-        if hist is not None:
+        prefetched = snap.get("technical")
+        if isinstance(prefetched, dict) and prefetched.get("method"):
+            ind = prefetched
+        elif hist is not None:
             ind = compute_indicators_from_history(sym, hist, snap)
         else:
             ind = compute_indicators_from_snapshot(snap)
