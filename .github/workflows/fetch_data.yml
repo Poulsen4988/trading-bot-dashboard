@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "Trading Bot"
           git config user.email "bot@github-actions"
-          git add prices/ knowledge/ dashboard/data.json 2>/dev/null || true
+          git add prices/ knowledge/ data.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "Data update $(date -u '+%Y-%m-%d %H:%M UTC')"
           git pull --rebase --autostash origin main
           git push
