@@ -18,23 +18,23 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 | Fil | Formål |
 |-----|--------|
 | `watchlist.py` | Eneste kilde til C25-symboler — importer altid herfra |
+| `scripts/fetch_prices.py` | Henter priser + fundamentale nøgletal → `prices/latest.json` (GitHub Actions) |
+| `news.py` | Henter nyheder → `knowledge/*.json` (GitHub Actions) |
 | `screener.py` | Screener alle C25-aktier → `screening/DATO.json` |
-| `analyst.py` | Printer top-kandidater + priser til stdout |
-| `decision_prep.py` | Printer portefølje + analyse til stdout — input til Handel-rutinen |
-| `paper_trader.py` | Dumb executor: læser `decisions/DATO.json`, eksekverer mekanisk, opdaterer `data.json` |
-| `research.py` | Henter kurser + positioner + kontostatus |
-| `trade.py` | Udfører handel: `python trade.py <BUY\|SELL> <UIC> <ANTAL>` |
+| `analyst.py` | Printer analysegrundlag til stdout (input til analyse-rutinen) |
+| `decision_prep.py` | Bygger beslutningspakke (portefølje + analyse) til handels-rutinen |
+| `paper_trader.py` | Læser `decisions/DATO.json`, eksekverer mekanisk, opdaterer `data.json` |
 | `sync_dashboard.py` | Bygger stocks-data + pusher dashboard til GitHub Pages |
 | `github_store.py` | Al GitHub-kommunikation (read/write) — bruges af rutiner |
 | `prices/latest.json` | C25-priser — opdateres automatisk af GitHub Actions |
-| `knowledge/<symbol>.json` | Videnbase per selskab (nyheder, regnskab, analyse) |
-| `screening/DATO.json` | Screener-output fra Analyse-rutinen |
-| `analysis/DATO.json` | Bull/bear-analyse — input til Handel-rutinen |
-| `decisions/DATO.json` | AI's handelsbeslutninger med investment_plan — input til `paper_trader.py` |
+| `knowledge/<symbol>.json` | Videnbase per selskab (nyheder) |
+| `screening/DATO.json` | Screener-output fra `trading-bot-analyse` |
+| `analysis/DATO.json` | Bull/bear-analyse — input til `decision_prep.py` |
+| `decisions/DATO.json` | AI-beslutninger — input til `paper_trader.py` |
 | `data.json` | Dashboard-data (portfolio, trades, stocks) |
 
 ## Claude Code Routines
-Kører som "Remote" på Anthropic-infrastructur — PC behøver ikke være tændt.
+Kører som "Remote" på Anthropic-infrastruktur — PC behøver ikke være tændt.
 Repo er automatisk cloned og tilgængeligt i rutinen — scripts kan køres direkte med `python script.py`.
 
 | Navn | Tid (CET) | Trigger ID | Job |
@@ -44,6 +44,7 @@ Repo er automatisk cloned og tilgængeligt i rutinen — scripts kan køres dire
 
 **Arkitektur:** AI-rutinen træffer ALLE handelsbeslutninger. `paper_trader.py` er dumb executor — ingen hardcodede regler.
 **Vigtigt:** Rutinerne bruger `github_store.py` til al GitHub-kommunikation — aldrig git-kommandoer. Kør aldrig `fetch_prices.py` eller `news.py` — GitHub Actions håndterer det.
+**Sikkerhed:** Hardcode aldrig PATs i rutine-prompts. Token skal sættes som env-var.
 
 ### Sådan læser og redigerer du rutinerne via API
 
@@ -93,8 +94,3 @@ RemoteTrigger → action: "update" → trigger_id: "<ID>" → body: {
 
 ## C25-watchlist
 Se `watchlist.py` på GitHub — eneste autoritative kilde.
-
-## Journal-format
-```json
-{"timestamp": "ISO8601", "action": "BUY|SELL|HOLD", "symbol": "...", "uic": 0, "amount": 0, "price": 0.0, "reason": "..."}
-```
