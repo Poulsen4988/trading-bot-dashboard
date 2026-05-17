@@ -5,10 +5,10 @@ Læser decisions/YYYY-MM-DD.json (AI-output fra handels-rutinen) og
 eksekverer beslutningerne mekanisk mod data.json.
 
 Ingen handelsregler her — al beslutningslogik ligger hos AI-rutinen.
+HOLD logges ikke som trade; den opdaterer kun positionen.
 """
 from __future__ import annotations
 
-import sys
 from datetime import date, datetime, timezone
 from math import floor
 
@@ -78,6 +78,7 @@ def execute_decisions(decisions_data, data):
     positions = portfolio.setdefault("positions", [])
 
     executed = []
+    holds = []
 
     for decision in decisions:
         sym = decision.get("symbol")
@@ -162,7 +163,7 @@ def execute_decisions(decisions_data, data):
                 shares = sell_shares
                 price = sell_price
 
-        elif action == "HOLD":
+        if action == "HOLD":
             if pos:
                 if price:
                     pos["current_price"] = price
@@ -173,6 +174,8 @@ def execute_decisions(decisions_data, data):
                 }
                 if investment_plan:
                     pos["investment_plan"] = investment_plan
+            holds.append({"symbol": sym, "skip_reason": skip_reason})
+            continue
 
         value = round((shares or 0) * (price or 0), 2)
         trade = {
@@ -184,7 +187,7 @@ def execute_decisions(decisions_data, data):
             "price": price,
             "value": value,
             "reasoning": {
-                "summary": skip_reason or reasoning_text,
+                "summary": reasoning_text,
                 "confidence": confidence,
                 "bull": bull,
                 "bear": bear,
@@ -207,7 +210,7 @@ def execute_decisions(decisions_data, data):
     data["history"] = history
     portfolio["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
-    return executed, new_total
+    return executed, holds, new_total
 
 
 def main():
@@ -221,7 +224,7 @@ def main():
         )
 
     data, _ = github_store.get_json("data.json", default=default_data())
-    executed, new_total = execute_decisions(decisions_data, data)
+    executed, holds, new_total = execute_decisions(decisions_data, data)
     github_store.put_json("data.json", data, f"Paper trades {date_str}")
 
     print(f"=== PAPER TRADE SUMMARY {date_str} ===")
@@ -235,8 +238,12 @@ def main():
             print(f"     Thesis: {plan['thesis'][:120]}")
         if plan.get("stop_loss"):
             print(f"     Stop-loss: {plan['stop_loss']} | Target: {plan.get('price_target', '?')} | Tidshorisont: {plan.get('timeframe', '?')}")
-    print(f"
-Ny porteføljeværdi: {new_total} DKK")
+    for h in holds:
+        line = f"HOLD {h['symbol']}"
+        if h.get("skip_reason"):
+            line += f" — {h['skip_reason']}"
+        print(line)
+    print(f"\nNy porteføljeværdi: {new_total} DKK")
 
 
 if __name__ == "__main__":
