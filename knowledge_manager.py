@@ -84,6 +84,7 @@ def add_news(symbol, name, articles):
                 "title": title,
                 "source": a.get("source", ""),
                 "summary": (a.get("description") or "")[:400],
+                "url": a.get("url", ""),
             })
             existing.add(title)
             added += 1
