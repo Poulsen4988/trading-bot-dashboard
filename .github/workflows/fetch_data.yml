@@ -29,6 +29,10 @@ jobs:
       - name: Hent nyheder (yfinance)
         run: python news.py > /dev/null
 
+      - name: Hent danske meddelelser (Nasdaq Copenhagen)
+        run: python nasdaq_news.py
+        continue-on-error: true
+
       - name: Opdater dashboard (GitHub Pages)
         run: python sync_dashboard.py
         continue-on-error: true
