@@ -123,6 +123,16 @@ def update_history(data):
     portfolio["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
 
+def load_latest_screening():
+    """Returnerer screener-rækker for seneste screening, keyet på yf-symbol."""
+    files = sorted(glob.glob(os.path.join(SCRIPT_DIR, "screening", "*.json")))
+    if not files:
+        return {}, None
+    raw = load_json_file(files[-1], {})
+    by_sym = {row.get("symbol"): row for row in raw.get("selected", [])}
+    return by_sym, raw.get("date")
+
+
 def build_stocks():
     try:
         from watchlist import C25
@@ -134,6 +144,7 @@ def build_stocks():
     raw = load_json_file(prices_file, {})
     prices = raw.get("stocks", {})
     prices_age = raw.get("fetched_at")
+    screening, screening_date = load_latest_screening()
 
     stocks = []
     for s in C25:
@@ -141,6 +152,26 @@ def build_stocks():
         saxo = s["saxo"]
         pdata = prices.get(yf_sym, {})
         kb = km.load(saxo) or {}
+
+        scr = screening.get(yf_sym)
+        technical = None
+        if scr:
+            technical = {
+                "screening_date": screening_date,
+                "score": scr.get("score"),
+                "rsi_proxy": scr.get("rsi_proxy"),
+                "stoch_proxy": scr.get("stoch_proxy"),
+                "bb_position": scr.get("bb_position"),
+                "sma50_vs_price": scr.get("sma50_vs_price"),
+                "sma200_vs_price": scr.get("sma200_vs_price"),
+                "macd_line": scr.get("macd_line"),
+                "atr": scr.get("atr"),
+                "momentum_divergence": scr.get("momentum_divergence"),
+                "indicator_method": scr.get("indicator_method"),
+                "signals": scr.get("screening_signals", []),
+                "rationale": scr.get("screening_rationale"),
+            }
+
         stocks.append({
             "symbol": saxo,
             "name": s["name"],
@@ -149,6 +180,7 @@ def build_stocks():
             "price": pdata.get("price"),
             "pct_1d": pdata.get("pct_1d"),
             "pct_5d": pdata.get("pct_5d"),
+            "pct_20d": pdata.get("pct_20d"),
             "pe_forward": pdata.get("pe_forward"),
             "pe_trailing": pdata.get("pe_trailing"),
             "div_yield": pdata.get("div_yield"),
@@ -157,9 +189,13 @@ def build_stocks():
             "pct_from_52w_low": pdata.get("pct_from_52w_low"),
             "revenue_growth": pdata.get("revenue_growth"),
             "earnings_growth": pdata.get("earnings_growth"),
+            "market_cap": pdata.get("market_cap"),
+            "sector": pdata.get("sector"),
+            "industry": pdata.get("industry"),
             "overview": kb.get("overview", ""),
             "fin_summary": kb.get("financials", {}).get("summary", ""),
             "news": kb.get("news", [])[:8],
+            "technical": technical,
             "prices_age": prices_age,
         })
 
