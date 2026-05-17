@@ -107,6 +107,7 @@
     .stats-table tr { border-bottom: 1px solid var(--border); }
     .stats-table tr:last-child { border-bottom: none; }
     .st-label { font-size: 12px; color: var(--muted); padding: 9px 0; width: 55%; }
+    .st-label[title] { cursor: help; text-decoration: underline dotted 1px; text-underline-offset: 3px; }
     .st-value { font-size: 13px; font-weight: 600; padding: 9px 0; text-align: right; }
     .text-block { padding: 12px; background: var(--surface2); border-radius: 6px; margin-bottom: 10px; }
     .text-block-lbl { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); margin-bottom: 6px; }
@@ -415,45 +416,45 @@ function renderStockTab() {
     const fmtPrice = v => v != null ? v.toLocaleString('da-DK', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' kr.' : '—';
 
     const rows = [
-      ['Pris', fmtPrice(s.price), ''],
-      ['Daglig ændring', fmtPct(s.pct_1d, false), s.pct_1d != null ? (s.pct_1d >= 0 ? 'positive' : 'negative') : ''],
-      ['5-dages ændring', fmtPct(s.pct_5d, false), s.pct_5d != null ? (s.pct_5d >= 0 ? 'positive' : 'negative') : ''],
-      ['20-dages ændring', fmtPct(s.pct_20d, false), s.pct_20d != null ? (s.pct_20d >= 0 ? 'positive' : 'negative') : ''],
-      ['P/E (forward)', fmtNum(s.pe_forward), ''],
-      ['P/E (trailing)', fmtNum(s.pe_trailing), ''],
-      ['Udbytteafkast', s.div_yield != null ? s.div_yield.toFixed(2) + '%' : '—', ''],
-      ['Omsætningsvolumen', s.volume_ratio != null ? s.volume_ratio.toFixed(2) + 'x gns.' : '—', s.volume_ratio != null && s.volume_ratio >= 1.5 ? 'positive' : ''],
-      ['Afstand fra 52-ugers høj', s.pct_from_52w_high != null ? s.pct_from_52w_high.toFixed(2) + '%' : '—', 'negative'],
-      ['Over 52-ugers lav', s.pct_from_52w_low != null ? '+' + s.pct_from_52w_low.toFixed(2) + '%' : '—', 'positive'],
-      ['Omsætningsvækst', s.revenue_growth != null ? (s.revenue_growth * 100).toFixed(1) + '%' : '—', s.revenue_growth != null ? (s.revenue_growth >= 0 ? 'positive' : 'negative') : ''],
-      ['Indtjeningsvækst', s.earnings_growth != null ? (s.earnings_growth * 100).toFixed(1) + '%' : '—', s.earnings_growth != null ? (s.earnings_growth >= 0 ? 'positive' : 'negative') : ''],
-      ['Sektor', s.sector || '—', ''],
-      ['Industri', s.industry || '—', ''],
-      ['Markedsværdi', s.market_cap != null ? (s.market_cap / 1e9).toFixed(1) + ' mia.' : '—', ''],
+      ['Pris', fmtPrice(s.price), '', 'Aktuel aktiekurs i DKK.'],
+      ['Daglig ændring', fmtPct(s.pct_1d, false), s.pct_1d != null ? (s.pct_1d >= 0 ? 'positive' : 'negative') : '', 'Kursændring siden i går. Positiv = stigende, negativ = faldende på helt kort sigt.'],
+      ['5-dages ændring', fmtPct(s.pct_5d, false), s.pct_5d != null ? (s.pct_5d >= 0 ? 'positive' : 'negative') : '', 'Kursændring de seneste 5 handelsdage. Viser ugens momentum.'],
+      ['20-dages ændring', fmtPct(s.pct_20d, false), s.pct_20d != null ? (s.pct_20d >= 0 ? 'positive' : 'negative') : '', 'Kursændring de seneste 20 handelsdage (~1 måned). Viser den mellemlange trend.'],
+      ['P/E (forward)', fmtNum(s.pe_forward), '', 'Kurs delt med forventet indtjening næste år. Lav = billig ift. forventet indtjening; høj = dyr eller markedet priser stor vækst ind.'],
+      ['P/E (trailing)', fmtNum(s.pe_trailing), '', 'Kurs delt med faktisk indtjening de seneste 12 måneder. Lav = billig; høj = dyr eller høje vækstforventninger.'],
+      ['Udbytteafkast', s.div_yield != null ? s.div_yield.toFixed(2) + '%' : '—', '', 'Årligt udbytte i procent af kursen. Højt = stort løbende afkast, typisk modne selskaber; lavt/0 = overskud geninvesteres i vækst.'],
+      ['Omsætningsvolumen', s.volume_ratio != null ? s.volume_ratio.toFixed(2) + 'x gns.' : '—', s.volume_ratio != null && s.volume_ratio >= 1.5 ? 'positive' : '', 'Dagens handelsvolumen ift. det normale gennemsnit. Over 1,5x = usædvanlig aktivitet, ofte drevet af nyheder eller institutionelle handler.'],
+      ['Afstand fra 52-ugers høj', s.pct_from_52w_high != null ? s.pct_from_52w_high.toFixed(2) + '%' : '—', 'negative', 'Hvor langt kursen er under årets højeste niveau. Tæt på 0 % = nær toppen (styrke, men breakout-risiko); stort minus = stort fald fra toppen.'],
+      ['Over 52-ugers lav', s.pct_from_52w_low != null ? '+' + s.pct_from_52w_low.toFixed(2) + '%' : '—', 'positive', 'Hvor langt kursen er over årets laveste niveau. Tæt på 0 % = nær bunden (svaghed eller mulig vending opad).'],
+      ['Omsætningsvækst', s.revenue_growth != null ? (s.revenue_growth * 100).toFixed(1) + '%' : '—', s.revenue_growth != null ? (s.revenue_growth >= 0 ? 'positive' : 'negative') : '', 'Vækst i omsætning år-til-år. Positiv = forretningen vokser; negativ = svindende salg.'],
+      ['Indtjeningsvækst', s.earnings_growth != null ? (s.earnings_growth * 100).toFixed(1) + '%' : '—', s.earnings_growth != null ? (s.earnings_growth >= 0 ? 'positive' : 'negative') : '', 'Vækst i indtjening (overskud) år-til-år. Positiv = stigende profitabilitet; negativ = faldende.'],
+      ['Sektor', s.sector || '—', '', 'Selskabets overordnede branche. Bruges til at sammenligne værdiansættelse mod sektornormen.'],
+      ['Industri', s.industry || '—', '', 'Selskabets specifikke industrigruppe inden for sektoren.'],
+      ['Markedsværdi', s.market_cap != null ? (s.market_cap / 1e9).toFixed(1) + ' mia.' : '—', '', 'Samlet markedsværdi af alle aktier (kurs × antal aktier). Stor = etableret og typisk mere stabil; lille = ofte mere volatil.'],
     ];
 
     let html = '<table class="stats-table">';
-    for (const [label, value, cls] of rows) {
-      html += `<tr><td class="st-label">${label}</td><td class="st-value ${cls}">${value}</td></tr>`;
+    for (const [label, value, cls, tip] of rows) {
+      html += `<tr><td class="st-label" title="${tip}">${label}</td><td class="st-value ${cls}">${value}</td></tr>`;
     }
     html += '</table>';
 
     if (s.technical) {
       const t = s.technical;
       const trows = [
-        ['Screener-score', fmtNum(t.score, 1)],
-        ['RSI', fmtNum(t.rsi_proxy, 0)],
-        ['Stokastisk', fmtNum(t.stoch_proxy, 0)],
-        ['Bollinger-position', t.bb_position != null ? fmtNum(t.bb_position, 0) + '%' : '—'],
-        ['Pris vs SMA50', t.sma50_vs_price != null ? fmtPct(t.sma50_vs_price, false) : '—'],
-        ['Pris vs SMA200', t.sma200_vs_price != null ? fmtPct(t.sma200_vs_price, false) : '—'],
-        ['MACD-linje', fmtNum(t.macd_line, 3)],
-        ['ATR', fmtNum(t.atr, 2)],
-        ['Momentum-divergens', t.momentum_divergence != null ? fmtNum(t.momentum_divergence, 1) + ' pp' : '—'],
+        ['Screener-score', fmtNum(t.score, 1), 'Screenerens samlede interessescore 0-100. Højt = mange tekniske og fundamentale signaler udløst i dag — aktien er analytisk interessant.'],
+        ['RSI', fmtNum(t.rsi_proxy, 0), 'Relative Strength Index 0-100. Under 30 = oversolgt (mulig bund/vending op); over 70 = overkøbt (mulig top/pullback).'],
+        ['Stokastisk', fmtNum(t.stoch_proxy, 0), 'Kursens position i det seneste handelsinterval 0-100. Lav = nær bunden af intervallet; høj = nær toppen.'],
+        ['Bollinger-position', t.bb_position != null ? fmtNum(t.bb_position, 0) + '%' : '—', 'Kursens placering mellem nedre (0 %) og øvre (100 %) Bollinger-bånd. Under 20 % = lav i båndet (presset); over 80 % = høj (strakt).'],
+        ['Pris vs SMA50', t.sma50_vs_price != null ? fmtPct(t.sma50_vs_price, false) : '—', 'Kurs ift. 50-dages glidende gennemsnit. Positiv = over korttidstrenden (styrke); negativ = under (svaghed).'],
+        ['Pris vs SMA200', t.sma200_vs_price != null ? fmtPct(t.sma200_vs_price, false) : '—', 'Kurs ift. 200-dages glidende gennemsnit. Positiv = i langsigtet optrend; negativ = i langsigtet nedtrend.'],
+        ['MACD-linje', fmtNum(t.macd_line, 3), 'Forskel mellem hurtigt og langsomt glidende gennemsnit. Positiv = stigende momentum; negativ = faldende momentum.'],
+        ['ATR', fmtNum(t.atr, 2), 'Average True Range — gennemsnitligt dagligt kursudsving i DKK. Højt = mere volatil aktie og dermed større risiko/udsving.'],
+        ['Momentum-divergens', t.momentum_divergence != null ? fmtNum(t.momentum_divergence, 1) + ' pp' : '—', 'Forskel mellem 5-dages og 20-dages momentum (procentpoint). Positiv = korttidstrenden er stærkere end den mellemlange — mulig vending opad.'],
       ];
       html += `<div class="text-block"><div class="text-block-lbl">Tekniske indikatorer${t.screening_date ? ' (screener ' + t.screening_date + ')' : ''}</div><table class="stats-table">`;
-      for (const [label, value] of trows) {
-        html += `<tr><td class="st-label">${label}</td><td class="st-value">${value}</td></tr>`;
+      for (const [label, value, tip] of trows) {
+        html += `<tr><td class="st-label" title="${tip}">${label}</td><td class="st-value">${value}</td></tr>`;
       }
       html += '</table>';
       if (t.signals && t.signals.length) {
