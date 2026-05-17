@@ -421,7 +421,7 @@ function renderStockTab() {
       ['20-dages ændring', fmtPct(s.pct_20d, false), s.pct_20d != null ? (s.pct_20d >= 0 ? 'positive' : 'negative') : ''],
       ['P/E (forward)', fmtNum(s.pe_forward), ''],
       ['P/E (trailing)', fmtNum(s.pe_trailing), ''],
-      ['Udbytteafkast', s.div_yield != null ? (s.div_yield * 100).toFixed(2) + '%' : '—', ''],
+      ['Udbytteafkast', s.div_yield != null ? s.div_yield.toFixed(2) + '%' : '—', ''],
       ['Omsætningsvolumen', s.volume_ratio != null ? s.volume_ratio.toFixed(2) + 'x gns.' : '—', s.volume_ratio != null && s.volume_ratio >= 1.5 ? 'positive' : ''],
       ['Afstand fra 52-ugers høj', s.pct_from_52w_high != null ? s.pct_from_52w_high.toFixed(2) + '%' : '—', 'negative'],
       ['Over 52-ugers lav', s.pct_from_52w_low != null ? '+' + s.pct_from_52w_low.toFixed(2) + '%' : '—', 'positive'],
@@ -491,21 +491,29 @@ function renderStockTab() {
       </div>`).join('');
 
   } else if (currentStockTab === 'analyser') {
-    if (!s.agent_entries || !s.agent_entries.length) {
-      el.innerHTML = '<div class="empty">Ingen agentanalyser for denne aktie endnu</div>';
+    const a = s.analysis;
+    if (!a) {
+      el.innerHTML = '<div class="empty">Ingen agentanalyse for denne aktie i seneste kørsel</div>';
       return;
     }
-    el.innerHTML = [...s.agent_entries].reverse().map(e => {
-      const bc = e.action==='BUY'?'b-buy':e.action==='SELL'?'b-sell':e.action==='PREMARKET'||e.action==='EOD_SUMMARY'?'b-premarket':'b-hold';
-      const lbl = e.action==='BUY'?'KØB':e.action==='SELL'?'SÆLG':e.action==='PREMARKET'?'PRE-MARKET':e.action==='EOD_SUMMARY'?'SLUTDAG':'HOLD';
-      return `<div class="agent-entry">
-        <div class="ae-header">
-          <span class="badge ${bc}">${lbl}</span>
-          <span class="ae-date">${e.date}</span>
-        </div>
-        <div class="ae-reason">${e.reason}</div>
-      </div>`;
-    }).join('');
+    const vc = a.verdict==='BULL'?'b-buy':a.verdict==='BEAR'?'b-sell':'b-hold';
+    let html = `<div class="agent-entry">
+      <div class="ae-header">
+        <span class="badge ${vc}">${a.verdict || '—'}</span>
+        <span class="ae-date">${a.analysis_date || ''}${a.confidence != null ? ' · tillid ' + a.confidence + '/10' : ''}</span>
+      </div>
+      ${a.summary ? `<div class="ae-reason">${a.summary}</div>` : ''}
+    </div>`;
+    if (a.bull && a.bull.length) {
+      html += `<div class="debate bull"><div class="debate-lbl">Bull — argument for</div><div class="debate-txt">${a.bull.map(x => '• ' + x).join('<br>')}</div></div>`;
+    }
+    if (a.bear && a.bear.length) {
+      html += `<div class="debate bear"><div class="debate-lbl">Bear — argument imod</div><div class="debate-txt">${a.bear.map(x => '• ' + x).join('<br>')}</div></div>`;
+    }
+    if (a.key_risk) {
+      html += `<div class="text-block"><div class="text-block-lbl">Vigtigste risiko</div><div class="text-block-body">${a.key_risk}</div></div>`;
+    }
+    el.innerHTML = html;
   }
 }
 
