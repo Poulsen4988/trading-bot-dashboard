@@ -1,0 +1,40 @@
+{
+  "date": "2026-05-18",
+  "market_summary": "C25 viser blandet billede: Novo Nordisk fortsætter sin recovery (+18,8% på 20 dage) men er nu stærkt overkøbt (RSI 79,5) og tester SMA200-modstand ved 307,6 DKK. Ingen af de screenede kandidater har BULL-verdict — RBREW og NNIT er klare BEAR (PepsiCo-tab hhv. faldende omsætning), mens PNDORA og COLO er NEUTRAL med negativ fundamental vækst og bekræftede downtrends. Vi holder Novo og foretager ingen nye køb i dag.",
+  "decisions": [
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 299.2,
+      "confidence": 68,
+      "reasoning": "Thesis fra købet er fuldt intakt: deep-value GLP-1-leder i bekraeftet genopretning. Positionen er +12,84% i gevinst, stop-loss 248 er ikke trigget, og fundamentalcasen (fwd PE 14x, +67% earnings growth, 5,3% udbytte) er uaendret. Dagens NEUTRAL-verdict skyldes alene kortsigtede overkoebte technicals (RSI 79,5, Stoch 81,1) og SMA200-modstand ved 307,6 DKK — ikke fundamental forvaerring. MACD er fortsat positiv (+13,3) og momentum_20d +18,8% bekraefter trenden. Eli Lillys retatrutide og Odense-annulleringen er langsigtede risici uden umiddelbar katalysator. Vi holder gennem konsolidering mod price target 350.",
+      "bull": [
+        "Fwd PE 14,0x er 44% under Healthcare-sektornorm — fundamentalt billig trods 52w-fald paa 44%",
+        "+67% earnings growth YoY giver buffer mod konkurrencepres og understoetter recovery-casen",
+        "MACD positiv (+13,3) og momentum_20d +18,8% bekraefter igangvaerende opadgaaende trend",
+        "Dividendeudbytte 5,31% giver nedadgaaende pude og tiltraekker yield-investorer"
+      ],
+      "bear": [
+        "RSI 79,5 og Stoch 81,1 er staerkt overkoebte — kortsigtet teknisk pullback sandsynlig",
+        "SMA200 ved 307,6 DKK er umiddelbar modstandszone — breakout endnu ikke bekraeftet",
+        "Eli Lillys retatrutide viser lovende kliniske data og intensiverer GLP-1-konkurrencen",
+        "Annullering af Odense-fabrik (1,33 mia. USD) signalerer kapitalforsigtighed i pipelinen"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Novo Nordisk er en deep-value GLP-1-leder i bekraeftet bedring efter et -44% drawdown. Forward PE 14x med +67% earnings-vaekst og 5,3% udbytte. Positiv MACD, pris langt over SMA50 og staerk 20d-momentum bekraefter trendskiftet. Vi holder gennem recovery mod og forbi SMA200-modstanden ved 307,6 DKK mod price target 350.",
+        "price_target": 350,
+        "stop_loss": 248,
+        "expected_return_pct": 17,
+        "timeframe": "3-6 maaneder",
+        "exit_conditions": "Saelg ved brud under SMA50/stop-loss 248 (trendbrud), ved fundamental forvaerring i GLP-1-konkurrencepositionen (guidance-cut eller markant negativ konkurrent-katalysator), eller tag profit naer 350 hvis SMA200 afvises med tab af momentum."
+      }
+    }
+  ]
+}
