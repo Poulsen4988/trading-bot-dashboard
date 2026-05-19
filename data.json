@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 73592.75,
+    "cash": 58679.75,
     "currency": "DKK",
     "positions": [
       {
@@ -9,12 +9,12 @@
         "name": "Novo Nordisk B",
         "shares": 95,
         "purchase_price": 265.15,
-        "current_price": 299.2,
+        "current_price": 286.0,
         "value": 25189.25,
         "last_review": {
-          "date": "2026-05-18",
-          "reasoning": "Thesis fra købet er fuldt intakt: deep-value GLP-1-leder i bekraeftet genopretning. Positionen er +12,84% i gevinst, stop-loss 248 er ikke trigget, og fundamentalcasen (fwd PE 14x, +67% earnings growth, 5,3% udbytte) er uaendret. Dagens NEUTRAL-verdict skyldes alene kortsigtede overkoebte technicals (RSI 79,5, Stoch 81,1) og SMA200-modstand ved 307,6 DKK — ikke fundamental forvaerring. MACD er fortsat positiv (+13,3) og momentum_20d +18,8% bekraefter trenden. Eli Lillys retatrutide og Odense-annulleringen er langsigtede risici uden umiddelbar katalysator. Vi holder gennem konsolidering mod price target 350.",
-          "confidence": 68
+          "date": "2026-05-19",
+          "reasoning": "Kobsthesisen er fuldt intakt: Wegovy-pillen holder forspring over Eli Lilly (Citi prescription-tracking 18. maj), global lancering er igangsat, EPS +67% YoY og fwd PE 13.4x giver 46% sektor-rabat. Dagens -4.41% er profittagning efter et 11% 20-dages rally, ikke fundamentalt drevet. Kurs +13.5% over SMA50 og positiv MACD bekraefter intakt bullish struktur. Stop-loss 248 er ikke ramt. Position paa 27% er stor men forsvarlig givet conviction; vi holder gennem recovery mod SMA200-modstanden ved ~307 og videre mod 350.",
+          "confidence": 74
         },
         "investment_plan": {
           "term": "medium",
@@ -22,16 +22,42 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Novo Nordisk er en deep-value GLP-1-leder i bekraeftet bedring efter et -44% drawdown. Forward PE 14x med +67% earnings-vaekst og 5,3% udbytte. Positiv MACD, pris langt over SMA50 og staerk 20d-momentum bekraefter trendskiftet. Vi holder gennem recovery mod og forbi SMA200-modstanden ved 307,6 DKK mod price target 350.",
+          "thesis": "Novo Nordisk er en deep-value GLP-1-leder i bekraeftet bedring efter et stort drawdown. Forward PE 14x med +67% earnings-vaekst og solidt udbytte. Positiv MACD og pris langt over SMA50 bekraefter trendskiftet. Vi holder gennem recovery mod og forbi SMA200-modstanden ved ~307 DKK mod price target 350.",
           "price_target": 350,
           "stop_loss": 248,
-          "expected_return_pct": 17,
+          "expected_return_pct": 22,
           "timeframe": "3-6 maaneder",
           "exit_conditions": "Saelg ved brud under SMA50/stop-loss 248 (trendbrud), ved fundamental forvaerring i GLP-1-konkurrencepositionen (guidance-cut eller markant negativ konkurrent-katalysator), eller tag profit naer 350 hvis SMA200 afvises med tab af momentum."
         }
+      },
+      {
+        "symbol": "ORSTED.CO",
+        "name": "Orsted",
+        "shares": 90,
+        "purchase_price": 165.7,
+        "current_price": 165.7,
+        "purchase_date": "2026-05-19",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Orsted er et teknisk-drevet recovery-koeb i Utilities: pris over begge SMA'er, positiv MACD og institutionel akkumulering signalerer trendskifte. Driftsmaessigt leverer offshore-porteflojen (EBITDA +8%, Hornsea 3/Baltica 2 i installation), mens nettotabet skyldes ikke-kontante rente- og nedskrivningseffekter. Moderat position der diversificerer vaek fra Healthcare-koncentration; vi rider den tekniske trend mod 190 DKK.",
+          "price_target": 190,
+          "stop_loss": 150,
+          "expected_return_pct": 15,
+          "timeframe": "3-6 maaneder",
+          "exit_conditions": "Saelg ved brud under SMA50-support (~156 DKK) eller stop-loss 150 (trendbrud), ved nye markante US-rente-relaterede nedskrivninger eller forsinkelser paa Hornsea 3, eller tag profit naer 190 hvis momentum aftager."
+        },
+        "last_review": {
+          "date": "2026-05-19",
+          "reasoning": "Orsted er den eneste C25-aktie i analyselisten over baade SMA50 (+6.2%) og SMA200 (+8.7%) med positiv MACD og institutionel volumenspike paa 2.2x — den staerkeste tekniske struktur paa listen. Driftsmomentum er positivt: EBITDA +8% YoY paa rekordproduktion offshore, og flagskibsprojekterne Hornsea 3 og Baltica 2 er i aktiv installationsfase. Fundamentalt er casen kompleks (nettotab pga. US-rente-nedskrivninger), derfor moderat conviction og moderat sizing: 90 aktier (~14.900 DKK, ~15% af porteflojen). Kobet diversificerer porteflojen vaek fra 27% Healthcare-koncentration og ind i Utilities.",
+          "confidence": 58
+        }
       }
     ],
-    "last_updated": "2026-05-18 17:19 UTC"
+    "last_updated": "2026-05-19 07:49 UTC"
   },
   "history": [
     {
@@ -93,6 +119,10 @@
     {
       "date": "2026-05-18",
       "portfolio_value": 102016.75
+    },
+    {
+      "date": "2026-05-19",
+      "portfolio_value": 100762.75
     }
   ],
   "trades": [
@@ -1498,6 +1528,48 @@
         "exit_conditions": "Position lukkes i dag. Revurder kun ny indgang ved volumen-bekræftet bund, MACD-vending og en konkret katalysator (stærke Q-tal eller strategisk modtræk på den tabte distributionsaftale)."
       },
       "id": 51,
+      "is_new": false
+    },
+    {
+      "date": "2026-05-19",
+      "action": "BUY",
+      "symbol": "ORSTED.CO",
+      "name": "Orsted",
+      "shares": 90,
+      "price": 165.7,
+      "value": 14913.0,
+      "reasoning": {
+        "summary": "Orsted er den eneste C25-aktie i analyselisten over baade SMA50 (+6.2%) og SMA200 (+8.7%) med positiv MACD og institutionel volumenspike paa 2.2x — den staerkeste tekniske struktur paa listen. Driftsmomentum er positivt: EBITDA +8% YoY paa rekordproduktion offshore, og flagskibsprojekterne Hornsea 3 og Baltica 2 er i aktiv installationsfase. Fundamentalt er casen kompleks (nettotab pga. US-rente-nedskrivninger), derfor moderat conviction og moderat sizing: 90 aktier (~14.900 DKK, ~15% af porteflojen). Kobet diversificerer porteflojen vaek fra 27% Healthcare-koncentration og ind i Utilities.",
+        "confidence": 58,
+        "bull": [
+          "Eneste analyseaktie over baade SMA50 og SMA200 — fuld bullish SMA-struktur",
+          "EBITDA +8% YoY i Q1 paa rekordproduktion offshore — positivt driftsmomentum",
+          "Hornsea 3 og Baltica 2 i aktiv installationsfase — synlig pipeline-fremgang",
+          "Institutionel volumenspike 2.2x og positiv MACD (+2.08) tyder paa akkumulering",
+          "Omsaetningsvaekst +33.4% understoetter langsigtet cashflow-kapacitet"
+        ],
+        "bear": [
+          "Nettoresultat Q1 2026 faldt -46%; earnings fortsat presset af nedskrivninger",
+          "Eleverede langsigtede US-renter skaber vedvarende risiko for yderligere nedskrivninger",
+          "Fremadrettet PE 17x er ikke billig for en Utilities-aktie med negativ trailing-indtjening",
+          "49.4% under 52W-top — overhang fra klemte historiske positioner",
+          "Risiko for politisk/regulatorisk modvind mod offshore vind"
+        ]
+      },
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Orsted er et teknisk-drevet recovery-koeb i Utilities: pris over begge SMA'er, positiv MACD og institutionel akkumulering signalerer trendskifte. Driftsmaessigt leverer offshore-porteflojen (EBITDA +8%, Hornsea 3/Baltica 2 i installation), mens nettotabet skyldes ikke-kontante rente- og nedskrivningseffekter. Moderat position der diversificerer vaek fra Healthcare-koncentration; vi rider den tekniske trend mod 190 DKK.",
+        "price_target": 190,
+        "stop_loss": 150,
+        "expected_return_pct": 15,
+        "timeframe": "3-6 maaneder",
+        "exit_conditions": "Saelg ved brud under SMA50-support (~156 DKK) eller stop-loss 150 (trendbrud), ved nye markante US-rente-relaterede nedskrivninger eller forsinkelser paa Hornsea 3, eller tag profit naer 190 hvis momentum aftager."
+      },
+      "id": 52,
       "is_new": true
     }
   ],
