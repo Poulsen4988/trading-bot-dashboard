@@ -1645,7 +1645,136 @@
         "exit_conditions": "Sælg ved brud under stop-loss 440 (trendbrud + bryder under SMA50-support), ved fundamental forværring i Service/PC&V-ordreindgang i Q2-rapport, eller tag profit nær 580 hvis momentum aftager. Re-vurder ved volumen-skifte under 1.0x gennemsnit."
       },
       "id": 53,
-      "is_new": true
+      "is_new": false
+    },
+    {
+      "id": 54,
+      "date": "2026-05-21",
+      "action": "HOLD",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": null,
+      "price": 288.4,
+      "value": null,
+      "is_new": false,
+      "reasoning": {
+        "verdict": "HOLD",
+        "summary": "Thesis intakt og styrket: +24% revenue / +67% EPS, forward PE 13.5x (46% sektorrabat), 5.53% yield. Teknisk recovery bekræftet med MACD +10.9, RSI 63.5, kurs +13.4% over SMA50. Nye OASIS 4/STEP UP-data styrker Wegovy-narrativet. 5d-pullback -3.87% på lav volumen er sund konsolidering. SMA200 ved 306 DKK er næste modstand, men vi holder mod price target 350. Position er allerede 27% af porteføljen — øger ikke pga. koncentrationsrisiko.",
+        "confidence": 75,
+        "bull": [
+          "Wegovy/Ozempic volumenekspansion driver +67% EPS YoY",
+          "Forward PE 13.5x + 5.53% yield = sjælden value/yield-kombination",
+          "MACD +10.9 og kurs +13.4% over SMA50 bekræfter trendskifte",
+          "Nye OASIS 4/STEP UP trial data udvider Wegovy-thesis (kardiovaskulær/mobilitet)",
+          "BB-position 65.9% — ikke overkøbt, rum mod SMA200 ved 306 DKK"
+        ],
+        "bear": [
+          "SMA200 ved 306 DKK er historisk afvisningszone, -5.7% over kurs",
+          "Medicare-prissag: Supreme Court afslog certiorari — politisk prisrisiko åben",
+          "Viking Therapeutics oral GLP-1 og Eli Lilly intensiverer konkurrence",
+          "Volumen 0.6x — mangler institutionel overbevisning bag bounce",
+          "27% porteføljevægt — koncentrationsrisiko ved adverse GLP-1 nyhed"
+        ]
+      },
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Deep-value GLP-1-leder i bekræftet teknisk recovery. PE 13.5x med +67% EPS-vækst og 5.53% udbytte — value/yield-kombination der er sjælden for Big Pharma. Positiv MACD og pris langt over SMA50 bekræfter trendskiftet. Vi holder gennem recovery mod og forbi SMA200-modstanden ved ~306 DKK mod price target 350.",
+        "price_target": 350,
+        "stop_loss": 248,
+        "expected_return_pct": 21,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under SMA50/stop-loss 248 (trendbrud), ved fundamental forværring i GLP-1-konkurrencepositionen (guidance-cut eller markant negativ konkurrent-katalysator), eller tag profit nær 350 hvis SMA200 afvises med tab af momentum. Re-vurder positionsstørrelse hvis vægt overstiger 30% af portefølje."
+      }
+    },
+    {
+      "id": 55,
+      "date": "2026-05-21",
+      "action": "HOLD",
+      "symbol": "ORSTED.CO",
+      "name": "Orsted",
+      "shares": null,
+      "price": 163.75,
+      "value": null,
+      "is_new": false,
+      "reasoning": {
+        "verdict": "HOLD",
+        "summary": "Position er marginalt negativ (-1.18%) og dagens verdict er NEUTRAL conf 5. Teknisk thesis holder lige akkurat: kurs +4.5% over SMA50 (156.75) og +8.5% over SMA200, MACD svagt positiv (+1.7). Operationelt leverer Hornsea 3 og Baltica 2 på tidsplan, EBITDA +8%, revenue +33%. Momentum svækkes dog (RSI 45, 5d -2.33%) og SMA50 ved 156.75 DKK er afgørende støtte. Holder med tæt overvågning — stop-loss 150 DKK forbliver hård linje.",
+        "confidence": 55,
+        "bull": [
+          "Revenue +33.4% YoY — operationel motor skalerer stærkt",
+          "Hornsea 3 og Baltica 2 leverer på tidsplan, første monopiles installeret",
+          "Kurs over begge SMA'er (SMA50 +4.5%, SMA200 +8.5%)",
+          "EBITDA +8% YoY — underliggende drift sund",
+          "RSI 45 / Stoch 37 — ikke overkøbt, potentiel coil-up"
+        ],
+        "bear": [
+          "Rapporteret EPS-vækst -84.9% YoY (ikke-kontante impairments fra US-renter)",
+          "5d-momentum -2.33% — kortsigtigt svækkelse",
+          "-50% fra 52-ugers høj — strukturel damage tager lang tid",
+          "US-rente og politisk modvind mod offshore vind = systemisk impairment-risiko",
+          "BB-position 37.8% — i nedre halvdel af bandet"
+        ]
+      },
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Orsted er et teknisk-drevet recovery-køb i Utilities: pris over begge SMA'er, positiv MACD og institutionel akkumulering signalerer trendskifte. Driftsmæssigt leverer offshore-porteføljen (EBITDA +8%, Hornsea 3/Baltica 2 i installation), mens nettotabet skyldes ikke-kontante rente- og nedskrivningseffekter. Moderat position der diversificerer væk fra Healthcare-koncentration; vi rider den tekniske trend mod 190 DKK.",
+        "price_target": 190,
+        "stop_loss": 150,
+        "expected_return_pct": 16,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under SMA50-support (~156 DKK) eller stop-loss 150 (trendbrud), ved nye markante US-rente-relaterede nedskrivninger eller forsinkelser på Hornsea 3, eller tag profit nær 190 hvis momentum aftager. Skærp overvågning hvis RSI bryder under 40 med MACD-bear-krydsning."
+      }
+    },
+    {
+      "id": 56,
+      "date": "2026-05-21",
+      "action": "HOLD",
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "shares": null,
+      "price": 517.5,
+      "value": null,
+      "is_new": true,
+      "reasoning": {
+        "verdict": "HOLD",
+        "summary": "Position +4.67% og BULL conf 7 — thesis bekræftet med +195% EPS, buyback program lanceret 18/5, og institutionel volumen (1.41x) bag +13.9% uge. Men Stoch 94.2 og BB 91.6% indikerer ekstremt kortsigtigt overkøbt — 5-8% pullback sandsynlig. MACD stadig negativ (-5.4) mangler bullish krydsning. HOLD nuværende position og afvent SMA50-test (495 DKK) for evt. opskalering, frem for at jage toppen. Medium-term thesis mod 580 DKK uændret.",
+        "confidence": 70,
+        "bull": [
+          "+195% EPS-vækst YoY — margin-recovery er genuin",
+          "Aktietilbagekøb lanceret 18. maj + 5d momentum +13.9% på vol 1.41x",
+          "Kurs +4.5% over SMA50 og +10.1% over SMA200 — strukturel uptrend",
+          "MACD-forbedring fra -23 til -5.4 — snart bullish krydsning",
+          "Deutsche Telekom-lignende langtidskontrakter understøtter ordrebog"
+        ],
+        "bear": [
+          "Stochastic 94.2 og BB 91.6% — kortsigtet ekstremt overkøbt",
+          "MACD stadig negativ (-5.4) — ingen bekræftet bullish krydsning",
+          "Omsætning -11.6% YoY — recovery hviler på margin, ikke volumen",
+          "Gruvesektor-konjunktur: råvarefald rammer ordreindgang",
+          "Indgang på +13.9% uge = risiko for at købe toppen"
+        ]
+      },
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "FLSmidth er et margin-recovery-spil i Industrials: +195% EPS-vækst og buyback signalerer at omkostningsdisciplin og kapitaldisciplin virker. Institutionel volumen bag rally bekræfter momentum-skift. Vi holder moderat position med plan om at øge ved SMA50-test (495 DKK) frem for at jage Stoch 94-toppen, og rider trenden mod 580 DKK.",
+        "price_target": 580,
+        "stop_loss": 440,
+        "expected_return_pct": 17,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under stop-loss 440 (trendbrud + bryder under SMA50-support), ved fundamental forværring i Service/PC&V-ordreindgang i Q2-rapport, eller tag profit nær 580 hvis momentum aftager. Re-vurder ved volumen-skifte under 1.0x gennemsnit i 2+ uger."
+      }
     }
   ],
   "stocks": [
