@@ -5,7 +5,8 @@ Læser decisions/YYYY-MM-DD.json (AI-output fra handels-rutinen) og
 eksekverer beslutningerne mekanisk mod data.json.
 
 Ingen handelsregler her — al beslutningslogik ligger hos AI-rutinen.
-HOLD logges ikke som trade; den opdaterer kun positionen.
+HOLD logges som recommendation i trades (vises i dashboard Anbefalinger-fanen)
+men påvirker ikke kontanter eller positioner.
 """
 from __future__ import annotations
 
@@ -100,7 +101,7 @@ def execute_decisions(decisions_data, data):
 
         if action == "BUY":
             if not price or shares <= 0:
-                skip_reason = f"BUY afvist: manglende pris eller shares."
+                skip_reason = "BUY afvist: manglende pris eller shares."
                 action = "HOLD"
             else:
                 cost = round(shares * price, 2)
@@ -175,6 +176,31 @@ def execute_decisions(decisions_data, data):
                 if investment_plan:
                     pos["investment_plan"] = investment_plan
             holds.append({"symbol": sym, "skip_reason": skip_reason})
+            # Log genuine HOLDs (not failed BUY/SELLs) to trades for dashboard Anbefalinger
+            if not skip_reason:
+                already_logged = any(
+                    t.get("date") == date_str and t.get("symbol") == sym and t.get("action") == "HOLD"
+                    for t in data.get("trades", [])
+                )
+                if not already_logged:
+                    hold_trade = {
+                        "date": date_str,
+                        "action": "HOLD",
+                        "symbol": sym,
+                        "name": name,
+                        "shares": None,
+                        "price": price,
+                        "value": None,
+                        "reasoning": {
+                            "verdict": "HOLD",
+                            "summary": reasoning_text,
+                            "confidence": confidence,
+                            "bull": bull,
+                            "bear": bear,
+                        },
+                        "investment_plan": investment_plan,
+                    }
+                    add_trade(data, hold_trade)
             continue
 
         value = round((shares or 0) * (price or 0), 2)
