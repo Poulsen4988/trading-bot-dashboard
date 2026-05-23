@@ -272,8 +272,28 @@ def build_benchmark_series(portfolio_history, benchmarks_raw, initial_cash):
 
 
 def compute_sector_exposure(positions, stocks_list):
-    """Sektorfordeling i procent af samlet positionsværdi."""
-    sym_to_sector = {s.get("symbol"): s.get("sector") for s in (stocks_list or [])}
+    """Sektorfordeling i procent af samlet positionsværdi.
+
+    Positions bruger yf-symbol ("NOVO-B.CO") mens stocks_list bruger saxo-symbol
+    ("NOVOb:xcse"). Mapper begge til sector via watchlist.C25.
+    """
+    sym_to_sector = {}
+    try:
+        from watchlist import C25
+        saxo_to_yf = {s["saxo"]: s["yf"] for s in C25}
+    except Exception:
+        saxo_to_yf = {}
+    for s in stocks_list or []:
+        sec = s.get("sector")
+        if not sec:
+            continue
+        saxo = s.get("symbol")
+        if saxo:
+            sym_to_sector[saxo] = sec
+        yf_sym = saxo_to_yf.get(saxo)
+        if yf_sym:
+            sym_to_sector[yf_sym] = sec
+
     sectors = {}
     total_val = 0.0
     for p in positions or []:
