@@ -342,6 +342,8 @@ let feedTab = 'trades';
 let currentStockTab = 'kurs';
 let currentStock = null;
 let stockChartRange = 90;
+const stockHistoryCache = {};
+let currentHistory = null;
 let wlSortBy = 'name';
 let wlFilter = 'all';
 
@@ -780,20 +782,19 @@ function renderStockTab() {
     const fmtNum = (v, decimals=1) => v != null ? v.toFixed(decimals) : '—';
     const fmtPrice = v => v != null ? v.toLocaleString('da-DK', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' kr.' : '—';
 
-    const hasHistory = Array.isArray(s.price_history) && s.price_history.length > 1;
-    const chartHtml = hasHistory
-      ? `<div class="stock-chart-wrap">
-          <div class="stock-chart-hdr">
-            <div class="stock-chart-title">Kurshistorik (${s.price_history.length} dage)</div>
-            <div class="stock-range-btns" id="stock-range">
-              <button class="stock-range-btn" data-range="30">30d</button>
-              <button class="stock-range-btn" data-range="60">60d</button>
-              <button class="stock-range-btn active" data-range="90">90d</button>
-            </div>
+    const chartHtml = `<div class="stock-chart-wrap">
+        <div class="stock-chart-hdr">
+          <div class="stock-chart-title" id="stock-chart-title">Kurshistorik (indlæser...)</div>
+          <div class="stock-range-btns" id="stock-range">
+            <button class="stock-range-btn" data-range="30">30d</button>
+            <button class="stock-range-btn active" data-range="90">90d</button>
+            <button class="stock-range-btn" data-range="365">1år</button>
+            <button class="stock-range-btn" data-range="1825">5år</button>
+            <button class="stock-range-btn" data-range="max">Max</button>
           </div>
-          <div class="stock-chart-canvas"><canvas id="stock-chart"></canvas></div>
-        </div>`
-      : `<div class="stock-chart-wrap"><div class="stock-chart-empty">Ingen prishistorik tilgængelig</div></div>`;
+        </div>
+        <div class="stock-chart-canvas"><canvas id="stock-chart"></canvas></div>
+      </div>`;
 
     const rows = [
       ['Pris', fmtPrice(s.price), '', 'Aktuel aktiekurs i DKK.'],
@@ -856,18 +857,16 @@ function renderStockTab() {
     }
     el.innerHTML = html;
 
-    if (hasHistory) {
-      renderStockChart(s.price_history, stockChartRange);
-      document.querySelectorAll('#stock-range .stock-range-btn').forEach(btn => {
-        btn.classList.toggle('active', parseInt(btn.dataset.range, 10) === stockChartRange);
-        btn.addEventListener('click', () => {
-          stockChartRange = parseInt(btn.dataset.range, 10);
-          document.querySelectorAll('#stock-range .stock-range-btn').forEach(b =>
-            b.classList.toggle('active', b === btn));
-          renderStockChart(s.price_history, stockChartRange);
-        });
+    loadAndRenderStockHistory(s);
+    document.querySelectorAll('#stock-range .stock-range-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const r = btn.dataset.range;
+        stockChartRange = r === 'max' ? 'max' : parseInt(r, 10);
+        document.querySelectorAll('#stock-range .stock-range-btn').forEach(b =>
+          b.classList.toggle('active', b === btn));
+        if (currentHistory) renderStockChart(currentHistory, stockChartRange, s.price);
       });
-    }
+    });
 
   } else if (currentStockTab === 'nyheder') {
     if (!s.news || !s.news.length) {
@@ -917,38 +916,96 @@ function closeStock() {
 }
 function maybeCloseStock(e) { if (e.target === document.getElementById('stock-overlay')) closeStock(); }
 
-function renderStockChart(history, rangeDays) {
+async function loadAndRenderStockHistory(stock) {
+  currentHistory = null;
+  // yf-symbol via watchlist-mapping: stocks[].symbol er saxo, vi har brug for yf.
+  // sync_dashboard inkluderer ikke yf direkte — udled fra symbol via stocks_yf_map.
+  const yfSym = saxoToYf(stock.symbol);
+  if (!yfSym) { setStockChartTitle('Ingen prishistorik tilgængelig'); return; }
+
+  let data = stockHistoryCache[yfSym];
+  if (!data) {
+    setStockChartTitle('Henter historik...');
+    try {
+      const r = await fetch(`prices/history/${yfSym}.json?t=${Date.now()}`, { cache: 'force-cache' });
+      if (!r.ok) throw new Error(r.statusText);
+      data = await r.json();
+      stockHistoryCache[yfSym] = data;
+    } catch (e) {
+      setStockChartTitle('Kunne ikke hente historik');
+      return;
+    }
+  }
+  if (!data || !Array.isArray(data.history) || data.history.length < 2) {
+    setStockChartTitle('Ingen prishistorik tilgængelig');
+    return;
+  }
+  // Smart trick: append intraday-snapshot (s.price) hvis nyere end seneste close
+  const today = new Date().toISOString().slice(0,10);
+  const hist = data.history.slice();
+  const lastEntry = hist[hist.length - 1];
+  if (stock.price != null && lastEntry && lastEntry.date < today) {
+    hist.push({ date: today, close: stock.price });
+  }
+  currentHistory = hist;
+  setStockChartTitle(`Kurshistorik (${hist.length} dage, ${hist[0].date} → ${hist[hist.length-1].date})`);
+  renderStockChart(hist, stockChartRange, stock.price);
+}
+
+function setStockChartTitle(txt) {
+  const el = document.getElementById('stock-chart-title');
+  if (el) el.textContent = txt;
+}
+
+function saxoToYf(saxo) {
+  // Genereret mapping fra watchlist.py — opdater hvis C25 ændres
+  const map = {
+    'NOVOb:xcse':'NOVO-B.CO','MAERSKb:xcse':'MAERSK-B.CO','MAERSKa:xcse':'MAERSK-A.CO',
+    'DSV:xcse':'DSV.CO','ORSTED:xcse':'ORSTED.CO','CARLb:xcse':'CARL-B.CO',
+    'PNDORA:xcse':'PNDORA.CO','TRYG:xcse':'TRYG.CO','COLOb:xcse':'COLO-B.CO',
+    'GMAB:xcse':'GMAB.CO','GN:xcse':'GN.CO','DEMANT:xcse':'DEMANT.CO',
+    'RBREW:xcse':'RBREW.CO','NDA-DK:xcse':'NDA-DK.CO','DANSKE:xcse':'DANSKE.CO',
+    'FLS:xcse':'FLS.CO','VWS:xcse':'VWS.CO','AMBUb:xcse':'AMBU-B.CO',
+    'NSISb:xcse':'NSIS-B.CO','ROCKb:xcse':'ROCK-B.CO','BAVA:xcse':'BAVA.CO',
+    'JYSK:xcse':'JYSK.CO','ISS:xcse':'ISS.CO','SYDB:xcse':'ALSYDB.CO','NNIT:xcse':'NNIT.CO',
+  };
+  return map[saxo] || null;
+}
+
+function renderStockChart(history, range, intradayPrice) {
   if (stockChart) { stockChart.destroy(); stockChart = null; }
   const canvas = document.getElementById('stock-chart');
   if (!canvas || !Array.isArray(history) || history.length < 2) return;
-  const slice = history.slice(-rangeDays);
+  const slice = range === 'max' ? history : history.slice(-range);
+  if (slice.length < 2) return;
   const labels = slice.map(p => p.date);
   const vals = slice.map(p => p.close);
   const first = vals[0];
   const last = vals[vals.length - 1];
   const color = last >= first ? '#3fb950' : '#f85149';
+  const pctChange = (last / first - 1) * 100;
 
   stockChart = new Chart(canvas.getContext('2d'), {
     type: 'line',
     data: {
       labels,
       datasets: [{
-        label: 'Kurs',
+        label: `Kurs (${(pctChange >= 0 ? '+' : '') + pctChange.toFixed(1)}% i intervallet)`,
         data: vals,
         borderColor: color,
         backgroundColor: color + '18',
-        borderWidth: 2,
+        borderWidth: 1.5,
         pointRadius: 0,
         pointHoverRadius: 4,
         fill: true,
-        tension: .25,
+        tension: .15,
       }],
     },
     options: {
       responsive: true, maintainAspectRatio: false,
       interaction: { mode: 'index', intersect: false },
       plugins: {
-        legend: { display: false },
+        legend: { display: true, position: 'bottom', labels: { color: '#8b949e', font: { size: 11 }, boxWidth: 12, padding: 6 } },
         tooltip: {
           backgroundColor: '#161b22', borderColor: '#30363d', borderWidth: 1,
           callbacks: { label: c => c.parsed.y.toLocaleString('da-DK', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' kr.' },
