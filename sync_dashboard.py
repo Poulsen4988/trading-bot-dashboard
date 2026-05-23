@@ -385,6 +385,7 @@ def build_stocks():
             "sector": pdata.get("sector"),
             "industry": pdata.get("industry"),
             "next_earnings_date": pdata.get("next_earnings_date"),
+            "price_history": pdata.get("price_history", []),
             "overview": kb.get("overview", ""),
             "fin_summary": kb.get("financials", {}).get("summary", ""),
             "news": kb.get("news", [])[:8],
