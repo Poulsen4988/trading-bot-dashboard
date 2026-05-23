@@ -123,23 +123,83 @@ def update_history(data):
     portfolio["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
 
+def list_github_dir(path):
+    """Lister filer i en mappe på GitHub. Returns list of dicts med 'name'/'path'."""
+    if not GITHUB_PAT:
+        return []
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path}"
+    headers = {"Authorization": f"Bearer {GITHUB_PAT}", "User-Agent": "TradingBot/1.0"}
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req) as r:
+            data = json.loads(r.read())
+        return data if isinstance(data, list) else []
+    except Exception as e:
+        print(f"[sync_dashboard] Kunne ikke liste {path}: {e}")
+        return []
+
+
+def fetch_github_json(path):
+    """Henter en JSON-fil fra GitHub via Contents API."""
+    if not GITHUB_PAT:
+        return None
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path}"
+    headers = {"Authorization": f"Bearer {GITHUB_PAT}", "User-Agent": "TradingBot/1.0"}
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req) as r:
+            payload = json.loads(r.read())
+        content = base64.b64decode(payload["content"]).decode("utf-8")
+        return json.loads(content)
+    except Exception as e:
+        print(f"[sync_dashboard] Kunne ikke hente {path}: {e}")
+        return None
+
+
+def latest_json_from_dir(github_path, local_subdir):
+    """Finder seneste YYYY-MM-DD.json — først via GitHub, falder tilbage til lokal mappe."""
+    listing = list_github_dir(github_path)
+    json_files = sorted(
+        [f for f in listing if f.get("name", "").endswith(".json")],
+        key=lambda f: f["name"], reverse=True,
+    )
+    if json_files:
+        latest = json_files[0]["name"]
+        data = fetch_github_json(f"{github_path}/{latest}")
+        if data is not None:
+            return data, latest.replace(".json", "")
+
+    files = sorted(glob.glob(os.path.join(SCRIPT_DIR, local_subdir, "*.json")))
+    if files:
+        raw = load_json_file(files[-1], {})
+        date_str = os.path.basename(files[-1]).replace(".json", "")
+        return raw, date_str
+    return {}, None
+
+
 def load_latest_screening():
     """Returnerer screener-rækker for seneste screening, keyet på yf-symbol."""
-    files = sorted(glob.glob(os.path.join(SCRIPT_DIR, "screening", "*.json")))
-    if not files:
-        return {}, None
-    raw = load_json_file(files[-1], {})
-    by_sym = {row.get("symbol"): row for row in raw.get("selected", [])}
-    return by_sym, raw.get("date")
+    raw, date_str = latest_json_from_dir("screening", "screening")
+    by_sym = {row.get("symbol"): row for row in (raw or {}).get("selected", [])}
+    return by_sym, (raw or {}).get("date") or date_str
 
 
 def load_latest_analysis():
     """Returnerer agent-analyse for seneste analysis-fil, keyet på yf-symbol."""
-    files = sorted(glob.glob(os.path.join(SCRIPT_DIR, "analysis", "*.json")))
-    if not files:
-        return {}, None
-    raw = load_json_file(files[-1], {})
-    return raw.get("stocks", {}), raw.get("date")
+    raw, date_str = latest_json_from_dir("analysis", "analysis")
+    return (raw or {}).get("stocks", {}), (raw or {}).get("date") or date_str
+
+
+def load_latest_decisions():
+    """Returnerer dagens AI-beslutninger (BUY/SELL/HOLD med reasoning)."""
+    raw, date_str = latest_json_from_dir("decisions", "decisions")
+    if not raw:
+        return None
+    return {
+        "date": raw.get("date") or date_str,
+        "market_summary": raw.get("market_summary"),
+        "decisions": raw.get("decisions", []),
+    }
 
 
 def build_stocks():
@@ -300,6 +360,7 @@ def sync():
     mark_latest_new(trades)
     update_history(data)
     data["stocks"] = build_stocks()
+    data["latest_decisions"] = load_latest_decisions()
 
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
