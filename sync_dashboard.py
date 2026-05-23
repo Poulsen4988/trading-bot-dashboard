@@ -202,6 +202,94 @@ def load_latest_decisions():
     }
 
 
+def load_benchmarks():
+    """Henter prices/benchmarks.json fra GitHub (fallback til lokalt)."""
+    data = fetch_github_json("prices/benchmarks.json")
+    if data is None:
+        data = load_json_file(os.path.join(SCRIPT_DIR, "prices", "benchmarks.json"), {})
+    return data or {}
+
+
+def build_benchmark_series(portfolio_history, benchmarks_raw, initial_cash):
+    """Bygger benchmark-historik normaliseret til samme startværdi som porteføljen.
+
+    Returnerer liste af {ticker, label, color, history: [{date, portfolio_value}]}
+    så chart kan plotte direkte sammen med eksisterende portfolio history.
+    """
+    if not portfolio_history or not benchmarks_raw:
+        return []
+
+    start_date = portfolio_history[0].get("date")
+    history_dates = {h.get("date") for h in portfolio_history if h.get("date")}
+    benchmarks = (benchmarks_raw or {}).get("benchmarks", {})
+
+    colors = {
+        "^OMXC25": "#e3b341",
+        "EUNL.DE": "#a371f7",
+    }
+
+    out = []
+    for ticker, info in benchmarks.items():
+        if "error" in (info or {}):
+            continue
+        hist = (info or {}).get("history", [])
+        by_date = {h.get("date"): h.get("close") for h in hist}
+
+        # Find benchmark-close på (eller umiddelbart efter) portfolio start_date
+        start_close = None
+        if start_date and start_date in by_date:
+            start_close = by_date[start_date]
+        else:
+            sorted_dates = sorted(by_date.keys())
+            for d in sorted_dates:
+                if start_date is None or d >= start_date:
+                    start_close = by_date[d]
+                    start_date_used = d
+                    break
+        if not start_close:
+            continue
+
+        # Byg series på portefølje-datoer (skip dage uden benchmark-close)
+        series = []
+        for hd in sorted(history_dates):
+            close = by_date.get(hd)
+            if close is None:
+                # find sidste tilgængelige tidligere dato
+                earlier = [d for d in by_date if d <= hd]
+                if earlier:
+                    close = by_date[max(earlier)]
+            if close:
+                value = round(initial_cash * close / start_close, 2)
+                series.append({"date": hd, "portfolio_value": value})
+
+        out.append({
+            "ticker": ticker,
+            "label": (info or {}).get("label", ticker),
+            "color": colors.get(ticker, "#8b949e"),
+            "history": series,
+        })
+    return out
+
+
+def compute_sector_exposure(positions, stocks_list):
+    """Sektorfordeling i procent af samlet positionsværdi."""
+    sym_to_sector = {s.get("symbol"): s.get("sector") for s in (stocks_list or [])}
+    sectors = {}
+    total_val = 0.0
+    for p in positions or []:
+        shares = float(p.get("shares") or 0)
+        price = float(p.get("current_price") or p.get("purchase_price") or 0)
+        val = shares * price
+        if val <= 0:
+            continue
+        sec = sym_to_sector.get(p.get("symbol")) or "Ukendt"
+        sectors[sec] = sectors.get(sec, 0.0) + val
+        total_val += val
+    if total_val <= 0:
+        return {}
+    return {k: round(v / total_val * 100, 1) for k, v in sectors.items()}
+
+
 def build_stocks():
     try:
         from watchlist import C25
@@ -228,6 +316,7 @@ def build_stocks():
         if adata:
             analysis = {
                 "analysis_date": analysis_date,
+                "tier": adata.get("tier"),
                 "verdict": adata.get("verdict"),
                 "confidence": adata.get("confidence"),
                 "bull": adata.get("bull", []),
@@ -275,6 +364,7 @@ def build_stocks():
             "market_cap": pdata.get("market_cap"),
             "sector": pdata.get("sector"),
             "industry": pdata.get("industry"),
+            "next_earnings_date": pdata.get("next_earnings_date"),
             "overview": kb.get("overview", ""),
             "fin_summary": kb.get("financials", {}).get("summary", ""),
             "news": kb.get("news", [])[:8],
@@ -361,6 +451,14 @@ def sync():
     update_history(data)
     data["stocks"] = build_stocks()
     data["latest_decisions"] = load_latest_decisions()
+
+    initial_cash = float(data.get("portfolio", {}).get("initial_cash", INITIAL_CASH))
+    data["benchmarks"] = build_benchmark_series(
+        data.get("history", []), load_benchmarks(), initial_cash,
+    )
+    data["sector_exposure_pct"] = compute_sector_exposure(
+        data.get("portfolio", {}).get("positions", []), data.get("stocks", []),
+    )
 
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
