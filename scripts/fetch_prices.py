@@ -189,6 +189,21 @@ for s in C25:
 
         technical = compute_technical(closes, highs, lows, vols, pct_high, pct_low)
 
+        # Næste earnings-dato — yfinance returnerer enten dict, DataFrame eller None
+        next_earnings = None
+        try:
+            cal = t.calendar
+            if isinstance(cal, dict):
+                ed = cal.get("Earnings Date")
+                if isinstance(ed, list) and ed:
+                    next_earnings = str(ed[0])[:10]
+                elif ed:
+                    next_earnings = str(ed)[:10]
+            elif cal is not None and hasattr(cal, "index") and "Earnings Date" in getattr(cal, "index", []):
+                next_earnings = str(cal.loc["Earnings Date"].iloc[0])[:10]
+        except Exception:
+            next_earnings = None
+
         stocks[sym] = {
             "price": round(price, 2) if price is not None else None,
             "pct_1d": pct_1d,
@@ -207,6 +222,7 @@ for s in C25:
             "market_cap": info.get("marketCap"),
             "sector": info.get("sector"),
             "industry": info.get("industry"),
+            "next_earnings_date": next_earnings,
             "technical": technical,
         }
         method = (technical or {}).get("method", "ingen")
@@ -227,3 +243,62 @@ with open(out, "w", encoding="utf-8") as f:
 
 ok = sum(1 for v in stocks.values() if "error" not in v and v.get("price"))
 print(f"[fetch_prices] Faerdig: {ok}/{len(tickers)} aktier hentet -> {out}")
+
+
+# --- Benchmark-hentning ----------------------------------------------------
+# ^OMXC25 = OMX Copenhagen 25 index (uvægtet officielt index)
+# EUNL.DE = iShares Core MSCI World UCITS ETF (ISIN IE00B6R52259, Xetra)
+
+BENCHMARK_TICKERS = ["^OMXC25", "EUNL.DE"]
+BENCHMARK_LABELS = {
+    "^OMXC25": "OMX Copenhagen 25",
+    "EUNL.DE": "iShares Core MSCI World",
+}
+
+print(f"[fetch_prices] Henter benchmarks: {', '.join(BENCHMARK_TICKERS)} (1 års historik)...")
+bench_hist = yf.download(BENCHMARK_TICKERS, period="1y", interval="1d", auto_adjust=True,
+                         progress=False, group_by="ticker")
+
+benchmarks = {}
+for bsym in BENCHMARK_TICKERS:
+    try:
+        if hasattr(bench_hist.columns, "levels") and bsym in bench_hist.columns.get_level_values(0):
+            df = bench_hist[bsym]
+        else:
+            df = bench_hist
+        closes = df["Close"].dropna()
+        if closes.empty:
+            benchmarks[bsym] = {"error": "no data"}
+            print(f"[fetch_prices]   {bsym}: INGEN DATA")
+            continue
+
+        history = [
+            {"date": idx.date().isoformat(), "close": round(float(c), 4)}
+            for idx, c in closes.items()
+        ]
+        price = float(closes.iloc[-1])
+        pct_1d = round((closes.iloc[-1] / closes.iloc[-2] - 1) * 100, 2) if len(closes) >= 2 else None
+        pct_5d = round((closes.iloc[-1] / closes.iloc[-6] - 1) * 100, 2) if len(closes) >= 6 else None
+        pct_20d = round((closes.iloc[-1] / closes.iloc[-21] - 1) * 100, 2) if len(closes) >= 21 else None
+
+        benchmarks[bsym] = {
+            "label": BENCHMARK_LABELS.get(bsym, bsym),
+            "price": round(price, 4),
+            "pct_1d": pct_1d,
+            "pct_5d": pct_5d,
+            "pct_20d": pct_20d,
+            "history": history,
+        }
+        print(f"[fetch_prices]   {bsym}: {price:.2f} ({len(history)} dage)")
+    except Exception as e:
+        benchmarks[bsym] = {"error": str(e)}
+        print(f"[fetch_prices]   FEJL {bsym}: {e}")
+
+bench_out = os.path.join(SCRIPT_DIR, "prices", "benchmarks.json")
+with open(bench_out, "w", encoding="utf-8") as f:
+    json.dump({
+        "date": now.date().isoformat(),
+        "fetched_at": now.isoformat(),
+        "benchmarks": benchmarks,
+    }, f, ensure_ascii=False, indent=2)
+print(f"[fetch_prices] Benchmarks gemt -> {bench_out}")
