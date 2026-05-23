@@ -27,6 +27,25 @@ TECH_KEYS = (
     "momentum_20d", "momentum_divergence",
 )
 
+# ATR-baseret position sizing — risikér 1.5% af total porteføljeværdi
+# pr. handel med stop-loss 2x ATR under entry-pris.
+RISK_PER_TRADE_PCT = 0.015
+ATR_STOP_MULTIPLIER = 2.0
+
+
+def atr_position_size(total_value, cur_price, atr):
+    """Returner (suggested_shares, suggested_cost_dkk, suggested_stop_dkk) eller (None, None, None)."""
+    if not atr or not cur_price or not total_value:
+        return None, None, None
+    risk_budget = total_value * RISK_PER_TRADE_PCT
+    risk_per_share = atr * ATR_STOP_MULTIPLIER
+    if risk_per_share <= 0:
+        return None, None, None
+    shares = floor(risk_budget / risk_per_share)
+    cost = round(shares * cur_price, 2)
+    stop = round(cur_price - risk_per_share, 2)
+    return shares, cost, stop
+
 
 def today() -> str:
     return date.today().isoformat()
@@ -156,6 +175,7 @@ def main() -> None:
             "investment_plan_term": plan.get("term"),
             "investment_plan_exit_conditions": plan.get("exit_conditions"),
             "last_review_date": last_review.get("date"),
+            "next_earnings_date": prices.get(sym, {}).get("next_earnings_date"),
             "todays_verdict": stock_analysis.get("verdict"),
             "todays_confidence": stock_analysis.get("confidence"),
             "todays_bull": stock_analysis.get("bull", []),
@@ -174,6 +194,7 @@ def main() -> None:
     for sym, stock in stocks.items():
         verdict = str(stock.get("verdict", "NEUTRAL")).upper()
         confidence = int(stock.get("confidence") or 0)
+        tier = str(stock.get("tier", "deep")).lower()
         cur_price = float(
             prices.get(sym, {}).get("price")
             or stock.get("price")
@@ -181,10 +202,14 @@ def main() -> None:
         )
         has_position = sym in open_symbols
         shares_possible = floor(buy_budget / cur_price) if cur_price and buy_budget > 0 else 0
+        tech = compact_technical(prices, sym)
+        atr_val = tech.get("atr") if tech else None
+        atr_shares, atr_cost, atr_stop = atr_position_size(total_value, cur_price, atr_val)
 
         candidates.append({
             "symbol": sym,
             "name": stock.get("name", sym),
+            "tier": tier,
             "verdict": verdict,
             "confidence": confidence,
             "price": cur_price,
@@ -192,12 +217,17 @@ def main() -> None:
             "has_open_position": has_position,
             "shares_possible_with_budget": shares_possible,
             "cost_if_bought_dkk": round(shares_possible * cur_price, 2) if shares_possible else 0,
+            "atr": atr_val,
+            "suggested_shares_atr": atr_shares,
+            "suggested_cost_dkk_atr": atr_cost,
+            "suggested_stop_dkk_atr": atr_stop,
+            "next_earnings_date": prices.get(sym, {}).get("next_earnings_date"),
             "bull": stock.get("bull", []),
             "bear": stock.get("bear", []),
             "summary": stock.get("summary"),
             "key_risk": stock.get("key_risk"),
-            "technical": compact_technical(prices, sym),
-            "recent_news": knowledge_news(sym),
+            "technical": tech,
+            "recent_news": knowledge_news(sym) if tier == "deep" else [],
         })
 
     # Sorter: BULL først, derefter confidence
@@ -211,13 +241,27 @@ def main() -> None:
         sector_weights[sec] = sector_weights.get(sec, 0) + (op.get("weight_pct") or 0)
     out["sector_exposure_pct"] = {k: round(v, 1) for k, v in sector_weights.items()}
 
+    out["sizing_methodology"] = {
+        "risk_per_trade_pct": RISK_PER_TRADE_PCT * 100,
+        "atr_stop_multiplier": ATR_STOP_MULTIPLIER,
+        "note": (
+            f"suggested_shares_atr er beregnet så maksimalt tab ved 2x ATR stop = "
+            f"{RISK_PER_TRADE_PCT*100:.1f}% af total porteføljeværdi. "
+            f"Du kan overstyre, men brug det som udgangspunkt for position-størrelse."
+        ),
+    }
+
     out["instructions"] = (
         f"Du skal skrive decisions/{date_str}.json via github_store med dine beslutninger. "
         "Format: {date, market_summary, decisions: [{symbol, name, action, shares, price, confidence, "
         "reasoning, bull, bear, investment_plan: {term, basis, thesis, price_target, stop_loss, "
         "expected_return_pct, timeframe, exit_conditions}}]}. "
         "Brug recent_news og technical aktivt i din vurdering. "
+        "Position sizing: brug suggested_shares_atr som udgangspunkt (1.5% risiko, 2x ATR stop). "
+        "Materielle ændringer i fundamentale forhold giver fri ret til at sælge. "
+        "next_earnings_date vises på kandidater — overvej timing, men intet handelsforbud. "
         "sector_exposure_pct viser nuværende sektorfordeling — vurder selv koncentrationsrisiko. "
+        "Tier-baseret analyse: 'deep' = grundig + recent_news, 'scan' = kort vurdering uden news. "
         "Alle åbne positioner SKAL have en entry (HOLD eller SELL). "
         "Derefter køres python paper_trader.py."
     )
