@@ -64,11 +64,14 @@ def recent_news(yf_sym: str, limit: int = 6) -> list[dict[str, Any]]:
     ]
 
 
-def compact_stock_payload(sym, stock, rationale, included_because) -> dict[str, Any]:
-    return {
+def compact_stock_payload(sym, stock, rationale, included_because, tier, screener_score=None) -> dict[str, Any]:
+    news_limit = 6 if tier == "deep" else 2
+    payload = {
         "symbol": sym,
         "name": stock.get("name") or YF_TO_NAME.get(sym),
+        "tier": tier,
         "included_because": included_because,
+        "screener_score": screener_score,
         "price": stock.get("price"),
         "pct_1d": stock.get("pct_1d"),
         "pct_5d": stock.get("pct_5d"),
@@ -85,8 +88,9 @@ def compact_stock_payload(sym, stock, rationale, included_because) -> dict[str, 
         "industry": stock.get("industry"),
         "technical": stock.get("technical", {}),
         "screening_rationale": rationale,
-        "recent_news": recent_news(sym),
+        "recent_news": recent_news(sym, limit=news_limit),
     }
+    return payload
 
 
 def main() -> None:
@@ -99,19 +103,31 @@ def main() -> None:
     screening_rows = (screening.get("selected") or [])[:5]
     screening_by_sym = {r.get("symbol"): r for r in screening_rows}
 
-    # Nuværende beholdninger — skal ALTID analyseres
+    # Hele scoringstabellen (alle 25) til scan-tier prioritering
+    all_scores = {row.get("symbol"): row.get("score") for row in (screening.get("all_scores") or [])}
+
+    # Nuværende beholdninger — skal ALTID analyseres (deep tier)
     data = load_json("data.json", default={}) or {}
     positions = data.get("portfolio", {}).get("positions", [])
     held_syms = {p.get("symbol") for p in positions if p.get("symbol")}
 
-    # Union: top-picks + beholdninger
-    order = [r.get("symbol") for r in screening_rows]
-    for h in held_syms:
-        if h not in order:
-            order.append(h)
+    # Deep tier: top-5 screener-picks + alle beholdninger
+    deep_syms = set(screening_by_sym.keys()) | held_syms
+
+    # Scan tier: resten af C25-universet (alt i prices/latest.json som ikke er deep)
+    universe = [s["yf"] for s in C25]
+    scan_syms = [s for s in universe if s not in deep_syms and s in stocks_data and "error" not in stocks_data.get(s, {})]
+    scan_syms.sort(key=lambda s: all_scores.get(s, 0), reverse=True)
+
+    # Deep først (top-5 rækkefølge → derefter holdings ikke i top-5)
+    deep_order = [r.get("symbol") for r in screening_rows if r.get("symbol") in deep_syms]
+    for h in sorted(held_syms):
+        if h not in deep_order:
+            deep_order.append(h)
 
     selected = []
-    for sym in order:
+
+    for sym in deep_order:
         if not sym or sym not in stocks_data:
             continue
         stock = stocks_data[sym]
@@ -131,19 +147,36 @@ def main() -> None:
             or row.get("screening_rationale")
             or ("Nuværende beholdning — altid re-analyseret" if in_held else "Udvalgt af screener")
         )
-        selected.append(compact_stock_payload(sym, stock, rationale, because))
+        selected.append(compact_stock_payload(
+            sym, stock, rationale, because, tier="deep", screener_score=all_scores.get(sym),
+        ))
+
+    for sym in scan_syms:
+        stock = stocks_data[sym]
+        rationale = f"Scan-tier — screener score {all_scores.get(sym)}"
+        selected.append(compact_stock_payload(
+            sym, stock, rationale, "scan-tier (resten af C25)", tier="scan", screener_score=all_scores.get(sym),
+        ))
+
+    deep_count = sum(1 for s in selected if s["tier"] == "deep")
+    scan_count = sum(1 for s in selected if s["tier"] == "scan")
 
     payload = {
         "date": date_str,
         "prices_date": prices.get("date"),
         "prices_fetched_at": prices.get("fetched_at"),
         "held_positions": sorted(held_syms),
+        "tier_counts": {"deep": deep_count, "scan": scan_count, "total": deep_count + scan_count},
         "selected_for_analysis": selected,
         "output_file": f"analysis/{date_str}.json",
         "instruction": (
-            "Lav bull/bear/head-analyst analyse af ALLE aktier i selected_for_analysis "
-            "(både screener-picks og nuværende beholdninger). Brug recent_news og "
-            "technical aktivt. Skriv output_file som JSON."
+            "Tiered analyse af ALLE C25-aktier:\n"
+            "- tier=deep (top-5 screener-picks + beholdninger): fuld bull/bear/head-analyst analyse "
+            "med bull/bear-lister, summary, key_risk. Brug recent_news og technical aktivt.\n"
+            "- tier=scan (resten): kort vurdering pr. aktie — verdict (BULL/BEAR/NEUTRAL), "
+            "confidence (1-10), summary (1 sætning), bull (max 1 punkt), bear (max 1 punkt), "
+            "key_risk (1 sætning). Spring news-research over, brug kun price-action + technical + screener_score.\n"
+            "Skriv output_file (analysis/DATO.json) som JSON med alle 25 aktier i samme format."
         ),
     }
     print(json.dumps(payload, ensure_ascii=False, indent=2))
