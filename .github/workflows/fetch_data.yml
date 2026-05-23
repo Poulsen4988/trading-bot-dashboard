@@ -26,6 +26,14 @@ jobs:
       - name: Hent priser (yfinance)
         run: python scripts/fetch_prices.py
 
+      - name: Hent fuld prishistorik (kun kl 16 UTC eller manuel trigger)
+        run: |
+          if [ "$(date -u +%H)" -eq 16 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python scripts/fetch_history.py
+          else
+            echo "Springer fuld historik over (kører kun kl 16 UTC eller ved manuel trigger)"
+          fi
+
       - name: Hent nyheder (yfinance)
         run: python news.py > /dev/null
 
