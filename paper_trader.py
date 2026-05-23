@@ -98,6 +98,10 @@ def execute_decisions(decisions_data, data):
 
         pos = find_position(data, sym)
         skip_reason = None
+        realized_pnl_dkk = None
+        realized_pnl_pct = None
+        holding_days = None
+        cost_basis = None
 
         if action == "BUY":
             if not price or shares <= 0:
@@ -155,6 +159,18 @@ def execute_decisions(decisions_data, data):
                 sell_price = float(sell_price)
                 sell_shares = shares if 0 < shares <= int(pos.get("shares", 0)) else int(pos.get("shares", 0))
                 proceeds = round(sell_shares * sell_price, 2)
+                buy_price = float(pos.get("purchase_price") or 0)
+                cost_basis = round(buy_price * sell_shares, 2) if buy_price else None
+                realized_pnl_dkk = round((sell_price - buy_price) * sell_shares, 2) if buy_price else None
+                realized_pnl_pct = round((sell_price / buy_price - 1) * 100, 2) if buy_price else None
+                purchase_date = pos.get("purchase_date")
+                if purchase_date:
+                    try:
+                        d_buy = date.fromisoformat(purchase_date)
+                        d_sell = date.fromisoformat(date_str) if isinstance(date_str, str) else date.today()
+                        holding_days = (d_sell - d_buy).days
+                    except Exception:
+                        holding_days = None
                 portfolio["cash"] = round(float(portfolio.get("cash", 0)) + proceeds, 2)
                 if sell_shares >= int(pos.get("shares", 0)):
                     positions.remove(pos)
@@ -213,6 +229,7 @@ def execute_decisions(decisions_data, data):
             "price": price,
             "value": value,
             "reasoning": {
+                "verdict": action,
                 "summary": reasoning_text,
                 "confidence": confidence,
                 "bull": bull,
@@ -220,6 +237,11 @@ def execute_decisions(decisions_data, data):
             },
             "investment_plan": investment_plan,
         }
+        if action == "SELL":
+            trade["cost_basis_dkk"] = cost_basis
+            trade["realized_pnl_dkk"] = realized_pnl_dkk
+            trade["realized_pnl_pct"] = realized_pnl_pct
+            trade["holding_days"] = holding_days
         add_trade(data, trade)
         executed.append(trade)
 
