@@ -186,7 +186,7 @@
     .stock-chart-wrap { background: var(--surface2); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px 8px; margin-bottom: 14px; }
     .stock-chart-hdr { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
     .stock-chart-title { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
-    .stock-range-btns { display: flex; gap: 4px; }
+    .stock-range-btns { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
     .stock-range-btn { font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 3px; border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer; }
     .stock-range-btn:hover { color: var(--text); border-color: var(--muted); }
     .stock-range-btn.active { background: var(--surface); color: var(--text); border-color: var(--blue); }
@@ -786,8 +786,11 @@ function renderStockTab() {
         <div class="stock-chart-hdr">
           <div class="stock-chart-title" id="stock-chart-title">Kurshistorik (indlæser...)</div>
           <div class="stock-range-btns" id="stock-range">
+            <button class="stock-range-btn" data-range="1">1d</button>
+            <button class="stock-range-btn" data-range="7">1u</button>
             <button class="stock-range-btn" data-range="30">30d</button>
             <button class="stock-range-btn active" data-range="90">90d</button>
+            <button class="stock-range-btn" data-range="ytd">I år</button>
             <button class="stock-range-btn" data-range="365">1år</button>
             <button class="stock-range-btn" data-range="1825">5år</button>
             <button class="stock-range-btn" data-range="max">Max</button>
@@ -861,7 +864,7 @@ function renderStockTab() {
     document.querySelectorAll('#stock-range .stock-range-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const r = btn.dataset.range;
-        stockChartRange = r === 'max' ? 'max' : parseInt(r, 10);
+        stockChartRange = (r === 'max' || r === 'ytd') ? r : parseInt(r, 10);
         document.querySelectorAll('#stock-range .stock-range-btn').forEach(b =>
           b.classList.toggle('active', b === btn));
         if (currentHistory) renderStockChart(currentHistory, stockChartRange, s.price);
@@ -976,7 +979,19 @@ function renderStockChart(history, range, intradayPrice) {
   if (stockChart) { stockChart.destroy(); stockChart = null; }
   const canvas = document.getElementById('stock-chart');
   if (!canvas || !Array.isArray(history) || history.length < 2) return;
-  const slice = range === 'max' ? history : history.slice(-range);
+  let slice;
+  if (range === 'max') {
+    slice = history;
+  } else if (range === 'ytd') {
+    const yearStart = new Date().getFullYear() + '-01-01';
+    slice = history.filter(p => p.date >= yearStart);
+    if (slice.length < 2 && history.length >= 2) slice = history.slice(-2);
+  } else if (range === 1) {
+    // 1 dag = sidste 2 punkter (gårsdagens close + intraday snapshot via smart-trick)
+    slice = history.slice(-2);
+  } else {
+    slice = history.slice(-range);
+  }
   if (slice.length < 2) return;
   const labels = slice.map(p => p.date);
   const vals = slice.map(p => p.close);
