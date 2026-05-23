@@ -133,6 +133,36 @@
     .card-hdr { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
     .card-hdr .card-title { margin-bottom: 0; }
 
+    /* Dagens anbefalinger */
+    .td-card { background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 20px; }
+    .td-hdr { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    .td-title { font-size: 13px; font-weight: 700; color: var(--text); text-transform: uppercase; letter-spacing: .8px; }
+    .td-date { font-size: 12px; color: var(--muted); }
+    .td-counters { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+    .td-counter { padding: 6px 12px; border-radius: 6px; font-weight: 700; font-size: 12px; letter-spacing: .3px; }
+    .td-counter.buy { background: rgba(63,185,80,.18); color: var(--green); }
+    .td-counter.sell { background: rgba(248,81,73,.18); color: var(--red); }
+    .td-counter.hold { background: rgba(227,179,65,.18); color: var(--yellow); }
+    .td-counter.zero { background: var(--surface2); color: var(--muted); }
+    .td-rows { display: flex; flex-direction: column; gap: 8px; }
+    .td-row { display: grid; grid-template-columns: 72px 1fr auto; gap: 14px; align-items: center; padding: 12px 14px; background: var(--surface2); border-radius: 8px; cursor: pointer; transition: border-color .15s, transform .1s; border: 1px solid var(--border); }
+    .td-row:hover { border-color: var(--blue); transform: translateX(2px); }
+    .td-row.buy { border-left: 3px solid var(--green); }
+    .td-row.sell { border-left: 3px solid var(--red); }
+    .td-row.hold { border-left: 3px solid var(--yellow); }
+    .td-action { font-weight: 700; font-size: 11px; text-align: center; padding: 4px 6px; border-radius: 4px; letter-spacing: .4px; }
+    .td-action.buy { background: rgba(63,185,80,.18); color: var(--green); }
+    .td-action.sell { background: rgba(248,81,73,.18); color: var(--red); }
+    .td-action.hold { background: rgba(227,179,65,.18); color: var(--yellow); }
+    .td-info { min-width: 0; }
+    .td-sym { font-weight: 600; font-size: 14px; }
+    .td-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .td-sum { font-size: 12px; color: var(--text); margin-top: 4px; line-height: 1.45; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    .td-conf { font-size: 11px; color: var(--muted); text-align: right; white-space: nowrap; }
+    .td-holds-toggle { margin-top: 10px; padding: 8px 12px; background: none; border: 1px dashed var(--border); border-radius: 6px; color: var(--muted); cursor: pointer; font-size: 12px; width: 100%; transition: border-color .15s, color .15s; }
+    .td-holds-toggle:hover { border-color: var(--muted); color: var(--text); }
+    .td-empty { padding: 14px; color: var(--muted); font-size: 13px; text-align: center; }
+
     ::-webkit-scrollbar{width:5px} ::-webkit-scrollbar-track{background:transparent} ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
   </style>
 </head>
@@ -165,6 +195,18 @@
     <div class="stat-sub" id="s-buysell">—</div>
   </div>
 </div>
+
+<!-- Dagens anbefalinger -->
+<section class="td-card" id="td-card" style="display:none">
+  <div class="td-hdr">
+    <div class="td-title">Dagens anbefalinger</div>
+    <div class="td-date" id="td-date">—</div>
+  </div>
+  <div class="td-counters" id="td-counters"></div>
+  <div class="td-rows" id="td-rows"></div>
+  <button class="td-holds-toggle" id="td-holds-toggle" style="display:none" onclick="toggleHolds()">Vis HOLD-anbefalinger</button>
+  <div class="td-rows" id="td-holds" style="display:none; margin-top:10px"></div>
+</section>
 
 <!-- C25 Watchlist -->
 <div class="card" style="margin-bottom:20px">
@@ -231,6 +273,7 @@
 <script>
 let allTrades = [];
 let allStocks = [];
+let latestDecisions = null;
 let chart = null;
 let feedTab = 'trades';
 let currentStockTab = 'kurs';
@@ -246,6 +289,7 @@ async function load() {
     const d = await r.json();
     allTrades = d.trades || [];
     allStocks = d.stocks || [];
+    latestDecisions = d.latest_decisions || null;
     render(d);
   } catch(e) { document.getElementById('lu').textContent = 'Fejl ved indlæsning'; }
 }
@@ -274,6 +318,129 @@ function render(d) {
   renderPos(p.positions||[]);
   renderFeed(allTrades);
   renderWatchlist(allStocks);
+  renderTodaysDecisions(latestDecisions);
+}
+
+// ── Dagens anbefalinger ────────────────────────────────────────────────────
+
+function renderTodaysDecisions(latest) {
+  const card = document.getElementById('td-card');
+  const decisions = (latest && Array.isArray(latest.decisions)) ? latest.decisions : [];
+  if (!decisions.length) { card.style.display = 'none'; return; }
+  card.style.display = 'block';
+
+  document.getElementById('td-date').textContent = latest.date || '—';
+
+  const buys  = decisions.filter(x => (x.action||'').toUpperCase() === 'BUY');
+  const sells = decisions.filter(x => (x.action||'').toUpperCase() === 'SELL');
+  const holds = decisions.filter(x => (x.action||'').toUpperCase() === 'HOLD');
+
+  document.getElementById('td-counters').innerHTML =
+    `<span class="td-counter ${buys.length?'buy':'zero'}">${buys.length} KØB</span>` +
+    `<span class="td-counter ${sells.length?'sell':'zero'}">${sells.length} SALG</span>` +
+    `<span class="td-counter ${holds.length?'hold':'zero'}">${holds.length} HOLD</span>`;
+
+  const actions = [...buys, ...sells];
+  const rowsEl = document.getElementById('td-rows');
+  if (actions.length) {
+    rowsEl.innerHTML = actions.map(d => renderDecisionRow(d)).join('');
+  } else {
+    rowsEl.innerHTML = '<div class="td-empty">Ingen køb eller salg i dag — kun HOLD-anbefalinger</div>';
+  }
+
+  const toggle = document.getElementById('td-holds-toggle');
+  const holdsEl = document.getElementById('td-holds');
+  if (holds.length) {
+    toggle.style.display = 'block';
+    toggle.textContent = `Vis ${holds.length} HOLD-anbefalinger`;
+    holdsEl.innerHTML = holds.map(d => renderDecisionRow(d)).join('');
+    holdsEl.style.display = 'none';
+  } else {
+    toggle.style.display = 'none';
+    holdsEl.style.display = 'none';
+  }
+}
+
+function renderDecisionRow(d) {
+  const action = (d.action || 'HOLD').toUpperCase();
+  const cls = action === 'BUY' ? 'buy' : action === 'SELL' ? 'sell' : 'hold';
+  const lbl = action === 'BUY' ? 'KØB' : action === 'SELL' ? 'SÆLG' : 'HOLD';
+  const conf = (d.confidence != null) ? d.confidence : null;
+  const price = (d.price != null) ? d.price.toLocaleString('da-DK', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' kr.' : '';
+  const shares = d.shares ? `${d.shares} stk ` : '';
+  const meta = [shares + price].filter(x => x && x.trim()).join('') || '—';
+  const summary = (d.reasoning && typeof d.reasoning === 'object') ? (d.reasoning.summary || d.reasoning) : (d.reasoning || d.summary || '');
+  const sumText = typeof summary === 'string' ? summary : '';
+  const sym = (d.symbol || '').replace(/'/g, "\\'");
+  return `<div class="td-row ${cls}" onclick="openDecisionModal('${sym}')">
+    <span class="td-action ${cls}">${lbl}</span>
+    <div class="td-info">
+      <div class="td-sym">${d.name || d.symbol || '—'}</div>
+      <div class="td-meta">${meta}</div>
+      ${sumText ? `<div class="td-sum">${escapeHtml(sumText)}</div>` : ''}
+    </div>
+    <div class="td-conf">${conf != null ? 'Conf ' + conf : ''}</div>
+  </div>`;
+}
+
+function toggleHolds() {
+  const holdsEl = document.getElementById('td-holds');
+  const toggle = document.getElementById('td-holds-toggle');
+  const showing = holdsEl.style.display !== 'none';
+  holdsEl.style.display = showing ? 'none' : 'flex';
+  const count = holdsEl.children.length;
+  toggle.textContent = showing ? `Vis ${count} HOLD-anbefalinger` : 'Skjul HOLD-anbefalinger';
+}
+
+function openDecisionModal(symbol) {
+  if (!latestDecisions || !latestDecisions.decisions) return;
+  const d = latestDecisions.decisions.find(x => x.symbol === symbol);
+  if (!d) return;
+  const action = (d.action || 'HOLD').toUpperCase();
+  const lbl = action === 'BUY' ? 'KØB' : action === 'SELL' ? 'SÆLG' : 'HOLD';
+  const cls = action === 'BUY' ? 'b-buy' : action === 'SELL' ? 'b-sell' : 'b-hold';
+
+  document.getElementById('m-title').innerHTML =
+    `<span class="badge ${cls}" style="margin-right:8px">${lbl}</span>${d.name || d.symbol}`;
+
+  const bull = Array.isArray(d.bull) ? d.bull : [];
+  const bear = Array.isArray(d.bear) ? d.bear : [];
+  const summary = (d.reasoning && typeof d.reasoning === 'object') ? (d.reasoning.summary || '') : (d.reasoning || d.summary || '');
+  const plan = d.investment_plan || {};
+  const conf = d.confidence;
+
+  let html = '';
+  if (summary) {
+    html += `<div class="debate verdict"><div class="debate-lbl">Sammenfatning</div><div class="debate-txt">${escapeHtml(summary)}</div>`;
+    if (conf != null) {
+      html += `<div class="conf-row"><div class="conf-track"><div class="conf-fill" style="width:${Math.min(100, conf * 10)}%"></div></div><div class="conf-lbl">Confidence ${conf}/10</div></div>`;
+    }
+    html += '</div>';
+  }
+  if (bull.length) {
+    html += `<div class="debate bull"><div class="debate-lbl">Bull case</div><div class="debate-txt"><ul style="padding-left:18px;margin:0">${bull.map(b => `<li>${escapeHtml(b)}</li>`).join('')}</ul></div></div>`;
+  }
+  if (bear.length) {
+    html += `<div class="debate bear"><div class="debate-lbl">Bear case / risiko</div><div class="debate-txt"><ul style="padding-left:18px;margin:0">${bear.map(b => `<li>${escapeHtml(b)}</li>`).join('')}</ul></div></div>`;
+  }
+  if (plan.thesis || plan.price_target || plan.stop_loss) {
+    html += `<div class="debate verdict"><div class="debate-lbl">Investment plan</div><div class="debate-txt">`;
+    if (plan.thesis) html += `<div>${escapeHtml(plan.thesis)}</div>`;
+    const facts = [];
+    if (plan.term) facts.push(`Term: ${plan.term}`);
+    if (plan.timeframe) facts.push(`Tidshorisont: ${plan.timeframe}`);
+    if (plan.price_target != null) facts.push(`Target: ${plan.price_target} kr.`);
+    if (plan.stop_loss != null) facts.push(`Stop: ${plan.stop_loss} kr.`);
+    if (plan.expected_return_pct != null) facts.push(`Forventet afkast: ${plan.expected_return_pct}%`);
+    if (facts.length) html += `<div style="margin-top:6px;font-size:12px;color:var(--muted)">${facts.join(' · ')}</div>`;
+    html += `</div></div>`;
+  }
+  document.getElementById('m-body').innerHTML = html || '<div class="empty">Ingen begrundelse tilgængelig</div>';
+  document.getElementById('overlay').classList.add('on');
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
 function renderChart(h, start) {
