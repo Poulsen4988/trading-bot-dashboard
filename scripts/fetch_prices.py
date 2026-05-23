@@ -162,10 +162,17 @@ for s in C25:
         info = t.info
 
         df = hist[sym] if sym in getattr(hist.columns, "levels", [[]])[0] else hist
-        closes = df["Close"].dropna().tolist()
+        closes_series = df["Close"].dropna()
+        closes = closes_series.tolist()
         highs = df["High"].dropna().tolist()
         lows = df["Low"].dropna().tolist()
         vols = df["Volume"].dropna().tolist()
+
+        # 90-dages prishistorik til dashboard-graf
+        price_history = [
+            {"date": idx.date().isoformat(), "close": round(float(c), 2)}
+            for idx, c in list(closes_series.items())[-90:]
+        ]
 
         price = float(closes[-1]) if closes else None
         pct_1d = round((closes[-1] / closes[-2] - 1) * 100, 2) if len(closes) >= 2 else None
@@ -223,6 +230,7 @@ for s in C25:
             "sector": info.get("sector"),
             "industry": info.get("industry"),
             "next_earnings_date": next_earnings,
+            "price_history": price_history,
             "technical": technical,
         }
         method = (technical or {}).get("method", "ingen")
