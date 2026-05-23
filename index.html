@@ -163,6 +163,33 @@
     .td-holds-toggle:hover { border-color: var(--muted); color: var(--text); }
     .td-empty { padding: 14px; color: var(--muted); font-size: 13px; text-align: center; }
 
+    /* Watchlist enhancements */
+    .wl-card { position: relative; }
+    .wl-verdict-dot { position: absolute; top: 8px; right: 8px; width: 8px; height: 8px; border-radius: 50%; box-shadow: 0 0 0 1px var(--surface2); }
+    .wl-verdict-dot.bull { background: var(--green); }
+    .wl-verdict-dot.bear { background: var(--red); }
+    .wl-verdict-dot.neutral { background: var(--yellow); }
+    .wl-tier { position: absolute; top: 7px; left: 8px; font-size: 9px; font-weight: 700; padding: 2px 5px; border-radius: 3px; letter-spacing: .3px; }
+    .wl-tier.deep { background: rgba(88,166,255,.18); color: var(--blue); }
+    .wl-tier.scan { background: rgba(139,148,158,.18); color: var(--muted); }
+    .wl-earnings { font-size: 10px; color: var(--muted); margin-top: 3px; font-style: italic; }
+    .wl-earnings.soon { color: var(--yellow); font-style: normal; font-weight: 600; }
+
+    .wl-controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+    .wl-control-group { display: flex; gap: 4px; }
+    .wl-btn { font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 4px; border: 1px solid var(--border); background: none; color: var(--muted); cursor: pointer; letter-spacing: .2px; transition: border-color .15s, color .15s; }
+    .wl-btn:hover { color: var(--text); border-color: var(--muted); }
+    .wl-btn.active { background: var(--surface2); color: var(--text); border-color: var(--blue); }
+    .wl-control-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; margin-right: 2px; }
+
+    /* Sector exposure */
+    .sector-bar-wrap { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+    .sector-row { display: grid; grid-template-columns: 130px 1fr 55px; gap: 10px; align-items: center; font-size: 12px; }
+    .sector-name { color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sector-track { background: var(--surface2); border-radius: 4px; height: 8px; overflow: hidden; }
+    .sector-fill { height: 100%; border-radius: 4px; transition: width .3s; }
+    .sector-pct { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+
     ::-webkit-scrollbar{width:5px} ::-webkit-scrollbar-track{background:transparent} ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
   </style>
 </head>
@@ -214,6 +241,24 @@
     <div class="card-title">C25 Watchlist — klik for detaljer</div>
     <div class="last-updated" id="prices-age"></div>
   </div>
+  <div class="wl-controls">
+    <span class="wl-control-label">Sortér:</span>
+    <div class="wl-control-group" id="wl-sort">
+      <button class="wl-btn active" data-sort="name">A-Å</button>
+      <button class="wl-btn" data-sort="score">Score</button>
+      <button class="wl-btn" data-sort="pct_1d">1d %</button>
+      <button class="wl-btn" data-sort="pct_20d">20d %</button>
+      <button class="wl-btn" data-sort="verdict">Verdict</button>
+    </div>
+    <span class="wl-control-label" style="margin-left:10px">Vis:</span>
+    <div class="wl-control-group" id="wl-filter">
+      <button class="wl-btn active" data-filter="all">Alle</button>
+      <button class="wl-btn" data-filter="bull">BULL</button>
+      <button class="wl-btn" data-filter="bear">BEAR</button>
+      <button class="wl-btn" data-filter="deep">Deep</button>
+      <button class="wl-btn" data-filter="earnings">Earnings ≤14d</button>
+    </div>
+  </div>
   <div class="wl-grid" id="wl-grid"><div class="empty" style="padding:12px">Indlæser...</div></div>
 </div>
 
@@ -226,6 +271,10 @@
     <div class="card">
       <div class="card-title">Åbne positioner</div>
       <div id="pos-list"><div class="empty">Ingen åbne positioner endnu</div></div>
+    </div>
+    <div class="card" id="sector-card" style="display:none">
+      <div class="card-title">Sektoreksponering</div>
+      <div class="sector-bar-wrap" id="sector-bars"></div>
     </div>
   </div>
   <div class="card" style="margin-bottom:0">
@@ -274,10 +323,29 @@
 let allTrades = [];
 let allStocks = [];
 let latestDecisions = null;
+let allBenchmarks = [];
+let sectorExposure = {};
 let chart = null;
 let feedTab = 'trades';
 let currentStockTab = 'kurs';
 let currentStock = null;
+let wlSortBy = 'name';
+let wlFilter = 'all';
+
+const SECTOR_COLORS = {
+  'Healthcare': '#58a6ff',
+  'Industrials': '#e3b341',
+  'Consumer Cyclical': '#a371f7',
+  'Consumer Defensive': '#3fb950',
+  'Financial Services': '#f85149',
+  'Technology': '#79c0ff',
+  'Utilities': '#ffa657',
+  'Basic Materials': '#7ee787',
+  'Energy': '#ff7b72',
+  'Communication Services': '#d2a8ff',
+  'Real Estate': '#ffa198',
+  'Ukendt': '#8b949e',
+};
 
 const fmt = n => new Intl.NumberFormat('da-DK',{maximumFractionDigits:0}).format(n) + ' kr.';
 const pct = n => (n>=0?'+':'')+n.toFixed(2)+'%';
@@ -290,6 +358,8 @@ async function load() {
     allTrades = d.trades || [];
     allStocks = d.stocks || [];
     latestDecisions = d.latest_decisions || null;
+    allBenchmarks = d.benchmarks || [];
+    sectorExposure = d.sector_exposure_pct || {};
     render(d);
   } catch(e) { document.getElementById('lu').textContent = 'Fejl ved indlæsning'; }
 }
@@ -314,8 +384,9 @@ function render(d) {
   document.getElementById('s-buysell').textContent = buys+' køb, '+(actual.length-buys)+' salg';
   document.getElementById('lu').textContent = 'Sidst opdateret: '+(p.last_updated||'—');
 
-  renderChart(h||[], start);
+  renderChart(h||[], start, allBenchmarks);
   renderPos(p.positions||[]);
+  renderSectors(sectorExposure);
   renderFeed(allTrades);
   renderWatchlist(allStocks);
   renderTodaysDecisions(latestDecisions);
@@ -443,30 +514,70 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
-function renderChart(h, start) {
+function renderChart(h, start, benchmarks) {
   const labels = h.length ? h.map(x=>x.date) : ['Start'];
   const vals = h.length ? h.map(x=>x.portfolio_value) : [start];
   const color = vals[vals.length-1] >= start ? '#3fb950' : '#f85149';
   if (chart) chart.destroy();
+
+  const datasets = [
+    {label:'Portefølje',data:vals,borderColor:color,backgroundColor:color+'18',borderWidth:2,pointRadius:4,pointBackgroundColor:color,fill:true,tension:.35},
+    {label:'Start',data:labels.map(()=>start),borderColor:'#30363d',borderWidth:1,borderDash:[6,4],pointRadius:0,fill:false},
+  ];
+
+  (benchmarks || []).forEach(b => {
+    const byDate = {};
+    (b.history || []).forEach(p => { byDate[p.date] = p.portfolio_value; });
+    const data = labels.map(lbl => byDate[lbl] != null ? byDate[lbl] : null);
+    datasets.push({
+      label: b.label || b.ticker,
+      data,
+      borderColor: b.color || '#8b949e',
+      backgroundColor: 'transparent',
+      borderWidth: 1.5,
+      borderDash: [4,3],
+      pointRadius: 0,
+      fill: false,
+      tension: .25,
+      spanGaps: true,
+    });
+  });
+
   chart = new Chart(document.getElementById('chart').getContext('2d'),{
     type:'line',
-    data:{
-      labels,
-      datasets:[
-        {label:'Portefølje',data:vals,borderColor:color,backgroundColor:color+'18',borderWidth:2,pointRadius:4,pointBackgroundColor:color,fill:true,tension:.35},
-        {label:'Start',data:labels.map(()=>start),borderColor:'#30363d',borderWidth:1,borderDash:[6,4],pointRadius:0,fill:false}
-      ]
-    },
+    data:{ labels, datasets },
     options:{
       responsive:true,maintainAspectRatio:false,
       interaction:{mode:'index',intersect:false},
-      plugins:{legend:{display:false},tooltip:{backgroundColor:'#161b22',borderColor:'#30363d',borderWidth:1,callbacks:{label:c=>c.dataset.label+': '+fmt(c.parsed.y)}}},
+      plugins:{
+        legend:{display:true,position:'top',labels:{color:'#8b949e',font:{size:11},boxWidth:14,padding:10,filter:item=>item.text!=='Start'}},
+        tooltip:{backgroundColor:'#161b22',borderColor:'#30363d',borderWidth:1,callbacks:{label:c=>c.dataset.label+': '+fmt(c.parsed.y)}},
+      },
       scales:{
         x:{grid:{color:'#21262d'},ticks:{color:'#8b949e',maxTicksLimit:7}},
         y:{grid:{color:'#21262d'},ticks:{color:'#8b949e',callback:v=>fmt(v)}}
       }
     }
   });
+}
+
+function renderSectors(exposure) {
+  const card = document.getElementById('sector-card');
+  const bars = document.getElementById('sector-bars');
+  const entries = Object.entries(exposure || {}).filter(([_, v]) => v > 0);
+  if (!entries.length) { card.style.display = 'none'; return; }
+  card.style.display = 'block';
+  entries.sort((a, b) => b[1] - a[1]);
+  const max = entries[0][1];
+  bars.innerHTML = entries.map(([name, p]) => {
+    const color = SECTOR_COLORS[name] || '#8b949e';
+    const width = max > 0 ? Math.max(2, (p / max) * 100) : 0;
+    return `<div class="sector-row">
+      <div class="sector-name" title="${escapeHtml(name)}">${escapeHtml(name)}</div>
+      <div class="sector-track"><div class="sector-fill" style="width:${width}%;background:${color}"></div></div>
+      <div class="sector-pct">${p.toFixed(1)}%</div>
+    </div>`;
+  }).join('');
 }
 
 function renderPos(positions) {
@@ -519,15 +630,54 @@ function renderFeed(trades) {
 
 // ── Watchlist ──────────────────────────────────────────────────────────────
 
+function daysUntil(dateStr) {
+  if (!dateStr) return null;
+  const m = dateStr.match(/^\d{4}-\d{2}-\d{2}/);
+  if (!m) return null;
+  const target = new Date(m[0] + 'T00:00:00Z');
+  const now = new Date();
+  return Math.round((target - now) / 86400000);
+}
+
 function renderWatchlist(stocks) {
   const el = document.getElementById('wl-grid');
   if (!stocks.length) { el.innerHTML = '<div class="empty" style="padding:12px">Ingen kursdata — køres af GitHub Actions kl. 06:00</div>'; return; }
 
-  // Show prices age from first stock that has it
   const age = stocks.find(s => s.prices_age)?.prices_age;
   if (age) document.getElementById('prices-age').textContent = 'Kurser fra ' + age.slice(0,16).replace('T',' ') + ' UTC';
 
-  el.innerHTML = stocks.map(s => {
+  let view = [...stocks];
+
+  // Filter
+  if (wlFilter === 'bull')     view = view.filter(s => (s.analysis?.verdict || '').toUpperCase() === 'BULL');
+  else if (wlFilter === 'bear')view = view.filter(s => (s.analysis?.verdict || '').toUpperCase() === 'BEAR');
+  else if (wlFilter === 'deep')view = view.filter(s => (s.analysis?.tier || '').toLowerCase() === 'deep');
+  else if (wlFilter === 'earnings') {
+    view = view.filter(s => {
+      const d = daysUntil(s.next_earnings_date);
+      return d != null && d >= 0 && d <= 14;
+    });
+  }
+
+  // Sort
+  const verdictOrder = { 'BULL': 0, 'NEUTRAL': 1, 'BEAR': 2 };
+  view.sort((a, b) => {
+    if (wlSortBy === 'name')    return (a.name || '').localeCompare(b.name || '', 'da');
+    if (wlSortBy === 'score')   return ((b.technical?.score) || 0) - ((a.technical?.score) || 0);
+    if (wlSortBy === 'pct_1d')  return (b.pct_1d || 0) - (a.pct_1d || 0);
+    if (wlSortBy === 'pct_20d') return (b.pct_20d || 0) - (a.pct_20d || 0);
+    if (wlSortBy === 'verdict') {
+      const av = verdictOrder[(a.analysis?.verdict || '').toUpperCase()] ?? 3;
+      const bv = verdictOrder[(b.analysis?.verdict || '').toUpperCase()] ?? 3;
+      if (av !== bv) return av - bv;
+      return (b.analysis?.confidence || 0) - (a.analysis?.confidence || 0);
+    }
+    return 0;
+  });
+
+  if (!view.length) { el.innerHTML = '<div class="empty" style="padding:12px">Ingen aktier matcher filter</div>'; return; }
+
+  el.innerHTML = view.map(s => {
     const price = s.price != null ? s.price.toLocaleString('da-DK', {minimumFractionDigits:2, maximumFractionDigits:2}) : null;
     const chg = s.pct_1d;
     const chgCls = chg == null ? '' : chg >= 0 ? 'positive' : 'negative';
@@ -535,14 +685,48 @@ function renderWatchlist(stocks) {
     const vol = s.volume_ratio;
     const volStr = vol != null ? 'Vol ' + vol.toFixed(1) + 'x' : '';
     const volCls = vol != null && vol >= 1.5 ? 'positive' : '';
+    const verdict = (s.analysis?.verdict || '').toUpperCase();
+    const verdictCls = verdict === 'BULL' ? 'bull' : verdict === 'BEAR' ? 'bear' : verdict === 'NEUTRAL' ? 'neutral' : '';
+    const verdictTitle = verdict ? `${verdict} (conf ${s.analysis?.confidence ?? '?'})` : '';
+    const tier = (s.analysis?.tier || '').toLowerCase();
+    const tierBadge = tier === 'deep' ? '<span class="wl-tier deep" title="Deep analyse">D</span>'
+                    : tier === 'scan' ? '<span class="wl-tier scan" title="Scan-tier">S</span>'
+                    : '';
+    const earningsDays = daysUntil(s.next_earnings_date);
+    let earningsStr = '';
+    let earningsCls = '';
+    if (earningsDays != null && earningsDays >= 0) {
+      if (earningsDays <= 14) { earningsCls = 'soon'; earningsStr = `Earnings ${earningsDays === 0 ? 'i dag' : 'om ' + earningsDays + 'd'}`; }
+      else if (earningsDays <= 60) earningsStr = `Earnings om ${earningsDays}d`;
+    }
     return `<div class="wl-card ${s.tradeable ? 'tradeable' : ''}" onclick="openStockModal('${s.symbol}')">
+      ${tierBadge}
+      ${verdictCls ? `<span class="wl-verdict-dot ${verdictCls}" title="${verdictTitle}"></span>` : ''}
       <div class="wl-name" title="${s.name}">${s.name}</div>
       ${price ? `<div class="wl-price">${price}</div>` : '<div class="wl-nodata">Ingen data</div>'}
       ${chgStr ? `<div class="wl-chg ${chgCls}">${chgStr}</div>` : ''}
       ${volStr ? `<div class="wl-vol ${volCls}">${volStr}</div>` : ''}
+      ${earningsStr ? `<div class="wl-earnings ${earningsCls}">${earningsStr}</div>` : ''}
     </div>`;
   }).join('');
 }
+
+function setWlSort(sortBy) {
+  wlSortBy = sortBy;
+  document.querySelectorAll('#wl-sort .wl-btn').forEach(b => b.classList.toggle('active', b.dataset.sort === sortBy));
+  renderWatchlist(allStocks);
+}
+
+function setWlFilter(filter) {
+  wlFilter = filter;
+  document.querySelectorAll('#wl-filter .wl-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+  renderWatchlist(allStocks);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#wl-sort .wl-btn').forEach(b => b.addEventListener('click', () => setWlSort(b.dataset.sort)));
+  document.querySelectorAll('#wl-filter .wl-btn').forEach(b => b.addEventListener('click', () => setWlFilter(b.dataset.filter)));
+});
 
 // ── Stock modal ────────────────────────────────────────────────────────────
 
