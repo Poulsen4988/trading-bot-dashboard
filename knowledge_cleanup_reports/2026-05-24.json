@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-24",
+  "files_reviewed": 25,
+  "files_cleaned": 2,
+  "total_items_removed": 2,
+  "per_file": [
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 1,
+      "kept_count": 16,
+      "removed_items": [
+        {
+          "title": "Finanskalender - kalenderåret 2026 - opdatering",
+          "date": "2026-05-07",
+          "reason": "low_value",
+          "notes": "Rutine-administrativ finanskalender-opdatering uden langsigtet informationsværdi. Summary var blot kategorilabel \"Finanskalender\". Samme URL som MAERSKb."
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 16,
+      "removed_items": [
+        {
+          "title": "Finanskalender - kalenderåret 2026 - opdatering",
+          "date": "2026-05-07",
+          "reason": "low_value",
+          "notes": "Identisk med MAERSKa-item (samme URL). Rutine-administrativ finanskalender-opdatering uden langsigtet informationsværdi."
+        }
+      ]
+    }
+  ],
+  "candidates_reviewed": 19,
+  "candidates_kept": 17,
+  "summary": "Gennemgang af 25 knowledge-filer identificerede 19 low_value kandidater (ingen dubletter eller stale items). Kun 2 items blev fjernet: finanskalender-opdateringer fra MAERSKa og MAERSKb (identisk indhold, samme URL, ren rutine-administration uden handelsrelevant informationsværdi). De resterende 17 kandidater blev bevaret på trods af korte summaries, da titlerne indicerer materielt vigtige nyheder: regulatory godkendelser (Novo Wegovy CHMP), earnings/halvårsrapporter, outlook-opgraderinger, strategiske CMD-mål (DSV 2030), ledelsesskift (Demant ELT), partnerskabs-aftaler (ISS/Deutsche Telekom til 2035), kapitalstruktur-ændringer (Carlsberg hybrid notes EUR 1.8bn), discontinued operations (GN Hearing) og storaktionær-meldinger."
+}
