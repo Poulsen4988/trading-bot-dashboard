@@ -1,0 +1,35 @@
+{
+  "date": "2026-05-31",
+  "files_reviewed": 25,
+  "files_cleaned": 2,
+  "total_items_removed": 2,
+  "per_file": [
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 16,
+      "removed_items": [
+        {
+          "title": "Major Shareholder Announcement",
+          "date": "2026-05-08",
+          "reason": "low_value",
+          "detail": "Fuldstændig generisk titel uden angivelse af aktionær eller tærskel; summary er kun kategorilablen \"Storaktionærmeddelelser\" (23 tegn). Ingen informationsværdi."
+        }
+      ]
+    },
+    {
+      "path": "knowledge/ISS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 8,
+      "removed_items": [
+        {
+          "title": "Major Shareholder Announcement",
+          "date": "2026-05-21",
+          "reason": "low_value",
+          "detail": "Fuldstændig generisk titel uden angivelse af aktionær eller tærskel; summary er kun kategorilablen \"Storaktionærmeddelelser\" (23 tegn). Ingen informationsværdi."
+        }
+      ]
+    }
+  ],
+  "summary": "Gennemgik 25 knowledge-filer (254 nyhedsitems i alt). 19 kandidater blev identificeret, alle low_value (summary < 30 tegn). 17 af disse blev BEVARET da titlerne indeholder materielt vigtigt indhold: CHMP-godkendelser (NOVOb), Capital Markets Day med 2030-mål (DSV), EUR 1.8bn hybridnoter (CARLb), US-statskontrakt (BAVA), guidance-revisioner (ISS, NNIT, ROCKb), ledelsesskift (DEMANT), ophør af Hearing-forretning (GN), Deutsche Telekom-partnerskab t.o.m. 2035 (ISS), ASCO/EHA-konference (GMAB), vedtægter (GMAB), og storaktionærmeddelelse med navngivet investor (VWS). Kun 2 items blev slettet: begge var \"Major Shareholder Announcement\" uden angivelse af aktionær/tærskel og med summary som udelukkende var en kategorilabel — generisk titel OG trivielt indhold, ingen langsigtet informationsværdi."
+}
