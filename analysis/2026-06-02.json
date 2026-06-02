@@ -1,0 +1,358 @@
+{
+  "date": "2026-06-02",
+  "stocks": {
+    "COLO-B.CO": {
+      "tier": "deep",
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Trippel-oversold signal: RSI 34.9, stoch 6.8 og BB-position -15% (under nedre Bollinger-bånd) — al tre indikatorer i ekstrem zone; kun +0.71% over 52-ugers lav giver høj risk/reward for teknisk bounce",
+        "Deep value: fwd PE 14.5x vs Healthcare-sektornorm 25x (42% rabat) + 5.81% dividende giver fundamental støtte og income-cushion mod yderligere kursfald",
+        "Mean-reversion potentiale: -40.9% fra 52-ugers høj; hvis makro vender positivt for medtech, er SMA50 (415 DKK) første mål = +8.7% upside fra nuværende niveau"
+      ],
+      "bear": [
+        "Strukturel nedstigningskanal: pris er -8.0% under SMA50 og -25.5% under SMA200 — begge glidende gennemsnit fungerer som stærk modstand; MACD negativt (-5.94)",
+        "Svag fundamental vækst: revenue vækst kun +2.2% YoY og earnings growth mangler — intet synligt katalysator til at bryde downtrend",
+        "BB-position -15% signalerer at prisen allerede er brudt under nedre bånd — continuation-scenario er muligt ved fortsat salgspres"
+      ],
+      "summary": "Coloplast er i ekstrem teknisk oversolgt zone med trippel-oversold-signal (RSI 35, stoch 7, BB under nedre bånd), men befinder sig i en intakt nedstigningskanal med pris langt under begge glidende gennemsnit; den høje dividende på 5.81% og det dybe value-discount på fwd PE 14.5x giver fundamental støtte, men en reversal kræver en konkret positiv katalysator som selskabsspecifik nyhed eller markeds-sentiment-skift.",
+      "key_risk": "Fortsat prisfald mod eller under 52-ugers lav (379.3 DKK) ville bekræfte strukturel nedstigningskanal og kan udløse yderligere salgspres via stop-loss-kaskader."
+    },
+    "NOVO-B.CO": {
+      "tier": "deep",
+      "verdict": "BULL",
+      "confidence": 7,
+      "bull": [
+        "Ekstraordinære fundamentaler: +67% YoY EPS-vækst og +24% omsætningsvækst til fwd PE 13.3x — 47% rabat til Healthcare-sektornorm (25x); sjælden kombination af vækst og value",
+        "Teknisk positiv kortsigtet struktur: pris over SMA50 (+9.1%) med positiv MACD (7.18) og 20d momentum +11.49% — recovery-fase er i gang",
+        "5.43% dividende yield giver stærk income-floor mens markedet afventer fundamental re-rating; aktie +27% over 52-ugers lav — ikke i panik-zone",
+        "Deep mean-reversion case: -46.6% fra 52-ugers høj; positiv pipeline-nyhed om oral GLP-1 eller markedsandelsdata kan drive 15-25% re-rating"
+      ],
+      "bear": [
+        "Pris stadig -6.8% under SMA200 (305.72) — strukturel recovery endnu ikke bekræftet; teknisk set fortsat i nedstigningskanal på lang sigt",
+        "GLP-1-konkurrencelandskab intensiveres (Eli Lilly, Roche, Viking Therapeutics) — markedsandelsrisiko på kernefranchise kan presse guidance ned"
+      ],
+      "summary": "Novo Nordisk kombinerer ekstraordinære væksttal (67% EPS-vækst, 24% omsætningsvækst) med historisk lav fwd P/E på 13.3x — en sjælden kombination for et premium-healthcare-navn; teknisk set er kortsigtede momentum svag på 5d (-1.42%), men prisen har stabiliseret sig over SMA50 med positiv MACD, og nøglekatalysatorer er GLP-1-konkurrenceopdateringer samt oral semaglutid-data der kan drive kraftig re-rating.",
+      "key_risk": "Yderligere negativ pipeline-news eller accelereret markedsandels-erosion i GLP-1-segmentet kan sende aktien under 52-ugers lav (224 DKK) og eliminere recovery-casen."
+    },
+    "NNIT.CO": {
+      "tier": "deep",
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Volume 2.25x dagligt gennemsnit signalerer institutionel-skala aktivitet ved 52-ugers lav (+4.76% over bunden) — potentiel smart-money akkumulering",
+        "fwd PE 9.8x repræsenterer 55% rabat til IT-sektornormen (22x) — ekstremt billig prissætning hvis forretningsvending realiseres",
+        "RSI 31.3 i oversold-territorium med positiv momentum-divergence (+6.42pp) indikerer aftagende salgspres"
+      ],
+      "bear": [
+        "Omsætningsfald -5.7% YoY underminerer fundamental case — value trap-risiko er reel når toplinjen svinder",
+        "Begge SMA (SMA50: -6.35%, SMA200: -18.78%) er overhead modstand; MACD negativt (-0.91) bekræfter fortsat downtrend"
+      ],
+      "summary": "NNITs eleverede volumen (2.25x gennemsnit) er et nøgleflag for potentiel institutionel akkumulering ved 52-ugers lav, og fwd PE 9.8x er ekstremt billig for en IT-servicevirksomhed; men den faldende omsætning (-5.7%) underminer den fundamentale case, og der mangler en klar positiv katalysator til at bryde den tekniske nedstigningskanal.",
+      "key_risk": "Fortsatte kontrakttab eller negativ guiding kan drive aktien under 52-ugers lav (38.85 DKK); det lavere likviditetsniveau gør positioner sårbare over for pludselige gap-downs."
+    },
+    "TRYG.CO": {
+      "tier": "deep",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "5.70% dividendeafkast giver premium income-return med regulatorisk-lignende cashflow-karakteristika i forsikringssektoren",
+        "Kun +2.25% over 52-ugers lav — høj risk/reward-profil for contrarian-entry hvis forsikringscyklen vender; 20d momentum flat (0.0%) — konsolidering frem for panik"
+      ],
+      "bear": [
+        "Earnings declining -13.9% YoY — fundamentalerne forværres i forsikringscyklen; handles til 20% P/E-premium over Financial Services norm (14.4x vs 12x) trods faldende profit",
+        "Pris under begge SMA (SMA50: -1.86%, SMA200: -3.5%) med negativ MACD og stoch 22.7 — teknisk bearish"
+      ],
+      "summary": "Tryg handles nær 52-ugers lav med attraktivt dividendeafkast på 5.7%, men faldende earnings (-13.9%) og en PE-premium på 20% over sektornormen trods resultatpres svækker value-casen; den tekniske struktur er svagt negativ med prisen under begge glidende gennemsnit.",
+      "key_risk": "Fortsatte forsikringsunderskud eller erstatningsinflation kan sende aktien under 52-ugers lav (146.6 DKK) og presse bæredygtigheden af det høje dividende."
+    },
+    "PNDORA.CO": {
+      "tier": "deep",
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Stærkt kortsigtet momentum: +18.67% på 20 dage; MACD +24.6 (klart bullish); pris +15.4% over SMA50 — teknisk breakout fra bunden er i gang",
+        "fwd PE 14.6x med 3.66% dividende = 27% rabat til Consumer Cyclical-sektornorm; trods svagere fundamentaler er prissætningen attraktiv",
+        "RSI 64.2 og stoch 69.4 stadig under overbought-tærskel (70+) — teknisk rum til at fortsætte rallyet mod SMA200 (645 DKK = +11% upside)"
+      ],
+      "bear": [
+        "Omsætning og earnings begge faldende (-3.2% / -10%) — luxusforbrug under pres; fundamental vinding mangler",
+        "Pris -10% under SMA200 (645.2) — strukturel recovery endnu ikke bekræftet; BB-position 77.2% nærmer sig kortsigtede overkøbt-niveauer"
+      ],
+      "summary": "Pandora har gennemgået en imponerende +18.7% rally på 20 dage og handles med 27% P/E-rabat til sektornormen med positiv MACD og RSI/stoch endnu under overbought; den underliggende forretning kæmper med faldende omsætning og overskud, men den tekniske momentum og value-case bærer BULL-vurderingen kortsigtet — næste test er SMA200 ved 645 DKK.",
+      "key_risk": "Svag global luxusforbrug og faldende earnings kan begrænse rally-potentialet; prisen skal bryde og holde over SMA200 (645 DKK) for at bekræfte strukturel vending."
+    },
+    "CARL-B.CO": {
+      "tier": "deep",
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Pris holder støtte ved SMA50 (838.09 DKK, +0.32%) og er +4.1% over SMA200 — medium-term struktur intakt; MACD svagt positiv (+5.84)",
+        "fwd PE 11.9x repræsenterer 30% rabat til Consumer Defensive-sektornorm (17x) + 3.37% dividende — legitim value-case for et defensivt navn",
+        "BB-position 21.7% (nedre område) og stoch 32.3 giver potentiel mean-reversion-bounce fra lavt niveau"
+      ],
+      "bear": [
+        "5d-fald på -4.24% med RSI 45.1 drivende lavere — kortsigtede salgspres intensiveres",
+        "-17.2% fra 52-ugers høj uden synlig vækst-katalysator i modent ølmarked; revenue/earnings growth data mangler (ingen guidance opdateret)"
+      ],
+      "summary": "Carlsberg handles ved SMA50 med positiv MACD og 30% P/E-rabat til sektornormen, men den kortsigtige salgspres (-4.24% på 5 dage) og mangel på synlig vækst-katalysator giver en neutral momentum-profil — hold-case frem for købs-signal.",
+      "key_risk": "Global afstemning i defensivt forbrug og USD/emerging markets-eksponering kan forstærke salgspres; brud under SMA50 (838 DKK) ville svække den tekniske case markant."
+    },
+    "DANSKE.CO": {
+      "tier": "deep",
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Sundt teknisk uptrend: pris over SMA50 (+4.95%) og SMA200 (+17.81%) med positiv MACD (4.82); kun -4.5% fra 52-ugers høj — stærkeste position i porteføljen",
+        "fwd PE 10.45x + 5.02% dividende = stærk total-return case for en bank der handles under book med optrend"
+      ],
+      "bear": [
+        "RSI 61.3 og stoch 70.3 nærmer sig overbought; BB-position 72.1% signalerer begrænset kortsigtet upside",
+        "Net interest margin-risiko: ECB-rentesænkninger i H2 2026 kan komprimere bankens NII og presse earnings fremad"
+      ],
+      "summary": "Danske Bank er i et sundt teknisk uptrend med pris over begge glidende gennemsnit og positiv MACD, men nærmer sig overbought-niveauer med RSI 61 og stoch 70; den kombinerede value+yield-case (fwd PE 10.45x + 5% dividende) holder aktien attraktiv som hold-position.",
+      "key_risk": "Accelererede ECB-rentesænkninger vil komprimere nettorentemarginaler og kan udløse sektordrejning væk fra bankaktier i H2 2026."
+    },
+    "FLS.CO": {
+      "tier": "deep",
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Ekstraordinær EPS-turnaround: +195% YoY earnings-vækst — strukturel forbedring i mine-udstyrsprofitabilitet; selskabet leverer dramatisk marginudvidelse",
+        "Teknisk stærk: pris over SMA50 (+0.85%) og SMA200 (+4.74%) med positiv MACD (4.59); RSI 61.6 og stoch 64.9 i stærkt men ikke overbought territorium",
+        "fwd PE 15.5x vs Industrials-norm 18x — mild rabat for en virksomhed med dokumenteret profitabilitetsforbedring"
+      ],
+      "bear": [
+        "Omsætning faldende -11.6% YoY — top-line pres trods marginudvidelse; earnings-vækst er primært margin-drevet",
+        "5d-momentum -3.6% med divergence -8.8pp — kortsigtede distributionsignaler; mine-capex-cyklusser er volatile"
+      ],
+      "summary": "FLSmidth viser en remarkabel EPS-turnaround på 195% og er i teknisk optrend med pris over begge glidende gennemsnit og positiv MACD; nøglerisikoen er den faldende omsætning (-11.6%) og eksponeringen mod volatile mine-kapitalinvesteringscyklusser der hurtigt kan reversere margin-forbedringen.",
+      "key_risk": "Et fald i råvarepriser (kobber, guld, kul) eller udsættelse af minekapitalinvesteringer kan hurtigt reversere den marginbaserede turnaround og sende earnings tilbage til 2024-niveauer."
+    },
+    "ISS.CO": {
+      "tier": "deep",
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Stærk teknisk position: pris markant over SMA50 (+7.6%) og SMA200 (+19.4%) med positiv MACD (6.74) — det stærkeste relative trend-position blandt de holdte aktier",
+        "Stoch 2.0 (ekstremt lav) trods prisens styrke = bullish divergence; den kortsigtede dip (-1.51% på 5d) er sandsynligvis midlertidig"
+      ],
+      "bear": [
+        "+52.5% fra 52-ugers lav — væsentligt extended move; flat earnings (+0.1%) og flat revenue (0.0%) giver ingen fundamental vækst-drivkraft",
+        "Momentum divergence -14.5pp (20d vs 5d) signalerer at rallyet er ved at tabe fart; -10.2% fra 52-ugers høj = begrænset historisk upside"
+      ],
+      "summary": "ISS er teknisk stærk med pris godt over begge glidende gennemsnit og stærkt MACD-signal, men den ekstremt lave stoch (2.0) kombineret med flad forretningsvækst og det markant extended move fra bunden signalerer øget konsolideringsrisiko på kort sigt.",
+      "key_risk": "Manglende evne til at konvertere facility-services-kontraktvolumen til margin-vækst giver begrænset fundamental upside; en korrektion til SMA50 (242.56 DKK) er teknisk sandsynlig."
+    },
+    "NDA-DK.CO": {
+      "tier": "deep",
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Intakt uptrend: pris over SMA50 (+3.36%) og SMA200 (+7.25%) med positiv MACD (1.43); kun -5.2% fra 52-ugers høj",
+        "5.80% dividendeafkast — et af de højeste i C25-universet; stærk income-case for hold-position"
+      ],
+      "bear": [
+        "Earnings declining -8.6% YoY — NII-pres fra nuværende rentemiljø; risiko for yderligere nedgraderinger",
+        "RSI 62.3 og stoch 62.4 nærmer sig overbought; BB-position 66.1% — begrænset kortsigtet upside; 5d-momentum svækkende (-1.3%)"
+      ],
+      "summary": "Nordea er i teknisk uptrend med positiv MACD og pris over begge glidende gennemsnit, men faldende earnings (-8.6%) og RSI/stoch nærhed til overbought signalerer begrænset kortsigtet opside; den høje dividende (5.8%) giver fortsat hold-case, men svagt momentum.",
+      "key_risk": "Hurtigere ECB-rentesænkninger end markedet priser ind vil komprimere NII yderligere og kan føre til earnings-nedgraderinger der rammer aktien fra overbought-niveau."
+    },
+    "RBREW.CO": {
+      "tier": "scan",
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "fwd PE 10.85x med +40% earnings-vækst og +3.3% revenue er en overbevisende value-vækst kombination; 3.83% dividende understøtter"
+      ],
+      "bear": [
+        "Pris -11.4% under SMA50 og -18.7% under SMA200 — strukturel downtrend intakt trods fundamentale styrker"
+      ],
+      "summary": "Royal Unibrew tilbyder attraktiv fundamentalinvestering med fwd PE 10.85x og 40% earnings-vækst, men prisens position langt under begge SMA signalerer fortsat teknisk svaghed.",
+      "key_risk": "Fortsat forbrugersvaghed i Skandinavien og Østeuropa kan presse markedets premium-øl-segment og underminere vækstforventningerne."
+    },
+    "BAVA.CO": {
+      "tier": "scan",
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Stoch 5.0 = ekstremt oversold teknisk signal; kortsigtede bounce-potentiale er til stede ved disse niveauer"
+      ],
+      "bear": [
+        "Fundamentalt under massivt pres: earnings -92.6% YoY og revenue -21.4%; pris under SMA50 (-3.78%) og SMA200 (-10.28%) med 5d-fald på -6.5%"
+      ],
+      "summary": "Bavarian Nordic er fundamentalt og teknisk svag med næsten eliminerede earnings og kraftigt faldende omsætning; stoch-oversold giver kun kortsigtede bounce-mulighed.",
+      "key_risk": "Mangel på konkret positiv vaksine-pipeline-nyhed efterlader aktien sårbar over for yderligere fundamentalt-drevet salgspres."
+    },
+    "ALSYDB.CO": {
+      "tier": "scan",
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "fwd PE 8.57x + 4.65% dividende er ekstremt attraktivt; +65.3% revenue growth signalerer substantiel forretningsekspansion"
+      ],
+      "bear": [
+        "Earnings declining -26.8% — margin-kompression; stoch 16.7 og RSI 44.8 med 5d/20d negativ momentum viser kortsigtede salgspres"
+      ],
+      "summary": "Sydbank handles til ekstremt lav fwd P/E med høj dividende og stærk omsætningsvækst, men margin-kompressionen er bekymrende og momentum er svagt på kort sigt.",
+      "key_risk": "Margin-kompression der fortsætter med at accelerere kan eliminere value-casen trods den høje omsætningsvækst."
+    },
+    "AMBU-B.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "RSI 61.6 og 20d momentum +6.4% — kortsigtede momentum-kraft; konsolidering ved SMA50 (66.47 DKK)"
+      ],
+      "bear": [
+        "Pris -22.3% under SMA200; earnings -35.2% YoY; 5d momentum -3.67% reverserer det kortsigtede rally"
+      ],
+      "summary": "Ambu B viser mixed signaler med kortsigtede momentum versus strukturel svaghed langt under SMA200 og signifikant earnings-forværring.",
+      "key_risk": "Manglende positiv nyhed om engangsscope-adoption kan sende aktien på ny test af 52-ugers lav (~60.5 DKK)."
+    },
+    "MAERSK-A.CO": {
+      "tier": "scan",
+      "verdict": "BEAR",
+      "confidence": 7,
+      "bull": [
+        "Ekstremt stærkt fragt-momentum — BB-position 103.2% over øvre Bollinger-bånd; pris over begge SMA med RSI 79.9"
+      ],
+      "bear": [
+        "RSI 79.9 og stoch 96.6 = alvorligt overbought på alle indikatorer; earnings -94.6% YoY — grundlæggende earnings-base er svag; mean-reversion sandsynlig"
+      ],
+      "summary": "Mærsk A er teknisk ekstremt overkøbt med RSI 80, stoch 97 og pris over øvre Bollinger-bånd — profittagning er sandsynlig i nærtid uanset fragt-momentum.",
+      "key_risk": "En normalisering af fragtpriser eller geopolitisk deeskalation i Rødehavet kan udløse kraftig kursrevision fra overbought-niveauer."
+    },
+    "ORSTED.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Pris over begge SMA (SMA50: +4.1%, SMA200: +14%) med stigende vedvarende energi-efterspørgsel som strukturel medvind"
+      ],
+      "bear": [
+        "Earnings -84.9% YoY — massive tab; fwd PE 17.2x er dyr for et tabsgivende forsyningsselskab med tung gæld"
+      ],
+      "summary": "Ørsted er teknisk stabiliseret over begge SMA, men de massive earnings-tab (-84.9%) og høj gæld giver ingen fundamentale grunde til at øge eksponering på nuværende niveau.",
+      "key_risk": "Yderligere nedskrivninger på havvindprojekter eller fortsatte politiske subsidie-usikkerheder kan presse aktien under SMA50 (159.67 DKK)."
+    },
+    "GMAB.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "RSI 36.4 nærmer sig oversold med revenue +25.3%; fwd PE 15.5x er rimelig for biotech-vækst hvis pipeline leverer"
+      ],
+      "bear": [
+        "Earnings -72.8% YoY; pris under SMA50 (-4.72%) og SMA200 (-11.75%); 5d momentum -4.9% og negativ MACD"
+      ],
+      "summary": "Genmab er pipeline-afhængig med faldende earnings men stærk revenue-vækst; teknisk endnu i downtrend men nærmer sig oversold-niveauer.",
+      "key_risk": "Negativ klinisk data-update på nøgle-pipeline-aktiv (f.eks. daratumumab-kombinationsdata) kan sende aktien markant lavere fra allerede svagt niveau."
+    },
+    "MAERSK-B.CO": {
+      "tier": "scan",
+      "verdict": "BEAR",
+      "confidence": 7,
+      "bull": [
+        "Synkroniseret stærkt fragt-momentum med Mærsk A (+7.33% på 5d); global handel-medvind fra tarifrelateret pull-forward"
+      ],
+      "bear": [
+        "RSI 82.2 og stoch 94.8 = stærkt overbought; BB-position 103.8% over øvre Bollinger-bånd; earnings -94.6% — fundamental base er meget svag"
+      ],
+      "summary": "Mærsk B er teknisk ekstremt overkøbt med RSI 82, stoch 95 og pris over øvre Bollinger-bånd — profittagning er teknisk indikeret uanset kortsigtede fragt-styrke.",
+      "key_risk": "Normalisering af fragtpriser fra ekstremt forhøjede niveauer eller geopolitisk deeskalation kan udløse kraftig kursrevision."
+    },
+    "VWS.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Pris +14.9% over SMA200 — strukturelt bedre position end mange C25-aktier; earnings turnaround +1516% og revenue +14.4% er fundamentalt stærkt"
+      ],
+      "bear": [
+        "RSI 38.2 og stoch 29.7 med konsekvent negativt momentum (-6.76% på 5d, -5.3% på 20d); pris under SMA50 (-2.18%) — distributionsfase"
+      ],
+      "summary": "Vestas viser fundamental turnaround men handles i teknisk svaghed med momentum der peger nedad; afventer stabilisering af prisaction før positionsopbygning.",
+      "key_risk": "Fortsat pres på offshore vindkontrakter og råvarepris-inflation kan begrænse margin-forbedringen trods omsætningsvækst."
+    },
+    "DEMANT.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "+25.28% på 20 dage med pris godt over SMA50 (+16.75%) og SMA200 (+12.78%) — stærk kortsigtede momentum-profil"
+      ],
+      "bear": [
+        "Stoch 85.8 = overbought; momentum divergence -25.44pp signalerer rally-udtmattelse; earnings -63.4% underminerer sustainable basis"
+      ],
+      "summary": "Demant er på kortsigte et af de stærkere momentum-navne i C25, men overbought stoch og markant earnings-fald giver limited risk/reward på dette niveau.",
+      "key_risk": "Høreapparater-markedet under pres fra konkurrence og ASP-erosion; kurskorrekion fra stoch 85.8 er sandsynlig."
+    },
+    "ROCK-B.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Pris over SMA50 (+4.9%) med stigende momentum (+5.67% på 20d); fwd PE 13.1x er rimelig for byggematerialer"
+      ],
+      "bear": [
+        "Pris -8.5% under SMA200; europæisk konstruktionsmarked under vedvarende pres; ingen trailing earnings (Infinity PE)"
+      ],
+      "summary": "Rockwool B er i svag recovery over SMA50 men under SMA200; isolationsmaterialer-efterspørgsel vil stige med renoveringsprogrammer men makro-timingen er usikker.",
+      "key_risk": "Europæisk boligmarked-svaghed og høje renter kan forsinke konstruktions-recover og dermed Rockwools omsætningsvækst."
+    },
+    "DSV.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Pris over SMA50 (+0.14%) og SMA200 (+4.0%) med RSI 61.6 og stoch 73.5 — teknisk i optrend drevet af M&A-integration og +68.9% revenue-vækst"
+      ],
+      "bear": [
+        "Earnings -42.9% YoY; fwd PE 18.4x er premium-prissætning for integrationsrisiko; stoch 73.5 nærmer sig overbought"
+      ],
+      "summary": "DSV er teknisk intakt med pris over begge SMA, men M&A-integrationsrisiko og earnings-svaghed kombineret med premium-prissætning begrænser risk/reward.",
+      "key_risk": "Svagere global handelsvolumen eller integrationsomkostninger fra DB Schenker-købet der overstiger forventningerne kan ramme earnings og sende aktien lavere."
+    },
+    "NSIS-B.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "RSI 51.2 og stoch 33.3 i neutral zone; enzymer/biotech strukturel vækst-story med +7.5% earnings-vækst"
+      ],
+      "bear": [
+        "Pris under SMA50 (-0.95%) og SMA200 (-4.59%); fwd PE 21.4x er dyr for moderat vækst; 5d og 20d momentum begge negative"
+      ],
+      "summary": "Novonesis B handles til premium-multipel med begrænset vækst og svagt teknisk momentum; strukturel biotech-story er intakt men prissætningen er ikke overbevisende.",
+      "key_risk": "Svækkede enzymer-priser eller tab af nøglekundekontrakter kan presse earnings og sende aktien fra allerede svagt teknisk niveau."
+    },
+    "GN.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 3,
+      "bull": [
+        "5d momentum +1.78% med RSI 48.8 og stoch 55.8 i neutral zone — stabilisering frem for forværring"
+      ],
+      "bear": [
+        "Revenue -8.2% YoY; pris under SMA50 (-1.73%) og SMA200 (-8.07%); fwd PE 17.7x premium for svage fundamentaler"
+      ],
+      "summary": "GN Store Nord er fundamentalt udfordret med faldende omsætning og handles til premium-PE under sine glidende gennemsnit; ingen positiv katalysator synlig.",
+      "key_risk": "Fortsat tab af markedsandele i gaming/kommunikation-segmentet og høreapparater-konkurrence kan føre til yderligere guidance-nedskæringer."
+    },
+    "JYSK.CO": {
+      "tier": "scan",
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Pris over SMA50 (+1.85%) og SMA200 (+11.97%) med fwd PE 9.77x — attraktiv prissætning for regional bank i teknisk uptrend"
+      ],
+      "bear": [
+        "RSI 67.3 og stoch 67.4 nærmer sig overbought; earnings declining -12.6% YoY — voksende risiko for earnings-skuffelse"
+      ],
+      "summary": "Jyske Bank er i teknisk uptrend med attraktiv prissætning men nærmer sig overbought med svækkende earnings; hold frem for køb på nuværende niveau.",
+      "key_risk": "Faldende earnings og NIM-kompression fra rentemiljøet kan medføre nedgradering der rammer aktien fra overbought-niveau."
+    }
+  }
+}
