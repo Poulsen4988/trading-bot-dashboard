@@ -1,0 +1,73 @@
+{
+  "date": "2026-06-07",
+  "files_reviewed": 25,
+  "files_cleaned": 3,
+  "total_items_removed": 5,
+  "per_file": [
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 15,
+      "removed_items": [
+        {
+          "title": "Selskabsvedtægter for Genmab A/S",
+          "date": "2026-05-13",
+          "reason": "low_value",
+          "notes": "Titel og summary (\"Selskabsvedtægter\") er begge generiske. Vedtægtsdokument uden nyhedsværdi."
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 2,
+      "kept_count": 21,
+      "removed_items": [
+        {
+          "title": "Vedtægter for A.P. Møller - Mærsk A/S",
+          "date": "2026-06-04",
+          "reason": "low_value",
+          "notes": "Vedtægtsdokument, administrativt. Summary \"Selskabsvedtægter\" er generisk og tilføjer ingen information."
+        },
+        {
+          "title": "Beholdning af egne aktier",
+          "date": "2026-06-04",
+          "reason": "low_value",
+          "notes": "Rutine-rapportering af beholdning af egne aktier. Summary \"Storaktionærmeddelelser\" er generisk. Ingen langsigtet informationsværdi."
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 2,
+      "kept_count": 21,
+      "removed_items": [
+        {
+          "title": "Vedtægter for A.P. Møller - Mærsk A/S",
+          "date": "2026-06-04",
+          "reason": "low_value",
+          "notes": "Vedtægtsdokument, administrativt. Identisk med MAERSKa-filen. Summary \"Selskabsvedtægter\" er generisk."
+        },
+        {
+          "title": "Beholdning af egne aktier",
+          "date": "2026-06-04",
+          "reason": "low_value",
+          "notes": "Rutine-rapportering. Identisk med MAERSKa-filen. Summary \"Storaktionærmeddelelser\" er generisk."
+        }
+      ]
+    }
+  ],
+  "kept_highlights": [
+    "FDA-godkendelse af Coloplasts næste generation penileprotese (COLOb)",
+    "CHMP-anbefaling af Wegovy pill og Wegovy 7.2mg til EU-godkendelse (NOVOb)",
+    "Bavarian Nordic tildelt kontraktoptioner fra den amerikanske regering (BAVA)",
+    "DSV nye strategiske prioriteter og finansielle mål for 2030 (DSV)",
+    "Carlsberg hybrid notes EUR 1.8bn kapitalstruktur-ændring (CARLb)",
+    "Danske Bank direktionsændringer (DANSKE)",
+    "ISS opjusterer outlook + øger aktietilbagekøb + Deutsche Telekom-aftale til 2035 (ISS)",
+    "ROCKWOOL opjusterer omsætningsforventninger for 2026 (ROCKb)",
+    "NNIT opdaterer 2026-outlook og Q1 foreløbige tal (NNIT)",
+    "GN guidance opdateret pga. Hearing behandlet som discontinued operations (GN)",
+    "Coloplast halvårsrapport 2025/26 (COLOb)"
+  ],
+  "summary": "Gennemgang af 25 knowledge-filer (358 news-items i alt). 18 filer havde 25 low_value kandidater (ingen duplikater eller stale-items). Summaries var i alle tilfælde blot kategori-labels fra børsen (\"Intern viden\", \"Investor Nyheder\", \"Storaktionærmeddelelser\" osv.) - ikke reel opsummering. Fjernet 5 items fra 3 filer: vedtægtsdokumenter (Selskabsvedtægter) og rutine-rapportering af beholdning af egne aktier, som begge har generiske titler OG generiske summaries og ingen langsigtet informationsværdi. Bevaret alle items med faktisk nyhedsindhold i titlen: FDA/CHMP-godkendelser, earnings-rapporter, guidance-opdateringer, ledelsesskift, kapitalstruktur-ændringer, strategiske udmeldinger og store aktionærmeddelelser."
+}
