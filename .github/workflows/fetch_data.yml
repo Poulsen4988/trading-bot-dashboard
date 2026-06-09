@@ -2,8 +2,11 @@ name: Hent priser og nyheder (hver time)
 
 on:
   schedule:
-    # Kører hvert hele time 07:00-16:00 UTC (09:00-18:00 CET) på hverdage
-    - cron: '0 7-16 * * 1-5'
+    # Kører :17 i hver time 06:17-16:17 UTC (08:17-18:17 CET) på hverdage.
+    # Minut :17 (ikke :00) rammer uden for GitHubs mest belastede tidspunkt, så
+    # flere planlagte kørsler reelt fyrer. Start 06:17 giver friske priser før
+    # Analyse-rutinen (07:15) og Handel-rutinen (07:45) kloner repoet.
+    - cron: '17 6-16 * * 1-5'
   workflow_dispatch:  # Kan også trigges manuelt
 
 jobs:

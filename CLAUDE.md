@@ -1,5 +1,21 @@
 # Trading Bot — Start her (ny session)
 
+## Optimering 2026-06-09 — nye invarianter (læs før ændringer)
+- **data.json er slank.** `trades[]` indeholder kun `{verdict, confidence, summary}`
+  — IKKE bull/bear eller investment_plan. Den fulde begrundelse ligger i
+  `decisions/DATO.json`; dashboardets handelsmodal henter den on-demand. Tilføj
+  ikke tunge felter tilbage til trades. `paper_trader.slim_trades()` håndhæver det.
+- **Eneejer-skrivning:** `paper_trader.py` ejer portfolio/cash/positions/history/
+  trades. `sync_dashboard.py` skriver KUN afledte felter (stocks, benchmarks,
+  sector_exposure_pct, latest_decisions) og tilføjer kun dagens history-punkt hvis
+  det mangler. Lad være med at lade dem skrive de samme felter.
+- **github_store** har retry + 409-håndtering; `get_json(..., raise_on_error=True)`
+  bruges på kritiske reads så en transient fejl ikke handler mod tom state.
+- **fetch_history.py** er inkrementel (fuld genhentning mandag/manuel trigger).
+- **requirements.txt er pinnet** — opdater bevidst og test via manuel workflow-trigger.
+- **Sikkerhed:** hardcode ALDRIG PAT i rutine-prompts (nogle gør det stadig —
+  bør roteres og sættes som env/secret).
+
 ## VIGTIGT: Filstruktur
 Al kode ligger **udelukkende på GitHub** — den lokale mappe indeholder kun denne fil.
 
