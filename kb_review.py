@@ -34,7 +34,7 @@ import os
 import sys
 import urllib.request
 from collections import defaultdict
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 
 try:
     from dotenv import load_dotenv
@@ -182,7 +182,7 @@ def main():
 
     output = {
         "date": today_str,
-        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "stale_days_threshold": STALE_DAYS,
         "low_value_summary_threshold_chars": LOW_VALUE_SUMMARY_LEN,
         "files_reviewed": len(json_files),

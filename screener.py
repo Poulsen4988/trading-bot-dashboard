@@ -18,7 +18,7 @@ import math
 import os
 import subprocess
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 
 from watchlist import STOCKS
 
@@ -583,7 +583,7 @@ def main():
 
     output = {
         "date":             today,
-        "screened_at":      datetime.utcnow().isoformat() + "Z",
+        "screened_at":      datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "price_data_date":  data_date,
         "universe_size":    valid_count,
         "indicator_method": selected[0]["indicator_method"] if selected else "unknown",

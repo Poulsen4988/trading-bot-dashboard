@@ -26,13 +26,15 @@ jobs:
       - name: Hent priser (yfinance)
         run: python scripts/fetch_prices.py
 
-      - name: Hent fuld prishistorik (kun kl 16 UTC eller manuel trigger)
+      - name: Opdater prishistorik (inkrementel; fuld om mandagen/ved manuel trigger)
         run: |
           if [ "$(date -u +%H)" -eq 16 ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             python scripts/fetch_history.py
           else
-            echo "Springer fuld historik over (kører kun kl 16 UTC eller ved manuel trigger)"
+            echo "Springer historik-opdatering over (kører kun kl 16 UTC eller ved manuel trigger)"
           fi
+        env:
+          FETCH_FULL_HISTORY: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
 
       - name: Hent nyheder (yfinance)
         run: python news.py > /dev/null
@@ -47,11 +49,15 @@ jobs:
         env:
           DASHBOARD_PAT: ${{ secrets.DASHBOARD_PAT }}
 
+      - name: Ryd gamle mellem-artefakter (>180 dage)
+        run: python scripts/prune_old.py
+        continue-on-error: true
+
       - name: Gem priser og nyheder til repo
         run: |
           git config user.name "Trading Bot"
           git config user.email "bot@github-actions"
-          git add prices/ knowledge/ data.json 2>/dev/null || true
+          git add prices/ knowledge/ data.json screening/ analysis/ knowledge_cleanup_reports/ 2>/dev/null || true
           git diff --staged --quiet || git commit -m "Data update $(date -u '+%Y-%m-%d %H:%M UTC')"
           git pull --rebase --autostash origin main
           git push
