@@ -17,6 +17,42 @@ import github_store
 
 INITIAL_CASH = 100_000
 
+# Vækstkontrol for data.json (dashboard-payload). Den fulde begrundelse (bull/bear,
+# investment_plan, fuld summary) ligger ALTID i decisions/DATO.json, som
+# dashboardets modal henter on-demand. I trades beholder vi kun et let resumé,
+# så filen forbliver lille. Historik kappes til ~2 år; antal handler til MAX_TRADES.
+TRADE_SUMMARY_CAP = 240
+MAX_HISTORY_POINTS = 730
+MAX_TRADES = 600
+
+
+def slim_trades(data):
+    """Slank hver handels reasoning til {verdict, confidence, summary} og fjern
+    investment_plan + bull/bear-lister. Behold de seneste MAX_TRADES rækker.
+    Idempotent. Fuld detalje findes i decisions/DATO.json."""
+    for t in data.get("trades", []):
+        t.pop("investment_plan", None)
+        r = t.get("reasoning")
+        if isinstance(r, dict):
+            slim = {"verdict": r.get("verdict")}
+            if r.get("confidence") is not None:
+                slim["confidence"] = r.get("confidence")
+            summary = (r.get("summary") or "")[:TRADE_SUMMARY_CAP]
+            if summary:
+                slim["summary"] = summary
+            t["reasoning"] = slim
+    trades = data.get("trades", [])
+    if len(trades) > MAX_TRADES:
+        data["trades"] = trades[-MAX_TRADES:]
+    return data
+
+
+def cap_history(data, limit=MAX_HISTORY_POINTS):
+    hist = data.get("history", [])
+    if len(hist) > limit:
+        data["history"] = hist[-limit:]
+    return data
+
 
 def today():
     return date.today().isoformat()
@@ -264,20 +300,24 @@ def execute_decisions(decisions_data, data):
 def main():
     date_str = today()
 
-    decisions_data, _ = github_store.get_json(f"decisions/{date_str}.json", default=None)
+    decisions_data, _ = github_store.get_json(
+        f"decisions/{date_str}.json", default=None, raise_on_error=True
+    )
     if not decisions_data:
         raise SystemExit(
             f"Ingen decisions/{date_str}.json fundet. "
             "Handels-rutinen skal skrive denne fil, før paper_trader.py køres."
         )
 
-    data, _ = github_store.get_json("data.json", default=default_data())
+    # raise_on_error: hellere stoppe end handle mod tom/forældet portefølje og
+    # overskrive god remote-state ved en transient læsefejl.
+    data, _ = github_store.get_json("data.json", default=default_data(), raise_on_error=True)
     executed, holds, new_total = execute_decisions(decisions_data, data)
-    github_store.put_json("data.json", data, f"Paper trades {date_str}")
 
+    # Print fuld opsummering (med thesis) FØR slankning.
     print(f"=== PAPER TRADE SUMMARY {date_str} ===")
     for t in executed:
-        plan = t.get("investment_plan", {})
+        plan = t.get("investment_plan", {}) or {}
         print(
             f"{t['action']:4} {t['symbol']:14} "
             f"shares={t['shares']} price={t['price']} value={t['value']} DKK"
@@ -292,6 +332,13 @@ def main():
             line += f" — {h['skip_reason']}"
         print(line)
     print(f"\nNy porteføljeværdi: {new_total} DKK")
+
+    # Slank til dashboard-payload og skriv. Fuld detalje er allerede i decisions/.
+    slim_trades(data)
+    cap_history(data)
+    ok = github_store.put_json("data.json", data, f"Paper trades {date_str}")
+    if github_store.TOKEN and not ok:
+        raise SystemExit("data.json kunne ikke skrives til GitHub — handler IKKE gemt. Se fejl ovenfor.")
 
 
 if __name__ == "__main__":

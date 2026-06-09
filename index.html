@@ -461,7 +461,7 @@ function renderDecisionRow(d) {
   return `<div class="td-row ${cls}" onclick="openDecisionModal('${sym}')">
     <span class="td-action ${cls}">${lbl}</span>
     <div class="td-info">
-      <div class="td-sym">${d.name || d.symbol || '—'}</div>
+      <div class="td-sym">${escapeHtml(d.name || d.symbol || '—')}</div>
       <div class="td-meta">${meta}</div>
       ${sumText ? `<div class="td-sum">${escapeHtml(sumText)}</div>` : ''}
     </div>
@@ -487,7 +487,7 @@ function openDecisionModal(symbol) {
   const cls = action === 'BUY' ? 'b-buy' : action === 'SELL' ? 'b-sell' : 'b-hold';
 
   document.getElementById('m-title').innerHTML =
-    `<span class="badge ${cls}" style="margin-right:8px">${lbl}</span>${d.name || d.symbol}`;
+    `<span class="badge ${cls}" style="margin-right:8px">${lbl}</span>${escapeHtml(d.name || d.symbol)}`;
 
   const bull = Array.isArray(d.bull) ? d.bull : [];
   const bear = Array.isArray(d.bear) ? d.bear : [];
@@ -527,6 +527,14 @@ function openDecisionModal(symbol) {
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// Tillad kun http(s)-links; afvis javascript:/data: m.m. fra scrapede nyheder.
+function safeUrl(u) {
+  try {
+    const url = new URL(u, location.href);
+    return (url.protocol === 'http:' || url.protocol === 'https:') ? url.href : '';
+  } catch (e) { return ''; }
 }
 
 function renderChart(h, start, benchmarks) {
@@ -604,7 +612,7 @@ function renderPos(positions) {
     const val = cur*p.shares;
     const pp = cost?((cur/cost)-1)*100:0;
     return `<div class="pos-row">
-      <div><div class="pos-name">${p.name}</div><div class="pos-shares">${p.shares} aktier @ ${cost?.toFixed(2)} kr.</div></div>
+      <div><div class="pos-name">${escapeHtml(p.name)}</div><div class="pos-shares">${p.shares} aktier @ ${cost?.toFixed(2)} kr.</div></div>
       <div class="pos-pnl">
         <div class="pos-val">${fmt(val)}</div>
         <div class="pos-pct ${pp>=0?'positive':'negative'}">${pct(pp)}</div>
@@ -630,7 +638,7 @@ function renderFeed(trades) {
       <div class="tc-header">
         <div class="tc-left">
           <span class="badge ${bc}">${lbl}</span>
-          <span class="tc-symbol">${t.name||t.symbol}</span>
+          <span class="tc-symbol">${escapeHtml(t.name||t.symbol)}</span>
           ${t.is_new?'<span class="badge b-new">NY</span>':''}
         </div>
         <span class="tc-date">${t.date}</span>
@@ -876,15 +884,19 @@ function renderStockTab() {
       el.innerHTML = '<div class="empty">Ingen nyheder i videnbasen endnu — køres ved næste bot-kørsel</div>';
       return;
     }
-    el.innerHTML = s.news.map(n => `
+    el.innerHTML = s.news.map(n => {
+      const url = safeUrl(n.url);
+      const title = escapeHtml(n.title || '');
+      return `
       <div class="news-item">
         <div class="news-meta">
-          <span class="news-date">${n.date ? n.date.slice(0,10) : '—'}</span>
-          ${n.source ? `<span class="news-source">${n.source}</span>` : ''}
+          <span class="news-date">${n.date ? escapeHtml(n.date.slice(0,10)) : '—'}</span>
+          ${n.source ? `<span class="news-source">${escapeHtml(n.source)}</span>` : ''}
         </div>
-        <div class="news-title">${n.url ? `<a href="${n.url}" target="_blank" rel="noopener noreferrer">${n.title}</a>` : n.title}</div>
-        ${n.summary ? `<div class="news-summary">${n.summary}</div>` : ''}
-      </div>`).join('');
+        <div class="news-title">${url ? `<a href="${url}" target="_blank" rel="noopener noreferrer">${title}</a>` : title}</div>
+        ${n.summary ? `<div class="news-summary">${escapeHtml(n.summary)}</div>` : ''}
+      </div>`;
+    }).join('');
 
   } else if (currentStockTab === 'analyser') {
     const a = s.analysis;
@@ -898,16 +910,16 @@ function renderStockTab() {
         <span class="badge ${vc}">${a.verdict || '—'}</span>
         <span class="ae-date">${a.analysis_date || ''}${a.confidence != null ? ' · tillid ' + a.confidence + '/10' : ''}</span>
       </div>
-      ${a.summary ? `<div class="ae-reason">${a.summary}</div>` : ''}
+      ${a.summary ? `<div class="ae-reason">${escapeHtml(a.summary)}</div>` : ''}
     </div>`;
     if (a.bull && a.bull.length) {
-      html += `<div class="debate bull"><div class="debate-lbl">Bull — argument for</div><div class="debate-txt">${a.bull.map(x => '• ' + x).join('<br>')}</div></div>`;
+      html += `<div class="debate bull"><div class="debate-lbl">Bull — argument for</div><div class="debate-txt">${a.bull.map(x => '• ' + escapeHtml(x)).join('<br>')}</div></div>`;
     }
     if (a.bear && a.bear.length) {
-      html += `<div class="debate bear"><div class="debate-lbl">Bear — argument imod</div><div class="debate-txt">${a.bear.map(x => '• ' + x).join('<br>')}</div></div>`;
+      html += `<div class="debate bear"><div class="debate-lbl">Bear — argument imod</div><div class="debate-txt">${a.bear.map(x => '• ' + escapeHtml(x)).join('<br>')}</div></div>`;
     }
     if (a.key_risk) {
-      html += `<div class="text-block"><div class="text-block-lbl">Vigtigste risiko</div><div class="text-block-body">${a.key_risk}</div></div>`;
+      html += `<div class="text-block"><div class="text-block-lbl">Vigtigste risiko</div><div class="text-block-body">${escapeHtml(a.key_risk)}</div></div>`;
     }
     el.innerHTML = html;
   }
@@ -1036,21 +1048,50 @@ function renderStockChart(history, range, intradayPrice) {
 
 // ── Trade modal ────────────────────────────────────────────────────────────
 
-function openModal(id) {
+async function openModal(id) {
   const t = allTrades.find(x=>x.id===id); if(!t) return;
   const lbl = t.action==='BUY'?'KØB ':t.action==='SELL'?'SÆLG ':'HOLD ';
   document.getElementById('m-title').textContent = lbl+(t.name||t.symbol)+' — '+t.date;
-  const r = t.reasoning || (t.reason ? {verdict: t.action, summary: t.reason} : {});
-  document.getElementById('m-body').innerHTML = `
-    ${r.bull?`<div class="debate bull"><div class="debate-lbl">Bull — argument for KØB</div><div class="debate-txt">${r.bull}</div></div>`:''}
-    ${r.bear?`<div class="debate bear"><div class="debate-lbl">Bear — argument for SALG</div><div class="debate-txt">${r.bear}</div></div>`:''}
-    ${r.verdict?`<div class="debate verdict">
-      <div class="debate-lbl">Afgørelse: ${r.verdict}</div>
-      <div class="debate-txt">${r.summary||''}</div>
-      ${r.confidence?`<div class="conf-row"><span class="conf-lbl">Sikkerhed</span><div class="conf-track"><div class="conf-fill" style="width:${r.confidence*10}%"></div></div><span class="conf-lbl">${r.confidence}/10</span></div>`:''}
-    </div>`:''}
-    <div class="trade-meta">${t.shares?t.shares+' aktier':''} ${t.price?'@ '+t.price.toFixed(2)+' kr.':''} ${t.value?'= '+fmt(t.value):''}</div>`;
   document.getElementById('overlay').classList.add('on');
+
+  // Start med handlens lette reasoning; berig med fuld bull/bear/plan fra
+  // decisions/DATO.json on-demand (data.json bærer kun et let resumé).
+  let r = (t.reasoning && typeof t.reasoning === 'object') ? Object.assign({}, t.reasoning)
+        : (t.reason ? {verdict: t.action, summary: t.reason} : {});
+  let plan = null;
+  try {
+    const res = await fetch(`decisions/${t.date}.json?t=${Date.now()}`, {cache: 'force-cache'});
+    if (res.ok) {
+      const dec = await res.json();
+      const m = (dec.decisions || []).find(x => x.symbol === t.symbol);
+      if (m) {
+        const ms = (m.reasoning && typeof m.reasoning === 'object') ? (m.reasoning.summary || '') : (m.reasoning || '');
+        r = {verdict: m.action || r.verdict, summary: ms || r.summary,
+             confidence: (m.confidence != null ? m.confidence : r.confidence), bull: m.bull, bear: m.bear};
+        plan = m.investment_plan || null;
+      }
+    }
+  } catch (e) {}
+
+  const bull = Array.isArray(r.bull) ? r.bull : (r.bull ? [r.bull] : []);
+  const bear = Array.isArray(r.bear) ? r.bear : (r.bear ? [r.bear] : []);
+  let html = '';
+  if (bull.length) html += `<div class="debate bull"><div class="debate-lbl">Bull — argument for</div><div class="debate-txt"><ul style="padding-left:18px;margin:0">${bull.map(b=>`<li>${escapeHtml(b)}</li>`).join('')}</ul></div></div>`;
+  if (bear.length) html += `<div class="debate bear"><div class="debate-lbl">Bear — argument imod</div><div class="debate-txt"><ul style="padding-left:18px;margin:0">${bear.map(b=>`<li>${escapeHtml(b)}</li>`).join('')}</ul></div></div>`;
+  if (r.verdict || r.summary) html += `<div class="debate verdict"><div class="debate-lbl">${r.verdict?'Afgørelse: '+escapeHtml(r.verdict):'Afgørelse'}</div><div class="debate-txt">${escapeHtml(r.summary||'')}</div>${r.confidence?`<div class="conf-row"><span class="conf-lbl">Sikkerhed</span><div class="conf-track"><div class="conf-fill" style="width:${Math.min(100, Number(r.confidence)*10)}%"></div></div><span class="conf-lbl">${escapeHtml(String(r.confidence))}/10</span></div>`:''}</div>`;
+  if (plan && (plan.thesis || plan.price_target != null || plan.stop_loss != null)) {
+    html += `<div class="debate verdict"><div class="debate-lbl">Investment plan</div><div class="debate-txt">`;
+    if (plan.thesis) html += `<div>${escapeHtml(plan.thesis)}</div>`;
+    const f = [];
+    if (plan.term) f.push('Term: ' + escapeHtml(plan.term));
+    if (plan.timeframe) f.push('Tidshorisont: ' + escapeHtml(plan.timeframe));
+    if (plan.price_target != null) f.push('Target: ' + escapeHtml(String(plan.price_target)) + ' kr.');
+    if (plan.stop_loss != null) f.push('Stop: ' + escapeHtml(String(plan.stop_loss)) + ' kr.');
+    if (f.length) html += `<div style="margin-top:6px;font-size:12px;color:var(--muted)">${f.join(' · ')}</div>`;
+    html += `</div></div>`;
+  }
+  html += `<div class="trade-meta">${t.shares?t.shares+' aktier':''} ${t.price?'@ '+t.price.toFixed(2)+' kr.':''} ${t.value?'= '+fmt(t.value):''}</div>`;
+  document.getElementById('m-body').innerHTML = html || '<div class="empty">Ingen begrundelse tilgængelig</div>';
 }
 
 function close_() { document.getElementById('overlay').classList.remove('on'); }

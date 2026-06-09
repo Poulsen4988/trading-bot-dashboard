@@ -1,4 +1,7 @@
-python-dotenv
-yfinance
-pandas
-ta
+# Pinned til de versioner GitHub Actions allerede kører (2026-06-09), så en
+# fremtidig breaking release af fx yfinance ikke pludselig knækker botten.
+# Opdater bevidst og test via manuel workflow-trigger.
+python-dotenv==1.2.2
+yfinance==1.4.1
+pandas==3.0.3
+ta==0.11.0

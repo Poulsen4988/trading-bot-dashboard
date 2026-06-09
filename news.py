@@ -4,6 +4,7 @@ Gemmer i videnbasen og printer JSON til stdout.
 """
 import json
 import sys
+import time
 from datetime import datetime, timezone
 
 import yfinance as yf
@@ -13,11 +14,19 @@ from watchlist import C25
 
 
 def fetch_stock_news(yf_symbol, limit=10):
+    raw = None
+    for attempt in range(3):
+        try:
+            raw = yf.Ticker(yf_symbol).news or []
+            break
+        except Exception as e:
+            if attempt == 2:
+                print(f"[news] Fejl for {yf_symbol}: {e}", file=sys.stderr)
+                return []
+            time.sleep(2 * (attempt + 1))
     try:
-        t = yf.Ticker(yf_symbol)
-        raw = t.news or []
         articles = []
-        for item in raw[:limit]:
+        for item in (raw or [])[:limit]:
             c = item.get("content", {})
             title = c.get("title", "").strip()
             if not title:

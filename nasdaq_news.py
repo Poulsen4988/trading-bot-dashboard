@@ -10,6 +10,7 @@ mod C25 via watchlist-feltet 'nasdaq'.
 """
 import json
 import sys
+import time
 import urllib.request
 from datetime import datetime, timezone
 
@@ -26,10 +27,18 @@ FEED_URL = (
 )
 
 
-def fetch_feed():
-    req = urllib.request.Request(FEED_URL, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read())
+def fetch_feed(retries=3, backoff=3):
+    last = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(FEED_URL, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read())
+        except Exception as e:
+            last = e
+            if attempt < retries - 1:
+                time.sleep(backoff * (attempt + 1))
+    raise last
 
 
 def to_article(item):
@@ -52,6 +61,8 @@ def main():
         return
 
     items = feed.get("results", {}).get("item", [])
+    if isinstance(items, dict):  # feed returnerer en enkelt dict når kun ét resultat
+        items = [items]
     print(f"[nasdaq_news] {len(items)} meddelelser fra Nasdaq Copenhagen", file=sys.stderr)
 
     total = 0

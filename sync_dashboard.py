@@ -40,87 +40,25 @@ def load_json_file(path, default):
         return default
 
 
-def load_journal():
-    entries = []
-    pattern = os.path.join(SCRIPT_DIR, "journal*.jsonl")
-    for path in sorted(glob.glob(pattern)):
-        with open(path, encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    entries.append(json.loads(line))
-                except json.JSONDecodeError:
-                    pass
-    entries.sort(key=lambda e: e.get("timestamp", ""))
-    return entries
-
-
-def build_reasoning(entry):
-    existing = entry.get("reasoning")
-    if isinstance(existing, dict):
-        return existing
-    reason = entry.get("reason") or entry.get("analyse") or ""
-    verdict = entry.get("action", "HOLD").upper()
-    return {"verdict": verdict, "summary": reason}
-
-
-def entry_key(entry):
-    ts = entry.get("timestamp", "")
-    date = ts[:10] if ts else entry.get("date", "")
-    return (
-        date,
-        entry.get("symbol") or entry.get("name") or "N/A",
-        entry.get("action", "").upper(),
-        entry.get("reason", "")[:80],
-    )
-
-
-def journal_to_trade(entry, next_id):
-    action = entry.get("action", "").upper()
-    ts = entry.get("timestamp", "")
-    date = ts[:10] if ts else datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    amount = int(entry.get("amount") or entry.get("shares") or 0)
-    price = float(entry.get("price") or 0)
-    value = float(entry.get("estimated_value") or entry.get("value") or (amount * price if amount and price else 0))
-    return {
-        "id": next_id,
-        "date": date,
-        "action": action,
-        "symbol": entry.get("symbol") or "N/A",
-        "name": entry.get("name") or entry.get("symbol") or "N/A",
-        "shares": amount,
-        "price": price if price else None,
-        "value": value if value else None,
-        "is_new": False,
-        "reasoning": build_reasoning(entry),
-    }
-
-
-def mark_latest_new(trades):
-    for t in trades:
-        t["is_new"] = False
-    if trades:
-        trades[-1]["is_new"] = True
-
-
 def update_history(data):
+    """Tilføjer dagens porteføljepunkt — KUN hvis det mangler.
+
+    paper_trader.py er autoritativ skriver af history (post-handel-værdi). Sync
+    overskriver derfor ikke et eksisterende punkt; den udfylder kun dage hvor
+    handels-rutinen ikke har kørt, så de to skrivere ikke divergerer."""
     portfolio = data.setdefault("portfolio", {})
+    portfolio["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    history = data.setdefault("history", [])
+    if any(h.get("date") == today for h in history):
+        return
     cash = float(portfolio.get("cash", INITIAL_CASH))
-    positions = portfolio.get("positions", [])
     pos_value = 0.0
-    for p in positions:
+    for p in portfolio.get("positions", []):
         shares = float(p.get("shares") or 0)
         price = float(p.get("current_price") or p.get("purchase_price") or p.get("avg_price") or 0)
         pos_value += shares * price
-    total = round(cash + pos_value, 2)
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    history = data.setdefault("history", [])
-    history = [h for h in history if h.get("date") != today]
-    history.append({"date": today, "portfolio_value": total})
-    data["history"] = history
-    portfolio["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    history.append({"date": today, "portfolio_value": round(cash + pos_value, 2)})
 
 
 def list_github_dir(path):
@@ -397,77 +335,24 @@ def build_stocks():
     return stocks
 
 
-def fetch_remote_sha():
-    if not GITHUB_PAT:
-        return None
-    api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/data.json"
-    headers = {"Authorization": f"Bearer {GITHUB_PAT}", "User-Agent": "TradingBot/1.0"}
-    try:
-        req = urllib.request.Request(api_url, headers=headers)
-        with urllib.request.urlopen(req) as r:
-            return json.loads(r.read()).get("sha")
-    except Exception as e:
-        print(f"[sync_dashboard] Kunne ikke hente remote SHA: {e}")
-        return None
-
-
-def push_to_github(data):
-    if not GITHUB_PAT:
-        print(f"[sync_dashboard] DASHBOARD_PAT mangler; lokal data.json opdateret. Dashboard: {DASHBOARD_URL}")
-        return
-
-    sha = fetch_remote_sha()
-    if not sha:
-        print("[sync_dashboard] Springer GitHub push over: ingen SHA fundet.")
-        return
-
-    content = json.dumps(data, ensure_ascii=False, indent=2).encode("utf-8")
-    api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/data.json"
-    headers = {
-        "Authorization": f"Bearer {GITHUB_PAT}",
-        "Content-Type": "application/json",
-        "User-Agent": "TradingBot/1.0",
-    }
-    body = json.dumps({
-        "message": f"Dashboard update {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
-        "content": base64.b64encode(content).decode("ascii"),
-        "sha": sha,
-    }).encode("utf-8")
-
-    try:
-        req = urllib.request.Request(api_url, data=body, method="PUT", headers=headers)
-        with urllib.request.urlopen(req) as r:
-            print(f"[sync_dashboard] GitHub Pages data.json opdateret (HTTP {r.status})")
-            print(f"[sync_dashboard] Dashboard: {DASHBOARD_URL}")
-    except Exception as e:
-        print(f"[sync_dashboard] GitHub push fejlede: {e}")
-
-
 def sync():
-    data = load_json_file(DATA_PATH, {
+    import github_store
+
+    default = {
         "portfolio": {"initial_cash": INITIAL_CASH, "cash": INITIAL_CASH, "currency": "DKK", "positions": []},
         "history": [],
         "trades": [],
         "stocks": [],
-    })
+    }
+    # Læs frisk fra GitHub, så dashboardet bygges oven på paper_trader's seneste
+    # portefølje/handler. Fald tilbage til lokal checkout uden token.
+    data, _ = github_store.get_json("data.json", default=None)
+    if not data:
+        data = load_json_file(DATA_PATH, default)
 
-    trades = data.setdefault("trades", [])
-    existing = {(t.get("date"), t.get("symbol"), t.get("action"), (t.get("reasoning") or {}).get("summary", "")[:80]) for t in trades}
-    next_id = max([int(t.get("id", 0)) for t in trades] + [0]) + 1
+    # trades + portefølje ejes af paper_trader.py — sync rører dem ikke.
+    data.setdefault("trades", [])
 
-    for entry in load_journal():
-        action = entry.get("action", "").upper()
-        if action not in {"BUY", "SELL", "HOLD", "REVIEW"}:
-            continue
-        t = journal_to_trade(entry, next_id)
-        key = (t.get("date"), t.get("symbol"), t.get("action"), (t.get("reasoning") or {}).get("summary", "")[:80])
-        if key in existing:
-            continue
-        trades.append(t)
-        existing.add(key)
-        next_id += 1
-
-    mark_latest_new(trades)
     update_history(data)
     data["stocks"] = build_stocks()
     data["latest_decisions"] = load_latest_decisions()
@@ -480,11 +365,15 @@ def sync():
         data.get("portfolio", {}).get("positions", []), data.get("stocks", []),
     )
 
+    # Skriv lokalt (GitHub Actions' git-step committer det) og push via
+    # github_store (retry + 409-håndtering).
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"[sync_dashboard] {len(trades)} dashboard-events -> data.json opdateret")
-    push_to_github(data)
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    print(f"[sync_dashboard] {len(data.get('trades', []))} handler, {len(data.get('stocks', []))} aktier -> data.json")
+    github_store.put_json("data.json", data, f"Dashboard update {ts}")
+    print(f"[sync_dashboard] Dashboard: {DASHBOARD_URL}")
 
 
 if __name__ == "__main__":

@@ -12,6 +12,7 @@ import json
 import math
 import os
 import sys
+import time
 from datetime import datetime, timezone
 
 import yfinance as yf
@@ -22,6 +23,25 @@ sys.path.insert(0, SCRIPT_DIR)
 from watchlist import C25
 
 os.makedirs(os.path.join(SCRIPT_DIR, "prices"), exist_ok=True)
+
+
+def download_retry(tickers, *, retries=3, backoff=3, **kw):
+    """yf.download med retry på transiente fejl/tomme svar. Returnerer evt. tom
+    DataFrame efter sidste forsøg — kalderen afgør om det er en hård fejl."""
+    last = None
+    for attempt in range(retries):
+        try:
+            df = yf.download(tickers, **kw)
+            if df is not None and not df.empty:
+                return df
+            last = "tomt svar"
+        except Exception as e:
+            last = e
+        if attempt < retries - 1:
+            time.sleep(backoff * (attempt + 1))
+    print(f"[fetch_prices] ADVARSEL: download fejlede efter {retries} forsøg: {last}", file=sys.stderr)
+    import pandas as pd
+    return pd.DataFrame()
 
 
 # --- Indikator-beregninger -------------------------------------------------
@@ -151,8 +171,14 @@ def compute_technical(closes, highs, lows, vols, pct_high, pct_low):
 tickers = [s["yf"] for s in C25]
 print(f"[fetch_prices] Henter {len(tickers)} aktier (1 års historik)...")
 
-hist = yf.download(tickers, period="1y", interval="1d", auto_adjust=True,
-                   progress=False, group_by="ticker")
+hist = download_retry(tickers, period="1y", interval="1d", auto_adjust=True,
+                      progress=False, group_by="ticker")
+if hist is None or hist.empty:
+    print("[fetch_prices] FEJL: ingen kursdata hentet — beholder forrige latest.json.", file=sys.stderr)
+    sys.exit(1)
+
+_has_multi = hasattr(hist.columns, "get_level_values")
+_level0 = set(hist.columns.get_level_values(0)) if _has_multi else set()
 
 stocks = {}
 for s in C25:
@@ -161,7 +187,7 @@ for s in C25:
         t = yf.Ticker(sym)
         info = t.info
 
-        df = hist[sym] if sym in getattr(hist.columns, "levels", [[]])[0] else hist
+        df = hist[sym] if (_has_multi and sym in _level0) else hist
         closes = df["Close"].dropna().tolist()
         highs = df["High"].dropna().tolist()
         lows = df["Low"].dropna().tolist()
@@ -232,16 +258,21 @@ for s in C25:
         print(f"[fetch_prices]   FEJL {s['name']}: {e}")
 
 now = datetime.now(timezone.utc)
+ok = sum(1 for v in stocks.values() if "error" not in v and v.get("price"))
+out = os.path.join(SCRIPT_DIR, "prices", "latest.json")
+
+# Fail-loud: overskriv IKKE en god latest.json med en helt tom hentning.
+if ok == 0:
+    print(f"[fetch_prices] FEJL: 0/{len(tickers)} aktier hentet — beholder forrige latest.json.", file=sys.stderr)
+    sys.exit(1)
+
 result = {
     "date": now.date().isoformat(),
     "fetched_at": now.isoformat(),
     "stocks": stocks,
 }
-out = os.path.join(SCRIPT_DIR, "prices", "latest.json")
 with open(out, "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
-
-ok = sum(1 for v in stocks.values() if "error" not in v and v.get("price"))
 print(f"[fetch_prices] Faerdig: {ok}/{len(tickers)} aktier hentet -> {out}")
 
 
@@ -256,8 +287,8 @@ BENCHMARK_LABELS = {
 }
 
 print(f"[fetch_prices] Henter benchmarks: {', '.join(BENCHMARK_TICKERS)} (1 års historik)...")
-bench_hist = yf.download(BENCHMARK_TICKERS, period="1y", interval="1d", auto_adjust=True,
-                         progress=False, group_by="ticker")
+bench_hist = download_retry(BENCHMARK_TICKERS, period="1y", interval="1d", auto_adjust=True,
+                            progress=False, group_by="ticker")
 
 benchmarks = {}
 for bsym in BENCHMARK_TICKERS:
