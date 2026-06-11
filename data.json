@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 7235.95,
+    "cash": 2555.95,
     "currency": "DKK",
     "positions": [
       {
@@ -9,12 +9,12 @@
         "name": "Novo Nordisk B",
         "shares": 95,
         "purchase_price": 265.15,
-        "current_price": 269.5,
+        "current_price": 283.1,
         "value": 25189.25,
         "last_review": {
-          "date": "2026-06-10",
-          "reasoning": "Tesen er fuldt intakt: ekstrem oversold (RSI 37.8, Stoch 12.8, nedre Bollinger-band) kombineret med 50% PE-rabat til sektoren og +67% EPS-vækst. Oral Wegovy 3M recepter bekræfter produktdiversificering. Vægt 26.6% under 30% trim-trigger. Vi rider mean-reversion mod SMA200/350. Lilly-konkurrencen er kendt risiko men dagens nyheder viser kun gradvis ikke disruptiv pres.",
-          "confidence": 75
+          "date": "2026-06-11",
+          "reasoning": "Aktien brød over SMA50 (266) med +5% i går — teknisk vendepunkt bekræftet. Fundamental case intakt med +67% EPS-vækst og 5.9% udbytte. Vægt 27.6% er tæt på trim-grænsen 30% men endnu ikke udløst. Vi rider mean-reversion mod SMA200 (305) og videre mod 350.",
+          "confidence": 70
         },
         "investment_plan": {
           "term": "medium",
@@ -22,12 +22,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "GLP-1-leder i teknisk recovery med deep-value PE 12.5x, +67% EPS-vækst og 5.85% udbytte. Triple-oversold setup ved nedre Bollinger-band giver mean-reversion entry. Oral Wegovy 3M recepter + CVS-aftale + global udrulning driver re-rating mod SMA200/350.",
+          "thesis": "GLP-1-leder i bekræftet teknisk recovery efter SMA50-break med deep-value PE 12.5x, +67% EPS og 5.9% udbytte. Mean-reversion mod SMA200 (305) er primært mål, derefter 350 hvis trendskifte holder. Oral Wegovy + CVS-aftale + global udrulning driver re-rating.",
           "price_target": 350,
           "stop_loss": 248,
-          "expected_return_pct": 30,
+          "expected_return_pct": 24,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under stop-loss 248 (SMA50-svigt + trendbrud), ved alvorlig Lilly-katalysator (retatrutide-godkendelse med Novo guidance-cut), eller tag profit nær 350 hvis SMA200 afvises med momentumtab. Trim hvis vægt overstiger 30%."
+          "exit_conditions": "Sælg ved brud under stop-loss 248 (SMA50-svigt + trendbrud), ved alvorlig Lilly-katalysator (retatrutide-godkendelse + Novo guidance-cut), eller tag profit nær 350 hvis SMA200 afvises med momentumtab. Trim hvis vægt overstiger 30%."
         }
       },
       {
@@ -35,25 +35,25 @@
         "name": "FLSmidth",
         "shares": 30,
         "purchase_price": 494.4,
-        "current_price": 499.0,
+        "current_price": 484.6,
         "purchase_date": "2026-05-20",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical",
-            "fundamental"
+            "fundamental",
+            "technical"
           ],
-          "thesis": "Margin-recovery i Industrials: +195% EPS-vækst og buyback signalerer disciplin. Vi rider trenden mod 580 uden at øge i overbought setup. Service/PC&V-ordreindgang positiv i Q1.",
+          "thesis": "Margin-recovery i Industrials: +195% EPS-vækst, buyback og marginekspansion signalerer disciplin. Vi rider trenden mod 580 (Simply Wall St. fair value), uden at øge i fortsat selling pressure. Service/PC&V-ordreindgang Q1-positiv som operationel anker.",
           "price_target": 580,
           "stop_loss": 440,
-          "expected_return_pct": 16,
-          "timeframe": "3-6 måneder",
+          "expected_return_pct": 20,
+          "timeframe": "3-9 måneder",
           "exit_conditions": "Sælg ved brud under stop-loss 440 (trendbrud + SMA50-support), ved forværring i Service/PC&V-ordreindgang i næste rapport, eller tag profit nær 580 hvis momentum aftager (RSI fald fra 75+ med negativ divergens)."
         },
         "last_review": {
-          "date": "2026-06-10",
-          "reasoning": "Teknisk trend bekræftet intakt: pris over SMA50 (+0.53%) og SMA200 (+4.35%), MACD positiv (+6.25). Service/PC&V-segmenterne driver margin-forbedring, aktivt buyback. Fair value-estimater konvergerer mod 566-583 DKK = 13-17% upside. Top-line kontraktion er reel risiko men ikke trendbrydende endnu. P&L +0.93%, langt fra stop-loss 440.",
-          "confidence": 65
+          "date": "2026-06-11",
+          "reasoning": "EPS-vækst +195% og marginekspansion intakt trods omsætningsfald — operationel leverage virker. Aktien holder over SMA200 (+1.25%) og stop-loss 440 har god afstand. Stoch 10.7 dybt oversold giver mean-reversion-mulighed; vi venter på omsætningsstabilisering som katalysator.",
+          "confidence": 55
         }
       },
       {
@@ -61,7 +61,7 @@
         "name": "Danske Bank",
         "shares": 27,
         "purchase_price": 330.5,
-        "current_price": 329.4,
+        "current_price": 329.0,
         "purchase_date": "2026-05-29",
         "investment_plan": {
           "term": "medium",
@@ -69,7 +69,7 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Billig nordisk storbank (PE 10.4x) i bekræftet optrend over begge SMA, med 5% udbytte og buyback som downside-cushion. Vi rider trenden mod 375 og diversificerer samtidig ind i Financials.",
+          "thesis": "Billig nordisk storbank (PE 10.4x) i bekræftet optrend over begge SMA, med 5.14% udbytte og buyback som downside-cushion. Vi rider trenden mod 375 og diversificerer ind i Financials. Dansk makro (BNP +3.7%) understøtter kreditkvalitet.",
           "price_target": 375,
           "stop_loss": 320,
           "expected_return_pct": 14,
@@ -77,8 +77,8 @@
           "exit_conditions": "Sælg ved brud under stop-loss 320, ved ny compliance-/hvidvasksag direkte mod Danske eller markant negativ rentecyklus der rammer NIM, eller tag profit nær 375 hvis RSI når 75+ med negativ momentum-divergens. Re-vurder ved Q2-rapport 17. juli."
         },
         "last_review": {
-          "date": "2026-06-10",
-          "reasoning": "Tesen fuldt intakt: MACD positiv (+3.05), pris over SMA50 (+3%) og SMA200 (+16%), kun 5.2% fra 52-ugers high. Danmarks BNP-forecast hævet til 3.7% styrker NIM-udsigter. 5.14% udbytte + aktivt buyback + PE 10.4x. Nordea-AML er sektorrisiko men Danske er ikke direkte impliceret. P&L -0.33%, godt over stop-loss 320.",
+          "date": "2026-06-11",
+          "reasoning": "Vores stærkeste case: uptrend strukturelt intakt over begge SMA (+15.8% over SMA200), positiv MACD, 5.14% udbytte og dansk BNP-estimat hævet til 3.7%. Aktivt buyback uge 23. Vi rider mod 375.",
           "confidence": 75
         }
       },
@@ -87,25 +87,25 @@
         "name": "ISS",
         "shares": 33,
         "purchase_price": 264.4,
-        "current_price": 254.0,
+        "current_price": 261.2,
         "purchase_date": "2026-05-29",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical",
-            "fundamental"
+            "fundamental",
+            "technical"
           ],
-          "thesis": "Billig trendleder (PE 11.8x) i stærk optrend over begge SMA. Vi holder igennem teknisk pullback til 250 og rider trenden mod 305. Opjusteret 2026-outlook + Deutsche Telekom 2035-aftale styrker fundamental case.",
+          "thesis": "Billig trendleder (PE 11.8x) i stærk optrend over begge SMA med opjusteret 2026-outlook og Deutsche Telekom-aftale til 2035. Vi holder igennem teknisk pullback til 250 og rider trenden mod 305 (+17%).",
           "price_target": 305,
           "stop_loss": 250,
-          "expected_return_pct": 20,
+          "expected_return_pct": 17,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved brud under stop-loss 250 (trendbrud + SMA50-svigt), ved nedjustering af 2026-outlook eller tab af større kontrakt, eller tag profit nær 305 hvis RSI når 75+ med negativ divergens."
         },
         "last_review": {
-          "date": "2026-06-10",
-          "reasoning": "Tesen styrket: management opgraderede 2026-outlook + udvidede buyback (maj) + Deutsche Telekom-kontrakt forlænget til 2035 — langsigtet revenue-visibilitet markant højere. Stochastic 9.9 (ekstremt oversold) mens MACD stadig positiv = teknisk-fundamental konvergens. P&L -3.93% men kun 1.6% over stop-loss 250 så risk/reward er strammet. Holder med tæt overvågning af 250-niveau.",
-          "confidence": 78
+          "date": "2026-06-11",
+          "reasoning": "Konkrete positiver: guidance-løft 2026, øget buyback, Deutsche Telekom-aftale forlænget til 2035. Strukturel uptrend intakt (+18.4% over SMA200). RSI 35 oversold trods nyhedsstrømmen er gult flag men understøttet af kapitalreturns.",
+          "confidence": 65
         }
       },
       {
@@ -113,7 +113,7 @@
         "name": "Coloplast B",
         "shares": 30,
         "purchase_price": 395.8,
-        "current_price": 386.7,
+        "current_price": 383.1,
         "purchase_date": "2026-06-01",
         "investment_plan": {
           "term": "medium",
@@ -124,14 +124,14 @@
           "thesis": "Kvalitets-MedTech med stærk organisk vækst handlet 35% under 52w-top og estimeret 39% under intrinsic value. FDA-katalysator + triple-oversold-setup giver attraktiv risk/reward. Rider value-recovery mod 480 (+25%) med konservativ stop ved 360.",
           "price_target": 480,
           "stop_loss": 360,
-          "expected_return_pct": 24,
+          "expected_return_pct": 25,
           "timeframe": "6-12 måneder",
           "exit_conditions": "Sælg ved brud under stop-loss 360 (52w-lavpunkt + SMA-brud), ved svigt af FDA-produktlancering eller markant nedjustering af organisk vækst, eller tag profit nær 480 hvis SMA200 nås med RSI 75+."
         },
         "last_review": {
-          "date": "2026-06-10",
-          "reasoning": "Tesen intakt og styrket: FDA godkender ny generations oppustelig penilprotese (juni) — ny produktkategori med millioner potentielle patienter. Triple-oversold setup med positiv 5-dages momentum (+1.23%) viser reversal-start. Fwd PE 14.7x = 41% rabat til sektor. 5.99% udbytte. Stop-loss 360 ligger 6.9% under nuværende pris — god buffer. Holder for FDA-katalysator + value-recovery.",
-          "confidence": 72
+          "date": "2026-06-11",
+          "reasoning": "FDA-godkendelse 3. juni er konkret katalysator. Kun +1.9% over 52w-low med RSI 32, stoch 16.5 — klassisk reversionspot. Stop ved 360 har god margin. Vi holder for FDA-momentum og mean-reversion mod 480.",
+          "confidence": 60
         }
       },
       {
@@ -139,7 +139,7 @@
         "name": "AL Sydbank",
         "shares": 17,
         "purchase_price": 511.0,
-        "current_price": 507.5,
+        "current_price": 512.0,
         "purchase_date": "2026-06-05",
         "investment_plan": {
           "term": "medium",
@@ -147,17 +147,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Sydbank: deep-value regional dansk bank ved kritisk teknisk støtte. Buyback over markedskurs + 4.9% dividende + 8.3x forward PE i en dansk økonomi med +3.7% BNP-vækst giver attraktiv mean-reversion-case. Vi køber teknisk oversold ved nedre Bollinger band og rider mod SMA50/200 zone ved 580.",
+          "thesis": "Deep-value regional dansk bank ved kritisk teknisk støtte. Buyback over markedskurs + 4.93% dividende + 8.3x forward PE i dansk økonomi med +3.7% BNP giver attraktiv mean-reversion-case. Vi rider fra SMA200-zone mod SMA50/200-modstand ved 580.",
           "price_target": 580,
           "stop_loss": 485,
-          "expected_return_pct": 14,
+          "expected_return_pct": 13,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved brud under stop-loss 485 (52w-lavpunkt-brud), ved ny EPS-nedjustering eller compliance-sag, eller tag profit nær 580 hvis RSI når 70+ ved SMA200-modstand."
         },
         "last_review": {
-          "date": "2026-06-10",
-          "reasoning": "Tesen intakt: et af de mest ekstreme oversold-signaler i hele C25 (RSI 29.7, Stoch 5.6), pris ved nedre Bollinger-band. Aktivt buyback + insider-køb fra ledelse (3. juni) signalerer tillid. Fwd PE 8.2x = 31% rabat. P&L -0.68%, stop-loss 485 ligger 4.4% under. Holder for mean-reversion bounce mod SMA50/200-zonen.",
-          "confidence": 68
+          "date": "2026-06-11",
+          "reasoning": "Teknisk oversold (RSI 29.7, stoch 15.6) tæt på SMA200-support (517). Aktivt ugentligt buyback over markedskurs er stærkt signal. PE 8.3x + 4.93% udbytte er deep-value. Stop 485 er konservativ. Vi holder for mean-reversion.",
+          "confidence": 60
         }
       },
       {
@@ -165,29 +165,55 @@
         "name": "Carlsberg B",
         "shares": 13,
         "purchase_price": 817.0,
-        "current_price": 847.8,
+        "current_price": 852.6,
         "purchase_date": "2026-06-08",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "fundamental",
+            "technical"
+          ],
+          "thesis": "Consumer Defensive-diversifikation: Carlsberg ved teknisk oversold gulv med konkret strukturel katalysator i form af PepsiCo-Nordics-distributionsaftale fra 2029. Pris over SMA200 bekræfter langsigtet uptrend intakt. Vi rider mod SMA50 (~836) og videre mod 900 med stop ved 770.",
+          "price_target": 900,
+          "stop_loss": 770,
+          "expected_return_pct": 6,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under stop-loss 770 (SMA200-svigt + trendbrud), ved aflysning eller udskydelse af PepsiCo-aftalen, ved forværret gearings-profil i Q2-rapport, eller tag profit nær 900 hvis RSI når 75+ med negativ divergens."
+        },
+        "last_review": {
+          "date": "2026-06-11",
+          "reasoning": "Position +4.4% i grøn. Trend intakt over begge SMA, PepsiCo-Nordics-aftale (2029) er strategisk katalysator. Hybrid-emission 1.8 mia EUR er gearings-warning men ikke umiddelbar trussel. Vi holder mod 900-mål.",
+          "confidence": 60
+        }
+      },
+      {
+        "symbol": "ORSTED.CO",
+        "name": "Ørsted",
+        "shares": 30,
+        "purchase_price": 156.0,
+        "current_price": 156.0,
+        "purchase_date": "2026-06-11",
         "investment_plan": {
           "term": "medium",
           "basis": [
             "technical",
             "fundamental"
           ],
-          "thesis": "Consumer Defensive-diversifikation: Carlsberg ved teknisk oversold gulv med konkret strukturel katalysator i form af PepsiCo-Nordics-distributionsaftale fra 2029. Pris over SMA200 bekræfter langsigtet uptrend intakt. Vi rider mod SMA50 (~836) og videre mod 900 (+10%) med stop ved 770.",
-          "price_target": 900,
-          "stop_loss": 770,
-          "expected_return_pct": 10,
-          "timeframe": "3-9 måneder",
-          "exit_conditions": "Sælg ved brud under stop-loss 770 (SMA200-svigt + trendbrud), ved aflysning eller udskydelse af PepsiCo-aftalen, ved forværret gearings-profil i Q2-rapport, eller tag profit nær 900 hvis RSI når 75+ med negativ divergens."
+          "thesis": "Sektor-diversifikation til Utilities via kontrarian-køb af globalt vindenergi-førende selskab på ekstreme oversold-niveauer (RSI 34, stoch 13). Solid driftsfremgang (EBITDA +8%, revenue +33%) og Baltica 2/Hornsea 3-pipeline reducerer udviklingsrisiko. Forward PE 16.2x giver 19% sektor-rabat. Mean-reversion mod SMA200 (169) er primært mål, derefter 195 (+25%) hvis sentiment vender.",
+          "price_target": 195,
+          "stop_loss": 145,
+          "expected_return_pct": 25,
+          "timeframe": "6-12 måneder",
+          "exit_conditions": "Sælg ved brud under stop-loss 145 (52w-lav-svigt), ved yderligere markant impairment-nedskrivning i H2 2026, ved aflysning eller forsinkelse af Baltica 2/Hornsea 3, eller tag profit nær 195 hvis SMA200 brydes med RSI 70+ og momentum-divergens."
         },
         "last_review": {
-          "date": "2026-06-10",
-          "reasoning": "Tesen intakt og strukturelt styrket: PepsiCo-Northern Europe-aftale fra 2029 er konkret langsigtet revenue-katalysator. Pris over SMA50 (+1.32%) og SMA200 (+4.8%) — uptrend bekræftet. Fwd PE 12x = 29% rabat til Consumer Defensive-norm. P&L +3.77%, stop-loss 770 ligger 9.2% under. Holder for strukturel re-rating mod 900.",
-          "confidence": 68
+          "date": "2026-06-11",
+          "reasoning": "Sektor-diversifikation til Utilities (0% eksponering i dag). Teknisk ekstremt oversold (RSI 34.7, stoch 13, BB-position -14.7) med solid driftsfremgang (EBITDA +8%, revenue +33%). Baltica 2 (111 monopiles startet) og Hornsea 3 reducerer udviklingsrisiko. Forward PE 16.2x — 19% rabat til Utilities-sektor. Vi tager kontrarian-position med 30 aktier (4.680 DKK = 4.8% af portefølje) — stop tæt under 52w-low.",
+          "confidence": 65
         }
       }
     ],
-    "last_updated": "2026-06-10 18:10 UTC"
+    "last_updated": "2026-06-11 07:50 UTC"
   },
   "history": [
     {
@@ -321,6 +347,10 @@
     {
       "date": "2026-06-10",
       "portfolio_value": 96334.15
+    },
+    {
+      "date": "2026-06-11",
+      "portfolio_value": 97451.85
     }
   ],
   "trades": [
@@ -2549,6 +2579,134 @@
         "summary": "Tesen intakt og strukturelt styrket: PepsiCo-Northern Europe-aftale fra 2029 er konkret langsigtet revenue-katalysator. Pris over SMA50 (+1.32%) og SMA200 (+4.8%) — uptrend bekræftet. Fwd PE 12x = 29% rabat til Consumer Defensive-norm. P&L "
       },
       "id": 138,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-11",
+      "action": "HOLD",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": null,
+      "price": 283.1,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 70,
+        "summary": "Aktien brød over SMA50 (266) med +5% i går — teknisk vendepunkt bekræftet. Fundamental case intakt med +67% EPS-vækst og 5.9% udbytte. Vægt 27.6% er tæt på trim-grænsen 30% men endnu ikke udløst. Vi rider mean-reversion mod SMA200 (305) og "
+      },
+      "id": 139,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-11",
+      "action": "HOLD",
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "shares": null,
+      "price": 484.6,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 55,
+        "summary": "EPS-vækst +195% og marginekspansion intakt trods omsætningsfald — operationel leverage virker. Aktien holder over SMA200 (+1.25%) og stop-loss 440 har god afstand. Stoch 10.7 dybt oversold giver mean-reversion-mulighed; vi venter på omsætni"
+      },
+      "id": 140,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-11",
+      "action": "HOLD",
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "shares": null,
+      "price": 329.0,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 75,
+        "summary": "Vores stærkeste case: uptrend strukturelt intakt over begge SMA (+15.8% over SMA200), positiv MACD, 5.14% udbytte og dansk BNP-estimat hævet til 3.7%. Aktivt buyback uge 23. Vi rider mod 375."
+      },
+      "id": 141,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-11",
+      "action": "HOLD",
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "shares": null,
+      "price": 261.2,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 65,
+        "summary": "Konkrete positiver: guidance-løft 2026, øget buyback, Deutsche Telekom-aftale forlænget til 2035. Strukturel uptrend intakt (+18.4% over SMA200). RSI 35 oversold trods nyhedsstrømmen er gult flag men understøttet af kapitalreturns."
+      },
+      "id": 142,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-11",
+      "action": "HOLD",
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "shares": null,
+      "price": 383.1,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "FDA-godkendelse 3. juni er konkret katalysator. Kun +1.9% over 52w-low med RSI 32, stoch 16.5 — klassisk reversionspot. Stop ved 360 har god margin. Vi holder for FDA-momentum og mean-reversion mod 480."
+      },
+      "id": 143,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-11",
+      "action": "HOLD",
+      "symbol": "ALSYDB.CO",
+      "name": "AL Sydbank",
+      "shares": null,
+      "price": 512.0,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Teknisk oversold (RSI 29.7, stoch 15.6) tæt på SMA200-support (517). Aktivt ugentligt buyback over markedskurs er stærkt signal. PE 8.3x + 4.93% udbytte er deep-value. Stop 485 er konservativ. Vi holder for mean-reversion."
+      },
+      "id": 144,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-11",
+      "action": "HOLD",
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "shares": null,
+      "price": 852.6,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Position +4.4% i grøn. Trend intakt over begge SMA, PepsiCo-Nordics-aftale (2029) er strategisk katalysator. Hybrid-emission 1.8 mia EUR er gearings-warning men ikke umiddelbar trussel. Vi holder mod 900-mål."
+      },
+      "id": 145,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-11",
+      "action": "BUY",
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "shares": 30,
+      "price": 156.0,
+      "value": 4680.0,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 65,
+        "summary": "Sektor-diversifikation til Utilities (0% eksponering i dag). Teknisk ekstremt oversold (RSI 34.7, stoch 13, BB-position -14.7) med solid driftsfremgang (EBITDA +8%, revenue +33%). Baltica 2 (111 monopiles startet) og Hornsea 3 reducerer udv"
+      },
+      "id": 146,
       "is_new": true
     }
   ],
