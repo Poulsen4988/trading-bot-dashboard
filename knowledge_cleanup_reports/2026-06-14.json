@@ -1,0 +1,67 @@
+{
+  "date": "2026-06-14",
+  "files_reviewed": 25,
+  "files_cleaned": 4,
+  "total_items_removed": 6,
+  "per_file": [
+    {
+      "path": "knowledge/DANSKE_xcse.json",
+      "removed_count": 1,
+      "kept_count": 20,
+      "removed_items": [
+        {
+          "title": "Governments Sell Bonds at Record Pace as Spending Soars",
+          "date": "2026-06-10",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/ISS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 9,
+      "removed_items": [
+        {
+          "title": "Major Shareholder Announcement",
+          "date": "2026-05-27",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 2,
+      "kept_count": 25,
+      "removed_items": [
+        {
+          "title": "Beholdning af egne aktier",
+          "date": "2026-06-04",
+          "reason": "low_value"
+        },
+        {
+          "title": "Vedtægter for A.P. Møller - Mærsk A/S",
+          "date": "2026-06-04",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 2,
+      "kept_count": 25,
+      "removed_items": [
+        {
+          "title": "Beholdning af egne aktier",
+          "date": "2026-06-04",
+          "reason": "low_value"
+        },
+        {
+          "title": "Vedtægter for A.P. Møller - Mærsk A/S",
+          "date": "2026-06-04",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "summary": "25 filer gennemgået, 428 items i alt, 27 kandidater identificeret. 6 items fjernet på tværs af 4 filer: 1 duplikat-URL (DANSKE: Yahoo Finance artikel om statsobligationer), 1 generisk low-value item (ISS: 'Major Shareholder Announcement' uden specifik info), 4 rutine-arkiverings-items (MAERSKa+b: 'Beholdning af egne aktier' og 'Vedtægter' — begge rutineoplysninger uden langsigtet analyseverdi). 21 øvrige kandidater bevaret: FDA-godkendelser (Coloplast, Bavarian Nordic), CHMP-anbefalinger (Novo Nordisk Wegovy), earnings-rapporter, outlook-opjusteringer (ISS, NNIT, Rockwool), ledelsesskift (Demant, Danske Bank), strategiske udmeldinger (DSV Capital Markets Day, ISS/Deutsche Telekom 2035-aftale), kapitalstrukturændringer (Carlsberg hybrid notes) og kliniske data (Genmab ASCO/EHA)."
+}
