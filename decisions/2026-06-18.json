@@ -1,0 +1,276 @@
+{
+  "date": "2026-06-18",
+  "market_summary": "C25 viser blandet billede: Healthcare sektoren leder (NOVO BULL conf=7, ALSYDB BULL conf=7), mens Industrials/Defensives (FLS, CARL) er i konsoliderings-/svaghedszone. Buy-budget er kun 56 DKK efter min. 2.500 kr cash-reserve — ingen nye køb i dag. Fokus er disciplineret HOLD af alle positioner med intakte teser, hvor Ørsted (RSI=22, 2.8% buffer til SL) og Coloplast (RSI=25, 3.7% buffer) overvåges tæt.",
+  "decisions": [
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 285.55,
+      "confidence": 72,
+      "reasoning": "BULL verdict conf=7. Thesis intakt: J&J trækker sig fra obesity (Novo bevarer dominans), oral Wegovy søger Kina-godkendelse (1.4 mia. potentielle brugere), +67% earnings og +24% revenue YoY. Tekniske: RSI=47.3 neutralt, MACD=+1.84 positivt, SMA50 +5.16% under kurs (uptrend bekræftet). Vægt 27.3% er højt men under 30%-trim-tærsklen. Databrud er omdømmesrisiko uden påvirkning af GLP-1-pipeline. Status quo opretholdes — sælg først ved brud under 248 eller alvorlig Lilly-katalysator.",
+      "bull": [
+        "J&J trækker sig fra obesity-marked — Novo bevarer GLP-1-dominans",
+        "Oral Wegovy søger Kina-godkendelse (1.4 mia. potentielle brugere)",
+        "Earnings +67% YoY, revenue +24% YoY, Fwd PE 13.3x + 5.67% udbytte",
+        "RSI=47.3 neutral, MACD=+1.84 positivt, SMA50 under kurs"
+      ],
+      "bear": [
+        "Databrud (FulcrumSec $25M ransom) skaber kortsigtede compliance-risici",
+        "Stadig -42% fra 52W high og SMA200 over kurs — fuld trendvending ikke bekræftet",
+        "Vægt 27.3% giver høj koncentrationsrisiko (over 30% trigger trim)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental",
+          "catalyst"
+        ],
+        "thesis": "GLP-1-leder med bekræftet teknisk recovery efter SMA50-break. Oral Wegovy-godkendelse (US+UK+nu Kina) er milepælskatalysator der genantænder væksten på deep-value-niveau (Fwd PE 13.3x). Mean-reversion mod SMA200 (~305) som primært mål, derefter 350 hvis trendvending holder. J&J's exit fra obesity-pipeline cementerer monopol-positionen.",
+        "price_target": 350,
+        "stop_loss": 248,
+        "expected_return_pct": 23,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 248 (trendbrud), ved alvorlig Lilly-katalysator (retatrutide-godkendelse + Novo guidance-cut), eller tag profit nær 350 hvis SMA200 afvises med momentumtab. Trim hvis vægt overstiger 30%."
+      }
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 510.0,
+      "confidence": 58,
+      "reasoning": "NEUTRAL verdict conf=5, men uptrend intakt: pris er over både SMA50 (+2.27%) og SMA200 (+6.03%). Nyt mining-ordreindtag (Vizsla Silver Panuco Mexico), aktivt buyback. MACD=+2.67 positivt. Konflikt mellem positiv ordrebog og revenue-nedgang (-11.6% YoY) gør den til en 'hold trenden' snarere end add. Pris 510 vs SL 440 giver 13.7% buffer. Følg Q2-rapport for organisk revenue-vending.",
+      "bull": [
+        "Vizsla Silver Panuco-ordre viser fortsat mining-momentum",
+        "Aktivt buyback-program signalerer kapitaldisciplin",
+        "MACD=+2.67 positivt, RSI=48.5 neutral, momentum +5.24% (5d), +5.68% (20d)",
+        "Simply Wall St fair value DKK 566-583 = 11-14% opside fra nuværende"
+      ],
+      "bear": [
+        "Revenue -11.6% YoY signalerer forretningsmodel-transition",
+        "JPMorgan reducerede price target -40 DKK",
+        "Momentum-divergens -0.44 antyder svaghedstegn",
+        "-17.68% fra 52W high"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Margin-recovery i Industrials med +195% EPS-vækst og aktivt buyback. Pris er over begge SMAer og MACD positivt. Holder mod SimplyWallSt fair value 580 (+13.7% fra nuværende). Q2 organisk revenue-vending kritisk for thesis-validering — næste rapport er afgørende.",
+        "price_target": 580,
+        "stop_loss": 440,
+        "expected_return_pct": 14,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 440 (trendbrud + SMA50-support), ved forværring i Service/PC&V-ordreindgang, eller tag profit nær 580 hvis momentum aftager (RSI 75+ med negativ divergens). Re-vurder hvis momentum-divergens forværres yderligere."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 348.0,
+      "confidence": 68,
+      "reasoning": "BULL verdict conf=6. Stærk uptrend: pris er +6.9% over SMA50 og +21.5% over SMA200, RSI=65.4, MACD=+5.07. Momentum +7.54% over 20d. Stoch=97.6 og BB position 115% er ekstremt overbought på kort sigt — pullback til 330-335 sandsynlig. Aktien er nær 52W high (-0.17%); +5.30% siden køb. Fwd PE 10.9x med 4.92% udbytte + buyback = stærk kapital-disciplin. HOLD; trim ved RSI 75+ med negativ divergens. SL 320 giver 8.0% buffer.",
+      "bull": [
+        "Nær 52W high (-0.17%), stærkt momentum (+7.54% 20d)",
+        "Fwd PE 10.9x + 4.92% udbytte + aktivt buyback",
+        "Rekord global obligationsudstedelse + potentiel nordisk rentestigning støtter NIM",
+        "MACD=+5.07 stærkt positivt"
+      ],
+      "bear": [
+        "Stoch=97.6 og BB position 115% er ekstremt overbought — pullback sandsynlig",
+        "Earnings-vækst kun +1.4% og revenue +0.9% — fundamentals understøtter ikke yderligere re-rating på kort sigt",
+        "Risiko for kortsigtede vinding-take efter +21% over SMA200"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Billig nordisk storbank (PE 10,9x) i bekræftet optrend over begge SMA, med 4,92% udbytte og buyback som downside-cushion. Vi rider trenden mod 375 og diversificerer ind i Financials. Stærk teknisk momentum, men kortsigtet konsolidering forventes pga. overbought signaler.",
+        "price_target": 375,
+        "stop_loss": 320,
+        "expected_return_pct": 7,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 320, ved ny compliance-/hvidvasksag eller markant negativ rentecyklus der rammer NIM, eller tag profit nær 375 hvis RSI når 75+ med negativ momentum-divergens. Re-vurder ved Q2-rapport."
+      }
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 262.6,
+      "confidence": 55,
+      "reasoning": "NEUTRAL verdict conf=5. Uptrend intakt: SMA50 +4.8% under kurs, SMA200 +18.0% under kurs, MACD=+2.84. Pris -0.68% siden køb. Opgraderet 2026-outlook, 10-årig Deutsche Telekom-aftale, øget buyback — ledelses-konfidensindikator. Boardmember-salg og lav screener-score er svaghedstegn der gør den til en 'hold trenden' snarere end add. SL 250 giver 4.8% buffer.",
+      "bull": [
+        "Opgraderet 2026-outlook + øget buyback signalerer management-konfidens",
+        "Deutsche Telekom-aftale forlænget til 2035 — sikker recurring revenue",
+        "MACD=+2.84 positivt; SMA50 og SMA200 begge under kurs",
+        "Fwd PE 11.8x — billig trendleder"
+      ],
+      "bear": [
+        "Boardmember-salg (maj 2026) og 'split valuation opinions'",
+        "Lav screener-score 15.1 (lavest i deep-tier)",
+        "Lav volumen (0.63x avg) og minimal revenue-vækst (0%)",
+        "RSI=46.6 neutral, momentum aftager (-1.06% over 20d)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Billig trendleder (PE 11,8x) i stærk optrend over begge SMA med opjusteret 2026-outlook og Deutsche Telekom-aftale til 2035. Vi holder igennem teknisk pullback og rider trenden mod 305 (+16%).",
+        "price_target": 305,
+        "stop_loss": 250,
+        "expected_return_pct": 16,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 250 (trendbrud + SMA50-svigt), ved nedjustering af 2026-outlook eller tab af større kontrakt, eller tag profit nær 305 hvis RSI når 75+ med negativ divergens."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 373.8,
+      "confidence": 60,
+      "reasoning": "BULL verdict conf=6, men forsigtig HOLD pga. teknisk svaghed. Ekstrem oversold: RSI=25, Stoch=5. FDA-godkendt næste-generation inflatable penisprotese (juni 2026) er konkret katalysator. Fwd PE 14.2x = 43% discount til sektor. Men MACD=-8.12 negativt, -25.5% under SMA200, ingen teknisk bundformation. Tæt på SL 360 (kun 3.7% buffer, og under 52W low 372.4 nyligt). Holder pga. fundamental case + FDA-katalysator, men kritisk overvågning af 360-niveauet.",
+      "bull": [
+        "FDA-godkendt næste generation inflatable penisprotese åbner nyt segment",
+        "Fwd PE 14.2x = 43% discount til sektornorm",
+        "RSI=25 + Stoch=5 = klassisk ekstreme oversold mean-reversion setup",
+        "Q2 viste solid organisk vækst, guidning intakt"
+      ],
+      "bear": [
+        "Kurs -42% fra 52W high, -25.5% under SMA200 — dyb nedtrend",
+        "MACD=-8.12 negativt, ingen teknisk bundformation etableret",
+        "Risiko for breakdown under 52W low (372.4) — invalidering af bounce-tesen",
+        "Kun 3.7% buffer til stop-loss 360"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "fundamental",
+          "catalyst"
+        ],
+        "thesis": "Kvalitets-MedTech med stærk organisk vækst handlet 35% under 52w-top og estimeret 39% under intrinsic value. FDA IPP-katalysator + triple-oversold-setup giver attraktiv risk/reward. Rider value-recovery mod 480.",
+        "price_target": 480,
+        "stop_loss": 360,
+        "expected_return_pct": 28,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 360 (downside-acceleration), ved nedjustering af guidance eller tab af FDA-pipeline-momentum, eller tag profit nær 480. Re-vurder hvis MACD ikke begynder at vende inden for 4-6 uger."
+      }
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "AL Sydbank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 562.0,
+      "confidence": 75,
+      "reasoning": "BULL verdict conf=7, +9.98% siden køb — stærkeste performer. Momentum +9.77% (5d), +5.34% (20d), MACD=+3.66 positivt. Stoch=96.6 overbought på kort sigt (pullback til 530-540 sandsynlig). Revenue-vækst +65% YoY, Fwd PE 9.1x + 4.48% udbytte + buyback = stærk kapitalafkast. Kurs kun -4.75% fra 52W high — breakout-kandidat. Hold mod 580 PT. SL 485 giver 13.7% buffer.",
+      "bull": [
+        "+9.8% på 5 dage; momentum intakt, RSI=58.6",
+        "Fwd PE 9.1x (24% discount) + 4.48% udbytte + buyback",
+        "Revenue-vækst +65% YoY i rentegunstig periode",
+        "MACD=+3.66, kun -4.75% fra 52W high — breakout-setup"
+      ],
+      "bear": [
+        "Stoch=96.6 ekstremt overbought — kortsigtet pullback sandsynlig",
+        "Earnings-vækst -26.8% YoY (topline går ikke fuldt igennem)",
+        "Lav float regional bank gør den volatil ved sektor-rotation"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Deep-value regional dansk bank med buyback over markedskurs + 4,48% dividende + 9,1x forward PE i dansk økonomi med +3,7% BNP giver attraktiv mean-reversion-case. Rider trenden mod 580.",
+        "price_target": 580,
+        "stop_loss": 485,
+        "expected_return_pct": 3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 485 (trendbrud), ved profit-warning eller markant negativ EPS-divergens, eller tag profit nær 580 hvis Stoch >95 med negativ momentum-divergens. Overvej trim hvis vægt overstiger 12%."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 840.0,
+      "confidence": 50,
+      "reasoning": "NEUTRAL verdict conf=5. Svag teknisk fase: RSI=31, MACD=-1.84 negativt, SMA50 -0.34% over kurs. Men pris stadig +3.44% over SMA200 og +2.82% i profit siden køb. Indien-statskonflikt om ~$400M skyldner er konkret risiko. Tilray-cannabis-partnership + EUR 1.8 mia. hybrid notes giver bull-case. SL 770 giver 8.3% buffer. Holder Consumer Defensive-diversifikation, men ingen klar opside-katalysator.",
+      "bull": [
+        "EUR 1.8 mia. hybrid notes-emission kan finansiere M&A/kapitalrestrukturering",
+        "Multi-årig Tilray-partnerskab åbner cannabis-beverages-segment",
+        "PepsiCo-Nordics-distributionsaftale fra 2029 (strukturel katalysator)",
+        "Fwd PE 11.9x + 3.46% udbytte — fair value vs sektornorm"
+      ],
+      "bear": [
+        "Indien-statskonflikt: liquor-selskaber konfronterer Telangana om ~$400M",
+        "RSI=31 i downward channel, MACD=-1.84 negativt",
+        "Hybrid notes-emission indikerer balancesheet-pres",
+        "Ingen klar kortsigtet katalysator for momentum-vending"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "fundamental",
+          "diversification"
+        ],
+        "thesis": "Consumer Defensive-diversifikation med konkret strukturel katalysator i form af PepsiCo-Nordics-distributionsaftale fra 2029 og Tilray-cannabis-partnerskab. Pris over SMA200 viser langsigtet trend intakt. Holder igennem teknisk svaghed mod 900.",
+        "price_target": 900,
+        "stop_loss": 770,
+        "expected_return_pct": 7,
+        "timeframe": "6-12 måneder",
+        "exit_conditions": "Sælg ved brud under 770, ved profit-warning eller markant negativ Indien-eksekvering, eller tag profit nær 900 hvis momentum aftager. Re-vurder hvis MACD ikke vender positiv inden for 4 uger."
+      }
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 149.25,
+      "confidence": 45,
+      "reasoning": "NEUTRAL verdict conf=5. Ekstrem oversold: RSI=21.9, BB position -3% (under lower band), MACD=-2.95. Pris 149.25 vs SL 145 = KUN 2.8% buffer — kritisk position! Men EBITDA +8% og revenue +33% YoY viser operationel fremgang under engangsposter. Baltica 2 + Hornsea 3 er konkrete milepæle. Holder kontrarian-position, men dybt under pres. Sælger hvis 145 brydes.",
+      "bull": [
+        "RSI=21.9 + BB under lower band = ekstreme oversold (mean-reversion setup)",
+        "Baltica 2 + Hornsea 3 installations-start = konkrete milepæle",
+        "Revenue +33% YoY, EBITDA +8% viser underliggende operationel forbedring",
+        "Sektor-diversifikation til Utilities (kun 4.5% af portefølje)"
+      ],
+      "bear": [
+        "Q1 nettoprofit -46%, earnings -85% YoY med løbende impairments",
+        "Kun 2.8% buffer til stop-loss 145 — meget tæt på trigger",
+        "-54.4% fra 52W high, pris under BB lower band signalerer sell-panic",
+        "US langrente-renter fortsætter med at presse værdiansættelser"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Sektor-diversifikation til Utilities via kontrarian-køb af globalt vindenergi-førende selskab på ekstreme oversold-niveauer. Solid driftsfremgang (EBITDA +8%, revenue +33%) og Baltic-projekter underbygger mean-reversion-tesen mod 195.",
+        "price_target": 195,
+        "stop_loss": 145,
+        "expected_return_pct": 31,
+        "timeframe": "6-12 måneder",
+        "exit_conditions": "Sælg ved brud under 145 (trendbrud + ny low), ved ny milliard-impairment eller forsinkelse i Baltica 2/Hornsea 3-eksekvering, eller tag profit nær 195. Re-vurder hvis RSI ikke vender opad inden for 6 uger."
+      }
+    }
+  ]
+}
