@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-21",
+  "files_reviewed": 25,
+  "files_cleaned": 6,
+  "total_items_removed": 7,
+  "per_file": [
+    {
+      "path": "knowledge/DANSKE_xcse.json",
+      "removed_count": 1,
+      "kept_count": 22,
+      "removed_items": [
+        {
+          "title": "Governments Sell Bonds at Record Pace as Spending Soars",
+          "date": "2026-06-10",
+          "reason": "duplicate_url",
+          "note": "Identisk URL som index 3 i samme fil"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/NOVOb_xcse.json",
+      "removed_count": 2,
+      "kept_count": 249,
+      "removed_items": [
+        {
+          "title": "Stocks dip after US-Iran peace talks delay; yen hovers near 40-year lows",
+          "date": "2026-06-19",
+          "reason": "duplicate_url",
+          "note": "Identisk URL som index 0 i samme fil"
+        },
+        {
+          "title": "Novo Nordisk (NYSE:NVO) Discloses Clinical Trial Data Breach",
+          "date": "2026-06-17",
+          "reason": "duplicate_url",
+          "note": "Identisk URL som index 10 i samme fil"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 1,
+      "kept_count": 25,
+      "removed_items": [
+        {
+          "title": "Beholdning af egne aktier",
+          "date": "2026-06-04",
+          "reason": "low_value",
+          "note": "Rutine-ugentlig tilbagekøbs-disclosure. Triviel, ingen langsigtet informationsværdi."
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 25,
+      "removed_items": [
+        {
+          "title": "Beholdning af egne aktier",
+          "date": "2026-06-04",
+          "reason": "low_value",
+          "note": "Rutine-ugentlig tilbagekøbs-disclosure. Triviel, ingen langsigtet informationsværdi. Samme URL som MAERSKa."
+        }
+      ]
+    },
+    {
+      "path": "knowledge/ISS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 9,
+      "removed_items": [
+        {
+          "title": "Invitation to ISS Capital Markets Day 2026",
+          "date": "2026-06-19",
+          "reason": "low_value",
+          "note": "Event-invitation uden substantielt indhold. Summery er blot kategori-label. Selve CMD-indholdet ville ligge i separate items."
+        }
+      ]
+    },
+    {
+      "path": "knowledge/TRYG_xcse.json",
+      "removed_count": 1,
+      "kept_count": 3,
+      "removed_items": [
+        {
+          "title": "Tryg Analyst Day 2026",
+          "date": "2026-05-29",
+          "reason": "low_value",
+          "note": "Event-invitation/announcement uden substantielt indhold. Summery er blot kategori-label."
+        }
+      ]
+    }
+  ],
+  "kept_all_others": [
+    "BAVA: 2 government vaccine contract items — kept (government contracts)",
+    "CARLb: EUR 1.8bn hybrid notes — kept (capital structure)",
+    "COLOb: FDA approval + halvårsregnskab — kept (FDA result + earnings)",
+    "DANSKE: Management change item — kept (ledelsesskift)",
+    "DEMANT: Executive Leadership Team expansion — kept (ledelsesskift)",
+    "DSV: Updated strategic priorities + 2030 targets — kept (strategic announcement + guidance)",
+    "FLS: SBTi validation — kept (regulatory/sustainability milestone)",
+    "GMAB: 5 items (shareholder, vedtægter, 3x clinical data) — kept (corporate governance + pharma results)",
+    "GN: Discontinued operations guidance update — kept (strategic/guidance change)",
+    "ISS: Guidance upgrade + Deutsche Telekom partnership extension — kept (guidance + major contract)",
+    "JYSK: Storaktionærmeddelelse — kept (potential ownership change)",
+    "NNIT: 2026 outlook update + Q1 prelim — kept (guidance + earnings)",
+    "NOVOb: CHMP recommendations for Wegovy — kept (regulatory approvals)",
+    "ROCKb: Guidance upgrade — kept (guidance revision)",
+    "VWS: Capital Group major shareholder announcement — kept (potential ownership change)"
+  ],
+  "summary": "Fjernede 7 items fra 6 filer: 3 duplikate URL-items (DANSKE, NOVOb x2), 2 rutine egne-aktier-disclosures (MAERSKa, MAERSKb), og 2 event-invitationer uden substantielt indhold (ISS CMD, TRYG Analyst Day). Alle strukturelt vigtige items er bevaret: FDA-godkendelser, earnings-rapporter, guidance-revisioner, ledelsesskift, regeringskontrakter, CHMP-anbefalinger, strategiske udmeldinger og major partnership-forlængelser."
+}
