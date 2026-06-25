@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 2670.65,
+    "cash": 11415.65,
     "currency": "DKK",
     "positions": [
       {
@@ -12,8 +12,8 @@
         "current_price": 299.95,
         "value": 25189.25,
         "last_review": {
-          "date": "2026-06-23",
-          "reasoning": "BULL conf 7 fra dagens analyse. Thesis intakt: Berenberg hævede kursmål 17. juni, GLP-1 makro-rygvind accelererer (UPS investerer $48M i cold-chain, PwC viser 70% af brugere ændrer forbrug), 5d/+5.02% momentum-rally tester SMA200-modstand ved 302. P&L +13.12%, vægt 28.2% — under 30%-trim-tærsklen. Stochastic 100 og BB 100.5 antyder kortsigtet udmattelse, så vi tilføjer ikke; holder fuld position igennem SMA200-test.",
+          "date": "2026-06-25",
+          "reasoning": "Thesis er intakt og styrket: BULL conf 7 fra dagens analyse. Pris er over SMA200 (302) for første gang i måneder — potentielt strukturelt trendbrud. Fundamental deep-value ved PE fwd 14.6x med 67% EPS-vækst og 5.1% udbytte. Kortsigtet RSI 72.2, stoch 98.0 og BB 107.5% signalerer at en konsolidering mod SMA50 (~278) er sandsynlig — vi tilføjer ikke nu, men holder fuld position. Lav volumen (0.32x) er det eneste bekymringstegn.",
           "confidence": 78
         },
         "investment_plan": {
@@ -22,12 +22,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "GLP-1-leder med teknisk recovery der nu tester SMA200-modstand ved 302. Oral Wegovy-adoption (1/3 af recepter) er primær vækstmotor på deep-value (Fwd PE 13.9x). Berenberg-opjustering + UPS cold-chain investering bekræfter accelererende sektor. Mean-reversion mod SMA200 primært, derefter 350 hvis trendvending holder.",
+          "thesis": "GLP-1-leder med teknisk gennembrud over SMA200. Oral Wegovy-adoption (1/3 af recepter) som primær vækstmotor på deep-value PE 14.6x. Mean-reversion mod 350 som primært mål. Overvej tilføjelse ved SMA50-retest (~278 DKK) som konsolideringspunkt.",
           "price_target": 350,
           "stop_loss": 248,
           "expected_return_pct": 16.7,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 248 (trendbrud), ved ZEUS-miss + Lilly retatrutide-godkendelse + Novo guidance-cut samtidigt, eller tag profit nær 350 hvis SMA200 afvises med momentumtab. TRIM hvis vægt overstiger 30%."
+          "exit_conditions": "Sælg ved brud under 248 (trendbrud), ved ZEUS-miss + Lilly retatrutide-godkendelse + Novo guidance-cut simultant, eller tag profit nær 350. TRIM hvis vægt overstiger 30%."
         }
       },
       {
@@ -43,17 +43,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Margin-recovery i Industrials med +195% EPS-vækst og aktivt buyback. Pris over begge SMAer og MACD positivt. Holder mod SimplyWallSt FV 583 (+14%). Q2 organisk revenue-vending kritisk for thesis-validering.",
-          "price_target": 580,
+          "thesis": "Margin-recovery case er svækket af revenue-tilbagegang. Afventer Q2-rapport for at bekræfte om EPS-vækst er strukturel. Teknisk oversold og over begge SMAer — holder. Sælger ved brud under SMA200 (482).",
+          "price_target": 560,
           "stop_loss": 440,
-          "expected_return_pct": 13.6,
+          "expected_return_pct": 9.7,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 440 (trendbrud + SMA50-support), ved forværring i Service/PC&V-ordreindgang, eller tag profit nær 580 hvis momentum aftager (RSI 75+ med negativ divergens)."
+          "exit_conditions": "Sælg ved brud under SMA200 (482 DKK) eller ved bekræftelse af at EPS-vækst er engangseffekter i Q2-rapport. Opjustering af target afhænger af revenue-reversal."
         },
         "last_review": {
-          "date": "2026-06-23",
-          "reasoning": "BULL conf 6. Thesis intakt: +195% EPS-vækst, Vizsla Silver-kontrakt vundet (17. jun), Simply Wall St FV på 583. Pris over SMA50 (+2.18%) og SMA200 (+5.83%) med positiv MACD +3.41. P&L +3.26%. Aktivt buyback understøtter. JPMorgan's -DKK 40 cut er allerede prisreflekteret. Holder mod 580 PT.",
-          "confidence": 68
+          "date": "2026-06-25",
+          "reasoning": "NEUTRAL conf 5. Positionens thesis svækkes af revenue -11.6% YoY — earnings-recovery (+195% EPS) sandsynligvis drevet af engangseffekter snarere end organisk fremgang. Ekstremt oversold: stoch 9.8 og BB 9.7% antyder teknisk bounce potentiale. Pris 510.5 er over SMA50 (497) og SMA200 (482.78) — begge fungerer som støtte. HOLD men med sænket conviction. Stop-loss 440 er 13.8% under nuværende kurs. Sælger ikke i bund ved oversold-niveauer.",
+          "confidence": 52
         }
       },
       {
@@ -69,43 +69,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Billig nordisk storbank (Fwd PE 11x) i bekræftet optrend over begge SMA, med 4,81% udbytte og aktivt buyback som downside-cushion. Rider trenden mod 375. Kortsigtet konsolidering forventes pga. ekstrem overbought (RSI 84, Stoch 100).",
+          "thesis": "Billig nordisk storbank (Fwd PE ~11x) nær 52-ugers højeste med 4.89% udbytte. Tag profit ved 375 DKK eller hold til potentiel 400-niveau test. Makro-risikoer ved rentenormalisering.",
           "price_target": 375,
           "stop_loss": 320,
           "expected_return_pct": 5.4,
           "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg ved brud under 320, ved ny compliance-/hvidvasksag eller markant negativ rentecyklus der rammer NIM, eller tag profit nær 375 hvis RSI når 75+ med negativ momentum-divergens. SKÆRPET: hvis RSI forbliver 80+ i 5+ dage uden ny pris-high, overvej proaktiv trim. Re-vurder ved Q2-rapport 2026-07-17."
+          "exit_conditions": "Tag profit ved 375 DKK (target). Sælg ved brud under 320 (trendbrud under SMA50-støtte). Revurder ved materiel ændring i dansk rente-outlook."
         },
         "last_review": {
-          "date": "2026-06-23",
-          "reasoning": "NEUTRAL conf 5 — RSI 83.9, Stochastic 100, BB 106.9 = historisk ekstreme overbought-niveauer. Men trenden er bekræftet og PT 375 ikke nået endnu (current 355.7). Ugentligt buyback + 4.81% udbytte + ECB/Riksbank-rentemiljø understøtter strukturelt. P&L +7.62%. Holder mod 375 PT, men forventer konsolidering på kort sigt. Monitorerer Q2-rapport 17. juli som key katalysator.",
-          "confidence": 60
-        }
-      },
-      {
-        "symbol": "ISS.CO",
-        "name": "ISS",
-        "shares": 33,
-        "purchase_price": 264.4,
-        "current_price": 265.0,
-        "purchase_date": "2026-05-29",
-        "investment_plan": {
-          "term": "medium",
-          "basis": [
-            "fundamental",
-            "technical"
-          ],
-          "thesis": "Billig trendleder (Fwd PE 11,8x) i optrend over begge SMA med opjusteret 2026-outlook og Deutsche Telekom-aftale til 2035. Holder igennem teknisk pullback og rider trenden mod 305 (+15%).",
-          "price_target": 305,
-          "stop_loss": 250,
-          "expected_return_pct": 15.1,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 250 (trendbrud + SMA50-svigt), ved nedjustering af 2026-outlook eller tab af større kontrakt, eller tag profit nær 305 hvis RSI når 75+ med negativ divergens."
-        },
-        "last_review": {
-          "date": "2026-06-23",
-          "reasoning": "BULL conf 6. Thesis stærkt anker: opgraderet 2026-outlook + udvidet buyback + Deutsche Telekom-partnerskab til 2035 (alle 19. maj) — multiyear cashflow-visibilitet. Capital Markets Day 19. juni passerede uden negative overraskelser. Pris over SMA50 (+4.99%) og SMA200 (+18.48%) med positiv MACD +2.78. P&L +0.23%. Holder mod 305 PT (+15%).",
-          "confidence": 67
+          "date": "2026-06-25",
+          "reasoning": "NEUTRAL conf 5 fra analyse. P&L +7.6%, tæt på kursmål 375. RSI 74.1 og stoch 71.3 er overbought med begyndende negativ kortsigtet momentum (-0.86%). Earnings-vækst kun 1.4% og revenue +0.9% — PE-ekspansion driver hele kursstigningen. 4.89% dividende er en solid indkomstkilde. Vi er 3% fra 52-ugers højeste. HOLD til vi enten rammer target eller ser stop-loss truet.",
+          "confidence": 62
         }
       },
       {
@@ -121,17 +95,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Stærk regional dansk bank i optrend med fwd PE 9,15x, 65% revenue-vækst og aktive buybacks. Rider momentum mod 52w-breakout og 580 PT.",
+          "thesis": "Stærk regional dansk bank der profiterer af højrentemiljøet. Revenue-momentum er ekstraordinært (+65%), men earnings-kompression er en alvorlig advarsel. Tesen valideres af Q2-rapporten. Stop ved 485.",
           "price_target": 580,
           "stop_loss": 485,
           "expected_return_pct": 2.9,
           "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg ved brud under 485, ved kreditcykel-forværring eller compliance-event, eller tag profit nær 580 hvis RSI når 75+ med negativ divergens. Trail stop op til 520 hvis 580 bekræftes som modstand."
+          "exit_conditions": "Sælg ved brud under 485 (SMA200-support). Tag profit nær 580. Sælg øjeblikkeligt ved Q2-rapport der viser yderligere margin-kompression kombineret med ECB-rentekutsignal."
         },
         "last_review": {
-          "date": "2026-06-23",
-          "reasoning": "BULL conf 6. P&L +10.27%, pris kun -4.49% fra 52w-højpunkt. Ugentligt buyback + 4.41% udbytte + insider-køb (3. jun) + ECB/Riksbank rentestramning = stærke understøttelser. Pris over SMA50 (+3.91%) og SMA200 (+8.60%) med MACD +7.42. Stoch 92.1 + RSI 68.6 nærmer sig overbought men ikke ekstremt. Holder mod 580 PT. Trail stop op til 520 hvis 580 bekræftes som modstand.",
-          "confidence": 68
+          "date": "2026-06-25",
+          "reasoning": "BULL conf 6. Ekstraordinær revenue-vækst +65.3% YoY drevet af rentemiljøet. PE fwd 8.98x = 25% rabat til sektor. Stærk strukturel optrend over SMA50 (542.69) og SMA200 (519.75). Bekymring: earnings -26.8% trods massiv topline-vækst — cost-pressurer udhuler marginer alarmerende. RSI 75.6 nærmer sig overbought. 5d momentum -1.6% = konsolidering. HOLD — thesis delvist intakt men margin-kompression kræver Q2-observering.",
+          "confidence": 65
         }
       },
       {
@@ -147,17 +121,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Consumer Defensive-diversifikation med strukturelle katalysatorer (PepsiCo-Nordics 2029, Tilray-cannabis, VM 2026). Pris over SMA200 = langsigtet trend intakt. Holder igennem teknisk svaghed mod 900.",
+          "thesis": "Consumer Defensive-diversifikation med strukturelle katalysatorer. Stærk teknisk optrend. SMA50 (845) er nu kritisk støtteniveau. Stop ved 770.",
           "price_target": 900,
           "stop_loss": 770,
           "expected_return_pct": 6.1,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 770, ved profit-warning eller markant negativ Indien-eksekvering, eller tag profit nær 900 hvis momentum aftager. Re-vurder hvis MACD ikke vender positiv inden 4 uger fra original entry (2026-07-06)."
+          "timeframe": "2-4 måneder",
+          "exit_conditions": "Sælg ved brud under 770 (SMA200-støtte). Tag profit ved 900. Revurder ved kvartalsrapport der skuffer på fundamental vækst."
         },
         "last_review": {
-          "date": "2026-06-23",
-          "reasoning": "NEUTRAL conf 5. P&L +3.84%. Position købt 2026-06-08 (15 dage). MACD stadig -2.17 negativ, men 5d momentum vendt positivt (+0.24%) og momentum-divergens +2.79 = gryende tegn på basebygning. Plan tilllod 4 uger til MACD-vending — vi er på dag 15. VM 2026-rygvind + Panmure Liberum-anbefaling 17. juni + Tilray-partnerskab. Indisk afgiftstvist er materiel risiko men begrænset eksponering. Holder mod 900 PT.",
-          "confidence": 58
+          "date": "2026-06-25",
+          "reasoning": "BULL conf 6. Stærk strukturel optrend bekræftet over begge MA-niveauer med MACD +4.37. Momentum +5.33% på 5 dage. Men: RSI 71.3, stoch 95.8 og BB 94.3% indikerer ekstremt overbought kortsigtet. Korrektion til SMA50 (845 DKK) er sandsynlig og nær — nuværende pris 848.4 er kun 3.4 DKK over SMA50. Fundamental data mangler (ingen earnings/revenue). HOLD — afventer korrektion til SMA50 som bekræftelse af støtteniveau.",
+          "confidence": 65
         }
       },
       {
@@ -170,24 +144,24 @@
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "fundamental",
-            "technical"
+            "technical",
+            "fundamental"
           ],
-          "thesis": "Klassisk Consumer Defensive value-play: 36% PE-rabat til sektor på selskab med +40% earnings-vækst og aktivt buyback. PepsiCo-headwind kendes (2028), så markedet har tid til at indprise erstatningsstrategi. RSI 52 + Stoch 47 = ren teknisk udgangspunkt uden overbought-risiko. Rider mean-reversion mod SMA200 (~502) som primært mål, derefter 540 hvis trendvending bekræftes.",
+          "thesis": "Consumer Defensive value-play med 33% PE-rabat og +40% EPS-vækst. Nær 52-ugers støtte. Afventer SMA200-reklamation (502 DKK) som langsigtet katalysator. Revenue-vækst skal accelerere for at validere langsigtet case.",
           "price_target": 502,
           "stop_loss": 380,
           "expected_return_pct": 21.7,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 380 (under 2x ATR-stop + SMA50-svigt), ved profit-warning relateret til PepsiCo-aftalens slut, ved revenue-vejledning -10%+ for 2028, eller tag profit nær 502 hvis RSI 75+ med negativ divergens. Re-vurder hvis MACD ikke vender positiv inden 4 uger."
+          "exit_conditions": "Sælg ved brud under 380 (52-ugers lavpunkt). Tag profit nær SMA200 (502). Reducer ved Q-rapport med revenue-skuffelse."
         },
         "last_review": {
-          "date": "2026-06-23",
-          "reasoning": "BULL verdict conf 6 med stærk value-case: +40% earnings-vækst, Fwd PE 10.9x (36% rabat til Consumer Defensive sektornorm 17x), 3.88% udbytte. Aktiv aktiekapital-reduktion (10. jun) og management-LTIP (13. maj) signalerer bestyrelsestillid. Diversificerer porteføljen efter exit fra COLO-B og ORSTED — tilfører Consumer Defensive ud over Carlsberg uden at presse sektor-vægt over 25%. RSI 51.8 og Stochastic 47 giver rum til opside uden overbought-pres. 38 aktier × 412.60 = 15.679 DKK ≈ 15.5% vægt — moderat eksponering. ATR-sizing antyder op til 100 aktier; vi tager halv pos for at bevare cash-buffer og lade thesis bevise sig.",
-          "confidence": 72
+          "date": "2026-06-25",
+          "reasoning": "BULL conf 6. PE fwd 11.46x = 33% rabat til Consumer Defensive-norm med +40% EPS-vækst. Kun 9.8% over 52-ugers lavpunkt — begrænset nedsiderisiko fra nuværende niveau. Pris 0.9% over SMA50 (429.46) — teknisk neutralt. Men: RSI 70.4 og BB 108.7% er overbought. MACD svagt negativ (-0.68). Revenue kun +3.3% — earnings-væksten er cost-cutting-drevet, ikke organisk. HOLD med stop nær 52-ugers lavpunkt (380).",
+          "confidence": 60
         }
       }
     ],
-    "last_updated": "2026-06-25 12:33 UTC"
+    "last_updated": "2026-06-25 15:58 UTC"
   },
   "history": [
     {
@@ -3641,6 +3615,122 @@
         "summary": "NEUTRAL conf 5. P&L +3.84%. Position købt 2026-06-08 (15 dage). MACD stadig -2.17 negativ, men 5d momentum vendt positivt (+0.24%) og momentum-divergens +2.79 = gryende tegn på basebygning. Plan tilllod 4 uger til MACD-vending — vi er på da"
       },
       "id": 203,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-25",
+      "action": "SELL",
+      "symbol": "ISS.CO",
+      "name": "ISS A/S",
+      "shares": 33,
+      "price": 265.0,
+      "value": 8745.0,
+      "reasoning": {
+        "verdict": "SELL",
+        "confidence": 82,
+        "summary": "ISS sælges da dagens analyse giver BEAR-verdict (conf 6) med RSI 84.1 — i top 2% historisk distribution. Stochastic 96.2 og Bollinger 97.7% bekræfter ekstrem overophedning på alle tre indikatorer simultant. Earnings-vækst +0.1% og revenue-v"
+      },
+      "cost_basis_dkk": 8725.2,
+      "realized_pnl_dkk": 19.8,
+      "realized_pnl_pct": 0.23,
+      "holding_days": 27,
+      "id": 204,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-25",
+      "action": "HOLD",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": null,
+      "price": 299.95,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 78,
+        "summary": "Thesis er intakt og styrket: BULL conf 7 fra dagens analyse. Pris er over SMA200 (302) for første gang i måneder — potentielt strukturelt trendbrud. Fundamental deep-value ved PE fwd 14.6x med 67% EPS-vækst og 5.1% udbytte. Kortsigtet RSI 7"
+      },
+      "id": 205,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-25",
+      "action": "HOLD",
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "shares": null,
+      "price": 510.5,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 52,
+        "summary": "NEUTRAL conf 5. Positionens thesis svækkes af revenue -11.6% YoY — earnings-recovery (+195% EPS) sandsynligvis drevet af engangseffekter snarere end organisk fremgang. Ekstremt oversold: stoch 9.8 og BB 9.7% antyder teknisk bounce potential"
+      },
+      "id": 206,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-25",
+      "action": "HOLD",
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "shares": null,
+      "price": 355.7,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 62,
+        "summary": "NEUTRAL conf 5 fra analyse. P&L +7.6%, tæt på kursmål 375. RSI 74.1 og stoch 71.3 er overbought med begyndende negativ kortsigtet momentum (-0.86%). Earnings-vækst kun 1.4% og revenue +0.9% — PE-ekspansion driver hele kursstigningen. 4.89% "
+      },
+      "id": 207,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-25",
+      "action": "HOLD",
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "shares": null,
+      "price": 563.5,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 65,
+        "summary": "BULL conf 6. Ekstraordinær revenue-vækst +65.3% YoY drevet af rentemiljøet. PE fwd 8.98x = 25% rabat til sektor. Stærk strukturel optrend over SMA50 (542.69) og SMA200 (519.75). Bekymring: earnings -26.8% trods massiv topline-vækst — cost-p"
+      },
+      "id": 208,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-25",
+      "action": "HOLD",
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "shares": null,
+      "price": 848.4,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 65,
+        "summary": "BULL conf 6. Stærk strukturel optrend bekræftet over begge MA-niveauer med MACD +4.37. Momentum +5.33% på 5 dage. Men: RSI 71.3, stoch 95.8 og BB 94.3% indikerer ekstremt overbought kortsigtet. Korrektion til SMA50 (845 DKK) er sandsynlig o"
+      },
+      "id": 209,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-25",
+      "action": "HOLD",
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "shares": null,
+      "price": 412.6,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "BULL conf 6. PE fwd 11.46x = 33% rabat til Consumer Defensive-norm med +40% EPS-vækst. Kun 9.8% over 52-ugers lavpunkt — begrænset nedsiderisiko fra nuværende niveau. Pris 0.9% over SMA50 (429.46) — teknisk neutralt. Men: RSI 70.4 og BB 108"
+      },
+      "id": 210,
       "is_new": true
     }
   ],
