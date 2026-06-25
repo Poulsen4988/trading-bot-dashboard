@@ -100,7 +100,7 @@ jobs:
             exit 0
           fi
           echo "MANGLENDE OUTPUT for $TODAY:$MISSING"
-          TITLE="⚠️ Trading-bot: rutine leverede ikke output $TODAY"
+          TITLE="Trading-bot: rutine leverede ikke output $TODAY"
           EXISTING=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --json number,title \
             --jq "first(.[] | select(.title | contains(\"output $TODAY\")) | .number)" 2>/dev/null || true)
           if [ -n "${EXISTING:-}" ] && [ "$EXISTING" != "null" ]; then
@@ -108,20 +108,18 @@ jobs:
             gh issue comment "$EXISTING" --repo "$GITHUB_REPOSITORY" \
               --body "Stadig manglende kl ${HOUR}:xx UTC:$MISSING" || true
           else
-            BODY=$(cat <<EOF
-Vagthunden opdagede at en eller flere daglige rutiner **ikke leverede output** for **$TODAY** (tjek kl ${HOUR}:xx UTC).
-
-**Mangler:**$MISSING
-
-Rutinerne kører via Claude Code Routines (Analyse 07:15Z, Handel 07:45Z) — helt uden for denne GitHub Action. \`last_fired_at\` kan godt være sat selvom sessionen aldrig nåede at skrive filer (stille fejl).
-
-**Afhjælpning:**
-- Mangler \`analysis/$TODAY.json\`: Analyse fejlede. Kør Analyse-rutinen manuelt igen (read-only, sikker). Handel stopper af sig selv uden analyse-fil.
-- Mangler kun \`decisions/$TODAY.json\`: Handel fejlede. Kør Handel-rutinen manuelt igen (eksekverer dagens papirhandel).
-
-_Auto-genereret af vagthund-steppet i \`.github/workflows/fetch_data.yml\`._
-EOF
-)
+            BODY=$(printf '%s\n' \
+              "Vagthunden opdagede at en eller flere daglige rutiner IKKE leverede output for $TODAY (tjekket kl ${HOUR}:xx UTC)." \
+              "" \
+              "Mangler:$MISSING" \
+              "" \
+              "Rutinerne kører via Claude Code Routines (Analyse 07:15Z, Handel 07:45Z) — uden for denne GitHub Action. 'last_fired_at' kan være sat selvom sessionen aldrig skrev filer (stille fejl)." \
+              "" \
+              "Afhjaelpning:" \
+              "- Mangler analysis/$TODAY.json: Analyse fejlede. Koer Analyse-rutinen manuelt igen (read-only, sikker). Handel stopper selv uden analyse-fil." \
+              "- Mangler kun decisions/$TODAY.json: Handel fejlede. Koer Handel-rutinen manuelt igen (eksekverer dagens papirhandel)." \
+              "" \
+              "Auto-genereret af vagthund-steppet i .github/workflows/fetch_data.yml.")
             gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" --body "$BODY" \
               && echo "Oprettede nyt issue for $TODAY." \
               || echo "Kunne ikke oprette issue."
