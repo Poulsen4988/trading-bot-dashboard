@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
@@ -64,3 +65,64 @@ jobs:
           git diff --staged --quiet || git commit -m "Data update $(date -u '+%Y-%m-%d %H:%M UTC')"
           git pull --rebase --autostash origin main
           git push
+
+      # ---------------------------------------------------------------------
+      # VAGTHUND: rutinerne (Analyse/Handel) kører via Claude Code Routines på
+      # Anthropics infrastruktur — helt uden for denne Action. De kan fejle
+      # STILLE (trigger "fyrer", men sessionen skriver aldrig filer), som det
+      # skete 2026-06-24 og 2026-06-25. Denne Action er uafhængig (kører på
+      # GITHUB_TOKEN), så den er det rette sted at opdage et stille udfald.
+      # Tjekker hver hverdag fra 09 UTC (11 CET, efter begge rutiner burde være
+      # færdige): mangler dagens analysis/ eller decisions/-fil → opret GitHub
+      # issue (du får mail). Deduplikeres pr. dag, så højst ét issue/dag.
+      # ---------------------------------------------------------------------
+      - name: Vagthund — alarmér hvis dagens rutiner mangler output
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -uo pipefail
+          DOW=$(date -u +%u)    # 1-5 = mandag-fredag
+          HOUR=$(date -u +%H)
+          TODAY=$(date -u +%F)
+          if [ "$DOW" -gt 5 ]; then
+            echo "Weekend ($TODAY) — rutiner kører ikke, springer vagthund over."
+            exit 0
+          fi
+          if [ "$HOUR" -lt 09 ]; then
+            echo "Kl $HOUR UTC — før rutinerne burde være færdige, springer vagthund over."
+            exit 0
+          fi
+          MISSING=""
+          [ -f "analysis/$TODAY.json" ]  || MISSING="$MISSING Analyse(analysis/$TODAY.json)"
+          [ -f "decisions/$TODAY.json" ] || MISSING="$MISSING Handel(decisions/$TODAY.json)"
+          if [ -z "$MISSING" ]; then
+            echo "OK: både analysis/$TODAY.json og decisions/$TODAY.json findes."
+            exit 0
+          fi
+          echo "MANGLENDE OUTPUT for $TODAY:$MISSING"
+          TITLE="⚠️ Trading-bot: rutine leverede ikke output $TODAY"
+          EXISTING=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --json number,title \
+            --jq "first(.[] | select(.title | contains(\"output $TODAY\")) | .number)" 2>/dev/null || true)
+          if [ -n "${EXISTING:-}" ] && [ "$EXISTING" != "null" ]; then
+            echo "Issue #$EXISTING findes allerede for i dag — tilføjer status-kommentar."
+            gh issue comment "$EXISTING" --repo "$GITHUB_REPOSITORY" \
+              --body "Stadig manglende kl ${HOUR}:xx UTC:$MISSING" || true
+          else
+            BODY=$(cat <<EOF
+Vagthunden opdagede at en eller flere daglige rutiner **ikke leverede output** for **$TODAY** (tjek kl ${HOUR}:xx UTC).
+
+**Mangler:**$MISSING
+
+Rutinerne kører via Claude Code Routines (Analyse 07:15Z, Handel 07:45Z) — helt uden for denne GitHub Action. \`last_fired_at\` kan godt være sat selvom sessionen aldrig nåede at skrive filer (stille fejl).
+
+**Afhjælpning:**
+- Mangler \`analysis/$TODAY.json\`: Analyse fejlede. Kør Analyse-rutinen manuelt igen (read-only, sikker). Handel stopper af sig selv uden analyse-fil.
+- Mangler kun \`decisions/$TODAY.json\`: Handel fejlede. Kør Handel-rutinen manuelt igen (eksekverer dagens papirhandel).
+
+_Auto-genereret af vagthund-steppet i \`.github/workflows/fetch_data.yml\`._
+EOF
+)
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" --body "$BODY" \
+              && echo "Oprettede nyt issue for $TODAY." \
+              || echo "Kunne ikke oprette issue."
+          fi
