@@ -30,6 +30,7 @@ from datetime import date
 from typing import Any
 
 from watchlist import SP500, YF_TO_NAME  # noqa: F401  (SP500 kept for parity / future use)
+import github_store
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 KNOWLEDGE_DIR = os.path.join(SCRIPT_DIR, "knowledge")
@@ -56,11 +57,9 @@ def _kb_path(yf_sym: str) -> str:
 
 
 def load_kb(yf_sym: str) -> dict[str, Any]:
-    try:
-        with open(_kb_path(yf_sym), encoding="utf-8") as f:
-            return json.load(f) or {}
-    except (FileNotFoundError, json.JSONDecodeError):
-        return {}
+    safe = yf_sym.replace(".", "_").replace("/", "_")
+    kb, _ = github_store.get_json(f"us/knowledge/{safe}.json", default={})
+    return kb or {}
 
 
 def recent_news(yf_sym: str, limit: int = 5) -> list[dict[str, Any]]:
@@ -109,10 +108,12 @@ def compact_stock_payload(sym, stock, included_because, scout, screener_score=No
 
 def main() -> None:
     date_str = today()
-    prices = load_json("prices/latest.json", default={}) or {}
+    prices, _ = github_store.get_json("us/prices/latest.json", default={})
+    prices = prices or {}
     stocks_data = prices.get("stocks", {})
 
-    screening = load_json(f"screening/{date_str}.json", default={}) or {}
+    screening, _ = github_store.get_json(f"us/screening/{date_str}.json", default={})
+    screening = screening or {}
     top_syms = list(screening.get("top") or [])           # top 10
     scout_syms = list(screening.get("scouts") or [])      # >= 2 scouts
     # score lookup from the full scored table
@@ -121,7 +122,8 @@ def main() -> None:
     scout_set = set(scout_syms)
 
     # Current holdings — ALWAYS re-analysed
-    data = load_json("data.json", default={}) or {}
+    data, _ = github_store.get_json("us/data.json", default={})
+    data = data or {}
     positions = data.get("portfolio", {}).get("positions", [])
     held_syms = {p.get("symbol") for p in positions if p.get("symbol")}
 
@@ -166,7 +168,7 @@ def main() -> None:
         "deep_set": sorted(deep_set),
         "tier_counts": {"deep": len(selected), "total": len(selected)},
         "selected_for_analysis": selected,
-        "output_file": f"analysis/{date_str}.json",
+        "output_file": f"us/analysis/{date_str}.json",
         "instruction": (
             "Deep analysis of the US deep set ONLY (screener top-10 + scouts + current holdings) — "
             "do NOT analyse the full S&P 500 universe.\n"
