@@ -603,15 +603,17 @@ function renderSectors(exposure) {
   }).join('');
 }
 
+let posBySym = {};
 function renderPos(positions) {
   const el = document.getElementById('pos-list');
+  posBySym = {}; (positions||[]).forEach(x=>{ if(x && x.symbol) posBySym[x.symbol]=x; });
   if (!positions.length){el.innerHTML='<div class="empty">Ingen åbne positioner</div>';return;}
   el.innerHTML = positions.map(p=>{
     const cost = p.avg_price||p.purchase_price;
     const cur = p.current_price||cost;
     const val = cur*p.shares;
     const pp = cost?((cur/cost)-1)*100:0;
-    return `<div class="pos-row">
+    return `<div class="pos-row" style="cursor:pointer" title="Vis strategi bag positionen" onclick="openPositionModal('${escapeHtml(p.symbol)}')">
       <div><div class="pos-name">${escapeHtml(p.name)}</div><div class="pos-shares">${p.shares} aktier @ ${cost?.toFixed(2)} kr.</div></div>
       <div class="pos-pnl">
         <div class="pos-val">${fmt(val)}</div>
@@ -1092,6 +1094,33 @@ async function openModal(id) {
   }
   html += `<div class="trade-meta">${t.shares?t.shares+' aktier':''} ${t.price?'@ '+t.price.toFixed(2)+' kr.':''} ${t.value?'= '+fmt(t.value):''}</div>`;
   document.getElementById('m-body').innerHTML = html || '<div class="empty">Ingen begrundelse tilgængelig</div>';
+}
+
+function openPositionModal(symbol){
+  const p = posBySym[symbol]; if(!p) return;
+  const cost = p.avg_price||p.purchase_price; const cur2 = p.current_price||cost;
+  const val = cur2*p.shares; const pp = cost?((cur2/cost)-1)*100:0;
+  document.getElementById('m-title').textContent = (p.name||symbol)+' — beholdning';
+  document.getElementById('overlay').classList.add('on');
+  const plan = p.investment_plan || {};
+  let html='';
+  if (plan.thesis || plan.price_target!=null || plan.stop_loss!=null) {
+    html += `<div class="debate verdict"><div class="debate-lbl">Strategi bag positionen</div><div class="debate-txt">`;
+    if (plan.thesis) html += `<div>${escapeHtml(plan.thesis)}</div>`;
+    const f=[];
+    if (plan.term) f.push('Term: '+escapeHtml(plan.term));
+    if (plan.timeframe) f.push('Tidshorisont: '+escapeHtml(plan.timeframe));
+    if (plan.expected_return_pct!=null) f.push('Forventet afkast: '+escapeHtml(String(plan.expected_return_pct))+'%');
+    if (plan.price_target!=null) f.push('Target: '+escapeHtml(String(plan.price_target))+' kr.');
+    if (plan.stop_loss!=null) f.push('Stop: '+escapeHtml(String(plan.stop_loss))+' kr.');
+    if (f.length) html += `<div style="margin-top:6px;font-size:12px;color:var(--muted)">${f.join(' · ')}</div>`;
+    if (plan.exit_conditions) html += `<div style="margin-top:8px"><span style="color:var(--muted)">Exit-betingelser:</span> ${escapeHtml(plan.exit_conditions)}</div>`;
+    html += `</div></div>`;
+  } else {
+    html += `<div class="empty">Ingen gemt strategi for denne position endnu.</div>`;
+  }
+  html += `<div class="trade-meta">${p.shares} aktier @ ${cost?cost.toFixed(2):'—'} kr. · nu ${cur2?cur2.toFixed(2):'—'} kr. · værdi ${fmt(val)} · ${pct(pp)}</div>`;
+  document.getElementById('m-body').innerHTML = html;
 }
 
 function close_() { document.getElementById('overlay').classList.remove('on'); }
