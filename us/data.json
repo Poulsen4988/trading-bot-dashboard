@@ -1,13 +1,105 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 100000,
+    "cash": 59978.7,
     "currency": "USD",
-    "positions": [],
-    "last_updated": null
+    "positions": [
+      {
+        "symbol": "NUE",
+        "name": "Nucor",
+        "shares": 85,
+        "purchase_price": 239.78,
+        "current_price": 239.78,
+        "purchase_date": "2026-06-28",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental",
+            "analyst_catalyst"
+          ],
+          "thesis": "Buy-the-dip i en bekræftet bulltrend: KeyBanc-upgrade + Q2-guidance-beat + tarif-rygvind giver asymmetrisk risk/reward. Entry ved teknisk oversold med klar catalyst-pipeline (Q2 earnings, tarifpolitik, infrastruktur-kontrakter).",
+          "price_target": 274,
+          "stop_loss": 222.14,
+          "expected_return_pct": 14,
+          "timeframe": "2-4 måneder",
+          "exit_conditions": "Stop ved 22.14 (2x ATR). Profitabel exit ved 74 KeyBanc-target. Sælg ved fundamentalt brud: global recession-data, markant stålpris-kollaps under tarif-niveau, eller Q2 EPS miss under .50."
+        },
+        "last_review": {
+          "date": "2026-06-28",
+          "reasoning": "NUE er deep-settets højest-scorende scout-kandidat. KeyBanc opgraderede til Overweight den 24. juni med 74 PT — 14% upside fra nuværende 39.78. Stærk Q2 EPS guidance (.70-4.80 per diluted share) bekræfter fundamentale fremgang. Aktien er oversold (RSI 39.4, Stoch 6.8) efter en -3.66% 1-dages pullback — et klassisk buy-the-dip setup i en intakt bulltrend (+41.5% YTD, SMA200 langt under til 78.90). US Steel-tarifferne beskytter Nucor, verdens mest effektive el-stålproducent, mod kinesisk dumping. IRA+CHIPS Act øger strukturel stålefterspørgsel. Dette er det klareste risk/reward setup i sættet med konkret analyst-backing og stærk earnings-visibilitet.",
+          "confidence": 78
+        }
+      },
+      {
+        "symbol": "NDAQ",
+        "name": "Nasdaq, Inc.",
+        "shares": 250,
+        "purchase_price": 78.56,
+        "current_price": 78.56,
+        "purchase_date": "2026-06-28",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Mean-reversion trade i oversold kvalitetsfranchise. Entry ved RSI 30.6 med analyst-estimater der stiger, mens kursen falder — klassisk divergens. Stop under 3 giver begrænset downside, mens SMA50 (8) giver 12% naturligt mål.",
+          "price_target": 88,
+          "stop_loss": 72.99,
+          "expected_return_pct": 12,
+          "timeframe": "2-3 måneder",
+          "exit_conditions": "Stop ved 2.99 (2x ATR under nuværende kurs). Profitmål ved SMA50 ca. 8. Sælg ved fundamentalt brud: IPO-aktivitet kollaps, ETF-licensing-tab der reducerer guidance, eller markedsbredere finanssektors-kollaps."
+        },
+        "last_review": {
+          "date": "2026-06-28",
+          "reasoning": "Nasdaq Inc. er en kvalitetsfranchise — børsoperatør + finansiel teknologi (Calypso, AxiomSL, Verafin) + data/analytics — der nu handles 22.3% under 52-ugers toppen med RSI 30.6 og Stoch 8.9 i oversold territorium. Zacks har udpeget aktien som teknisk oversold med analysts earnings-estimater der revideres OPAD — en bullish divergens fra den negative prisbevægelse (-14.7% på 4 uger). Texas Advisory Board lancering demonstrerer strategisk vækstinitiativ i USA's hurtigst voksende finansmarked. Recurring revenues fra finansiel teknologi-segmentet er ikke afhængigt af handelsvolumen-cyklen. Mean-reversion til SMA50 (~8) giver 12% upside og er realiserbart ved et generelt markedsrally eller NDAQ-specifik catalyst (Q3 earnings, Texas-expansion-nyheder).",
+          "confidence": 70
+        }
+      }
+    ],
+    "last_updated": "2026-06-28 17:15 UTC"
   },
-  "history": [],
-  "trades": [],
+  "history": [
+    {
+      "date": "2026-06-28",
+      "portfolio_value": 100000.0
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-06-28",
+      "action": "BUY",
+      "symbol": "NUE",
+      "name": "Nucor",
+      "shares": 85,
+      "price": 239.78,
+      "value": 20381.3,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 78,
+        "summary": "NUE er deep-settets højest-scorende scout-kandidat. KeyBanc opgraderede til Overweight den 24. juni med 74 PT — 14% upside fra nuværende 39.78. Stærk Q2 EPS guidance (.70-4.80 per diluted share) bekræfter fundamentale fremgang. Aktien er ov"
+      },
+      "id": 1,
+      "is_new": false
+    },
+    {
+      "date": "2026-06-28",
+      "action": "BUY",
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "shares": 250,
+      "price": 78.56,
+      "value": 19640.0,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 70,
+        "summary": "Nasdaq Inc. er en kvalitetsfranchise — børsoperatør + finansiel teknologi (Calypso, AxiomSL, Verafin) + data/analytics — der nu handles 22.3% under 52-ugers toppen med RSI 30.6 og Stoch 8.9 i oversold territorium. Zacks har udpeget aktien s"
+      },
+      "id": 2,
+      "is_new": true
+    }
+  ],
   "stocks": [],
   "latest_decisions": {},
   "benchmarks": {},
