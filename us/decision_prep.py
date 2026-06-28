@@ -66,7 +66,7 @@ def knowledge_news(yf_sym, limit=6):
     if yf_sym in _news_cache:
         return _news_cache[yf_sym]
     safe = yf_sym.replace(".", "_").replace("/", "_").replace(" ", "_")
-    kb, _ = github_store.get_json(f"knowledge/{safe}.json", default={})
+    kb, _ = github_store.get_json(f"us/knowledge/{safe}.json", default={})
     news = (kb or {}).get("news", [])[:limit]
     out = [
         {
@@ -91,13 +91,13 @@ def main() -> None:
     date_str = today()
 
     # --- Fetch data ---
-    analysis, _ = github_store.get_json(f"analysis/{date_str}.json", default=None)
-    data, _ = github_store.get_json("data.json", default={"portfolio": {"cash": 100000, "positions": []}, "trades": [], "history": []})
-    prices_raw, _ = github_store.get_json("prices/latest.json", default={})
+    analysis, _ = github_store.get_json(f"us/analysis/{date_str}.json", default=None)
+    data, _ = github_store.get_json("us/data.json", default={"portfolio": {"cash": 100000, "positions": []}, "trades": [], "history": []})
+    prices_raw, _ = github_store.get_json("us/prices/latest.json", default={})
     prices = prices_raw.get("stocks", {})
 
     if not analysis:
-        raise SystemExit(f"ERROR: No analysis/{date_str}.json — run the analysis routine first.")
+        raise SystemExit(f"ERROR: No us/analysis/{date_str}.json — run the analysis routine first.")
 
     portfolio = data.get("portfolio", {})
     cash = float(portfolio.get("cash", 100000))
@@ -253,7 +253,7 @@ def main() -> None:
     }
 
     out["instructions"] = (
-        f"You must write decisions/{date_str}.json via github_store with your decisions. "
+        f"You must write us/decisions/{date_str}.json via github_store with your decisions. "
         "Format: {date, market_summary, decisions: [{symbol, name, action, shares, price, confidence, "
         "reasoning, bull, bear, investment_plan: {term, basis, thesis, price_target, stop_loss, "
         "expected_return_pct, timeframe, exit_conditions}}]}. "
