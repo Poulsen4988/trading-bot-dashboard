@@ -132,8 +132,9 @@ def put_json(path: str, data: Any, message: str) -> bool:
                 print(f"[github_store] Gemte {path} (HTTP {r.status})")
             return True
         except urllib.error.HTTPError as e:
-            if e.code == 409 and attempt < _MAX_RETRIES - 1:
-                print(f"[github_store] 409 sha-konflikt på {path}, henter frisk sha og prøver igen…")
+            if e.code in (409, 500, 502, 503, 504) and attempt < _MAX_RETRIES - 1:
+                grund = "409 sha-konflikt" if e.code == 409 else f"HTTP {e.code} transient"
+                print(f"[github_store] {grund} på {path}, henter frisk sha og prøver igen…")
                 time.sleep(_BACKOFF_SEC * (attempt + 1))
                 continue
             print(f"[github_store] FEJL ved skrivning af {path}: HTTP {e.code} {e.reason}")
