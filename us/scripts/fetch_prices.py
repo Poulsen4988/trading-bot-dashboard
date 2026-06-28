@@ -226,64 +226,38 @@ for s in watchlist.SP500:
         pct_5d = round((closes[-1] / closes[-6] - 1) * 100, 2) if len(closes) >= 6 else None
         pct_20d = round((closes[-1] / closes[-21] - 1) * 100, 2) if len(closes) >= 21 else None
 
-        # .info is per-ticker; fail-soft so one bad symbol can't sink the run.
-        info = {}
-        try:
-            info = yf.Ticker(sym).info or {}
-        except Exception:
-            info = {}
-
-        hi52 = info.get("fiftyTwoWeekHigh")
-        lo52 = info.get("fiftyTwoWeekLow")
-        avg_vol = info.get("averageVolume")
-        vol = info.get("regularMarketVolume")
+        # 52-week range + volume derived from the 1y bulk download - NO per-ticker
+        # info/calendar calls (those are too slow / rate-limited for ~503 tickers).
+        hi52 = round(max(highs), 2) if highs else None
+        lo52 = round(min(lows), 2) if lows else None
+        avg_vol = (sum(vols) / len(vols)) if vols else None
+        vol = vols[-1] if vols else None
         pct_high = round((price / hi52 - 1) * 100, 2) if price and hi52 else None
         pct_low = round((price / lo52 - 1) * 100, 2) if price and lo52 else None
 
-        # Dividend yield — yfinance returns it as a percentage number directly
-        # (0.44 = 0.44%, 5.31 = 5.31%).
-        raw_dy = info.get("dividendYield")
-        if raw_dy is None or raw_dy < 0 or raw_dy > 30:
-            div_yield = None
-        else:
-            div_yield = round(raw_dy, 2)
-
         technical = compute_technical(closes, highs, lows, vols, pct_high, pct_low)
 
-        # Next earnings date — yfinance returns dict, DataFrame or None
-        next_earnings = None
-        try:
-            cal = yf.Ticker(sym).calendar
-            if isinstance(cal, dict):
-                ed = cal.get("Earnings Date")
-                if isinstance(ed, list) and ed:
-                    next_earnings = str(ed[0])[:10]
-                elif ed:
-                    next_earnings = str(ed)[:10]
-            elif cal is not None and hasattr(cal, "index") and "Earnings Date" in getattr(cal, "index", []):
-                next_earnings = str(cal.loc["Earnings Date"].iloc[0])[:10]
-        except Exception:
-            next_earnings = None
-
+        # Fundamentals dropped for the 503-stock universe to keep fetch fast.
+        # Ranking is technical + 52w-based; sector from watchlist.
         stocks[sym] = {
             "price": round(price, 2) if price is not None else None,
             "pct_1d": pct_1d,
             "pct_5d": pct_5d,
             "pct_20d": pct_20d,
-            "pe_forward": info.get("forwardPE"),
-            "pe_trailing": info.get("trailingPE"),
-            "div_yield": div_yield,
+            "pe_forward": None,
+            "pe_trailing": None,
+            "div_yield": None,
             "volume_ratio": round(vol / avg_vol, 2) if vol and avg_vol else (technical or {}).get("volume_ratio"),
             "52w_high": hi52,
             "52w_low": lo52,
             "pct_from_52w_high": pct_high,
             "pct_from_52w_low": pct_low,
-            "revenue_growth": info.get("revenueGrowth"),
-            "earnings_growth": info.get("earningsGrowth"),
-            "market_cap": info.get("marketCap"),
-            "sector": info.get("sector") or watchlist.YF_TO_SECTOR.get(sym),
-            "industry": info.get("industry"),
-            "next_earnings_date": next_earnings,
+            "revenue_growth": None,
+            "earnings_growth": None,
+            "market_cap": None,
+            "sector": watchlist.YF_TO_SECTOR.get(sym),
+            "industry": None,
+            "next_earnings_date": None,
             "technical": technical,
         }
         method = (technical or {}).get("method", "none")
