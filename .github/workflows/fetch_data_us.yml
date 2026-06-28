@@ -1,0 +1,61 @@
+name: US Bot Vagthund (daglig)
+
+# Uafhaengig fejldetektor for US-botten. Koerer paa GITHUB_TOKEN (ingen API-noegle).
+# US Analyse fyrer 20:15Z, US Handel 20:45Z via Claude Code Routines. Denne tjekker
+# kl 22:00Z hverdage om dagens us/analysis + us/decisions findes; mangler de -> issue (mail).
+
+on:
+  schedule:
+    - cron: "0 22 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tjek US-output og alarmer
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import os, json, datetime, urllib.request, urllib.error
+          tok = os.environ["GH_TOKEN"]; repo = os.environ["REPO"]
+          today = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+          H = {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"}
+
+          def exists(path):
+              u = f"https://api.github.com/repos/{repo}/contents/{path}?ref=main"
+              try:
+                  urllib.request.urlopen(urllib.request.Request(u, headers=H)); return True
+              except urllib.error.HTTPError as e:
+                  if e.code == 404: return False
+                  raise
+
+          missing = [f for f in (f"us/analysis/{today}.json", f"us/decisions/{today}.json") if not exists(f)]
+          if not missing:
+              print("OK: us/analysis og us/decisions findes for", today); raise SystemExit(0)
+          print("MANGLER:", missing)
+
+          title = f"US-bot: rutine leverede ikke output {today}"
+          body = ("US trading-bot mangler i dag: " + ", ".join(missing) +
+                  "\n\nRutiner: US Analyse (20:15Z) + US Handel (20:45Z) via Claude Code Routines. "
+                  "'last_fired' kan vise at den fyrede selvom sessionen doede uden at skrive filer. "
+                  "Koer den fejlende rutine manuelt igen for at gendanne.")
+
+          issues = json.load(urllib.request.urlopen(urllib.request.Request(
+              f"https://api.github.com/repos/{repo}/issues?state=open&per_page=100", headers=H)))
+          ex = next((i["number"] for i in issues if i.get("title") == title), None)
+          if ex:
+              u = f"https://api.github.com/repos/{repo}/issues/{ex}/comments"; payload = {"body": body}
+          else:
+              u = f"https://api.github.com/repos/{repo}/issues"; payload = {"title": title, "body": body}
+          urllib.request.urlopen(urllib.request.Request(
+              u, data=json.dumps(payload).encode(), method="POST",
+              headers={**H, "Content-Type": "application/json"}))
+          print("Alarm sendt (issue", ex or "ny", ")")
+          PY
