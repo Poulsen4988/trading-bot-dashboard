@@ -248,8 +248,8 @@ def build_stocks():
     except ImportError:
         return []
 
-    prices_file = os.path.join(SCRIPT_DIR, "prices", "latest.json")
-    raw = load_json_file(prices_file, {})
+    raw = fetch_github_json("us/prices/latest.json") or load_json_file(
+        os.path.join(SCRIPT_DIR, "prices", "latest.json"), {})
     prices = raw.get("stocks", {})
     prices_age = raw.get("fetched_at")
     screening, screening_date = load_latest_screening()
