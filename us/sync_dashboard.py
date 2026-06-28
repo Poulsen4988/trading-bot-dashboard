@@ -255,9 +255,23 @@ def build_stocks():
     screening, screening_date = load_latest_screening()
     analysis_map, analysis_date = load_latest_analysis()
 
+    # US universe is ~503 tickers — only surface the bot's actual focus on the
+    # dashboard: current holdings + today's deep-analysed set + top screener ranks.
+    TOP_N = 30
+    held = set()
+    try:
+        _dd = fetch_github_json("us/data.json") or {}
+        held = {p.get("symbol") for p in _dd.get("portfolio", {}).get("positions", []) if p.get("symbol")}
+    except Exception:
+        held = set()
+    _ranked = sorted(screening.items(), key=lambda kv: (kv[1].get("score") or -1), reverse=True)
+    keep = held | set(analysis_map.keys()) | {sym for sym, _ in _ranked[:TOP_N]}
+
     stocks = []
     for s in SP500:
         yf_sym = s["yf"]
+        if keep and yf_sym not in keep:
+            continue
         pdata = prices.get(yf_sym, {})
         kb = km.load(yf_sym) or {}
 
