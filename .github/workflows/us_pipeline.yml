@@ -1,0 +1,35 @@
+name: US Bot - Data (priser/screener/nyheder)
+
+# Tung data-pipeline for US-botten. Koerer i GitHub Actions (har yfinance/pandas
+# via requirements.txt) - IKKE i Claude-rutinen, som ingen pip-pakker har.
+# Henter ~503 S&P500-priser, rangerer alle, og opdaterer videnbasen for deep-set.
+# Scripts pusher selv resultater via github_store (DASHBOARD_PAT). Koerer efter
+# US-luk (20:00 UTC). Flere slots da GitHub-cron throttler; vagthund fanger misser.
+
+on:
+  schedule:
+    - cron: "5,25,45 20 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      DASHBOARD_PAT: ${{ secrets.DASHBOARD_PAT }}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Installer afhaengigheder
+        run: pip install -r requirements.txt
+      - name: Hent priser (503 S&P500-aktier)
+        run: python us/scripts/fetch_prices.py
+      - name: Screen + rangering + scouts
+        run: python us/screener.py
+      - name: Opdater videnbase (deep-set nyheder)
+        run: python us/news.py
+        continue-on-error: true
