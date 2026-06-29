@@ -1,0 +1,71 @@
+{
+  "date": "2026-06-29",
+  "market_summary": "Porteføljen er fuldt positioneret med to dag-1 positioner. NUE konsoliderer efter -3.66% dagsdip men fundamentals (KeyBanc 74-target, Q2 guidance beat) og teknisk setup (oversold Stochastic 6.8, MACD +2.46) er intakt. NDAQ viser farlig bearish tendens med MACD negativ og kurs 11% under begge SMA, men triple-oversold (RSI 30.6, Stoch 8.9, BB 4.4%) giver bounce-potentiale — positionen holdes med tæt stop. Ingen nye kandidater i analyselisten i dag.",
+  "decisions": [
+    {
+      "symbol": "NUE",
+      "name": "Nucor",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 239.78,
+      "confidence": 72,
+      "reasoning": "Thesis fuldt intakt. KeyBanc opgraderede 24/6 til Overweight med kursmål 74 (+14.3% fra entry), og Q2 EPS guidance på .70-4.80 slår forventningerne. MACD +2.46 er bullish, og Stochastic 6.8 + BB-position 8.3% signalerer kortsigtet oversold efter -3.66% dagsdip — klassisk buy-the-dip setup inden næste rally-ben. Stop 22.14 (2x ATR) er klart ikke trigget. Pris +1.86% over SMA50 og +34% over SMA200 bekræfter stærk langsigtet trend. Holder til target 74 eller stop.",
+      "bull": [
+        "KeyBanc Overweight-opgradering til 74 giver klar institutionel opbakning og 14.3% upside fra entry",
+        "Q2 EPS guidance .70-4.80 slår estimater og bekræfter operationelt momentum",
+        "Oversold Stochastic (6.8) og BB-position (8.3%) efter dagsdip indikerer attraktivt bounce-vindue",
+        "Positiv MACD (+2.46) og kurs over begge glidende gennemsnit (SMA50+SMA200) — bullish trend intakt"
+      ],
+      "bear": [
+        "RSI 39.4 kan falde yderligere til oversolgt zone (30) inden bounce; kortsigtet momentum negativt",
+        "Handelspolitisk vending (toldsuspensioner) kan sænke stålpriser og ramme marginerne hurtigt",
+        "41.5% YTD-stigning giver profit-taking-risiko fra institutionelle investorer"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Buy-the-dip i bekræftet bulltrend: KeyBanc-upgrade + Q2-guidance-beat + tarif-rygvind giver asymmetrisk risk/reward. Entry ved teknisk oversold med klar catalyst-pipeline.",
+        "price_target": 274,
+        "stop_loss": 222.14,
+        "expected_return_pct": 14.3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved 22.14 (2x ATR). Profitmål ved 74 (KeyBanc target). Sælg ved fundamentalt brud: stålpriskollaps under tarifsatser, Q2 EPS miss under .50, eller global recessions-signal."
+      }
+    },
+    {
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 78.56,
+      "confidence": 58,
+      "reasoning": "NDAQ er i en klar bearish primærtrend (MACD -2.437, kurs -11% under SMA50 og SMA200), men triple-oversold confluence — RSI 30.6, Stochastic 8.9 og Bollinger Band 4.4% — kombineret med høj volumen (3.04x) tyder på mulig capitulation. Positionen er kun 1 dag gammel, og stop på 2.99 er ikke trigget. Analytikerkonsensus er bullish på bounce (Zacks 26/6), og Texas Advisory Board-lancering viser strategisk vækst. Holder med TÆTTE øjne — en close under 52w low (6.51) vil trigge revurdering. Stop sænkes IKKE.",
+      "bull": [
+        "Triple-oversold: RSI 30.6, Stochastic 8.9, BB 4.4% — alle tre indikatorer i historisk bouncing-zone",
+        "Volumen 3.04x normal tyder på selling climax; mean-reversion mod BB-midpunkt (5.9) = +9.4% potentiale",
+        "Analytikerkonsensus opadgående på earnings-revisioner (Zacks 26/6)",
+        "Texas Advisory Board viser strategisk ekspansion ud over børsdrift"
+      ],
+      "bear": [
+        "Bearish primærtrend: MACD -2.437, kurs -10.9% under SMA50 og -11.5% under SMA200 — ingen støtte, kun modstand",
+        "ETF-konkurrence fra State Street og BlackRock presser Nasdaq-100 licensindtægter strukturelt",
+        "-13.4% momentum over 20 dage indikerer systematisk institutionel afvikling"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical"
+        ],
+        "thesis": "Mean-reversion trade i ekstremt oversold kvalitetsfranchise. Entry ved triple-oversold confluence med analyst-estimater der stiger mens kursen falder. Stop under 52w low giver begrænset downside.",
+        "price_target": 88,
+        "stop_loss": 72.99,
+        "expected_return_pct": 12.0,
+        "timeframe": "2-4 måneder",
+        "exit_conditions": "Stop ved 2.99 (2x ATR under entry). Profitmål SMA50 ca. 8. Sælg ved close under 52w low (6.51), ETF-licensing-tab der reducerer guidance, eller markedsbredt finanssektors-kollaps."
+      }
+    }
+  ]
+}
