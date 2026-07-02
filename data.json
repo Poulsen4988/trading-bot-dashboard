@@ -1,15 +1,15 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 143.15,
+    "cash": 10103.15,
     "currency": "DKK",
     "positions": [
       {
         "symbol": "NOVO-B.CO",
         "name": "Novo Nordisk B",
-        "shares": 95,
+        "shares": 65,
         "purchase_price": 265.15,
-        "current_price": 315.65,
+        "current_price": 332.0,
         "value": 25189.25,
         "last_review": {
           "date": "2026-06-26",
@@ -35,7 +35,7 @@
         "name": "FLSmidth",
         "shares": 30,
         "purchase_price": 494.4,
-        "current_price": 482.4,
+        "current_price": 476.6,
         "purchase_date": "2026-05-20",
         "investment_plan": {
           "term": "medium",
@@ -46,13 +46,13 @@
           "thesis": "Teknisk bounce-play fra ekstremt oversold niveau med EPS-recovery. Afventer Q2-rapport for at bekræfte om EPS-vækst er strukturel. Stop ved brud under SMA200/440.",
           "price_target": 560,
           "stop_loss": 440,
-          "expected_return_pct": 16.1,
+          "expected_return_pct": 17.5,
           "timeframe": "2-4 måneder",
-          "exit_conditions": "Sælg ved brud under 440 (stop-loss). Sælg ved Q2-rapport der bekræfter revenue-decline som strukturel. Overvej exit hvis SMA200 (482.8) brydes med volumen."
+          "exit_conditions": "Sælg ved brud under 440 (stop-loss). Sælg ved Q2-rapport der bekræfter revenue-decline som strukturel. Overvej exit hvis SMA200 brydes med volumen."
         },
         "last_review": {
-          "date": "2026-06-26",
-          "reasoning": "Positionens thesis er under pres: revenue -11.6% YoY er strukturelt bekymrende og JPMorgan skar kursmål med 40 DKK. Pris 482.4 er praktisk talt PÅ SMA200 (482.8) — et lille skridt fra exit-signal. Vi sælger IKKE i ekstremt oversold (stoch 15.2, RSI 39.9, BB 14.8%) — risikoen for faux-stop er høj ved disse niveauer. Vizsla Silver-kontrakten er en positiv katalysator. Holder til Q2-rapport (næste afgørende checkpoint) eller brud under 440 (stop-loss).",
+          "date": "2026-07-02",
+          "reasoning": "Stop-loss ikke udløst (476.6 > 440). Svag revenue-trend (-11.6% YoY) og JPMorgans kursmålsnedskæring er bekymrende, men nye kontraktvind (guldmine mill-lining-aftale og to separate Vizsla Silver Panuco-tildelinger) viser fortsat ordrebogsstyrke, og aktietilbagekøbet fortsætter. Kursen er stadig under både SMA50 og SMA200 — afventer Q2-rapport for at bekræfte om EPS-genopretningen er strukturel. Intet materielt triggerpunkt til salg endnu.",
           "confidence": 42
         }
       },
@@ -61,7 +61,7 @@
         "name": "Danske Bank",
         "shares": 27,
         "purchase_price": 330.5,
-        "current_price": 346.7,
+        "current_price": 359.1,
         "purchase_date": "2026-05-29",
         "investment_plan": {
           "term": "medium",
@@ -69,16 +69,16 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Billig nordisk storbank med 4.89% udbytte og genoprettet kapitalposition. Rentemiljø er fortsat positivt. Price target 375 DKK. Stop ved 320.",
+          "thesis": "Billig nordisk storbank med 4.82% udbytte og genoprettet kapitalposition. Rentemiljø er fortsat positivt. Price target 375 DKK. Stop ved 320.",
           "price_target": 375,
           "stop_loss": 320,
-          "expected_return_pct": 8.2,
+          "expected_return_pct": 4.4,
           "timeframe": "1-3 måneder",
           "exit_conditions": "Tag profit ved 375 DKK (kursmål). Sælg ved brud under 320. Revurder ved ECB-rentekutsignal der reducerer fremtidige nettorentemarginer."
         },
         "last_review": {
-          "date": "2026-06-26",
-          "reasoning": "P&L +4.9% og vi er 8.2% fra kursmål 375. RSI 77.3 og stoch 77.1 er overbought men Riksbank og ECB 'højere for længere'-signal støtter bankernes nettorentemarginer aktivt. Aktietilbagekøb løber. 4.89% dividende giver downside-buffer. Vi holder til kursmål 375 eller stop-loss 320. Begyndende 5d momentum-svækkelse (-0.37%) er et varsignal men ikke nok til exit endnu.",
+          "date": "2026-07-02",
+          "reasoning": "Thesis intakt: aktietilbagekøb kører, billig forward PE 11.2x, +22.8% over SMA200, 4.82% udbytte. Tæt på price target (359.1 vs 375, 4.4% tilbage) men rallyet sker på svagt volumen (0.69x) og RSI 72.3 er moderat overkøbt — værd at overvåge, men intet der udløser salg.",
           "confidence": 62
         }
       },
@@ -87,7 +87,7 @@
         "name": "AL Sydbank",
         "shares": 17,
         "purchase_price": 511.0,
-        "current_price": 556.5,
+        "current_price": 589.0,
         "purchase_date": "2026-06-05",
         "investment_plan": {
           "term": "medium",
@@ -95,16 +95,16 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Stærk regional dansk bank i aktiv rentemiljø med Forward PE 9x som primær value-driver. Aktietilbagekøb er positiv. Thesis valideres af Q2-rapport. Stop ved 485.",
-          "price_target": 580,
-          "stop_loss": 485,
-          "expected_return_pct": 4.2,
+          "thesis": "Stærk regional dansk bank med fortsat aktietilbagekøb. Kursen har allerede overgået det oprindelige mål (580); hæver target til 620 og stop-loss til 540 for at låse gevinst fast mens buyback-momentum fortsætter.",
+          "price_target": 620,
+          "stop_loss": 540,
+          "expected_return_pct": 5.3,
           "timeframe": "1-2 måneder",
-          "exit_conditions": "Tag profit ved 580. Sælg ved brud under 485. Sælg ved Q2 der bekræfter yderligere earnings-kompression kombineret med ECB-rentekutsignal."
+          "exit_conditions": "Tag profit ved 620. Sælg ved brud under 540 (opjusteret stop). Sælg ved Q2 der bekræfter yderligere earnings-kompression."
         },
         "last_review": {
-          "date": "2026-06-26",
-          "reasoning": "P&L +8.9% og kun 4.2% fra kursmål 580. Løbende aktietilbagekøb (uge 24 og 25) er en konkret bull-signal. Forward PE 9.04x = massiv rabat i sektoren. Men earnings -26.8% trods +65% revenue er fortsat en alvorlig advarsel om cost-presser. RSI 76.5 og stoch 83.1 er overbought men pris er over begge MA. Holder til kursmål eller Q2-bekræftelse af earnings-kompression.",
+          "date": "2026-07-02",
+          "reasoning": "Kursen har nu overgået det oprindelige price target (589 vs 580). Ugentlige aktietilbagekøb i mindst 4 uger i træk er et frisk bull-signal, forward PE 9.6x er fortsat billigt, og 4.25% udbytte understøtter casen. RSI 75.5/Stoch 94.3 er overkøbt efter en 15.9% en-måneds-rally, og earnings -26.8% YoY margin-kompression er fortsat en bekymring. Hæver price target og stop-loss for at afspejle den fortsatte buyback-støtte og låse gevinst fast.",
           "confidence": 60
         }
       },
@@ -113,7 +113,7 @@
         "name": "Carlsberg B",
         "shares": 13,
         "purchase_price": 817.0,
-        "current_price": 883.8,
+        "current_price": 925.2,
         "purchase_date": "2026-06-08",
         "investment_plan": {
           "term": "medium",
@@ -121,16 +121,16 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Consumer Defensive diversifikation med teknisk stærk optrend og World Cup-eksponering. SMA50 (845) er kritisk støtteniveau. Stop ved 770.",
-          "price_target": 900,
-          "stop_loss": 770,
-          "expected_return_pct": 1.8,
+          "thesis": "India IPO-filing er en reel katalysator som har drevet kursen forbi det oprindelige mål. Hæver target til 970 og stop-loss til 850 for at beskytte gevinsten mens IPO-processen afklares.",
+          "price_target": 970,
+          "stop_loss": 850,
+          "expected_return_pct": 4.8,
           "timeframe": "1-2 måneder",
-          "exit_conditions": "Tag profit ved 900. Sælg ved brud under 770. Revurder ved kvartalsrapport der skuffer på fundamental vækst. Tæt på target — tjek om vi skal hæve target."
+          "exit_conditions": "Tag profit ved 970. Sælg ved brud under 850 (opjusteret stop). Revurder ved negativ udvikling i India-gældstvisten eller aflysning af IPO-planer."
         },
         "last_review": {
-          "date": "2026-06-26",
-          "reasoning": "P&L +8.2% og kun 1.8% fra kursmål 900. Teknisk stærk optrend med MACD +4.29 og momentum +5.21% 5d. World Cup 2026-eksponering og Tilray-partnerskab er aktive kommercielle katalysatorer. Stoch 94.4 er ekstremt overbought men vi er tæt på target — ingen grund til at sælge 1.8% fra kursmål. Holder til 900-test. Sætter mental stop-loss på retest af SMA50 (845) som exit-signal.",
+          "date": "2026-07-02",
+          "reasoning": "Kursen har overgået det oprindelige price target (925.2 vs 900) på bekræftet volumen (1.87x average) efter den fortrolige India-IPO-filing — en reel, ny katalysator siden købet. Hæver price target til 970 og stop-loss til 850 for at låse gevinst fast, mens IPO-processen udspiller sig. India-gældstvisten ($400M) og den ikke-fastlagte IPO-tidslinje er fortsat risici der overvåges.",
           "confidence": 62
         }
       },
@@ -139,7 +139,7 @@
         "name": "Royal Unibrew",
         "shares": 38,
         "purchase_price": 412.6,
-        "current_price": 431.8,
+        "current_price": 460.8,
         "purchase_date": "2026-06-23",
         "investment_plan": {
           "term": "medium",
@@ -147,16 +147,16 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Consumer Defensive value-play med 33% PE-rabat og EPS-vækst. Afventer SMA200-reklamation (502) som langsigtet katalysator. PepsiCo-risiko i 2028 overvåges. Stop ved 380.",
+          "thesis": "Value/growth-kombination, men rallyet er ekstremt overkøbt og har endnu ikke bekræftet en trendvending (stadig under SMA200). Hæver stop-loss til 410 for at beskytte gevinsten givet forhøjet pullback-risiko.",
           "price_target": 502,
-          "stop_loss": 380,
-          "expected_return_pct": 16.3,
+          "stop_loss": 410,
+          "expected_return_pct": 8.9,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 380. Tag profit nær SMA200 (502). Reducer ved Q-rapport med revenue-skuffelse eller negativ PepsiCo-opdatering."
+          "exit_conditions": "Sælg ved brud under 410 (opjusteret stop). Tag profit nær SMA200 (502). Reducer ved Q-rapport med revenue-skuffelse."
         },
         "last_review": {
-          "date": "2026-06-26",
-          "reasoning": "P&L +4.7%. Thesis om value-recovery fra 52-ugers support er delvist intakt men PepsiCo-aftaleophøret i 2028 er en langsigtet strukturel negativ der reducerer langsigtet conviction. PE fwd 11.4x og +40% EPS er attraktivt, men 14% under SMA200 viser at markedet ikke tror på recovery endnu. Stoch 91.4 er overbought kortsigtet. Holder med stop 380 — 11.8% nedenunder giver god buffer.",
+          "date": "2026-07-02",
+          "reasoning": "RSI 82.9 er den mest ekstreme overkøbte aflæsning i porteføljen, volumen er under gennemsnittet (0.79x) trods rallyet, og kursen er fortsat -8.1% under SMA200 — den oprindelige thesis' 'SMA200-reklamation'-katalysator er endnu IKKE indtruffet, så dette ligner stadig et bear-market bounce snarere end en bekræftet trendvending. Hæver stop-loss fra 380 til 410 for at beskytte den nuværende gevinst (+11.7%) givet den forhøjede pullback-risiko.",
           "confidence": 55
         }
       },
@@ -165,7 +165,7 @@
         "name": "Tryg",
         "shares": 75,
         "purchase_price": 150.3,
-        "current_price": 150.3,
+        "current_price": 150.6,
         "purchase_date": "2026-06-26",
         "investment_plan": {
           "term": "medium",
@@ -173,21 +173,21 @@
             "fundamental",
             "technical"
           ],
-          "thesis": "Defensiv insurance-position med 5.73% udbytte som primær value-driver. Porteføljediversifikation væk fra banker og consumer-sektor. Nær 52-ugers support giver asymmetrisk risk/reward. Price target 165 DKK (+9.8%).",
+          "thesis": "Defensiv insurance-position med 5.82% udbytte som primær value-driver. Porteføljediversifikation væk fra banker og consumer-sektor. Price target 165 DKK.",
           "price_target": 165,
           "stop_loss": 140,
-          "expected_return_pct": 9.8,
+          "expected_return_pct": 9.6,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 140 DKK (stop-loss). Tag profit nær 165 DKK. Sælg ved stor forsikringsskade-event der rammer combined ratio markant. Revurder ved rentekutsignal."
+          "exit_conditions": "Sælg ved brud under 140 DKK (stop-loss). Tag profit nær 165 DKK. Sælg ved stor forsikringsskade-event der rammer combined ratio markant."
         },
         "last_review": {
-          "date": "2026-06-26",
-          "reasoning": "Tryg er den eneste scan-tier kandidat der ikke er overbought: RSI 63.6, stoch 61.3, BB 54.2% = moderat positioneret. 5.73% dividende er den højeste i C25's forsikringssektor og giver umiddelbar indkomst. Tæt på 52-ugers støttezone (kun 2.6% over lavpunkt) begrænser nedsiderisikoen. Q2 pre-silent newsletter udsendt — ingen negativ signal fra management. Insurance-sektor er ikke repræsenteret i porteføljen og diversificerer fra Financial Services (banker). 75 aktier @ 150.3 = 11.272 DKK bruger næsten al tilgængeligt cash konstruktivt.",
+          "date": "2026-07-02",
+          "reasoning": "Købt for 6 dage siden — thesis (indkomst, sektordiversifikation væk fra banker) er intakt, ingen materielle ændringer. RSI 47.9 er neutral, kursen er stort set uændret siden købet (+0.2%). Ingen trigger til at sælge eller ændre planen.",
           "confidence": 63
         }
       }
     ],
-    "last_updated": "2026-07-02 18:02 UTC"
+    "last_updated": "2026-07-02 19:42 UTC"
   },
   "history": [
     {
@@ -384,7 +384,7 @@
     },
     {
       "date": "2026-07-02",
-      "portfolio_value": 102593.6
+      "portfolio_value": 106522.85
     }
   ],
   "trades": [
@@ -3889,6 +3889,122 @@
         "summary": "Tryg er den eneste scan-tier kandidat der ikke er overbought: RSI 63.6, stoch 61.3, BB 54.2% = moderat positioneret. 5.73% dividende er den højeste i C25's forsikringssektor og giver umiddelbar indkomst. Tæt på 52-ugers støttezone (kun 2.6%"
       },
       "id": 217,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-02",
+      "action": "SELL",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": 30,
+      "price": 332.0,
+      "value": 9960.0,
+      "reasoning": {
+        "verdict": "SELL",
+        "confidence": 68,
+        "summary": "Delvis profithjemtagning (30 af 95 aktier) — ikke en thesis-reversering. Positionen udgjorde 29.6% af porteføljen, langt den højeste koncentration i C25-porteføljen, og teknisk er aktien ekstremt overkøbt (RSI 79.3, Stoch 98.8) efter en ral"
+      },
+      "cost_basis_dkk": 7954.5,
+      "realized_pnl_dkk": 2005.5,
+      "realized_pnl_pct": 25.21,
+      "holding_days": null,
+      "id": 218,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-02",
+      "action": "HOLD",
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "shares": null,
+      "price": 476.6,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 42,
+        "summary": "Stop-loss ikke udløst (476.6 > 440). Svag revenue-trend (-11.6% YoY) og JPMorgans kursmålsnedskæring er bekymrende, men nye kontraktvind (guldmine mill-lining-aftale og to separate Vizsla Silver Panuco-tildelinger) viser fortsat ordrebogsst"
+      },
+      "id": 219,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-02",
+      "action": "HOLD",
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "shares": null,
+      "price": 359.1,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 62,
+        "summary": "Thesis intakt: aktietilbagekøb kører, billig forward PE 11.2x, +22.8% over SMA200, 4.82% udbytte. Tæt på price target (359.1 vs 375, 4.4% tilbage) men rallyet sker på svagt volumen (0.69x) og RSI 72.3 er moderat overkøbt — værd at overvåge,"
+      },
+      "id": 220,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-02",
+      "action": "HOLD",
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "shares": null,
+      "price": 589.0,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Kursen har nu overgået det oprindelige price target (589 vs 580). Ugentlige aktietilbagekøb i mindst 4 uger i træk er et frisk bull-signal, forward PE 9.6x er fortsat billigt, og 4.25% udbytte understøtter casen. RSI 75.5/Stoch 94.3 er over"
+      },
+      "id": 221,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-02",
+      "action": "HOLD",
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "shares": null,
+      "price": 925.2,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 62,
+        "summary": "Kursen har overgået det oprindelige price target (925.2 vs 900) på bekræftet volumen (1.87x average) efter den fortrolige India-IPO-filing — en reel, ny katalysator siden købet. Hæver price target til 970 og stop-loss til 850 for at låse ge"
+      },
+      "id": 222,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-02",
+      "action": "HOLD",
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "shares": null,
+      "price": 460.8,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 55,
+        "summary": "RSI 82.9 er den mest ekstreme overkøbte aflæsning i porteføljen, volumen er under gennemsnittet (0.79x) trods rallyet, og kursen er fortsat -8.1% under SMA200 — den oprindelige thesis' 'SMA200-reklamation'-katalysator er endnu IKKE indtruff"
+      },
+      "id": 223,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-02",
+      "action": "HOLD",
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "shares": null,
+      "price": 150.6,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 63,
+        "summary": "Købt for 6 dage siden — thesis (indkomst, sektordiversifikation væk fra banker) er intakt, ingen materielle ændringer. RSI 47.9 er neutral, kursen er stort set uændret siden købet (+0.2%). Ingen trigger til at sælge eller ændre planen."
+      },
+      "id": 224,
       "is_new": true
     }
   ],
