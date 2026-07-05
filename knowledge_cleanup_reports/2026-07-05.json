@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-05",
+  "files_reviewed": 25,
+  "files_cleaned": 5,
+  "total_items_removed": 6,
+  "per_file": [
+    {
+      "path": "knowledge/DANSKE_xcse.json",
+      "removed_count": 1,
+      "kept_count": 20,
+      "removed_items": [
+        {"title": "Governments Sell Bonds at Record Pace as Spending Soars", "date": "2026-06-10", "reason": "duplicate_url"}
+      ]
+    },
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 19,
+      "removed_items": [
+        {"title": "Selskabsvedtægter for Genmab A/S", "date": "2026-06-15", "reason": "low_value"}
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 1,
+      "kept_count": 33,
+      "removed_items": [
+        {"title": "UPDATED: Maersk shifts SoCal import containers to UP from BNSF", "date": "2026-06-29", "reason": "duplicate_url"}
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 33,
+      "removed_items": [
+        {"title": "UPDATED: Maersk shifts SoCal import containers to UP from BNSF", "date": "2026-06-29", "reason": "duplicate_url"}
+      ]
+    },
+    {
+      "path": "knowledge/TRYG_xcse.json",
+      "removed_count": 2,
+      "kept_count": 2,
+      "removed_items": [
+        {"title": "Consensus estimates on Tryg A/S", "date": "2026-07-03", "reason": "low_value"},
+        {"title": "Tryg A/S - Q2 2026 pre-silent newsletter", "date": "2026-06-24", "reason": "low_value"}
+      ]
+    }
+  ],
+  "summary": "Gennemgik alle 25 knowledge/*.json filer. 6 items fjernet i 5 filer: 3 duplicate_url (DANSKE, MAERSKa, MAERSKb havde samme artikel dobbelt pga. opdateret/duplikeret overskrift med identisk URL), og 3 low_value (GMAB: generisk vedtægts-arkivering; TRYG: to routine analyst/newsletter-notitser uden reelt indhold). Resten af kandidaterne (stale og low_value) blev bevaret konservativt, herunder alle indtjeningsrapporter, kliniske forsøgsresultater (Genmab EPCORE/epcoritamab), kapitalstrukturændringer, ledelsesskift og regulatoriske godkendelser (Novo Nordisk CHMP/Wegovy). NOVOb_xcse.json (311 items, den største fil) blev fuldt gennemgået uden fund af dubletter, stale eller low-value kandidater der kvalificerede til sletning."
+}
