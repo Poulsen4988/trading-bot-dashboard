@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-05",
+  "files_reviewed": 45,
+  "files_cleaned": 1,
+  "total_items_removed": 3,
+  "per_file": [
+    {
+      "symbol": "BLK",
+      "path": "us/knowledge/BLK.json",
+      "items_removed": 3,
+      "reasons": [
+        "low_value"
+      ],
+      "details": "Fjernede 3 generiske Zacks sector/style-box ETF-rapporter (\"Should You Invest in the iShares...\") med trivielle 1-linje summaries uden selskabsspecifik substans."
+    }
+  ],
+  "summary": "Gennemgik 45 us/knowledge/*.json filer. Kun BLK.json havde reelle kandidater (0 duplicate_url/duplicate_title, 0 stale, 3 low_value). De 3 low-value items var generiske Zacks ETF-sektor/style-box skabelonartikler med trivielle summaries og blev slettet. Ingen stale eller duplikat-kandidater fundet i nogen filer. Alt materielt indhold (earnings, kapitalstruktur, M&A, regulatoriske forhold, ledelsesskift, strategiske udmeldinger) er bevaret uændret."
+}
