@@ -1,0 +1,123 @@
+{
+  "date": "2026-07-07",
+  "stocks": {
+    "NUE": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": null,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "KeyBanc opgraderede til Overweight (24/6) med kursmål $274 — +22.4% upside fra $223.92 efter pullback; institutionelt opkøbssignal fortsat i kraft.",
+        "Q2 EPS guidance $4.70–$4.80 bekræfter fortsat operationel styrke; resultatet ventes offentliggjort senere i juli.",
+        "Ekstremt oversolgt kortsigtet setup: RSI 21.1, Stochastic 16.7 og BB-position 14.5% — tre sammenfaldende oversold-signaler peger på udtømt sælgerpres og potentiel mean-reversion mod BB-midpunkt (~$243.7, svarende til +8.8%).",
+        "Langsigtet trend intakt: pris +24% over SMA200 ($180.53) trods den seneste 20-dages korrektion — den primære opadgående trend er ikke brudt."
+      ],
+      "bear": [
+        "Kortsigtet momentum er reelt negativt: -14.4% over 20 dage, pris -5.5% under SMA50 ($236.93), og MACD er negativ (-4.31) — trenden er endnu ikke vendt, kun oversolgt.",
+        "Stålpriser og -efterspørgsel er tarif-/konjunkturfølsomme; et miss på Q2-guidance eller svækket infrastruktur/AI-datacenter-efterspørgsel kan udløse yderligere nedtur mod BB lower-band ($215.8) eller lavere.",
+        "Data mangler for P/E, revenue growth og earnings growth — begrænset fundamental bekræftelse ud over guidance-tal."
+      ],
+      "summary": "NUE handles på $223.92 (seneste lukkekurs 6. juli — dagens US-prisdata er endnu ikke hentet af 'US Bot - Data'-pipelinen). Aktien er faldet skarpt de seneste 20 dage (-14.4%) og handler nu -5.5% under SMA50, men den langsigtede trend er stadig intakt (+24% over SMA200). Tre kortsigtede oscillatorer (RSI 21.1, Stochastic 16.7, BB-position 14.5%) signalerer samstemmende ekstremt oversolgt niveau, hvilket historisk øger sandsynligheden for et teknisk bounce. KeyBanc's Overweight-opgradering (kursmål $274) og den hævede Q2 EPS-guidance ($4.70-4.80) giver fundamental støtte til et sådant bounce. En bevægelse mod BB-midpunktet (~$243.7) ville alene give +8.8%; kombineret med en positiv Q2-reaktion (rapport ventes senere i juli) er +10% realistisk inden for få uger. Nedsiderisikoen er, at den negative MACD og prisen under SMA50 reflekterer en reel trendændring snarere end støj — et brud under BB lower-band ($215.8) ville pege mod yderligere nedtur.",
+      "key_risk": "Q2-resultat/guidance skuffer, eller stålpriserne falder pga. svækket efterspørgsel/handelspolitik — det ville forlænge den nuværende -14% 20-dages nedtur og bryde SMA200-støtten.",
+      "technical": {
+        "rsi": 21.1,
+        "macd_line": -4.3104,
+        "bb_position": 14.5,
+        "bb_upper": 271.5403,
+        "bb_mid": 243.6829,
+        "bb_lower": 215.8255,
+        "atr": 8.5352,
+        "stoch": 16.7,
+        "sma50": 236.93,
+        "sma200": 180.53,
+        "sma50_vs_price": -5.49,
+        "sma200_vs_price": 24.04,
+        "momentum_5d": -6.39,
+        "momentum_20d": -14.42,
+        "pct_from_52w_high": -17.14,
+        "pct_from_52w_low": 72.1,
+        "volume_ratio": 0.77
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-04",
+          "title": "Nucor Corporation's Quarterly Earnings Preview: What You Need to Know",
+          "source": "Barchart",
+          "summary": "Q2-resultat ventes senere i juli; analytikere forventer solid EPS-vækst."
+        },
+        {
+          "date": "2026-06-28",
+          "title": "KeyBanc Sees Nucor (NUE) as Compelling After Recent Pullback, Upgrades Stock",
+          "source": "Insider Monkey",
+          "summary": "KeyBanc opgraderede NUE til Overweight med kursmål $274 — indikerer betydelig upside."
+        },
+        {
+          "date": "2026-06-26",
+          "title": "How Stronger Q2 EPS Guidance At Nucor (NUE) Has Changed Its Investment Story",
+          "source": "Simply Wall St.",
+          "summary": "Q2 EPS guidance $4.70–$4.80 pr. aktie bekræfter fortsat operationel styrke."
+        }
+      ]
+    },
+    "NDAQ": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": null,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Kraftig 5-dages rebound (+7.52%) fra oversolgt niveau — momentum er ved at vende, RSI (41.6) og Stochastic (48.9) er tilbage i neutralt territorium.",
+        "Rekord-IPO-aktivitet: stærkeste første halvår for US-noteringer nogensinde ($129,3 mia. rejst, 7 af årets 10 største IPO'er på Nasdaq) — strukturel medvind til listing-indtægter.",
+        "TD Cowen fastholder Buy-anbefaling (dog sænket kursmål til $98 fra $104) — stadig ca. +16% upside fra $84.47.",
+        "Q2-resultat ventes senere i juli med tocifret EPS-vækst ifølge analytikerkonsensus."
+      ],
+      "bear": [
+        "Strukturel konkurrencetrussel: CFTC's godkendelse af 'perpetual futures' har udløst en bredere sell-off i børs-aktier og kan tage markedsandele/omsætning fra traditionelle exchanges som NDAQ.",
+        "Pris er fortsat under begge toneangivende glidende gennemsnit (SMA50 -3.5%, SMA200 -4.5%) — den primære trend er endnu ikke bekræftet vendt, kun en kortsigtet bounce.",
+        "Sænket kursmål (TD Cowen $104→$98) signalerer reduceret analytiker-konviktion trods fortsat Buy-rating."
+      ],
+      "summary": "NDAQ handles på $84.47 (seneste lukkekurs 6. juli — dagens data afventer). Aktien har rebounded kraftigt de seneste 5 dage (+7.52%) fra et tidligere oversolgt niveau, og de kortsigtede oscillatorer er nu neutrale (RSI 41.6, Stochastic 48.9, BB-position 53.4%). Rekordhøj IPO-aktivitet på Nasdaqs børs ($129,3 mia. rejst i H1, 7 af de 10 største IPO'er) giver et stærkt fundamentalt argument for fortsat indtjeningsvækst, og TD Cowen fastholder Buy trods et sænket kursmål på $98 (+16% upside). Q2-resultat ventes senere i juli med tocifret EPS-vækst. Modvægten er strukturel: CFTC's godkendelse af 'perpetual futures' har udløst en sell-off på tværs af børssektoren, og NDAQ handler fortsat under både SMA50 og SMA200 — den primære trend er ikke bekræftet vendt. Kombinationen af den igangværende bounce og en positiv Q2-reaktion kunne løfte kursen mod SMA50/SMA200-niveauet (~$87-88) og videre mod $98-målet, hvilket dækker +10%. Nedsiderisikoen er, at perp-futures-truslen eskalerer eller Q2 skuffer, hvilket kunne sende kursen tilbage mod BB lower-band ($76.16).",
+      "key_risk": "Regulatorisk/konkurrencemæssig trussel fra 'perpetual futures' (CFTC-godkendt) eskalerer og presser Nasdaqs kerneforretning, eller Q2-resultatet skuffer og bekræfter den fortsatte trend under SMA50/SMA200.",
+      "technical": {
+        "rsi": 41.6,
+        "macd_line": -1.7724,
+        "bb_position": 53.4,
+        "bb_upper": 91.7214,
+        "bb_mid": 83.9388,
+        "bb_lower": 76.1561,
+        "atr": 3.2448,
+        "stoch": 48.9,
+        "sma50": 87.54,
+        "sma200": 88.46,
+        "sma50_vs_price": -3.5,
+        "sma200_vs_price": -4.51,
+        "momentum_5d": 7.52,
+        "momentum_20d": -4.16,
+        "pct_from_52w_high": -16.46,
+        "pct_from_52w_low": 10.35,
+        "volume_ratio": 0.65
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-05",
+          "title": "Nasdaq (NDAQ): The Most Oversold Strong Buy-Rated Stock to Invest In Now",
+          "source": "Insider Monkey",
+          "summary": "TD Cowen sænkede kursmål til $98 fra $104 men fastholdt Buy."
+        },
+        {
+          "date": "2026-07-03",
+          "title": "Why Nasdaq (NDAQ) Is Up 9.0% After Record IPO Haul And Trump Accounts Spotlight",
+          "source": "Simply Wall St.",
+          "summary": "Rekordstærkt første halvår for US-noteringer ($129,3 mia. rejst) løfter kursen."
+        },
+        {
+          "date": "2026-07-01",
+          "title": "Cboe Seeks to List Prediction Market Type Options on Earnings Metrics",
+          "source": "Bloomberg",
+          "summary": "Konkurrent Cboe søger godkendelse til nye derivatprodukter — øget konkurrence i exchange-sektoren."
+        }
+      ]
+    }
+  }
+}
