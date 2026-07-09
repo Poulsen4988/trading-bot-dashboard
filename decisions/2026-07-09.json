@@ -1,0 +1,239 @@
+{
+  "date": "2026-07-09",
+  "market_summary": "Ingen stop-loss er udløst, og alle otte tese er fortsat intakte. Markedet er bredt overkøbt (RSI 70-90 på flere navne: RBREW 83, GMAB 82, ISS 80, NOVO 77), men flere positioner har reelle, ikke-tekniske katalysatorer under udvikling (Carlsberg Sapporo-JV/India-IPO, Genmab EU-godkendelse + Phase 3-data, ISS guidance/kontraktforlængelse, Danske/Sydbank buybacks). Kontantbufferen er meget lav (2.655 DKK, kun 155 DKK ledig efter 2.500 DKK minimumsreserve), så der åbnes ingen nye positioner i dag uanset COLO-B's BULL-signal — budgettet rækker ikke til en enkelt aktie. Tryg har regnskab i morgen (10/7) og Danske Bank den 17/7; ingen af delene udløser handling før tallene foreligger.",
+  "decisions": [
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 323.15,
+      "confidence": 62,
+      "reasoning": "Thesis intakt: 67% earnings-vækst, ny Vivani-implantatpartnerskab og UBS' overweight-opgradering af europæisk pharma understøtter casen. RSI 76.9/Stoch 79.2 er overkøbt og amerikansk oral Wegovy-preskriptionsdata svækkes, så positionen holdes uændret uden tilføjelse.",
+      "bull": [
+        "Forward PE 15.1x (40% sektorrabat) kombineret med +67% earnings-vækst og +24% omsætningsvækst",
+        "Nyt Vivani long-acting semaglutide-implantat-partnerskab udvider GLP-1-pipelinen, UBS gentager overweight på europæisk pharma"
+      ],
+      "bear": [
+        "RSI 77/Stoch 79 er overkøbt, og Deutsche Banks ugentlige tracker viser fortsat opbremsning i amerikanske oral Wegovy-recepter"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "GLP-1-leder med strukturelt trendbrud over SMA200. Oral Wegovy-adoption som primær vækstmotor. Deep-value PE 15.1x med 67% EPS-vækst. Price target 350 DKK.",
+        "price_target": 350,
+        "stop_loss": 295,
+        "expected_return_pct": 8.3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 295 (låser ~11% gevinst). TRIM hvis vægt overstiger 30%. Tag profit nær 350. Sælg ved fortsat forværring i US GLP-1-preskriptionsdata relativt til Eli Lilly."
+      }
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 460.6,
+      "confidence": 52,
+      "reasoning": "Oversold bounce-thesis (RSI 31.9/Stoch 2.4) understøttet af nye mining-kontrakter (guldmine, Vizsla Silver Panuco) og aktiv buyback, men dagens -4.0% fald og JPMorgans kursmålsnedjustering viser splittede analytikersyn. Stop-loss (440) er ikke udløst — holder til Q2-rapport bekræfter om EPS-væksten er strukturel.",
+      "bull": [
+        "Stoch 2.4/RSI 32 er dybt oversold ved en 23% forward-PE-rabat med +195% earnings-vækst",
+        "Nye flerårige mining-kontrakter (guldmine mill linings, Vizsla Silver Panuco) viser sund ordreindgang, understøttet af aktiv buyback"
+      ],
+      "bear": [
+        "Omsætningsvækst er negativ (-11.6%), og dagens -4.0% fald med JPMorgans kursmålsnedjustering viser splittede analytikersyn"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Teknisk bounce-play fra oversold niveau med EPS-recovery. Afventer Q2-rapport for at bekræfte om EPS-vækst er strukturel. Stop ved brud under 440.",
+        "price_target": 500,
+        "stop_loss": 440,
+        "expected_return_pct": 8.6,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 440 (stop-loss). Sælg ved Q2-rapport der bekræfter revenue-decline som strukturel fremfor midlertidig."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 360.8,
+      "confidence": 58,
+      "reasoning": "Fortsat uptrend nær 52-ugers høj med konsistente buybacks og 4.61% udbytte, understøttet af Riksbankens hawkish rentepause. Earnings- og omsætningsvækst er dog flad, så rallyet løber foran fundamentals. Regnskab 17/7 — ingen handling før tallene foreligger.",
+      "bull": [
+        "Handler nær 52-ugers høj, +22.3% over SMA200, med konsistente ugentlige buybacks og 4.61% udbytte",
+        "Sveriges centralbank fastholder renten med hawkish tone, gunstigt for nordiske bankers rentemarginal"
+      ],
+      "bear": [
+        "Både earnings-vækst (+1.4%) og omsætningsvækst (+0.9%) er stort set flad — rallyet løber foran den fundamentale udvikling"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Billig nordisk storbank med udbytte og genoprettet kapitalposition. Rentemiljø er fortsat positivt. Price target 375 DKK.",
+        "price_target": 375,
+        "stop_loss": 335,
+        "expected_return_pct": 3.9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Tag profit ved 375 DKK. Sælg ved brud under 335 (opjusteret stop). Revurder ved regnskab 17/7 hvis flad earnings-vækst fortsætter, eller ved ECB-rentesignal der reducerer nettorentemarginer."
+      }
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 594.0,
+      "confidence": 63,
+      "reasoning": "Bekræftet uptrend nær 52-ugers høj til stadig billig 9.65x forward PE, aktivt understøttet af ugentlige buybacks og insider-transaktioner. Negativ earnings-vækst (-26.8%) og aftagende momentum, men ingen stop-loss udløst — holder positionen uændret.",
+      "bull": [
+        "Handler kun -2.9% fra 52-ugers høj, komfortabelt over SMA50/SMA200, til meget billig 9.65x forward PE og +65% omsætningsvækst",
+        "Vedvarende ugentlige aktietilbagekøb og løbende insidertransaktioner signalerer ledelsens tillid til værdiansættelsen"
+      ],
+      "bear": [
+        "Earnings-vækst er negativ (-26.8%), og momentum-divergensen (-15pp mellem 5- og 20-dages) tyder på at rallyet er ved at aftage"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Stærk regional dansk bank med fortsat aktietilbagekøb. Target 620, stop-loss 540 for at låse gevinst fast.",
+        "price_target": 620,
+        "stop_loss": 540,
+        "expected_return_pct": 4.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Tag profit ved 620. Sælg ved brud under 540 (opjusteret stop). Sælg ved Q-rapport der bekræfter yderligere earnings-kompression."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 929.6,
+      "confidence": 66,
+      "reasoning": "To konkrete, cash-genererende katalysatorer i samme uge: Sapporo-JV (643 mio. USD, Carlsberg beholder 75% kontrol) og fortrolig India IPO-filing (op til 700 mio. USD). RSI 71.6 nærmer sig overkøbt, men positionen er tæt på target (970) — holder uændret og lader katalysatorerne udspille sig.",
+      "bull": [
+        "Sapporo JV bringer 643 mio. USD kontant mens Carlsberg beholder 75% kontrol og fuld operationel ledelse i SE Asien/Hong Kong",
+        "Fortrolig India IPO-filing (op til 700 mio. USD) tilføjer endnu en unlock-katalysator, kurs trender godt over begge glidende gennemsnit"
+      ],
+      "bear": [
+        "RSI 71.6 nærmer sig overkøbt, og både omsætnings- og earnings-vækst er ikke tilgængelige, hvilket begrænser fundamental synlighed"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "India IPO-filing er en reel katalysator. Target 970, stop-loss 850 for at beskytte gevinsten mens IPO-processen afklares.",
+        "price_target": 970,
+        "stop_loss": 850,
+        "expected_return_pct": 4.3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Tag profit ved 970. Sælg ved brud under 850 (opjusteret stop). Revurder ved negativ udvikling i India-gældstvisten eller aflysning af IPO-planer."
+      }
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 466.4,
+      "confidence": 52,
+      "reasoning": "Rallyet (+5.0% 5-dage, +11.5% 20-dage) er understøttet af +40% earnings-vækst og en 28% sektorrabat, samt aktiv buyback og kapitalreduktion. RSI 83.2/Stoch 87.9 er dog betydeligt overkøbt og stadig under SMA200 (501) — holder positionen uændret uden tilføjelse.",
+      "bull": [
+        "+5.0% femdages-rally (+11.5% over 20 dage) med +40% earnings-vækst til en 28% sektorrabat forward PE viser reel fundamental støtte bag momentum",
+        "Løbende aktietilbagekøb og kapitalreduktion signalerer ledelsens tillid"
+      ],
+      "bear": [
+        "RSI 83/Stoch 88 er markant overkøbt — det aktuelle træk er udstrakt og moden til en pause eller tilbagetrækning"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Value/growth-kombination, men rallyet er ekstremt overkøbt og har endnu ikke bekræftet en trendvending (stadig under SMA200). Opjusteret stop for at beskytte gevinst.",
+        "price_target": 502,
+        "stop_loss": 430,
+        "expected_return_pct": 7.6,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 430 (opjusteret stop). Tag profit nær SMA200 (502). Reducer ved Q-rapport med omsætningsskuffelse."
+      }
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 152.8,
+      "confidence": 50,
+      "reasoning": "Lav-volatilitets konsolidering (ATR 1.94) lige over SMA50 fortsætter uden klar katalysator i nogen retning, og earnings-vækst er negativ (-13.9%). Regnskab i morgen (10/7) — defensiv, mindre position (10.8% vægt) holdes gennem regnskabet uden ændring.",
+      "bull": [
+        "Lav-volatilitets konsolidering (ATR 1.94) lige over SMA50 tyder på en stabil base for denne defensive forsikringsposition"
+      ],
+      "bear": [
+        "Earnings-vækst er negativ (-13.9%) uden frisk katalysator i nyere nyheder, og prisen er fortsat lige under SMA200"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Defensiv insurance-position med udbytte som primær value-driver. Porteføljediversifikation væk fra banker og consumer-sektor. Price target 165 DKK.",
+        "price_target": 165,
+        "stop_loss": 140,
+        "expected_return_pct": 8.0,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 140 DKK (stop-loss). Tag profit nær 165 DKK. Revurder efter regnskab 10/7 ved svag combined ratio eller guidance-nedjustering."
+      }
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 286.6,
+      "confidence": 67,
+      "reasoning": "Fortsat trifecta af positive katalysatorer — opjusteret 2026-guidance, udvidet buyback og tiårig Deutsche Telekom-kontraktforlængelse. RSI 79.9/Stoch 88.3 er overkøbt nær 52-ugers høj og flad underliggende earnings-vækst, så positionen holdes uden tilføjelse indtil et pullback.",
+      "bull": [
+        "Opjusteret 2026 finansiel outlook parret med et udvidet buyback-program signalerer reel ledelsestillid",
+        "Deutsche Telekom-partnerskab forlænget til 2035 låser en stor langsigtet kontrakt fast, kurs trender +25% over SMA200"
+      ],
+      "bear": [
+        "RSI 79.9/Stoch 88.3 er overkøbt, og underliggende earnings-/omsætningsvækst er stort set flad trods guidance-opjusteringen"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Sjælden trifecta af positive katalysatorer — opjusteret guidance, udvidet buyback og en tiårig kontraktforlængelse med Deutsche Telekom — mens aktien nærmer sig 52-ugers høj.",
+        "price_target": 320,
+        "stop_loss": 265,
+        "expected_return_pct": 11.7,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 265 (under SMA50-niveau). Tag profit nær 320. Revurder ved skuffende Capital Markets Day (19/6-opfølgning) eller hvis omsætningsvæksten forbliver flad."
+      }
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1892.0,
+      "confidence": 60,
+      "reasoning": "To store, tilbagevendende positive katalysatorer — EU-godkendelse af Tepkinly i follikulært lymfom og positive Phase 3 DLBCL-data — retfærdiggør rallyet, men RSI 82.3/Stoch 90.5 er ekstremt overkøbt efter en nyhedsdrevet stigning. Holder uændret; forhøjet pullback-risiko på kort sigt trods styrket fundamental historie.",
+      "bull": [
+        "EU-godkendelse af Tepkinly i follikulært lymfom plus positive Phase 3 DLBCL-data (epcoritamab + lenalidomide der møder primært endpoint) er to store, tilbagevendende kliniske/regulatoriske sejre",
+        "H.C. Wainwright hævede kursmål efter forsøgsresultaterne, og omsætningsvæksten er stærk på +25.3%"
+      ],
+      "bear": [
+        "RSI 82.3/Stoch 90.5 er ekstremt overkøbt efter den nyhedsdrevne rally, og earnings-vækst er fortsat dybt negativ (-72.8%)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Genmabs rally er understøttet af en reel Phase 3-sejr i lymfom med statistisk signifikante effektdata, forstærket af stærk revenue-vækst. Diversificerer Healthcare-eksponering væk fra ren GLP-1.",
+        "price_target": 2150,
+        "stop_loss": 1760,
+        "expected_return_pct": 13.6,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 1760 (ca. 2x ATR under entry). Tag profit nær 2150. Revurder ved negativ opfølgningsdata (sikkerhedssignal, regulatorisk modvind) eller sell-the-news pullback der bryder teknisk struktur."
+      }
+    }
+  ]
+}
