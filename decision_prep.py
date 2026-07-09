@@ -252,6 +252,11 @@ def main() -> None:
     }
 
     out["instructions"] = (
+        "EFFEKTIVITET (VIGTIGT — denne rutine har tidligere fejlet ved at bruge for lang tid før output blev skrevet): "
+        "Vær beslutsom og kortfattet. Læs dette output ÉN gang; gentag det ikke i din tænkning. "
+        "Hold begrundelser på 1-2 sætninger pr. position og pr. køb. "
+        "Skriv decisions-filen så tidligt som muligt og kør derefter paper_trader.py med det samme — "
+        "prioritér ALTID at få decisions-filen skrevet + paper_trader kørt frem for udtømmende analyse. "
         f"Du skal skrive decisions/{date_str}.json via github_store med dine beslutninger. "
         "Format: {date, market_summary, decisions: [{symbol, name, action, shares, price, confidence, "
         "reasoning, bull, bear, investment_plan: {term, basis, thesis, price_target, stop_loss, "
