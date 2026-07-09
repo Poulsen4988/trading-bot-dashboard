@@ -253,6 +253,11 @@ def main() -> None:
     }
 
     out["instructions"] = (
+        "EFFICIENCY (IMPORTANT — this routine has failed before by spending too long before writing output): "
+        "Be decisive and concise. Read this output ONCE; do not repeat it in your reasoning. "
+        "Keep reasoning to 1-2 sentences per position and per buy. "
+        "Write the decisions file as EARLY as possible and then run paper_trader.py immediately — "
+        "ALWAYS prioritise getting the decisions file written + paper_trader run over exhaustive analysis. "
         f"You must write us/decisions/{date_str}.json via github_store with your decisions. "
         "Format: {date, market_summary, decisions: [{symbol, name, action, shares, price, confidence, "
         "reasoning, bull, bear, investment_plan: {term, basis, thesis, price_target, stop_loss, "
