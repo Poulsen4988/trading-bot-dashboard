@@ -170,6 +170,9 @@ def main() -> None:
         "selected_for_analysis": selected,
         "output_file": f"us/analysis/{date_str}.json",
         "instruction": (
+            "EFFICIENCY (IMPORTANT — this routine has failed before by running too long before writing output): "
+            "Be concise and decisive. Keep bull/bear to 1-2 short points per stock and the summary to one sentence. "
+            "Write the output file as EARLY as possible; prioritise completing + writing ALL stocks over depth. "
             "Deep analysis of the US deep set ONLY (screener top-10 + scouts + current holdings) — "
             "do NOT analyse the full S&P 500 universe.\n"
             "For every stock in selected_for_analysis run a full bull/bear/head-analyst analysis: "
