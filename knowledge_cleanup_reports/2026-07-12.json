@@ -1,0 +1,98 @@
+{
+  "date": "2026-07-12",
+  "files_reviewed": 25,
+  "files_cleaned": 7,
+  "total_items_removed": 8,
+  "per_file": [
+    {
+      "path": "knowledge/DANSKE_xcse.json",
+      "removed_count": 1,
+      "kept_count": 20,
+      "removed_items": [
+        {
+          "title": "Governments Sell Bonds at Record Pace as Spending Soars",
+          "date": "2026-06-10",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 1,
+      "kept_count": 29,
+      "removed_items": [
+        {
+          "title": "UPDATED: Maersk shifts SoCal import containers to UP from BNSF",
+          "date": "2026-06-29",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 29,
+      "removed_items": [
+        {
+          "title": "UPDATED: Maersk shifts SoCal import containers to UP from BNSF",
+          "date": "2026-06-29",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/NOVOb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 332,
+      "removed_items": [
+        {
+          "title": "Why This Novo Nordisk Rival Just Soared To A Profit-Taking Zone",
+          "date": "2026-07-07",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/DSV_xcse.json",
+      "removed_count": 1,
+      "kept_count": 4,
+      "removed_items": [
+        {
+          "title": "DSV - H1 2026 ANALYST CONFERENCE CALL",
+          "date": "2026-06-23",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/ISS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 9,
+      "removed_items": [
+        {
+          "title": "Invitation to ISS Capital Markets Day 2026",
+          "date": "2026-06-19",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/TRYG_xcse.json",
+      "removed_count": 2,
+      "kept_count": 4,
+      "removed_items": [
+        {
+          "title": "Tryg A/S - Financial Calendar for 2027",
+          "date": "2026-07-10",
+          "reason": "low_value"
+        },
+        {
+          "title": "Consensus estimates on Tryg A/S",
+          "date": "2026-07-03",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "summary": "Fjernede 8 elementer pa tvaers af 7 filer: 4 URL-dubletter (samme Nasdaq-melding allerede gemt tidligere i filen) og 4 rent administrative/logistiske meddelelser uden selvstaendigt nyhedsindhold (analytiker-opkald-invitation, invitation til kapitalmarkedsdag, finanskalender, konsensusestimater). Alle low-value kandidater med substantielt indhold i titlen (FDA/EMA-godkendelser, regnskabsmeddelelser, strategiske udmeldinger, prognoseopjusteringer, ledelsesskift, storaktionaer-meddelelser) blev bevaret, da Nasdaq Copenhagen-summaries generelt kun er generiske kategori-tags (\"Investor Nyheder\", \"Intern viden\") og ikke afspejler indholdets reelle vaerdi."
+}
