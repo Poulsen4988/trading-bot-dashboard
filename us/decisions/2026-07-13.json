@@ -1,0 +1,117 @@
+{
+  "date": "2026-07-13",
+  "market_summary": "Bred AI/chip-selloff dominerer (SK Hynix -15% på en dag, ARM/MRVL/ORCL/APP hårdt ramt) samtidig med stigende oliepriser og geopolitisk uro, der presser industri- og materialenavne. Egne positioner holder deres tese intakt: NUE er uændret bullish efter KeyBanc-opgradering, mens NDAQ har nået sit oprindelige kursmål ($88) og får hævet stop for at sikre gevinsten. To nye køb i dag i navne med selskabsspecifikke (ikke kun makro-drevne) positive katalysatorer midt i udsalget: ORCL (dybt oversolgt AI-cloud-vækst) og TDG (macro-drevet pullback i stærkt aerospace-navn), hvilket samtidig diversificerer væk fra den nuværende Materials/Financials-koncentration.",
+  "decisions": [
+    {
+      "symbol": "NUE",
+      "name": "Nucor",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 233.00,
+      "confidence": 6,
+      "reasoning": "Tese intakt: KeyBanc-opgradering til Overweight ($274 mål) og stærk Q2-guidance ($4.70-$4.80) opvejer den negative 20-dages momentum. Stop ikke udløst, langsigtet trend fortsat klart bullish (+27.4% over SMA200).",
+      "bull": [
+        "KeyBanc har opgraderet til Overweight med $274 kursmål (~18% opside fra $233) efter det seneste pullback, understøttet af forventning om 2% vækst i reel kulstofstål-efterspørgsel i 2026.",
+        "Stærk Q2 EPS-guidance ($4.70-$4.80) og en 53-årig udbyttevæksthistorik med solid balance understøtter fortsatte tilbagekøb/udbytte.",
+        "Langsigtet trend stadig klart intakt: pris 27.4% over SMA200 trods den seneste 20-dages korrektion."
+      ],
+      "bear": [
+        "20-dages momentum er fortsat negativt (-10.47%), og en del af den kraftige forudgående 1-års stigning (+79% fra 52-ugers-lav) er givet tilbage.",
+        "Stålefterspørgsel er cyklisk og følsom over for industriel/byggeaktivitet samt handelspolitik, hvilket kan presse guidance hvis konjunkturerne svækkes."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Buy-the-dip i bekræftet bulltrend: KeyBanc-upgrade + Q2-guidance-beat + tarif-rygvind giver asymmetrisk risk/reward. Entry ved teknisk oversold med klar catalyst-pipeline.",
+        "price_target": 274,
+        "stop_loss": 222.14,
+        "expected_return_pct": 17.6,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $222.14 (2x ATR). Profitmål $274 (KeyBanc). Sælg ved fundamentalt brud: stålpriskollaps under tarifsatser, Q2 EPS miss under $4.70, eller globalt recessions-signal."
+      }
+    },
+    {
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 89.21,
+      "confidence": 7,
+      "reasoning": "Oprindeligt kursmål ($88) er nået og overgået; teknisk trend bekræftet bullish (over SMA50/SMA200) og Zacks-opgraderet, men Stochastic på 98.4 signalerer kortsigtet overkøbt. Hæver stop til $84 for at sikre gevinst og sætter nyt mål ved TD Cowens $98.",
+      "bull": [
+        "Teknisk trend er vendt positiv: pris over både SMA50 (+2.21%) og SMA200 (+0.91%) med stærkt momentum (+5.61% 5d, +3.22% 20d) — en bekræftet vending, ikke kun en oversolgt bounce.",
+        "Rekordstærkt første halvår for US-noteringer ($129.3 mia. rejst, 7 af årets 10 største IPO'er på Nasdaq) plus SK Hynix' højprofilerede ADR-debut trækker fornyet international listing-interesse.",
+        "Zacks har opgraderet til Buy på stigende indtjeningsoptimisme."
+      ],
+      "bear": [
+        "Stochastic på 98.4 er tæt på overkøbt efter den stærke bounce — risiko for en kortsigtet pause/konsolidering.",
+        "TD Cowen har trimmet kursmålet til $98 (fra $104) på tværs af exchange-dækningen, og fremvoksende 'perpetual futures'-konkurrence er en strukturel trussel mod traditionelle exchange-produkter."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Bekræftet teknisk vending + rekordstærkt IPO-halvår og SK Hynix-listing-momentum. Oprindeligt mål nået — hæver stop for at sikre gevinst og forlænger tesen mod TD Cowens $98-mål.",
+        "price_target": 98,
+        "stop_loss": 84,
+        "expected_return_pct": 9.9,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Stop ved $84 (sikrer >6% gevinst fra entry). Profitmål $98 (TD Cowen). Sælg ved close under $84, eller hvis 'perpetual futures'-konkurrencetruslen eskalerer markant."
+      }
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "action": "BUY",
+      "shares": 103,
+      "price": 131.54,
+      "confidence": 6,
+      "reasoning": "Tre samstemmende oversold-signaler (RSI 12.6, Stoch 0.4, BB 16.6%) efter et 28%-fald, mens OCI-cloud-væksten (+93% å/å, $638 mia. backlog) forbliver fundamentalt intakt og bredt analytiker-forsvaret (Piper Sandler, Evercore, Dan Ives). Gældsbekymringen er reel, så positionen holdes indenfor ATR-baseret risikoramme.",
+      "bull": [
+        "Ekstremt oversolgt: RSI 12.6, Stochastic 0.4 og BB-position 16.6% — tre samstemmende oversold-signaler efter et 28%-fald på en måned.",
+        "Fundamentalt intakt AI-cloud-vækst: OCI-omsætning +93% å/å, RPO/backlog på $638 mia. — Piper Sandler ser $2.2 mia. yderligere OCI-opside vs. konsensus.",
+        "Bred analytiker-opbakning midt i krakket: Evercore (Outperform, $245), Wedbush's Dan Ives kalder aktien 'way oversold' og venter vending inden for 6-9 måneder."
+      ],
+      "bear": [
+        "Teknisk struktur er brudt: pris 28-32% under både SMA50 og SMA200, og momentum er negativt på tværs af 5/20 dage — det er endnu kun oversolgt, ikke vendt.",
+        "S&P Global og markedet stiller åbent spørgsmålet om den gældsfinansierede AI-satsning kan blive for stor for selskabet at bære."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Ekstremt oversolgt (tre samstemmende signaler) i en fundamentalt intakt AI-cloud-vækstcase (OCI +93% å/å, $638 mia. backlog). Flere analytikere (Evercore, Piper Sandler, Dan Ives) forsvarer aktivt aktien midt i udsalget som en generationskøbsmulighed.",
+        "price_target": 190,
+        "stop_loss": 116.78,
+        "expected_return_pct": 44.4,
+        "timeframe": "6-9 måneder",
+        "exit_conditions": "Stop ved $116.78 (2x ATR). Profitmål $190 (delvis recovery mod SMA50/200). Sælg ved eskalerende gældsbekymringer/kreditratingnedgraderinger, eller yderligere fundamental svækkelse i OCI-væksten."
+      }
+    },
+    {
+      "symbol": "TDG",
+      "name": "TransDigm Group",
+      "action": "BUY",
+      "shares": 16,
+      "price": 1235.00,
+      "confidence": 6,
+      "reasoning": "Pullbacket (-8.25% på 5 dage) er makro-/oliedrevet, ikke selskabsspecifikt — egne nyheder (Zacks-opgradering, indtjeningsslag-mønster, opjusteret FY26-guidance) er entydigt positive. Køber budgetbegrænset (16 aktier) frem for det ATR-baserede antal (22) pga. høj aktiekurs.",
+      "bull": [
+        "Zacks har opgraderet til Buy (Rank #2) på stigende indtjeningsoptimisme, understøttet af et solidt mønster af indtjeningsslag og opjusteret FY2026 net sales/GAAP EPS-guidance.",
+        "Høj-margin proprietær aerospace-eksponering med tilbagevendende eftermarkedsomsætning giver en strukturel moat, der ikke er svækket af den seneste kursnedgang."
+      ],
+      "bear": [
+        "Nedturen (-8.25% over 5 dage) ser ud til at være drevet af en bredere industri-/olieprisdrevet inflationsfrygt snarere end selskabsspecifikke problemer, men RSI (36.8) og negativ momentum viser at trenden endnu ikke er vendt.",
+        "Præmievurdering giver begrænset margin for fejl, hvis makromiljøet (renter/olie) forværres yderligere."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Makro-/oliedrevet industriselloff, ikke selskabsspecifik svaghed — Zacks-opgradering, indtjeningsslag-mønster og opjusteret FY26-guidance forbliver intakte i den høj-margin aerospace-eftermarkedsforretning.",
+        "price_target": 1350,
+        "stop_loss": 1166.19,
+        "expected_return_pct": 9.3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $1166.19 (2x ATR). Profitmål $1350 (pre-selloff niveau). Sælg ved selskabsspecifik indtjeningsskuffelse eller brud på Zacks-opgraderingens antagelser."
+      }
+    }
+  ]
+}

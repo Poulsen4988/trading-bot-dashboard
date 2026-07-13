@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 59978.7,
+    "cash": 26670.08,
     "currency": "USD",
     "positions": [
       {
@@ -9,7 +9,7 @@
         "name": "Nucor",
         "shares": 85,
         "purchase_price": 239.78,
-        "current_price": 239.78,
+        "current_price": 233.0,
         "purchase_date": "2026-06-28",
         "investment_plan": {
           "term": "medium",
@@ -20,14 +20,14 @@
           "thesis": "Buy-the-dip i bekræftet bulltrend: KeyBanc-upgrade + Q2-guidance-beat + tarif-rygvind giver asymmetrisk risk/reward. Entry ved teknisk oversold med klar catalyst-pipeline.",
           "price_target": 274,
           "stop_loss": 222.14,
-          "expected_return_pct": 14.3,
+          "expected_return_pct": 17.6,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Stop ved 22.14 (2x ATR). Profitmål ved 74 (KeyBanc target). Sælg ved fundamentalt brud: stålpriskollaps under tarifsatser, Q2 EPS miss under .50, eller global recessions-signal."
+          "exit_conditions": "Stop ved $222.14 (2x ATR). Profitmål $274 (KeyBanc). Sælg ved fundamentalt brud: stålpriskollaps under tarifsatser, Q2 EPS miss under $4.70, eller globalt recessions-signal."
         },
         "last_review": {
-          "date": "2026-06-29",
-          "reasoning": "Thesis fuldt intakt. KeyBanc opgraderede 24/6 til Overweight med kursmål 74 (+14.3% fra entry), og Q2 EPS guidance på .70-4.80 slår forventningerne. MACD +2.46 er bullish, og Stochastic 6.8 + BB-position 8.3% signalerer kortsigtet oversold efter -3.66% dagsdip — klassisk buy-the-dip setup inden næste rally-ben. Stop 22.14 (2x ATR) er klart ikke trigget. Pris +1.86% over SMA50 og +34% over SMA200 bekræfter stærk langsigtet trend. Holder til target 74 eller stop.",
-          "confidence": 72
+          "date": "2026-07-13",
+          "reasoning": "Tese intakt: KeyBanc-opgradering til Overweight ($274 mål) og stærk Q2-guidance ($4.70-$4.80) opvejer den negative 20-dages momentum. Stop ikke udløst, langsigtet trend fortsat klart bullish (+27.4% over SMA200).",
+          "confidence": 6
         }
       },
       {
@@ -35,28 +35,81 @@
         "name": "Nasdaq, Inc.",
         "shares": 250,
         "purchase_price": 78.56,
-        "current_price": 78.56,
+        "current_price": 89.21,
         "purchase_date": "2026-06-28",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
-          "thesis": "Mean-reversion trade i ekstremt oversold kvalitetsfranchise. Entry ved triple-oversold confluence med analyst-estimater der stiger mens kursen falder. Stop under 52w low giver begrænset downside.",
-          "price_target": 88,
-          "stop_loss": 72.99,
-          "expected_return_pct": 12.0,
-          "timeframe": "2-4 måneder",
-          "exit_conditions": "Stop ved 2.99 (2x ATR under entry). Profitmål SMA50 ca. 8. Sælg ved close under 52w low (6.51), ETF-licensing-tab der reducerer guidance, eller markedsbredt finanssektors-kollaps."
+          "thesis": "Bekræftet teknisk vending + rekordstærkt IPO-halvår og SK Hynix-listing-momentum. Oprindeligt mål nået — hæver stop for at sikre gevinst og forlænger tesen mod TD Cowens $98-mål.",
+          "price_target": 98,
+          "stop_loss": 84,
+          "expected_return_pct": 9.9,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Stop ved $84 (sikrer >6% gevinst fra entry). Profitmål $98 (TD Cowen). Sælg ved close under $84, eller hvis 'perpetual futures'-konkurrencetruslen eskalerer markant."
         },
         "last_review": {
-          "date": "2026-06-29",
-          "reasoning": "NDAQ er i en klar bearish primærtrend (MACD -2.437, kurs -11% under SMA50 og SMA200), men triple-oversold confluence — RSI 30.6, Stochastic 8.9 og Bollinger Band 4.4% — kombineret med høj volumen (3.04x) tyder på mulig capitulation. Positionen er kun 1 dag gammel, og stop på 2.99 er ikke trigget. Analytikerkonsensus er bullish på bounce (Zacks 26/6), og Texas Advisory Board-lancering viser strategisk vækst. Holder med TÆTTE øjne — en close under 52w low (6.51) vil trigge revurdering. Stop sænkes IKKE.",
-          "confidence": 58
+          "date": "2026-07-13",
+          "reasoning": "Oprindeligt kursmål ($88) er nået og overgået; teknisk trend bekræftet bullish (over SMA50/SMA200) og Zacks-opgraderet, men Stochastic på 98.4 signalerer kortsigtet overkøbt. Hæver stop til $84 for at sikre gevinst og sætter nyt mål ved TD Cowens $98.",
+          "confidence": 7
+        }
+      },
+      {
+        "symbol": "ORCL",
+        "name": "Oracle Corporation",
+        "shares": 103,
+        "purchase_price": 131.54,
+        "current_price": 131.54,
+        "purchase_date": "2026-07-13",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Ekstremt oversolgt (tre samstemmende signaler) i en fundamentalt intakt AI-cloud-vækstcase (OCI +93% å/å, $638 mia. backlog). Flere analytikere (Evercore, Piper Sandler, Dan Ives) forsvarer aktivt aktien midt i udsalget som en generationskøbsmulighed.",
+          "price_target": 190,
+          "stop_loss": 116.78,
+          "expected_return_pct": 44.4,
+          "timeframe": "6-9 måneder",
+          "exit_conditions": "Stop ved $116.78 (2x ATR). Profitmål $190 (delvis recovery mod SMA50/200). Sælg ved eskalerende gældsbekymringer/kreditratingnedgraderinger, eller yderligere fundamental svækkelse i OCI-væksten."
+        },
+        "last_review": {
+          "date": "2026-07-13",
+          "reasoning": "Tre samstemmende oversold-signaler (RSI 12.6, Stoch 0.4, BB 16.6%) efter et 28%-fald, mens OCI-cloud-væksten (+93% å/å, $638 mia. backlog) forbliver fundamentalt intakt og bredt analytiker-forsvaret (Piper Sandler, Evercore, Dan Ives). Gældsbekymringen er reel, så positionen holdes indenfor ATR-baseret risikoramme.",
+          "confidence": 6
+        }
+      },
+      {
+        "symbol": "TDG",
+        "name": "TransDigm Group",
+        "shares": 16,
+        "purchase_price": 1235.0,
+        "current_price": 1235.0,
+        "purchase_date": "2026-07-13",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Makro-/oliedrevet industriselloff, ikke selskabsspecifik svaghed — Zacks-opgradering, indtjeningsslag-mønster og opjusteret FY26-guidance forbliver intakte i den høj-margin aerospace-eftermarkedsforretning.",
+          "price_target": 1350,
+          "stop_loss": 1166.19,
+          "expected_return_pct": 9.3,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Stop ved $1166.19 (2x ATR). Profitmål $1350 (pre-selloff niveau). Sælg ved selskabsspecifik indtjeningsskuffelse eller brud på Zacks-opgraderingens antagelser."
+        },
+        "last_review": {
+          "date": "2026-07-13",
+          "reasoning": "Pullbacket (-8.25% på 5 dage) er makro-/oliedrevet, ikke selskabsspecifikt — egne nyheder (Zacks-opgradering, indtjeningsslag-mønster, opjusteret FY26-guidance) er entydigt positive. Køber budgetbegrænset (16 aktier) frem for det ATR-baserede antal (22) pga. høj aktiekurs.",
+          "confidence": 6
         }
       }
     ],
-    "last_updated": "2026-06-29 21:34 UTC"
+    "last_updated": "2026-07-13 21:39 UTC"
   },
   "history": [
     {
@@ -66,6 +119,10 @@
     {
       "date": "2026-06-29",
       "portfolio_value": 100000.0
+    },
+    {
+      "date": "2026-07-13",
+      "portfolio_value": 102086.2
     }
   ],
   "trades": [
@@ -131,2145 +188,94 @@
         "summary": "NDAQ er i en klar bearish primærtrend (MACD -2.437, kurs -11% under SMA50 og SMA200), men triple-oversold confluence — RSI 30.6, Stochastic 8.9 og Bollinger Band 4.4% — kombineret med høj volumen (3.04x) tyder på mulig capitulation. Positio"
       },
       "id": 4,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-13",
+      "action": "HOLD",
+      "symbol": "NUE",
+      "name": "Nucor",
+      "shares": null,
+      "price": 233.0,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Tese intakt: KeyBanc-opgradering til Overweight ($274 mål) og stærk Q2-guidance ($4.70-$4.80) opvejer den negative 20-dages momentum. Stop ikke udløst, langsigtet trend fortsat klart bullish (+27.4% over SMA200)."
+      },
+      "id": 5,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-13",
+      "action": "HOLD",
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "shares": null,
+      "price": 89.21,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 7,
+        "summary": "Oprindeligt kursmål ($88) er nået og overgået; teknisk trend bekræftet bullish (over SMA50/SMA200) og Zacks-opgraderet, men Stochastic på 98.4 signalerer kortsigtet overkøbt. Hæver stop til $84 for at sikre gevinst og sætter nyt mål ved TD "
+      },
+      "id": 6,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-13",
+      "action": "BUY",
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "shares": 103,
+      "price": 131.54,
+      "value": 13548.62,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 6,
+        "summary": "Tre samstemmende oversold-signaler (RSI 12.6, Stoch 0.4, BB 16.6%) efter et 28%-fald, mens OCI-cloud-væksten (+93% å/å, $638 mia. backlog) forbliver fundamentalt intakt og bredt analytiker-forsvaret (Piper Sandler, Evercore, Dan Ives). Gæld"
+      },
+      "id": 7,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-13",
+      "action": "BUY",
+      "symbol": "TDG",
+      "name": "TransDigm Group",
+      "shares": 16,
+      "price": 1235.0,
+      "value": 19760.0,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 6,
+        "summary": "Pullbacket (-8.25% på 5 dage) er makro-/oliedrevet, ikke selskabsspecifikt — egne nyheder (Zacks-opgradering, indtjeningsslag-mønster, opjusteret FY26-guidance) er entydigt positive. Køber budgetbegrænset (16 aktier) frem for det ATR-basere"
+      },
+      "id": 8,
       "is_new": true
     }
   ],
-  "stocks": [
-    {
-      "symbol": "ABBV",
-      "name": "AbbVie",
-      "tradeable": true,
-      "price": 253.35,
-      "pct_1d": 4.2,
-      "pct_5d": 17.03,
-      "pct_20d": 15.88,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 8.2,
-      "pct_from_52w_high": 0.0,
-      "pct_from_52w_low": 43.95,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Health Care",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 65.0,
-        "rsi": 71.8,
-        "rsi_proxy": 71.8,
-        "stoch_proxy": 100.0,
-        "bb_position": 122.1,
-        "sma50_vs_price": 17.96,
-        "sma200_vs_price": 15.74,
-        "macd_line": 7.224,
-        "atr": 6.665,
-        "momentum_divergence": 1.15,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 6.08x avg — extreme institutional activity",
-          "NEAR 52W HIGH: 0.0% — breakout territory",
-          "MOMENTUM SURGE: +17.0% in 5 days — sharp directional move",
-          "OVERBOUGHT: RSI proxy 72, Stoch proxy 100 — stretched, potential pullback"
-        ],
-        "rationale": "ABBV: volume running at 6.1x the daily average signals institutional-scale activity; a 17.0% five-day rally (20d: +15.9%) reveals strong directional pressure; stock is pressing against its 52-week high at 0.0% — breakout watch; price is +18.0% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "AKAM",
-      "name": "Akamai Technologies",
-      "tradeable": true,
-      "price": 113.29,
-      "pct_1d": 0.35,
-      "pct_5d": -9.3,
-      "pct_20d": -20.85,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.24,
-      "pct_from_52w_high": -31.53,
-      "pct_from_52w_low": 62.35,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 60.0,
-        "rsi": 10.2,
-        "rsi_proxy": 10.2,
-        "stoch_proxy": 10.7,
-        "bb_position": 12.7,
-        "sma50_vs_price": -11.96,
-        "sma200_vs_price": 13.22,
-        "macd_line": -5.6456,
-        "atr": 6.5714,
-        "momentum_divergence": 11.55,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.05x avg",
-          "SIGNIFICANT DRAWDOWN: -31.5% from 52w high",
-          "MOMENTUM SELLOFF: -9.3% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +11.6pp — emerging trend shift",
-          "DEEPLY OVERSOLD: RSI proxy 10, Stoch proxy 11 — bounce candidate"
-        ],
-        "rationale": "AKAM: a 9.3% five-day selloff (20d: -20.9%) reveals strong directional pressure; RSI proxy (10) and stochastic (11) in oversold territory support a bounce thesis; price is -12.0% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "ALB",
-      "name": "Albemarle Corporation",
-      "tradeable": true,
-      "price": 133.7,
-      "pct_1d": -5.21,
-      "pct_5d": -16.62,
-      "pct_20d": -23.98,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.43,
-      "pct_from_52w_high": -39.35,
-      "pct_from_52w_low": 123.47,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Materials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 64.0,
-        "rsi": 35.8,
-        "rsi_proxy": 35.8,
-        "stoch_proxy": 3.3,
-        "bb_position": -6.0,
-        "sma50_vs_price": -24.58,
-        "sma200_vs_price": -9.13,
-        "macd_line": -8.7055,
-        "atr": 8.7344,
-        "momentum_divergence": 7.36,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.84x avg — above-normal interest",
-          "SIGNIFICANT DRAWDOWN: -39.4% from 52w high",
-          "MOMENTUM SELLOFF: -16.6% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 3 — price near annual support floor (RSI proxy 36)"
-        ],
-        "rationale": "ALB: volume running at 1.8x the daily average signals institutional-scale activity; a 16.6% five-day selloff (20d: -24.0%) reveals strong directional pressure; price is -24.6% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "GOOG",
-      "name": "Alphabet Inc. (Class C)",
-      "tradeable": true,
-      "price": 334.69,
-      "pct_1d": -2.19,
-      "pct_5d": -8.92,
-      "pct_20d": -13.27,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 3.63,
-      "pct_from_52w_high": -17.2,
-      "pct_from_52w_low": 94.34,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Communication Services",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 62.0,
-        "rsi": 30.6,
-        "rsi_proxy": 30.6,
-        "stoch_proxy": 2.5,
-        "bb_position": -5.6,
-        "sma50_vs_price": -8.67,
-        "sma200_vs_price": 6.93,
-        "macd_line": -6.8303,
-        "atr": 12.318,
-        "momentum_divergence": 4.35,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 2.85x avg — extreme institutional activity",
-          "MOMENTUM SELLOFF: -8.9% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 2 — price near annual support floor (RSI proxy 31)"
-        ],
-        "rationale": "GOOG: volume running at 2.9x the daily average signals institutional-scale activity; a 8.9% five-day selloff (20d: -13.3%) reveals strong directional pressure; RSI proxy (31) and stochastic (2) in oversold territory support a bounce thesis; price is -8.7% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "APO",
-      "name": "Apollo Global Management",
-      "tradeable": true,
-      "price": 118.29,
-      "pct_1d": -2.65,
-      "pct_5d": -13.97,
-      "pct_20d": -7.23,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.96,
-      "pct_from_52w_high": -23.59,
-      "pct_from_52w_low": 19.32,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Financials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 62.0,
-        "rsi": 36.3,
-        "rsi_proxy": 36.3,
-        "stoch_proxy": 3.0,
-        "bb_position": -3.5,
-        "sma50_vs_price": -8.42,
-        "sma200_vs_price": -7.34,
-        "macd_line": -0.8332,
-        "atr": 4.7086,
-        "momentum_divergence": -6.74,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 2.77x avg — extreme institutional activity",
-          "MOMENTUM SELLOFF: -14.0% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 3 — price near annual support floor (RSI proxy 36)"
-        ],
-        "rationale": "APO: volume running at 2.8x the daily average signals institutional-scale activity; a 14.0% five-day selloff (20d: -7.2%) reveals strong directional pressure; price is -8.4% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "ARES",
-      "name": "Ares Management",
-      "tradeable": true,
-      "price": 109.13,
-      "pct_1d": -2.97,
-      "pct_5d": -15.63,
-      "pct_20d": -12.52,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.51,
-      "pct_from_52w_high": -42.05,
-      "pct_from_52w_low": 16.63,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Financials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 64.0,
-        "rsi": 32.2,
-        "rsi_proxy": 32.2,
-        "stoch_proxy": 2.9,
-        "bb_position": -10.4,
-        "sma50_vs_price": -10.63,
-        "sma200_vs_price": -20.09,
-        "macd_line": -1.7973,
-        "atr": 5.8455,
-        "momentum_divergence": -3.11,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.52x avg — above-normal interest",
-          "SIGNIFICANT DRAWDOWN: -42.0% from 52w high",
-          "MOMENTUM SELLOFF: -15.6% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 3 — price near annual support floor (RSI proxy 32)"
-        ],
-        "rationale": "ARES: volume running at 1.5x the daily average signals institutional-scale activity; a 15.6% five-day selloff (20d: -12.5%) reveals strong directional pressure; stock has shed 42% from its 52-week high — potential deep value or extended downtrend; RSI proxy (32) and stochastic (3) in oversold territory support a bounce thesis; price is -10.6% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "TECH",
-      "name": "Bio-Techne",
-      "tradeable": true,
-      "price": 71.0,
-      "pct_1d": 0.42,
-      "pct_5d": 22.54,
-      "pct_20d": 39.65,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 4.74,
-      "pct_from_52w_high": -1.29,
-      "pct_from_52w_low": 64.66,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Health Care",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 62.0,
-        "rsi": 81.8,
-        "rsi_proxy": 81.8,
-        "stoch_proxy": 98.8,
-        "bb_position": 118.8,
-        "sma50_vs_price": 34.01,
-        "sma200_vs_price": 23.38,
-        "macd_line": 3.744,
-        "atr": 2.9714,
-        "momentum_divergence": -17.11,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 2.11x avg — above-normal interest",
-          "NEAR 52W HIGH: -1.3% — breakout territory",
-          "MOMENTUM SURGE: +22.5% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap -17.1pp — strong trend change signal",
-          "OVERBOUGHT: RSI proxy 82, Stoch proxy 99 — stretched, potential pullback"
-        ],
-        "rationale": "TECH: volume running at 2.1x the daily average signals institutional-scale activity; a 22.5% five-day rally (20d: +39.6%) reveals strong directional pressure; stock is pressing against its 52-week high at -1.3% — breakout watch; price is +34.0% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "BLK",
-      "name": "BlackRock",
-      "tradeable": true,
-      "price": 964.71,
-      "pct_1d": -0.74,
-      "pct_5d": -8.13,
-      "pct_20d": -7.3,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.17,
-      "pct_from_52w_high": -19.64,
-      "pct_from_52w_low": 5.75,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Financials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-28",
-          "title": "BlackRock IBIT investors are now nursing a 40% loss",
-          "source": "TheStreet",
-          "summary": "2024 was a massive turning point for crypto. After years of regulatory back and forth, a few of the biggest asset managers in the world were allowed to offer spot Bitcoin (BTC) exchange-traded funds (ETFs). Among them was BlackRock (NYSE: BLK), the world's largest asset management ...",
-          "url": "https://www.thestreet.com/crypto/markets/blackrock-ibit-investors-are-now-nursing-a-40-loss"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "BlackRock (BLK) Stock After Recent 11% Year-To-Date Slide Is It Now Fairly Priced",
-          "source": "Simply Wall St.",
-          "summary": "For investors wondering whether BlackRock stock is starting to look interesting again, the key question is whether the current price reflects a fair deal or a potential mispricing on the upside or downside. After reaching a last close of US$964.71, the share price has declined 8.1% over the past week, 9.9% over the past month, 11.1% year to date, while still sitting on a 49.5% return over three ye",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/blackrock-blk-stock-recent-11-230639065.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "BlackRock Issues Fresh Warning As Three In Four Workers Fear They’ll Have Less Retirement Security Than Their Parents",
-          "source": "Benzinga",
-          "summary": "A BlackRock survey conducted with research firm Escalent between April 15 and May 16, 2026, among 1,312 workplace savers found growing anxiety around retirement income, even as annuity options slowly expand in employer-sponsored 401(k) plans. About 76% of workplace savers...",
-          "url": "https://finance.yahoo.com/markets/options/articles/blackrock-issues-fresh-warning-three-180134390.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "The Stablecoin Founder Map Doesn't Match the Stablecoin Volume Map",
-          "source": "decrypt",
-          "summary": "Emerging markets drive most real-world stablecoin usage, yet founder concentration and venture funding remain U.S.- and Europe-centric.",
-          "url": "https://decrypt.co/371967/stablecoin-founder-map-doesnt-match-stablecoin-volume-map"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "After Bitcoin's Collapse, The Average IBIT Investor Has Swung From A 30% Gain To A 40% Loss, Analyst Says",
-          "source": "Stocktwits",
-          "summary": "Murphy described the decline as an emotional change, not a fundamental one, noting inflation, dollar strength, and a move into AI equities.",
-          "url": "https://stocktwits.com/news-articles/markets/equity/bitcoin-collapse-ibit-blackrock-etf-investor-loss/cZ13GOYR7Wl"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "BlackRock-Linked Securitize Eyes NYSE Debut With $400 Million Haul As SPAC Redemptions Stay Low",
-          "source": "Stocktwits",
-          "summary": "Securitize will begin trading on the NYSE under ticker SECZ on July 2, following its merger with Cantor Equity Partners II.",
-          "url": "https://stocktwits.com/news-articles/markets/equity/blackrock-securitize-eyes-nyse-debut-spac/cZ1dyXtR7Wk"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "Invesco (IVZ) Is Down 7.0% After ETF Fee Pressure And Leverage Concerns Resurface Has The Bull Case Changed?",
-          "source": "Simply Wall St.",
-          "summary": "In recent days, Invesco has come under pressure as analysts flagged flat long-term revenue, falling earnings per share, and elevated net debt, while competitors like State Street and BlackRock have introduced lower-fee Nasdaq-100 ETFs that challenge Invesco’s flagship index products. At the same time, Invesco is pushing into areas such as tokenized money market funds and specialized ETFs like low-",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/invesco-ivz-down-7-0-080700073.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Wall Street's Next Tokenization Test: BlackRock-Backed Securitize's Market Debut",
-          "source": "decrypt",
-          "summary": "Securitize expects to begin trading next week under the ticker symbol “SECZ,” following the completion of a merger with a blank-check firm.",
-          "url": "https://decrypt.co/372249/wall-street-next-tokenization-test-blackrock-backed-securitize-ipo"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 72.0,
-        "rsi": 40.5,
-        "rsi_proxy": 40.5,
-        "stoch_proxy": 1.8,
-        "bb_position": 2.5,
-        "sma50_vs_price": -7.3,
-        "sma200_vs_price": -8.66,
-        "macd_line": -12.3916,
-        "atr": 27.3236,
-        "momentum_divergence": -0.83,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.70x avg — above-normal interest",
-          "NEAR 52W LOW: +5.8% above annual support — critical level",
-          "MOMENTUM SELLOFF: -8.1% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 2 — price near annual support floor (RSI proxy 40)"
-        ],
-        "rationale": "BLK: volume running at 1.7x the daily average signals institutional-scale activity; a 8.1% five-day selloff (20d: -7.3%) reveals strong directional pressure; price sits just +5.8% above the 52-week low (912.25) — a key decision zone; price is -7.3% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "CVNA",
-      "name": "Carvana",
-      "tradeable": true,
-      "price": 62.35,
-      "pct_1d": -5.82,
-      "pct_5d": -6.33,
-      "pct_20d": -15.16,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.19,
-      "pct_from_52w_high": -35.97,
-      "pct_from_52w_low": 14.49,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Consumer Discretionary",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-28",
-          "title": "RBC Capital Cuts PT on Carvana Co. (CVNA)",
-          "source": "Insider Monkey",
-          "summary": "Carvana Co. (NYSE:CVNA) is one of the best non-tech stocks to buy according to analysts. RBC Capital cut the price target on Carvana Co. (NYSE:CVNA) to $85 from $92 on June 12 and reaffirmed an Outperform rating on the shares, telling investors in a research note that the firm is updating its retail unit cohort model […]",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/rbc-capital-cuts-pt-carvana-164538046.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Could Carvana’s Florida IRC Expansion Quietly Redefine Its Logistics Edge and Scale Ambitions (CVNA)?",
-          "source": "Simply Wall St.",
-          "summary": "Carvana has recently begun integrating Inspection and Reconditioning Center capabilities into its long‑running ADESA Sarasota wholesale auction site in Bradenton, Florida, adding capacity, new inventory and around 100 inspection, reconditioning and fulfillment jobs while using its CARLI software to run an IRC‑enabled, dual retail‑wholesale facility. This move deepens Carvana’s logistics and recond",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/could-carvana-florida-irc-expansion-150800733.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "This Single Factor Is Holding Back Carvana’s Disruptive Edge",
-          "source": "MarketBeat",
-          "summary": "Carvana’s business model is delivering results, but high interest rates may be limiting upside for CVNA stock despite strong earnings growth",
-          "url": "https://www.marketbeat.com/articles/this-single-factor-is-holding-back-carvanas-disruptive-edge/?utm_source=yahoofinance&utm_medium=yahoofinance"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "Carvana (CVNA) Sees a More Significant Dip Than Broader Market: Some Facts to Know",
-          "source": "Zacks",
-          "summary": "Carvana (CVNA) reached $66.2 at the closing of the latest trading day, reflecting a -2.52% change compared to its last close.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/carvana-cvna-sees-more-significant-220003042.html"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "2 Large-Cap Stocks to Target This Week and 1 We Find Risky",
-          "source": "StockStory",
-          "summary": "Large-cap stocks usually command their industries because they have the scale to drive market trends. The flip side though is that their sheer size can limit growth as expanding further becomes an increasingly challenging task.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/2-large-cap-stocks-target-122550069.html"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "Is the Options Market Predicting a Spike in Carvana Stock?",
-          "source": "Zacks",
-          "summary": "Investors need to pay close attention to CVNA stock based on the movements in the options market lately.",
-          "url": "https://finance.yahoo.com/markets/options/articles/options-market-predicting-spike-carvana-115000249.html"
-        },
-        {
-          "date": "2026-06-24",
-          "title": "Prediction: This Stock Turned $10,000 Into $130,000 in 3 Years and Can Do It Again",
-          "source": "Motley Fool",
-          "summary": "A little over three years ago, Carvana was all but bankrupt. Since then, it's thrived and returned massive value to investors.",
-          "url": "https://www.fool.com/investing/2026/06/24/prediction-this-stock-turned-10000-into-130000-in/"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Carvana (CVNA) Suffers a Larger Drop Than the General Market: Key Insights",
-          "source": "Zacks",
-          "summary": "The latest trading day saw Carvana (CVNA) settling at $64.83, representing a -2.76% change from its previous close.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/carvana-cvna-suffers-larger-drop-221504158.html"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 72.0,
-        "rsi": 44.4,
-        "rsi_proxy": 44.4,
-        "stoch_proxy": 4.3,
-        "bb_position": 6.8,
-        "sma50_vs_price": -12.96,
-        "sma200_vs_price": -14.95,
-        "macd_line": -1.4103,
-        "atr": 4.3,
-        "momentum_divergence": 8.83,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 3.01x avg — extreme institutional activity",
-          "SIGNIFICANT DRAWDOWN: -36.0% from 52w high",
-          "MOMENTUM: -6.3% in 5 days — continued SELLING pressure",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +8.8pp — emerging trend shift",
-          "STOCHASTIC OVERSOLD: Stoch proxy 4 — price near annual support floor (RSI proxy 44)"
-        ],
-        "rationale": "CVNA: volume running at 3.0x the daily average signals institutional-scale activity; a 6.3% five-day selloff (20d: -15.2%) reveals strong directional pressure; price is -13.0% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "CME",
-      "name": "CME Group",
-      "tradeable": true,
-      "price": 221.0,
-      "pct_1d": -1.78,
-      "pct_5d": -10.3,
-      "pct_20d": -19.92,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.6,
-      "pct_from_52w_high": -30.9,
-      "pct_from_52w_low": 0.12,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Financials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-28",
-          "title": "Leverage That Fueled US Stock Rally Becomes a Growing Concern",
-          "source": "Bloomberg",
-          "summary": "(Bloomberg) -- The leverage that helped fuel the US stock rally is now becoming an increasing source of unease.Most Read from BloombergLutnick Delayed Canada Bridge Debut to Seek Bigger Cut of Toll RevenueUS Launches Fresh Strikes on Iran Targets After Drone HitsAnthropic’s Mythos 5 AI Model Cleared by US for Wider UseAn Analyst’s Missed Remark Surfaced in Deadly Iran School Strike ProbeOman Tells",
-          "url": "https://finance.yahoo.com/markets/options/articles/leverage-fueled-us-stock-rally-140000898.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "TD Cowen Trims Price Target on CME Group (CME). Here is Why",
-          "source": "Insider Monkey",
-          "summary": "With an annual dividend yield of 2.31%, CME Group Inc. (NASDAQ:CME) is included among the 12 Best NASDAQ Stocks to Buy for Dividends. CME Group Inc. (NASDAQ:CME) is the world’s leading and most diverse derivatives marketplace offering the widest range of futures and options products for risk management. On June 22, TD Cowen lowered its price […]",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/td-cowen-trims-price-target-040813369.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "Wall Street likes what DraftKings just took away from itself",
-          "source": "TheStreet",
-          "summary": "DraftKings (DKNG) turned on its own prediction markets exchange this week, a shift the company has been engineering since last fall. For seven months, every contract traded on DraftKings Predictions ran through somebody else’s infrastructure. Now DraftKings owns the plumbing. Since DraftKings ...",
-          "url": "https://www.thestreet.com/investing/stocks/draftkings-dkex-prediction-markets-exchange-price-targets-up"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "ICE Lags Industry, Trades at a Discount: Here's How to Play the Stock",
-          "source": "Zacks",
-          "summary": "Intercontinental Exchange expands across data services, mortgage technology and emerging market infrastructure to support long-term growth.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ice-lags-industry-trades-discount-151100955.html"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "Sector Update: Financial Stocks Mixed Late Afternoon",
-          "source": "MT Newswires",
-          "summary": "Financial stocks were mixed in late Thursday afternoon trading, with the NYSE Financial Index rising",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-mixed-afternoon-195254296.html"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "Sector Update: Financial Stocks Mixed Thursday Afternoon",
-          "source": "MT Newswires",
-          "summary": "Financial stocks were mixed in Thursday afternoon trading, with the NYSE Financial Index rising 0.3%",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-mixed-thursday-174021369.html"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "Update: Market Chatter: CME Explores Wind Derivatives Covering US, European and Australian Markets",
-          "source": "MT Newswires",
-          "summary": "(Updates with a response from a CME spokesperson in the fourth paragraph.) CME (CME) is planning",
-          "url": "https://finance.yahoo.com/energy/articles/market-chatter-cme-explores-wind-151825689.html"
-        },
-        {
-          "date": "2026-06-24",
-          "title": "CME Faces Minimal Competitive Threat From Perpetual Futures, RBC Capital Markets Says",
-          "source": "MT Newswires",
-          "summary": "CME (CME) has seen a stock pullback due to investor concerns over perpetual futures, but perpetuals",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/cme-faces-minimal-competitive-threat-152040395.html"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 73.0,
-        "rsi": 26.9,
-        "rsi_proxy": 26.9,
-        "stoch_proxy": 0.5,
-        "bb_position": -7.3,
-        "sma50_vs_price": -19.02,
-        "sma200_vs_price": -19.67,
-        "macd_line": -12.73,
-        "atr": 8.9015,
-        "momentum_divergence": 9.62,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.28x avg",
-          "AT 52W LOW: +0.1% above annual floor — breakdown or reversal imminent",
-          "MOMENTUM SELLOFF: -10.3% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +9.6pp — emerging trend shift",
-          "STOCHASTIC OVERSOLD: Stoch proxy 0 — price near annual support floor (RSI proxy 27)"
-        ],
-        "rationale": "CME: a 10.3% five-day selloff (20d: -19.9%) reveals strong directional pressure; price sits just +0.1% above the 52-week low (220.73) — a key decision zone; RSI proxy (27) and stochastic (0) in oversold territory support a bounce thesis; price is -19.0% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "CTSH",
-      "name": "Cognizant",
-      "tradeable": true,
-      "price": 40.03,
-      "pct_1d": 2.25,
-      "pct_5d": -8.4,
-      "pct_20d": -25.66,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.29,
-      "pct_from_52w_high": -53.44,
-      "pct_from_52w_low": 2.72,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-27",
-          "title": "How Rubrik’s Expanded Cognizant Alliance And Bedrock AgentCore Tie-Up At Rubrik (RBRK) Has Changed Its Investment Story",
-          "source": "Simply Wall St.",
-          "summary": "In mid-June 2026, Cognizant expanded its alliance with Rubrik and Rubrik announced an upcoming Rubrik Agent Cloud integration with Amazon Bedrock AgentCore, aiming to bring real-time AI governance, rollback capabilities, and unified policy control to enterprises running autonomous agents on AWS and Cognizant platforms. Together, these moves position Rubrik as a core infrastructure provider for gov",
-          "url": "https://finance.yahoo.com/technology/ai/articles/rubrik-expanded-cognizant-alliance-bedrock-120815263.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "Is Cognizant (CTSH) Turning Its Neuro AI Push Into a Durable Competitive Moat in Enterprise AI?",
-          "source": "Simply Wall St.",
-          "summary": "In recent days, Cognizant Technology Solutions announced multiple AI-focused moves, including integrating ServiceNow AI Agents with its open-source Neuro AI Multi-Agent Accelerator, expanding its AI governance alliance with Rubrik, and advancing an AI skills partnership with Pearson to support workforce development programs. Together, these announcements highlight Cognizant’s push to position its ",
-          "url": "https://finance.yahoo.com/technology/ai/articles/cognizant-ctsh-turning-neuro-ai-111249291.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "Morgan Stanley Cuts Price Target on Cognizant Technology Solutions (CTSH). Here is Why",
-          "source": "Insider Monkey",
-          "summary": "With an annual dividend yield of 3.37%, Cognizant Technology Solutions Corporation (NASDAQ:CTSH) is included among the 12 Best NASDAQ Stocks to Buy for Dividends. Cognizant Technology Solutions Corporation (NASDAQ:CTSH) is an AI Builder and technology services provider, bridging the gap between AI investment and enterprise value. On June 23, Morgan Stanley cut its price target on […]",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-cuts-price-target-040854905.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "What Could Go Wrong For Accenture Stock?",
-          "source": "Trefis",
-          "summary": "For anyone holding Accenture (ACN) stock, the past year has been a challenging year. The share price is down 58% over the past year, a clear signal that the market is pricing in challenges. The company’s response is a significant pivot, spending billions on acquisitions to find new growth. But this strategy carries its own significant risks, especially when the foundation of the business is lookin",
-          "url": "https://www.trefis.com/articles/604514/what-could-go-wrong-for-accenture-stock/2026-06-26"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Oppenheimer Reaffirms Bullish Outlook on ServiceNow (NOW) Amid AI Growth and Cognizant Partnership",
-          "source": "Insider Monkey",
-          "summary": "ServiceNow Inc. (NYSE:NOW) ranks among the best set-it-and-forget-it stocks to buy right now. Following a discussion with ServiceNow Inc. (NYSE:NOW) management, Oppenheimer reiterated its Outperform rating and $130 price target for ServiceNow on June 10. The conversation left the firm slightly optimistic about ServiceNow’s second-half 2026 prospects and the likelihood of business reacceleration in",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/oppenheimer-reaffirms-bullish-outlook-servicenow-111106946.html"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Nebius and CoreWeave fall after Nasdaq 100 listing",
-          "source": "Blockspace",
-          "summary": "Nabius and CoreWeave surged in the lead up to their Nasdaq 100 listing, but have fallen in the to days since their inclusions.",
-          "url": "https://blockspace.media/insight/nebius-coreweave-nasdaq-100-stock-gains-2026/"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Cognizant (CTSH) Integrates ServiceNow (NOW) AI Agents With Neuro AI Multi-Agent Accelerator",
-          "source": "Insider Monkey",
-          "summary": "Cognizant Technology Solutions Corporation (NASDAQ:CTSH) is one of the most promising stocks with highest upside potential. On June 18, Cognizant announced that ServiceNow (NOW) AI Agents are now interoperable with the Cognizant Neuro AI Multi-Agent Accelerator, enabling enterprises to unify and orchestrate AI agents across disparate platforms. This integration allows ServiceNow’s specialized agen",
-          "url": "https://finance.yahoo.com/technology/ai/articles/cognizant-ctsh-integrates-servicenow-now-185458015.html"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Cognizant Technology Stock Could Be a Great Way to Profit from AI at a Discount",
-          "source": "Barchart",
-          "summary": "Although the potential avoidance of global calamity has bolstered AI names, CTSH stock hasn’t benefited from the momentum — but that could change.",
-          "url": "https://www.barchart.com/story/news/2606874/cognizant-technology-stock-could-be-a-great-way-to-profit-from-ai-at-a-discount"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 71.9,
-        "rsi": 14.1,
-        "rsi_proxy": 14.1,
-        "stoch_proxy": 6.9,
-        "bb_position": 9.0,
-        "sma50_vs_price": -22.19,
-        "sma200_vs_price": -39.47,
-        "macd_line": -3.3774,
-        "atr": 2.2529,
-        "momentum_divergence": 17.26,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "AT 52W LOW: +2.7% above annual floor — breakdown or reversal imminent",
-          "MOMENTUM SELLOFF: -8.4% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +17.3pp — strong trend change signal",
-          "DEEPLY OVERSOLD: RSI proxy 14, Stoch proxy 7 — bounce candidate"
-        ],
-        "rationale": "CTSH: a 8.4% five-day selloff (20d: -25.7%) reveals strong directional pressure; price sits just +2.7% above the 52-week low (38.97) — a key decision zone; RSI proxy (14) and stochastic (7) in oversold territory support a bounce thesis; price is -22.2% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "GLW",
-      "name": "Corning Inc.",
-      "tradeable": true,
-      "price": 221.05,
-      "pct_1d": -3.05,
-      "pct_5d": 13.41,
-      "pct_20d": 21.0,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 4.73,
-      "pct_from_52w_high": -4.1,
-      "pct_from_52w_low": 335.39,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 65.0,
-        "rsi": 64.2,
-        "rsi_proxy": 64.2,
-        "stoch_proxy": 85.3,
-        "bb_position": 97.1,
-        "sma50_vs_price": 20.75,
-        "sma200_vs_price": 78.61,
-        "macd_line": 8.4406,
-        "atr": 16.5057,
-        "momentum_divergence": -7.59,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 2.77x avg — extreme institutional activity",
-          "NEAR 52W HIGH: -4.1% — breakout territory",
-          "MOMENTUM SURGE: +13.4% in 5 days — sharp directional move",
-          "OVERBOUGHT: RSI proxy 64, Stoch proxy 85 — stretched, potential pullback"
-        ],
-        "rationale": "GLW: volume running at 2.8x the daily average signals institutional-scale activity; a 13.4% five-day rally (20d: +21.0%) reveals strong directional pressure; stock is pressing against its 52-week high at -4.1% — breakout watch; price is +20.8% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "ECHO",
-      "name": "EchoStar",
-      "tradeable": true,
-      "price": 97.3,
-      "pct_1d": 0.11,
-      "pct_5d": -10.87,
-      "pct_20d": -25.76,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 4.06,
-      "pct_from_52w_high": -33.92,
-      "pct_from_52w_low": 279.49,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Communication Services",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-28",
-          "title": "EchoStar (ECHO) Names Jeffrey Blum Acting Chief Legal Officer After Dean Manson Exit",
-          "source": "Simply Wall St.",
-          "summary": "EchoStar announced that Chief Legal Officer Dean Manson is stepping down after 26 years with the company. Executive Vice President of Government Affairs Jeffrey Blum has been named Acting Chief Legal Officer. The transition affects leadership of EchoStar’s legal, compliance, and corporate governance functions. EchoStar, listed as NasdaqGS:ECHO, is making this change while its stock trades around $",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/echostar-echo-names-jeffrey-blum-001505479.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "EchoStar (ECHO) Stock After Recent Pullback Is The Rally Running Out Of Steam",
-          "source": "Simply Wall St.",
-          "summary": "If you are wondering whether EchoStar at around US$97.30 is still offering value after a strong run, this article focuses squarely on what the current price might be implying. The stock has pulled back recently, with the share price down 10.9% over the last week and 20.5% over the last month, even though it is still up 237.7% over the past year and has delivered a very large multi year return. Rec",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/echostar-echo-stock-recent-pullback-170652094.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "The SpaceX $17 billion spectrum buy finally makes sense",
-          "source": "TheStreet",
-          "summary": "SpaceX spent close to two years and nearly $20 billion buying wireless spectrum licenses that had nothing to do with rockets or satellite broadband. Analysts struggled to explain why a space company needed land-based mobile spectrum at all. That question now has an answer, and it puts the country’s ...",
-          "url": "https://www.thestreet.com/technology/spcx-the-17-billion-spectrum-buy-finally-makes-sense-spacex"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Verizon, T-Mobile Big Winners in FCC Spectrum Auction",
-          "source": "The Wall Street Journal",
-          "summary": "The Federal Communications Commission’s first spectrum auction after a four-year hiatus. brought in upwards of $3.5 billion in total, the agency said.",
-          "url": "https://www.wsj.com/business/telecom/verizon-t-mobile-big-winners-in-fcc-spectrum-auction-d993a32c?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "3 Reasons SATS (ECHO) is Risky and 1 Stock to Buy Instead",
-          "source": "StockStory",
-          "summary": "Since December 2025, EchoStar has been in a holding pattern, posting a small loss of 1.5% while floating around $104. The stock also fell short of the S&P 500’s 6.2% gain during that period.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/3-reasons-sats-echo-risky-193625873.html"
-        },
-        {
-          "date": "2026-06-22",
-          "title": "Is EchoStar Corporation (SATS) A Good Stock To Buy Now?",
-          "source": "Insider Monkey",
-          "summary": "Is SATS a good stock to buy? We came across a bullish thesis on EchoStar Corporation on r/ValueInvesting by OddAbbreviations7835. In this article, we will summarize the bulls’ thesis on SATS. EchoStar Corporation’s share was trading at $109.17 as of June 18th. SATS’s forward P/E was 2.03 according to Yahoo Finance. EchoStar Corporation provides pay-tv services in […]",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/echostar-corporation-sats-good-stock-123154523.html"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 68.0,
-        "rsi": 34.1,
-        "rsi_proxy": 34.1,
-        "stoch_proxy": 7.3,
-        "bb_position": 4.7,
-        "sma50_vs_price": -20.46,
-        "sma200_vs_price": -5.96,
-        "macd_line": -6.7932,
-        "atr": 9.2336,
-        "momentum_divergence": 14.89,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.76x avg — above-normal interest",
-          "SIGNIFICANT DRAWDOWN: -33.9% from 52w high",
-          "MOMENTUM SELLOFF: -10.9% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +14.9pp — emerging trend shift",
-          "STOCHASTIC OVERSOLD: Stoch proxy 7 — price near annual support floor (RSI proxy 34)"
-        ],
-        "rationale": "ECHO: volume running at 1.8x the daily average signals institutional-scale activity; a 10.9% five-day selloff (20d: -25.8%) reveals strong directional pressure; RSI proxy (34) and stochastic (7) in oversold territory support a bounce thesis; price is -20.5% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "FOX",
-      "name": "Fox Corporation (Class B)",
-      "tradeable": true,
-      "price": 45.91,
-      "pct_1d": 3.42,
-      "pct_5d": -2.22,
-      "pct_20d": -22.49,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.61,
-      "pct_from_52w_high": -32.3,
-      "pct_from_52w_low": 4.15,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Communication Services",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 66.0,
-        "rsi": 18.3,
-        "rsi_proxy": 18.3,
-        "stoch_proxy": 10.2,
-        "bb_position": 21.6,
-        "sma50_vs_price": -18.11,
-        "sma200_vs_price": -19.36,
-        "macd_line": -3.5571,
-        "atr": 2.6236,
-        "momentum_divergence": 20.27,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.58x avg — above-normal interest",
-          "NEAR 52W LOW: +4.2% above annual support — critical level",
-          "MOMENTUM: -2.2% in 5 days",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +20.3pp — strong trend change signal",
-          "DEEPLY OVERSOLD: RSI proxy 18, Stoch proxy 10 — bounce candidate"
-        ],
-        "rationale": "FOX: volume running at 1.6x the daily average signals institutional-scale activity; price sits just +4.2% above the 52-week low (44.08) — a key decision zone; RSI proxy (18) and stochastic (10) in oversold territory support a bounce thesis; price is -18.1% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "IT",
-      "name": "Gartner",
-      "tradeable": true,
-      "price": 134.96,
-      "pct_1d": 6.58,
-      "pct_5d": 5.86,
-      "pct_20d": -16.27,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.51,
-      "pct_from_52w_high": -67.06,
-      "pct_from_52w_low": 8.62,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 65.0,
-        "rsi": 23.7,
-        "rsi_proxy": 23.7,
-        "stoch_proxy": 26.7,
-        "bb_position": 29.3,
-        "sma50_vs_price": -10.76,
-        "sma200_vs_price": -31.69,
-        "macd_line": -7.5232,
-        "atr": 6.6829,
-        "momentum_divergence": 22.13,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.12x avg",
-          "NEAR 52W LOW: +8.6% above annual support — critical level",
-          "MOMENTUM: +5.9% in 5 days — continued BUYING pressure",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +22.1pp — strong trend change signal",
-          "RSI OVERSOLD: RSI proxy 24, Stoch proxy 27 — momentum exhaustion signal"
-        ],
-        "rationale": "IT: a 5.9% five-day rally (20d: -16.3%) reveals strong directional pressure; price sits just +8.6% above the 52-week low (124.25) — a key decision zone; RSI proxy (24) and stochastic (27) in oversold territory support a bounce thesis; price is -10.8% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "PODD",
-      "name": "Insulet Corporation",
-      "tradeable": true,
-      "price": 158.25,
-      "pct_1d": 2.88,
-      "pct_5d": 8.57,
-      "pct_20d": 10.94,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.97,
-      "pct_from_52w_high": -55.41,
-      "pct_from_52w_low": 14.02,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Health Care",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 63.0,
-        "rsi": 54.6,
-        "rsi_proxy": 54.6,
-        "stoch_proxy": 86.3,
-        "bb_position": 98.7,
-        "sma50_vs_price": -1.1,
-        "sma200_vs_price": -37.06,
-        "macd_line": -2.4965,
-        "atr": 6.3686,
-        "momentum_divergence": -2.37,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.69x avg — above-normal interest",
-          "DEEP DRAWDOWN: -55.4% from 52w high — severe compression, mean-reversion potential",
-          "MOMENTUM SURGE: +8.6% in 5 days — sharp directional move",
-          "OVERBOUGHT: RSI proxy 55, Stoch proxy 86 — stretched, potential pullback"
-        ],
-        "rationale": "PODD: volume running at 1.7x the daily average signals institutional-scale activity; a 8.6% five-day rally (20d: +10.9%) reveals strong directional pressure; stock has shed 55% from its 52-week high — potential deep value or extended downtrend; price is -1.1% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "ICE",
-      "name": "Intercontinental Exchange",
-      "tradeable": true,
-      "price": 123.86,
-      "pct_1d": -0.51,
-      "pct_5d": -7.48,
-      "pct_20d": -16.17,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.69,
-      "pct_from_52w_high": -33.75,
-      "pct_from_52w_low": 0.1,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Financials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-28",
-          "title": "TD Cowen Remains Bullish on Intercontinental Exchange (ICE)",
-          "source": "Insider Monkey",
-          "summary": "Intercontinental Exchange Inc. (NYSE:ICE) is one of the best non-tech stocks to buy according to analysts. TD Cowen cut the price target on Intercontinental Exchange Inc. (NYSE:ICE) to $153 from $193 on June 22 and maintained a Buy rating on the shares. The firm told investors in a research note that it cut price targets […]",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/td-cowen-remains-bullish-intercontinental-164522822.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "Intercontinental Exchange (ICE) Forms OKX Venture And Launches GreenTrace Carbon Registry",
-          "source": "Simply Wall St.",
-          "summary": "Intercontinental Exchange (NYSE:ICE) has set up a 50-50 joint venture with OKX to build infrastructure for tokenized and digitally native financial products. The venture, co-chaired by former New York Governor Andrew Cuomo, is expected to give clients access to tokenized versions of ICE futures and NYSE-listed equities. ICE also launched ICE GreenTrace, an environmental registry platform that supp",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/intercontinental-exchange-ice-forms-okx-220743254.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "ICE Lags Industry, Trades at a Discount: Here's How to Play the Stock",
-          "source": "Zacks",
-          "summary": "Intercontinental Exchange expands across data services, mortgage technology and emerging market infrastructure to support long-term growth.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ice-lags-industry-trades-discount-151100955.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "1 Large-Cap Stock with Impressive Fundamentals and 2 We Question",
-          "source": "StockStory",
-          "summary": "Large-cap stocks have the power to shape entire industries thanks to their size and widespread influence. With such vast footprints, however, finding new areas for growth is much harder than for smaller, more agile players.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/1-large-cap-stock-impressive-100025378.html"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "ICE & OKX Are Getting Ready to Drink Coinbase’s Tokenized Milkshake",
-          "source": "Moby",
-          "summary": "A year after OKX’s guilty plea, which resulted in a $500 million fine, it has rebranded itself as the safe, NYSE-backed option for potentially 120 million traders.",
-          "url": "https://app.moby.co/home/news/news-ice-okx-are-getting-ready-to-drink-coinbases-tokenized-milkshake?utm_source=yahoo_finance&utm_medium=rss"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "CBOE Stock Plunges 28.4% in a Month: Time to Buy the Dip?",
-          "source": "Zacks",
-          "summary": "Cboe Global leverages record derivatives activity, data services growth and portfolio optimization to fuel long-term expansion.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/cboe-stock-plunges-28-4-144600784.html"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Nonstop Trading, Loads of Leverage. How ‘Perp Futures’ Are Shaking Up Wall Street.",
-          "source": "The Wall Street Journal",
-          "summary": "The CFTC’s approval of so-called perps has triggered a selloff in U.S. exchanges’ shares—and at least one high-profile lawsuit.",
-          "url": "https://www.wsj.com/finance/commodities-futures/nonstop-trading-loads-of-leverage-how-perp-futures-are-shaking-up-wall-street-59682069?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "date": "2026-06-22",
-          "title": "ICE Invests in OKX at $25 Billion to Launch Tokenized NYSE Stocks",
-          "source": "BeInCrypto",
-          "summary": "NYSE owner ICE partners with OKX in a major joint venture to bring tokenized NYSE equities and ICE futures to OKX’s 120 million users.",
-          "url": "https://beincrypto.com/nyse-ice-okx-tokenized-equities-crypto-users/"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 67.0,
-        "rsi": 22.5,
-        "rsi_proxy": 22.5,
-        "stoch_proxy": 0.6,
-        "bb_position": -5.4,
-        "sma50_vs_price": -16.3,
-        "sma200_vs_price": -21.04,
-        "macd_line": -6.0373,
-        "atr": 3.9115,
-        "momentum_divergence": 8.69,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.10x avg",
-          "AT 52W LOW: +0.1% above annual floor — breakdown or reversal imminent",
-          "MOMENTUM: -7.5% in 5 days — continued SELLING pressure",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +8.7pp — emerging trend shift",
-          "DEEPLY OVERSOLD: RSI proxy 22, Stoch proxy 1 — bounce candidate"
-        ],
-        "rationale": "ICE: a 7.5% five-day selloff (20d: -16.2%) reveals strong directional pressure; price sits just +0.1% above the 52-week low (123.74) — a key decision zone; RSI proxy (22) and stochastic (1) in oversold territory support a bounce thesis; price is -16.3% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "KDP",
-      "name": "Keurig Dr Pepper",
-      "tradeable": true,
-      "price": 33.4,
-      "pct_1d": 3.44,
-      "pct_5d": 9.36,
-      "pct_20d": 11.98,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 3.88,
-      "pct_from_52w_high": -3.94,
-      "pct_from_52w_low": 36.72,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Consumer Staples",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 65.0,
-        "rsi": 73.8,
-        "rsi_proxy": 73.8,
-        "stoch_proxy": 93.6,
-        "bb_position": 120.9,
-        "sma50_vs_price": 13.57,
-        "sma200_vs_price": 21.16,
-        "macd_line": 0.7617,
-        "atr": 0.8468,
-        "momentum_divergence": -2.62,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 3.26x avg — extreme institutional activity",
-          "NEAR 52W HIGH: -3.9% — breakout territory",
-          "MOMENTUM SURGE: +9.4% in 5 days — sharp directional move",
-          "OVERBOUGHT: RSI proxy 74, Stoch proxy 94 — stretched, potential pullback"
-        ],
-        "rationale": "KDP: volume running at 3.3x the daily average signals institutional-scale activity; a 9.4% five-day rally (20d: +12.0%) reveals strong directional pressure; stock is pressing against its 52-week high at -3.9% — breakout watch; price is +13.6% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "KKR",
-      "name": "KKR & Co.",
-      "tradeable": true,
-      "price": 90.13,
-      "pct_1d": -2.72,
-      "pct_5d": -7.09,
-      "pct_20d": -4.15,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.71,
-      "pct_from_52w_high": -41.03,
-      "pct_from_52w_low": 9.24,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Financials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 66.0,
-        "rsi": 41.3,
-        "rsi_proxy": 41.3,
-        "stoch_proxy": 8.6,
-        "bb_position": 0.1,
-        "sma50_vs_price": -7.71,
-        "sma200_vs_price": -19.08,
-        "macd_line": -0.9936,
-        "atr": 3.6343,
-        "momentum_divergence": -2.94,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.74x avg — above-normal interest",
-          "NEAR 52W LOW: +9.2% above annual support — critical level",
-          "MOMENTUM: -7.1% in 5 days — continued SELLING pressure",
-          "STOCHASTIC OVERSOLD: Stoch proxy 9 — price near annual support floor (RSI proxy 41)"
-        ],
-        "rationale": "KKR: volume running at 1.7x the daily average signals institutional-scale activity; a 7.1% five-day selloff (20d: -4.2%) reveals strong directional pressure; price sits just +9.2% above the 52-week low (82.51) — a key decision zone; price is -7.7% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "LDOS",
-      "name": "Leidos",
-      "tradeable": true,
-      "price": 101.76,
-      "pct_1d": 1.76,
-      "pct_5d": -5.0,
-      "pct_20d": -22.4,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.39,
-      "pct_from_52w_high": -50.14,
-      "pct_from_52w_low": 2.24,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Industrials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-26",
-          "title": "Why the Market Dipped But Leidos (LDOS) Gained Today",
-          "source": "Zacks",
-          "summary": "Leidos (LDOS) closed the most recent trading day at $101.76, moving +1.76% from the previous trading session.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-market-dipped-leidos-ldos-214505048.html"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Q1 Earnings Roundup: Leidos (NYSE:LDOS) And The Rest Of The Defense Contractors Segment",
-          "source": "StockStory",
-          "summary": "The end of the earnings season is always a good time to take a step back and see who shined (and who didn’t). Let’s take a look at how defense contractors stocks fared in Q1, starting with Leidos (NYSE:LDOS).",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/q1-earnings-roundup-leidos-nyse-164846512.html"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Leidos Holdings (LDOS) is One of the Oversold Stocks Offering Attractive Upside",
-          "source": "Insider Monkey",
-          "summary": "Leidos Holdings Inc. (NYSE:LDOS) is one of the 10 oversold stocks offering high upside. On May 21, Leidos Holdings Inc. (NYSE:LDOS) stated that it will receive 4 awards under the U.S. Department of State’s Evolve contract to assist in modernizing the IT systems utilized by American diplomats across the globe. The initiative’s main goals are […]",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/leidos-holdings-ldos-one-oversold-150650087.html"
-        },
-        {
-          "date": "2026-06-22",
-          "title": "Why Leidos (LDOS) Dipped More Than Broader Market Today",
-          "source": "Zacks",
-          "summary": "In the latest trading session, Leidos (LDOS) closed at $104.84, marking a -2.13% move from the previous day.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-leidos-ldos-dipped-more-215005912.html"
-        },
-        {
-          "date": "2026-06-20",
-          "title": "2 Industrial Stocks to Buy After the SpaceX IPO",
-          "source": "Motley Fool",
-          "summary": "Rocket Lab and Leidos are better-priced space stocks than SpaceX.",
-          "url": "https://www.fool.com/investing/2026/06/20/2-industrial-stocks-to-buy-after-the-spacex-ipo/"
-        },
-        {
-          "date": "2026-06-18",
-          "title": "Why Leidos Stock Plummeted This Week",
-          "source": "Motley Fool",
-          "summary": "There's (significantly) less room for this stock to run in one firm's opinion.",
-          "url": "https://www.fool.com/investing/2026/06/18/why-leidos-stock-plummeted-this-week/"
-        },
-        {
-          "date": "2026-06-18",
-          "title": "Does Leidos (LDOS) Cloud Tool Rollout Reframe Its Defense Tech Edge Amid Health IT Questions?",
-          "source": "Simply Wall St.",
-          "summary": "In early June 2026, the Defense Information Systems Agency and U.S. Space Command, working with Leidos, deployed the cloud-based Joint Management Tool, giving combatant commands real-time visibility into global satellite communications and sharply cutting the time needed for command-level reporting and analysis. This rollout highlights Leidos’ role in modernizing military communications with modul",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/does-leidos-ldos-cloud-tool-044009916.html"
-        },
-        {
-          "date": "2026-06-18",
-          "title": "Leidos Holdings (LDOS) Stock Could Be 40.7% Undervalued After Defense Program Downgrade",
-          "source": "Simply Wall St.",
-          "summary": "Leidos Holdings (LDOS) stock has come under pressure after the Defense Health Agency signaled plans to reduce reliance on the company as lead integrator for its electronic health record program, prompting downgrades from Jefferies and BofA Securities. See our latest analysis for Leidos Holdings. At a share price of $108.67, Leidos Holdings has seen momentum fade, with the 7-day share price return ",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/leidos-holdings-ldos-stock-could-001650384.html"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 70.0,
-        "rsi": 13.7,
-        "rsi_proxy": 13.7,
-        "stoch_proxy": 8.9,
-        "bb_position": 10.8,
-        "sma50_vs_price": -20.93,
-        "sma200_vs_price": -39.57,
-        "macd_line": -7.8066,
-        "atr": 3.9543,
-        "momentum_divergence": 17.4,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.29x avg",
-          "AT 52W LOW: +2.2% above annual floor — breakdown or reversal imminent",
-          "MOMENTUM: -5.0% in 5 days — continued SELLING pressure",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +17.4pp — strong trend change signal",
-          "DEEPLY OVERSOLD: RSI proxy 14, Stoch proxy 9 — bounce candidate"
-        ],
-        "rationale": "LDOS: a 5.0% five-day selloff (20d: -22.4%) reveals strong directional pressure; price sits just +2.2% above the 52-week low (99.53) — a key decision zone; RSI proxy (14) and stochastic (9) in oversold territory support a bounce thesis; price is -20.9% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "MSFT",
-      "name": "Microsoft",
-      "tradeable": true,
-      "price": 372.97,
-      "pct_1d": 5.71,
-      "pct_5d": -1.69,
-      "pct_20d": -12.65,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 6.36,
-      "pct_from_52w_high": -32.32,
-      "pct_from_52w_low": 6.81,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 62.0,
-        "rsi": 31.3,
-        "rsi_proxy": 31.3,
-        "stoch_proxy": 35.0,
-        "bb_position": 26.6,
-        "sma50_vs_price": -9.15,
-        "sma200_vs_price": -16.43,
-        "macd_line": -13.7545,
-        "atr": 12.5764,
-        "momentum_divergence": 10.96,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 3.72x avg — extreme institutional activity",
-          "NEAR 52W LOW: +6.8% above annual support — critical level",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +11.0pp — emerging trend shift",
-          "OVERSOLD: RSI proxy 31, Stoch proxy 35 — watch for reversal"
-        ],
-        "rationale": "MSFT: volume running at 3.7x the daily average signals institutional-scale activity; price sits just +6.8% above the 52-week low (349.2) — a key decision zone; RSI proxy (31) and stochastic (35) in oversold territory support a bounce thesis; price is -9.2% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "MPWR",
-      "name": "Monolithic Power Systems",
-      "tradeable": true,
-      "price": 1313.32,
-      "pct_1d": -8.69,
-      "pct_5d": -16.01,
-      "pct_20d": -19.58,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 5.34,
-      "pct_from_52w_high": -23.38,
-      "pct_from_52w_low": 92.25,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 62.0,
-        "rsi": 41.3,
-        "rsi_proxy": 41.3,
-        "stoch_proxy": 3.3,
-        "bb_position": -10.0,
-        "sma50_vs_price": -15.48,
-        "sma200_vs_price": 13.47,
-        "macd_line": -36.7798,
-        "atr": 116.2157,
-        "momentum_divergence": 3.57,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 3.17x avg — extreme institutional activity",
-          "MOMENTUM SELLOFF: -16.0% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 3 — price near annual support floor (RSI proxy 41)"
-        ],
-        "rationale": "MPWR: volume running at 3.2x the daily average signals institutional-scale activity; a 16.0% five-day selloff (20d: -19.6%) reveals strong directional pressure; price is -15.5% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "tradeable": true,
-      "price": 78.56,
-      "pct_1d": 1.17,
-      "pct_5d": -4.47,
-      "pct_20d": -13.36,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 3.04,
-      "pct_from_52w_high": -22.3,
-      "pct_from_52w_low": 2.6,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Financials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-26",
-          "title": "ICE Lags Industry, Trades at a Discount: Here's How to Play the Stock",
-          "source": "Zacks",
-          "summary": "Intercontinental Exchange expands across data services, mortgage technology and emerging market infrastructure to support long-term growth.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ice-lags-industry-trades-discount-151100955.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Down 14.7% in 4 Weeks, Here's Why You Should You Buy the Dip in Nasdaq (NDAQ)",
-          "source": "Zacks",
-          "summary": "The heavy selling pressure might have exhausted for Nasdaq (NDAQ) as it is technically in oversold territory now. In addition to this technical measure, strong agreement among Wall Street analysts in revising earnings estimates higher indicates that the stock is ripe for a trend reversal.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/down-14-7-4-weeks-133503134.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "QQQ Isn’t the Only Game in Town. Competition Heats Up for Nasdaq-100 ETFs.",
-          "source": "Barrons.com",
-          "summary": "State Street is challenging Invesco with its newly launched Nasdaq-100 exchange-traded fund. BlackRock is poised to join the fray.",
-          "url": "https://www.barrons.com/advisor/articles/qqq-invesco-state-streeet-competition-nasdaq-100-etfs-a6c43b87?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Nasdaq (NDAQ) Launches Texas Advisory Board Led By Ed Knight",
-          "source": "Simply Wall St.",
-          "summary": "Nasdaq Texas has launched its first Advisory Board, chaired by Ed Knight. The board brings together leaders from law, energy, finance, and the nonprofit sector. The group is intended to guide Nasdaq’s regional strategy and growth plans in Texas. NasdaqGS:NDAQ runs global exchanges, market technology, and related services, and Nasdaq Texas reflects the company’s efforts to deepen its role in key re",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-ndaq-launches-texas-advisory-020713916.html"
-        },
-        {
-          "date": "2026-06-24",
-          "title": "Nasdaq CMO on Preserving Brand Trust",
-          "source": "WSJ",
-          "summary": "Nasdaq Chief Marketing Officer Brian Buckley believes companies must remain deeply authentic to their roots and DNA. Instead of flooding the market with unnecessary information, he advocates for a thoughtful marketing approach. Buckley emphasized that being precise and clear about what a brand puts out into the world is the most impactful way to maintain credibility.",
-          "url": "https://finance.yahoo.com/video/nasdaq-cmo-preserving-brand-trust-130500707.html"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "CBOE Stock Plunges 28.4% in a Month: Time to Buy the Dip?",
-          "source": "Zacks",
-          "summary": "Cboe Global leverages record derivatives activity, data services growth and portfolio optimization to fuel long-term expansion.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/cboe-stock-plunges-28-4-144600784.html"
-        },
-        {
-          "date": "2026-06-23",
-          "title": "Nonstop Trading, Loads of Leverage. How ‘Perp Futures’ Are Shaking Up Wall Street.",
-          "source": "The Wall Street Journal",
-          "summary": "The CFTC’s approval of so-called perps has triggered a selloff in U.S. exchanges’ shares—and at least one high-profile lawsuit.",
-          "url": "https://www.wsj.com/finance/commodities-futures/nonstop-trading-loads-of-leverage-how-perp-futures-are-shaking-up-wall-street-59682069?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "date": "2026-06-20",
-          "title": "24X Files Tokenized Stock Plan for Russell 1000 and Major ETFs",
-          "source": "CryptoProwl",
-          "summary": "24X National Exchange has filed a rule change with the Securities and Exchange Commission that would allow tokenized versions of Russell 1000 stocks and major index-tr...",
-          "url": "https://www.cryptoprowl.com/releases/24x-files-tokenized-stock-plan-for-russell-1000-and-major-etfs-5929"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 68.0,
-        "rsi": 30.6,
-        "rsi_proxy": 30.6,
-        "stoch_proxy": 8.9,
-        "bb_position": 4.4,
-        "sma50_vs_price": -10.87,
-        "sma200_vs_price": -11.48,
-        "macd_line": -2.437,
-        "atr": 2.7836,
-        "momentum_divergence": 8.89,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 2.37x avg — above-normal interest",
-          "AT 52W LOW: +2.6% above annual floor — breakdown or reversal imminent",
-          "MOMENTUM: -4.5% in 5 days",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +8.9pp — emerging trend shift",
-          "STOCHASTIC OVERSOLD: Stoch proxy 9 — price near annual support floor (RSI proxy 31)"
-        ],
-        "rationale": "NDAQ: volume running at 2.4x the daily average signals institutional-scale activity; price sits just +2.6% above the 52-week low (76.57) — a key decision zone; RSI proxy (31) and stochastic (9) in oversold territory support a bounce thesis; price is -10.9% vs SMA50."
-      },
-      "analysis": {
-        "analysis_date": "2026-06-29",
-        "tier": "deep",
-        "verdict": "BULL",
-        "confidence": 6,
-        "bull": [
-          "Triple-oversold confluence: RSI 30.6, Stochastic 8.9 og Bollinger Band position 4.4% — alle tre indikatorer signalerer ekstremt oversolgt og historisk høj reverseringsrate.",
-          "Pris kun +2.6% over 52-ugers low ($76.51) med volume_ratio 3.04x — høj volumen sælgertryk kan være ved at udtømmes (selling climax), og mean-reversion mod BB-midpunkt (~$85.9) giver +9.4% potentiale.",
-          "Zacks-analyse (26/6) bekræfter oversold og fremhæver bred analytikerkonsensus om opadgående earnings-revisioner — fundamental støtte til teknisk bounce.",
-          "Texas Advisory Board-lancering viser strategisk ekspansion i hurtigtvoksende delstat; Nasdaq diversificerer forretning ud over børsdrift og ind i data/tech services."
-        ],
-        "bear": [
-          "Bearish trend er intakt: MACD -2.437, pris -10.9% under SMA50 ($88.14) og -11.5% under SMA200 ($88.74) — ingen af de toneangivende glidende gennemsnit agerer støtte, kun modstand.",
-          "Konkurrence om Nasdaq-100 ETF-forretningen intensiveres: State Street lanceret, BlackRock på vej — strukturelt pres på Nasdaq's licensindtægter fra QQQ-øko systemet.",
-          "Manglende P/E-, revenue growth- og earnings growth-data i datasættet er en advarsel om fundamentale usikkerheder; -13.4% over 20 dage tyder på systematisk institutionel afviklingslyst."
-        ],
-        "summary": "NDAQ handles på $78.56 — 22.3% under 52-ugers high og blot 2.6% over bundniveauet. Teknisk er aktien ekstremt oversolgt på alle tre kortsigtede oscillatorer (RSI 30.6, Stochastic 8.9, BB-position 4.4%), og den høje volumen (3.04x normal) tyder på en potentiel capitulation. Den primære tendens er dog klart bearish: MACD er negativ, og prisen ligger ca. 11% under begge toneangivende glidende gennemsnit. Analytikere hæver earnings-estimater ifølge Zacks, og en teknisk bounce mod BB-midpunktet (~$86) er plausibel — det svarer til +9.4% og den definerede target for 'hvad skal til for +10%'. Risikoen er, at aktien konsoliderer nær bunden frem for at rebound, og at den skærpede ETF-konkurrence fra State Street/BlackRock strukturelt udhuler en vigtig indtægtskilde. Hold positionen med tæt stop under 52w low (~$76.5); en close over SMA20 (~$82) ville signalere reversal.",
-        "key_risk": "Fortsæt bearish breakdown under 52w low ($76.5) kombineret med strukturelt fee-pres fra nye Nasdaq-100 ETF-konkurrenter (State Street, BlackRock)."
-      },
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "NKE",
-      "name": "Nike, Inc.",
-      "tradeable": true,
-      "price": 40.75,
-      "pct_1d": -0.37,
-      "pct_5d": -9.85,
-      "pct_20d": -13.21,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.86,
-      "pct_from_52w_high": -47.78,
-      "pct_from_52w_low": 1.88,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Consumer Discretionary",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-28",
-          "title": "AI jitters meet a jobs report and falling oil prices: What to watch this week",
-          "source": "Yahoo Finance",
-          "summary": "After a roller-coaster week in the markets, thanks to flip-flopping sentiment about AI spending, investors will get plenty more action on the calendar as we enter jobs week.",
-          "url": "https://finance.yahoo.com/markets/article/ai-jitters-meet-a-jobs-report-and-falling-oil-prices-what-to-watch-this-week-100000636.html"
-        },
-        {
-          "date": "2026-06-28",
-          "title": "Nike Looks Undervalued Here and Could Reward Long-Term Investors",
-          "source": "Motley Fool",
-          "summary": "Nike's turnaround is gaining momentum.",
-          "url": "https://www.fool.com/investing/2026/06/28/nike-looks-undervalued-here-and-could-reward-long/"
-        },
-        {
-          "date": "2026-06-28",
-          "title": "Nike at a 12-Year Low or Lululemon at an 8-Year Low? Here's the Better Turnaround Stock for Deep Value Investors to Buy in July.",
-          "source": "Motley Fool",
-          "summary": "Both of these companies are struggling, but one has a clear advantage.",
-          "url": "https://www.fool.com/investing/2026/06/28/nike-at-a-12-year-low-or-lululemon-at-an-8-year-lo/"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "Stock Market Week Ahead: Rotating, For Now, Away From The AI Boom",
-          "source": "Investor's Business Daily",
-          "summary": "Recent action suggests that hyperscalers and other AI boom stocks may be passing the baton to other stock market sectors.",
-          "url": "https://www.investors.com/research/investing-action-plan/stock-market-week-ahead-rotating-for-now-away-from-the-ai-boom/?src=A00220&yptr=yahoo"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Charitable Giving: Where There’s a Will, There’s a Way",
-          "source": "Barrons.com",
-          "summary": "An annual report finds donations to nonprofits rose by 3% in inflation-adjusted dollars to $617.2 billion in 2025",
-          "url": "https://www.barrons.com/articles/charitable-giving-where-theres-a-will-theres-a-way-42a6ae33?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "S&P 500, Nasdaq End Week Lower As Investors Rotate Out Of Tech, AI Plays — ON, AAPL, SLS, INFQ, NKE in Focus",
-          "source": "Stocktwits",
-          "summary": "The Dow Jones ended its third consecutive week higher amid cooling oil prices and strength in pharma and materials stocks.",
-          "url": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-end-week-lower-as-investors-rotate-out-of-tech-ai-plays-on-aapl-sls-infq-nke-in-focus/cZ12ck9R7W9"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "What Will Q2 Earnings Season Show?",
-          "source": "Zacks",
-          "summary": "The revisions trend for full-year 2026 is even more positive than for Q2, with estimates for 11 of the 16 Zacks sectors going up since the start of March.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/q2-earnings-season-show-211700913.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Nike Reports Earnings Tuesday. Here's How Much Traders Expect the Stock Could Move",
-          "source": "Investopedia",
-          "summary": "Nike is set to report earnings Tuesday afternoon, with traders expecting a big move in the athletic apparel maker's stock.",
-          "url": "https://www.investopedia.com/nike-reports-earnings-tuesday-here-is-how-much-traders-expect-the-stock-could-move-nke-q4-fy2026-12005899"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 69.0,
-        "rsi": 40.8,
-        "rsi_proxy": 40.8,
-        "stoch_proxy": 11.9,
-        "bb_position": -1.4,
-        "sma50_vs_price": -7.16,
-        "sma200_vs_price": -28.63,
-        "macd_line": -0.6953,
-        "atr": 1.46,
-        "momentum_divergence": 3.36,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.42x avg",
-          "AT 52W LOW: +1.9% above annual floor — breakdown or reversal imminent",
-          "MOMENTUM SELLOFF: -9.8% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 12 — price near annual support floor (RSI proxy 41)"
-        ],
-        "rationale": "NKE: a 9.8% five-day selloff (20d: -13.2%) reveals strong directional pressure; price sits just +1.9% above the 52-week low (40.0) — a key decision zone; price is -7.2% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "NUE",
-      "name": "Nucor",
-      "tradeable": true,
-      "price": 239.78,
-      "pct_1d": -3.66,
-      "pct_5d": -1.66,
-      "pct_20d": -3.82,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.38,
-      "pct_from_52w_high": -11.49,
-      "pct_from_52w_low": 88.7,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Materials",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-28",
-          "title": "KeyBanc Sees Nucor (NUE) as Compelling After Recent Pullback, Upgrades Stock",
-          "source": "Insider Monkey",
-          "summary": "Nucor Corporation (NYSE:NUE) is included among the 10 Best Dividend Stocks to Buy for Passive Income. On June 24, KeyBanc upgraded Nucor Corporation (NYSE:NUE) to Overweight from Sector Weight. It also set a $274 price target on the stock. The firm expects real carbon steel demand to grow 2% year over year in 2026, while […]",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/keybanc-sees-nucor-nue-compelling-032002418.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "Nucor (NUE) Stock After Strong Rally And Recent Materials Sector Headlines",
-          "source": "Simply Wall St.",
-          "summary": "If you are trying to work out whether Nucor stock still offers value at current levels, the starting point is understanding what today’s price is actually implying about the business. After a strong run with the share price up 41.5% year to date and 85.2% over the past year, the stock has recently cooled, with returns over the last 7 days and 30 days declining 1.7% and 2.7% respectively from a las",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/nucor-nue-stock-strong-rally-101146591.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "How Stronger Q2 EPS Guidance At Nucor (NUE) Has Changed Its Investment Story",
-          "source": "Simply Wall St.",
-          "summary": "Nucor Corporation recently issued earnings guidance for the second quarter ended July 4, 2026, projecting net earnings per diluted share between US$4.70 and US$4.80. This guidance, alongside ongoing expansion projects, higher steel prices and healthy demand in core markets, underscores management’s confidence in current operating conditions. We’ll now examine how Nucor’s higher second-quarter earn",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stronger-q2-eps-guidance-nucor-230649283.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Why Nucor (NUE) Dipped More Than Broader Market Today",
-          "source": "Zacks",
-          "summary": "In the closing of the recent trading day, Nucor (NUE) stood at $239.78, denoting a -3.66% move from the preceding trading day.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-nucor-nue-dipped-more-221502911.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Avient Launches PREPERM Low Loss Dielectric Thermoplastics Globally",
-          "source": "Zacks",
-          "summary": "AVNT's PREPERM Low Loss Dielectric Thermoplastics targets 5G/6G radar growth, helping address signal loss, warpage and BSIS barriers.",
-          "url": "https://finance.yahoo.com/technology/articles/avient-launches-preperm-low-loss-125300572.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "KWR Enhances China Operations With New Facility at Zhangjiagang",
-          "source": "Zacks",
-          "summary": "Quaker Chemical opens a new China manufacturing facility and expands its lab to boost local production, innovation and customer support across Asia-Pacific.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/kwr-enhances-china-operations-facility-120200650.html"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "Methanex Shares Rise 20% in 6 Months: What's Driving the Stock?",
-          "source": "Zacks",
-          "summary": "MEOH's shares have gained 19.8% in the past six months, supported by the global production network and contributions from newly acquired assets.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/methanex-shares-rise-20-6-132600079.html"
-        },
-        {
-          "date": "2026-06-25",
-          "title": "DOW Announces $100 Million Investment to Expand Silicone Capabilities",
-          "source": "Zacks",
-          "summary": "Dow is investing $100 million through 2027 to expand specialty silicones capacity and innovation across mobility, electronics and healthcare.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dow-announces-100-million-investment-131200023.html"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 24.0,
-        "rsi": 39.4,
-        "rsi_proxy": 39.4,
-        "stoch_proxy": 6.8,
-        "bb_position": 8.3,
-        "sma50_vs_price": 1.86,
-        "sma200_vs_price": 34.03,
-        "macd_line": 2.4638,
-        "atr": 8.8214,
-        "momentum_divergence": 2.16,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.18x avg",
-          "STOCHASTIC OVERSOLD: Stoch proxy 7 — price near annual support floor (RSI proxy 39)"
-        ],
-        "rationale": "NUE: price is +1.9% vs SMA50."
-      },
-      "analysis": {
-        "analysis_date": "2026-06-29",
-        "tier": "deep",
-        "verdict": "BULL",
-        "confidence": 7,
-        "bull": [
-          "KeyBanc opgraderede til Overweight med kursmål $274 (24/6) — +14.3% upside fra $239.78 — og fremhæver aktien som 'compelling after recent pullback'; institutionel opkøbssignal.",
-          "Q2 EPS guidance $4.70–$4.80 pr. aktie slår forventninger og bekræfter operationel momentum; NUE's EPS-vækst understøttes af højere stålpriser og igangværende kapacitetsudvidelser.",
-          "Stærk langsigtet teknisk position: pris +34% over SMA200 ($178.9) og +1.86% over SMA50 ($235.4) — både kortsigtet og langsigtet trend bullish. MACD +2.46 er positiv.",
-          "Stochastic 6.8 (oversolgt) og BB-position 8.3% indikerer kortsigtet oversold efter -3.66% dagsdip — attraktivt taktisk entry inden næste rally-ben mod $274-målet."
-        ],
-        "bear": [
-          "RSI 39.4 er endnu ikke i oversolgt zone og kan falde yderligere til 30-niveau; short-term momentum negativ (-1.66% / 5d, -3.82% / 20d) — risiko for yderligere konsolidering.",
-          "Stålpriser er dybt tariffølsomme: handelspolitiske ændringer, aftaler om toldsuspensioner eller global efterspørgselsskuffelse kan ramme NUE's marginudvikling hurtigt.",
-          "41.5% YTD-stigning skaber profit-taking-risiko; aktien handles -11.5% fra 52w high men fortsat på relativ premium til sektoren."
-        ],
-        "summary": "NUE handles på $239.78 efter et -3.66% dagsdip, men den underliggende fundamental- og tekniske historia er stærkt bullish. KeyBanc's Overweight-opgradering til $274 giver et veldefineret upside-mål (+14.3%), og Q2 EPS guidance ($4.70–$4.80) bekræfter, at driftsmomentum er intakt. Teknisk er aktien stærkt funderet over begge glidende gennemsnit (SMA50 og SMA200), og den positive MACD (+2.46) signalerer fortsat bullish tendens. Det kortsigtet oversold Stochastic (6.8) og Bollinger-position (8.3%) indikerer, at gårsdagens sell-off var overdrevet og skaber et attraktivt entry-vindue. Den største usikkerhed er, om stigende stålpriser holder, og om YTD-run på 41.5% tiltrækker systematisk profit-taking. Stop bør placeres under SMA50 (~$235); break over $252 (BB-midpunkt) bekræfter rally-fortsættelse.",
-        "key_risk": "Handelspolitisk vending (toldsuspensioner, handelsaftaler) der sænker stålpriserne, kombineret med profit-taking efter 41.5% YTD-rally."
-      },
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "ON",
-      "name": "ON Semiconductor",
-      "tradeable": true,
-      "price": 90.65,
-      "pct_1d": -23.66,
-      "pct_5d": -25.46,
-      "pct_20d": -26.76,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 4.56,
-      "pct_from_52w_high": -32.81,
-      "pct_from_52w_low": 103.43,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-06-27",
-          "title": "ON Semiconductor (ON) Is Buying Synaptics In A $7 Billion All Stock Deal",
-          "source": "Simply Wall St.",
-          "summary": "ON Semiconductor (NasdaqGS:ON) has agreed to acquire Synaptics in an all stock deal valued at $7b. The transaction is aimed at expanding ON Semiconductor's reach into AI driven intelligent systems and edge AI applications. The deal is intended to add advanced AI processors and wireless connectivity alongside ON Semiconductor's existing power and analog portfolio. ON Semiconductor enters this deal ",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductor-buying-synaptics-7-billion-180548617.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "On Semiconductor (ON) Stock After 25% Weekly Drop Is The Valuation Now Attractive",
-          "source": "Simply Wall St.",
-          "summary": "If you are trying to work out whether ON Semiconductor is attractively priced or not, the recent share moves and current valuation metrics give you plenty to think about. The stock closed at US$90.65, with the share price down 25.5% over the last week and down 27.4% over the last month, although it is still up 59.9% year to date and up 71.3% over the past year. Recent headlines have focused on how",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductor-stock-25-weekly-drop-170626843.html"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "3 Beaten-Down AI Chip Stocks to Consider Buying in the Sell-Off",
-          "source": "Motley Fool",
-          "summary": "When a whole sector sells off at once, the best names can get dragged down with the worst.",
-          "url": "https://www.fool.com/investing/2026/06/26/3-beaten-down-ai-chip-stocks-to-consider-buying-in/"
-        },
-        {
-          "date": "2026-06-27",
-          "title": "What Analog Devices Stock Was Saying By Intentionally Selling Less",
-          "source": "Trefis",
-          "summary": "Before the chipmaker's stock surged, management was telling anyone who would listen that they were deliberately holding back sales in their biggest market.",
-          "url": "https://www.trefis.com/articles/604730/what-analog-devices-stock-was-saying-by-intentionally-selling-less/2026-06-26"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Here's Why ON Semiconductor Corp. (ON) Fell More Than Broader Market",
-          "source": "Zacks",
-          "summary": "ON Semiconductor Corp. (ON) reached $90.65 at the closing of the latest trading day, reflecting a -23.66% change compared to its last close.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-semiconductor-corp-fell-215004118.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "Why onsemi (ON) Shares Are Falling Today",
-          "source": "StockStory",
-          "summary": "Shares of analog chips maker onsemi (NASDAQ:ON) fell 21.8% in the morning session after the company announced the acquisition of Synaptics in a $7 billion all-stock transaction, which raised investor concerns about shareholder dilution.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-onsemi-shares-falling-today-210425984.html"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "U.S. Stocks Down as AI Fears Offset Fuel-Price Relief",
-          "source": "The Wall Street Journal",
-          "summary": "The Dow Jones Industrial Average and the S&P 500 both declined 0.1%, while the tech-heavy Nasdaq Composite slipped 0.2%.",
-          "url": "https://www.wsj.com/finance/stocks/u-s-stocks-down-as-ai-fears-offset-fuel-price-relief-61c76586?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "date": "2026-06-26",
-          "title": "The $7 Billion Reason ON Semiconductor Stock Is Down Today",
-          "source": "Barchart",
-          "summary": "ON shares crashed as management announces a $7 billion acquisition of Synaptics. Here’s why the deal isn’t sitting well with ON stock investors.",
-          "url": "https://www.barchart.com/story/news/3006526/the-7-billion-reason-on-semiconductor-stock-is-down-today"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 74.0,
-        "rsi": 37.7,
-        "rsi_proxy": 37.7,
-        "stoch_proxy": 3.3,
-        "bb_position": -28.8,
-        "sma50_vs_price": -17.61,
-        "sma200_vs_price": 29.2,
-        "macd_line": 0.1096,
-        "atr": 10.7057,
-        "momentum_divergence": 1.3,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 3.22x avg — extreme institutional activity",
-          "SIGNIFICANT DRAWDOWN: -32.8% from 52w high",
-          "MOMENTUM SELLOFF: -25.5% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 3 — price near annual support floor (RSI proxy 38)"
-        ],
-        "rationale": "ON: volume running at 3.2x the daily average signals institutional-scale activity; a 25.5% five-day selloff (20d: -26.8%) reveals strong directional pressure; price is -17.6% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "ORCL",
-      "name": "Oracle Corporation",
-      "tradeable": true,
-      "price": 148.53,
-      "pct_1d": -2.58,
-      "pct_5d": -19.4,
-      "pct_20d": -27.08,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.46,
-      "pct_from_52w_high": -56.7,
-      "pct_from_52w_low": 10.37,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 62.0,
-        "rsi": 11.1,
-        "rsi_proxy": 11.1,
-        "stoch_proxy": 0.7,
-        "bb_position": 8.9,
-        "sma50_vs_price": -21.44,
-        "sma200_vs_price": -26.58,
-        "macd_line": -10.4969,
-        "atr": 11.4207,
-        "momentum_divergence": 7.68,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.16x avg",
-          "DEEP DRAWDOWN: -56.7% from 52w high — severe compression, mean-reversion potential",
-          "MOMENTUM SELLOFF: -19.4% in 5 days — sharp directional move",
-          "DEEPLY OVERSOLD: RSI proxy 11, Stoch proxy 1 — bounce candidate"
-        ],
-        "rationale": "ORCL: a 19.4% five-day selloff (20d: -27.1%) reveals strong directional pressure; stock has shed 57% from its 52-week high — potential deep value or extended downtrend; RSI proxy (11) and stochastic (1) in oversold territory support a bounce thesis; price is -21.4% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "PLTR",
-      "name": "Palantir Technologies",
-      "tradeable": true,
-      "price": 112.93,
-      "pct_1d": 5.28,
-      "pct_5d": -12.1,
-      "pct_20d": -21.22,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.15,
-      "pct_from_52w_high": -45.58,
-      "pct_from_52w_low": 6.17,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 64.0,
-        "rsi": 27.8,
-        "rsi_proxy": 27.8,
-        "stoch_proxy": 20.9,
-        "bb_position": 15.1,
-        "sma50_vs_price": -17.24,
-        "sma200_vs_price": -28.91,
-        "macd_line": -7.0205,
-        "atr": 6.0068,
-        "momentum_divergence": 9.12,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME NORMAL-HIGH: 1.35x avg",
-          "NEAR 52W LOW: +6.2% above annual support — critical level",
-          "MOMENTUM SELLOFF: -12.1% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +9.1pp — emerging trend shift",
-          "OVERSOLD: RSI proxy 28, Stoch proxy 21 — watch for reversal"
-        ],
-        "rationale": "PLTR: a 12.1% five-day selloff (20d: -21.2%) reveals strong directional pressure; price sits just +6.2% above the 52-week low (106.37) — a key decision zone; RSI proxy (28) and stochastic (21) in oversold territory support a bounce thesis; price is -17.2% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "ROST",
-      "name": "Ross Stores",
-      "tradeable": true,
-      "price": 213.26,
-      "pct_1d": -0.87,
-      "pct_5d": -8.39,
-      "pct_20d": -5.95,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 4.8,
-      "pct_from_52w_high": -12.17,
-      "pct_from_52w_low": 70.36,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Consumer Discretionary",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 62.0,
-        "rsi": 33.8,
-        "rsi_proxy": 33.8,
-        "stoch_proxy": 7.6,
-        "bb_position": -11.4,
-        "sma50_vs_price": -5.6,
-        "sma200_vs_price": 10.94,
-        "macd_line": -0.5772,
-        "atr": 6.3979,
-        "momentum_divergence": -2.44,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 3.31x avg — extreme institutional activity",
-          "MOMENTUM SELLOFF: -8.4% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 8 — price near annual support floor (RSI proxy 34)"
-        ],
-        "rationale": "ROST: volume running at 3.3x the daily average signals institutional-scale activity; a 8.4% five-day selloff (20d: -6.0%) reveals strong directional pressure; RSI proxy (34) and stochastic (8) in oversold territory support a bounce thesis; price is -5.6% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "VRTX",
-      "name": "Vertex Pharmaceuticals",
-      "tradeable": true,
-      "price": 491.34,
-      "pct_1d": 2.32,
-      "pct_5d": 8.79,
-      "pct_20d": 9.68,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 5.75,
-      "pct_from_52w_high": -3.26,
-      "pct_from_52w_low": 35.54,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Health Care",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 65.0,
-        "rsi": 75.5,
-        "rsi_proxy": 75.5,
-        "stoch_proxy": 82.1,
-        "bb_position": 109.3,
-        "sma50_vs_price": 11.28,
-        "sma200_vs_price": 11.25,
-        "macd_line": 10.7928,
-        "atr": 12.5814,
-        "momentum_divergence": -0.89,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 4.78x avg — extreme institutional activity",
-          "NEAR 52W HIGH: -3.3% — breakout territory",
-          "MOMENTUM SURGE: +8.8% in 5 days — sharp directional move",
-          "OVERBOUGHT: RSI proxy 76, Stoch proxy 82 — stretched, potential pullback"
-        ],
-        "rationale": "VRTX: volume running at 4.8x the daily average signals institutional-scale activity; a 8.8% five-day rally (20d: +9.7%) reveals strong directional pressure; stock is pressing against its 52-week high at -3.3% — breakout watch; price is +11.3% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    },
-    {
-      "symbol": "WDAY",
-      "name": "Workday, Inc.",
-      "tradeable": true,
-      "price": 124.21,
-      "pct_1d": 9.18,
-      "pct_5d": 6.23,
-      "pct_20d": -4.46,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 2.55,
-      "pct_from_52w_high": -50.29,
-      "pct_from_52w_low": 12.55,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [],
-      "technical": {
-        "screening_date": "2026-06-28",
-        "score": 64.0,
-        "rsi": 30.5,
-        "rsi_proxy": 30.5,
-        "stoch_proxy": 37.4,
-        "bb_position": 34.2,
-        "sma50_vs_price": -2.7,
-        "sma200_vs_price": -29.73,
-        "macd_line": -3.8868,
-        "atr": 6.635,
-        "momentum_divergence": 10.69,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.76x avg — above-normal interest",
-          "DEEP DRAWDOWN: -50.3% from 52w high — severe compression, mean-reversion potential",
-          "MOMENTUM: +6.2% in 5 days — continued BUYING pressure",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +10.7pp — emerging trend shift",
-          "OVERSOLD: RSI proxy 30, Stoch proxy 37 — watch for reversal"
-        ],
-        "rationale": "WDAY: volume running at 1.8x the daily average signals institutional-scale activity; a 6.2% five-day rally (20d: -4.5%) reveals strong directional pressure; stock has shed 50% from its 52-week high — potential deep value or extended downtrend; RSI proxy (30) and stochastic (37) in oversold territory support a bounce thesis; price is -2.7% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-06-28T17:05:13.395248+00:00"
-    }
-  ],
+  "stocks": [],
   "latest_decisions": {
-    "date": "2026-06-29",
-    "market_summary": "Porteføljen er fuldt positioneret med to dag-1 positioner. NUE konsoliderer efter -3.66% dagsdip men fundamentals (KeyBanc 74-target, Q2 guidance beat) og teknisk setup (oversold Stochastic 6.8, MACD +2.46) er intakt. NDAQ viser farlig bearish tendens med MACD negativ og kurs 11% under begge SMA, men triple-oversold (RSI 30.6, Stoch 8.9, BB 4.4%) giver bounce-potentiale — positionen holdes med tæt stop. Ingen nye kandidater i analyselisten i dag.",
+    "date": "2026-07-13",
+    "market_summary": "Bred AI/chip-selloff dominerer (SK Hynix -15% på en dag, ARM/MRVL/ORCL/APP hårdt ramt) samtidig med stigende oliepriser og geopolitisk uro, der presser industri- og materialenavne. Egne positioner holder deres tese intakt: NUE er uændret bullish efter KeyBanc-opgradering, mens NDAQ har nået sit oprindelige kursmål ($88) og får hævet stop for at sikre gevinsten. To nye køb i dag i navne med selskabsspecifikke (ikke kun makro-drevne) positive katalysatorer midt i udsalget: ORCL (dybt oversolgt AI-cloud-vækst) og TDG (macro-drevet pullback i stærkt aerospace-navn), hvilket samtidig diversificerer væk fra den nuværende Materials/Financials-koncentration.",
     "decisions": [
       {
         "symbol": "NUE",
         "name": "Nucor",
         "action": "HOLD",
         "shares": 0,
-        "price": 239.78,
-        "confidence": 72,
-        "reasoning": "Thesis fuldt intakt. KeyBanc opgraderede 24/6 til Overweight med kursmål 74 (+14.3% fra entry), og Q2 EPS guidance på .70-4.80 slår forventningerne. MACD +2.46 er bullish, og Stochastic 6.8 + BB-position 8.3% signalerer kortsigtet oversold efter -3.66% dagsdip — klassisk buy-the-dip setup inden næste rally-ben. Stop 22.14 (2x ATR) er klart ikke trigget. Pris +1.86% over SMA50 og +34% over SMA200 bekræfter stærk langsigtet trend. Holder til target 74 eller stop.",
+        "price": 233.0,
+        "confidence": 6,
+        "reasoning": "Tese intakt: KeyBanc-opgradering til Overweight ($274 mål) og stærk Q2-guidance ($4.70-$4.80) opvejer den negative 20-dages momentum. Stop ikke udløst, langsigtet trend fortsat klart bullish (+27.4% over SMA200).",
         "bull": [
-          "KeyBanc Overweight-opgradering til 74 giver klar institutionel opbakning og 14.3% upside fra entry",
-          "Q2 EPS guidance .70-4.80 slår estimater og bekræfter operationelt momentum",
-          "Oversold Stochastic (6.8) og BB-position (8.3%) efter dagsdip indikerer attraktivt bounce-vindue",
-          "Positiv MACD (+2.46) og kurs over begge glidende gennemsnit (SMA50+SMA200) — bullish trend intakt"
+          "KeyBanc har opgraderet til Overweight med $274 kursmål (~18% opside fra $233) efter det seneste pullback, understøttet af forventning om 2% vækst i reel kulstofstål-efterspørgsel i 2026.",
+          "Stærk Q2 EPS-guidance ($4.70-$4.80) og en 53-årig udbyttevæksthistorik med solid balance understøtter fortsatte tilbagekøb/udbytte.",
+          "Langsigtet trend stadig klart intakt: pris 27.4% over SMA200 trods den seneste 20-dages korrektion."
         ],
         "bear": [
-          "RSI 39.4 kan falde yderligere til oversolgt zone (30) inden bounce; kortsigtet momentum negativt",
-          "Handelspolitisk vending (toldsuspensioner) kan sænke stålpriser og ramme marginerne hurtigt",
-          "41.5% YTD-stigning giver profit-taking-risiko fra institutionelle investorer"
+          "20-dages momentum er fortsat negativt (-10.47%), og en del af den kraftige forudgående 1-års stigning (+79% fra 52-ugers-lav) er givet tilbage.",
+          "Stålefterspørgsel er cyklisk og følsom over for industriel/byggeaktivitet samt handelspolitik, hvilket kan presse guidance hvis konjunkturerne svækkes."
         ],
         "investment_plan": {
           "term": "medium",
@@ -2280,9 +286,9 @@
           "thesis": "Buy-the-dip i bekræftet bulltrend: KeyBanc-upgrade + Q2-guidance-beat + tarif-rygvind giver asymmetrisk risk/reward. Entry ved teknisk oversold med klar catalyst-pipeline.",
           "price_target": 274,
           "stop_loss": 222.14,
-          "expected_return_pct": 14.3,
+          "expected_return_pct": 17.6,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Stop ved 22.14 (2x ATR). Profitmål ved 74 (KeyBanc target). Sælg ved fundamentalt brud: stålpriskollaps under tarifsatser, Q2 EPS miss under .50, eller global recessions-signal."
+          "exit_conditions": "Stop ved $222.14 (2x ATR). Profitmål $274 (KeyBanc). Sælg ved fundamentalt brud: stålpriskollaps under tarifsatser, Q2 EPS miss under $4.70, eller globalt recessions-signal."
         }
       },
       {
@@ -2290,38 +296,139 @@
         "name": "Nasdaq, Inc.",
         "action": "HOLD",
         "shares": 0,
-        "price": 78.56,
-        "confidence": 58,
-        "reasoning": "NDAQ er i en klar bearish primærtrend (MACD -2.437, kurs -11% under SMA50 og SMA200), men triple-oversold confluence — RSI 30.6, Stochastic 8.9 og Bollinger Band 4.4% — kombineret med høj volumen (3.04x) tyder på mulig capitulation. Positionen er kun 1 dag gammel, og stop på 2.99 er ikke trigget. Analytikerkonsensus er bullish på bounce (Zacks 26/6), og Texas Advisory Board-lancering viser strategisk vækst. Holder med TÆTTE øjne — en close under 52w low (6.51) vil trigge revurdering. Stop sænkes IKKE.",
+        "price": 89.21,
+        "confidence": 7,
+        "reasoning": "Oprindeligt kursmål ($88) er nået og overgået; teknisk trend bekræftet bullish (over SMA50/SMA200) og Zacks-opgraderet, men Stochastic på 98.4 signalerer kortsigtet overkøbt. Hæver stop til $84 for at sikre gevinst og sætter nyt mål ved TD Cowens $98.",
         "bull": [
-          "Triple-oversold: RSI 30.6, Stochastic 8.9, BB 4.4% — alle tre indikatorer i historisk bouncing-zone",
-          "Volumen 3.04x normal tyder på selling climax; mean-reversion mod BB-midpunkt (5.9) = +9.4% potentiale",
-          "Analytikerkonsensus opadgående på earnings-revisioner (Zacks 26/6)",
-          "Texas Advisory Board viser strategisk ekspansion ud over børsdrift"
+          "Teknisk trend er vendt positiv: pris over både SMA50 (+2.21%) og SMA200 (+0.91%) med stærkt momentum (+5.61% 5d, +3.22% 20d) — en bekræftet vending, ikke kun en oversolgt bounce.",
+          "Rekordstærkt første halvår for US-noteringer ($129.3 mia. rejst, 7 af årets 10 største IPO'er på Nasdaq) plus SK Hynix' højprofilerede ADR-debut trækker fornyet international listing-interesse.",
+          "Zacks har opgraderet til Buy på stigende indtjeningsoptimisme."
         ],
         "bear": [
-          "Bearish primærtrend: MACD -2.437, kurs -10.9% under SMA50 og -11.5% under SMA200 — ingen støtte, kun modstand",
-          "ETF-konkurrence fra State Street og BlackRock presser Nasdaq-100 licensindtægter strukturelt",
-          "-13.4% momentum over 20 dage indikerer systematisk institutionel afvikling"
+          "Stochastic på 98.4 er tæt på overkøbt efter den stærke bounce — risiko for en kortsigtet pause/konsolidering.",
+          "TD Cowen har trimmet kursmålet til $98 (fra $104) på tværs af exchange-dækningen, og fremvoksende 'perpetual futures'-konkurrence er en strukturel trussel mod traditionelle exchange-produkter."
         ],
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
-          "thesis": "Mean-reversion trade i ekstremt oversold kvalitetsfranchise. Entry ved triple-oversold confluence med analyst-estimater der stiger mens kursen falder. Stop under 52w low giver begrænset downside.",
-          "price_target": 88,
-          "stop_loss": 72.99,
-          "expected_return_pct": 12.0,
-          "timeframe": "2-4 måneder",
-          "exit_conditions": "Stop ved 2.99 (2x ATR under entry). Profitmål SMA50 ca. 8. Sælg ved close under 52w low (6.51), ETF-licensing-tab der reducerer guidance, eller markedsbredt finanssektors-kollaps."
+          "thesis": "Bekræftet teknisk vending + rekordstærkt IPO-halvår og SK Hynix-listing-momentum. Oprindeligt mål nået — hæver stop for at sikre gevinst og forlænger tesen mod TD Cowens $98-mål.",
+          "price_target": 98,
+          "stop_loss": 84,
+          "expected_return_pct": 9.9,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Stop ved $84 (sikrer >6% gevinst fra entry). Profitmål $98 (TD Cowen). Sælg ved close under $84, eller hvis 'perpetual futures'-konkurrencetruslen eskalerer markant."
+        }
+      },
+      {
+        "symbol": "ORCL",
+        "name": "Oracle Corporation",
+        "action": "BUY",
+        "shares": 103,
+        "price": 131.54,
+        "confidence": 6,
+        "reasoning": "Tre samstemmende oversold-signaler (RSI 12.6, Stoch 0.4, BB 16.6%) efter et 28%-fald, mens OCI-cloud-væksten (+93% å/å, $638 mia. backlog) forbliver fundamentalt intakt og bredt analytiker-forsvaret (Piper Sandler, Evercore, Dan Ives). Gældsbekymringen er reel, så positionen holdes indenfor ATR-baseret risikoramme.",
+        "bull": [
+          "Ekstremt oversolgt: RSI 12.6, Stochastic 0.4 og BB-position 16.6% — tre samstemmende oversold-signaler efter et 28%-fald på en måned.",
+          "Fundamentalt intakt AI-cloud-vækst: OCI-omsætning +93% å/å, RPO/backlog på $638 mia. — Piper Sandler ser $2.2 mia. yderligere OCI-opside vs. konsensus.",
+          "Bred analytiker-opbakning midt i krakket: Evercore (Outperform, $245), Wedbush's Dan Ives kalder aktien 'way oversold' og venter vending inden for 6-9 måneder."
+        ],
+        "bear": [
+          "Teknisk struktur er brudt: pris 28-32% under både SMA50 og SMA200, og momentum er negativt på tværs af 5/20 dage — det er endnu kun oversolgt, ikke vendt.",
+          "S&P Global og markedet stiller åbent spørgsmålet om den gældsfinansierede AI-satsning kan blive for stor for selskabet at bære."
+        ],
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Ekstremt oversolgt (tre samstemmende signaler) i en fundamentalt intakt AI-cloud-vækstcase (OCI +93% å/å, $638 mia. backlog). Flere analytikere (Evercore, Piper Sandler, Dan Ives) forsvarer aktivt aktien midt i udsalget som en generationskøbsmulighed.",
+          "price_target": 190,
+          "stop_loss": 116.78,
+          "expected_return_pct": 44.4,
+          "timeframe": "6-9 måneder",
+          "exit_conditions": "Stop ved $116.78 (2x ATR). Profitmål $190 (delvis recovery mod SMA50/200). Sælg ved eskalerende gældsbekymringer/kreditratingnedgraderinger, eller yderligere fundamental svækkelse i OCI-væksten."
+        }
+      },
+      {
+        "symbol": "TDG",
+        "name": "TransDigm Group",
+        "action": "BUY",
+        "shares": 16,
+        "price": 1235.0,
+        "confidence": 6,
+        "reasoning": "Pullbacket (-8.25% på 5 dage) er makro-/oliedrevet, ikke selskabsspecifikt — egne nyheder (Zacks-opgradering, indtjeningsslag-mønster, opjusteret FY26-guidance) er entydigt positive. Køber budgetbegrænset (16 aktier) frem for det ATR-baserede antal (22) pga. høj aktiekurs.",
+        "bull": [
+          "Zacks har opgraderet til Buy (Rank #2) på stigende indtjeningsoptimisme, understøttet af et solidt mønster af indtjeningsslag og opjusteret FY2026 net sales/GAAP EPS-guidance.",
+          "Høj-margin proprietær aerospace-eksponering med tilbagevendende eftermarkedsomsætning giver en strukturel moat, der ikke er svækket af den seneste kursnedgang."
+        ],
+        "bear": [
+          "Nedturen (-8.25% over 5 dage) ser ud til at være drevet af en bredere industri-/olieprisdrevet inflationsfrygt snarere end selskabsspecifikke problemer, men RSI (36.8) og negativ momentum viser at trenden endnu ikke er vendt.",
+          "Præmievurdering giver begrænset margin for fejl, hvis makromiljøet (renter/olie) forværres yderligere."
+        ],
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Makro-/oliedrevet industriselloff, ikke selskabsspecifik svaghed — Zacks-opgradering, indtjeningsslag-mønster og opjusteret FY26-guidance forbliver intakte i den høj-margin aerospace-eftermarkedsforretning.",
+          "price_target": 1350,
+          "stop_loss": 1166.19,
+          "expected_return_pct": 9.3,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Stop ved $1166.19 (2x ATR). Profitmål $1350 (pre-selloff niveau). Sælg ved selskabsspecifik indtjeningsskuffelse eller brud på Zacks-opgraderingens antagelser."
         }
       }
     ]
   },
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "ticker": "^GSPC",
+      "label": "S&P 500",
+      "color": "#e3b341",
+      "history": [
+        {
+          "date": "2026-06-28",
+          "portfolio_value": 98838.64
+        },
+        {
+          "date": "2026-06-29",
+          "portfolio_value": 100000.0
+        },
+        {
+          "date": "2026-07-13",
+          "portfolio_value": 101006.79
+        }
+      ]
+    },
+    {
+      "ticker": "^NDX",
+      "label": "Nasdaq-100",
+      "color": "#a371f7",
+      "history": [
+        {
+          "date": "2026-06-28",
+          "portfolio_value": 97795.08
+        },
+        {
+          "date": "2026-06-29",
+          "portfolio_value": 100000.0
+        },
+        {
+          "date": "2026-07-13",
+          "portfolio_value": 98284.97
+        }
+      ]
+    }
+  ],
   "sector_exposure_pct": {
-    "Materials": 50.9,
-    "Financials": 49.1
+    "Materials": 26.3,
+    "Financials": 29.6,
+    "Information Technology": 18.0,
+    "Industrials": 26.2
   }
 }
