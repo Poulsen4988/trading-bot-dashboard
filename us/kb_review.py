@@ -33,54 +33,29 @@ import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import json
-import urllib.request
 from collections import defaultdict
 from datetime import date, datetime, timezone
 
-try:
-    from dotenv import load_dotenv
-    load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
-except Exception:
-    pass
-
-REPO = os.environ.get("DASHBOARD_REPO", "Poulsen4988/trading-bot-dashboard")
-TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("DASHBOARD_PAT") or ""
+# Al GitHub-kommunikation via github_store (API med lokal-klon fallback, så
+# scriptet også virker i rutine-sandkassen hvor api.github.com er blokeret).
+import github_store
 
 STALE_DAYS = 180
 LOW_VALUE_SUMMARY_LEN = 30
 
 
-def _headers():
-    h = {"User-Agent": "TradingBot/1.0"}
-    if TOKEN:
-        h["Authorization"] = f"Bearer {TOKEN}"
-    return h
-
-
 def list_dir(path: str):
-    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
-    req = urllib.request.Request(url, headers=_headers())
-    try:
-        with urllib.request.urlopen(req) as r:
-            data = json.loads(r.read())
-        return data if isinstance(data, list) else []
-    except Exception as e:
-        print(f"[kb_review] kunne ikke liste {path}: {e}", file=sys.stderr)
-        return []
+    names = github_store.list_dir(path)
+    if not names:
+        print(f"[kb_review] kunne ikke liste {path} (eller mappen er tom)", file=sys.stderr)
+    return [{"name": n, "path": f"{path}/{n}"} for n in names]
 
 
 def fetch_json(path: str):
-    url = f"https://api.github.com/repos/{REPO}/contents/{path}"
-    req = urllib.request.Request(url, headers=_headers())
-    try:
-        with urllib.request.urlopen(req) as r:
-            payload = json.loads(r.read())
-        import base64
-        content = base64.b64decode(payload["content"]).decode("utf-8")
-        return json.loads(content)
-    except Exception as e:
-        print(f"[kb_review] kunne ikke hente {path}: {e}", file=sys.stderr)
-        return None
+    data, _ = github_store.get_json(path, default=None)
+    if data is None:
+        print(f"[kb_review] kunne ikke hente {path}", file=sys.stderr)
+    return data
 
 
 def parse_date(s):

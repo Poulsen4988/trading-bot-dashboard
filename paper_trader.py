@@ -337,8 +337,15 @@ def main():
     slim_trades(data)
     cap_history(data)
     ok = github_store.put_json("data.json", data, f"Paper trades {date_str}")
-    if github_store.TOKEN and not ok:
-        raise SystemExit("data.json kunne ikke skrives til GitHub — handler IKKE gemt. Se fejl ovenfor.")
+    if not ok:
+        if github_store.is_pending("data.json"):
+            print(
+                "data.json gemt LOKALT (pending). Handler er IKKE på GitHub endnu — "
+                "push pending filer til main via MCP (mcp__github__push_files) som sidste trin. "
+                "Kør `python github_store.py` for listen."
+            )
+        else:
+            raise SystemExit("data.json kunne ikke skrives — hverken til GitHub eller lokalt. Handler IKKE gemt. Se fejl ovenfor.")
 
 
 if __name__ == "__main__":

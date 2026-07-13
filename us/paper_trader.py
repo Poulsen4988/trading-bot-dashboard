@@ -340,8 +340,15 @@ def main():
     slim_trades(data)
     cap_history(data)
     ok = github_store.put_json("us/data.json", data, f"US paper trades {date_str}")
-    if github_store.TOKEN and not ok:
-        raise SystemExit("us/data.json could not be written to GitHub — trades NOT saved. See error above.")
+    if not ok:
+        if github_store.is_pending("us/data.json"):
+            print(
+                "us/data.json saved LOCALLY (pending). Trades are NOT on GitHub yet — "
+                "push pending files to main via MCP (mcp__github__push_files) as the final step. "
+                "Run `python us/github_store.py` for the list."
+            )
+        else:
+            raise SystemExit("us/data.json could not be written — neither GitHub nor locally. Trades NOT saved. See error above.")
 
 
 if __name__ == "__main__":
