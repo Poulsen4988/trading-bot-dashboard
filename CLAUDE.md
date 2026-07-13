@@ -1,5 +1,27 @@
 # Trading Bot — Start her (ny session)
 
+## Rutine-robusthed 2026-07-13 — offline-tilstand (læs før ændringer)
+Rutine-sandkassen blokerer ofte `api.github.com` (403 "GitHub access is not
+enabled for this session") — det væltede rutinerne 2026-06-30 → 2026-07-10
+(vagthund-issues #3–#17). `github_store.py` er derfor gjort selvhelende:
+
+- **Læse-fallback:** `get_json` prøver API'et og falder tilbage til det
+  lokale repo-klon (rutinens klon er frisk main ved sessionstart).
+- **Skrive-fallback:** `put_json` gemmer lokalt + registrerer filen i
+  `.github_store_pending.json` (gitignored) når API'et fejler. Rutinen
+  pusher til sidst alle pending filer til main i ét commit via MCP-værktøjet
+  `mcp__github__push_files`. `python github_store.py` printer pending-listen.
+- **Circuit breaker:** 401/403 eller gentagne netværksfejl → processen går
+  permanent i offline-tilstand (ingen spildte retries).
+  `GITHUB_STORE_OFFLINE=1` tvinger offline-tilstand (bruges i rutine-prompts).
+- **Write-through:** API-succes skriver også filen lokalt, så senere
+  læsninger i samme session aldrig rammer forældet state.
+- **Rutine-prompts:** autoritative, PAT-frie versioner ligger i `routines/`
+  (se `routines/README.md` for hvordan de sættes på triggerne).
+- `us/github_store.py` er en identisk kopi af `github_store.py` — HOLD I SYNK.
+- GitHub Actions er uændret: med gyldig token og fungerende API opfører
+  github_store sig som før (API med retry + 409-håndtering).
+
 ## Optimering 2026-06-09 — nye invarianter (læs før ændringer)
 - **data.json er slank.** `trades[]` indeholder kun `{verdict, confidence, summary}`
   — IKKE bull/bear eller investment_plan. Den fulde begrundelse ligger i
@@ -13,8 +35,10 @@
   bruges på kritiske reads så en transient fejl ikke handler mod tom state.
 - **fetch_history.py** er inkrementel (fuld genhentning mandag/manuel trigger).
 - **requirements.txt er pinnet** — opdater bevidst og test via manuel workflow-trigger.
-- **Sikkerhed:** hardcode ALDRIG PAT i rutine-prompts (nogle gør det stadig —
-  bør roteres og sættes som env/secret).
+- **Sikkerhed:** hardcode ALDRIG PAT i rutine-prompts. De gamle prompts havde
+  en hardcoded PAT (`ghp_a2Am…`) — den SKAL roteres når de PAT-frie prompts i
+  `routines/` er sat på triggerne. Rutinerne behøver ingen token; kun GitHub
+  Actions bruger `secrets.DASHBOARD_PAT`.
 
 ## VIGTIGT: Filstruktur
 Al kode ligger **udelukkende på GitHub** — den lokale mappe indeholder kun denne fil.
@@ -61,6 +85,13 @@ Repo er automatisk cloned og tilgængeligt i rutinen — scripts kan køres dire
 | Trading Bot - Analyse | ~09:15 hverdage | `trig_01JipAUsb9pcQqLDVuGX9MzK` | `screener.py` → `screening/DATO.json`, `analyst.py` + tier-baseret bull/bear-analyse på alle 25 → `analysis/DATO.json` |
 | Trading Bot - Handel | ~10:45 hverdage | `trig_01MwB6pNkZRedHNBQFA8TmGK` | `decision_prep.py` (med ATR-sizing) → AI beslutter BUY/SELL/HOLD → `decisions/DATO.json` → `paper_trader.py` eksekverer → `data.json` |
 | Trading Bot - KB Cleanup | ~10:00 søndag | `trig_01RzzPw66pgDaqSCYemgsncq` | `kb_review.py` → AI gennemgår videnbase, fjerner KUN unødige (duplikater/low-value), skriver `knowledge_cleanup_reports/DATO.json` |
+| US Bot - Analyse | ~23:00 hverdage (21:00 UTC) | `trig_015YQjtrbTjDFcfmaBTmRt7R` | `us/analyst.py` → bull/bear på deep-set → `us/analysis/DATO.json` (priser/screening leveres af Action 'US Bot - Data') |
+| US Bot - Handel | ~23:30 hverdage (21:30 UTC) | `trig_01NMS3jUTcuEHc6NovxV9r6o` | `us/decision_prep.py` → AI beslutter → `us/decisions/DATO.json` → `us/paper_trader.py` + `us/sync_dashboard.py` → `us/data.json` |
+| US Bot - KB Cleanup | ~10:00 søndag (08:00 UTC) | `trig_01J7U6tdkhpWtZYBjyRkXHiN` | `us/kb_review.py` → renser `us/knowledge/*.json`, skriver `us/knowledge_cleanup_reports/DATO.json` |
+
+**Prompts:** de autoritative rutine-prompts ligger i `routines/*.md` (PAT-frie,
+offline-tilstand + MCP-push). Ændr prompts dér først, og sæt dem så på
+triggerne — se `routines/README.md`.
 
 **Arkitektur:** AI-rutinen træffer ALLE handelsbeslutninger. `paper_trader.py` er dumb executor — ingen hardcodede regler.
 **Vigtigt:** Rutinerne bruger `github_store.py` til al GitHub-kommunikation — aldrig git-kommandoer. Kør aldrig `fetch_prices.py` eller `news.py` — GitHub Actions håndterer det.
