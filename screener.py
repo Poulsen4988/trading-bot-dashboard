@@ -522,7 +522,7 @@ def main():
 
     for sym, name in STOCKS:
         snap = stocks_data.get(sym, {})
-        if "error" in snap or "price" not in snap:
+        if "error" in snap or snap.get("price") is None:
             continue
         valid_count += 1
 
