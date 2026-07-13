@@ -1,0 +1,848 @@
+{
+  "date": "2026-07-13",
+  "stocks": {
+    "ORCL": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 84.0,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Ekstremt oversolgt: RSI 12.6, Stochastic 0.4 og BB-position 16.6% — tre samstemmende oversold-signaler efter et 28%-fald på en måned.",
+        "Fundamentalt intakt AI-cloud-vækst: OCI-omsætning +93% å/å, RPO/backlog på $638 mia. — Piper Sandler ser $2.2 mia. yderligere OCI-opside vs. konsensus.",
+        "Bred analytiker-opbakning midt i krakket: Evercore (Outperform, $245), Wedbush's Dan Ives kalder aktien 'way oversold' og venter vending inden for 6-9 måneder."
+      ],
+      "bear": [
+        "Teknisk struktur er brudt: pris 28-32% under både SMA50 og SMA200, og momentum er negativt på tværs af 5/20 dage — det er endnu kun oversolgt, ikke vendt.",
+        "S&P Global og markedet stiller åbent spørgsmålet om den gældsfinansierede AI-satsning kan blive for stor for selskabet at bære."
+      ],
+      "summary": "ORCL er styrtet 28% på en måned til $131.54 og handler nu 61.5% under 52-ugers-højden, men de kortsigtede oscillatorer (RSI 12.6, Stochastic 0.4) er blandt de mest oversolgte i deep-settet. Fundamentalt er cloud-infrastrukturvæksten (OCI +93% å/å, $638 mia. backlog) intakt, og flere analytikere (Piper Sandler, Evercore, Dan Ives) forsvarer aktivt aktien midt i udsalget og kalder det en generationskøbsmulighed snarere end starten på et gældsdrevet kollaps. Modvægten er en for nu ubekræftet vending — trenden er stadig klart nedadgående (30%+ under begge glidende gennemsnit) — og en reel, ikke bare retorisk, bekymring om hvorvidt den gældsfinansierede AI-infrastruktur-satsning kan blive for stor en byrde.",
+      "key_risk": "Yderligere negative overskrifter om gældsniveau/finansiering af AI-capex forlænger nedturen, før RSI-oversolgt-signalet omsættes til en reel teknisk vending.",
+      "technical": {
+        "rsi": 12.6,
+        "macd_line": -14.4592,
+        "bb_position": 16.6,
+        "bb_upper": 195.1938,
+        "bb_mid": 157.051,
+        "bb_lower": 118.9081,
+        "atr": 7.3804,
+        "stoch": 0.4,
+        "sma50": 181.81,
+        "sma200": 193.41,
+        "sma50_vs_price": -27.65,
+        "sma200_vs_price": -31.99,
+        "momentum_5d": -8.18,
+        "momentum_20d": -28.3,
+        "pct_from_52w_high": -61.52,
+        "pct_from_52w_low": 0.14,
+        "volume_ratio": 1.64
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-13",
+          "title": "Oracle Is Now Down 28% in a Month. Will the 52-Week Low of $132 Hold or Fold?",
+          "source": "24/7 Wall St.",
+          "summary": "Aktien har brudt teknisk støtte; spørgsmålet er om AI-satsningen sluger selskabet eller skaber en generationskøbsmulighed."
+        },
+        {
+          "date": "2026-07-03",
+          "title": "Oracle Stock Is on Longest Losing Streak Since 2021 and Analysts Are Screaming 'Buy'",
+          "source": "Barrons.com",
+          "summary": "Trods nedturen er Wall Street-analytikere sjældent set mere bullish på Oracle."
+        },
+        {
+          "date": "2026-06-30",
+          "title": "Oracle Could Be a $1 Trillion Company By This Date",
+          "source": "24/7 Wall St.",
+          "summary": "Infrastruktur-omsætning op 93% å/å, RPO på $638 mia., men aktien er ned 23% YTD."
+        }
+      ]
+    },
+    "APP": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 64.0,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Analytikere fastholder markant højere kursmål end nuværende pris: Wells Fargo $575 og Raymond James $640 (Strong Buy) mod $442.85 — sidstnævnte fremhæver e-commerce-annoncering som en stor langsigtet vækstmulighed.",
+        "BofA kalder det aktuelle selloff 'overdone' — deres data om svag e-commerce-vækst i juni dækker kun de første to uger af den generelle udrulning."
+      ],
+      "bear": [
+        "Akut prisreaktion: -12.65% på en enkelt dag og -18.56% over 5 dage efter analytiker-advarsler om en 'muted start' på e-commerce-annonceudrulningen — det centrale nye vækstben for aktien.",
+        "Bredere AI-navne-selloff (jf. SK Hynix, chip-sektoren) trækker høj-beta AI-eksponerede navne som APP ned uden selskabsspecifik nyhed som primær årsag."
+      ],
+      "summary": "APP er faldet 12.65% på en dag og 18.56% over 5 dage til $442.85 efter analytiker-bekymringer om at selskabets nye e-commerce-annonceforretning har fået en svag start, ifølge BofA's tredjeparts-data. RSI på 45.5 er dog neutral, ikke oversolgt, hvilket signalerer at nedturen endnu ikke er teknisk udtømt. Samtidig fastholder Wells Fargo ($575) og Raymond James ($640, Strong Buy) kursmål markant over den nuværende pris og peger på e-commerce som en stor langsigtet mulighed, og BofA selv kalder udsalget 'overdone' baseret på kun to ugers data. Med både et akut selskabsspecifikt usikkerhedsmoment og fortsat stærk analytiker-opbakning er billedet blandet nok til en neutral vurdering, indtil mere data om e-commerce-adoptionen foreligger.",
+      "key_risk": "Yderligere tredjepartsdata, der bekræfter en reel opbremsning i e-commerce-annonceadoptionen, kunne udløse en mere fundamental nedjustering af vækstestimaterne.",
+      "technical": {
+        "rsi": 45.5,
+        "macd_line": -2.1173,
+        "bb_position": 6.6,
+        "bb_upper": 563.2388,
+        "bb_mid": 498.814,
+        "bb_lower": 434.3892,
+        "atr": 36.1512,
+        "stoch": 15.4,
+        "sma50": 507.15,
+        "sma200": 536.35,
+        "sma50_vs_price": -12.68,
+        "sma200_vs_price": -17.43,
+        "momentum_5d": -18.56,
+        "momentum_20d": -7.46,
+        "pct_from_52w_high": -40.61,
+        "pct_from_52w_low": 29.45,
+        "volume_ratio": 1.76
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-13",
+          "title": "AppLovin Stock Slides After Analyst Note On E-Commerce Ads Rollout",
+          "source": "Investor's Business Daily",
+          "summary": "Analytikere advarer om 'muted start' på e-commerce-annonce-udrulningen."
+        },
+        {
+          "date": "2026-07-13",
+          "title": "AppLovin's Ecommerce Growth Soft In June, Says BofA Citing Third-Party Data",
+          "source": "Stocktwits",
+          "summary": "BofA kalder selloff'et 'overdone' — data dækker kun de første to uger af udrulningen."
+        },
+        {
+          "date": "2026-07-13",
+          "title": "Wells Fargo Raises PT on AppLovin (APP) Stock",
+          "source": "Insider Monkey",
+          "summary": "Wells Fargo hæver kursmål til $575 (Overweight) trods svaghedstegn i mobile-checks."
+        }
+      ]
+    },
+    "TDG": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 64.0,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Zacks har opgraderet til Buy (Rank #2) på stigende indtjeningsoptimisme, understøttet af et solidt mønster af indtjeningsslag og opjusteret FY2026 net sales/GAAP EPS-guidance.",
+        "Høj-margin proprietær aerospace-eksponering med tilbagevendende eftermarkedsomsætning giver en strukturel moat, der ikke er svækket af den seneste kursnedgang."
+      ],
+      "bear": [
+        "Nedturen (-8.25% over 5 dage) ser ud til at være drevet af en bredere industri-/olieprisdrevet inflationsfrygt snarere end selskabsspecifikke problemer, men RSI (36.8) og negativ momentum viser at trenden endnu ikke er vendt.",
+        "Præmievurdering giver begrænset margin for fejl, hvis makromiljøet (renter/olie) forværres yderligere."
+      ],
+      "summary": "TDG handler til $1235, ned 8.25% over 5 dage i takt med en bredere industri-selloff udløst af stigende oliepriser og geopolitisk risiko, men de seneste selskabsspecifikke nyheder er entydigt positive: Zacks-opgradering til Buy, et solidt mønster af indtjeningsslag og opjusteret FY2026-guidance. Den proprietære aerospace-portefølje med høj tilbagevendende eftermarkedsomsætning giver en stærk strukturel moat, og pullbacket ser mere makro- end fundamentaldrevet ud. RSI på 36.8 og pris under begge glidende gennemsnit viser dog at den kortsigtede trend endnu ikke er bekræftet vendt.",
+      "key_risk": "En yderligere makro-forværring (olieprisspike/rentestigninger) kunne forlænge industriselloff'et uafhængigt af TDG's egne solide fundamentale nyheder.",
+      "technical": {
+        "rsi": 36.8,
+        "macd_line": 10.035,
+        "bb_position": -15.0,
+        "bb_upper": 1364.2141,
+        "bb_mid": 1308.021,
+        "bb_lower": 1251.8279,
+        "atr": 34.4064,
+        "stoch": 15.0,
+        "sma50": 1249.91,
+        "sma200": 1284.63,
+        "sma50_vs_price": -1.19,
+        "sma200_vs_price": -3.86,
+        "momentum_5d": -8.25,
+        "momentum_20d": -1.8,
+        "pct_from_52w_high": -18.72,
+        "pct_from_52w_low": 9.91,
+        "volume_ratio": 1.14
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-08",
+          "title": "TransDigm Group (TDG) On Rising Earnings Expectations",
+          "source": "Simply Wall St.",
+          "summary": "Fokus på mønster af indtjeningsslag og opjusteret FY2026 guidance."
+        },
+        {
+          "date": "2026-07-06",
+          "title": "TransDigm (TDG) Upgraded to Buy: Here's Why",
+          "source": "Zacks",
+          "summary": "Opgraderet til Zacks Rank #2 (Buy) på voksende indtjeningsoptimisme."
+        },
+        {
+          "date": "2026-06-29",
+          "title": "3 Big Reasons to Love TransDigm (TDG)",
+          "source": "StockStory",
+          "summary": "Høj-margin proprietær aerospace-eksponering med tilbagevendende eftermarkedsomsætning."
+        }
+      ]
+    },
+    "LOW": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 63.0,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "AI-drevne Pro-værktøjer og målrettede opkøb skal uddybe relationer til professionelle kunder og styrke konkurrencepositionen, ifølge flere Simply Wall St.-analyser.",
+        "Dividend King-status med solid free cash flow ($7.7 mia.) giver en vis nedsidebeskyttelse, og flere analyser peger på op til 20% undervurdering."
+      ],
+      "bear": [
+        "Seneste regnskab: omsætningen slog forventninger, men FY EPS-guidance kom under estimater — et signal om marginpres.",
+        "Teknisk set 28.8% under 52-ugers-højden og 13.6% under SMA200 — trenden er klart nedadgående, og RSI (41.7) viser ingen oversolgt-bekræftelse endnu."
+      ],
+      "summary": "LOW handler til $207.70, ned 7.19% over 5 dage og 28.79% under 52-ugers-højden. Selskabet satser på AI-drevne pro-værktøjer og opkøb for at vinde markedsandele blandt professionelle håndværkere, og flere analyser peger på op til 20% undervurdering samt en attraktiv Dividend King-profil. Modvægten er en svagere FY EPS-guidance fra det seneste regnskab og en teknisk set klart nedadgående trend (13.6% under SMA200), hvilket samlet giver et neutralt billede uden en klar kortsigtet katalysator i nogen retning.",
+      "key_risk": "Fortsat svaghed i boligmarkedet/forbrugerudgifter til hjemmeforbedring kunne presse comps yderligere og bekræfte den nedadgående tekniske trend.",
+      "technical": {
+        "rsi": 41.7,
+        "macd_line": -1.7404,
+        "bb_position": -6.7,
+        "bb_upper": 228.7443,
+        "bb_mid": 218.884,
+        "bb_lower": 209.0237,
+        "atr": 5.9154,
+        "stoch": 4.3,
+        "sma50": 219.18,
+        "sma200": 240.43,
+        "sma50_vs_price": -5.24,
+        "sma200_vs_price": -13.61,
+        "momentum_5d": -7.19,
+        "momentum_20d": -6.04,
+        "pct_from_52w_high": -28.79,
+        "pct_from_52w_low": 2.11,
+        "volume_ratio": 1.2
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-12",
+          "title": "Can Lowe's (LOW) AI Pro Push and Phantom Stock Awards Reshape Its Competitive Moat?",
+          "source": "Simply Wall St.",
+          "summary": "AI-drevne pro-værktøjer og opkøb skal styrke væksten mod professionelle kunder."
+        },
+        {
+          "date": "2026-07-11",
+          "title": "Lowe's Companies (LOW) Could Be 20% Below Fair Value On Its Earnings Update",
+          "source": "Simply Wall St.",
+          "summary": "Omsætning slog forventninger, men FY EPS-guidance kom lidt under estimater."
+        },
+        {
+          "date": "2026-07-08",
+          "title": "5 Dividend Kings to Buy in July with Irresistible Value and Yield",
+          "source": "MarketBeat",
+          "summary": "Lowe's nævnt som Dividend King med attraktiv værdiansættelse."
+        }
+      ]
+    },
+    "CPRT": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 56.5,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Jay Adair (tidligere CEO) vender tilbage som CEO 31/7 og signalerer accelereret vækst, M&A og AI-fokus — ikke en midlertidig løsning ifølge selskabet selv.",
+        "DCF-baserede værdiansættelser peger på undervurdering trods et svagt afkastprofil det seneste år (-39%)."
+      ],
+      "bear": [
+        "CEO-skiftet skaber kortsigtet eksekveringsusikkerhed midt i en i forvejen svag kursudvikling (-45.2% fra 52-ugers-højden).",
+        "Teknisk set dybt brudt: 12.4% under SMA50 og 25.8% under SMA200, kombineret med lavt volumen (0.69x) der signalerer begrænset købsinteresse."
+      ],
+      "summary": "CPRT handler til $27.44, ned 45.23% fra 52-ugers-højden og teknisk set klart under begge glidende gennemsnit. Den kommende CEO-tilbagevenden af Jay Adair (31/7) signalerer et fornyet vækst-, M&A- og AI-fokus, og DCF-checks peger på undervurdering, men lavt handelsvolumen og et svagt momentumbillede (RSI 38.4) giver ikke endnu et klart teknisk vendepunkt. Ledelsesskiftet tilføjer kortsigtet usikkerhed oveni en i forvejen svag trend, hvilket samlet peger på en neutral, afventende holdning indtil enten teknikken eller den nye ledelse viser klarere retning.",
+      "key_risk": "Eksekveringsrisiko under CEO-overgangen kombineret med en fortsat svækkelse i salvage-auktionsvolumener kunne forlænge den nedadgående trend.",
+      "technical": {
+        "rsi": 38.4,
+        "macd_line": -0.9457,
+        "bb_position": 3.4,
+        "bb_upper": 31.4037,
+        "bb_mid": 29.3552,
+        "bb_lower": 27.3068,
+        "atr": 1.06,
+        "stoch": 4.3,
+        "sma50": 31.31,
+        "sma200": 37.01,
+        "sma50_vs_price": -12.35,
+        "sma200_vs_price": -25.84,
+        "momentum_5d": -6.14,
+        "momentum_20d": -11.64,
+        "pct_from_52w_high": -45.23,
+        "pct_from_52w_low": 0.57,
+        "volume_ratio": 0.69
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-10",
+          "title": "Copart's Incoming CEO Jay Adair Signals Growth Push, M&A and AI Focus",
+          "source": "MarketBeat",
+          "summary": "Jay Adair vender tilbage som CEO og signalerer accelereret vækst, M&A og AI-fokus."
+        },
+        {
+          "date": "2026-07-04",
+          "title": "How CEO Transition and Russell Reclassification Will Impact Copart (CPRT) Investors",
+          "source": "Simply Wall St.",
+          "summary": "CEO-skifte pr. 31/7 samt Russell-indeksreklassificering skaber usikkerhed."
+        },
+        {
+          "date": "2026-07-04",
+          "title": "Copart (CPRT) Stock Looks Cheap On Fair Value While Returns Stay Weak",
+          "source": "Simply Wall St.",
+          "summary": "DCF peger på undervurdering trods svag 1-års performance (-39%)."
+        }
+      ]
+    },
+    "BLDR": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 54.0,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "Den bipartisan '21st Century ROAD to Housing Act' gav et kursløft og er en strukturel medvind for boligbyggeri-relaterede aktier.",
+        "Efter et 51% fald fra 52-ugers-højden er værdiansættelsen blevet markant billigere, hvilket kan tiltrække værdi-orienterede købere."
+      ],
+      "bear": [
+        "Analytikere venter et tocifret fald i bundlinjen ved det kommende Q2-regnskab, drevet af faldende omsætning og kunder der udskyder køb.",
+        "Teknisk set dybt brudt (26% under SMA200) med svagt volumen (0.5x) — ingen tegn på akkumulering trods den lave pris."
+      ],
+      "summary": "BLDR handler til $73.51, ned 51.3% fra 52-ugers-højden og med et kommende Q2-regnskab, hvor analytikere venter et tocifret fald i bundlinjen på baggrund af faldende omsætning og kunder, der udskyder byggekøb. Den nye boligstøttelov (ROAD to Housing Act) er en positiv strukturel katalysator, men den opvejer ikke det umiddelbare pres fra svage indtjeningsforventninger og en teknisk set dybt brudt trend (26% under SMA200) med lavt handelsvolumen, der tyder på manglende købsinteresse selv efter det store kursfald.",
+      "key_risk": "Et svagt Q2-regnskab senere i juli, der bekræfter analytikernes forventning om tocifret indtjeningsfald, kunne udløse endnu et ben ned.",
+      "technical": {
+        "rsi": 44.4,
+        "macd_line": -0.5477,
+        "bb_position": 16.5,
+        "bb_upper": 91.751,
+        "bb_mid": 80.826,
+        "bb_lower": 69.901,
+        "atr": 4.3254,
+        "stoch": 3.0,
+        "sma50": 77.18,
+        "sma200": 99.41,
+        "sma50_vs_price": -4.75,
+        "sma200_vs_price": -26.05,
+        "momentum_5d": -10.71,
+        "momentum_20d": -6.44,
+        "pct_from_52w_high": -51.33,
+        "pct_from_52w_low": 12.92,
+        "volume_ratio": 0.5
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-10",
+          "title": "What You Need To Know Ahead of Builders FirstSource's Earnings Release",
+          "source": "Barchart",
+          "summary": "Analytikere venter tocifret fald i bundlinjen ved kommende Q2-regnskab."
+        },
+        {
+          "date": "2026-07-01",
+          "title": "Does Builders FirstSource's (BLDR) Russell 2500 Move Offset Concerns About Its Core Earnings Power?",
+          "source": "Simply Wall St.",
+          "summary": "Indeksoptagelse sker samtidig med bekymring om faldende omsætning og udskudte kundekøb."
+        },
+        {
+          "date": "2026-06-25",
+          "title": "Builders FirstSource and Gibraltar Shares Skyrocket, What You Need To Know",
+          "source": "StockStory",
+          "summary": "Kongres-vedtagelse af 21st Century ROAD to Housing Act gav kursløft."
+        }
+      ]
+    },
+    "ISRG": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 52.8,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Markant analytiker-opside forud for Q2-regnskab 16/7: 247wallst.-basecase på $559.79 (+35%) og Wall Street-konsensus på $563 med 22 køb-anbefalinger.",
+        "Kategori-leder i kirurgisk robotteknologi med fortsat da Vinci 5-adoption som central vækstmotor ind i regnskabet."
+      ],
+      "bear": [
+        "Frivillig tilbagekaldelse af visse Da Vinci-komponenter (E-brake pin-problem) skaber ny fokus på produktrisiko lige før regnskabet.",
+        "Evercore ISI sænkede kursmålet til $430 fra $480 forud for Q2-previewet — et signal om forsigtighed trods fortsat In Line-rating."
+      ],
+      "summary": "ISRG handler til $407.12, ned 32.6% fra 52-ugers-højden, med Q2-regnskab lige om hjørnet d. 16/7. Sætningen er attraktiv ifølge flere analytikere: 247wallst. ser 35% opside til $559.79 og Wall Street-konsensus ligger på $563 med 22 køb-anbefalinger, drevet af fortsat stærk da Vinci 5-adoption. Modvægten er en frisk frivillig tilbagekaldelse af visse systemkomponenter, der skaber kortsigtet produktrisiko-fokus, samt at Evercore ISI har sænket sit kursmål forud for regnskabet. RSI på 52.6 er neutralt, og med et snarligt regnskab som klar katalysator vurderes risk/reward som positiv.",
+      "key_risk": "Et skuffende Q2-regnskab d. 16/7 eller yderligere negativ udvikling i tilbagekaldelsessagen kunne udløse et brat kursfald fra det i forvejen svækkede niveau.",
+      "technical": {
+        "rsi": 52.6,
+        "macd_line": -2.6379,
+        "bb_position": 42.6,
+        "bb_upper": 428.9764,
+        "bb_mid": 409.9355,
+        "bb_lower": 390.8946,
+        "atr": 12.8336,
+        "stoch": 20.7,
+        "sma50": 423.02,
+        "sma200": 487.79,
+        "sma50_vs_price": -3.76,
+        "sma200_vs_price": -16.54,
+        "momentum_5d": -5.94,
+        "momentum_20d": -1.4,
+        "pct_from_52w_high": -32.58,
+        "pct_from_52w_low": 2.63,
+        "volume_ratio": 0.72
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-13",
+          "title": "Intuitive Surgical Has +35% Upside: A Compelling Buy Story Before July 16",
+          "source": "24/7 Wall St.",
+          "summary": "Kursmål på $559-563 mod nuværende $413 forud for Q2-regnskab d. 16/7."
+        },
+        {
+          "date": "2026-07-11",
+          "title": "Is Intuitive Surgical (ISRG) Fairly Valued On Its Recall News?",
+          "source": "Simply Wall St.",
+          "summary": "Frivillig tilbagekaldelse af Da Vinci-komponenter (E-brake pin) skaber produktrisiko-fokus."
+        },
+        {
+          "date": "2026-07-10",
+          "title": "ISRG to Report Q2 Results Next Week: Should You Buy the Stock Now?",
+          "source": "Zacks",
+          "summary": "Salg og EPS ventes op, men margin-pres fra da Vinci 5-adoption vejes op mod vækst."
+        }
+      ]
+    },
+    "MRVL": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 52.2,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Ekstremt oversolgt (RSI 26.8) midt i en bred chip-sektor-selloff, mens aktien stadig er +254.8% fra 52-ugers-lavpunktet og markant over SMA200 (+70.8%) — den langsigtede trend er intakt.",
+        "Custom AI-ASIC-narrativet vinder frem: MRVL og Broadcom fremhæves som stigende trusler mod Nvidia i takt med at hyperscalere søger alternativer, og Wall Street-analytikere er generelt bullish (Buy-ækvivalent ABR)."
+      ],
+      "bear": [
+        "Kraftig sektor-bred nedtur (-22.49% over 20 dage) drevet af bredere AI-capex-bekymringer og en historisk stor SK Hynix-kursreaktion — risikoen for yderligere fald på tværs af chip-sektoren er reel uafhængig af MRVL's egne fundamentale forhold.",
+        "Høj volatilitet (ATR 22.8) og en stor forudgående kursstigning betyder begrænset margin for fejl, hvis AI-capex-frygten fortsætter."
+      ],
+      "summary": "MRVL er faldet 22.49% over 20 dage til $217.53 midt i en bred chip-sektor-selloff (bl.a. SK Hynix ned 15% på en dag), men RSI på 26.8 er dybt oversolgt, og aktien er stadig markant over SMA200 (+70.8%) efter en enorm forudgående rally (+254.8% fra 52-ugers-lavpunktet). Det strukturelle narrativ om custom AI-ASIC'er som et voksende alternativ til Nvidia hos hyperscalere understøtter fortsat bullish analytiker-opbakning. Den primære risiko er, at den aktuelle sektor-brede AI-capex-frygt fortsætter og overtrumfer det langsigtede vækstnarrativ på kort sigt.",
+      "key_risk": "En fortsat eller eskalerende bred halvleder-/AI-capex-korrektion kunne trumfe custom-silicon-vækstnarrativet og forlænge nedturen.",
+      "technical": {
+        "rsi": 26.8,
+        "macd_line": -3.1951,
+        "bb_position": 2.9,
+        "bb_upper": 323.5423,
+        "bb_mid": 268.9527,
+        "bb_lower": 214.3632,
+        "atr": 22.8178,
+        "stoch": 2.7,
+        "sma50": 232.63,
+        "sma200": 127.39,
+        "sma50_vs_price": -6.49,
+        "sma200_vs_price": 70.76,
+        "momentum_5d": -12.71,
+        "momentum_20d": -22.49,
+        "pct_from_52w_high": -34.04,
+        "pct_from_52w_low": 254.8,
+        "volume_ratio": 0.52
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-13",
+          "title": "Arm And Marvell Tumble As Chip Stocks Sell Off",
+          "source": "Investor's Business Daily",
+          "summary": "Bred chip-sektor-selloff trods stærkt TSMC-regnskab."
+        },
+        {
+          "date": "2026-07-13",
+          "title": "Broadcom and Marvell Are Bigger Threats to Nvidia Than You Know",
+          "source": "24/7 Wall St.",
+          "summary": "Custom AI-ASIC-narrativ åbner en vækstbane hos hyperscalere væk fra Nvidia."
+        },
+        {
+          "date": "2026-07-13",
+          "title": "Wall Street Analysts Look Bullish on Marvell (MRVL): Should You Buy?",
+          "source": "Zacks",
+          "summary": "Gennemsnitlig analytikeranbefaling svarer til Buy."
+        }
+      ]
+    },
+    "FSLR": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 49.7,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Dybt oversolgt (RSI 21.7) med et solidt 47.9 GW backlog frem til 2030, der giver stærk omsætningssynlighed uafhængig af kortsigtet kurspres.",
+        "AI-datacentrenes stigende strømbehov ses af Morgan Stanley som en strukturel medvind for clean-tech, inklusive solar."
+      ],
+      "bear": [
+        "Flere nye søgsmål om værdipapirsvindel vedrørende tarifpolitik og produktionsudnyttelse skaber et juridisk overhæng med investor-deadlines i august.",
+        "Teknisk set stadig under begge glidende gennemsnit (SMA50 -11.2%, SMA200 -6.1%) — trenden er endnu ikke bekræftet vendt trods det oversolgte niveau."
+      ],
+      "summary": "FSLR handler til $221.03, ned 18.49% over 20 dage og dybt oversolgt (RSI 21.7). Et solidt 47.9 GW backlog frem til 2030 og stigende AI-datacenter-drevet strømefterspørgsel understøtter den langsigtede vækstcase, men flere nye søgsmål om værdipapirsvindel relateret til tarifpolitik skaber et juridisk overhæng med deadlines i august. Det dybt oversolgte niveau taler for en teknisk bounce-mulighed, men trenden er endnu ikke bekræftet vendt.",
+      "key_risk": "Eskalering af søgsmålene eller yderligere negative afsløringer om tarifpolitik kunne udløse endnu et kursfald før en teknisk stabilisering.",
+      "technical": {
+        "rsi": 21.7,
+        "macd_line": -9.0336,
+        "bb_position": 16.0,
+        "bb_upper": 274.536,
+        "bb_mid": 242.6975,
+        "bb_lower": 210.859,
+        "atr": 12.025,
+        "stoch": 8.0,
+        "sma50": 248.99,
+        "sma200": 235.46,
+        "sma50_vs_price": -11.23,
+        "sma200_vs_price": -6.13,
+        "momentum_5d": -5.16,
+        "momentum_20d": -18.49,
+        "pct_from_52w_high": -31.13,
+        "pct_from_52w_low": 38.27,
+        "volume_ratio": 0.96
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-08",
+          "title": "First Solar (FSLR) Faces New Securities Fraud Lawsuits As August Investor Deadlines Near",
+          "source": "Simply Wall St.",
+          "summary": "Flere nye søgsmål om vildledende udsagn om tarifpolitik og produktionsudnyttelse."
+        },
+        {
+          "date": "2026-07-09",
+          "title": "AI Data Center Demand to Fuel Clean Tech Order Inflection, Morgan Stanley Says",
+          "source": "MT Newswires",
+          "summary": "Datacenter-eftersprøgsel efter strøm ses som medvind for clean-tech inkl. solar."
+        },
+        {
+          "date": "2026-06-30",
+          "title": "Can First Solar's Manufacturing Expansion Drive Long-Term Growth?",
+          "source": "Zacks",
+          "summary": "47,9 GW backlog frem til 2030 understøtter langsigtet vækst."
+        }
+      ]
+    },
+    "MLM": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 49.6,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "UBS er positiv på det $13.5 mia. Lhoist North America-opkøb, der tilføjer kalk-forretning og udvidet Sun Belt-eksponering af høj kvalitet.",
+        "20-dages momentum er faktisk svagt positivt (+0.67%), hvilket signalerer relativ stabilisering ift. den bredere industri-selloff."
+      ],
+      "bear": [
+        "Opkøbet ($7 mia. kontant + $6.5 mia. aktier) rejser bekymring om aktie-fortynding, og markedet reagerede med et 5.7% kursfald ved annonceringen.",
+        "Analytikere har trimmet fair value-estimatet ($700 → $683) i kølvandet på transaktionen."
+      ],
+      "summary": "MLM handler til $569.35, ned 19.71% fra 52-ugers-højden, efter annonceringen af det $13.5 mia. Lhoist North America-opkøb, der finansieres med en blanding af kontanter og aktier. UBS ser positivt på transaktionen som en tilføjelse af kvalitetsaktiver, men markedet har reageret med bekymring om fortynding, og fair value-estimater er blevet trimmet en smule. 20-dages momentum er svagt positivt, hvilket adskiller MLM fra flere andre navne i settet der er ramt hårdere af den bredere industri-/makroselloff.",
+      "key_risk": "Integrationsrisiko og fortyndingseffekten af den delvist aktiefinansierede Lhoist-transaktion kunne veje på indtjeningen pr. aktie, hvis synergierne udebliver.",
+      "technical": {
+        "rsi": 37.5,
+        "macd_line": -1.9572,
+        "bb_position": 15.0,
+        "bb_upper": 628.1116,
+        "bb_mid": 593.535,
+        "bb_lower": 558.9584,
+        "atr": 19.6507,
+        "stoch": 9.2,
+        "sma50": 582.2,
+        "sma200": 614.85,
+        "sma50_vs_price": -2.21,
+        "sma200_vs_price": -7.4,
+        "momentum_5d": -5.94,
+        "momentum_20d": 0.67,
+        "pct_from_52w_high": -19.71,
+        "pct_from_52w_low": 8.52,
+        "volume_ratio": 0.45
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-01",
+          "title": "Martin Marietta Materials' Planned Acquisition of Lhoist North America to Add High-Quality Assets, UBS Says",
+          "source": "MT Newswires",
+          "summary": "UBS positiv på $13.5 mia. Lhoist-opkøb som tilføjer kalk-forretning og Sun Belt-eksponering."
+        },
+        {
+          "date": "2026-06-29",
+          "title": "Why Martin Marietta Materials (MLM) Shares Are Plunging Today",
+          "source": "StockStory",
+          "summary": "Aktien faldt 5,7% på bekymring om aktie-fortynding fra opkøbet."
+        },
+        {
+          "date": "2026-07-01",
+          "title": "Martin Marietta Materials (MLM) Stock Sees Modest Fair Value Cut As Analysts Trim Assumptions",
+          "source": "Simply Wall St.",
+          "summary": "Fair value-estimat trimmet fra $700 til $683."
+        }
+      ]
+    },
+    "TTD": {
+      "tier": "deep",
+      "scout": true,
+      "screener_score": 30.1,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Positiv momentum på tværs af tidshorisonter (+2.49% 5d, +4.71% 20d) efter et brutalt kursfald på 78.4% fra 52-ugers-højden — tegn på en begyndende stabilisering.",
+        "Optagelse i flere Russell-indeks trækker fornyet investoropmærksomhed, og flere værdiansættelsestjek peger på op til 35% undervurdering."
+      ],
+      "bear": [
+        "RSI på 66.7 og Stochastic på 79 nærmer sig overkøbt niveau efter det seneste hop — risiko for at bounce'et er kortvarigt uden fundamental bekræftelse.",
+        "Aktien er stadig 37.3% under SMA200 — den langsigtede trend er dybt brudt efter et helt år med skuffende resultater og hård konkurrence fra AI-native annonceplatforme."
+      ],
+      "summary": "TTD (scout-kandidat) handler til $19.79 efter et brutalt fald på 78.4% fra 52-ugers-højden, men viser nu positiv momentum på tværs af 5- og 20-dages horisonter. Optagelse i flere Russell-indeks har trukket fornyet opmærksomhed, og værdiansættelsestjek peger på op til 35% undervurdering samt nye AI-drevne attributionspartnerskaber (bl.a. med Invoca). RSI (66.7) og Stochastic (79) nærmer sig dog overkøbt niveau efter det seneste hop, og aktien er stadig dybt under SMA200, så det er for tidligt at kalde det en bekræftet trendvending.",
+      "key_risk": "Det seneste hop kan vise sig at være et 'dead cat bounce', hvis næste regnskab bekræfter fortsat væksttab til AI-native annonceplatforme.",
+      "technical": {
+        "rsi": 66.7,
+        "macd_line": -0.2157,
+        "bb_position": 87.5,
+        "bb_upper": 20.1355,
+        "bb_mid": 18.757,
+        "bb_lower": 17.3785,
+        "atr": 0.9677,
+        "stoch": 79.0,
+        "sma50": 20.51,
+        "sma200": 31.54,
+        "sma50_vs_price": -3.52,
+        "sma200_vs_price": -37.26,
+        "momentum_5d": 2.49,
+        "momentum_20d": 4.71,
+        "pct_from_52w_high": -78.36,
+        "pct_from_52w_low": 16.55,
+        "volume_ratio": 0.64
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-09",
+          "title": "Trade Desk (TTD) Could Be 35% Undervalued As Index Additions Draw Fresh Attention",
+          "source": "Simply Wall St.",
+          "summary": "Optagelse i flere Russell-indeks efter en hård periode (-49% YTD)."
+        },
+        {
+          "date": "2026-07-10",
+          "title": "Why Trade Desk Stock Lost 52% in the First Half of 2026",
+          "source": "Motley Fool",
+          "summary": "Aktien tabte over halvdelen af værdien i H1 efter svage kvartalstal."
+        },
+        {
+          "date": "2026-07-09",
+          "title": "Trade Desk (TTD) Taps Invoca For AI Powered Ad Attribution Partnership",
+          "source": "Simply Wall St.",
+          "summary": "Nyt AI-drevet attributions-partnerskab med Invoca."
+        }
+      ]
+    },
+    "CSGP": {
+      "tier": "deep",
+      "scout": true,
+      "screener_score": 44.4,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Benchmark har startet dækning med Buy og $45 kursmål (mod $28.77) efter opkøb af Zonda, og aggressiv international ekspansion (Frankrig, 30%-andel i italienske Wikicasa) udbygger data-moaten.",
+        "BlackRock er blandt de største institutionelle ejere og fremhæver CSGP som en af sine 30 vigtigste AI-aktier."
+      ],
+      "bear": [
+        "Aktien er 70.5% under 52-ugers-højden og 45.2% under SMA200 — en strukturelt dybt brudt trend efter et 65%-fald over 3 år.",
+        "Værdiansættelsen fremstår 'rig' på bredere multipler trods et 'rimeligt' billede på salgs-basis, og lavt volumen signalerer begrænset købsovertydelse."
+      ],
+      "summary": "CSGP (scout-kandidat) handler til $28.77, 70.5% under 52-ugers-højden, efter et 65%-fald over de seneste 3 år. Selskabet ekspanderer aggressivt internationalt (Frankrig, kapitalandel i italienske Wikicasa), og Benchmark har netop startet dækning med Buy og $45 kursmål, mens BlackRock er blandt de største aktionærer. Modvægten er en teknisk set dybt brudt trend (45% under SMA200) og en blandet værdiansættelse, der samlet giver et neutralt billede indtil turnaround-tesen viser sig i faktiske abonnementsvækst-tal.",
+      "key_risk": "Fortsat opbremsning i CoStar/Homes.com's kerneabonnementsvækst ville underminere turnaround-tesen trods de internationale ekspansionsinitiativer.",
+      "technical": {
+        "rsi": 48.2,
+        "macd_line": -1.0805,
+        "bb_position": 27.7,
+        "bb_upper": 32.2546,
+        "bb_mid": 29.8435,
+        "bb_lower": 27.4324,
+        "atr": 1.3564,
+        "stoch": 24.3,
+        "sma50": 32.03,
+        "sma200": 52.47,
+        "sma50_vs_price": -10.19,
+        "sma200_vs_price": -45.17,
+        "momentum_5d": 0.24,
+        "momentum_20d": -11.88,
+        "pct_from_52w_high": -70.47,
+        "pct_from_52w_low": 2.42,
+        "volume_ratio": 0.93
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-04",
+          "title": "Benchmark Initiates CoStar (CSGP) With Buy Rating Following Zonda Acquisition",
+          "source": "Insider Monkey",
+          "summary": "Benchmark starter dækning med Buy og $45 kursmål efter ca. 50% YTD-fald."
+        },
+        {
+          "date": "2026-07-11",
+          "title": "CoStar Group (CSGP) Acquires 30% Stake in Wikicasa",
+          "source": "Insider Monkey",
+          "summary": "Ekspanderer internationalt med kapitalandel i italiensk boligmarkedsplads."
+        },
+        {
+          "date": "2026-07-05",
+          "title": "CoStar (CSGP) Stock Looks Reasonable On Sales But Rich On Broader Checks",
+          "source": "Simply Wall St.",
+          "summary": "Blandet værdiansættelsesbillede efter 65% fald over 3 år."
+        }
+      ]
+    },
+    "FISV": {
+      "tier": "deep",
+      "scout": true,
+      "screener_score": 25.4,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Storbanker (JPMorgan, Bank of America, Wells Fargo, PNC) er i fremskredne drøftelser om at købe Fiservs STAR debit-netværk (115 mio. kortholdere) for op til $15 mia. — en potentiel værdiudløsende katalysator på et selskab, der ses som undervurderet.",
+        "Reel køberinteresse fra flere store banker samtidig signalerer, at transaktionen er mere end rygter."
+      ],
+      "bear": [
+        "Ledelsesturbulens: både CEO og president er fratrådt inden for en måned af hinanden, hvilket rejser eksekveringsrisiko-spørgsmål.",
+        "Raymond James advarer om, at et STAR-salg kan møde betydelig regulatorisk kontrol og derfor risikerer ikke at blive gennemført."
+      ],
+      "summary": "FISV handler til $51.18, 69.7% under 52-ugers-højden, men er i fokus efter rapporter om at flere storbanker (JPMorgan, BofA, Wells Fargo, PNC) er i fremskredne drøftelser om at købe selskabets STAR debit-netværk for op til $15 mia. — en potentiel katalysator, der kunne udløse betydelig undervurderet værdi. Samtidig er både CEO og president fratrådt inden for en måned, hvilket skaber eksekveringsusikkerhed, og Raymond James advarer om regulatorisk risiko ved en evt. transaktion. Den asymmetriske opside ved en gennemført handel vejer op for ledelsesusikkerheden i vurderingen.",
+      "key_risk": "Ledelsesturbulensen forstyrrer strategisk eksekvering, mens STAR-salget forbliver spekulativt og regulatorisk usikkert og kan falde til jorden.",
+      "technical": {
+        "rsi": 64.0,
+        "macd_line": -0.6204,
+        "bb_position": 67.4,
+        "bb_upper": 53.6688,
+        "bb_mid": 49.8555,
+        "bb_lower": 46.0422,
+        "atr": 2.0157,
+        "stoch": 49.0,
+        "sma50": 53.62,
+        "sma200": 68.61,
+        "sma50_vs_price": -4.54,
+        "sma200_vs_price": -25.41,
+        "momentum_5d": -1.16,
+        "momentum_20d": -3.54,
+        "pct_from_52w_high": -69.7,
+        "pct_from_52w_low": 8.8,
+        "volume_ratio": 0.67
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-08",
+          "title": "PNC (PNC) Is Eyeing Fiserv's STAR Network With 115 Million Cardholders",
+          "source": "Simply Wall St.",
+          "summary": "Storbanker i fremskredne drøftelser om at købe Fiservs STAR debit-netværk for op til $15 mia."
+        },
+        {
+          "date": "2026-07-08",
+          "title": "Fiserv president resigns less than month after CEO leaves for new job",
+          "source": "Milwaukee Journal Sentinel",
+          "summary": "Endnu en topchef forlader selskabet kort efter CEO-exit."
+        },
+        {
+          "date": "2026-07-08",
+          "title": "FISV Stock Draws Attention After Debit Network Sale Buzz: This Analyst Warns Deal Could Face Regulatory Scrutiny",
+          "source": "Stocktwits",
+          "summary": "Raymond James advarer om betydelig regulatorisk risiko ved et evt. STAR-salg."
+        }
+      ]
+    },
+    "NDAQ": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 25.2,
+      "verdict": "BULL",
+      "confidence": 7,
+      "bull": [
+        "Teknisk trend er vendt positiv: pris over både SMA50 (+2.21%) og SMA200 (+0.91%) med stærkt momentum (+5.61% 5d, +3.22% 20d) — en bekræftet vending, ikke kun en oversolgt bounce.",
+        "Rekordstærkt første halvår for US-noteringer ($129.3 mia. rejst, 7 af årets 10 største IPO'er på Nasdaq) plus SK Hynix' højprofilerede ADR-debut trækker fornyet international listing-interesse.",
+        "Zacks har opgraderet til Buy på stigende indtjeningsoptimisme."
+      ],
+      "bear": [
+        "Stochastic på 98.4 er tæt på overkøbt efter den stærke bounce — risiko for en kortsigtet pause/konsolidering.",
+        "TD Cowen har trimmet kursmålet til $98 (fra $104) på tværs af exchange-dækningen, og fremvoksende 'perpetual futures'-konkurrence er en strukturel trussel mod traditionelle exchange-produkter."
+      ],
+      "summary": "NDAQ (nuværende beholdning) handler til $89.21 og har for alvor vendt den tekniske trend: prisen er nu over både SMA50 og SMA200 med solidt positivt momentum på tværs af 5- og 20-dages horisonter. Et rekordstærkt første halvår for amerikanske børsnoteringer ($129.3 mia. rejst) samt SK Hynix' opsigtsvækkende ADR-debut trækker fornyet international interesse for Nasdaq-noteringer, og Zacks har opgraderet aktien til Buy. Den primære modvægt er et Stochastic-niveau tæt på overkøbt efter den kraftige bounce samt den strukturelle konkurrencetrussel fra CFTC-godkendte 'perpetual futures', der kan tage markedsandele fra traditionelle exchanges.",
+      "key_risk": "En regulatorisk/konkurrencemæssig eskalering af 'perpetual futures'-produkter kunne underminere Nasdaqs kerneforretning på trods af det stærke IPO-momentum.",
+      "technical": {
+        "rsi": 63.5,
+        "macd_line": 0.0469,
+        "bb_position": 81.9,
+        "bb_upper": 92.148,
+        "bb_mid": 84.046,
+        "bb_lower": 75.944,
+        "atr": 2.6766,
+        "stoch": 98.4,
+        "sma50": 87.28,
+        "sma200": 88.41,
+        "sma50_vs_price": 2.21,
+        "sma200_vs_price": 0.91,
+        "momentum_5d": 5.61,
+        "momentum_20d": 3.22,
+        "pct_from_52w_high": -11.77,
+        "pct_from_52w_low": 16.54,
+        "volume_ratio": 0.78
+      },
+      "recent_news": [
+        {
+          "date": "2026-07-11",
+          "title": "Nasdaq (NDAQ) Recasts Its Credit Facility, Is The Stock Still Undervalued?",
+          "source": "Simply Wall St.",
+          "summary": "Ny $1,5 mia. revolverende kreditfacilitet; kursen har fået fornyet momentum."
+        },
+        {
+          "date": "2026-07-05",
+          "title": "Nasdaq (NDAQ): The Most Oversold Strong Buy-Rated Stock to Invest In Now",
+          "source": "Insider Monkey",
+          "summary": "TD Cowen sænkede kursmål til $98 fra $104 men fastholdt Buy."
+        },
+        {
+          "date": "2026-07-03",
+          "title": "Why Nasdaq (NDAQ) Is Up 9.0% After Record IPO Haul And Trump Accounts Spotlight",
+          "source": "Simply Wall St.",
+          "summary": "Rekordstærkt første halvår for US-noteringer ($129,3 mia. rejst) løfter kursen."
+        }
+      ]
+    },
+    "NUE": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 15.6,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "KeyBanc har opgraderet til Overweight med $274 kursmål (~18% opside fra $233) efter det seneste pullback, understøttet af forventning om 2% vækst i reel kulstofstål-efterspørgsel i 2026.",
+        "Stærk Q2 EPS-guidance ($4.70-$4.80) og en 53-årig udbyttevæksthistorik med solid balance understøtter fortsatte tilbagekøb/udbytte.",
+        "Langsigtet trend stadig klart intakt: pris 27.4% over SMA200 trods den seneste 20-dages korrektion."
+      ],
+      "bear": [
+        "20-dages momentum er fortsat negativt (-10.47%), og en del af den kraftige forudgående 1-års stigning (+79% fra 52-ugers-lav) er givet tilbage.",
+        "Stålefterspørgsel er cyklisk og følsom over for industriel/byggeaktivitet samt handelspolitik, hvilket kan presse guidance hvis konjunkturerne svækkes."
+      ],
+      "summary": "NUE (nuværende beholdning) handler til $233.00 efter en 20-dages korrektion på 10.47%, men den langsigtede trend er fortsat klart intakt med prisen 27.4% over SMA200. KeyBanc har opgraderet til Overweight med et kursmål på $274 efter pullbacket, og selskabets egen Q2 EPS-guidance ($4.70-$4.80) samt en 53-årig udbyttevæksthistorik understøtter tesen om, at den underliggende drift forbliver solid. Risikoen er primært cyklisk: stålpriser og -efterspørgsel er følsomme over for industriel aktivitet og handelspolitik, og den negative kortsigtede momentum er endnu ikke vendt.",
+      "key_risk": "Et fald i stålpriser eller et svagt Q2-regnskab, der underminerer den nyligt hævede EPS-guidance, kunne forlænge den igangværende korrektion.",
+      "technical": {
+        "rsi": 41.7,
+        "macd_line": -4.148,
+        "bb_position": 42.7,
+        "bb_upper": 264.5016,
+        "bb_mid": 237.0014,
+        "bb_lower": 209.5011,
+        "atr": 7.6053,
+        "stoch": 53.4,
+        "sma50": 237.92,
+        "sma200": 182.85,
+        "sma50_vs_price": -2.07,
+        "sma200_vs_price": 27.42,
+        "momentum_5d": 4.06,
+        "momentum_20d": -10.47,
+        "pct_from_52w_high": -13.78,
+        "pct_from_52w_low": 79.08,
+        "volume_ratio": 0.57
+      },
+      "recent_news": [
+        {
+          "date": "2026-06-28",
+          "title": "KeyBanc Sees Nucor (NUE) as Compelling After Recent Pullback, Upgrades Stock",
+          "source": "Insider Monkey",
+          "summary": "KeyBanc opgraderer til Overweight med $274 kursmål efter pullback."
+        },
+        {
+          "date": "2026-07-08",
+          "title": "Can NUE's Strong Balance Sheet Power Bigger Shareholder Returns Ahead?",
+          "source": "Zacks",
+          "summary": "Stærk balance og 53 år i træk med udbyttevækst understøtter tilbagekøb/udbytte."
+        },
+        {
+          "date": "2026-06-26",
+          "title": "How Stronger Q2 EPS Guidance At Nucor (NUE) Has Changed Its Investment Story",
+          "source": "Simply Wall St.",
+          "summary": "Q2 EPS-guidance $4.70-$4.80 understreger ledelsens tillid til driften."
+        }
+      ]
+    }
+  }
+}
