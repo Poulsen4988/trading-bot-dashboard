@@ -1,0 +1,456 @@
+{
+  "date": "2026-07-14",
+  "stocks": {
+    "IBM": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 91.0,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Extreme capitulation (RSI 33.9, stoch 3.9, volume 10x normal) often marks a near-term bottom",
+        "Only 2.2% above its 52-week low, so much of the bad news may already be priced in"
+      ],
+      "bear": [
+        "Preannounced Q2 results collapsed the stock -25% on weak revenue and an enterprise spending-shift warning",
+        "Broke sharply below both SMA50 and SMA200 (-17% / -20%) — trend damage is severe and momentum is still negative",
+        "Peer reaction (cybersecurity names rallying on IBM's warning) signals a real competitive/spend-mix problem, not just noise"
+      ],
+      "summary": "IBM cratered on a pre-earnings warning that enterprise customers are shifting spend away from it, and the stock is now technically oversold after a historic one-day drop. The move is large enough that a relief bounce is plausible, but the underlying guidance cut is a genuine fundamental negative, not sentiment-driven weakness.",
+      "key_risk": "Confirmation at full Q2 earnings that the spending shift is structural rather than one-off would extend the downtrend.",
+      "technical": {
+        "rsi": 33.9, "macd_line": 2.1161, "bb_position": -18.7, "bb_upper": 316.6129, "bb_mid": 274.6915,
+        "bb_lower": 232.7701, "atr": 16.6471, "stoch": 3.9, "sma50": 262.45, "sma200": 272.36,
+        "sma50_vs_price": -17.29, "sma200_vs_price": -20.3, "momentum_5d": -29.09, "momentum_20d": -20.27,
+        "pct_from_52w_high": -34.71, "pct_from_52w_low": 2.23, "volume_ratio": 6.0
+      },
+      "recent_news": [
+        {"date": "2026-07-14", "title": "IBM stock closes down more than 25% after preannounced earnings results", "source": "Yahoo Finance", "summary": "IBM stock collapsed 25% after the company preannounced its Q2 earnings results."},
+        {"date": "2026-07-14", "title": "CrowdStrike, Fortinet and others surge on IBM warning of customer spending shift", "source": "Yahoo Finance", "summary": "CrowdStrike and other cybersecurity-related stocks surged as IBM warned of a spending shift among enterprise customers."},
+        {"date": "2026-07-14", "title": "IBM stock plunges over 20% on preliminary Q2 results: What to know", "source": "Yahoo Finance Video", "summary": "IBM stock is plunging upwards of 20% in pre-market trading after releasing weaker-than-expected preliminary Q2 results."}
+      ]
+    },
+    "UHS": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 81.0,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Down 41% from its 52-week high with no UHS-specific guidance cut (yet) — a lot of sector pessimism may already be reflected"
+      ],
+      "bear": [
+        "Direct read-through risk from HCA's guidance cut today (same hospital-operator sector, same drivers: uninsured patients, declining surgery volumes)",
+        "Sector-wide healthcare weakness (NYSE Healthcare Index down broadly) compounding the stock-specific decline",
+        "Steep downtrend intact: -25.8% below SMA200, -10.6% over just 5 days"
+      ],
+      "summary": "UHS is being pulled down by the same hospital-sector headwinds that just forced HCA to cut guidance — rising uninsured patients and softer surgical volumes. No company-specific negative print yet, but the read-through risk is high given the shared business model.",
+      "key_risk": "A UHS guidance cut echoing HCA's would trigger another leg down.",
+      "technical": {
+        "rsi": 47.8, "macd_line": 0.1362, "bb_position": 28.7, "bb_upper": 161.4271, "bb_mid": 149.374,
+        "bb_lower": 137.3209, "atr": 4.9843, "stoch": 9.3, "sma50": 154.26, "sma200": 194.36,
+        "sma50_vs_price": -6.5, "sma200_vs_price": -25.79, "momentum_5d": -10.56, "momentum_20d": -1.5,
+        "pct_from_52w_high": -41.26, "pct_from_52w_low": 2.96, "volume_ratio": 1.75
+      },
+      "recent_news": [
+        {"date": "2026-07-08", "title": "Sector Update: Healthcare Stocks Decline Late Afternoon", "source": "MT Newswires", "summary": "Healthcare stocks were lower late Wednesday afternoon, with the NYSE Healthcare Index down 0.9%."},
+        {"date": "2026-07-07", "title": "Can HCA's Capacity Expansion Strategy Fuel Its Long-Term Growth?", "source": "Zacks", "summary": "HCA is expanding hospitals, ERs and outpatient sites while investing billions in new capacity."},
+        {"date": "2026-07-04", "title": "Universal Health Services (UHS) Stock May Trade At A Discount On Medicare Payment News", "source": "Simply Wall St.", "summary": "UHS stock has rebounded short-term but is still down sharply YTD; valuation checks paint the shares as cheap."}
+      ]
+    },
+    "ISRG": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 77.0,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Strong da Vinci 5 adoption and procedure momentum heading into Q2, with analysts still expecting an earnings beat",
+        "Deeply oversold (RSI 39, stoch 1.5) after today's drop"
+      ],
+      "bear": [
+        "Tumbled directly on HCA's disclosure of declining surgery volumes — a core demand driver for Intuitive's systems",
+        "-22% below SMA200; trend remains firmly down"
+      ],
+      "summary": "Intuitive dropped in sympathy with HCA's warning about falling surgery volumes, which strikes directly at ISRG's procedure-based revenue model. Underlying product momentum (da Vinci 5) and pre-earnings analyst optimism offset some of that risk, leaving a genuinely mixed picture ahead of Q2 results.",
+      "key_risk": "If Q2 earnings confirm a broader procedure-volume slowdown, the bull case on adoption momentum weakens materially.",
+      "technical": {
+        "rsi": 39.0, "macd_line": -5.0442, "bb_position": -12.2, "bb_upper": 431.5438, "bb_mid": 408.3575,
+        "bb_lower": 385.1712, "atr": 14.3036, "stoch": 1.5, "sma50": 421.46, "sma200": 487.47,
+        "sma50_vs_price": -9.96, "sma200_vs_price": -22.15, "momentum_5d": -11.19, "momentum_20d": -7.68,
+        "pct_from_52w_high": -37.16, "pct_from_52w_low": 0.26, "volume_ratio": 2.1
+      },
+      "recent_news": [
+        {"date": "2026-07-14", "title": "Here's Exactly Why Intuitive Surgical Stock Is Floundering in 2026", "source": "Motley Fool", "summary": "ISRG's stock has fallen sharply in 2026, more a function of investor sentiment than of the company."},
+        {"date": "2026-07-14", "title": "Why This Group Of Medical Giants, Including Intuitive Surgical, Just Took A Tumble", "source": "Investor's Business Daily", "summary": "ISRG stock tumbled Tuesday after HCA Healthcare trimmed its full-year earnings outlook, noting a drop in surgeries."},
+        {"date": "2026-07-14", "title": "Intuitive Surgical Pre-Q2 Analysis: Buy, Hold or Sell the Stock Now?", "source": "Zacks", "summary": "ISRG heads into Q2 earnings with strong procedure momentum, da Vinci 5 adoption and expectations for another beat."}
+      ]
+    },
+    "ORCL": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 76.0,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Extremely oversold (RSI 14.1, stoch 0.3) after a -62.6% drawdown from 52-week highs — historically stretched readings like this often precede at least a relief bounce",
+        "Continued product execution: new AI Agent Builder and AI-native Fusion Applications builder shipped today"
+      ],
+      "bear": [
+        "Severe technical breakdown: -30% over just 20 days, -29% below SMA50 — this is not a normal pullback",
+        "Caught in the same enterprise-IT-spend-shift narrative that hit IBM, raising doubts about cloud/AI infrastructure demand durability"
+      ],
+      "summary": "Oracle, a current holding, is down over 60% from its highs with historically extreme oversold readings, yet the decline has been sharp enough that it likely reflects real concern about enterprise cloud/AI spending rather than pure overreaction. New AI product launches show the business is still executing, but the technical trend remains broken.",
+      "key_risk": "Further evidence of decelerating cloud/AI infrastructure demand (echoing IBM's warning) would validate the selloff rather than set up a bounce.",
+      "technical": {
+        "rsi": 14.1, "macd_line": -14.8592, "bb_position": 15.5, "bb_upper": 192.4006, "bb_mid": 154.2734,
+        "bb_lower": 116.1461, "atr": 6.9872, "stoch": 0.3, "sma50": 181.15, "sma200": 192.52,
+        "sma50_vs_price": -29.37, "sma200_vs_price": -33.55, "momentum_5d": -9.33, "momentum_20d": -30.27,
+        "pct_from_52w_high": -62.57, "pct_from_52w_low": 0.09, "volume_ratio": 1.3
+      },
+      "recent_news": [
+        {"date": "2026-07-14", "title": "IBM stock closes down more than 25% after preannounced earnings results", "source": "Yahoo Finance", "summary": "IBM stock collapsed 25% after preannouncing Q2 earnings, dragging enterprise-software peers lower."},
+        {"date": "2026-07-14", "title": "Oracle Adds AI Agent Builder", "source": "GuruFocus.com", "summary": "Oracle combined no-code and developer tools in one platform."},
+        {"date": "2026-07-14", "title": "Oracle (ORCL) Launches AI Native Builder For Fusion Applications", "source": "Simply Wall St.", "summary": "Oracle introduced a next-generation AI-native builder experience for Fusion Applications, centered on Fusion Agentic Applications."}
+      ]
+    },
+    "HCA": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 68.0,
+      "verdict": "BEAR",
+      "confidence": 7,
+      "bull": [
+        "Already down 34% from 52-week highs, so some negative sentiment is pre-existing rather than purely reactive to today's news"
+      ],
+      "bear": [
+        "Cut full-year 2026 profit guidance today, citing a larger-than-expected payer-mix shift and rising uninsured-patient impact",
+        "Fifth straight day of losses with volume 2.9x normal — this is a confirmed negative catalyst, not speculation",
+        "Dragged the broader hospital/medtech cohort (UHS, ISRG, BSX) down with it, showing the market sees this as sector-relevant, not company-isolated"
+      ],
+      "summary": "HCA is the source of today's healthcare-sector selloff after cutting FY2026 guidance on weaker payer mix and rising uninsured-patient exposure. This is a fresh, confirmed negative catalyst with several consecutive down days, and the risk of further estimate cuts is real.",
+      "key_risk": "A deteriorating payer mix is a structural, not one-quarter, problem — further guidance trims are possible.",
+      "technical": {
+        "rsi": 38.6, "macd_line": -0.1608, "bb_position": -3.5, "bb_upper": 423.0219, "bb_mid": 394.3215,
+        "bb_lower": 365.6211, "atr": 13.2107, "stoch": 12.7, "sma50": 397.07, "sma200": 458.24,
+        "sma50_vs_price": -8.43, "sma200_vs_price": -20.65, "momentum_5d": -14.06, "momentum_20d": -5.9,
+        "pct_from_52w_high": -34.44, "pct_from_52w_low": 10.93, "volume_ratio": 2.33
+      },
+      "recent_news": [
+        {"date": "2026-07-14", "title": "Why HCA Healthcare (HCA) Stock Is Trading Lower Today", "source": "StockStory", "summary": "HCA fell 6.7% after releasing preliminary Q2 results and cutting full-year 2026 profit guidance."},
+        {"date": "2026-07-14", "title": "HCA Stock Plummets After Slashing 2026 Guidance – Marks Fifth Straight Day Of Losses", "source": "Stocktwits", "summary": "The company attributed the guidance cut to a larger-than-expected shift in payer mix and health insurance exchange impact."},
+        {"date": "2026-07-14", "title": "HCA Healthcare Stock Falls as Uninsured Patients and Declining Surgeries Dent Outlook", "source": "Barrons.com", "summary": "HCA lowers its full-year profit outlook as uninsured patients rise in Q2."}
+      ]
+    },
+    "CSGP": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 66.0,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Continued international expansion (Wikicasa stake in Italy, France platform launch) shows growth investment continuing despite the stock's collapse",
+        "Held as one of BlackRock's most important AI stock positions, and press coverage frames it as an oversold comeback candidate"
+      ],
+      "bear": [
+        "Down a brutal 71.6% from 52-week highs with the downtrend still fully intact (-47% below SMA200)",
+        "Today's drop came alongside a broad, unspecific market-wide risk-off wave (Apple/IBM downgrades), not a CSGP-specific positive catalyst"
+      ],
+      "summary": "CoStar remains in a severe, extended downtrend, but continues investing in geographic expansion and retains institutional backing, with some analysts flagging it as a potential comeback name. The lack of a clear reversal signal keeps this a genuine toss-up rather than a conviction call either way.",
+      "key_risk": "No sign yet of trend stabilization — catching this falling knife too early remains the key danger.",
+      "technical": {
+        "rsi": 39.5, "macd_line": -1.1356, "bb_position": 6.0, "bb_upper": 31.7505, "bb_mid": 29.5855,
+        "bb_lower": 27.4205, "atr": 1.4071, "stoch": 23.8, "sma50": 31.89, "sma200": 52.19,
+        "sma50_vs_price": -13.21, "sma200_vs_price": -46.97, "momentum_5d": -7.33, "momentum_20d": -15.71,
+        "pct_from_52w_high": -71.59, "pct_from_52w_low": 3.75, "volume_ratio": 1.88
+      },
+      "recent_news": [
+        {"date": "2026-07-11", "title": "CoStar Group (CSGP) Acquires 30% Stake in Wikicasa", "source": "Insider Monkey", "summary": "CoStar announced an investment in the Italian agent-backed real estate marketplace, Wikicasa."},
+        {"date": "2026-07-10", "title": "9 Stocks Are Down But Not Out — Analysts Predict Big Comebacks", "source": "Investor's Business Daily", "summary": "Savvy investors know to be cautious of stocks that fall to 52-week lows, but it also pays to watch for a comeback."},
+        {"date": "2026-07-06", "title": "CSGP Strengthens Global Real Estate Platform With France Expansion", "source": "Zacks", "summary": "CoStar Group expands into France, boosting its global real estate data platform and recurring revenue prospects."}
+      ]
+    },
+    "RMD": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 62.2,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Divesting MatrixCare for ~$490M sharpens focus on the core sleep/respiratory and connected-care business and frees capital",
+        "Q4 earnings preview points to double-digit EPS growth expectations"
+      ],
+      "bear": [
+        "Stock fell -12% over 5 days despite the divestiture being framed positively — the market reaction has been lukewarm at best",
+        "Upcoming earnings print is an unresolved event risk"
+      ],
+      "summary": "ResMed's strategic decision to shed its MatrixCare software unit and refocus on core respiratory care is a sound capital-allocation move, and the earnings setup looks favorable, but the stock has sold off regardless, leaving the near-term picture balanced pending the print.",
+      "key_risk": "A soft Q4 print would overshadow the divestiture narrative entirely.",
+      "technical": {
+        "rsi": 51.2, "macd_line": 1.0714, "bb_position": 32.3, "bb_upper": 217.5777, "bb_mid": 199.428,
+        "bb_lower": 181.2783, "atr": 7.5614, "stoch": 8.6, "sma50": 200.03, "sma200": 235.83,
+        "sma50_vs_price": -3.51, "sma200_vs_price": -18.16, "momentum_5d": -12.17, "momentum_20d": -0.91,
+        "pct_from_52w_high": -33.8, "pct_from_52w_low": 7.07, "volume_ratio": 0.78
+      },
+      "recent_news": [
+        {"date": "2026-07-10", "title": "Resmed Divests MatrixCare Business to Sharpen Focus on Connected Care", "source": "Zacks", "summary": "RMD's MatrixCare sale sharpens its focus on sleep, breathing and connected care while freeing resources for AI-powered digital health."},
+        {"date": "2026-07-10", "title": "ResMed (RMD) Sells MatrixCare To Refocus On Sleep And Respiratory Health", "source": "Simply Wall St.", "summary": "ResMed agreed to divest MatrixCare to a private equity buyer, centering the business around sleep and respiratory health tech."},
+        {"date": "2026-07-09", "title": "ResMed's Q4 2026 Earnings: What to Expect", "source": "Barchart", "summary": "ResMed is scheduled to post Q4 results soon, and analysts project double-digit earnings growth."}
+      ]
+    },
+    "SWKS": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 59.1,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Extremely oversold (RSI 9.5, stoch 0.7) — one of the most stretched readings in the deep set, raising bounce odds",
+        "Structural tailwind from rising RF/silicon content per handset as on-device AI and 5G complexity increase"
+      ],
+      "bear": [
+        "Turnaround remains unproven — even a bullish commentator (Cramer) only characterized management as \"trying\" to fix things",
+        "-23.5% over 20 days confirms the downtrend is still active, not just a one-day dip"
+      ],
+      "summary": "Skyworks is technically as oversold as any name in the deep set, and there's a real long-term content-growth story in AI-enabled handsets, but the turnaround narrative is still unproven and the stock remains in a clear downtrend.",
+      "key_risk": "Continued share loss or delayed design wins in the next handset cycle would undercut the content-growth thesis.",
+      "technical": {
+        "rsi": 9.5, "macd_line": -3.8008, "bb_position": 9.7, "bb_upper": 78.5506, "bb_mid": 66.389,
+        "bb_lower": 54.2274, "atr": 3.3871, "stoch": 0.7, "sma50": 70.26, "sma200": 64.48,
+        "sma50_vs_price": -19.47, "sma200_vs_price": -12.25, "momentum_5d": -5.32, "momentum_20d": -23.51,
+        "pct_from_52w_high": -35.74, "pct_from_52w_low": 9.91, "volume_ratio": 0.76
+      },
+      "recent_news": [
+        {"date": "2026-07-11", "title": "The 5 Smartphone Chip Stocks Poised for the Next Handset Upgrade Wave", "source": "24/7 Wall St.", "summary": "Silicon content per handset is repricing as on-device AI and RF complexity collide with the next refresh cycle."},
+        {"date": "2026-07-10", "title": "Jim Cramer Says Skyworks Solutions' CEO \"Is Trying to Turn It Around\"", "source": "Insider Monkey", "summary": "Cramer gave a lukewarm response on the SWKS turnaround when asked by a caller about the position."},
+        {"date": "2026-07-08", "title": "Nvidia, Chip Stocks Rally Despite U.S.-Iran War Flare-Up", "source": "Investor's Business Daily", "summary": "Nvidia and other semiconductor names rose even as geopolitical tension dominated headlines."}
+      ]
+    },
+    "LOW": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 58.8,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Reliable dividend-growth compounder with a long track record of raising payouts (quarterly dividend up from $0.35 to $1.25 over a decade)",
+        "Value creation continuing through capital efficiency even without a sales boom"
+      ],
+      "bear": [
+        "Sales growth remains sluggish and at least one analysis frames the stock as fairly valued rather than cheap",
+        "-28.8% from 52-week highs with price sitting near the lower Bollinger band, showing limited near-term momentum"
+      ],
+      "summary": "Lowe's offers a dependable dividend-compounder profile, but top-line growth is soft and the stock isn't obviously cheap at current levels, leaving little near-term catalyst in either direction.",
+      "key_risk": "A weaker-than-expected home-improvement spending environment would pressure the still-sluggish top line further.",
+      "technical": {
+        "rsi": 42.6, "macd_line": -2.2934, "bb_position": 1.8, "bb_upper": 229.1787, "bb_mid": 218.229,
+        "bb_lower": 207.2793, "atr": 5.8364, "stoch": 4.2, "sma50": 218.56, "sma200": 240.2,
+        "sma50_vs_price": -4.98, "sma200_vs_price": -13.54, "momentum_5d": -5.98, "momentum_20d": -5.93,
+        "pct_from_52w_high": -28.79, "pct_from_52w_low": 2.1, "volume_ratio": 0.97
+      },
+      "recent_news": [
+        {"date": "2026-07-13", "title": "How Lowe's Stock Is Compounding Value Without The Sales Boom", "source": "Trefis", "summary": "The market is focused on sluggish top-line growth, but a different number reveals quiet shareholder value creation."},
+        {"date": "2026-07-12", "title": "The Dividend Growth Approach That Builds Bigger Paychecks Every Single Year", "source": "24/7 Wall St.", "summary": "A decade ago LOW shares traded near $66 with a $0.35 quarterly dividend; today the dividend is $1.25 per quarter."},
+        {"date": "2026-07-12", "title": "Lowe's (LOW) Stock Looks Fairly Valued Despite 2026 Growth Push", "source": "Simply Wall St.", "summary": "Lowe's has returned roughly 18.6% over five years but now trades close to its estimated intrinsic value."}
+      ]
+    },
+    "BSX": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 57.6,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Billionaire-backed institutional buying (D.E. Shaw) and a Street-wide average Buy rating suggest analysts see value here",
+        "Deeply oversold (RSI 34.7, stoch 9.2) after a severe -61% drawdown from highs"
+      ],
+      "bear": [
+        "Same hospital-sector read-through risk as ISRG/UHS: HCA's disclosed drop in surgical volumes directly threatens device-implant demand",
+        "-44% below SMA200 shows the downtrend has been long and severe, not a recent blip"
+      ],
+      "summary": "Boston Scientific carries real analyst and institutional support at these depressed levels, but it's caught in the same hospital-procedure-volume concern rattling the rest of the medtech cohort today, making the setup genuinely two-sided.",
+      "key_risk": "A confirmed, sustained decline in surgical procedure volumes would hit BSX's device implant revenue directly.",
+      "technical": {
+        "rsi": 34.7, "macd_line": -1.5389, "bb_position": 4.3, "bb_upper": 46.8426, "bb_mid": 44.6425,
+        "bb_lower": 42.4424, "atr": 1.5107, "stoch": 9.2, "sma50": 49.32, "sma200": 76.56,
+        "sma50_vs_price": -13.57, "sma200_vs_price": -44.32, "momentum_5d": -5.89, "momentum_20d": -9.12,
+        "pct_from_52w_high": -61.07, "pct_from_52w_low": 0.9, "volume_ratio": 0.82
+      },
+      "recent_news": [
+        {"date": "2026-07-12", "title": "Boston Scientific Corporation (BSX) Is A Stock To Buy According To D. E. Shaw", "source": "Insider Monkey", "summary": "Boston Scientific is one of the largest medical device companies in America and one of D.E. Shaw's top 2026 picks."},
+        {"date": "2026-07-10", "title": "Is It Worth Investing in Boston Scientific (BSX) Based on Wall Street's Bullish Views?", "source": "Zacks", "summary": "The average brokerage recommendation for BSX is equivalent to a Buy, though such ratings warrant scrutiny."},
+        {"date": "2026-07-14", "title": "1 Large-Cap Stock with Exciting Potential and 2 We Turn Down", "source": "StockStory", "summary": "Large-cap stocks are known for staying power, though maintaining high growth rates gets harder as they scale."}
+      ]
+    },
+    "ADBE": {
+      "tier": "deep",
+      "scout": true,
+      "screener_score": 22.4,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "AI-first annualized recurring revenue now running at roughly 3x last year's level — a clear, quantified acceleration",
+        "Acquiring Topaz Labs to add AI-powered creative tools, plus a new freemium AI push to widen the funnel",
+        "Was actually up 8.2% over the past 20 days before today's broad, IBM-triggered tech selloff — the underlying trend was constructive"
+      ],
+      "bear": [
+        "Today's drop is part of a sector-wide software selloff following IBM's warning, clouding the read on company-specific strength",
+        "RSI was already elevated near 70 before the pullback, so some mean-reversion was due regardless of the catalyst"
+      ],
+      "summary": "Adobe's AI monetization is genuinely accelerating (3x YoY AI-ARR growth) and management is actively investing in AI product breadth via M&A, with the stock in an uptrend before today's macro-driven, IBM-triggered selloff hit the whole software group. This looks more like sector contagion than a company-specific problem.",
+      "key_risk": "If the freemium AI strategy cannibalizes paid-tier revenue faster than it converts new users, the monetization story could disappoint.",
+      "technical": {
+        "rsi": 70.0, "macd_line": -1.3228, "bb_position": 74.4, "bb_upper": 232.5787, "bb_mid": 209.527,
+        "bb_lower": 186.4753, "atr": 8.4386, "stoch": 71.9, "sma50": 231.84, "sma200": 283.83,
+        "sma50_vs_price": -4.77, "sma200_vs_price": -22.21, "momentum_5d": -0.34, "momentum_20d": 8.21,
+        "pct_from_52w_high": -41.31, "pct_from_52w_low": 16.13, "volume_ratio": 0.8
+      },
+      "recent_news": [
+        {"date": "2026-07-14", "title": "Adobe (ADBE) Buys Topaz Labs As AI Revenue Runs At 3x Prior Year", "source": "Simply Wall St.", "summary": "Adobe agreed to acquire Topaz Labs; AI-first net-new annualized recurring revenue is running at roughly 3x the prior year."},
+        {"date": "2026-07-14", "title": "Adobe (ADBE) Freemium AI Push Puts Valuation Back In Focus", "source": "Simply Wall St.", "summary": "Adobe outlined a shift toward a freemium approach for AI products, with AI-first ARR now above $500 million."},
+        {"date": "2026-07-14", "title": "IBM Warning Hits Software Stocks", "source": "GuruFocus.com", "summary": "IBM's weaker revenue outlook raised fresh concerns about enterprise technology spending, hitting software peers broadly."}
+      ]
+    },
+    "EL": {
+      "tier": "deep",
+      "scout": true,
+      "screener_score": 22.4,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Announced a $1.75B multi-year Profit Recovery and Growth Plan — management is taking decisive restructuring action",
+        "Already 22.6% above its 52-week low and sector tailwinds (beauty premiumization) noted by analysts"
+      ],
+      "bear": [
+        "Restructuring charges will weigh on near-term reported earnings, and execution risk on a multi-year turnaround is real",
+        "Still 33% below 52-week highs with the stock -12.3% below SMA200"
+      ],
+      "summary": "Estée Lauder's large restructuring plan is a credible signal that management is addressing its problems, and the stock has already recovered somewhat off its lows, but the turnaround is early-stage and the near-term earnings drag from restructuring charges is a real headwind.",
+      "key_risk": "Slower-than-planned execution of the Profit Recovery Plan would extend the earnings drag well beyond expectations.",
+      "technical": {
+        "rsi": 41.2, "macd_line": -0.5862, "bb_position": 28.8, "bb_upper": 88.1646, "bb_mid": 83.0375,
+        "bb_lower": 77.9104, "atr": 2.9814, "stoch": 38.7, "sma50": 83.56, "sma200": 92.16,
+        "sma50_vs_price": -3.23, "sma200_vs_price": -12.26, "momentum_5d": -4.24, "momentum_20d": -9.83,
+        "pct_from_52w_high": -33.06, "pct_from_52w_low": 22.59, "volume_ratio": 0.42
+      },
+      "recent_news": [
+        {"date": "2026-07-09", "title": "Estée Lauder's Profit Recovery Plan and Russell Inclusion Might Change The Case For Investing In EL", "source": "Simply Wall St.", "summary": "EL announced a multi-year Profit Recovery and Growth Plan involving about $1.75 billion in cumulative restructuring charges."},
+        {"date": "2026-07-09", "title": "Estée Lauder (EL) Stock May Trade At A Discount As Restructuring Builds", "source": "Simply Wall St.", "summary": "EL stock is coming off a steep multi-year decline, with intrinsic value work pointing to a discount to fair value."},
+        {"date": "2026-07-09", "title": "3 Beauty Stocks Poised to Benefit From Evolving Consumer Trends", "source": "Zacks", "summary": "EL, ULTA and ELF capitalize on premiumization, product innovation and digital engagement in the beauty industry."}
+      ]
+    },
+    "SBUX": {
+      "tier": "deep",
+      "scout": true,
+      "screener_score": 22.4,
+      "verdict": "BULL",
+      "confidence": 7,
+      "bull": [
+        "Only 2.1% off its 52-week high with price well above both SMA50 (+3.6%) and SMA200 (+14.6%) — a genuinely strong uptrend, unusual in today's beaten-down deep set",
+        "Channel Development (packaged coffee/RTD) revenue up 39% YoY — a real, quantified new growth lever",
+        "Cutting $400M in legacy software costs while adding retention-focused quarterly bonuses signals a disciplined, well-funded turnaround"
+      ],
+      "bear": [
+        "RSI at 64 is approaching overbought, so a near-term pause or pullback wouldn't be surprising",
+        "Elevated attention/hype (\"went nuts\" per Cramer) can precede volatility if sentiment reverses"
+      ],
+      "summary": "Starbucks stands out in this deep set as one of the few names actually near 52-week highs, backed by real revenue diversification (39% Channel Development growth) and visible cost discipline. The turnaround narrative has concrete supporting data, not just sentiment.",
+      "key_risk": "Elevated valuation expectations built into the recent run mean any stumble in same-store sales could trigger an outsized pullback.",
+      "technical": {
+        "rsi": 64.1, "macd_line": 1.4447, "bb_position": 84.5, "bb_upper": 107.4685, "bb_mid": 103.283,
+        "bb_lower": 99.0975, "atr": 2.7014, "stoch": 72.5, "sma50": 102.52, "sma200": 92.67,
+        "sma50_vs_price": 3.56, "sma200_vs_price": 14.57, "momentum_5d": 2.47, "momentum_20d": 3.04,
+        "pct_from_52w_high": -2.13, "pct_from_52w_low": 38.8, "volume_ratio": 0.68
+      },
+      "recent_news": [
+        {"date": "2026-07-14", "title": "Can Starbucks' 39% Channel Development Growth Add a New Revenue Lever?", "source": "Zacks", "summary": "SBUX's Channel Development revenues jump 39% YoY, adding momentum via packaged coffee and ready-to-drink products."},
+        {"date": "2026-07-13", "title": "Starbucks rolls out quarterly bonuses for high-performing workers", "source": "Restaurant Dive", "summary": "The perks could help Starbucks attract and retain workers needed to sustain its turnaround drive."},
+        {"date": "2026-07-13", "title": "Starbucks Wants to Cut $400 Million in Software Costs. Toast Investors Should Pay Attention.", "source": "Motley Fool", "summary": "Starbucks is ditching legacy software vendors for homegrown AI tools."}
+      ]
+    },
+    "NDAQ": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 10.5,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "SK Hynix's blockbuster ADR debut is drawing fresh international listing interest to Nasdaq, a durable pipeline tailwind",
+        "Proactively refinanced into a new $1.5B revolving credit facility on updated terms — balance sheet management from a position of strength, not distress",
+        "Relative technical stability (only -13% from 52-week highs, price essentially at SMA50/SMA200) versus the rest of the deep set's steep drawdowns"
+      ],
+      "bear": [
+        "No major stock-specific negative catalysts currently, but it is still exposed to today's broad market risk-off tone"
+      ],
+      "summary": "Nasdaq, a current holding, is showing relative strength versus the rest of the deep set thanks to a strengthening international IPO/listing pipeline (headlined by SK Hynix) and proactive balance-sheet management, with technicals holding up far better than peers during today's selloff.",
+      "key_risk": "A broader market downturn would still reduce trading volumes and listing activity, Nasdaq's core revenue drivers.",
+      "technical": {
+        "rsi": 60.8, "macd_line": 0.2568, "bb_position": 75.1, "bb_upper": 91.9916, "bb_mid": 83.9975,
+        "bb_lower": 76.0034, "atr": 2.7036, "stoch": 89.0, "sma50": 87.21, "sma200": 88.42,
+        "sma50_vs_price": 0.92, "sma200_vs_price": -0.46, "momentum_5d": 1.83, "momentum_20d": -1.09,
+        "pct_from_52w_high": -12.96, "pct_from_52w_low": 14.97, "volume_ratio": 0.69
+      },
+      "recent_news": [
+        {"date": "2026-07-14", "title": "SK Hynix ADR Premium Balloons to Nearly 50% Over Korean Shares", "source": "Bloomberg", "summary": "The premium for SK Hynix ADRs over Korean-listed shares soared to nearly 50%, days after their US trading debut."},
+        {"date": "2026-07-11", "title": "Nasdaq (NDAQ) Draws Fresh Overseas IPO Interest After SK Hynix Debut", "source": "Simply Wall St.", "summary": "Nasdaq executives report increased interest from overseas companies exploring US listings after SK Hynix's debut."},
+        {"date": "2026-07-11", "title": "Nasdaq (NDAQ) Recasts Its Credit Facility, Is The Stock Still Undervalued?", "source": "Simply Wall St.", "summary": "Nasdaq entered a new Amended and Restated Credit Agreement establishing a $1.5 billion senior unsecured revolving facility."}
+      ]
+    },
+    "NUE": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 14.0,
+      "verdict": "BULL",
+      "confidence": 7,
+      "bull": [
+        "Institutional accumulation: Slate Path Capital increased its stake 23% in Q1, now a top-5 position for that fund",
+        "53-year consecutive dividend growth streak backed by a strong balance sheet — a genuine quality signal",
+        "Long-term uptrend fully intact (+27.7% above SMA200) despite a recent 20-day pullback, and Q2 earnings preview points to solid EPS growth"
+      ],
+      "bear": [
+        "20-day pullback (-11.9%) after a 23% three-month rally suggests some profit-taking or steel-price-driven volatility"
+      ],
+      "summary": "Nucor, a current holding, remains fundamentally strong with institutional buying, a 53-year dividend growth streak, and an intact long-term uptrend, even though it has cooled off from a sharp recent rally. This looks like a healthy pause rather than a trend change.",
+      "key_risk": "Steel-price cyclicality remains the main swing factor for near-term earnings.",
+      "technical": {
+        "rsi": 46.2, "macd_line": -3.5155, "bb_position": 47.4, "bb_upper": 259.5748, "bb_mid": 235.4245,
+        "bb_lower": 211.2742, "atr": 7.3466, "stoch": 56.8, "sma50": 238.11, "sma200": 183.35,
+        "sma50_vs_price": -1.66, "sma200_vs_price": 27.71, "momentum_5d": 2.96, "momentum_20d": -11.87,
+        "pct_from_52w_high": -13.35, "pct_from_52w_low": 79.97, "volume_ratio": 0.37
+      },
+      "recent_news": [
+        {"date": "2026-07-08", "title": "Should You Buy Nucor Corp (NUE) Stock? Q2 Outlook Offers a Hint", "source": "Insider Monkey", "summary": "Slate Path Capital increased its NUE position by 23% during Q1 2026; the stock is now 5.1% of the portfolio."},
+        {"date": "2026-07-08", "title": "Can NUE's Strong Balance Sheet Power Bigger Shareholder Returns Ahead?", "source": "Zacks", "summary": "NUE's strong balance sheet, cash flow and 53-year dividend growth streak support continued buybacks and payouts."},
+        {"date": "2026-07-07", "title": "NUE Shares Pop 23% in 3 Months: Buy, Sell or Hold the Stock?", "source": "Zacks", "summary": "Nucor's shares climbed 22.9% in three months as higher steel prices, expansion projects and acquisitions support growth."}
+      ]
+    },
+    "TDG": {
+      "tier": "deep",
+      "scout": false,
+      "screener_score": 57.0,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Raised FY2026 net sales and GAAP EPS guidance, continuing a consistent pattern of beating quarterly estimates",
+        "High-margin, proprietary aerospace-component moat with recurring aftermarket revenue underpins the earnings quality",
+        "Deeply oversold technically (RSI 33.4, stoch 1.8) after an -8.6% 5-day pullback, despite no negative company-specific news"
+      ],
+      "bear": [
+        "Analyst commentary flagged insider selling activity alongside the earnings-momentum story, a mild overhang worth monitoring"
+      ],
+      "summary": "TransDigm, a current holding, just raised full-year guidance and continues its long pattern of earnings beats on the back of a durable proprietary-parts moat, while the recent pullback looks technical (oversold) rather than fundamentally driven.",
+      "key_risk": "Persistent insider selling, even if analysts currently downplay it, could weigh on sentiment if it continues or accelerates.",
+      "technical": {
+        "rsi": 33.4, "macd_line": 2.674, "bb_position": -19.0, "bb_upper": 1371.7035, "bb_mid": 1305.9855,
+        "bb_lower": 1240.2675, "atr": 34.5048, "stoch": 1.8, "sma50": 1251.01, "sma200": 1284.21,
+        "sma50_vs_price": -2.85, "sma200_vs_price": -5.36, "momentum_5d": -8.6, "momentum_20d": -3.24,
+        "pct_from_52w_high": -20.01, "pct_from_52w_low": 8.16, "volume_ratio": 0.62
+      },
+      "recent_news": [
+        {"date": "2026-07-08", "title": "TransDigm Group (TDG) On Rising Earnings Expectations And What That Means For Valuation", "source": "Simply Wall St.", "summary": "TDG is in focus after reports highlighted its pattern of beating estimates, plus a recent upgrade and raised FY2026 guidance."},
+        {"date": "2026-07-07", "title": "Analysts' Focus on Earnings Momentum Over Insider Selling Might Change The Case For Investing In TransDigm Group (TDG)", "source": "Simply Wall St.", "summary": "Recent reports highlighted TDG's strong earnings-beat pattern and improving EBITDA/free-cash-flow expectations."},
+        {"date": "2026-07-07", "title": "If You Invested $1000 in TransDigm Group 10 Years Ago, This Is How Much You'd Have Now", "source": "Zacks", "summary": "Why investing for the long run in certain popular stocks could reap huge rewards."}
+      ]
+    }
+  }
+}
