@@ -169,7 +169,7 @@ def main():
             "unødigt (duplikat med ingen yderligere info, eller stale UDEN langsigtet "
             "værdi). Slet KUN det du er sikker på er unødigt. Behold materielt vigtigt "
             "også selv om det er gammelt (fx tidligere milestone-nyheder, "
-            "strukturelle ændringer). Skriv en cleanup_reports/DATO.json med dine "
+            "strukturelle ændringer). Skriv en knowledge_cleanup_reports/DATO.json med dine "
             "valg, og upload kun de filer du har faktisk renset."
         ),
         "files": file_reports,

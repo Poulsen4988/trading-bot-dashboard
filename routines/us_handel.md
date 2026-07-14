@@ -5,6 +5,7 @@ ALT under us/ i repoet 'Poulsen4988/trading-bot-dashboard' — rør ALDRIG filer
 KRITISK — repo-lagring (gælder hele kørslen):
 - Sæt ALDRIG DASHBOARD_PAT/GITHUB_TOKEN — der bruges INGEN tokens. Prefix alle kommandoer og python-snippets med GITHUB_STORE_OFFLINE=1, så github_store kører deterministisk i offline-tilstand: læsninger fra det lokale klon, skrivninger gemmes lokalt og registreres i pending-manifestet (.github_store_pending.json).
 - Brug ALDRIG git (add/commit/push/clone) og kald ALDRIG api.github.com selv. Byg aldrig egne raw-URL/urllib-fallbacks.
+- Pending-manifestet .github_store_pending.json ligger i repo-RODEN — det er forventet og tæller IKKE som at 'røre filer udenfor us/'. Forbuddet gælder filer der pushes til GitHub.
 - Kør HELE kæden færdig: decisions skrevet + paper_trader + sync_dashboard kørt + pending pushet (Trin 5). Det er IKKE nok kun at skrive decisions-filen.
 
 ## TRIN 1: Beslutningsgrundlag
@@ -42,9 +43,11 @@ Action: BUY / SELL / HOLD. shares=0 for HOLD. price = aktuel pris fra decision_p
 
 1. Kør: GITHUB_STORE_OFFLINE=1 python us/paper_trader.py
    (eksekverer beslutningerne → us/data.json registreres som pending)
+   NB: paper_trader nægter at eksekvere samme dags beslutninger to gange (genkørsels-vagt). Kør den kun én gang; FORCE_RERUN=1 er KUN til bevidst gentagelse.
 2. Kør: GITHUB_STORE_OFFLINE=1 python us/sync_dashboard.py
    (bygger dashboard-afledte nøgler: stocks, benchmarks, sektorer, latest_decisions)
 3. Kør: GITHUB_STORE_OFFLINE=1 python us/github_store.py
    Pending-listen skal indeholde us/decisions/DATO.json og us/data.json.
 4. Læs hver pending fils indhold fra det lokale klon og push ALLE filerne til branch 'main' i ÉT commit via MCP-værktøjet mcp__github__push_files (owner='Poulsen4988', repo='trading-bot-dashboard', branch='main', message=f'US decisions + paper trades {dato}').
-5. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport (vagthunden opdager manglende output og opretter et issue).
+5. Efter vellykket push: kør `GITHUB_STORE_OFFLINE=1 python us/github_store.py --clear` (kvitterer for pushet og tømmer manifestet).
+6. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport (vagthunden opdager manglende output og opretter et issue).

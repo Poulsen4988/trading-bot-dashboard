@@ -19,7 +19,13 @@ state og rutinen døde stille (se vagthund-issues #3–#17, 2026-06-30 →
    `.github_store_pending.json`.
 3. **Push**: rutinens sidste trin pusher alle pending filer til `main` i ét
    commit via MCP-værktøjet `mcp__github__push_files` (GitHub App —
-   den godkendte skrivekanal i sandkassen).
+   den godkendte skrivekanal i sandkassen) og kører derefter
+   `python github_store.py --clear`.
+
+Kendt, accepteret race: pusher rutinen `data.json`, overskrives de afledte
+felter fra en evt. mellemliggende times-Action — de genopbygges af næste
+`sync_dashboard`-kørsel inden for en time. Porteføljefelter ejes stadig kun
+af `paper_trader`.
 
 Ingen tokens i prompts. GitHub Actions kører uændret videre med
 `secrets.DASHBOARD_PAT` (med token og fungerende API opfører github_store

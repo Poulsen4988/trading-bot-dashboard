@@ -10,6 +10,7 @@ men påvirker ikke kontanter eller positioner.
 """
 from __future__ import annotations
 
+import os
 from datetime import date, datetime, timezone
 from math import floor
 
@@ -312,6 +313,16 @@ def main():
     # raise_on_error: hellere stoppe end handle mod tom/forældet portefølje og
     # overskrive god remote-state ved en transient læsefejl.
     data, _ = github_store.get_json("data.json", default=default_data(), raise_on_error=True)
+
+    # Genkørsels-vagt: samme dags beslutninger må ikke eksekveres to gange
+    # (dobbelt-køb/salg). Bevidst gentagelse kræver FORCE_RERUN=1.
+    if data.get("last_execution_date") == date_str and os.environ.get("FORCE_RERUN") != "1":
+        raise SystemExit(
+            f"Beslutningerne for {date_str} er allerede eksekveret (last_execution_date). "
+            "Data er intakt — kør IKKE igen. Bevidst gentagelse: FORCE_RERUN=1."
+        )
+    data["last_execution_date"] = date_str
+
     executed, holds, new_total = execute_decisions(decisions_data, data)
 
     # Print fuld opsummering (med thesis) FØR slankning.

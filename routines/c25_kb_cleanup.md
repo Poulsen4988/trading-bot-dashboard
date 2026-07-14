@@ -15,7 +15,7 @@ Formål: gennemgå knowledge/*.json og fjern KUN unødig information — duplika
 
 Output indeholder pr. fil:
 - duplicate_url: samme URL set tidligere i samme fil
-- duplicate_title: nu-identisk titel samme dag
+- duplicate_title: nær-identisk titel samme dag (samme første 80 tegn, case-insensitivt — kan være to FORSKELLIGE meddelelser, tjek før sletning)
 - stale: ældre end 180 dage
 - low_value: tom eller meget kort summary (<30 tegn)
 
@@ -75,4 +75,5 @@ put_json(f'knowledge_cleanup_reports/{today}.json', report, f'KB cleanup report 
 1. Kør: GITHUB_STORE_OFFLINE=1 python github_store.py
 2. Pending-listen skal indeholde de rensede knowledge/-filer og cleanup-rapporten.
 3. Læs hver pending fils indhold fra det lokale klon og push ALLE filerne til branch 'main' i ÉT commit via MCP-værktøjet mcp__github__push_files (owner='Poulsen4988', repo='trading-bot-dashboard', branch='main', message=f'KB cleanup {DATO}').
-4. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport.
+4. Efter vellykket push: kør `GITHUB_STORE_OFFLINE=1 python github_store.py --clear` (kvitterer for pushet og tømmer manifestet).
+5. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport.

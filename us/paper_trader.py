@@ -315,6 +315,16 @@ def main():
     # raise_on_error: better to stop than trade against an empty/stale portfolio and
     # overwrite good remote state on a transient read error.
     data, _ = github_store.get_json("us/data.json", default=default_data(), raise_on_error=True)
+
+    # Re-run guard: never execute the same day's decisions twice
+    # (double buys/sells). Deliberate re-run requires FORCE_RERUN=1.
+    if data.get("last_execution_date") == date_str and os.environ.get("FORCE_RERUN") != "1":
+        raise SystemExit(
+            f"Decisions for {date_str} were already executed (last_execution_date). "
+            "Data is intact — do NOT re-run. Deliberate re-run: FORCE_RERUN=1."
+        )
+    data["last_execution_date"] = date_str
+
     executed, holds, new_total = execute_decisions(decisions_data, data)
 
     # Print full summary (with thesis) BEFORE slimming.

@@ -79,4 +79,5 @@ Verdicts: BULL, BEAR eller NEUTRAL. Confidence: 1–10. Inkludér ALLE 25 aktier
 1. Kør: GITHUB_STORE_OFFLINE=1 python github_store.py
 2. Pending-listen skal indeholde screening/DATO.json og analysis/DATO.json. Er den tom selvom du har skrevet filerne: noget gik galt — undersøg og rapportér.
 3. Læs hver pending fils indhold fra det lokale klon og push ALLE filerne til branch 'main' i ÉT commit via MCP-værktøjet mcp__github__push_files (owner='Poulsen4988', repo='trading-bot-dashboard', branch='main', message=f'Analyse {DATO}: screening + analysis').
-4. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport (vagthunden opdager manglende output og opretter et issue).
+4. Efter vellykket push: kør `GITHUB_STORE_OFFLINE=1 python github_store.py --clear` (kvitterer for pushet og tømmer manifestet).
+5. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport (vagthunden opdager manglende output og opretter et issue).

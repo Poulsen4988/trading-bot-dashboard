@@ -49,8 +49,9 @@ Al kode ligger **udelukkende på GitHub** — den lokale mappe indeholder kun de
 | Dashboard | https://poulsen4988.github.io/trading-bot-dashboard/ |
 | Credentials (.env) | `C:\Users\andre\Mit drev\Claude\.env` |
 
-Læs altid filer via GitHub API. Skriv altid via GitHub API (Contents API med SHA).
-Brug DASHBOARD_PAT fra `.env` til autentificering.
+I lokale PC-sessioner (hvor der ikke er noget klon): læs/skriv via GitHub API
+med DASHBOARD_PAT fra `.env`. I rutine-sandkassen og GitHub Actions håndterer
+`github_store.py` selv kanalvalget — se "Rutine-robusthed" øverst.
 
 ---
 

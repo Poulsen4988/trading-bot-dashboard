@@ -7,6 +7,7 @@ VIGTIGT: Priser for alle ~503 aktier, screening/rangering og nyheder hentes AUTO
 KRITISK — repo-lagring (gælder hele kørslen):
 - Sæt ALDRIG DASHBOARD_PAT/GITHUB_TOKEN — der bruges INGEN tokens. Prefix alle kommandoer og python-snippets med GITHUB_STORE_OFFLINE=1, så github_store kører deterministisk i offline-tilstand: læsninger fra det lokale klon, skrivninger gemmes lokalt og registreres i pending-manifestet (.github_store_pending.json).
 - Brug ALDRIG git (add/commit/push/clone) og kald ALDRIG api.github.com selv. Byg aldrig egne raw-URL/urllib-fallbacks.
+- Pending-manifestet .github_store_pending.json ligger i repo-RODEN — det er forventet og tæller IKKE som at 'røre filer udenfor us/'. Forbuddet gælder filer der pushes til GitHub.
 - SIDSTE TRIN er ALTID Trin 4 (push pending filer). Rutinen er IKKE færdig før den er gennemført.
 
 ## TRIN 1: Hent deep-set kontekst
@@ -42,4 +43,5 @@ Inkludér ALLE aktier fra selected_for_analysis. Felterne tier/scout/screener_sc
 1. Kør: GITHUB_STORE_OFFLINE=1 python us/github_store.py
 2. Pending-listen skal indeholde us/analysis/DATO.json. Er den tom selvom du har skrevet filen: noget gik galt — undersøg og rapportér.
 3. Læs hver pending fils indhold fra det lokale klon og push ALLE filerne til branch 'main' i ÉT commit via MCP-værktøjet mcp__github__push_files (owner='Poulsen4988', repo='trading-bot-dashboard', branch='main', message=f'US analysis {DATO}').
-4. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport (vagthunden opdager manglende output og opretter et issue).
+4. Efter vellykket push: kør `GITHUB_STORE_OFFLINE=1 python us/github_store.py --clear` (kvitterer for pushet og tømmer manifestet).
+5. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport (vagthunden opdager manglende output og opretter et issue).

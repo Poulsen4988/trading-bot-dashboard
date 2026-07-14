@@ -78,7 +78,9 @@ Alle åbne positioner SKAL med (HOLD eller SELL) med opdateret investment_plan.
 
 1. Kør: GITHUB_STORE_OFFLINE=1 python paper_trader.py
    Print output og bekræft at data.json er opdateret (den registreres som pending).
+   NB: paper_trader nægter at eksekvere samme dags beslutninger to gange (genkørsels-vagt). Kør den derfor kun én gang; FORCE_RERUN=1 er KUN til bevidst gentagelse.
 2. Kør: GITHUB_STORE_OFFLINE=1 python github_store.py
    Pending-listen skal indeholde decisions/{dato}.json og data.json.
 3. Læs hver pending fils indhold fra det lokale klon og push ALLE filerne til branch 'main' i ÉT commit via MCP-værktøjet mcp__github__push_files (owner='Poulsen4988', repo='trading-bot-dashboard', branch='main', message=f'AI decisions + paper trades {dato}').
-4. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport (vagthunden opdager manglende output og opretter et issue).
+4. Efter vellykket push: kør `GITHUB_STORE_OFFLINE=1 python github_store.py --clear` (kvitterer for pushet og tømmer manifestet).
+5. Fejler MCP-kaldet: vent 10–20 sek og prøv igen (op til 3 gange). Fejler det stadig: STOP og rapportér fejlen tydeligt — skriv aldrig via git, og efterlad aldrig filerne kun lokalt uden rapport (vagthunden opdager manglende output og opretter et issue).
