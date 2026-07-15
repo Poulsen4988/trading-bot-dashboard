@@ -1,1 +1,106 @@
-PLACEHOLDER
+{
+  "date": "2026-07-15",
+  "market_summary": "Bred AI/chip-sektorselloff fortsætter (Micron-drevne Kina-hukommelseskonkurrence-frygt rammer MRVL/AMD/Intel), mens IBM's kollaps skaber bredere tech-nervøsitet. Egne positioner holder deres tese intakt uden nye negative selskabsspecifikke katalysatorer: NUE, NDAQ, ORCL og TDG er alle uændret bullish. Ét nyt køb i dag: MRVL, hvor pullbacket er sektor-drevet (ikke selskabsspecifikt) og aktien er dybt oversolgt ind i en intakt langsigtet opadgående trend.",
+  "decisions": [
+    {
+      "symbol": "NUE",
+      "name": "Nucor",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 236.87,
+      "confidence": 6,
+      "reasoning": "Ingen nye negative katalysatorer; KeyBanc $274-tese og langsigtet opadgående trend (28.8% over SMA200) intakt. Prisen er stalled lige under SMA50 — hold, ingen ny buy-trigger.",
+      "bull": [
+        "KeyBanc Overweight/$274-target (~16% opside) fortsat operativ tese",
+        "Langsigtet trend intakt, 28.8% over SMA200; Simply Wall St-model antyder yderligere undervurdering"
+      ],
+      "bear": [
+        "Fladt vs. SMA50 (-0.6%) — bounce er stalled lige under modstand"
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 91.36,
+      "confidence": 6,
+      "reasoning": "SK Hynix ADR-præmie (~50%) bekræfter listing-pipeline-tesen; kurs kun ~7% under TD Cowens $98-mål. Teknisk stærkt overkøbt (stoch 97.8, BB 95.6%) — hold indenfor eksisterende stop, ingen nye køb her.",
+      "bull": [
+        "SK Hynix ADR-præmie ballonerer, bekræfter ekstraordinær efterspørgsel efter Nasdaq-listings",
+        "Kun ~7% fra TD Cowens $98-mål, oprindelig tese spiller ud"
+      ],
+      "bear": [
+        "Teknisk meget strakt (stoch 97.8, BB 95.6%) — lidt plads før pullback/konsolidering"
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 132.49,
+      "confidence": 6,
+      "reasoning": "Frisk positiv katalysator (front-runner til Japans klassificerede regeringscloud) midt i dyb oversolgt tilstand nær 52-ugers lav. OCI-vækst og $638 mia. backlog-tese intakt, men trenden er endnu ikke teknisk bekræftet vendt — hold.",
+      "bull": [
+        "Ny regeringscloud-sejr (Japan) er en frisk, selskabsspecifik positiv katalysator midt i tech-udsalget",
+        "Ekstremt oversolgt (RSI 24.5, stoch 16.6) nær 52-ugers lav, OCI-vækst (+93% å/å) og $638 mia. backlog intakt"
+      ],
+      "bear": [
+        "IBM's kollaps og bredere AI-sektor-nervøsitet presser sentiment på tværs af enterprise tech/cloud",
+        "Teknisk trend fortsat brudt: -27% under SMA50 og -31% under SMA200 — bund endnu ikke bekræftet"
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "TDG",
+      "name": "TransDigm Group",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1232.18,
+      "confidence": 6,
+      "reasoning": "Makro-/oliedrevet industriselloff, ikke selskabsspecifik svaghed. Morgan Stanley forbliver konstruktiv på aerospace/defense forud for Q2-regnskab; Zacks-opgradering og opjusteret FY26-guidance stadig operativ tese — hold.",
+      "bull": [
+        "Morgan Stanley bekræfter bullish sektorsyn på aerospace/defense forud for Q2-regnskab",
+        "Kurs ved nedre Bollinger-bånd (BB 0.5%) efter oversolgt pullback; Zacks-opgradering og FY26-guidance intakt"
+      ],
+      "bear": [
+        "Momentum fortsat negativt på både 5-dages (-5.0%) og 20-dages (-3.5%) — nedtrend endnu ikke teknisk vendt"
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "action": "BUY",
+      "shares": 35,
+      "price": 206.26,
+      "confidence": 5,
+      "reasoning": "Sektor-drevet (Micron Kina-hukommelseskonkurrence-frygt) sympati-selloff, ikke MRVL-specifik svaghed. Langsigtet opadgående trend intakt (60% over SMA200), dybt oversolgt (RSI 30.9, stoch 5.1) giver asymmetrisk entry i en struktur AI-silicon-vækstcase.",
+      "bull": [
+        "Langsigtet trend fuldt intakt — 60% over SMA200 trods pullback — Wall Street holder gennemsnitlig Buy-rating",
+        "Fremstår som strukturel trussel mod Nvidia i custom AI-silicon (sammen med Broadcom) — holdbar vækstnarrativ",
+        "Dybt oversolgt (RSI 30.9, stoch 5.1) efter sympati-selloff udløst af Micron-headline, ikke et MRVL-specifikt problem"
+      ],
+      "bear": [
+        "20-dages momentum stærkt negativt (-33.2%) da hele chip-komplekset sælger af samlet",
+        "Forhøjet volatilitet efter stort tidligere løb gør yderligere drawdowns sandsynlige hvis sektor-sentiment forbliver negativt"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Sektor-bred (ikke selskabsspecifik) sympati-selloff i chip-komplekset giver en dyb oversolgt entry i en langsigtet intakt AI-silicon-vækstcase (60% over SMA200).",
+        "price_target": 275,
+        "stop_loss": 162.53,
+        "expected_return_pct": 33,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $162.53 (2x ATR). Sælg hvis Kina-hukommelseskonkurrencen viser sig at være en reel strukturel trussel (margin-kompression) frem for en overskrift, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    }
+  ]
+}
