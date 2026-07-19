@@ -1,0 +1,108 @@
+{
+  "date": "2026-07-19",
+  "files_reviewed": 25,
+  "files_cleaned": 7,
+  "total_items_removed": 10,
+  "per_file": [
+    {
+      "path": "knowledge/DANSKE_xcse.json",
+      "removed_count": 1,
+      "kept_count": 21,
+      "removed_items": [
+        {
+          "title": "Governments Sell Bonds at Record Pace as Spending Soars",
+          "date": "2026-06-10",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/DSV_xcse.json",
+      "removed_count": 1,
+      "kept_count": 3,
+      "removed_items": [
+        {
+          "title": "DSV - H1 2026 ANALYST CONFERENCE CALL",
+          "date": "2026-06-23",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/ISS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 6,
+      "removed_items": [
+        {
+          "title": "Invitation to ISS Capital Markets Day 2026",
+          "date": "2026-06-19",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 1,
+      "kept_count": 28,
+      "removed_items": [
+        {
+          "title": "UPDATED: Maersk shifts SoCal import containers to UP from BNSF",
+          "date": "2026-06-29",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 28,
+      "removed_items": [
+        {
+          "title": "UPDATED: Maersk shifts SoCal import containers to UP from BNSF",
+          "date": "2026-06-29",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/NOVOb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 320,
+      "removed_items": [
+        {
+          "title": "Why This Novo Nordisk Rival Just Soared To A Profit-Taking Zone",
+          "date": "2026-07-07",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/TRYG_xcse.json",
+      "removed_count": 4,
+      "kept_count": 4,
+      "removed_items": [
+        {
+          "title": "Storkationærmeddelelse",
+          "date": "2026-07-16",
+          "reason": "low_value"
+        },
+        {
+          "title": "Tryg-aktier handles eksklusive udbytte",
+          "date": "2026-07-13",
+          "reason": "low_value"
+        },
+        {
+          "title": "Tryg A/S - Financial Calendar for 2027",
+          "date": "2026-07-10",
+          "reason": "low_value"
+        },
+        {
+          "title": "Consensus estimates on Tryg A/S",
+          "date": "2026-07-03",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "summary": "Gennemgik alle 25 knowledge/*.json filer (533 items, 32 kandidater i 13 filer). 10 items fjernet i 7 filer: 4 duplicate_url (DANSKE, MAERSKa, MAERSKb, NOVOb havde samme artikel/URL dobbelt) og 6 low_value (DSV analyst-call-invitation, ISS Capital Markets Day-invitation, og TRYG storaktionærmeddelelse/ex-dividend-notits/finanskalender/consensus-estimates — alle rene administrative Nasdaq-notitser uden reelt indhold, kun kategori-tags som 'Investor Nyheder' i summary). Resten af low_value-kandidaterne blev bevaret konservativt selvom de har korte summaries, fordi titlerne dækker materielt indhold: halvårsregnskaber (Danske Bank, Tryg Q2), opjusterede forventninger (Danske Bank, Maersk, ISS), ledelsesskift (Danske Bank, FLSmidth), FDA/CHMP-godkendelser og kliniske forsøgsresultater (Genmab, Novo Nordisk, Coloplast), strategiske partnerskaber/aftaler (Carlsberg/Sapporo, ISS/Deutsche Telekom, Ørsted/S&P), nye ordrer/kontrakter (Bavarian Nordic, FLSmidth) og aktietilbagekøb (ISS). Ingen items var ældre end stale-tærsklen på 180 dage."
+}
