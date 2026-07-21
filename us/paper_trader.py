@@ -315,6 +315,11 @@ def main():
     # raise_on_error: better to stop than trade against an empty/stale portfolio and
     # overwrite good remote state on a transient read error.
     data, _ = github_store.get_json("us/data.json", default=default_data(), raise_on_error=True)
+
+    # Date guard: makes re-runs safe (BUYs must never double-execute).
+    if data.get("last_executed_decisions") == decisions_data.get("date"):
+        print(f"decisions for {decisions_data.get('date')} already executed - stopping without changes.")
+        return
     executed, holds, new_total = execute_decisions(decisions_data, data)
 
     # Print full summary (with thesis) BEFORE slimming.
@@ -337,6 +342,7 @@ def main():
     print(f"\nNew portfolio value: ${new_total}")
 
     # Slim to dashboard payload and write. Full detail is already in us/decisions/.
+    data["last_executed_decisions"] = decisions_data.get("date") or date_str
     slim_trades(data)
     cap_history(data)
     ok = github_store.put_json("us/data.json", data, f"US paper trades {date_str}")
