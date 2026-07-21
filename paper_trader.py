@@ -312,6 +312,13 @@ def main():
     # raise_on_error: hellere stoppe end handle mod tom/forældet portefølje og
     # overskrive god remote-state ved en transient læsefejl.
     data, _ = github_store.get_json("data.json", default=default_data(), raise_on_error=True)
+
+    # Dato-guard: goer genkoersel ufarlig (BUY maa aldrig dobbelt-eksekveres).
+    # Saettes af denne funktion foer skriv; workflowet "Eksekver AI-beslutninger"
+    # kan derfor koere baade paa push og cron uden dobbelthandler.
+    if data.get("last_executed_decisions") == decisions_data.get("date"):
+        print(f"decisions for {decisions_data.get('date')} er allerede eksekveret - stopper uden aendringer.")
+        return
     executed, holds, new_total = execute_decisions(decisions_data, data)
 
     # Print fuld opsummering (med thesis) FØR slankning.
@@ -334,6 +341,7 @@ def main():
     print(f"\nNy porteføljeværdi: {new_total} DKK")
 
     # Slank til dashboard-payload og skriv. Fuld detalje er allerede i decisions/.
+    data["last_executed_decisions"] = decisions_data.get("date") or date_str
     slim_trades(data)
     cap_history(data)
     ok = github_store.put_json("data.json", data, f"Paper trades {date_str}")
