@@ -95,6 +95,10 @@ jobs:
           MISSING=""
           [ -f "analysis/$TODAY.json" ]  || MISSING="$MISSING Analyse(analysis/$TODAY.json)"
           [ -f "decisions/$TODAY.json" ] || MISSING="$MISSING Handel(decisions/$TODAY.json)"
+          if [ -f "decisions/$TODAY.json" ]; then
+            EXEC_DATE=$(python3 -c "import json; print(json.load(open('data.json')).get('last_executed_decisions',''))" 2>/dev/null || echo "?")
+            [ "$EXEC_DATE" = "$TODAY" ] || MISSING="$MISSING Eksekvering(decisions-findes-men-paper_trader-koerte-ikke)"
+          fi
           if [ -z "$MISSING" ]; then
             echo "OK: både analysis/$TODAY.json og decisions/$TODAY.json findes."
             exit 0
@@ -118,6 +122,7 @@ jobs:
               "Afhjaelpning:" \
               "- Mangler analysis/$TODAY.json: Analyse fejlede. Koer Analyse-rutinen manuelt igen (read-only, sikker). Handel stopper selv uden analyse-fil." \
               "- Mangler kun decisions/$TODAY.json: Handel fejlede. Koer Handel-rutinen manuelt igen (eksekverer dagens papirhandel)." \
+              "- Mangler kun Eksekvering: koer workflowet 'Eksekver AI-beslutninger' manuelt fra Actions-fanen." \
               "" \
               "Auto-genereret af vagthund-steppet i .github/workflows/fetch_data.yml.")
             gh issue create --repo "$GITHUB_REPOSITORY" --title "$TITLE" --body "$BODY" \
