@@ -345,8 +345,12 @@ def sync():
         "stocks": [],
     }
     # Læs frisk fra GitHub, så dashboardet bygges oven på paper_trader's seneste
-    # portefølje/handler. Fald tilbage til lokal checkout uden token.
-    data, _ = github_store.get_json("data.json", default=None)
+    # portefølje/handler. VIGTIGT: en fejlende remote-læsning må ALDRIG falde
+    # tilbage til tom default og skrives retur — det nulstillede porteføljen
+    # 2026-07-17. Med token: fejl på læsning => stop hele sync (ingen skrivning).
+    data = None
+    if github_store.TOKEN:
+        data, _ = github_store.get_json("data.json", default=None, raise_on_error=True)
     if not data:
         data = load_json_file(DATA_PATH, default)
 
