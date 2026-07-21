@@ -57,7 +57,9 @@ def _urlopen_retry(req: urllib.request.Request, *, retry_status=(500, 502, 503, 
 
 
 def _local_path(path: str) -> str:
-    return os.path.join(os.path.dirname(os.path.abspath(__file__)), path)
+    # Paths are always "us/..."-prefixed, so resolve from the REPO ROOT (parent of us/),
+    # not from this file's own directory - otherwise local fallback reads us/us/... (broken).
+    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), path)
 
 
 class GitHubReadError(RuntimeError):
