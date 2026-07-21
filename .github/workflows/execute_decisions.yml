@@ -17,8 +17,8 @@ on:
       - "us/decisions/**"
   schedule:
     - cron: "15 8 * * 1-5"     # DK opsamling (Handel-rutinen skriver decisions ~07:45-08:10Z)
-    - cron: "50 21 * * 1-5"    # US opsamling (US Handel skriver ~21:35-21:50Z)
-    - cron: "15 22 * * 1-5"    # US 2. opsamling (foer vagthunden kl 22:45Z)
+    - cron: "10 23 * * 1-5"    # US opsamling (US Handel koerer 22:45Z, decisions ~22:55-23:10Z)
+    - cron: "35 23 * * 1-5"    # US 2. opsamling (foer vagthunden kl 23:50Z)
   workflow_dispatch:
 
 permissions:
