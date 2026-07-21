@@ -352,7 +352,12 @@ def sync():
     }
     # Read fresh from GitHub so the dashboard is built on top of paper_trader's
     # latest portfolio/trades. Fall back to local checkout without a token.
-    data, _ = github_store.get_json("us/data.json", default=None)
+    # IMPORTANT: a failing remote read must NEVER fall back to an empty default
+    # and get written back - that reset the DK portfolio 2026-07-17. With a
+    # token: read failure => abort the whole sync (no write).
+    data = None
+    if github_store.TOKEN:
+        data, _ = github_store.get_json("us/data.json", default=None, raise_on_error=True)
     if not data:
         data = load_json_file(DATA_PATH, default)
 
