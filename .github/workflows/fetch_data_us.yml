@@ -2,11 +2,11 @@ name: US Bot Vagthund (daglig)
 
 # Uafhaengig fejldetektor for US-botten. Koerer paa GITHUB_TOKEN (ingen API-noegle).
 # US Analyse fyrer 20:15Z, US Handel 20:45Z via Claude Code Routines. Denne tjekker
-# kl 22:00Z hverdage om dagens us/analysis + us/decisions findes; mangler de -> issue (mail).
+# kl 22:45Z hverdage (efter opsamlings-workflowet 'Eksekver AI-beslutninger' kl 22:15Z) om dagens us/analysis + us/decisions findes; mangler de -> issue (mail).
 
 on:
   schedule:
-    - cron: "0 22 * * 1-5"
+    - cron: "45 22 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -37,8 +37,19 @@ jobs:
                   raise
 
           missing = [f for f in (f"us/analysis/{today}.json", f"us/decisions/{today}.json") if not exists(f)]
+          if f"us/decisions/{today}.json" not in missing:
+              # decisions findes - tjek at workflowet "Eksekver AI-beslutninger" ogsaa eksekverede dem
+              import base64
+              try:
+                  cj = json.load(urllib.request.urlopen(urllib.request.Request(
+                      f"https://api.github.com/repos/{repo}/contents/us/data.json?ref=main", headers=H)))
+                  d = json.loads(base64.b64decode(cj["content"]))
+                  if d.get("last_executed_decisions") != today:
+                      missing.append("us/data.json (decisions findes men er ikke eksekveret - koer workflowet 'Eksekver AI-beslutninger' manuelt)")
+              except Exception as e:
+                  print("kunne ikke tjekke us/data.json:", e)
           if not missing:
-              print("OK: us/analysis og us/decisions findes for", today); raise SystemExit(0)
+              print("OK: us/analysis, us/decisions og eksekvering ok for", today); raise SystemExit(0)
           print("MANGLER:", missing)
 
           title = f"US-bot: rutine leverede ikke output {today}"
