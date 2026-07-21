@@ -1,0 +1,59 @@
+name: Eksekver AI-beslutninger
+
+# Koerer paper_trader + sync_dashboard i GitHub Actions i stedet for i Claude-rutinen.
+# Baggrund: rutine-sandkassen blokerer ofte api.github.com, og naar LLM-agenten saa
+# improviserede data.json-skrivninger selv, gik det galt (us/data.json overskrevet med
+# placeholder 2026-07-15; DK-portefoelje nulstillet 2026-07-17). Rutinen skriver nu KUN
+# decisions/DATO.json - dette workflow eksekverer den deterministisk (fuld netvaerksadgang,
+# DASHBOARD_PAT, ingen LLM i naerheden af data.json).
+# paper_trader har dato-guard (last_executed_decisions), saa dobbeltkoersel er ufarlig.
+# Scripts er ren stdlib og laeser/skriver via GitHub API - ingen pip install noedvendig.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "decisions/**"
+      - "us/decisions/**"
+  schedule:
+    - cron: "15 8 * * 1-5"     # DK opsamling (Handel-rutinen skriver decisions ~07:45-08:10Z)
+    - cron: "50 21 * * 1-5"    # US opsamling (US Handel skriver ~21:35-21:50Z)
+    - cron: "15 22 * * 1-5"    # US 2. opsamling (foer vagthunden kl 22:45Z)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: execute-decisions
+  cancel-in-progress: false
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    env:
+      DASHBOARD_PAT: ${{ secrets.DASHBOARD_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: DK - eksekver dagens beslutninger
+        run: |
+          TODAY=$(date -u +%F)
+          if [ -f "decisions/$TODAY.json" ]; then
+            python paper_trader.py
+            python sync_dashboard.py
+          else
+            echo "Ingen decisions/$TODAY.json - DK springes over."
+          fi
+      - name: US - eksekver dagens beslutninger
+        if: ${{ always() }}
+        run: |
+          TODAY=$(date -u +%F)
+          if [ -f "us/decisions/$TODAY.json" ]; then
+            python us/paper_trader.py
+            python us/sync_dashboard.py
+          else
+            echo "Ingen us/decisions/$TODAY.json - US springes over."
+          fi
