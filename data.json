@@ -5142,18 +5142,20 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
+        "analysis_date": "2026-07-22",
+        "tier": "deep",
+        "verdict": "BULL",
+        "confidence": 7,
         "bull": [
-          "High 4.82% dividend yield with a steady uptrend and price above both SMAs"
+          "Revenue +24% and earnings +67% YoY growth with a cheap valuation (11.8x trailing / 15.1x forward PE) and 4.85% dividend yield",
+          "Price in a confirmed uptrend above both SMA50 (+7.4%) and SMA200 (+8.2%); actively defending market position via the Eli Lilly false-advertising lawsuit"
         ],
         "bear": [
-          "Forward PE (15.3x) above trailing PE (12.0x) signals the market expects earnings growth to slow, and the stock is still -29% below its 52-week high"
+          "Still -30.3% below the 52-week high, suggesting the market remains cautious on competitive GLP-1 dynamics with Lilly",
+          "Global regulatory friction on GLP-1 advertising could dampen future demand growth"
         ],
-        "summary": "Novo Nordisk is recovering steadily with an attractive dividend, but the market is pricing in decelerating earnings growth and the stock remains well off its highs.",
-        "key_risk": "GLP-1 competitive pressure continuing to erode the earnings growth priced into forward estimates."
+        "summary": "Novo Nordisk shows genuinely strong fundamentals (accelerating revenue and earnings growth, cheap valuation, high yield) and an intact uptrend, but the stock remains deeply discounted from its highs as the market weighs intensifying Eli Lilly competition and global GLP-1 advertising restrictions.",
+        "key_risk": "The Eli Lilly litigation and broader GLP-1 competitive dynamics could escalate; an adverse ruling or continued share pressure would weigh on the stock."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5240,18 +5242,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 4,
+        "verdict": "BEAR",
+        "confidence": 5,
         "bull": [
-          "Steady uptrend with price above both SMAs and a 2.83% dividend yield"
+          "Similar to the A-shares — trading in an uptrend above both moving averages with logistics demand tailwinds"
         ],
         "bear": [
-          "Negative forward PE signals expected losses/high earnings uncertainty, and freight-rate cyclicality is a persistent risk"
+          "Same severe earnings collapse (-94.6% YoY) as freight rates normalize, with the lowest screener score in the universe"
         ],
-        "summary": "Maersk B is trending steadily but forward earnings visibility is poor, consistent with ongoing freight-rate cyclicality.",
-        "key_risk": "A freight-rate downturn confirming the earnings uncertainty implied by the negative forward PE."
+        "summary": "Maersk B mirrors the A-shares' setup — technically firm but fundamentally the weakest earnings story in the C25 index.",
+        "key_risk": "Freight rate normalization continuing to erode earnings despite the current price uptrend."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5338,18 +5340,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 4,
+        "verdict": "BEAR",
+        "confidence": 5,
         "bull": [
-          "Same steady uptrend and dividend support as the B-shares, with price above both SMAs"
+          "Price holds a solid uptrend above both moving averages, supported by steady logistics/fulfillment demand"
         ],
         "bear": [
-          "Forward PE is unavailable (earnings uncertainty) and the A-shares are thinner-traded than the B-shares"
+          "Earnings collapsed -94.6% YoY as freight rates normalize from prior highs, reflected in the lowest screener scores in the universe"
         ],
-        "summary": "Maersk A mirrors the B-share picture — a steady uptrend clouded by poor forward earnings visibility.",
-        "key_risk": "Freight-rate cyclicality and the lower liquidity of the A-share line versus the B-share line."
+        "summary": "Maersk A shares are technically in an uptrend, but a near-total earnings collapse as freight rates normalize makes this one of the weakest fundamental stories in the C25 universe.",
+        "key_risk": "Continued freight rate normalization could pressure earnings further even as the stock price holds up on residual momentum."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5415,18 +5417,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Forward PE (19.3x) is dramatically below trailing PE (54.6x), implying the market expects a major earnings normalization"
+          "Massive revenue growth (+68.9% YoY, reflecting the Schenker integration) with price above both moving averages ahead of Q2 earnings"
         ],
         "bear": [
-          "RSI at 73.7 is overbought and the valuation is still not cheap on an absolute basis"
+          "Earnings growth is sharply negative (-42.9%) despite the revenue surge, suggesting integration costs are weighing on profitability"
         ],
-        "summary": "DSV's valuation implies a large expected earnings recovery, but the stock is technically overbought after its run.",
-        "key_risk": "A pullback from overbought levels before the assumed earnings normalization is confirmed."
+        "summary": "DSV's huge revenue growth reflects its recent large acquisition, but earnings haven't kept pace, and the market awaits the upcoming Q2 report for clarity on integration progress.",
+        "key_risk": "The upcoming Q2 earnings print is a binary catalyst — a miss on integration synergies could hit the stock hard given the run-up."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5476,43 +5478,20 @@
           "url": "https://www.wsj.com/business/energy-utilities-roundup-market-talk-4cd049b7?siteid=yhoof2&yptr=yahoo"
         }
       ],
-      "technical": {
-        "screening_date": "2026-07-21",
-        "score": 43.1,
-        "rsi_proxy": 56.7,
-        "stoch_proxy": 42.5,
-        "bb_position": 66.5,
-        "sma50_vs_price": -3.03,
-        "sma200_vs_price": 6.15,
-        "macd_line": -1.4788,
-        "atr": 3.9036,
-        "momentum_divergence": 2.49,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "DEEP DRAWDOWN: -53.8% from 52w high — severe compression, mean-reversion potential",
-          "MOMENTUM: +2.3% in 5 days",
-          "MODEST DISCOUNT: Fwd PE 15.4x vs sector norm 20x",
-          "EARNINGS COLLAPSE: -85% YoY — risk/watch for stabilisation",
-          "REVENUE GROWTH: +33% YoY — top-line expansion"
-        ],
-        "rationale": "ORSTED.CO: stock has shed 54% from its 52-week high — potential deep value or extended downtrend; forward PE 15.4x represents a 23% discount to Utilities sector norm (20x); -85% earnings decline warrants caution but may create a contrarian entry; price is -3.0% vs SMA50."
-      },
+      "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "deep",
+        "analysis_date": "2026-07-22",
+        "tier": "scan",
         "verdict": "NEUTRAL",
-        "confidence": 5,
+        "confidence": 4,
         "bull": [
-          "New large power-purchase agreement with Good Energy — described as the largest deal in Good Energy's history — signals continued commercial demand for Ørsted's output",
-          "Revenue grew +33% YoY and price now sits above SMA200 (+6.2%), suggesting the multi-year drawdown may be bottoming",
-          "Forward PE of 15.4x is a 23% discount to the Utilities sector norm"
+          "Trading above its 200-day average (+4.9%) despite the steep 54% drawdown from 52-week highs"
         ],
         "bear": [
-          "Earnings collapsed -85% YoY, consistent with the risk of further offshore-wind impairments",
-          "Ørsted discontinued its credit-rating cooperation with S&P — while management maintains it targets solid creditworthiness, dropping a major rating agency relationship is a signal worth monitoring given the balance-sheet strain from the sector's cost overruns"
+          "Below its 50-day average with negative MACD and a deeply negative earnings growth (-84.9% YoY)"
         ],
-        "summary": "Ørsted shows early signs of stabilizing — a new large offtake deal and a recovery above the 200-day average — after a brutal 54% drawdown from highs, but the earnings collapse and the unusual decision to end the S&P rating relationship keep the credibility of that recovery in question.",
-        "key_risk": "Another impairment charge on offshore-wind assets, or a market reaction to reduced credit-rating transparency, reigniting the downtrend."
+        "summary": "Ørsted remains deeply depressed from its highs and technically soft near-term, though it still holds above its 200-day average.",
+        "key_risk": "Continued negative earnings momentum (-85% YoY) could extend the multi-year drawdown."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5599,18 +5578,20 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
+        "analysis_date": "2026-07-22",
+        "tier": "deep",
+        "verdict": "BULL",
+        "confidence": 7,
         "bull": [
-          "Reasonable forward PE (13.1x) with a steady uptrend and 3.13% dividend yield"
+          "Sapporo JV brings $643M cash while Carlsberg retains 75% control and full operations in SE Asia/Hong Kong",
+          "Confidential India IPO filing could raise up to $700M, unlocking further value; stock trending above both SMA50 (+6.4%) and SMA200 (+11.9%)"
         ],
         "bear": [
-          "RSI at 69.5 is approaching overbought and the low screener score (15.6) suggests limited relative edge"
+          "Revenue and earnings growth figures are unavailable, making it hard to confirm fundamentals are improving alongside the corporate actions",
+          "Still -8.4% below the 52-week high, suggesting the market hasn't fully re-rated the stock despite the news"
         ],
-        "summary": "Carlsberg is trending steadily with reasonable valuation support but shows little standout edge versus peers.",
-        "key_risk": "A stretched RSI reverting into a pullback with no strong catalyst to offset it."
+        "summary": "Carlsberg has two significant strategic catalysts in play — the Sapporo JV cash infusion and a potential India IPO — supporting a steady uptrend, making this one of the more fundamentally-driven bull cases in the current holdings.",
+        "key_risk": "Both catalysts carry execution and timing risk; the JV close or IPO could be delayed or priced lower than expected."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5638,20 +5619,41 @@
       "overview": "",
       "fin_summary": "",
       "news": [],
-      "technical": null,
+      "technical": {
+        "screening_date": "2026-07-22",
+        "score": 41.6,
+        "rsi_proxy": 56.1,
+        "stoch_proxy": 24.8,
+        "bb_position": 50.4,
+        "sma50_vs_price": 15.9,
+        "sma200_vs_price": 23.17,
+        "macd_line": 36.0781,
+        "atr": 23.1286,
+        "momentum_divergence": -20.79,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "SIGNIFICANT DRAWDOWN: -30.6% from 52w high",
+          "MOMENTUM: -3.7% in 5 days",
+          "MOMENTUM DIVERGENCE: 5d/20d gap -20.8pp — strong trend change signal",
+          "STOCHASTIC LOW: Stoch proxy 25 — lower range of annual band; RSI proxy 56 (momentum not yet oversold)"
+        ],
+        "rationale": "PNDORA.CO: price is +15.9% vs SMA50."
+      },
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 4,
+        "analysis_date": "2026-07-22",
+        "tier": "deep",
+        "verdict": "BULL",
+        "confidence": 6,
         "bull": [
-          "Powerful 20-day rally (+21.4%) has pushed price well above both SMA50 (+18.6%) and SMA200 (+25.3%)"
+          "Price trades well above both SMA50 (+15.9%) and SMA200 (+23.2%) with strongly positive MACD (+36.1), confirming an established uptrend",
+          "Reasonable forward PE (18.3x) with a 2.8% dividend yield despite the rally"
         ],
         "bear": [
-          "Forward PE (18.9x) sits well above trailing PE (11.7x), implying the market expects earnings deceleration, and 5-day momentum has already turned slightly negative"
+          "Sharp negative momentum divergence (5d vs 20d gap of -20.8pp) suggests the rally is losing steam near-term",
+          "Revenue (-3.2%) and earnings (-10%) are both declining despite the price strength"
         ],
-        "summary": "Pandora's rally has been powerful, but the valuation gap between forward and trailing earnings suggests the market is now pricing in a slowdown, and momentum is already cooling.",
-        "key_risk": "The implied earnings deceleration being confirmed, ending the recent rally."
+        "summary": "Pandora is in a strong medium-term uptrend well above its moving averages, but a sharp negative momentum divergence and softening fundamentals suggest the rally may be due for a near-term pause.",
+        "key_risk": "A break below SMA50 (658.5) would signal the uptrend losing its footing, especially since fundamentals aren't confirming the price strength."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5736,20 +5738,41 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/assessing-tryg-cpse-tryg-valuation-001631581.html"
         }
       ],
-      "technical": null,
+      "technical": {
+        "screening_date": "2026-07-22",
+        "score": 39.8,
+        "rsi_proxy": 81.1,
+        "stoch_proxy": 86.8,
+        "bb_position": 81.4,
+        "sma50_vs_price": 3.38,
+        "sma200_vs_price": 1.99,
+        "macd_line": 1.6872,
+        "atr": 2.2882,
+        "momentum_divergence": -4.72,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "NEAR 52W LOW: +5.7% above annual support — critical level",
+          "OVERBOUGHT: RSI proxy 81, Stoch proxy 87 — stretched, potential pullback",
+          "EARNINGS COLLAPSE: -43% YoY — risk/watch for stabilisation",
+          "HIGH YIELD: 5.41% dividend provides downside cushion"
+        ],
+        "rationale": "TRYG.CO: price sits just +5.7% above the 52-week low (146.5) — a key decision zone; forward PE 15.1x represents a 26% premium to Financial Services sector norm (12x); -43% earnings decline warrants caution but may create a contrarian entry; price is +3.4% vs SMA50."
+      },
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "scan",
+        "analysis_date": "2026-07-22",
+        "tier": "deep",
         "verdict": "NEUTRAL",
-        "confidence": 4,
+        "confidence": 5,
         "bull": [
-          "High 5.41% dividend yield with price holding modestly above both SMAs"
+          "Solid Q2 2026 results — 3.3% revenue growth and strong private-segment performance per the earnings call",
+          "High 5.41% dividend yield and price holding above both SMA50 and SMA200"
         ],
         "bear": [
-          "RSI at 77.5 is overbought and the screener score (38.7) shows limited edge versus stronger picks"
+          "Technically overbought (RSI 81, Stoch 87) after a run-up, raising pullback risk",
+          "Trades at a 26% premium to the Financial Services sector forward PE despite a -43% YoY earnings decline"
         ],
-        "summary": "Tryg offers a steady, income-oriented uptrend but is technically stretched with little near-term edge.",
-        "key_risk": "Overbought RSI reverting alongside a broader insurance-sector pullback."
+        "summary": "Tryg delivered a solid Q2 with private-segment growth and a high dividend yield, but the stock is technically overbought and trading at a premium multiple despite a steep earnings decline, leaving near-term pullback risk elevated.",
+        "key_risk": "Overbought conditions (RSI 81) combined with the earnings decline could trigger profit-taking now that the stock trades ex-dividend."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5792,43 +5815,22 @@
           "url": "https://view.news.eu.nasdaq.com/view?id=b93893d6bf32f3ff53084070841da580e&lang=en&src=listed"
         }
       ],
-      "technical": {
-        "screening_date": "2026-07-21",
-        "score": 44.1,
-        "rsi_proxy": 73.7,
-        "stoch_proxy": 83.4,
-        "bb_position": 89.3,
-        "sma50_vs_price": 6.47,
-        "sma200_vs_price": -12.86,
-        "macd_line": 7.3956,
-        "atr": 11.0857,
-        "momentum_divergence": -8.78,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "SIGNIFICANT DRAWDOWN: -35.3% from 52w high",
-          "MOMENTUM: +2.9% in 5 days",
-          "MOMENTUM DIVERGENCE: 5d/20d gap -8.8pp — emerging trend shift",
-          "UNDERVALUED: Fwd PE 15.9x vs sector norm 25x — 36% discount",
-          "HIGH YIELD: 5.44% dividend provides downside cushion"
-        ],
-        "rationale": "COLO-B.CO: forward PE 15.9x represents a 36% discount to Healthcare sector norm (25x); price is +6.5% vs SMA50."
-      },
+      "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "deep",
-        "verdict": "BULL",
-        "confidence": 6,
+        "verdict": "NEUTRAL",
+        "confidence": 5,
         "bull": [
-          "FDA approval of the next-generation inflatable penile prosthesis expands Coloplast's addressable urology market",
-          "Forward PE of 15.9x is a 36% discount to the Healthcare sector norm (25x), while the 5.44% dividend yield provides income cushion",
-          "Positive momentum (+2.9% 5d, +11.7% 20d) with price back above SMA50"
+          "FDA approval for the next-generation inflatable penile prosthesis opens a new growth product line",
+          "Strong 5-day momentum (+4.4%) with price recovering back above SMA50; high 5.5% dividend yield"
         ],
         "bear": [
-          "RSI at 73.7 is approaching overbought territory, raising the odds of a near-term pullback after the recent run",
-          "Price remains -12.9% below SMA200, so the longer-term downtrend is only partially repaired"
+          "Still -36.0% below the 52-week high and -13.7% below SMA200, showing the medium-term downtrend hasn't reversed",
+          "The recent bounce could be a relief rally within a larger downtrend rather than a confirmed reversal"
         ],
-        "summary": "Coloplast combines a genuine product catalyst (FDA approval) with a valuation discount and a high dividend yield, and price action has turned constructive over the past month. The main near-term risk is that the rally has pushed RSI into stretched territory.",
-        "key_risk": "A technical pullback from overbought RSI levels, or a product/reimbursement setback that undercuts the FDA-approval catalyst."
+        "summary": "Coloplast is showing a sharp short-term recovery on an FDA approval tailwind, but it remains well below its longer-term average and 52-week high, making this look like an early-stage reversal attempt rather than a confirmed turnaround.",
+        "key_risk": "If the bounce fails to hold above SMA50, the stock could resume its longer downtrend given it's still well below SMA200."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5915,18 +5917,20 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
+        "analysis_date": "2026-07-22",
+        "tier": "deep",
+        "verdict": "BULL",
+        "confidence": 7,
         "bull": [
-          "20-day momentum is solidly positive (+11.6%) with price back above SMA50"
+          "String of major positive catalysts: EU approval for the Tepkinly combo therapy, positive Phase 3 lymphoma results with AbbVie, and strong DARZALEX royalty sales",
+          "Revenue growing 25% YoY; price back above SMA50 and sitting right at SMA200, a potential trend inflection point"
         ],
         "bear": [
-          "5-day momentum has turned negative (-3.0%) and price is still slightly below SMA200"
+          "Earnings growth is sharply negative (-72.8%) despite the strong revenue growth, likely reflecting heavy R&D/commercial reinvestment",
+          "Still -17.9% below the 52-week high, meaning the market hasn't fully re-rated the recent good news"
         ],
-        "summary": "Genmab's recovery over the past month is real but has stalled in the last few sessions.",
-        "key_risk": "The recent 5-day pullback extending into a fuller reversal of the 20-day recovery."
+        "summary": "Genmab has had an unusually strong run of positive clinical and regulatory news that supports a fundamentally bullish case, even though reported earnings growth is deeply negative, likely due to reinvestment rather than a deteriorating core business.",
+        "key_risk": "If the earnings decline reflects a genuine profitability problem rather than reinvestment, the stock could stay range-bound despite the positive news flow."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -5956,18 +5960,18 @@
       "news": [],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
         "verdict": "NEUTRAL",
-        "confidence": 5,
+        "confidence": 4,
         "bull": [
-          "Forward PE (16.8x) is far below trailing PE (51.7x), implying the market expects a sharp earnings recovery"
+          "Holding just under its 50-day average with a constructive stochastic reading (71), suggesting stabilization"
         ],
         "bear": [
-          "RSI at 68.6 is approaching overbought while price is still -8% below SMA200, so the recovery is not yet confirmed"
+          "Still -9.1% below its 200-day average with negative revenue growth (-8.2%)"
         ],
-        "summary": "GN Store Nord is pricing in a large earnings recovery but the technical trend hasn't fully turned yet.",
-        "key_risk": "The assumed earnings recovery implied by the fwd/trailing PE gap fails to materialize."
+        "summary": "GN Store Nord is attempting to stabilize short-term but remains in a longer-term downtrend with shrinking revenue.",
+        "key_risk": "Elevated trailing PE (51x) leaves little valuation cushion if the revenue decline continues."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6005,18 +6009,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
-        "verdict": "BULL",
-        "confidence": 6,
+        "verdict": "NEUTRAL",
+        "confidence": 5,
         "bull": [
-          "Strong, well-confirmed uptrend near 52-week highs (-2.9%) with forward PE below trailing PE, implying an improving earnings outlook"
+          "Price holds well above both moving averages (+5.9% vs SMA50, +22.5% vs SMA200), just 5% off its 52-week high"
         ],
         "bear": [
-          "Valuation is no longer cheap after the run, leaving less margin of safety"
+          "Earnings growth is deeply negative (-63.4% YoY) despite the price strength"
         ],
-        "summary": "Demant is in a confirmed uptrend near its highs with an improving earnings outlook priced in.",
-        "key_risk": "A valuation-driven pause after the extended rally leaves little cushion for a fundamental miss."
+        "summary": "Demant's price trend remains solidly bullish near 52-week highs, but a steep earnings decline creates valuation risk if growth doesn't recover.",
+        "key_risk": "A -63% earnings drop is a major red flag that could trigger a re-rating if the next quarter doesn't show stabilization."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6066,42 +6070,22 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/royal-unibrew-cpse-rbrew-investment-131710950.html"
         }
       ],
-      "technical": {
-        "screening_date": "2026-07-21",
-        "score": 43.1,
-        "rsi_proxy": 86.0,
-        "stoch_proxy": 92.8,
-        "bb_position": 83.1,
-        "sma50_vs_price": 11.84,
-        "sma200_vs_price": -3.96,
-        "macd_line": 13.9234,
-        "atr": 9.6143,
-        "momentum_divergence": -14.16,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "MOMENTUM: +2.6% in 5 days",
-          "MOMENTUM DIVERGENCE: 5d/20d gap -14.2pp — emerging trend shift",
-          "OVERBOUGHT: RSI proxy 86, Stoch proxy 93 — stretched, potential pullback",
-          "UNDERVALUED: Fwd PE 12.7x vs sector norm 17x — 25% discount",
-          "STRONG EARNINGS GROWTH: +40% YoY — fundamental tailwind"
-        ],
-        "rationale": "RBREW.CO: forward PE 12.7x represents a 25% discount to Consumer Defensive sector norm (17x); +40% earnings growth underpins the fundamental case; price is +11.8% vs SMA50."
-      },
+      "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Earnings growth of +40% YoY is the strongest fundamental momentum in the deep-tier set, and an active share buy-back program is shrinking the share count",
-          "Forward PE of 12.7x is a 25% discount to the Consumer Defensive sector norm"
+          "Strong earnings growth (+40% YoY) with a reasonable 12.5x forward PE and active buybacks plus a share capital reduction",
+          "Strong 20-day momentum (+12.4%) with price now well above SMA50"
         ],
         "bear": [
-          "RSI at 86 and stochastic at 93 are extreme overbought readings — among the most stretched in the entire C25 universe",
-          "Momentum divergence of -14.2pp shows 5-day momentum already decelerating versus the 20-day trend, and Simply Wall St notes analyst price targets have not moved despite the rally, suggesting the market isn't yet pricing in further upside"
+          "RSI (74.7) is overbought after the sharp rally, raising pullback risk",
+          "Still below SMA200 (-5.2%), meaning the longer-term trend hasn't fully turned bullish yet"
         ],
-        "summary": "Royal Unibrew's underlying earnings growth and buyback support are genuinely strong, but the stock is technically as overbought as it gets in this universe and momentum is already cooling — the fundamental case is good, but the entry timing looks poor.",
-        "key_risk": "A sharp mean-reversion pullback from the extreme overbought technical setup, independent of the fundamental picture."
+        "summary": "Royal Unibrew has rallied sharply on strong earnings growth and shareholder-friendly capital actions, but the move looks technically overbought and the stock is still below its 200-day average, so confirmation of a full trend reversal is still pending.",
+        "key_risk": "An overbought pullback could resume the prior downtrend if the stock fails to hold above SMA50 (431.8)."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6188,18 +6172,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
-        "verdict": "BULL",
+        "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Very high 7.66% dividend yield with a steady uptrend near 52-week highs (-0.9%)"
+          "Very attractive 7.64% dividend yield in a stable uptrend near 52-week highs"
         ],
         "bear": [
-          "RSI at 65.2 is approaching overbought and the screener score (20.2) is among the lowest in the universe, signaling limited near-term edge"
+          "Overbought (RSI 71, Stoch 84) near its highs with growth nearly flat, leaving little re-rating potential from fundamentals alone"
         ],
-        "summary": "Nordea offers a standout dividend yield within a steady uptrend, though the screener sees limited additional edge here.",
-        "key_risk": "A rate- or sector-driven pullback eroding the income case despite the high yield."
+        "summary": "Nordea offers a compelling dividend yield in a stable uptrend near 52-week highs, though growth is flat and technicals are stretched.",
+        "key_risk": "High-yield stocks can underperform if rates rise or payout sustainability is questioned amid flat earnings growth."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6286,18 +6270,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
         "verdict": "BULL",
-        "confidence": 5,
+        "confidence": 7,
         "bull": [
-          "Cheap forward PE (11.3x), a 4.61% dividend yield, and a strong long-term uptrend (+21% above SMA200) near 52-week highs"
+          "Strong H1 2026 results — DKK 11.9bn post-tax profit — with raised full-year guidance (23-25bn DKK) and price above both moving averages"
         ],
         "bear": [
-          "Minor 5-day pullback (-0.7%) and a relatively low screener score versus higher-conviction picks"
+          "Trading near its 52-week high (-2.8%) after a strong run, leaving less room for further upside surprise"
         ],
-        "summary": "Danske Bank shows an attractive combination of cheap valuation, income, and a well-established uptrend near its highs.",
-        "key_risk": "A broader Nordic banking-sector pullback interrupting the long-term uptrend."
+        "summary": "Danske Bank posted strong H1 results and raised guidance, and its technical uptrend near 52-week highs corroborates the fundamental strength.",
+        "key_risk": "Being this close to 52-week highs means any earnings miss in future quarters could trigger outsized downside."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6377,18 +6361,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
-        "verdict": "BEAR",
-        "confidence": 5,
+        "verdict": "NEUTRAL",
+        "confidence": 4,
         "bull": [
-          "Forward PE (13.8x) offers some valuation support if the downtrend stabilizes"
+          "Earnings growth of +195% YoY alongside an expanding leadership team supports an improving profitability story"
         ],
         "bear": [
-          "20-day momentum is sharply negative (-10.3%) and price sits below both SMA50 and SMA200 — a clear, accelerating downtrend"
+          "Price trades below both SMA50 (-5.0%) and SMA200 (-4.9%) with declining revenue (-11.6%)"
         ],
-        "summary": "FLSmidth is in a clear and accelerating downtrend with no technical signs of stabilization yet.",
-        "key_risk": "Continued weakness in mining/cement capex spending extending the downtrend further."
+        "summary": "FLSmidth shows a striking earnings improvement but revenue is still shrinking and the stock remains technically below trend.",
+        "key_risk": "Margin-driven earnings growth without revenue growth may not be sustainable if order intake doesn't recover."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6475,18 +6459,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
         "verdict": "NEUTRAL",
-        "confidence": 4,
+        "confidence": 5,
         "bull": [
-          "Strong single-day bounce (+2.4%) with price still above SMA200, keeping the longer-term uptrend intact"
+          "Enormous reported earnings growth (+1516% YoY off a depressed base) alongside solid revenue growth (+14.4%) and price still above its 200-day average"
         ],
         "bear": [
-          "20-day momentum is negative (-1.3%) and price is essentially flat versus SMA50 — choppy, indecisive action"
+          "Price recently slipped below its 50-day average with soft RSI (39), suggesting near-term technical weakness"
         ],
-        "summary": "Vestas is showing a bounce within an otherwise indecisive, range-bound trend.",
-        "key_risk": "The choppy price action resolving to the downside, breaking the SMA200 support that has held so far."
+        "summary": "Vestas shows a dramatic earnings recovery and healthy revenue growth, but near-term technicals have softened with price dipping under its 50-day average.",
+        "key_risk": "Wind sector order intake and policy support are volatile — the earnings recovery could reverse if new orders slow."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6531,18 +6515,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "Sharp momentum recovery (+12.9% over 20 days) off a deep -36% drawdown from highs"
+          "Strong 20-day momentum (+11.2%) with price recovering above its 50-day average after a deep drawdown"
         ],
         "bear": [
-          "RSI at 83.6 is one of the most extreme overbought readings in the whole universe, and price remains -10% below SMA200 — this could be a bear-market rally rather than a trend reversal"
+          "Still well below its 200-day average (-12.0%) with earnings down 35% YoY"
         ],
-        "summary": "Ambu is rallying hard off a deep drawdown, but the move is technically extreme enough to raise real doubt about whether it's a genuine trend change.",
-        "key_risk": "A sharp reversal of the extreme overbought bounce back into the prior downtrend."
+        "summary": "Ambu is showing a short-term bounce but remains in a longer downtrend with deteriorating earnings.",
+        "key_risk": "A -37.7% drawdown from highs combined with negative earnings growth suggests the bounce could fade without a fundamental turnaround."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6580,18 +6564,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "Price is near its 52-week high (-6.2%) and forward PE (24.0x) implies earnings roughly doubling versus trailing (44.2x)"
+          "Steady modest growth (revenue +3.9%, earnings +7.5%) with price holding above both moving averages in a stable uptrend"
         ],
         "bear": [
-          "Even on the improved forward basis, the valuation is still rich relative to C25 peers, and the screener score (9.0) is the lowest in the universe"
+          "Lowest screener score in the C25 universe (5.8) reflects a lack of any standout catalyst or mispricing signal"
         ],
-        "summary": "Novonesis trades near its highs on an improving earnings outlook, but remains relatively expensive with the weakest screener score in the universe.",
-        "key_risk": "The assumed earnings improvement disappointing, leaving the stock trading on an unsupported high multiple."
+        "summary": "Novonesis is a stable, modestly growing compounder trading in a quiet uptrend with no notable catalysts or red flags.",
+        "key_risk": "As an unremarkable steady grower, it offers limited upside catalyst potential relative to more dislocated names in the universe."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6649,39 +6633,42 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-07-21",
-        "score": 46.0,
-        "rsi_proxy": 39.2,
-        "stoch_proxy": 1.7,
-        "bb_position": 9.2,
-        "sma50_vs_price": -2.26,
-        "sma200_vs_price": -3.25,
-        "macd_line": -1.0134,
-        "atr": 5.7429,
-        "momentum_divergence": 7.41,
+        "screening_date": "2026-07-22",
+        "score": 61.0,
+        "rsi_proxy": 35.2,
+        "stoch_proxy": 2.6,
+        "bb_position": -6.7,
+        "sma50_vs_price": -5.89,
+        "sma200_vs_price": -6.76,
+        "macd_line": -2.0496,
+        "atr": 5.8857,
+        "momentum_divergence": 5.62,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.18x avg",
-          "SIGNIFICANT DRAWDOWN: -33.1% from 52w high",
-          "STOCHASTIC OVERSOLD: Stoch proxy 2 — price near annual support floor (RSI proxy 39)",
-          "UNDERVALUED: Fwd PE 13.4x vs sector norm 18x — 26% discount"
+          "VOLUME ELEVATED: 2.01x avg — above-normal interest",
+          "SIGNIFICANT DRAWDOWN: -35.5% from 52w high",
+          "MOMENTUM: -4.7% in 5 days",
+          "STOCHASTIC OVERSOLD: Stoch proxy 3 — price near annual support floor (RSI proxy 35)",
+          "UNDERVALUED: Fwd PE 12.8x vs sector norm 18x — 29% discount"
         ],
-        "rationale": "ROCK-B.CO: forward PE 13.4x represents a 26% discount to Industrials sector norm (18x); price is -2.3% vs SMA50."
+        "rationale": "ROCK-B.CO: volume running at 2.0x the daily average signals institutional-scale activity; forward PE 12.8x represents a 29% discount to Industrials sector norm (18x); price is -5.9% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "deep",
-        "verdict": "BULL",
-        "confidence": 6,
+        "verdict": "NEUTRAL",
+        "confidence": 5,
         "bull": [
-          "Forward PE 13.4x is a 26% discount to the Industrials sector norm (18x), and analyst fair-value models (Simply Wall St) put fair value around DKK 231 vs. the current DKK 199 — roughly 16% upside to that anchor",
-          "Stochastic proxy at 1.7 and RSI at 39 mark a statistical extreme, historically a zone where oversold bounces occur"
+          "Deep value at 12.8x forward PE, a 29% discount to the Industrials sector norm (18x)",
+          "Analyst fair-value estimates (~228-231 DKK per Simply Wall St) imply meaningful upside from the current 191.5 DKK",
+          "Stochastic is deeply oversold (2.6) with elevated volume (2.0x avg), often a sign of capitulation ahead of a bounce"
         ],
         "bear": [
-          "Momentum is still negative on both the 5d (-0.85%) and 20d (-8.26%) windows and price sits below both SMA50 and SMA200 — the downtrend has not technically reversed yet"
+          "Price sits below both SMA50 (-5.9%) and SMA200 (-6.8%) with negative MACD, confirming an intact downtrend",
+          "-35.5% from the 52-week high with no news catalyst yet to reverse sentiment"
         ],
-        "summary": "Rockwool is deeply oversold (stoch 1.7) and trades at a meaningful discount to both its sector and analysts' own fair-value estimates, but the price trend is still pointing down with no confirmed reversal signal yet. This looks like a value/mean-reversion setup rather than a momentum trade.",
-        "key_risk": "European construction/renovation demand stays weak long enough that the value discount turns out to be justified rather than a buying opportunity."
+        "summary": "Rockwool screens as deep value with an oversold bounce setup (2x volume, stochastic near zero), but price remains in a confirmed technical downtrend below both moving averages, making this a classic value-vs-trend standoff.",
+        "key_risk": "The downtrend could extend further since no confirmed reversal signal (e.g. reclaiming SMA50) has occurred yet."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6745,20 +6732,41 @@
           "url": "https://finance.yahoo.com/markets/stocks/articles/evaluating-bavarian-nordic-cpse-bava-180425876.html"
         }
       ],
-      "technical": null,
+      "technical": {
+        "screening_date": "2026-07-22",
+        "score": 51.4,
+        "rsi_proxy": 43.0,
+        "stoch_proxy": 11.6,
+        "bb_position": 28.9,
+        "sma50_vs_price": -2.37,
+        "sma200_vs_price": -7.66,
+        "macd_line": -0.1434,
+        "atr": 4.3571,
+        "momentum_divergence": -3.1,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "NEAR 52W LOW: +5.7% above annual support — critical level",
+          "STOCHASTIC OVERSOLD: Stoch proxy 12 — price near annual support floor (RSI proxy 43)",
+          "UNDERVALUED: Fwd PE 18.1x vs sector norm 25x — 27% discount",
+          "EARNINGS COLLAPSE: -93% YoY — risk/watch for stabilisation"
+        ],
+        "rationale": "BAVA.CO: price sits just +5.7% above the 52-week low (171.3) — a key decision zone; forward PE 18.1x represents a 27% discount to Healthcare sector norm (25x); -93% earnings decline warrants caution but may create a contrarian entry; price is -2.4% vs SMA50."
+      },
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "scan",
+        "analysis_date": "2026-07-22",
+        "tier": "deep",
         "verdict": "NEUTRAL",
-        "confidence": 4,
+        "confidence": 5,
         "bull": [
-          "20-day momentum has turned positive (+6.1%) after a deep -25% drawdown from highs"
+          "New government order for smallpox/mpox vaccines is a concrete revenue catalyst",
+          "Trades at a 27% discount to the Healthcare sector forward PE (18.1x vs 25x) near its 52-week low with oversold stochastic (11.6)"
         ],
         "bear": [
-          "Forward PE (18.3x) sits above trailing PE (12.1x), implying the market expects earnings to decline, and price remains below both SMAs"
+          "Earnings collapsed -93% YoY and revenue fell -21%, signaling real fundamental deterioration",
+          "Price remains below both SMA50 (-2.4%) and SMA200 (-7.7%)"
         ],
-        "summary": "Bavarian Nordic shows a tentative bounce but the earnings outlook implied by its valuation is deteriorating, not improving.",
-        "key_risk": "Contract/pipeline disappointment confirming the earnings deceleration priced into the forward multiple."
+        "summary": "Bavarian Nordic looks statistically cheap and oversold with a fresh government vaccine order as a positive catalyst, but the severe earnings and revenue decline suggest the market may be correctly pricing in real deterioration rather than overreacting.",
+        "key_risk": "Further earnings deterioration if the new vaccine order doesn't offset broader contract losses."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6845,18 +6853,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "scan",
-        "verdict": "BULL",
+        "verdict": "BEAR",
         "confidence": 5,
         "bull": [
-          "Cheap forward PE (10.8x) with a strong uptrend near 52-week highs (-0.8%)"
+          "Strong uptrend with price at its 52-week high, supported by ongoing share buybacks"
         ],
         "bear": [
-          "RSI at 79.3 is overbought, raising near-term pullback risk"
+          "Extremely overbought (RSI 82, Stoch 100) while both revenue (-8.1%) and earnings (-12.6%) are declining"
         ],
-        "summary": "Jyske Bank combines an attractive valuation with strong price action, despite being technically stretched.",
-        "key_risk": "Overbought RSI triggering a short-term pullback despite the favorable valuation backdrop."
+        "summary": "Jyske Bank is at fresh 52-week highs but technically extremely overbought while both revenue and earnings are shrinking underneath, a risky combination.",
+        "key_risk": "A reversal from these overbought extremes could be sharp given the fundamental deterioration underneath the price strength."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -6908,18 +6916,20 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "scan",
+        "analysis_date": "2026-07-22",
+        "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Strong uptrend with price near its 52-week high (-0.6%) and well above both SMA50 and SMA200"
+          "Near 52-week highs with a powerful longer-term uptrend (+23.8% above SMA200)",
+          "Upcoming Capital Markets Day is a potential positive catalyst; ongoing share buyback program"
         ],
         "bear": [
-          "RSI at 80.1 is firmly overbought, raising near-term pullback risk after the run"
+          "Revenue and earnings growth are both roughly flat, meaning the strong price appreciation isn't matched by fundamental growth",
+          "Today's -2.24% daily drop shows some profit-taking already starting near highs"
         ],
-        "summary": "ISS is in a strong, well-established uptrend but the rally has pushed it into overbought territory.",
-        "key_risk": "A technical pullback from overbought RSI despite the constructive underlying trend."
+        "summary": "ISS has rallied hard over the past year and sits near 52-week highs ahead of a Capital Markets Day, but flat revenue and earnings growth mean the rally is running ahead of fundamentals, with the CMD event a real catalyst to watch in either direction.",
+        "key_risk": "If Capital Markets Day guidance disappoints against a stock priced near its highs with flat growth, downside could be sharp."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -7006,18 +7016,20 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-07-21",
-        "tier": "scan",
+        "analysis_date": "2026-07-22",
+        "tier": "deep",
         "verdict": "BULL",
         "confidence": 6,
         "bull": [
-          "Cheap forward PE (10.0x) combined with a 4.11% dividend yield and a strong uptrend near 52-week highs"
+          "Trading near 52-week highs, well above both SMA50 (+9.8%) and SMA200 (+15.6%), with 65% YoY revenue growth",
+          "Consistent weekly share buybacks signal management confidence; attractive 10.1x forward PE and 4.1% dividend yield"
         ],
         "bear": [
-          "RSI at 69.9 is nearing overbought, raising the risk of a near-term pause"
+          "Extremely overbought technically (Stoch 93.4), raising near-term pullback risk after the strong run",
+          "Earnings growth is actually negative (-26.8%) despite the strong revenue headline, suggesting margin pressure"
         ],
-        "summary": "Sydbank pairs an attractive valuation and dividend with strong price action close to its highs.",
-        "key_risk": "A regional-bank sector pullback or rate-driven repricing catching the stock near overbought levels."
+        "summary": "Sydbank is in a powerful uptrend near 52-week highs, backed by strong revenue growth and ongoing buybacks, but technical readings are stretched and earnings growth is negative, creating tension between momentum and underlying profitability.",
+        "key_risk": "Being this extended near 52-week highs with Stoch at 93 leaves little margin for disappointment; a negative surprise could trigger a sharp reversal."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     },
@@ -7046,60 +7058,62 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-07-21",
-        "score": 45.9,
-        "rsi_proxy": 44.4,
-        "stoch_proxy": 58.8,
-        "bb_position": 55.8,
-        "sma50_vs_price": -3.57,
-        "sma200_vs_price": -17.2,
-        "macd_line": -0.4333,
-        "atr": 1.1464,
-        "momentum_divergence": 6.05,
+        "screening_date": "2026-07-22",
+        "score": 47.3,
+        "rsi_proxy": 50.7,
+        "stoch_proxy": 75.0,
+        "bb_position": 75.3,
+        "sma50_vs_price": -1.84,
+        "sma200_vs_price": -15.83,
+        "macd_line": -0.3553,
+        "atr": 1.1143,
+        "momentum_divergence": 0.94,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "NEAR 52W LOW: +5.5% above annual support — critical level",
-          "MOMENTUM: +3.5% in 5 days",
-          "DEEP VALUE: Fwd PE 9.3x vs sector norm 22x — 58% discount"
+          "NEAR 52W LOW: +7.0% above annual support — critical level",
+          "MOMENTUM: +2.6% in 5 days",
+          "DEEP VALUE: Fwd PE 9.4x vs sector norm 22x — 57% discount"
         ],
-        "rationale": "NNIT.CO: price sits just +5.5% above the 52-week low (36.3) — a key decision zone; forward PE 9.3x represents a 58% discount to Technology sector norm (22x); price is -3.6% vs SMA50."
+        "rationale": "NNIT.CO: price sits just +7.0% above the 52-week low (36.3) — a key decision zone; forward PE 9.4x represents a 57% discount to Technology sector norm (22x); price is -1.8% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-07-21",
+        "analysis_date": "2026-07-22",
         "tier": "deep",
         "verdict": "NEUTRAL",
-        "confidence": 5,
+        "confidence": 4,
         "bull": [
-          "Forward PE of 9.3x is a 58% discount to the Technology sector norm (22x) — among the cheapest names in the C25 universe",
-          "5-day momentum has turned positive (+3.5%) and price sits just above the 52-week low, a level that has so far acted as support"
+          "Deep value at 9.4x forward PE, a 57% discount to the Technology sector norm (22x)",
+          "Positive 5-day momentum (+2.6%) suggests early stabilization off the 52-week low"
         ],
         "bear": [
-          "Revenue is declining (-5.7% YoY) and price sits -17.2% below its SMA200, meaning the deep discount could reflect a genuine structural slowdown in IT-services demand rather than mispricing",
-          "No news catalyst is currently visible to trigger a re-rating"
+          "Still -44.6% from the 52-week high and -15.8% below SMA200, showing the structural downtrend hasn't reversed",
+          "Revenue still declining (-5.7%) with zero news coverage to gauge a turnaround narrative"
         ],
-        "summary": "NNIT is statistically the cheapest name in the deep-tier set, but the valuation discount is accompanied by declining revenue and a still-intact longer-term downtrend, making this a show-me value case rather than a conviction buy.",
-        "key_risk": "A break below the 52-week low (36.3) would remove the one technical support level currently working in the stock's favor."
+        "summary": "NNIT is statistically cheap and showing early technical stabilization, but with no news catalyst and still-shrinking revenue, the case rests purely on valuation rather than a confirmed fundamental turnaround.",
+        "key_risk": "Thin information coverage (no recent news) limits visibility into whether the revenue decline has actually bottomed."
       },
       "prices_age": "2026-07-21T16:40:57.892478+00:00"
     }
   ],
   "latest_decisions": {
-    "date": "2026-07-21",
-    "market_summary": "C25-porteføljen er velfunderet med +22.65% på Novo Nordisk og solide gevinster i Sydbank, Royal Unibrew og Carlsberg, men flere positioner (Sydbank, Royal Unibrew) er teknisk strakt (RSI 68-86) og bør beskyttes med opjusterede stop-loss. FLSmidth viser et accelererende nedtrendbrud (BEAR-verdict, -10.3% 20d-momentum) uden tegn på den ventede bounce, og lukkes for at frigøre kapital. Kapitalen roteres delvist ind i Rockwool, som er statistisk ekstremt oversolgt og handler med rabat til både sektor og analytikeres fair value, som en moderat value-position.",
+    "date": "2026-07-22",
+    "market_summary": "C25-porteføljen er solidt i grønt (+22% på Novo, +20% på Sydbank, +14-15% på Carlsberg/Royal Unibrew) med Healthcare og Consumer Defensive som de tungeste sektorer. Ingen positioner er brudt gennem stop-loss, og dagens nyhedsflow (Novo/Lilly-retssag, Danske Banks opjusterede guidance, Genmabs kliniske sejre) styrker frem for svækker de eksisterende theses. Ét nyt køb i dag: Danske Bank efter stærkt H1-regnskab og opjusteret guidance.",
     "decisions": [
       {
         "symbol": "NOVO-B.CO",
         "name": "Novo Nordisk B",
         "action": "HOLD",
         "shares": 0,
-        "price": 325.2,
-        "confidence": 55,
-        "reasoning": "Thesis intakt — GLP-1-leder med trend fortsat over begge SMA'er og attraktivt udbytte. Novo/Lilly-retssagen om reklamer er støj, ikke fundamental risiko. Behold stop og target uændret.",
+        "price": 324.05,
+        "confidence": 78,
+        "reasoning": "Thesis intakt og styrket — 67% earnings-vækst, billig værdiansættelse og aktiv forsvar af markedsposition via Lilly-søgsmålet. Hæver stop-loss for at låse mere af den store gevinst fast, da prisen nu ligger komfortabelt over SMA50.",
         "bull": [
-          "High 4.82% dividend yield with a steady uptrend and price above both SMAs"
+          "Revenue +24% og earnings +67% YoY med billig 15.1x forward PE og 4.85% udbytte",
+          "Bekræftet uptrend over både SMA50 og SMA200; forsvarer aktivt markedsposition mod Lilly"
         ],
         "bear": [
-          "Forward PE (15.3x) above trailing PE (12.0x) signals decelerating earnings growth, stock still -29% below 52-week high"
+          "Stadig -30.3% fra 52-ugers høj — markedet er fortsat forsigtigt på konkurrencedynamikken",
+          "Global regulatorisk friktion på GLP-1-reklamer kan dæmpe fremtidig efterspørgsel"
         ],
         "investment_plan": {
           "term": "medium",
@@ -7109,37 +7123,10 @@
           ],
           "thesis": "GLP-1-leder med strukturelt trendbrud over SMA200. Oral Wegovy-adoption som primær vækstmotor. Deep-value PE 15.1x med 67% EPS-vækst. Price target 350 DKK.",
           "price_target": 350,
-          "stop_loss": 295,
-          "expected_return_pct": 30,
+          "stop_loss": 305,
+          "expected_return_pct": 8.0,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 295 (låser ~11% gevinst). TRIM hvis vægt overstiger 30%. Tag profit nær 350. Sælg ved fortsat forværring i US GLP-1-preskriptionsdata relativt til Eli Lilly."
-        }
-      },
-      {
-        "symbol": "FLS.CO",
-        "name": "FLSmidth",
-        "action": "SELL",
-        "shares": 30,
-        "price": 463.4,
-        "confidence": 65,
-        "reasoning": "Bounce-thesis er ikke bekræftet — 20d-momentum er -10.3%, prisen er under begge SMA'er og dagens verdict er BEAR med accelererende nedtrend. Lukker positionen nu (-6.27%) fremfor at vente på stop-loss ved 440, da der ikke er tegn på stabilisering før Q2-rapport.",
-        "bull": [
-          "Forward PE (13.8x) offers some valuation support if the downtrend stabilizes"
-        ],
-        "bear": [
-          "20-day momentum is sharply negative (-10.3%) and price sits below both SMA50 and SMA200 — a clear, accelerating downtrend"
-        ],
-        "investment_plan": {
-          "term": "medium",
-          "basis": [
-            "technical"
-          ],
-          "thesis": "Position lukket — teknisk bounce-thesis blev ikke bekræftet, og nedtrenden accelererer uden fundamental katalysator i sigte.",
-          "price_target": null,
-          "stop_loss": null,
-          "expected_return_pct": 0,
-          "timeframe": "n/a",
-          "exit_conditions": "n/a — position lukket"
+          "exit_conditions": "Sælg ved brud under 305 (opjusteret stop, låser ~15% gevinst). TRIM hvis vægt overstiger 30%. Tag profit nær 350. Sælg ved fortsat forværring i US GLP-1-preskriptionsdata relativt til Eli Lilly."
         }
       },
       {
@@ -7148,13 +7135,15 @@
         "action": "HOLD",
         "shares": 0,
         "price": 614.5,
-        "confidence": 65,
-        "reasoning": "Prisen er kun 0.9% fra target (620) efter fortsatte aktietilbagekøb. RSI 67-70 nærmer sig overkøbt. Opjusterer stop-loss til 600 for at låse en større del af den nuværende +20.25% gevinst fast.",
+        "confidence": 60,
+        "reasoning": "Kun ~1% fra price target og teknisk strakt (Stoch 93.4), men fortsatte ugentlige aktietilbagekøb og intakt uptrend understøtter fortsat hold. Strammer stop-loss yderligere for at beskytte den store gevinst mod et pullback.",
         "bull": [
-          "Cheap forward PE (10.0x) combined with a 4.11% dividend yield and a strong uptrend near 52-week highs"
+          "Nær 52-ugers høj, langt over SMA50/SMA200, med 65% YoY revenue-vækst",
+          "Konsistente ugentlige tilbagekøb signalerer ledelsestillid; 10.1x forward PE og 4.1% udbytte"
         ],
         "bear": [
-          "RSI at 69.9 is nearing overbought, raising the risk of a near-term pause"
+          "Ekstremt overkøbt (Stoch 93.4) — forhøjet pullback-risiko efter det stærke løb",
+          "Earnings-vækst er faktisk negativ (-26.8%) trods den stærke revenue-overskrift"
         ],
         "investment_plan": {
           "term": "medium",
@@ -7162,12 +7151,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Stærk regional dansk bank med fortsat aktietilbagekøb. Target 620. Stop-loss opjusteret til 600 for at låse en større del af den nuværende ~20% gevinst fast, da prisen nu er meget tæt på target og teknisk strakt.",
+          "thesis": "Stærk regional dansk bank med fortsat aktietilbagekøb. Target 620. Stop-loss strammet til 605 da prisen er meget tæt på target og teknisk strakt.",
           "price_target": 620,
-          "stop_loss": 600,
-          "expected_return_pct": 21,
+          "stop_loss": 605,
+          "expected_return_pct": 0.9,
           "timeframe": "1-2 måneder",
-          "exit_conditions": "Tag profit ved 620. Sælg ved brud under 600 (opjusteret stop). Sælg ved Q-rapport der bekræfter yderligere earnings-kompression."
+          "exit_conditions": "Tag profit ved 620. Sælg ved brud under 605 (strammet stop). Sælg ved Q-rapport der bekræfter yderligere earnings-kompression."
         }
       },
       {
@@ -7175,25 +7164,27 @@
         "name": "Carlsberg B",
         "action": "HOLD",
         "shares": 0,
-        "price": 923.6,
-        "confidence": 55,
-        "reasoning": "India IPO-thesis udvikler sig fortsat positivt (Sapporo-JV, fortsat IPO-momentum i sektoren). RSI 65 er ikke ekstremt. Behold stop og target uændret.",
+        "price": 929.4,
+        "confidence": 72,
+        "reasoning": "To reelle strategiske katalysatorer (Sapporo JV-kontanter, India IPO) er stadig i spil og ingen negative nyheder er kommet til. Fortsætter med uændret plan.",
         "bull": [
-          "Reasonable forward PE (13.1x) with a steady uptrend and 3.13% dividend yield"
+          "Sapporo JV bringer $643M kontant mens Carlsberg beholder 75% kontrol",
+          "Fortrolig India IPO-filing kunne rejse op til $700M; stock over SMA50/SMA200"
         ],
         "bear": [
-          "RSI at 69.5 is approaching overbought and the low screener score (15.6) suggests limited relative edge"
+          "Revenue/earnings-vækst er ikke tilgængelig, svært at bekræfte fundamental forbedring",
+          "Stadig -8.4% fra 52-ugers høj — markedet har ikke fuldt re-ratet aktien"
         ],
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical",
-            "fundamental"
+            "fundamental",
+            "catalyst"
           ],
           "thesis": "India IPO-filing er en reel katalysator. Target 970, stop-loss 850 for at beskytte gevinsten mens IPO-processen afklares.",
           "price_target": 970,
           "stop_loss": 850,
-          "expected_return_pct": 19,
+          "expected_return_pct": 4.4,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Tag profit ved 970. Sælg ved brud under 850 (opjusteret stop). Revurder ved negativ udvikling i India-gældstvisten eller aflysning af IPO-planer."
         }
@@ -7203,14 +7194,16 @@
         "name": "Royal Unibrew",
         "action": "HOLD",
         "shares": 0,
-        "price": 477.4,
+        "price": 475.4,
         "confidence": 55,
-        "reasoning": "Fundamentalt stærk (+40% earnings-vækst, aktivt buyback), men RSI 77-86 er blandt de mest ekstreme i hele universet og momentum-divergensen (-11pp) viser afkøling. Opjusterer stop-loss til 460 for at beskytte en større del af gevinsten mod et sandsynligt pullback.",
+        "reasoning": "Stærk earnings-vækst og aktionærvenlige kapitalhandlinger understøtter fortsat hold, men RSI 74.7 og pris stadig under SMA200 betyder trendvendingen ikke er bekræftet. Stop-loss uændret og tæt — beskytter allerede godt mod et pullback.",
         "bull": [
-          "Earnings growth of +40% YoY is the strongest fundamental momentum in the deep-tier set, and an active share buy-back program is shrinking the share count"
+          "Stærk earnings-vækst (+40% YoY) med rimelig 12.5x forward PE, aktive tilbagekøb og kapitalnedsættelse",
+          "Stærk 20-dages momentum (+12.4%) med pris godt over SMA50"
         ],
         "bear": [
-          "RSI at 86 and stochastic at 93 are extreme overbought readings — among the most stretched in the entire C25 universe"
+          "RSI (74.7) er overkøbt efter det skarpe rally — forhøjet pullback-risiko",
+          "Stadig under SMA200 (-5.2%) — den længere trend er ikke fuldt vendt endnu"
         ],
         "investment_plan": {
           "term": "medium",
@@ -7218,11 +7211,11 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Value/growth-kombination, men rallyet er ekstremt overkøbt og har endnu ikke bekræftet en trendvending (stadig under SMA200). Stop-loss opjusteret til 460 for yderligere at beskytte gevinsten mod et pullback fra ekstremt overkøbte niveauer.",
+          "thesis": "Value/growth-kombination, men rallyet er ekstremt overkøbt og har endnu ikke bekræftet en trendvending (stadig under SMA200). Stop-loss 460 beskytter gevinsten mod et pullback fra ekstremt overkøbte niveauer.",
           "price_target": 502,
           "stop_loss": 460,
-          "expected_return_pct": 5,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 5.6,
+          "timeframe": "2-4 måneder",
           "exit_conditions": "Sælg ved brud under 460 (opjusteret stop). Tag profit nær SMA200 (502). Reducer ved Q-rapport med omsætningsskuffelse."
         }
       },
@@ -7231,24 +7224,27 @@
         "name": "Tryg",
         "action": "HOLD",
         "shares": 0,
-        "price": 154.3,
-        "confidence": 45,
-        "reasoning": "Defensiv udbytteposition med intakt thesis — ingen nyheder der bryder casen. RSI overkøbt men positionen er kun +2.66%, så nuværende stop giver stadig fornuftig beskyttelse.",
+        "price": 154.9,
+        "confidence": 55,
+        "reasoning": "Solidt Q2-regnskab med privatsegment-vækst og høj udbytte-yield understøtter fortsat hold, men overkøbt (RSI 81) ved premium-multipel giver begrænset kortsigtet opside. Uændret plan.",
         "bull": [
-          "High 5.41% dividend yield with price holding modestly above both SMAs"
+          "Solide Q2 2026-resultater — 3.3% revenue-vækst og stærk privatsegment-performance",
+          "Høj 5.41% udbytte-yield og pris over både SMA50 og SMA200"
         ],
         "bear": [
-          "RSI at 77.5 is overbought and the screener score (38.7) shows limited edge versus stronger picks"
+          "Teknisk overkøbt (RSI 81, Stoch 87) efter opløb — forhøjet pullback-risiko",
+          "Handler til 26% premium til sektor forward PE trods -43% YoY earnings-fald"
         ],
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "fundamental"
+            "fundamental",
+            "dividend"
           ],
           "thesis": "Defensiv insurance-position med udbytte som primær value-driver. Porteføljediversifikation væk fra banker og consumer-sektor. Price target 165 DKK.",
           "price_target": 165,
           "stop_loss": 140,
-          "expected_return_pct": 7,
+          "expected_return_pct": 6.5,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved brud under 140 DKK (stop-loss). Tag profit nær 165 DKK. Revurder ved fortsat svag combined ratio eller guidance-nedjustering i H2."
         }
@@ -7258,25 +7254,27 @@
         "name": "ISS",
         "action": "HOLD",
         "shares": 0,
-        "price": 290.0,
+        "price": 288.2,
         "confidence": 55,
-        "reasoning": "Katalysator-trifecta (guidance, buyback, Deutsche Telekom-kontrakt) er intakt, og prisen er tæt på 52-ugers høj. RSI 70-80 er forhøjet men ikke ekstremt. Behold stop og target uændret.",
+        "reasoning": "Trifecta af positive katalysatorer intakt og forestående Capital Markets Day er en reel kommende trigger — flad omsætning/earnings vejer op mod den tekniske styrke. Lille position (3.5% vægt), lav risiko at fastholde til CMD-eventet.",
         "bull": [
-          "Strong uptrend with price near its 52-week high (-0.6%) and well above both SMA50 and SMA200"
+          "Nær 52-ugers høj med kraftig længere uptrend (+23.8% over SMA200)",
+          "Kommende Capital Markets Day er en potentiel positiv katalysator; igangværende tilbagekøbsprogram"
         ],
         "bear": [
-          "RSI at 80.1 is firmly overbought, raising near-term pullback risk after the run"
+          "Revenue og earnings-vækst er begge stort set flade — prisstigningen matches ikke af fundamental vækst",
+          "Dagens -2.24% dagsfald viser noget profit-taking allerede i gang nær højder"
         ],
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical",
-            "fundamental"
+            "catalyst",
+            "technical"
           ],
           "thesis": "Sjælden trifecta af positive katalysatorer — opjusteret guidance, udvidet buyback og en tiårig kontraktforlængelse med Deutsche Telekom — mens aktien nærmer sig 52-ugers høj.",
           "price_target": 320,
           "stop_loss": 265,
-          "expected_return_pct": 10,
+          "expected_return_pct": 11.0,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved brud under 265 (under SMA50-niveau). Tag profit nær 320. Revurder ved skuffende Capital Markets Day-opfølgning eller hvis omsætningsvæksten forbliver flad."
         }
@@ -7286,24 +7284,27 @@
         "name": "Genmab",
         "action": "HOLD",
         "shares": 0,
-        "price": 1864.0,
-        "confidence": 55,
-        "reasoning": "Phase 3-thesis er intakt — ingen negativ opfølgningsdata siden godkendelsen. 5-dages momentum er midlertidigt negativt, men 20-dages recovery er stadig solid. Behold stop og target uændret.",
+        "price": 1852.5,
+        "confidence": 78,
+        "reasoning": "Thesis styrket yderligere — EU-godkendelse af Tepkinly-kombo og positive Phase 3-data er reelle katalysatorer, og prisen er lige nu ved en potentiel trendvendingsinflektion ved SMA200. Fastholder uændret plan.",
         "bull": [
-          "20-day momentum is solidly positive (+11.6%) with price back above SMA50"
+          "Række af store positive katalysatorer: EU-godkendelse, positive Phase 3 lymfom-resultater med AbbVie, stærkt DARZALEX-royalty",
+          "Revenue vokser 25% YoY; pris tilbage over SMA50 og lige ved SMA200 — potentiel trendvending"
         ],
         "bear": [
-          "5-day momentum has turned negative (-3.0%) and price is still slightly below SMA200"
+          "Earnings-vækst er skarpt negativ (-72.8%) trods stærk revenue-vækst, sandsynligvis pga. R&D/kommerciel geninvestering",
+          "Stadig -17.9% fra 52-ugers høj — markedet har ikke fuldt re-ratet de gode nyheder"
         ],
         "investment_plan": {
           "term": "medium",
           "basis": [
+            "catalyst",
             "fundamental"
           ],
           "thesis": "Genmabs rally er understøttet af en reel Phase 3-sejr i lymfom med statistisk signifikante effektdata, forstærket af stærk revenue-vækst. Diversificerer Healthcare-eksponering væk fra ren GLP-1.",
           "price_target": 2150,
           "stop_loss": 1760,
-          "expected_return_pct": 15,
+          "expected_return_pct": 16.1,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved brud under 1760 (ca. 2x ATR under entry). Tag profit nær 2150. Revurder ved negativ opfølgningsdata (sikkerhedssignal, regulatorisk modvind) eller sell-the-news pullback der bryder teknisk struktur."
         }
@@ -7313,26 +7314,27 @@
         "name": "Coloplast B",
         "action": "HOLD",
         "shares": 0,
-        "price": 413.4,
-        "confidence": 65,
-        "reasoning": "FDA-katalysatoren og value-thesis er intakt, og dagens verdict er stadig BULL. Tilføjer ikke til positionen i dag da kapitalen prioriteres til rotation ud af FLS og ind i Rockwool, og Healthcare-eksponeringen allerede er porteføljens største sektor.",
+        "price": 414.1,
+        "confidence": 55,
+        "reasoning": "FDA-godkendelsen er stadig en frisk katalysator og prisen har genvundet SMA50, men SMA200-trenden er endnu ikke bekræftet vendt — fastholder moderat sizet position uændret.",
         "bull": [
-          "FDA approval of the next-generation inflatable penile prosthesis expands Coloplast's addressable urology market",
-          "Forward PE of 15.9x is a 36% discount to the Healthcare sector norm (25x), while the 5.44% dividend yield provides income cushion"
+          "FDA-godkendelse af næste-generations inflatabel penisprotese åbner en ny vækstlinje",
+          "Stærk 5-dages momentum (+4.4%) med pris tilbage over SMA50; høj 5.5% udbytte-yield"
         ],
         "bear": [
-          "RSI at 73.7 is approaching overbought territory, raising the odds of a near-term pullback after the recent run"
+          "Stadig -36.0% fra 52-ugers høj og -13.7% under SMA200 — den mellemlange nedtrend er ikke vendt",
+          "Den nylige stigning kan være en relief rally i en større nedtrend snarere end en bekræftet vending"
         ],
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical",
-            "fundamental"
+            "catalyst",
+            "technical"
           ],
           "thesis": "Deep-value sundhedsnavn med et frisk regulatorisk katalysator (FDA-godkendelse) og velbegrundet udbytte. Positionen er sized moderat (~5.8% af porteføljen) da SMA200-trenden endnu ikke er bekræftet vendt.",
           "price_target": 450,
           "stop_loss": 376,
-          "expected_return_pct": 9,
+          "expected_return_pct": 8.7,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved brud under 376 (ca. 2x ATR under entry, mister SMA50-genobringen). Tag profit nær 450. Revurder hvis SMA200-afstanden fortsat udvides uden fundamental bedring."
         }
@@ -7340,18 +7342,46 @@
       {
         "symbol": "ROCK-B.CO",
         "name": "Rockwool B",
-        "action": "BUY",
-        "shares": 50,
-        "price": 190.9,
-        "confidence": 60,
-        "reasoning": "Statistisk ekstremt oversolgt (stoch 0.6, RSI 34.8) med 26% rabat til sektor på forward PE og handler under analytikeres fair value-estimat (~231 DKK). Nedtrenden er endnu ikke teknisk bekræftet vendt, så positionen sizes moderat (under fuld ATR-anbefaling) som en value/mean-reversion-satsning fremfor en momentum-trade.",
+        "action": "HOLD",
+        "shares": 0,
+        "price": 191.5,
+        "confidence": 55,
+        "reasoning": "Kun én dag gammel position — thesis om deep value og oversolgt bounce er uændret og intet nyt har bekræftet eller afkræftet setup'et endnu. Fastholder uændret plan.",
         "bull": [
-          "Forward PE 13.4x is a 26% discount to the Industrials sector norm (18x), and analyst fair-value models (Simply Wall St) put fair value around DKK 231 vs. the current DKK 191 — roughly 21% upside to that anchor",
-          "Stochastic proxy at 0.6 and RSI at 34.8 mark a statistical extreme, historically a zone where oversold bounces occur"
+          "Deep value ved 12.8x forward PE, 29% rabat til Industrials-sektornormen",
+          "Analytiker fair-value estimater (~228-231 DKK) antyder betydelig opside fra 191.5 DKK"
         ],
         "bear": [
-          "Momentum is still negative on both the 5d (-5.02%) and 20d (-10.63%) windows and price sits below both SMA50 and SMA200 — the downtrend has not technically reversed yet",
-          "European construction/renovation demand could stay weak long enough that the value discount is justified rather than a buying opportunity"
+          "Pris under både SMA50 (-5.9%) og SMA200 (-6.8%) med negativ MACD — bekræfter intakt nedtrend",
+          "-35.5% fra 52-ugers høj uden nyhedskatalysator endnu til at vende sentimentet"
+        ],
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Value/mean-reversion-position i en statistisk ekstremt oversolgt aktie der handler med markant rabat til både sektor og analytikeres fair value. Position sized moderat da trendvendingen endnu ikke er teknisk bekræftet.",
+          "price_target": 225,
+          "stop_loss": 179,
+          "expected_return_pct": 17.5,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under 179 (ca. 2x ATR under entry). Tag profit nær 225 (under analytiker fair value på 231). Revurder hvis nedtrenden fortsætter uden tegn på stabilisering, eller ved svag Q2-rapport der bekræfter vedvarende svag efterspørgsel."
+        }
+      },
+      {
+        "symbol": "DANSKE.CO",
+        "name": "Danske Bank",
+        "action": "BUY",
+        "shares": 20,
+        "price": 364.6,
+        "confidence": 70,
+        "reasoning": "Stærkt H1 2026-regnskab (11.9 mia. DKK post-tax profit) med opjusteret guidance (23-25 mia. DKK) bekræftet af sunde — ikke overkøbte — tekniske niveauer (RSI 61.6). Købes moderat sized for at holde Financial Services-eksponering under kontrol givet eksisterende ALSYDB/TRYG-positioner.",
+        "bull": [
+          "Stærke H1 2026-resultater — DKK 11.9bn post-tax profit — med opjusteret guidance (23-25bn DKK) og pris over begge glidende gennemsnit"
+        ],
+        "bear": [
+          "Handler nær 52-ugers høj (-2.8%) efter et stærkt løb, hvilket levner mindre plads til yderligere positiv overraskelse"
         ],
         "investment_plan": {
           "term": "medium",
@@ -7359,12 +7389,12 @@
             "fundamental",
             "technical"
           ],
-          "thesis": "Value/mean-reversion-position i en statistisk ekstremt oversolgt aktie der handler med markant rabat til både sektor og analytikeres fair value. Position sized moderat da trendvendingen endnu ikke er teknisk bekræftet — stigende overbevisning (og evt. tilkøb) kræver bekræftet brud over SMA50.",
-          "price_target": 225,
-          "stop_loss": 179,
-          "expected_return_pct": 18,
+          "thesis": "Danske Bank leverede stærke H1-resultater med opjusteret helårsguidance, understøttet af en sund (ikke overkøbt) teknisk uptrend. Diversificerer bankeksponering ud over Sydbank.",
+          "price_target": 400,
+          "stop_loss": 350,
+          "expected_return_pct": 9.7,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved brud under 179 (ca. 2x ATR under entry). Tag profit nær 225 (under analytiker fair value på 231). Revurder hvis nedtrenden fortsætter uden tegn på stabilisering, eller ved svag Q2-rapport der bekræfter vedvarende svag efterspørgsel."
+          "exit_conditions": "Sælg ved brud under 350 (ca. 2x ATR under entry). Tag profit nær 400. Revurder ved guidance-nedjustering eller brud i den underliggende kreditkvalitet."
         }
       }
     ]
@@ -7618,6 +7648,10 @@
         {
           "date": "2026-07-21",
           "portfolio_value": 108750.26
+        },
+        {
+          "date": "2026-07-22",
+          "portfolio_value": 108750.26
         }
       ]
     },
@@ -7869,15 +7903,19 @@
         {
           "date": "2026-07-21",
           "portfolio_value": 107802.45
+        },
+        {
+          "date": "2026-07-22",
+          "portfolio_value": 107802.45
         }
       ]
     }
   ],
   "sector_exposure_pct": {
-    "Healthcare": 32.2,
-    "Financial Services": 22.8,
-    "Consumer Defensive": 31.2,
-    "Industrials": 13.8
+    "Healthcare": 29.8,
+    "Financial Services": 28.3,
+    "Consumer Defensive": 29.0,
+    "Industrials": 12.8
   },
   "last_executed_decisions": "2026-07-22"
 }
