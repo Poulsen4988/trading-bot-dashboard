@@ -1,0 +1,311 @@
+{
+  "date": "2026-07-23",
+  "screened_at": "2026-07-23T07:16:29Z",
+  "price_data_date": "2026-07-22",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 70.0,
+      "price": 1433.5,
+      "pct_1d": -14.16,
+      "pct_5d": -15.2,
+      "pct_20d": -7.55,
+      "volume_ratio": 6.72,
+      "rsi_proxy": 20.7,
+      "stoch_proxy": 9.2,
+      "bb_position": -26.5,
+      "sma50_vs_price": -9.83,
+      "sma200_vs_price": -8.43,
+      "macd_line": 7.7417,
+      "atr": 56.7143,
+      "momentum_divergence": -7.65,
+      "pe_forward": 16.559515,
+      "pct_from_52w_high": -25.08,
+      "pct_from_52w_low": 16.26,
+      "sector": "Industrials",
+      "earnings_growth": -0.429,
+      "revenue_growth": 0.689,
+      "div_yield": 0.42,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME SPIKE: 6.72x avg — extreme institutional activity",
+        "MOMENTUM SELLOFF: -15.2% in 5 days — sharp directional move",
+        "DEEPLY OVERSOLD: RSI proxy 21, Stoch proxy 9 — bounce candidate",
+        "EARNINGS COLLAPSE: -43% YoY — risk/watch for stabilisation",
+        "REVENUE GROWTH: +69% YoY — top-line expansion"
+      ],
+      "screening_rationale": "DSV.CO: volume running at 6.7x the daily average signals institutional-scale activity; a 15.2% five-day selloff (20d: -7.5%) reveals strong directional pressure; -43% earnings decline warrants caution but may create a contrarian entry; RSI proxy (21) and stochastic (9) in oversold territory support a bounce thesis; price is -9.8% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 68.0,
+      "price": 193.0,
+      "pct_1d": 0.78,
+      "pct_5d": -7.48,
+      "pct_20d": -12.35,
+      "volume_ratio": 1.74,
+      "rsi_proxy": 29.1,
+      "stoch_proxy": 12.5,
+      "bb_position": 4.1,
+      "sma50_vs_price": -5.17,
+      "sma200_vs_price": -5.94,
+      "macd_line": -2.7184,
+      "atr": 5.8857,
+      "momentum_divergence": 4.87,
+      "pe_forward": 12.951427,
+      "pct_from_52w_high": -35.05,
+      "pct_from_52w_low": 16.29,
+      "sector": "Industrials",
+      "earnings_growth": null,
+      "revenue_growth": 0.0,
+      "div_yield": 2.17,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME ELEVATED: 1.74x avg — above-normal interest",
+        "SIGNIFICANT DRAWDOWN: -35.0% from 52w high",
+        "MOMENTUM: -7.5% in 5 days — continued SELLING pressure",
+        "STOCHASTIC OVERSOLD: Stoch proxy 12 — price near annual support floor (RSI proxy 29)",
+        "UNDERVALUED: Fwd PE 13.0x vs sector norm 18x — 28% discount"
+      ],
+      "screening_rationale": "ROCK-B.CO: volume running at 1.7x the daily average signals institutional-scale activity; a 7.5% five-day selloff (20d: -12.3%) reveals strong directional pressure; forward PE 13.0x represents a 28% discount to Industrials sector norm (18x); RSI proxy (29) and stochastic (12) in oversold territory support a bounce thesis; price is -5.2% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 60.6,
+      "price": 319.5,
+      "pct_1d": -1.4,
+      "pct_5d": -3.34,
+      "pct_20d": 2.55,
+      "volume_ratio": 0.83,
+      "rsi_proxy": 40.5,
+      "stoch_proxy": 17.4,
+      "bb_position": 32.1,
+      "sma50_vs_price": 5.7,
+      "sma200_vs_price": 6.68,
+      "macd_line": 7.5189,
+      "atr": 8.3214,
+      "momentum_divergence": -5.89,
+      "pe_forward": 14.8609085,
+      "pct_from_52w_high": -31.23,
+      "pct_from_52w_low": 42.47,
+      "sector": "Healthcare",
+      "earnings_growth": 0.671,
+      "revenue_growth": 0.24,
+      "div_yield": 4.91,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "SIGNIFICANT DRAWDOWN: -31.2% from 52w high",
+        "MOMENTUM: -3.3% in 5 days",
+        "OVERSOLD: RSI proxy 40, Stoch proxy 17 — watch for reversal",
+        "DEEP VALUE: Fwd PE 14.9x vs sector norm 25x — 41% discount",
+        "STRONG EARNINGS GROWTH: +67% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "NOVO-B.CO: forward PE 14.9x represents a 41% discount to Healthcare sector norm (25x); +67% earnings growth underpins the fundamental case; price is +5.7% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 58.7,
+      "price": 180.0,
+      "pct_1d": -0.55,
+      "pct_5d": -2.17,
+      "pct_20d": 1.12,
+      "volume_ratio": 0.71,
+      "rsi_proxy": 28.6,
+      "stoch_proxy": 11.4,
+      "bb_position": 20.6,
+      "sma50_vs_price": -2.81,
+      "sma200_vs_price": -8.06,
+      "macd_line": -0.4505,
+      "atr": 4.1429,
+      "momentum_divergence": -3.29,
+      "pe_forward": 18.02704,
+      "pct_from_52w_high": -26.47,
+      "pct_from_52w_low": 5.08,
+      "sector": "Healthcare",
+      "earnings_growth": -0.926,
+      "revenue_growth": -0.214,
+      "div_yield": null,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "NEAR 52W LOW: +5.1% above annual support — critical level",
+        "MOMENTUM: -2.2% in 5 days",
+        "STOCHASTIC OVERSOLD: Stoch proxy 11 — price near annual support floor (RSI proxy 29)",
+        "UNDERVALUED: Fwd PE 18.0x vs sector norm 25x — 28% discount",
+        "EARNINGS COLLAPSE: -93% YoY — risk/watch for stabilisation"
+      ],
+      "screening_rationale": "BAVA.CO: price sits just +5.1% above the 52-week low (171.3) — a key decision zone; forward PE 18.0x represents a 28% discount to Healthcare sector norm (25x); -93% earnings decline warrants caution but may create a contrarian entry; RSI proxy (29) and stochastic (11) in oversold territory support a bounce thesis; price is -2.8% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 48.2,
+      "price": 156.6,
+      "pct_1d": 1.1,
+      "pct_5d": 2.09,
+      "pct_20d": 5.87,
+      "volume_ratio": 0.9,
+      "rsi_proxy": 79.6,
+      "stoch_proxy": 97.7,
+      "bb_position": 90.0,
+      "sma50_vs_price": 4.39,
+      "sma200_vs_price": 3.09,
+      "macd_line": 1.8303,
+      "atr": 2.2552,
+      "momentum_divergence": -3.78,
+      "pe_forward": 15.264571,
+      "pct_from_52w_high": -8.21,
+      "pct_from_52w_low": 6.89,
+      "sector": "Financial Services",
+      "earnings_growth": -0.432,
+      "revenue_growth": 0.053,
+      "div_yield": 5.42,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "NEAR 52W LOW: +6.9% above annual support — critical level",
+        "MOMENTUM: +2.1% in 5 days",
+        "OVERBOUGHT: RSI proxy 80, Stoch proxy 98 — stretched, potential pullback",
+        "EARNINGS COLLAPSE: -43% YoY — risk/watch for stabilisation",
+        "HIGH YIELD: 5.42% dividend provides downside cushion"
+      ],
+      "screening_rationale": "TRYG.CO: price sits just +6.9% above the 52-week low (146.5) — a key decision zone; forward PE 15.3x represents a 27% premium to Financial Services sector norm (12x); -43% earnings decline warrants caution but may create a contrarian entry; price is +4.4% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 70.0
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 68.0
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 60.6
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 58.7
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 48.2
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 43.4
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 40.3
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 39.0
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 37.6
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 35.0
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 35.0
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 34.0
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 33.8
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 33.0
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 31.9
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 29.4
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 27.0
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 26.1
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 25.9
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 25.0
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 19.8
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 19.8
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 10.3
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 10.2
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 5.3
+    }
+  ]
+}
