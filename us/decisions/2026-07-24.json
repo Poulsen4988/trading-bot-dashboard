@@ -1,0 +1,170 @@
+{
+  "date": "2026-07-24",
+  "market_summary": "Bred, men rolig fredags-eftermiddagssession: indeks blandede på spekulation om Iran-fredsforhandlinger (olie og renter ned), mens techsektoren specifikt blev solgt af sent på dagen og trak ORCL under dens stop-loss trods en positiv Pentagon-nyhed. Porteføljens øvrige teser (NUE, NDAQ, TDG, MRVL, MMM, NOW, TMUS) er intakte uden fundamentale brud. Sælger ORCL for at respektere stop-disciplinen og genplacerer en del af provenuet i VRTX — et oversolgt (RSI 19), teknisk intakt opkøbscase i sundhedssektoren, som porteføljen ikke tidligere var eksponeret mod. Springer DLR over trods stærk BULL-case, da aktien er ekstremt overkøbt efter en +14,5% 5-dages spurt (RSI 77, BB 122%) — afventer et bedre entry-punkt.",
+  "decisions": [
+    {
+      "symbol": "NUE",
+      "name": "Nucor",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 247.56,
+      "confidence": 5,
+      "reasoning": "Tesen om tarifdrevet prisstøtte (25% Section 301 på brasiliansk stål) og positiv peer-readthrough fra Cleveland-Cliffs er intakt. Aktien er dog teknisk overkøbt (RSI 74,6, stoch 94,7) op til Q2-regnskabet, så ingen tilføjelse i dag — stop og profitmål fastholdes.",
+      "bull": [
+        "Ny 25% Section 301-tarif på brasiliansk stål understøtter indenlandsk prisstøtte, og peer Cleveland-Cliffs rapporterede stærk stålefterspørgsel og prissætning før Nucors eget Q2-regnskab."
+      ],
+      "bear": [
+        "RSI på 75 og stochastic på 95 viser en betydeligt overkøbt aktie op til regnskabet, hvilket øger risikoen for en sell-the-news-reaktion selv ved et solidt kvartal."
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 92.09,
+      "confidence": 6,
+      "reasoning": "Bekræftet opadgående trend efter rekordstærkt Q2-regnskab (rekord AUM, SpaceX-IPO) og fjernelse af overhangs (Miami-sag afsluttet, fund secondaries-salg). Stop er allerede hævet til $84 for at sikre gevinsten; ingen ændring nødvendig.",
+      "bull": [
+        "Morgan Stanley gentog en positiv vækstudsigt knyttet til AI og genopretning af kapitalmarkederne, og Nasdaq forenklede porteføljen ved at afslutte Miami-sagen og sælge fund secondaries-forretningen.",
+        "Kursen er i en sund opadgående trend (+5% vs. 50-dages, +4% vs. 200-dages SMA) med stærkt 20-dages momentum (+18,6%)."
+      ],
+      "bear": [
+        "RSI på 66 og det skarpe 20-dages løb antyder at rallyet begynder at strække sig, hvilket levner mindre plads før en pause."
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "action": "SELL",
+      "shares": 103,
+      "price": 114.99,
+      "confidence": 4,
+      "reasoning": "Stop-loss er udløst ($114,99 < $116,78). Aktien vendte ned igen i dag på trods af en positiv Pentagon-softwareaftale og blev trukket ned af en bred sen eftermiddags-selloff i techsektoren. Selvom den underliggende OCI-cloud-vækstcase (+93% å/å) fortsat forsvares af flere analytikere, bekræfter prishandlingen ikke længere den tekniske bounce-tese (38% under 200-dages SMA, markant negativ MACD). Respekterer stop-disciplinen og lukker positionen for at frigøre kapital til et bedre risiko/afkast-setup.",
+      "bull": [
+        "RSI på 26,7 og kurs op ad nedre Bollinger-bånd markerer en dybt oversolgt tilstand, og den nye Pentagon-softwareaftale viser at statslig efterspørgsel er intakt."
+      ],
+      "bear": [
+        "Kursen er 38% under 200-dages SMA og 66% fra 52-ugers højeste med markant negativ MACD — aktien vendte ned i dag selv på positiv Pentagon-nyhed og bliver trukket ned af en bred sen eftermiddags-selloff i teknologisektoren."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical"],
+        "thesis": "Position lukket — stop-loss udløst ($116,78). Den tekniske bounce-tese blev ikke bekræftet; aktien fortsætter ned trods positive selskabsspecifikke nyheder og en bred tech-selloff overtrumfer den oversolgte opsætning.",
+        "price_target": null,
+        "stop_loss": null,
+        "expected_return_pct": 0,
+        "timeframe": "n/a",
+        "exit_conditions": "n/a — position solgt i dag. Genovervej kun ved et nyt bekræftet teknisk bundniveau eller en klar fundamental katalysator."
+      }
+    },
+    {
+      "symbol": "TDG",
+      "name": "TransDigm Group",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1236.71,
+      "confidence": 5,
+      "reasoning": "Tilbagefaldet ser mere teknisk end fundamentalt ud — lavt volumen (0,6x gennemsnit) og en fortsat bullish sektorvurdering fra Morgan Stanley op til Q3-regnskabet. Co-COO's indsidersalg (46% reduktion af beholdning) er et forsigtighedsflag der overvåges, men udløser ikke i sig selv et salg.",
+      "bull": [
+        "Morgan Stanley forbliver bullish på den bredere aerospace/defense-sektor op til regnskaber, og det seneste tilbagefald er sket på usædvanligt lavt volumen (0,6x gennemsnit), hvilket antyder ingen aggressiv institutionel udsalg."
+      ],
+      "bear": [
+        "En co-COO's salg af aktier for $4,2M, der reducerer hans beholdning med 46%, er et bemærkelsesværdigt indsidersalgssignal der går imod den bullish sektorvurdering."
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 194.23,
+      "confidence": 5,
+      "reasoning": "Sektor-bred sympati-selloff i chipkomplekset, ikke selskabsspecifik svaghed. 5-dages momentum er vendt positivt igen, og AI-datacenterefterspørgslen (understøttet af Nvidias capex-styrke) holder den langsigtede vækstcase intakt. Ingen stop udløst.",
+      "bull": [
+        "5-dages momentum er vendt positivt (+2,9%) efter et skarpt 20-dages fald, og fair-value-opjusteringer knyttet til AI-datacenterefterspørgsel understøtter den langsigtede vækstcase."
+      ],
+      "bear": [
+        "Kina-hukommelseskonkurrencen er en overhængende risiko, der kan vise sig at være en reel strukturel trussel mod marginer frem for blot en overskrift."
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "MMM",
+      "name": "3M",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 172.62,
+      "confidence": 6,
+      "reasoning": "Tesen forbliver intakt uden fundamentale brud eller udløst stop. Ingen ny information ændrer vurderingen i dag.",
+      "bull": [
+        "Fortsat teknisk opadgående trend understøtter den eksisterende tese."
+      ],
+      "bear": [
+        "Ingen nye negative signaler af betydning i dag."
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 98.78,
+      "confidence": 5,
+      "reasoning": "Kapitulationstesen fra opkøbet (Q2-beat solgt ned i panik) spiller fortsat ud positivt (+7,4%). Lille spejderposition — ingen ændring nødvendig endnu.",
+      "bull": [
+        "Positionen bevæger sig i den forventede retning efter det bekræftede Q2-beat."
+      ],
+      "bear": [
+        "Positionen er stadig lille — ingen umiddelbar bear-risiko identificeret i dag."
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "TMUS",
+      "name": "T-Mobile US",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 180.09,
+      "confidence": 5,
+      "reasoning": "Beat-and-raise-tesen spiller fortsat ud positivt (+5,7%). Lille spejderposition i telekomsektoren — ingen ændring nødvendig.",
+      "bull": [
+        "Positionen bevæger sig i den forventede retning efter det bekræftede beat-and-raise-regnskab."
+      ],
+      "bear": [
+        "Ingen nye negative signaler af betydning i dag."
+      ],
+      "investment_plan": {}
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "action": "BUY",
+      "shares": 20,
+      "price": 477.36,
+      "confidence": 5,
+      "reasoning": "Nyt køb, finansieret af provenuet fra ORCL-salget. Dybt oversolgt (RSI 19) men fortsat over både 50- og 200-dages SMA — den underliggende opadgående trend er intakt, hvilket giver et asymmetrisk risk/reward-entry snarere end at jagte styrke. Det forfølgende Crinetics-opkøb (som eneste byder) signalerer offensiv pipeline-udvidelse fra en position af styrke. Diversificerer samtidig porteføljen ind i sundhedssektoren, som ellers ikke var repræsenteret. Springer DLR over i dag trods en stærkere BULL-konfidens, da den er ekstremt overkøbt (RSI 77, +14,5% på 5 dage) — afventer et bedre entry.",
+      "bull": [
+        "Kursen forbliver over både 50- og 200-dages SMA på trods af en oversolgt RSI på 19, og er kun 10,5% fra 52-ugers højeste — den underliggende opadgående trend er intakt.",
+        "Forfølger Crinetics-opkøbet som eneste byder, hvilket signalerer offensiv pipeline-udvidelse fra en position af styrke."
+      ],
+      "bear": [
+        "At være eneste byder i et 'high-premium'-opkøb øger risikoen for overbetaling og integrationsudfordringer, og seneste overskrifter viser et skarpere dyk end det bredere marked."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Dybt oversolgt (RSI 19) i en teknisk intakt opadgående trend (over både 50- og 200-dages SMA), med et forfølgende Crinetics-opkøb som eneste byder der signalerer offensiv pipeline-udvidelse. Moderat positionsstørrelse (under fuld ATR-anbefaling) for at bevare kontantbuffer efter dagens ORCL-salg.",
+        "price_target": 545,
+        "stop_loss": 448.95,
+        "expected_return_pct": 14.2,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $448,95 (2x ATR). Profitmål ~$545 (recovery mod 52-ugers højeste). Sælg hvis Crinetics-opkøbet viser tegn på markant overbetaling/integrationsproblemer, eller ved selskabsspecifik pipeline-skuffelse."
+      }
+    }
+  ]
+}
