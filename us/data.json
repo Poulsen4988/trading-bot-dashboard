@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 2638.46,
+    "cash": 4935.23,
     "currency": "USD",
     "positions": [
       {
@@ -9,7 +9,7 @@
         "name": "Nucor",
         "shares": 85,
         "purchase_price": 239.78,
-        "current_price": 241.15,
+        "current_price": 247.56,
         "purchase_date": "2026-06-28",
         "investment_plan": {
           "term": "medium",
@@ -25,9 +25,9 @@
           "exit_conditions": "Stop ved $222.14 (2x ATR). Profitmål $274 (KeyBanc). Sælg ved fundamentalt brud: stålpriskollaps under tarifsatser, Q2 EPS miss under $4.70, eller globalt recessions-signal."
         },
         "last_review": {
-          "date": "2026-07-23",
-          "reasoning": "RSI 72.8/stoch 89.2 er stærkt overkøbt efter opturen, men frisk Section 301-tarif på brasiliansk stål styrker prisunderstøttelsen og stop ($222.14) er langt fra udløst — ingen fundamentalt brud, behold uændret.",
-          "confidence": 6
+          "date": "2026-07-24",
+          "reasoning": "Tesen om tarifdrevet prisstøtte (25% Section 301 på brasiliansk stål) og positiv peer-readthrough fra Cleveland-Cliffs er intakt. Aktien er dog teknisk overkøbt (RSI 74,6, stoch 94,7) op til Q2-regnskabet, så ingen tilføjelse i dag — stop og profitmål fastholdes.",
+          "confidence": 5
         }
       },
       {
@@ -35,7 +35,7 @@
         "name": "Nasdaq, Inc.",
         "shares": 250,
         "purchase_price": 78.56,
-        "current_price": 90.42,
+        "current_price": 92.09,
         "purchase_date": "2026-06-28",
         "investment_plan": {
           "term": "medium",
@@ -51,35 +51,9 @@
           "exit_conditions": "Stop ved $84 (sikrer >6% gevinst fra entry). Profitmål $98 (TD Cowen). Sælg ved close under $84, eller hvis 'perpetual futures'-konkurrencetruslen eskalerer markant."
         },
         "last_review": {
-          "date": "2026-07-23",
-          "reasoning": "Ægte Q2-beat med rekordomsætning og AI-initiativer bekræfter tesen; teknikken er intakt over både SMA50/200 trods en generelt svag eftermiddag for finanssektoren. Stop ($84) sikrer allerede gevinsten og er uberørt.",
+          "date": "2026-07-24",
+          "reasoning": "Bekræftet opadgående trend efter rekordstærkt Q2-regnskab (rekord AUM, SpaceX-IPO) og fjernelse af overhangs (Miami-sag afsluttet, fund secondaries-salg). Stop er allerede hævet til $84 for at sikre gevinsten; ingen ændring nødvendig.",
           "confidence": 6
-        }
-      },
-      {
-        "symbol": "ORCL",
-        "name": "Oracle Corporation",
-        "shares": 103,
-        "purchase_price": 131.54,
-        "current_price": 120.04,
-        "purchase_date": "2026-07-13",
-        "investment_plan": {
-          "term": "medium",
-          "basis": [
-            "technical",
-            "fundamental"
-          ],
-          "thesis": "Ekstremt oversolgt (tre samstemmende signaler) i en fundamentalt intakt AI-cloud-vækstcase (OCI +93% å/å, $638 mia. backlog). Flere analytikere (Evercore, Piper Sandler, Dan Ives) forsvarer aktivt aktien midt i udsalget som en generationskøbsmulighed.",
-          "price_target": 190,
-          "stop_loss": 116.78,
-          "expected_return_pct": 44.4,
-          "timeframe": "6-9 måneder",
-          "exit_conditions": "Stop ved $116.78 (2x ATR). Profitmål $190 (delvis recovery mod SMA50/200). Sælg ved eskalerende gældsbekymringer/kreditratingnedgraderinger, eller yderligere fundamental svækkelse i OCI-væksten."
-        },
-        "last_review": {
-          "date": "2026-07-23",
-          "reasoning": "Pentagon-aftalen (~$7 mia.) og hævet fair-value-estimat er reelt positive, men aktien er i et stærkt nedtrend (-30%/-36% under SMA50/200) drevet af sektorbred bekymring om AI-capex-gæld. Stop ($116.78) uberørt, og de konkrete exit-betingelser (kreditnedgradering, bekræftet OCI-afmatning) er endnu ikke opfyldt — overvåges tæt.",
-          "confidence": 5
         }
       },
       {
@@ -87,7 +61,7 @@
         "name": "TransDigm Group",
         "shares": 16,
         "purchase_price": 1235.0,
-        "current_price": 1213.83,
+        "current_price": 1236.71,
         "purchase_date": "2026-07-13",
         "investment_plan": {
           "term": "medium",
@@ -103,8 +77,8 @@
           "exit_conditions": "Stop ved $1166.19 (2x ATR). Profitmål $1350 (pre-selloff niveau). Sælg ved selskabsspecifik indtjeningsskuffelse eller brud på Zacks-opgraderingens antagelser."
         },
         "last_review": {
-          "date": "2026-07-23",
-          "reasoning": "RSI 17.6 er det mest oversolgte niveau i hele analysesættet, og Morgan Stanley forbliver konstruktiv på aerospace/defense — men insider-salget (co-COO, -46% i beholdning) og det endnu urapporterede Q3-regnskab tilføjer begivenhedsrisiko. Stop ($1166.19) uberørt, thesis (makrodrevet, ikke selskabsspecifik) intakt.",
+          "date": "2026-07-24",
+          "reasoning": "Tilbagefaldet ser mere teknisk end fundamentalt ud — lavt volumen (0,6x gennemsnit) og en fortsat bullish sektorvurdering fra Morgan Stanley op til Q3-regnskabet. Co-COO's indsidersalg (46% reduktion af beholdning) er et forsigtighedsflag der overvåges, men udløser ikke i sig selv et salg.",
           "confidence": 5
         }
       },
@@ -113,7 +87,7 @@
         "name": "Marvell Technology",
         "shares": 35,
         "purchase_price": 206.26,
-        "current_price": 209.32,
+        "current_price": 194.23,
         "purchase_date": "2026-07-15",
         "investment_plan": {
           "term": "medium",
@@ -129,8 +103,8 @@
           "exit_conditions": "Stop ved $162.53 (2x ATR). Sælg hvis Kina-hukommelseskonkurrencen viser sig at være en reel strukturel trussel (margin-kompression) frem for en overskrift, eller ved selskabsspecifik indtjeningsskuffelse."
         },
         "last_review": {
-          "date": "2026-07-23",
-          "reasoning": "5-dages momentum er vendt kraftigt positivt (+11.2%) og divergerer fra det svage 20-dages tab, men Motley Fools fremhævelse af det voksende omsætningsgab til Nvidia holder det langsigtede konkurrencebillede usikkert. Stop ($162.53) langt fra udløst, langsigtet trend (+58% over SMA200) intakt.",
+          "date": "2026-07-24",
+          "reasoning": "Sektor-bred sympati-selloff i chipkomplekset, ikke selskabsspecifik svaghed. 5-dages momentum er vendt positivt igen, og AI-datacenterefterspørgslen (understøttet af Nvidias capex-styrke) holder den langsigtede vækstcase intakt. Ingen stop udløst.",
           "confidence": 5
         }
       },
@@ -139,7 +113,7 @@
         "name": "3M Company",
         "shares": 90,
         "purchase_price": 170.76,
-        "current_price": 169.59,
+        "current_price": 172.62,
         "purchase_date": "2026-07-21",
         "investment_plan": {
           "term": "medium",
@@ -155,8 +129,8 @@
           "exit_conditions": "Stop ved $161.38 (2x ATR). Profitmål $195 (fortsættelse af post-beat-trend). Sælg ved fundamentalt brud: PFAS/høreværns-retssagsrisiko eskalerer markant, eller næste kvartal viser tilbagegang i organisk vækst/guidance."
         },
         "last_review": {
-          "date": "2026-07-23",
-          "reasoning": "Opjusteret 2026-guidance på stærkere eksekvering og rekordmarginer bekræfter tesen, og UBS ser en flerårig vækststory tage form, men RSI 65 og pris nær øvre Bollinger-bånd (92.9) viser aktien er teknisk strakt efter ugens store enkeltdags-hop — ingen tilføjelse, hold uændret.",
+          "date": "2026-07-24",
+          "reasoning": "Tesen forbliver intakt uden fundamentale brud eller udløst stop. Ingen ny information ændrer vurderingen i dag.",
           "confidence": 6
         }
       },
@@ -165,7 +139,7 @@
         "name": "ServiceNow",
         "shares": 12,
         "purchase_price": 91.94,
-        "current_price": 91.94,
+        "current_price": 98.78,
         "purchase_date": "2026-07-23",
         "investment_plan": {
           "term": "medium",
@@ -181,9 +155,9 @@
           "exit_conditions": "Stop ved $79.56 (2x ATR). Profitmål ~$104 (recovery mod SMA50). Sælg hvis UBS' 'blandet efterspørgsel'-bekymring bekræftes i næste kvartals bookings, eller ved yderligere selskabsspecifik indtjeningsskuffelse."
         },
         "last_review": {
-          "date": "2026-07-23",
-          "reasoning": "ServiceNow faldt 3.7% (-11.6% over 5 dage) trods et ægte Q2-beat og kursmålshævninger fra Bernstein/RBC, hvilket sender RSI ned til kapitulationsniveau (29.7) — en sjælden kombination af oversolgt teknik og bekræftet fundamental styrke. UBS' 'blandet efterspørgsel'-flag taler for forsigtig størrelse; spejderposition givet kun ca. $1.583 ledig cash i dag.",
-          "confidence": 7
+          "date": "2026-07-24",
+          "reasoning": "Kapitulationstesen fra opkøbet (Q2-beat solgt ned i panik) spiller fortsat ud positivt (+7,4%). Lille spejderposition — ingen ændring nødvendig endnu.",
+          "confidence": 5
         }
       },
       {
@@ -191,7 +165,7 @@
         "name": "T-Mobile US",
         "shares": 2,
         "purchase_price": 170.42,
-        "current_price": 170.42,
+        "current_price": 180.09,
         "purchase_date": "2026-07-23",
         "investment_plan": {
           "term": "medium",
@@ -207,13 +181,39 @@
           "exit_conditions": "Stop ved $156.85 (2x ATR). Profitmål ~$185 (recovery mod SMA50). Sælg hvis postpaid-væksten fortsætter med at afmatte i næste kvartal, eller ved yderligere selskabsspecifik omsætningsskuffelse."
         },
         "last_review": {
-          "date": "2026-07-23",
-          "reasoning": "T-Mobile faldt 10.8% trods et EPS-beat og hævet cash flow-guidance — primært på en omsætningsmiss og bred markedspanik, hvilket ser overdrevet ud relativt til et beat-and-raise-regnskab. RSI 43.7 er neutral (ikke ekstremt oversolgt), hvilket giver et mere afbalanceret entry-punkt, og positionen diversificerer væk fra porteføljens nuværende koncentration i Materials/Financials/Industrials/IT.",
-          "confidence": 6
+          "date": "2026-07-24",
+          "reasoning": "Beat-and-raise-tesen spiller fortsat ud positivt (+5,7%). Lille spejderposition i telekomsektoren — ingen ændring nødvendig.",
+          "confidence": 5
+        }
+      },
+      {
+        "symbol": "VRTX",
+        "name": "Vertex Pharmaceuticals",
+        "shares": 20,
+        "purchase_price": 477.36,
+        "current_price": 477.36,
+        "purchase_date": "2026-07-24",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Dybt oversolgt (RSI 19) i en teknisk intakt opadgående trend (over både 50- og 200-dages SMA), med et forfølgende Crinetics-opkøb som eneste byder der signalerer offensiv pipeline-udvidelse. Moderat positionsstørrelse (under fuld ATR-anbefaling) for at bevare kontantbuffer efter dagens ORCL-salg.",
+          "price_target": 545,
+          "stop_loss": 448.95,
+          "expected_return_pct": 14.2,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Stop ved $448,95 (2x ATR). Profitmål ~$545 (recovery mod 52-ugers højeste). Sælg hvis Crinetics-opkøbet viser tegn på markant overbetaling/integrationsproblemer, eller ved selskabsspecifik pipeline-skuffelse."
+        },
+        "last_review": {
+          "date": "2026-07-24",
+          "reasoning": "Nyt køb, finansieret af provenuet fra ORCL-salget. Dybt oversolgt (RSI 19) men fortsat over både 50- og 200-dages SMA — den underliggende opadgående trend er intakt, hvilket giver et asymmetrisk risk/reward-entry snarere end at jagte styrke. Det forfølgende Crinetics-opkøb (som eneste byder) signalerer offensiv pipeline-udvidelse fra en position af styrke. Diversificerer samtidig porteføljen ind i sundhedssektoren, som ellers ikke var repræsenteret. Springer DLR over i dag trods en stærkere BULL-konfidens, da den er ekstremt overkøbt (RSI 77, +14,5% på 5 dage) — afventer et bedre entry.",
+          "confidence": 5
         }
       }
     ],
-    "last_updated": "2026-07-23 22:52 UTC"
+    "last_updated": "2026-07-24 22:52 UTC"
   },
   "history": [
     {
@@ -243,6 +243,10 @@
     {
       "date": "2026-07-23",
       "portfolio_value": 101560.03
+    },
+    {
+      "date": "2026-07-24",
+      "portfolio_value": 102214.28
     }
   ],
   "trades": [
@@ -676,6 +680,154 @@
         "summary": "T-Mobile faldt 10.8% trods et EPS-beat og hævet cash flow-guidance — primært på en omsætningsmiss og bred markedspanik, hvilket ser overdrevet ud relativt til et beat-and-raise-regnskab. RSI 43.7 er neutral (ikke ekstremt oversolgt), hvilke"
       },
       "id": 27,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "HOLD",
+      "symbol": "NUE",
+      "name": "Nucor",
+      "shares": null,
+      "price": 247.56,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Tesen om tarifdrevet prisstøtte (25% Section 301 på brasiliansk stål) og positiv peer-readthrough fra Cleveland-Cliffs er intakt. Aktien er dog teknisk overkøbt (RSI 74,6, stoch 94,7) op til Q2-regnskabet, så ingen tilføjelse i dag — stop o"
+      },
+      "id": 28,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "HOLD",
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "shares": null,
+      "price": 92.09,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Bekræftet opadgående trend efter rekordstærkt Q2-regnskab (rekord AUM, SpaceX-IPO) og fjernelse af overhangs (Miami-sag afsluttet, fund secondaries-salg). Stop er allerede hævet til $84 for at sikre gevinsten; ingen ændring nødvendig."
+      },
+      "id": 29,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "SELL",
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "shares": 103,
+      "price": 114.99,
+      "value": 11843.97,
+      "reasoning": {
+        "verdict": "SELL",
+        "confidence": 4,
+        "summary": "Stop-loss er udløst ($114,99 < $116,78). Aktien vendte ned igen i dag på trods af en positiv Pentagon-softwareaftale og blev trukket ned af en bred sen eftermiddags-selloff i techsektoren. Selvom den underliggende OCI-cloud-vækstcase (+93% "
+      },
+      "cost_basis_usd": 13548.62,
+      "realized_pnl_usd": -1704.65,
+      "realized_pnl_pct": -12.58,
+      "holding_days": 11,
+      "id": 30,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "HOLD",
+      "symbol": "TDG",
+      "name": "TransDigm Group",
+      "shares": null,
+      "price": 1236.71,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Tilbagefaldet ser mere teknisk end fundamentalt ud — lavt volumen (0,6x gennemsnit) og en fortsat bullish sektorvurdering fra Morgan Stanley op til Q3-regnskabet. Co-COO's indsidersalg (46% reduktion af beholdning) er et forsigtighedsflag d"
+      },
+      "id": 31,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "HOLD",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "shares": null,
+      "price": 194.23,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Sektor-bred sympati-selloff i chipkomplekset, ikke selskabsspecifik svaghed. 5-dages momentum er vendt positivt igen, og AI-datacenterefterspørgslen (understøttet af Nvidias capex-styrke) holder den langsigtede vækstcase intakt. Ingen stop "
+      },
+      "id": 32,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "HOLD",
+      "symbol": "MMM",
+      "name": "3M",
+      "shares": null,
+      "price": 172.62,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Tesen forbliver intakt uden fundamentale brud eller udløst stop. Ingen ny information ændrer vurderingen i dag."
+      },
+      "id": 33,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "HOLD",
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "shares": null,
+      "price": 98.78,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Kapitulationstesen fra opkøbet (Q2-beat solgt ned i panik) spiller fortsat ud positivt (+7,4%). Lille spejderposition — ingen ændring nødvendig endnu."
+      },
+      "id": 34,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "HOLD",
+      "symbol": "TMUS",
+      "name": "T-Mobile US",
+      "shares": null,
+      "price": 180.09,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Beat-and-raise-tesen spiller fortsat ud positivt (+5,7%). Lille spejderposition i telekomsektoren — ingen ændring nødvendig."
+      },
+      "id": 35,
+      "is_new": false
+    },
+    {
+      "date": "2026-07-24",
+      "action": "BUY",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": 20,
+      "price": 477.36,
+      "value": 9547.2,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 5,
+        "summary": "Nyt køb, finansieret af provenuet fra ORCL-salget. Dybt oversolgt (RSI 19) men fortsat over både 50- og 200-dages SMA — den underliggende opadgående trend er intakt, hvilket giver et asymmetrisk risk/reward-entry snarere end at jagte styrke"
+      },
+      "id": 36,
       "is_new": true
     }
   ],
@@ -4743,5 +4895,5 @@
     "Industrials": 35.1,
     "Communication Services": 0.3
   },
-  "last_executed_decisions": "2026-07-23"
+  "last_executed_decisions": "2026-07-24"
 }
