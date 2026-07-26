@@ -1,0 +1,101 @@
+{
+  "date": "2026-07-26",
+  "files_reviewed": 25,
+  "files_cleaned": 6,
+  "total_items_removed": 10,
+  "per_file": [
+    {
+      "path": "knowledge/DANSKE_xcse.json",
+      "removed_count": 1,
+      "kept_count": 21,
+      "removed_items": [
+        {
+          "title": "Governments Sell Bonds at Record Pace as Spending Soars",
+          "date": "2026-06-10",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/DSV_xcse.json",
+      "removed_count": 1,
+      "kept_count": 7,
+      "removed_items": [
+        {
+          "title": "DSV - H1 2026 ANALYST CONFERENCE CALL",
+          "date": "2026-06-23",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/ISS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 2,
+      "removed_items": [
+        {
+          "title": "Invitation to ISS Capital Markets Day 2026",
+          "date": "2026-06-19",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 1,
+      "kept_count": 28,
+      "removed_items": [
+        {
+          "title": "UPDATED: Maersk shifts SoCal import containers to UP from BNSF",
+          "date": "2026-06-29",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 28,
+      "removed_items": [
+        {
+          "title": "UPDATED: Maersk shifts SoCal import containers to UP from BNSF",
+          "date": "2026-06-29",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/TRYG_xcse.json",
+      "removed_count": 5,
+      "kept_count": 4,
+      "removed_items": [
+        {
+          "title": "Storaktionærmeddelelse",
+          "date": "2026-07-20",
+          "reason": "low_value"
+        },
+        {
+          "title": "Storkationærmeddelelse",
+          "date": "2026-07-16",
+          "reason": "low_value"
+        },
+        {
+          "title": "Tryg-aktier handles eksklusive udbytte",
+          "date": "2026-07-13",
+          "reason": "low_value"
+        },
+        {
+          "title": "Tryg A/S - Financial Calendar for 2027",
+          "date": "2026-07-10",
+          "reason": "low_value"
+        },
+        {
+          "title": "Consensus estimates on Tryg A/S",
+          "date": "2026-07-03",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "summary": "Gennemgik alle 25 knowledge/*.json-filer via lokal kopi af kb_review-logikken (kb_review.py kunne ikke liste knowledge/ via GitHub API i dette sandbox-miljo - HTTP 403 - saa gennemgangen blev koert direkte paa den klonede repos knowledge-filer, som er identiske med main). Fandt 31 kandidater i 13 filer (0 var \"stale\" - alt er under 180 dage gammelt). Fjernede 10 unoedige poster paa tvaers af 6 filer: reelle URL-dubletter (Danske Bank obligationsartikel, Maersk SoCal-container-artikel x2) samt generisk/lavvaerdi administrativt indhold uden substans (ISS Capital Markets Day-invitation, DSV analytiker-opkald-invitation, og Tryg storaktionaermeddelelser, ex-udbytte-notits, finanskalender og konsensusestimat-notits). Substansielle nyheder er bevaret uaendret, ogsaa hvor summary-felterne var korte: earnings-rapporter (Danske Bank H1, DSV H1, Tryg H1), prognoseopjusteringer (Danske Bank, Maersk), ledelsesskift (Danske Bank, FLSmidth), FDA-godkendelser og kliniske forsoegsresultater (Genmab x6, Coloplast), kontraktvind (FLSmidth), samt oevrige selskabs- og markedsspecifikke nyheder (Bavarian Nordic, Carlsberg, Oersted). NOVOb_xcse.json har 2 reelle URL-dubletter (index 14 og 117 af 340 poster) som IKKE blev fjernet i denne koersel: filen er ~168 KB / 2374 linjer, for stor til at flytte sikkert gennem sessionens context uden risiko for utilsigtet datatab ved transskribering. Anbefaling: kør fremtidig KB-cleanup med adgang til GITHUB_TOKEN saa kb_review.py/paerre scripts kan lave diff-baseret opdatering af store filer, eller haandter NOVOb_xcse.json separat i en dedikeret koersel."
+}
