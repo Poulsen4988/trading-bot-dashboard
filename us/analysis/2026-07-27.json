@@ -1,0 +1,359 @@
+{
+  "date": "2026-07-27",
+  "stocks": {
+    "PSKY": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Extremely oversold (RSI 18.4, stoch 7.2) with high odds of a technical bounce",
+        "Analyst view: the ~$2B merger-delay cost is 'minimal' and manageable; stock rose premarket on that call"
+      ],
+      "bear": [
+        "WBD merger stuck in regulatory limbo with no clear resolution timeline, prompting multiple downgrades",
+        "Stock is down 61% from its 52w high in a persistent downtrend, well below SMA50/SMA200"
+      ],
+      "summary": "Deeply oversold on WBD merger-delay overhang, but the deal limbo is a real, unresolved catalyst risk.",
+      "key_risk": "Further merger delay or regulatory rejection extends the downtrend.",
+      "screener_score": 77.0
+    },
+    "SNDK": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Still +57% above SMA200 despite the crash — long-term uptrend not fully broken",
+        "Sector-wide selloff tied to CXMT's IPO, not purely company-specific"
+      ],
+      "bear": [
+        "New Chinese memory competitor (CXMT) mass-producing chips is a structural threat to pricing/margins",
+        "Momentum has reversed hard (-45% over 20 days, -20.6% in a single day) on heavy volume"
+      ],
+      "summary": "A chip-sector selloff on a new Chinese memory competitor (CXMT) has broken SNDK's uptrend with heavy volume.",
+      "key_risk": "CXMT's capacity ramp continues to pressure memory pricing and margins.",
+      "screener_score": 71.0
+    },
+    "ORCL": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Sharply oversold (RSI 29) after a 65% decline from highs — potential value entry if AI capex fears are overdone",
+        "Long-term AI-infrastructure demand narrative still cited by bulls"
+      ],
+      "bear": [
+        "Bear case compares Oracle's AI-capex boom/bust to Cisco in 2000, warning of further downside",
+        "Persistent downtrend below both SMA50 and SMA200 with no reversal signal yet"
+      ],
+      "summary": "Oracle is deeply oversold after a historic AI-driven boom-bust, with the market split between value opportunity and falling-knife risk.",
+      "key_risk": "AI capex slowdown or credit-market stress confirming the bearish Cisco-2000 comparison.",
+      "screener_score": 65.4
+    },
+    "TSLA": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "Extremely oversold (RSI 15.3, stoch 4.3) — technical bounce candidate",
+        "UK Supreme Court 5G patent win, though unrelated to the core weakness"
+      ],
+      "bear": [
+        "Weak Q2 results triggered an ~18% single-week drop, confirming fundamental deterioration, not just sentiment",
+        "Momentum divergence is negative (-1.24) with no sign of a bottom forming yet"
+      ],
+      "summary": "Tesla cratered on a weak Q2 earnings miss, erasing a year of gains; technically oversold but no confirmed bottom.",
+      "key_risk": "Further deterioration in delivery or margin trends into next quarter.",
+      "screener_score": 64.0
+    },
+    "GNRC": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Extremely oversold (RSI 6.7) with strong C&I/data-center backlog supporting medium-term demand",
+        "Price is near SMA200 support (-3.1%) — the long-term trend is not yet broken"
+      ],
+      "bear": [
+        "Softer residential demand is weighing on near-term results ahead of Q2 earnings",
+        "Sharp technical breakdown (-33% in 20 days) with no stabilization yet"
+      ],
+      "summary": "Generac is extremely oversold heading into Q2 earnings, with data-center backlog strength offset by soft residential demand.",
+      "key_risk": "A Q2 earnings miss on residential softness extending the selloff.",
+      "screener_score": 63.0
+    },
+    "CCI": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Q2 AFFO beat estimates and full-year guidance was raised; completed its pivot to a pure-play tower operator",
+        "RSI at a neutral 47.5 with no oversold/overbought extreme — a stable base"
+      ],
+      "bear": [
+        "Analysts trimmed fair-value estimates on tower-leasing headwinds despite the earnings beat",
+        "Price remains below both SMA50 and SMA200, a lagging trend"
+      ],
+      "summary": "Crown Castle beat Q2 AFFO and completed its pure-play tower pivot, but analysts stay cautious on tower-leasing headwinds.",
+      "key_risk": "Slower tower colocation/leasing growth following the small-cell/fiber divestiture.",
+      "screener_score": 58.4
+    },
+    "GLW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "AI-driven fiber/optical demand cited as a growth driver ahead of Tuesday's Q2 report",
+        "Oversold (RSI 24.2) after a sharp pullback from a massive prior rally (+164% off the 52w low)"
+      ],
+      "bear": [
+        "Automotive segment facing softer demand per analyst notes",
+        "Steep 20-day decline (-37%) signals the market de-risking ahead of earnings"
+      ],
+      "summary": "Corning reports Q2 earnings tomorrow with AI optical demand as a tailwind, but the stock has already sold off sharply into the print.",
+      "key_risk": "A Q2 earnings miss or soft guidance on Tuesday's report.",
+      "screener_score": 58.0
+    },
+    "SBAC": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "A prior 3-month uptrend (+14.8%) suggests supportive underlying tower-leasing/colocation demand",
+        "RSI at 38 — not yet at an oversold capitulation extreme"
+      ],
+      "bear": [
+        "Wall Street expects a double-digit earnings decline this quarter",
+        "Momentum divergence is negative (-2.43) and price remains below both SMAs"
+      ],
+      "summary": "SBA Communications faces an expected earnings decline this quarter despite a supportive multi-month uptrend in tower demand.",
+      "key_risk": "A Q2 earnings decline confirming margin pressure.",
+      "screener_score": 58.0
+    },
+    "LRCX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Bullish analyst setup ahead of the July 29 Q4 earnings, citing differentiated AI-capex exposure",
+        "JPMorgan calls the broader chip-equipment selloff 'disproportionate' — a potential overreaction"
+      ],
+      "bear": [
+        "Chip stocks are under fresh pressure from CXMT's Chinese IPO, threatening the memory/equipment supply-chain narrative",
+        "Sharp -27% 20-day decline with RSI not yet at capitulation extremes"
+      ],
+      "summary": "Lam Research sold off with chip-equipment peers on CXMT competitive fears, but sets up for a potentially bullish July 29 Q4 report.",
+      "key_risk": "Q4 guidance disappointing on China export controls or memory capex concerns.",
+      "screener_score": 57.0
+    },
+    "CHRW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Long-term trend is still slightly above SMA200 (+2.58%), suggesting the drop may be a legal-headline overreaction",
+        "The 3PL selloff is sector-wide, not purely company-specific"
+      ],
+      "bear": [
+        "A $604M jury verdict is a large, concrete legal liability creating a material overhang even if appealed",
+        "Momentum divergence is sharply negative (-13.07) after a single-day -15% crash"
+      ],
+      "summary": "C.H. Robinson crashed 15% on a $604M jury verdict in a Texas lawsuit, a concrete legal overhang beyond typical sentiment-driven moves.",
+      "key_risk": "The verdict being upheld on appeal, or similar litigation spreading across the 3PL sector.",
+      "screener_score": 56.0
+    },
+    "PYPL": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "M&A speculation (Stripe reportedly circling) with the board reportedly holding out for $60.50+ vs. the current $56",
+        "Strong 20-day momentum (+32%) heading into tomorrow's earnings"
+      ],
+      "bear": [
+        "RSI 82.8 / stoch 88.5 — deeply overbought, especially risky heading into an earnings print",
+        "The M&A speculation is unconfirmed and could evaporate on earnings-day volatility"
+      ],
+      "summary": "PayPal is deeply overbought on unconfirmed M&A buyout speculation (Stripe rumored), with earnings tomorrow adding binary risk.",
+      "key_risk": "An earnings miss or the M&A speculation unwinding after the print.",
+      "screener_score": 17.4
+    },
+    "TRV": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "Strong Q2 earnings beat with raised guidance, continued buybacks and a maintained dividend"
+      ],
+      "bear": [
+        "Multiple analyst downgrades after a 30% rally, citing weakened risk-reward at current valuation",
+        "RSI 78.7 / stoch 97.5 — extremely overbought near the 52w high, priced for perfection"
+      ],
+      "summary": "Travelers rallied 30% on a strong Q2 beat but is now extremely overbought, with Wall Street downgrading on stretched valuation.",
+      "key_risk": "Multiple-compression or mean reversion from extremely overbought levels.",
+      "screener_score": 40.6
+    },
+    "TECH": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 3,
+      "bull": [
+        "Speculative buyout chatter from late June (reported ~$73/share) sits just above the current $71.62, a soft floor",
+        "RSI a moderate 62 with steady price action and no distress signals"
+      ],
+      "bear": [
+        "Earnings preview expects a single-digit earnings decline",
+        "The deal speculation is weeks old and unconfirmed — could already be stale/priced out"
+      ],
+      "summary": "Bio-Techne trades near a speculative buyout price with a soft earnings outlook; the scout thesis hinges on unconfirmed M&A chatter.",
+      "key_risk": "The M&A speculation proving unfounded while earnings confirm the expected decline.",
+      "screener_score": 15.1
+    },
+    "MMM": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "New Microsoft Azure AI data-center partnership (Expanded Beam Optical) adds a fresh growth narrative",
+        "Strong post-earnings momentum (+11.5% in 5 days, Cramer bullish) confirms turnaround traction"
+      ],
+      "bear": [
+        "RSI 75.2 / stoch 95.9 — overbought after the rally, raising the risk of a near-term pullback"
+      ],
+      "summary": "3M's new Microsoft AI data-center partnership plus a strong post-earnings pop confirm turnaround momentum, though the stock is now overbought.",
+      "key_risk": "Overbought pullback or profit-taking after the recent surge.",
+      "screener_score": 42.8
+    },
+    "MRVL": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Comparative analyst pieces favor Marvell's AI-infrastructure growth vs. peers (42% revenue growth, 32.6% net margin)",
+        "Oversold (RSI 28.6) after a sector-wide chip selloff, not company-specific bad news"
+      ],
+      "bear": [
+        "Sharp -32.7% 20-day decline tied to broader memory/chip competitive fears (CXMT)",
+        "Still +42.6% above SMA200 — could have further room to mean-revert down after the prior rally"
+      ],
+      "summary": "Marvell sold off with the broader chip sector on Chinese competition fears, but comparative analysis still favors its AI-infrastructure growth and margins.",
+      "key_risk": "A prolonged chip-sector de-rating or AI capex slowdown pressuring further downside.",
+      "screener_score": 33.3
+    },
+    "NDAQ": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Strong Q2 beat with 14.9% revenue growth and EPS 8.8% above consensus",
+        "Morgan Stanley bullish on AI adoption plus capital-markets recovery supporting sustained growth"
+      ],
+      "bear": [
+        "RSI 68.6 and momentum divergence -18.47 — the rally is decelerating, possible consolidation ahead"
+      ],
+      "summary": "Nasdaq delivered a strong Q2 beat with accelerating AI adoption and IPO momentum, backed by bullish sell-side commentary.",
+      "key_risk": "Momentum deceleration leading to a near-term pullback.",
+      "screener_score": 25.4
+    },
+    "NOW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Revenue growth accelerating with raised full-year guidance; sharp rebound (+14.8% in a day) on an AI-rotation into software",
+        "Broker consensus is equivalent to a Buy"
+      ],
+      "bear": [
+        "Stock is still down 37% YTD and -47.5% from its 52w high — the rebound needs to prove durable",
+        "A single-day +14.8% move could partially reverse if the AI-rotation trade fades"
+      ],
+      "summary": "ServiceNow jumped sharply on accelerating revenue growth and a software-sector AI rotation, though it remains well off its highs.",
+      "key_risk": "The AI-rotation trade reversing or growth decelerating in coming quarters.",
+      "screener_score": 44.0
+    },
+    "NUE": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Analysts expect a strong Q2 EPS beat ($4.53 vs. $2.65 YoY) on higher steel prices and margin support",
+        "Peer Cleveland-Cliffs just jumped on guidance, a bullish read-through for the steel sector"
+      ],
+      "bear": [
+        "RSI 74.8 / stoch 88.6 — overbought heading into tonight's earnings print, a binary risk",
+        "Already priced for a beat given the run-up; a miss could trigger a sharp reversal"
+      ],
+      "summary": "Nucor heads into tonight's earnings overbought but with strong sell-side expectations for a steel-margin-driven beat.",
+      "key_risk": "An earnings miss after an overbought run-up into tonight's print.",
+      "screener_score": 24.0
+    },
+    "TDG": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "The $1.07B bolt-on acquisition (Prince & Izant) continues TDG's proven M&A-driven growth strategy",
+        "Strong 1-day/5-day bounce (+6%) shows renewed buying interest"
+      ],
+      "bear": [
+        "Co-COO recently cut his stake by 46% (~$3.2M in gains) — an insider-selling caution flag",
+        "The 20-day trend is still negative (-3.47%) despite the recent bounce"
+      ],
+      "summary": "TransDigm's bolt-on acquisition supports its M&A growth strategy, but a large recent insider stock sale tempers enthusiasm.",
+      "key_risk": "Insider selling signaling limited near-term upside, or integration risk from the new acquisition.",
+      "screener_score": 24.2
+    },
+    "TMUS": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Sector-wide telecom Q2 earnings beat expectations with EPS growth across AT&T, T-Mobile and Verizon",
+        "Today's +4% bounce after a rough week suggests stabilization"
+      ],
+      "bear": [
+        "Down ~31% from its 52w high with a rough past week (-7.9% over 5 days) — trend damage not yet repaired",
+        "Rising competitive intensity in fiber/wireless bundling could pressure margins sector-wide"
+      ],
+      "summary": "T-Mobile bounced today after a rough week, with sector-wide Q2 earnings healthy but competitive bundling pressure a lingering concern.",
+      "key_risk": "Competitive/bundling pressure eroding subscriber economics despite healthy headline earnings.",
+      "screener_score": 46.0
+    },
+    "VRTX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Oversold (RSI 20.5) with a diversified, growing drug portfolio (Trikafta, Alyftrek, Casgevy, Journavx) heading into earnings",
+        "Still above both SMA50 (+3.16%) and SMA200 (+6.16%) — the underlying uptrend is intact"
+      ],
+      "bear": [
+        "Zacks flags that Vertex lacks the right combination of factors for a likely earnings beat this quarter",
+        "Oversold technicals ahead of a binary earnings event add volatility risk"
+      ],
+      "summary": "Vertex is technically oversold but still in a longer-term uptrend heading into Q2 earnings, where consensus is lukewarm on a beat.",
+      "key_risk": "An earnings miss per Zacks' cautious setup, despite technical oversold support.",
+      "screener_score": 18.8
+    }
+  }
+}
