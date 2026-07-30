@@ -1,0 +1,138 @@
+{
+  "date": "2026-07-30",
+  "market_summary": "Volatil dag: Nasdaq +3% på stærke Microsoft-tal og en bred halvleder-/AI-rebound (Corning, Marvell, Nvidia), mens Meta faldt på et EPS-miss trods hævet guidance-gulv. Modsat trak et nyt SpaceX direct-to-phone-fremstød TMUS/AT&T/Verizon ned, og L3Harris/CH Robinson/FICO/Lennox faldt kraftigt trods regnskabsbeats på idiosynkratiske bekymringer (IPO-overhang, cash flow, software-guidance). Ingen åbne positioner har brudt stop eller fundamental tese i dag; sælger den ubetydelige TMUS-position da den nye satellit-konkurrencetrussel er sektorbred og teknisk bekræftet (brud under SMA50/200), og køber en lille Corning-position (IT, kun 8.8% af porteføljen) for at diversificere væk fra den tunge Industrials-vægt (34.4%) inden for det stramme kontantbudget ($304).",
+  "decisions": [
+    {
+      "symbol": "NUE",
+      "name": "Nucor",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 257.04,
+      "confidence": 5,
+      "reasoning": "Rekordforsendelser, tarif-rygvind og hævet 2H-outlook bekræfter tesen, men RSI 73.5 er klart overkøbt efter opløbet - ingen grund til at sælge en fundamentalt intakt position, men heller ikke tilføje her.",
+      "bull": ["Record steel mill shipments, tariff-driven pricing tailwinds, and a raised second-half 2026 outlook", "Konsistent uptrend, kun 4.9% fra 52-ugers højeste"],
+      "bear": ["RSI 73.5 overkøbt, begrænset kortsigtet opside", "Cyklisk stål-eksponering sårbar overfor tarifpolitik-skift"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Buy-the-dip i bekræftet bulltrend: KeyBanc-upgrade + Q2-guidance-beat + tarif-rygvind giver asymmetrisk risk/reward.", "price_target": 274, "stop_loss": 222.14, "expected_return_pct": 6.6, "timeframe": "3-6 måneder", "exit_conditions": "Stop ved $222.14 (2x ATR). Sælg ved stålpriskollaps under tarifsatser eller globalt recessions-signal."}
+    },
+    {
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 95.16,
+      "confidence": 5,
+      "reasoning": "AI-adoption og rekordstærkt IPO-halvår bekræfter tesen, men RSI 67.3/stoch 82 og negativ momentum-divergens signalerer et afkølende opløb tæt på profitmålet - stop er allerede hævet til at sikre gevinsten.",
+      "bull": ["Q2 revenue beat (+14.9% YoY) drevet af AI/IPO/platform-vækst", "Konsistent uptrend, kun 5.9% fra 52-ugers højeste"],
+      "bear": ["RSI/stoch overkøbt, momentum decelererer", "Begrænset margin of safety efter opløbet"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Bekræftet teknisk vending + rekordstærkt IPO-halvår og AI-platform-adoption forbliver intakt.", "price_target": 98, "stop_loss": 90.38, "expected_return_pct": 3.0, "timeframe": "1-3 måneder", "exit_conditions": "Stop ved $90.38 (2x ATR). Sælg ved close under stop eller markant eskalering af perpetual-futures-konkurrencetrussel."}
+    },
+    {
+      "symbol": "TDG",
+      "name": "TransDigm Group",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1249.91,
+      "confidence": 5,
+      "reasoning": "Fortsat bolt-on M&A (Prince & Izant) understøtter roll-up-strategien; makrodrevet selloff, ikke selskabsspecifik svaghed. Neutral teknisk billede giver ikke noget klart signal - fortsat hold.",
+      "bull": ["Fortsat bolt-on M&A udvider aerospace-aftermarket roll-up-strategien", "Høj-margin quasi-monopol forretningsmodel intakt"],
+      "bear": ["Lav screener-score (13.5) - begrænsede friske katalysatorer", "Ny opkøbsintegrationsrisiko ved premium-valuation"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Makro-/oliedrevet industriselloff, ikke selskabsspecifik svaghed - høj-margin aerospace-eftermarkedsforretning forbliver intakt.", "price_target": 1350, "stop_loss": 1166.19, "expected_return_pct": 8.0, "timeframe": "3-6 måneder", "exit_conditions": "Stop ved $1166.19 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller brud på Zacks-opgraderingens antagelser."}
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 183.3,
+      "confidence": 6,
+      "reasoning": "Skarp +12.2% rally i dag er en reel positiv vending, og operating margin er steget to år i træk selv mens aktien faldt - fundamental forbedring afkoblet fra prisen. Stadig godt over SMA200, tesen forbliver intakt.",
+      "bull": ["Sharp +12.2% rally, operating margin klatret to år i træk", "Godt over SMA200 (+36.3%), langsigtet uptrend intakt trods -44% drawdown"],
+      "bear": ["Stadig godt under SMA50 (-23.4%), fortsat retail-rotation ud af AI/chip-navne", "En enkelt stærk dag kræver bekræftelse"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Sektor-bred sympati-selloff i chip-komplekset giver dyb oversolgt entry i en langsigtet intakt AI-silicon-vækstcase.", "price_target": 275, "stop_loss": 162.53, "expected_return_pct": 50.0, "timeframe": "6-12 måneder", "exit_conditions": "Stop ved $162.53 (2x ATR). Sælg hvis Kina-hukommelseskonkurrencen viser sig strukturel, eller ved selskabsspecifik indtjeningsskuffelse."}
+    },
+    {
+      "symbol": "MMM",
+      "name": "3M Company",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 176.07,
+      "confidence": 5,
+      "reasoning": "Nyt Azure AI-datacenter-partnerskab og bred blue-chip Q2-optimisme er konstruktivt, men RSI 72.5 er klart overkøbt og volumen (0.59x) tynder ud på opløbet - hold uden at tilføje.",
+      "bull": ["Sustained uptrend, nyt Microsoft Azure AI-partnerskab", "Del af bred stærk blue-chip Q2-sentiment"],
+      "bear": ["RSI 72.5 overkøbt, tyndende volumen på rally", "Lav screener-score (21.7) - begrænsede friske katalysatorer"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Ægte beat-and-raise-regnskab plus nyt Azure-partnerskab holder det tekniske billede bullish.", "price_target": 195, "stop_loss": 167.21, "expected_return_pct": 10.8, "timeframe": "3-6 måneder", "exit_conditions": "Stop ved $167.21 (2x ATR). Sælg ved PFAS/høreværns-retssagsrisiko eskalerer, eller tilbagegang i organisk vækst/guidance."}
+    },
+    {
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 110.07,
+      "confidence": 6,
+      "reasoning": "Stærk 5-dages rally (+19.7%) og bullish analytiker-tese (op til 115% opside) overgår klart det oprindelige mål; dagens -4.9% pullback ligner normal fordøjelse efter en stærk kørsel, ikke en tese-brud.",
+      "bull": ["Stærk 5-dages rally, bullish analytiker-tese med op til 115% opside", "Planlagt 'rightsizing' post-opkøb ses som disciplineret omkostningsstyring"],
+      "bear": ["Dagens pullback kan signalere kortsigtet udmattelse, stadig ~44% under 52-ugers højeste", "Fyringer efter opkøb peger på reelle integrationsudfordringer"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Kapitulationstesen fuldt bekræftet og overgået - Q2-beat, opjusteret guidance og fornyet agentic-AI-rotation.", "price_target": 123, "stop_loss": 102.54, "expected_return_pct": 11.8, "timeframe": "3-6 måneder", "exit_conditions": "Stop ved $102.54 (2x ATR). Sælg hvis udmattelses-spiken reverserer skarpt, eller ved selskabsspecifik indtjeningsskuffelse."}
+    },
+    {
+      "symbol": "TMUS",
+      "name": "T-Mobile US",
+      "action": "SELL",
+      "shares": 2,
+      "price": 173.34,
+      "confidence": 6,
+      "reasoning": "Ny og reel strukturel konkurrencetrussel (SpaceX direct-to-phone) rammer hele wireless-sektoren i dag, og prisen brød bekræftende under både SMA50 og SMA200 - markedet repricer en fundamental risiko, ikke støj. Positionen er ubetydelig (0.3% vægt), så realiser den beskedne gevinst og frigør den lille smule kapital fremfor at holde fast i en tese der lige er blevet undermineret.",
+      "bull": ["Relativt mere modstandsdygtig end AT&T/Verizon, oversolgt stoch 11.7", "Fortsat skala-leder i wireless"],
+      "bear": ["Genuin ny konkurrencetrussel fra SpaceX rammer hele sektoren, TMUS -4.5% på nyheden", "Brud under både SMA50 og SMA200 bekræfter markedets omprisning af strukturel risiko"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Position lukkes: ny sektorbred strukturel konkurrencetrussel (SpaceX satellit-direkte) bryder den oprindelige diversificerings-/oversolgt-tese.", "price_target": 0, "stop_loss": 0, "expected_return_pct": 0, "timeframe": "n/a", "exit_conditions": "n/a - solgt"}
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 481.7,
+      "confidence": 5,
+      "reasoning": "Prisen holder sig over både SMA50 og SMA200, og det nye AbCellera-partnerskab diversificerer pipelinen ud over cystisk fibrose - tesen forbliver intakt og relativt defensiv i en volatil tape.",
+      "bull": ["Over både SMA50 (+3.1%) og SMA200 (+6.4%)", "Nyt AbCellera-partnerskab diversificerer pipeline"],
+      "bear": ["Stadig tungt afhængig af cystisk fibrose-franchisen", "Meget lav screener-score (6.1)"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Dybt oversolgt i en teknisk intakt opadgående trend, med Crinetics-opkøb som signal om offensiv pipeline-udvidelse.", "price_target": 545, "stop_loss": 448.95, "expected_return_pct": 13.1, "timeframe": "3-6 måneder", "exit_conditions": "Stop ved $448.95 (2x ATR). Sælg hvis Crinetics-opkøbet viser overbetaling/integrationsproblemer, eller ved pipeline-skuffelse."}
+    },
+    {
+      "symbol": "FLEX",
+      "name": "Flex Ltd.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 111.91,
+      "confidence": 7,
+      "reasoning": "Ægte beat-and-raise (Q1 omsætning +20.6% YoY, hævet FY27-outlook på AI-infrastruktur-efterspørgsel) og dagens afgørende +8.6% pop bekræfter markedets accept - tesen er stærkere end ved køb.",
+      "bull": ["Ægte beat-and-raise på AI-infrastruktur (power, cooling, data center)", "Afgørende +8.6% pop i dag, godt over SMA200 (+27.3%)"],
+      "bear": ["Stadig -27% over 20 dage, godt under SMA50 (-19.7%)", "En dags positiv reaktion kræver opfølgende bekræftelse"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Beat-and-raise-regnskab ignoreret af markedet i en bred tech-selloff giver en dybt oversolgt entry.", "price_target": 125, "stop_loss": 85.68, "expected_return_pct": 11.7, "timeframe": "3-6 måneder", "exit_conditions": "Stop ved $85.68 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller fortsat makrodrevet selloff uden bundtegn."}
+    },
+    {
+      "symbol": "CSGP",
+      "name": "CoStar Group",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 29.46,
+      "confidence": 5,
+      "reasoning": "Q2-beat med residential EBITDA positiv for første gang og +18.4% omsætningsvækst er en reel fundamental inflection; CFO-exit og svag guidance er en eksekveringsrisiko at overvåge, men ikke et bekræftet tese-brud endnu.",
+      "bull": ["Q2-beat, residential EBITDA positiv for første gang", "Positiv 5-dages momentum, stabiliserer nær 52-ugers lav"],
+      "bear": ["Stadig ~40% under SMA200", "CFO-exit + svag guidance rejser eksekveringsbekymring"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Profitbeat og tidlig teknisk stabilisering efter et ekstremt fald giver en asymmetrisk entry.", "price_target": 36, "stop_loss": 26.21, "expected_return_pct": 22.2, "timeframe": "3-6 måneder", "exit_conditions": "Stop ved $26.21 (2x ATR). Sælg hvis svag omsætningsguidance bekræftes næste kvartal, eller ved teknisk brud under stop."}
+    },
+    {
+      "symbol": "GLW",
+      "name": "Corning Inc.",
+      "action": "BUY",
+      "shares": 2,
+      "price": 135.22,
+      "confidence": 6,
+      "reasoning": "Dagens +9% pop i en bred halvlederrally, med prisen tilbage til SMA200 efter et skarpt 20-dages fald, ser ud som en reel AI-optisk-vækstcase der genoprettes. Kun 2 aktier grundet det stramme $304-kontantbudget, men det diversificerer bevidst væk fra den overvægtede Industrials-sektor (34.4%) ind i IT (8.8%).",
+      "bull": ["Dagens +9% pop i bred tech/halvleder-rally, 12-måneders afkast +129% på AI-optisk-fiber-væksthistorie", "Prisen har genvundet SMA200 (+0.4%) efter det skarpe 20-dages fald"],
+      "bear": ["Stadig ned næsten 39% over 20 dage - ekstrem volatilitet kan sagtens whipsawe tilbage", "Stadig 50% under 52-ugers højeste"],
+      "investment_plan": {"term": "medium", "basis": ["technical", "fundamental"], "thesis": "Skarp rebound drevet af AI-datacenter-optisk-efterspørgsel og en sektorbred halvlederrally efter et brutalt guidance-drevet fald.", "price_target": 160, "stop_loss": 108.87, "expected_return_pct": 18.3, "timeframe": "3-6 måneder", "exit_conditions": "Stop ved $108.87 (2x ATR). Sælg hvis dagens rally reverserer uden opfølgning, eller ved yderligere guidance-skuffelse."}
+    }
+  ]
+}
