@@ -1,0 +1,396 @@
+{
+  "date": "2026-07-30",
+  "stocks": {
+    "BLDR": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "RSI 32.8 and stoch 6.0 are deeply oversold, setting up room for a technical bounce",
+        "Long-term housing replacement cycle and data-center-adjacent construction demand remain structural tailwinds"
+      ],
+      "bear": [
+        "Q2 earnings and sales missed estimates (sales -8.8% YoY) with a lower 2026 outlook, confirming real fundamental weakness",
+        "Price sits 13.7% below SMA50 and 31.3% below SMA200 with no reversal signal yet despite the oversold reading"
+      ],
+      "summary": "Builders FirstSource's Q2 miss and guidance cut broke the trend decisively, and weak housing demand leaves no near-term catalyst for a durable bounce.",
+      "key_risk": "Further housing-market softness or margin pressure before the stock finds a confirmed technical floor.",
+      "screener_score": 78.0
+    },
+    "LHX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Q2 EPS ($3.13 vs $2.80 est) and revenue beat, with 2026 outlook raised on broad-based segment growth",
+        "Missile-replenishment defense demand is a genuine secular tailwind (Lockheed also cited $54B in related contracts)"
+      ],
+      "bear": [
+        "Stock fell 8.6% on the day despite the beat, apparently on unrelated IPO-related news overhang",
+        "Still trading 8.8% below SMA50 and 13.5% below SMA200 — the reaction hasn't reversed the technical damage"
+      ],
+      "summary": "L3Harris delivered a genuine beat-and-raise quarter with strong defense-spending tailwinds; today's sell-off looks like a sentiment/technical overreaction rather than a fundamental one.",
+      "key_risk": "If the IPO-related overhang driving today's drop turns out to reflect a real capital-structure or dilution concern rather than noise.",
+      "screener_score": 78.0
+    },
+    "LII": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "RSI 18.3 is an extreme oversold washout level, rare enough to often precede at least a short-term bounce",
+        "Long-term HVAC replacement cycle and data-center cooling demand remain structural tailwinds"
+      ],
+      "bear": [
+        "Q2 revenue miss and guidance cut triggered a -20% single-day crash, a genuine fundamental deterioration",
+        "Price is 20.7% below SMA50 and 17.8% below SMA200 with stoch near 0 — no confirmed bottom yet"
+      ],
+      "summary": "Lennox's own Q2 print broke the uptrend decisively; the technical washout is extreme but there's no confirmed reversal yet against a real guidance cut.",
+      "key_risk": "Additional guidance cuts or margin pressure before the stock finds a technical floor.",
+      "screener_score": 77.0
+    },
+    "PSKY": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "EU regulatory clearance for the WBD acquisition removes one major obstacle to closing the deal",
+        "RSI 20.6 is deeply oversold after a -62% drawdown from 52-week highs"
+      ],
+      "bear": [
+        "Legal standoff with a coalition of state attorneys general is unresolved and starts costing $7M/day from Sept 30",
+        "Outcome is binary and event-driven — a blocked or delayed deal could hit the stock hard regardless of technicals"
+      ],
+      "summary": "Paramount Skydance is a genuine merger-arbitrage situation: EU approval is a real positive step, but the unresolved state AG litigation makes the near-term outcome too binary to call with conviction.",
+      "key_risk": "The state AG legal challenge blocking or materially delaying the WBD deal past Sept 30, triggering the $7M/day cost.",
+      "screener_score": 76.0
+    },
+    "CHRW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "Q2 EPS and revenue beat (+5.23% / +11.74% surprise) on pricing gains, market-share gains and Lean AI productivity",
+        "Company confirmed it hit its margin targets alongside continued cost discipline (job cuts)"
+      ],
+      "bear": [
+        "Stock still crashed -15.4% on the day despite the beat, with weaker cash flow explicitly flagged — a red flag the headline numbers don't capture",
+        "Heavy volume (vol_ratio ~3.3-3.9x) on the drop signals real institutional selling, not noise"
+      ],
+      "summary": "A double-digit same-day crash on a headline earnings beat signals the market found something concerning beneath the surface — most likely the noted cash-flow weakness — that outweighs the reported numbers.",
+      "key_risk": "Deteriorating cash conversion or a hidden quality-of-earnings issue behind the pricing-driven beat.",
+      "screener_score": 74.0
+    },
+    "META": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "RSI 13.7 is an extreme oversold reading, rare for a mega-cap, and often marks a capitulation low",
+        "Lower end of guidance was raised even as EPS missed, and the core ad business remains intact while peers (Microsoft) are being rewarded for similar AI spend"
+      ],
+      "bear": [
+        "EPS miss on earnings day is a genuine fundamental disappointment, with commentary that Meta needs a growth story 'beyond advertising'",
+        "Price is 10.6% below SMA50 and 15.0% below SMA200, confirming the technical damage is real"
+      ],
+      "summary": "Meta's earnings-day plunge to an extreme oversold RSI, alongside a raised guidance floor and a sector-wide AI rally the same day, looks like an overreaction worth fading despite the real EPS miss.",
+      "key_risk": "AI infrastructure spending continuing to outpace monetization, keeping margins under pressure longer than the market currently prices in.",
+      "screener_score": 72.0
+    },
+    "GNRC": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "RSI 7.7 is the most extreme oversold reading in the entire deep set — a rare capitulation-level signal",
+        "Data-center backlog is fueling commercial segment expansion, and revenue still grew +10.6% YoY despite the 'miss' vs Street"
+      ],
+      "bear": [
+        "Revenue still missed Wall Street expectations, and price remains 23.5% below SMA50 with a firmly negative 20-day trend",
+        "No confirmed reversal signal yet despite the extreme oversold reading"
+      ],
+      "summary": "Generac's extreme oversold reading paired with genuine double-digit revenue growth and a structural data-center power-backup tailwind makes this a contrarian setup worth a bullish lean.",
+      "key_risk": "Continued deceleration in core residential generator demand offsetting the commercial/data-center growth story.",
+      "screener_score": 71.0
+    },
+    "GLW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Stock jumped +9% today on a broad tech/semiconductor rally, with a 12-month return of +129% underlying the AI optical-fiber growth story",
+        "Price has recovered back to SMA200 (+0.4%) after the sharp 20-day drawdown, suggesting the support level is holding"
+      ],
+      "bear": [
+        "Still down nearly 39% over the past 20 trading days — extreme volatility that could easily whipsaw back down",
+        "Still 50% below its 52-week high, so the bounce has a long way to go to repair the technical damage"
+      ],
+      "summary": "Corning's sharp rebound today, riding the AI-driven data-center optical demand narrative and a sector-wide semiconductor rally, supports a bullish lean even after a very volatile month.",
+      "key_risk": "A reversal of today's rally given the extreme volatility and the stock's continued distance from its 52-week high.",
+      "screener_score": 69.0
+    },
+    "FDXF": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "One analyst view sees the stock as ~10% undervalued after fresh financing tools and strong Q4 fiscal-2026 results at the old FedEx parent",
+        "Management has clear margin-growth levers via pricing, freight-mix optimization and network technology"
+      ],
+      "bear": [
+        "High debt load and soft LTL freight demand remain real macro headwinds for the newly spun-off entity",
+        "Too little trading history to compute SMA50/SMA200 — the technical picture is essentially unknown post spin-off"
+      ],
+      "summary": "FedEx Freight's fresh spin-off status leaves too little price history and an unresolved mix of debt/demand risk versus margin-improvement levers to take a confident directional view yet.",
+      "key_risk": "Spin-off execution missteps or a further LTL demand slowdown before the pricing/network levers show through in margins.",
+      "screener_score": 69.0
+    },
+    "FICO": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "Q3 beat on both lines with Scores segment revenue +26% YoY and non-GAAP EPS +42%, plus a raised fiscal-2026 outlook",
+        "Mortgage score pricing power remains a durable, high-margin franchise"
+      ],
+      "bear": [
+        "Stock still fell -17% — its biggest single-day drop in 6 years — on softer-than-expected software segment guidance, a real read-through concern",
+        "Heavy volume (vol_ratio 3.4x) on the drop signals genuine institutional de-risking, not noise"
+      ],
+      "summary": "Despite a genuine beat-and-raise on Scores, FICO's violent reaction to softer software guidance suggests the market sees a real deceleration risk in the non-Scores business that the headline numbers mask.",
+      "key_risk": "Continued deceleration in the software segment eroding the growth narrative beyond the strong Scores print.",
+      "screener_score": 68.0
+    },
+    "MAS": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Still trading above its SMA200 (+5.9%), keeping the longer-term uptrend technically intact despite the pullback",
+        "Tariff refunds lifted margins and operating profit +17% even as sales missed, showing cost/pricing resilience"
+      ],
+      "bear": [
+        "Sales still declined YoY (-2.9%) on weaker North American volumes, a genuine demand headwind",
+        "Modest screener score (38) reflects this is a fringe scout pick without a strong standalone catalyst"
+      ],
+      "summary": "As a scout candidate, Masco shows margin resilience from tariff refunds but the underlying volume weakness and lack of a clear catalyst keep this a low-conviction watch rather than a buy.",
+      "key_risk": "Continued North American home-improvement volume softness offsetting the tariff-refund margin tailwind.",
+      "screener_score": 38.0
+    },
+    "NFLX": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Positive 5-day momentum (+6.2%) alongside high-profile new content deals (Walking Dead licensing, Women's World Cup rights) signal continued engagement investment",
+        "RSI 49.3 is neutral, leaving room to run either direction without an overextended signal"
+      ],
+      "bear": [
+        "Still down -42% from its 52-week high and below both SMA50 and SMA200, so the structural downtrend isn't confirmed reversed",
+        "Large new content commitments (~$700M combined) pressure near-term free cash flow"
+      ],
+      "summary": "Netflix is showing tentative positive momentum as a scout candidate on fresh content deals, but it remains firmly below its major moving averages, so this looks like a stabilization rather than a confirmed turn.",
+      "key_risk": "Content-spend commitments outpacing subscriber/engagement growth and pressuring margins further.",
+      "screener_score": 38.0
+    },
+    "ON": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Strong +6.2% bounce today ahead of Q2 earnings, with AI power-infrastructure demand a genuine secular growth driver",
+        "Price remains above SMA200 (+11.9%), keeping the longer-term uptrend intact despite the short-term pullback"
+      ],
+      "bear": [
+        "Weak EV end-market demand is a real drag on a core business line, and the stock still carries a premium valuation",
+        "Q2 earnings haven't been reported yet — this is a binary event-risk setup that argues against high conviction either way"
+      ],
+      "summary": "As a scout candidate, ON Semiconductor shows a constructive technical setup into earnings, but the unreported Q2 print and soft EV demand keep conviction low until the event risk clears.",
+      "key_risk": "A Q2 miss or soft guidance given the still-weak EV end-market and premium valuation leaving little room for disappointment.",
+      "screener_score": 38.0
+    },
+    "CSGP": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Q2 beat with revenue +18.4% YoY, widening margins, and residential EBITDA turning positive for the first time",
+        "5-day momentum is positive (+8.55%) and the stock is stabilizing near its 52-week low after a deep de-rating"
+      ],
+      "bear": [
+        "Still ~40% below SMA200, confirming the long-term downtrend has not technically reversed",
+        "CFO departure alongside softer guidance raises near-term execution and governance concerns"
+      ],
+      "summary": "As a current holding, CoStar's fundamentals are genuinely inflecting (residential EBITDA turned positive, revenue accelerating), but the CFO exit and still-deep long-term downtrend argue for holding rather than adding.",
+      "key_risk": "Execution disruption from the CFO departure delaying the residential-business turnaround the market is waiting to see confirmed.",
+      "screener_score": 62.0
+    },
+    "FLEX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 7,
+      "bull": [
+        "Genuine beat-and-raise: Q1 revenue +20.6% YoY, expanding margins, and FY27 outlook raised on AI infrastructure (power, cooling, data-center) demand",
+        "Today's decisive +8.6% pop confirms the market's approval, and price remains well above SMA200 (+27.3%), keeping the longer-term uptrend intact"
+      ],
+      "bear": [
+        "Still down -27% over the past 20 days and well below SMA50 (-19.7%), so recent volatility has been severe",
+        "One day of positive reaction needs follow-through confirmation before calling the pullback fully over"
+      ],
+      "summary": "As a current holding, Flex delivered a clear beat-and-raise driven by AI data-center infrastructure demand, and today's strong reaction plus an intact long-term uptrend versus SMA200 supports staying bullish.",
+      "key_risk": "A reversal of today's momentum if the AI infrastructure capex cycle decelerates faster than guided.",
+      "screener_score": 64.0
+    },
+    "MMM": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Sustained uptrend (+10.1% over 20 days), just 4.8% off its 52-week high, reinforced by a new Microsoft Azure AI data-center optical-tech partnership",
+        "Part of a broader wave of strong blue-chip Q2 earnings sentiment"
+      ],
+      "bear": [
+        "RSI 72.5 is clearly overbought, and volume (0.59x average) is thinning on the rally, suggesting weakening conviction",
+        "Low screener score (21.7) reflects limited fresh near-term catalysts beyond existing momentum"
+      ],
+      "summary": "As a current holding, 3M's uptrend and new Microsoft partnership are constructive, but overbought technicals and thinning volume argue for holding rather than adding at these levels.",
+      "key_risk": "A momentum reversal from the overbought RSI level given the low conviction (falling volume) behind the recent rally.",
+      "screener_score": 21.7
+    },
+    "MRVL": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Sharp +12.2% rally today signals a real positive reversal, and operating margin has climbed for two straight years even as the stock fell — a fundamental improvement disconnected from price",
+        "Price remains well above SMA200 (+36.3%), keeping the long-term uptrend intact despite the -44% drawdown from 52-week highs"
+      ],
+      "bear": [
+        "Still well below SMA50 (-23.4%), and broader retail rotation out of AI/chip names signals ongoing sentiment risk",
+        "A single strong day needs confirmation before the recent downtrend can be called over"
+      ],
+      "summary": "As a current holding, Marvell's decisive rally alongside genuinely improving operating margins and an intact long-term uptrend versus SMA200 support staying bullish on this pullback.",
+      "key_risk": "Continued broad retail/institutional de-risking from AI-infrastructure chip names overwhelming the company-specific margin improvement story.",
+      "screener_score": 59.0
+    },
+    "NDAQ": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Q2 revenue beat (+14.9% YoY) driven by AI adoption, IPO momentum and platform expansion, with peers (CME, ICE, CBOE) similarly favored",
+        "Consistent uptrend (+15% over 20 days), just 5.9% off its 52-week high"
+      ],
+      "bear": [
+        "RSI 67.3 and stoch 82 both flag overbought conditions, with momentum divergence turning negative (-9.78), suggesting the rally is decelerating",
+        "Limited margin of safety after the run-up this close to 52-week highs"
+      ],
+      "summary": "As a current holding, Nasdaq's fundamentals are genuinely strong (AI/IPO tailwinds), but the stock is technically extended near highs, favoring a hold rather than chasing further upside here.",
+      "key_risk": "A pullback from overbought levels if trading activity or IPO momentum cools from the recent pace.",
+      "screener_score": 30.0
+    },
+    "NOW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Strong 5-day rally (+19.7%) shows real buying momentum returning, with a bullish analyst thesis citing up to 115% potential upside and continued AI platform milestones",
+        "Planned workforce 'rightsizing' post-acquisitions is framed as disciplined cost management that should support margins longer-term"
+      ],
+      "bear": [
+        "Today's -4.9% pullback after the rally could signal short-term exhaustion, and the stock remains ~44% below its 52-week high",
+        "Layoffs following recent acquisitions also point to real integration/execution challenges"
+      ],
+      "summary": "As a current holding, ServiceNow's sharp weekly rally and credible bullish analyst thesis outweigh today's single-day pullback, which looks like normal digestion after a strong run.",
+      "key_risk": "Integration or execution problems from recent acquisitions undermining the cost-discipline narrative behind the layoffs.",
+      "screener_score": 51.0
+    },
+    "NUE": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Record steel mill shipments, tariff-driven pricing tailwinds, and a raised second-half 2026 outlook show genuinely strong fundamental momentum",
+        "Consistent uptrend across both the 5-day and 20-day windows, just 4.9% off its 52-week high"
+      ],
+      "bear": [
+        "RSI 73.5 is clearly overbought, leaving limited near-term upside room after the sustained run",
+        "Cyclical steel exposure remains vulnerable to shifts in tariff policy or a demand slowdown"
+      ],
+      "summary": "As a current holding, Nucor's fundamentals and pricing tailwinds are strong, but overbought technicals near 52-week highs argue for holding rather than adding at current levels.",
+      "key_risk": "A tariff-policy reversal or demand pullback ending the record-shipment cycle currently supporting pricing power.",
+      "screener_score": 35.4
+    },
+    "TDG": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Continued bolt-on M&A (Prince & Izant acquisition, ~$1.07B) extends TransDigm's proven aerospace-aftermarket roll-up strategy",
+        "High-margin, quasi-monopoly business model remains intact with technicals fairly neutral near both moving averages"
+      ],
+      "bear": [
+        "Very low screener score (13.5) suggests limited near-term fresh catalysts beyond the ongoing M&A cadence",
+        "New acquisition carries integration risk, and the name typically trades at a premium valuation limiting further upside"
+      ],
+      "summary": "As a current holding, TransDigm's steady M&A-driven growth model and neutral technical setup don't present a strong signal either way — a straightforward hold.",
+      "key_risk": "Integration missteps on the new acquisition or a valuation re-rating given the stock's typically rich multiple.",
+      "screener_score": 13.5
+    },
+    "TMUS": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "Relatively more resilient than sector peers AT&T and Verizon on a 20-day view, with stoch at 11.7 suggesting an oversold bounce is possible",
+        "Still a scale leader in wireless with a diversified subscriber base"
+      ],
+      "bear": [
+        "A genuine new competitive threat emerged today — SpaceX plotting direct-to-phone satellite connectivity — hitting the entire wireless sector, with TMUS down -4.5% on the news",
+        "Price broke below both SMA50 and SMA200, confirming the market is repricing this structural risk, not just noise"
+      ],
+      "summary": "As a current holding, T-Mobile faces a genuine new structural threat from SpaceX's direct-to-phone satellite plans, and today's sell-off reflects the market pricing in real disruption risk to the wireless carrier model.",
+      "key_risk": "SpaceX or other satellite-direct competitors eroding the carrier value proposition faster than the market currently assumes.",
+      "screener_score": 44.0
+    },
+    "VRTX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Price remains above both SMA50 (+3.1%) and SMA200 (+6.4%), keeping the uptrend technically intact and relatively resilient versus the rest of the deep set",
+        "New AbCellera partnership on multispecific T-cell engagers for autoimmune disease diversifies the pipeline beyond cystic fibrosis"
+      ],
+      "bear": [
+        "Still heavily reliant on the cystic fibrosis franchise per market commentary, with diversification still early-stage",
+        "Very low screener score (6.1) suggests limited near-term catalyst strength beyond the defensive price action"
+      ],
+      "summary": "As a current holding, Vertex's intact uptrend versus both moving averages and its pipeline-diversifying AbCellera partnership support a bullish lean, offering defensive characteristics in an otherwise volatile tape.",
+      "key_risk": "Upcoming Q2 earnings disappointing on cystic-fibrosis franchise growth before the new pipeline diversification meaningfully contributes.",
+      "screener_score": 6.1
+    }
+  }
+}
