@@ -1,0 +1,300 @@
+{
+  "date": "2026-07-30",
+  "market_summary": "Ingen nye positioner i dag. Porteføljen har 11 åbne positioner uden aktive stop-loss-brud og med generelt intakte investeringstheser; flere af sommerens vindere (Novo Nordisk, Carlsberg, Royal Unibrew) er teknisk overkøbte og nærmer sig deres price targets, mens Vestas og Ørsted handler tæt på deres stop-loss-niveauer i igangværende turnaround-forsøg. Dagens BULL-kandidater uden for porteføljen (Demant, DSV, Nordea, Jyske Bank) er alle 'scan'-niveau med kun ét bull-argument, ingen understøttende nyheder og moderat konfidens (5) — utilstrækkeligt til at retfærdiggøre nye køb givet stram likviditet (kun 4.691,55 DKK købsbudget efter kontantminimum) og allerede betydelig sektorkoncentration i Financial Services (13,2%, to banker) og Healthcare (25,9%).",
+  "decisions": [
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 338.05,
+      "confidence": 65,
+      "reasoning": "Positionen er op +27,5% og handler kun 3,5% under price target (350) efter et stærkt 5-dages løb der har bragt prisen over både SMA50 og SMA200. Værdiansættelsen er stadig attraktiv (forward PE 15,7x, 37% rabat til sektor, EPS +67% å/å), men RSI 65/Stoch 98 signalerer et overkøbt setup, og konkurrencepresset fra Eli Lilly og nu også Amgen (monthly-dosing i 6 fase 3-forsøg) tiltager. Med Q2-regnskab om kun 6 dage (2026-08-05) hæver jeg stop-loss for at beskytte den optjente gevinst, mens thesis (GLP-1-leder, oral Wegovy-adoption) forbliver intakt og vægten (20%) er under trim-grænsen på 30%.",
+      "bull": [
+        "Forward PE 15,7x er en 37% rabat til Healthcare-sektoren med EPS +67% å/å og revenue +24% å/å",
+        "Pris nu over både SMA50 og SMA200 efter +5,8% over 5 dage — teknisk momentum er vendt positivt"
+      ],
+      "bear": [
+        "Stigende konkurrence fra Eli Lilly og Amgen (monthly-dosing i 6 fase 3-forsøg) i GLP-1-markedet",
+        "RSI 65/Stoch 98 = teknisk overkøbt, og reklamesagen mod Lilly tilføjer distraktionsrisiko",
+        "Q2-regnskab 2026-08-05 kan skabe volatilitet nær price target"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "GLP-1-leder med strukturelt trendbrud over SMA200. Oral Wegovy-adoption som primær vækstmotor. Deep-value PE 15,7x med 67% EPS-vækst, men positionen nærmer sig target og er teknisk overkøbt foran Q2-regnskab.",
+        "price_target": 355,
+        "stop_loss": 322,
+        "expected_return_pct": 5,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg ved brud under 322 (hævet fra 305 for at beskytte gevinst foran regnskab). TRIM hvis vægt overstiger 30%. Tag profit nær 350-355. Sælg ved fortsat forværring i Lilly/Amgen-konkurrencesituationen eller svagt Q2-regnskab."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 952.0,
+      "confidence": 62,
+      "reasoning": "Position op +16,5% og kun 1,9% fra price target (970). Sapporo-JV'en (643 mio. USD i cash, Carlsberg beholder 75% kontrol) og den fortrolige India-IPO-fil (op til 700 mio. USD, 13,4x forward PE) er reelle, positive katalysatorer der understøtter thesis. Aktien er dog teknisk overkøbt (Stoch 97,8, Bollinger ved øvre bånd) med negativ momentum-divergens (-7,5pp), hvilket peger på en nært forestående pause. Hæver stop-loss for at låse mere af gevinsten fast, da vi allerede er tæt på target.",
+      "bull": [
+        "Ny Sapporo-JV i Sydøstasien/Hongkong tilfører 643 mio. USD cash mens Carlsberg beholder 75% kontrol — kapital-effektiv ekspansion",
+        "Fortrolig India-IPO-fil (op til 700 mio. USD) til en rimelig 13,4x forward PE kan frigøre yderligere værdi"
+      ],
+      "bear": [
+        "Teknisk overkøbt (Stoch 97,8, Bollinger ved øvre bånd) — kortsigtet pullback-risiko efter rallyet",
+        "Momentum-divergens på -7,5pp indikerer at rallyet allerede taber pusten"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "India IPO-filing er en reel katalysator. Sapporo JV bekræfter capital-light ekspansion. Positionen er nu tæt på target og overkøbt, så stop hæves for at beskytte gevinsten.",
+        "price_target": 970,
+        "stop_loss": 900,
+        "expected_return_pct": 2,
+        "timeframe": "1-2 måneder",
+        "exit_conditions": "Tag profit ved 970. Sælg ved brud under 900 (hævet fra 850 for at beskytte gevinst). Revurder ved negativ udvikling i India-gældstvisten eller aflysning af IPO-planer."
+      }
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 482.6,
+      "confidence": 58,
+      "reasoning": "Position op +17,0%. Indtjeningsvæksten (+40% å/å) til en billig forward PE (12,7x) understøttet af aktivt tilbagekøbsprogram og kapitalnedsættelse holder thesis intakt, men aktien er stadig -3,8% under SMA200 og har endnu ikke bekræftet en fuld trendvending trods det stærke løb. RSI 65/Stoch 84 signalerer kortsigtet overkøbt. Beholder eksisterende stop-loss tæt på nuværende pris givet det uafklarede tekniske billede og det kommende Q-regnskab (2026-08-17).",
+      "bull": [
+        "Indtjeningsvækst +40% å/å til billig forward PE 12,7x, understøttet af aktivt tilbagekøb og kapitalnedsættelse"
+      ],
+      "bear": [
+        "RSI 65/Stoch 84 = kortsigtet overkøbt, og prisen er stadig -3,8% under SMA200 — trenden er ikke fuldt bekræftet endnu",
+        "Q-regnskab 2026-08-17 med risiko for omsætningsskuffelse"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Value/growth-kombination, men rallyet er ekstremt overkøbt og har endnu ikke bekræftet en trendvending (stadig under SMA200). Stop-loss 460 beskytter gevinsten frem mod Q-regnskabet.",
+        "price_target": 502,
+        "stop_loss": 460,
+        "expected_return_pct": 4,
+        "timeframe": "1-2 måneder",
+        "exit_conditions": "Sælg ved brud under 460 (tæt på nuværende pris — overvåg dagligt). Tag profit nær SMA200 (502). Reducer ved Q-rapport med omsætningsskuffelse (2026-08-17)."
+      }
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 294.4,
+      "confidence": 45,
+      "reasoning": "Lille position (3,5% vægt) med beskeden gevinst (+3,4%). Thesis (opjusteret guidance, udvidet buyback, 10-årig Deutsche Telekom-kontrakt) er ikke brudt, men omsætnings- og indtjeningsvækst er begge stort set flade (~0%), så rallyet nær 52-ugers højeste er ikke understøttet af forbedrede fundamentale forhold. RSI 66/Stoch 88 = overkøbt. Holder uændret given lav vægt og intet stop-brud.",
+      "bull": [
+        "Nær 52-ugers højeste i en stærk uptrend, understøttet af igangværende aktietilbagekøb"
+      ],
+      "bear": [
+        "Omsætnings- og indtjeningsvækst er begge stort set flade (~0%) — rallyet er ikke fundamentalt understøttet",
+        "RSI 66/Stoch 88 = overkøbt/strakt setup"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Sjælden trifecta af positive katalysatorer — opjusteret guidance, udvidet buyback og tiårig Deutsche Telekom-kontraktforlængelse — men flad organisk vækst begrænser opsiden herfra.",
+        "price_target": 320,
+        "stop_loss": 265,
+        "expected_return_pct": 9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 265. Tag profit nær 320. Revurder ved skuffende Capital Markets Day-opfølgning eller vedvarende flad omsætningsvækst."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 435.4,
+      "confidence": 55,
+      "reasoning": "Position op +9,8%. FDA-godkendelsen af næste-generations inflatable penile prosthesis er en reel ny vækstdriver, og værdiansættelsen (forward PE 16,5x, 34% rabat til sektor) plus det høje udbytte (5,28%) giver nedadgående beskyttelse. Aktien er dog teknisk strakt (RSI 67/Stoch 89) efter en 15% 20-dages rally, og momentum-divergensen (-9,2pp) tyder på at rallyet taber momentum. Beholder uændret stop/target — thesis er intakt.",
+      "bull": [
+        "FDA-godkendelse af næste-generations inflatable penile prosthesis udvider produktporteføljen",
+        "Forward PE 16,5x er 34% rabat til Healthcare-sektoren, med 5,28% udbytte som nedadgående beskyttelse"
+      ],
+      "bear": [
+        "RSI 67/Stoch 89 = overkøbt/strakt efter en 15% 20-dages rally",
+        "Momentum-divergens (-9,2pp) tyder på at rallyet allerede taber pusten"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Deep-value sundhedsnavn med et frisk regulatorisk katalysator (FDA-godkendelse) og velbegrundet udbytte.",
+        "price_target": 450,
+        "stop_loss": 376,
+        "expected_return_pct": 3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 376. Tag profit nær 450. Revurder hvis SMA200-afstanden fortsat udvides uden fundamental bedring."
+      }
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 197.4,
+      "confidence": 50,
+      "reasoning": "Value/mean-reversion-position, op beskedent +3,4%. Analytikeres opjusterede fair value-estimat (231,40, ca. 17% over nuværende pris) og billig forward PE (13,2x) understøtter fortsat thesis, men prisen er stadig under både SMA50 og SMA200 med negativ MACD, og geopolitisk risiko i Rusland/Østeuropa (jf. Akzo Nobels aktiv-beslaglæggelse) er en sektorbred overhang uden klar nærtstående katalysator. Holder til Q2-regnskab (2026-08-19) som eksplicit revurderingspunkt.",
+      "bull": [
+        "Analytikeres fair value-estimat opjusteret til 231,40 DKK, ca. 17% over nuværende pris (197,4), til forward PE 13,2x"
+      ],
+      "bear": [
+        "Pris under både SMA50 og SMA200 med negativ MACD — nedtrenden er ikke brudt",
+        "Geopolitisk risiko i Rusland/Østeuropa (Akzo Nobel-aktivbeslaglæggelse) er en sektorbred overhang"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Value/mean-reversion-position i en statistisk ekstremt oversolgt aktie der handler med markant rabat til både sektor og analytikeres fair value.",
+        "price_target": 225,
+        "stop_loss": 179,
+        "expected_return_pct": 14,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 179. Tag profit nær 225. Revurder hvis nedtrenden fortsætter uden stabiliseringstegn i de kommende uger, eller ved svag Q2-rapport (2026-08-19) — overvej salg selv uden stop-loss-brud."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 362.4,
+      "confidence": 55,
+      "reasoning": "H1 2026-resultaterne slog forventningerne (11,9 mia. DKK nettoresultat) på stærk kundeaktivitet, udlånsvækst og kreditkvalitet, hvilket fik ledelsen til at opjustere helårsguidance til 23-25 mia. DKK. Ugentlige aktietilbagekøb og et udbytte på 4,64% til en moderat forward PE (11,2x) understøtter fortsat thesis. Teknisk data mangler i dag for denne position, hvilket begrænser vurderingen af om de gode nyheder allerede er prisfastsat — jeg holder position uændret men noterer det som en opfølgningspunkt til næste rutine.",
+      "bull": [
+        "H1 2026-resultater slog forventningerne (11,9 mia. DKK nettoresultat) og ledelsen opjusterede helårsguidance til 23-25 mia. DKK",
+        "Ugentlige aktietilbagekøb og 4,64% udbytte til moderat forward PE 11,2x"
+      ],
+      "bear": [
+        "Manglende teknisk/pris-data i dagens datagrundlag gør det svært at vurdere om de gode nyheder allerede er prisfastsat"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["fundamental"],
+        "thesis": "Danske Bank leverede stærke H1-resultater med opjusteret helårsguidance, understøttet af en sund uptrend. Diversificerer bankeksponering ud over Sydbank.",
+        "price_target": 400,
+        "stop_loss": 350,
+        "expected_return_pct": 10,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 350. Tag profit nær 400. Revurder ved guidance-nedjustering eller brud i kreditkvaliteten."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 807.4,
+      "confidence": 40,
+      "reasoning": "Positionen er op beskedent (+4,6%) men fundamentalerne svækkes: både omsætning (-3,2%) og indtjening (-10%) falder, mens forward PE (19,3x) er markant højere end trailing PE (12,1x) — markedet prisfastsætter allerede en genopretning der endnu ikke er materialiseret. Prismomentum er stadig positivt (over SMA50/SMA200), så stop ikke udløst, men risiko/reward er balanceret snarere end klart favorabel. Holder uændret men skærper overvågningen af fortsat fundamental svækkelse.",
+      "bull": [
+        "Stærkt prismomentum, aktien er +17,2% over SMA50 og +30,4% over SMA200 — vedvarende uptrend"
+      ],
+      "bear": [
+        "Både omsætning (-3,2%) og indtjening (-10%) falder, mens forward PE (19,3x) er højere end trailing PE (12,1x) — markedet prisfastsætter en genopretning der ikke er set endnu"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical"],
+        "thesis": "Pandora er i en robust langsigtet uptrend og tilføjer sektordiversificering til porteføljen (Consumer Cyclical), men fundamentalerne (faldende omsætning/indtjening) svækkes og bør overvåges tæt.",
+        "price_target": 850,
+        "stop_loss": 725,
+        "expected_return_pct": 5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 725. Tag profit nær 850. Revurder hvis SMA50 brydes efter det stærke løb, eller hvis negativt momentum fortsætter over flere uger, eller hvis omsætnings-/indtjeningsfaldet fortsætter uden stabilisering."
+      }
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 165.45,
+      "confidence": 60,
+      "reasoning": "Position -4,7% og handler kun 1,5% over stop-loss (163) — tættest på stop af alle positioner. Den eksplosive indtjeningsvækst (+1516% å/å) og de dybt oversolgte teknikker (RSI 27, Stoch 0) plus AI-drevet elektrificeringsefterspørgsel understøtter fortsat den tidlige turnaround-thesis, men 5-/20-dages momentum er stadig kraftigt negativt (-6,2%/-11,6%) og aktien er i en bekræftet nedtrend der endnu ikke er vendt. Holder til Q-regnskab (2026-08-12) som eksplicit revurderingspunkt, men positionen er tæt på at blive stoppet ud automatisk hvis nedtrenden fortsætter.",
+      "bull": [
+        "Eksplosiv indtjeningsvækst (+1516% å/å) kombineret med dybt oversolgte teknikker (RSI 27, Stoch 0) sætter en stærk mean-reversion/fundamental-kombo op",
+        "AI-drevet elektrificerings- og strømefterspørgsel er en strukturel medvind for Vestas",
+        "Aktivt aktietilbagekøbsprogram signalerer ledelsestillid ved nuværende værdiansættelse (15x forward PE, 17% sektorrabat)"
+      ],
+      "bear": [
+        "5-dages (-6,2%) og 20-dages (-11,6%) momentum er stadig kraftigt negativt — aktien er i en bekræftet nedtrend",
+        "Volumen let over gennemsnit på udsalget (1,21x) tyder på fortsat distributionspres",
+        "Positionen handler kun 1,5% over stop-loss (163) — meget tæt på automatisk exit"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Tidlig fundamental turnaround: eksplosiv indtjeningsvækst (+1516% å/å) og +14,4% omsætningsvækst signalerer at ordreindtag og marginer er ved at vende. Teknisk er aktien endnu ikke bekræftet og handler tæt på stop-loss foran Q-regnskabet.",
+        "price_target": 205,
+        "stop_loss": 163,
+        "expected_return_pct": 24,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 163 (meget tæt på nuværende pris — overvåg dagligt). Tag profit nær 205. Revurder hvis indtjeningsvæksten viser sig enkeltstående (intet fortsat ordreindtag), eller hvis prisen ikke genobre SMA50 inden kvartalsrapport 2026-08-12."
+      }
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 608.0,
+      "confidence": 58,
+      "reasoning": "Position stort set på break-even (+0,16%). Billig værdiansættelse (forward PE 9,97x) kombineret med stærk momentum nær 52-ugers højeste og konsistente ugentlige tilbagekøb plus 4,06% udbytte understøtter thesis. Negativ indtjeningsvækst (-26,8% å/å) trods stærk omsætningsvækst (+65,3%) signalerer marginpres der bør overvåges, men er ikke i sig selv et brud på thesis. Holder uændret til Q-regnskab (2026-08-26).",
+      "bull": [
+        "Nær 52-ugers højeste (-2,25%) i en stærk uptrend til en meget billig forward PE på 9,97x",
+        "Konsistente ugentlige aktietilbagekøb og 4,06% udbytte signalerer ledelsestillid"
+      ],
+      "bear": [
+        "Indtjeningsvækst er negativ (-26,8% å/å) trods stærk omsætningsvækst (+65,3%) — tyder på marginpres"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kombination af billig værdiansættelse og stærk momentum — pris nær 52-ugers højeste med markant omsætningsvækst. Marginpres er en reel risiko, men opvejes af den billige prissætning og den bekræftede uptrend.",
+        "price_target": 680,
+        "stop_loss": 586,
+        "expected_return_pct": 12,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 586. Tag profit nær 680. Revurder hvis marginpresset forværres yderligere uden stabilisering, eller ved svag kvartalsrapport 2026-08-26."
+      }
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 141.25,
+      "confidence": 45,
+      "reasoning": "Position -3,75% og handler kun 0,9% over stop-loss (140) — ekstremt tæt på automatisk exit. Den nye store PPA-aftale med Good Energy og forward PE-rabatten (28% til Utilities-sektoren) understøtter den kontrariske value-thesis, men det 85% indtjeningskollaps å/å og ophøret af S&P-kreditsamarbejdet er reelle strukturelle bekymringer der gør thesis skrøbelig. Da stop-loss endnu ikke er udløst og PPA-aftalen er en reel positiv udvikling, holder jeg positionen, men den er nu så tæt på stop at næste rutine sandsynligvis afgør SELL eller fortsat HOLD.",
+      "bull": [
+        "Nyt stort power purchase agreement med Good Energy signalerer fortsat kommerciel momentum i kerneforretningen for havvind",
+        "Forward PE 14,4x er 28% rabat til Utilities-sektoren, og omsætningen vokser stadig +33% å/å trods indtjeningspres"
+      ],
+      "bear": [
+        "Indtjeningen er kollapset -85% å/å, hvilket afspejler dybe strukturelle profitabilitetsproblemer",
+        "Ophørt samarbejde med S&P om kreditrating er en governance/transparens-bekymring selv med fastholdt guidance",
+        "Positionen handler kun 0,9% over stop-loss (140) — ekstremt tæt på automatisk exit"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Turnaround/value-position i en dybt nedsolgt Utilities-navn. Ny PPA-aftale og en 28% forward PE-rabat til sektoren understøtter bundfindning over SMA200, men positionen er nu ekstremt tæt på stop-loss og thesis er skrøbelig efter det store indtjeningskollaps.",
+        "price_target": 175,
+        "stop_loss": 140,
+        "expected_return_pct": 24,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 140 (meget tæt på nuværende pris — overvåg dagligt). Tag profit nær 175. Revurder ved yderligere nedskrivninger på havvindprojekter, forværret kreditsituation, eller svag Q2-rapport (2026-08-13)."
+      }
+    }
+  ]
+}
