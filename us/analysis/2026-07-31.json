@@ -1,0 +1,433 @@
+{
+  "date": "2026-07-31",
+  "stocks": {
+    "LII": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Extremely oversold (RSI 18.3, stoch 2.9) — technical bounce candidate",
+        "Commercial HVAC segment still growing even as residential softens",
+        "Near 52-week low, so much bad news may already be priced in"
+      ],
+      "bear": [
+        "2026 EPS guidance cut on residential weakness, stock down ~22% in two days",
+        "Broke below both SMA50 (-20.75%) and SMA200 (-17.97%) — trend damage, not just a dip",
+        "Missed Wall Street revenue expectations despite modest 3% sales growth"
+      ],
+      "summary": "Guidance cut and a residential-HVAC demand miss triggered a two-day ~22% crash; the stock is deeply oversold but the trend break is fundamental, not just sentiment.",
+      "key_risk": "Further residential weakness extends the guidance cut into a multi-quarter downgrade cycle.",
+      "screener_score": 77.0
+    },
+    "BLDR": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Down 56% from 52-week high — much of the housing-weakness bad news is arguably in the price",
+        "Small 1-day bounce (+0.65%) hints at stabilization attempts near the low"
+      ],
+      "bear": [
+        "Q2 sales and earnings both missed, with a lower 2026 outlook",
+        "Sales fell 8.8% YoY as housing demand keeps weakening",
+        "Deep downtrend: -13% below SMA50, -31% below SMA200"
+      ],
+      "summary": "Builders FirstSource missed on both lines and cut its outlook as housing demand keeps deteriorating; the downtrend is intact despite a battered valuation.",
+      "key_risk": "A prolonged housing slowdown keeps pressuring volumes and pricing well into 2026.",
+      "screener_score": 73.0
+    },
+    "COIN": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Analysts largely maintain buy ratings even after three straight earnings misses",
+        "Diversification into stablecoins and derivatives reduces pure spot-trading dependence",
+        "-64% from 52-week high leaves room for a sharp mean-reversion if crypto stabilizes"
+      ],
+      "bear": [
+        "Third consecutive quarterly loss, wider than expected",
+        "Stock down 10.6% today alone as Bitcoin declines dragged crypto sentiment",
+        "Below both SMA50 (-11%) and SMA200 (-31%), no trend support nearby"
+      ],
+      "summary": "Coinbase posted its third straight quarterly loss as weak crypto markets bite; analysts stay constructive long-term but near-term momentum is clearly negative.",
+      "key_risk": "Continued Bitcoin/crypto weakness produces a fourth consecutive loss quarter.",
+      "screener_score": 72.0
+    },
+    "MLM": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Record Q2 revenue and adjusted EBITDA, full-year guidance raised",
+        "Record aggregates shipments on resilient infrastructure demand",
+        "Stochastic at 2.6 signals a technically stretched, potentially exhausted selloff"
+      ],
+      "bear": [
+        "Stock still fell despite the beat — market questioning the sustainability of the raise",
+        "Trading 8.6% below SMA50 and 14% below SMA200; downtrend not yet broken"
+      ],
+      "summary": "Record results and raised guidance haven't stopped the stock from falling with the broader materials/construction group — a fundamentals-vs-tape disconnect that favors patient buyers.",
+      "key_risk": "Sector-wide de-rating in construction materials continues regardless of company-specific results.",
+      "screener_score": 71.0
+    },
+    "FICO": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Q3 revenue up 26% YoY, non-GAAP EPS up 42%, FY26 outlook raised",
+        "Scores segment (mortgage pricing) grew 41%, the core moat is intact",
+        "MACD still positive despite the price drop, an early divergence signal"
+      ],
+      "bear": [
+        "Stock had its worst drop in 6 years on softer-than-expected forward guidance",
+        "43.8% below 52-week high, valuation multiple clearly being compressed",
+        "Trading below both SMA50 and SMA200"
+      ],
+      "summary": "FICO beat and raised, yet guidance nuances triggered its steepest drop in six years — a valuation reset on an otherwise-strong quarter for a high-margin scoring monopoly.",
+      "key_risk": "Software segment softness (flagged in the guidance) spreads beyond Scores and slows overall growth.",
+      "screener_score": 70.0
+    },
+    "GDDY": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "Q2 revenue still grew 7% YoY with rising ARPU and free cash flow",
+        "Airo AI product adoption reportedly accelerating per management commentary"
+      ],
+      "bear": [
+        "Stock plunged ~17-21% today on a disappointing revenue outlook",
+        "Slower AI-tool adoption and weaker customer acquisition cited as the cause",
+        "Below both SMA50 and SMA200, momentum decisively negative today"
+      ],
+      "summary": "A single-day ~17-21% crash on soft forward revenue guidance shows the market losing confidence in GoDaddy's AI/Airo growth narrative despite an in-line quarter.",
+      "key_risk": "Customer acquisition weakness proves structural rather than one quarter's noise.",
+      "screener_score": 68.0
+    },
+    "AMZN": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 8,
+      "bull": [
+        "Stock surged 15.3% today on strong earnings and AI-driven cloud/retail momentum",
+        "Only 2.5% below 52-week high, clearly leading the market's AI trade",
+        "Price broke above the upper Bollinger Band (bb_position 119.9) confirming breakout strength",
+        "Well above both SMA50 (+10%) and SMA200 (+15.6%) with RSI 64, room before overbought"
+      ],
+      "bear": [
+        "One-day +15% move is extended short-term and vulnerable to profit-taking",
+        "Elevated volume (2.6x) on the spike raises the bar for follow-through"
+      ],
+      "summary": "Amazon's earnings beat sparked a powerful breakout, diverging sharply from Apple's weakness within Mag7 and confirming AI-monetization strength across cloud and retail.",
+      "key_risk": "A short-term pullback after the outsized single-day gain, though the underlying trend looks intact.",
+      "screener_score": 65.0
+    },
+    "CRH": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Record Q2 2026 results — revenue, EBITDA, margins and EPS all rising",
+        "Infrastructure demand and pricing continue to fuel growth",
+        "Stochastic at 7.4 signals a heavily oversold, technically stretched condition"
+      ],
+      "bear": [
+        "Residential activity headwinds partially offset the infrastructure strength",
+        "Trading 9.4% below SMA50 and 16% below SMA200 — trend still down despite the beat"
+      ],
+      "summary": "Like peer Martin Marietta, CRH posted record results but remains caught in a sector-wide construction-materials de-rating that has decoupled price from fundamentals.",
+      "key_risk": "Softer residential construction demand deepens even as infrastructure holds up.",
+      "screener_score": 64.0
+    },
+    "APP": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "Wedbush expected Q2 results to top guidance on continued ad-platform strength",
+        "5-day momentum has stabilized (+1.0%) after the sharp 20-day decline",
+        "Deeply oversold (RSI 32.8, stoch 21.4) with large positive momentum divergence (25.9)"
+      ],
+      "bear": [
+        "Down nearly 25% over 20 days, named among the worst Nasdaq-100 performers in 2026",
+        "MACD deeply negative (-26.7), confirming a still-intact downtrend",
+        "20% below SMA50 and 24% below SMA200 with no confirmed post-earnings catalyst in the news flow yet"
+      ],
+      "summary": "AppLovin has been caught in a broad AI-ad-tech de-rating with no confirmed earnings catalyst yet in view, leaving the technical breakdown as the dominant signal despite pre-earnings optimism.",
+      "key_risk": "A confirmed earnings miss or continued multiple compression extends the 20-day downtrend.",
+      "screener_score": 63.0
+    },
+    "CTVA": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Raised full-year 2026 outlook on robust seed growth and innovation",
+        "Still trading above SMA200 (+5%), longer-term uptrend structurally intact",
+        "Stochastic near zero (0.2) signals an extremely stretched short-term selloff",
+        "Corteva split/separation plan remains on track, a value-unlock catalyst"
+      ],
+      "bear": [
+        "Stock fell nearly 12% today despite the guidance raise — market reacting to something beyond the headline",
+        "Fertilizer/fuel cost spikes pressuring South American farmer customers, a demand risk",
+        "Separation costs are weighing on near-term profitability"
+      ],
+      "summary": "A raised outlook and record first-half performance were overshadowed by a sharp single-day drop, likely tied to input-cost pressure on ag customers and separation costs — a genuine good-news/bad-price disconnect.",
+      "key_risk": "Rising fertilizer and fuel costs curb farmer demand for Corteva's seed and crop-protection products.",
+      "screener_score": 62.0
+    },
+    "BAX": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Q2 organic revenue beat by 5%, broad-based segment growth, 2026 outlook raised",
+        "Stock up ~17% on the print, momentum confirmed by a +16.8% 5-day move",
+        "Well above both SMA50 (+23%) and SMA200 (+34%), a clear trend reversal underway"
+      ],
+      "bear": [
+        "Adjusted EPS still fell 5% YoY — margin pressure not yet resolved",
+        "RSI 68 approaching overbought after the sharp rally, risk of near-term pause",
+        "Analysts remain broadly neutral despite the beat"
+      ],
+      "summary": "A scout candidate turning into a genuine turnaround story: broad revenue beat and raised guidance drove a double-digit rally, though margin pressure keeps analysts cautious.",
+      "key_risk": "Margin contraction persists even as top-line growth improves, capping earnings upside.",
+      "screener_score": 32.0
+    },
+    "WTW": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Q2 organic growth of 5% with 100bp margin expansion and 17% EPS growth",
+        "New 'Propel' AI initiative targets $400M savings and 30% operating margin by 2028",
+        "Only 3.9% below 52-week high, strong uptrend confirmed (+22% above SMA50)"
+      ],
+      "bear": [
+        "RSI 76 and stochastic 87.8 signal the stock is overbought after a 17% 20-day rally",
+        "Execution risk on the multi-year Propel margin-expansion targets"
+      ],
+      "summary": "A scout candidate showing strong, broad-based growth and a credible margin-expansion roadmap, though the stock is technically overbought after a sharp run to near 52-week highs.",
+      "key_risk": "A near-term pullback from overbought levels even if the underlying growth story stays intact.",
+      "screener_score": 47.0
+    },
+    "PYPL": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Up 25.8% over 20 days on new-CEO optimism around fixing branded checkout",
+        "Large buyback program signals management conviction in undervaluation",
+        "Still 27% below 52-week high, leaving room to re-rate if execution improves"
+      ],
+      "bear": [
+        "RSI 80.8 and stochastic 82.7 — extremely overbought after the rally",
+        "5-day momentum (+1.9%) has stalled sharply versus 20-day (+25.8%), a clear deceleration signal",
+        "The $17B buyback is described as a 'losing bet' so far amid competitive pressure from Visa"
+      ],
+      "summary": "PayPal's sharp rally has stalled just as it becomes technically overbought, and the buyback's poor track record so far tempers the new-CEO turnaround narrative.",
+      "key_risk": "Overbought exhaustion triggers a give-back of the 20-day rally without a fresh catalyst.",
+      "screener_score": 15.9
+    },
+    "CSGP": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "RSI neutral at 50, price has stabilized near the recent range rather than making new lows",
+        "Extreme -70% drawdown from 52-week high may already discount much bad news"
+      ],
+      "bear": [
+        "CFO departure alongside soft guidance signals leadership/execution uncertainty",
+        "US multifamily rent growth has slowed to near zero, a direct headwind to CoStar's core real-estate data business",
+        "Still 41% below SMA200 — no confirmed trend recovery"
+      ],
+      "summary": "A CFO exit and soft guidance layered on top of a slowing multifamily rental market are real red flags for a current holding, even though the stock has stopped making fresh lows.",
+      "key_risk": "Leadership transition disrupts execution just as the core commercial/multifamily real-estate market softens further.",
+      "screener_score": 36.2
+    },
+    "FLEX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Shares jumped ~7.9% on planned SpinCo (cloud/power infrastructure) leadership announcement",
+        "Q1 results beat with fiscal 2027 outlook raised on AI infrastructure demand",
+        "Well above SMA200 (+29%), the longer-term uptrend remains intact"
+      ],
+      "bear": [
+        "Still down 16.9% over 20 days and 18% below SMA50 — near-term momentum weak",
+        "Spin-off execution risk as the company splits into two entities"
+      ],
+      "summary": "Flex's AI-infrastructure and data-center power/cooling exposure, plus a value-unlocking spin-off, are driving renewed buying interest despite a rough prior month for the stock.",
+      "key_risk": "Execution missteps in separating the SpinCo business disrupt the near-term growth narrative.",
+      "screener_score": 35.0
+    },
+    "GLW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "AI data-center optical demand accelerating, with a $10B photonics goal and US expansion",
+        "DCF-based estimates suggest shares may be ~34% undervalued after the selloff",
+        "RSI 28.6 signals a heavily oversold condition, and price is still above SMA200 (+2.4%)"
+      ],
+      "bear": [
+        "Soft Q3 guidance triggered a steep -29.75% 20-day decline",
+        "Premium valuation leaves little room for execution misses on the AI optics/solar ramp",
+        "MACD strongly negative (-16.1), confirming near-term downtrend"
+      ],
+      "summary": "A soft guidance print sparked a sharp selloff in an otherwise-intact AI-optics growth story; value metrics look attractive but the stock must prove it can execute on its own ambitious targets.",
+      "key_risk": "The solar segment or AI-optics ramp fails to convert booked demand into profitable revenue on schedule.",
+      "screener_score": 54.3
+    },
+    "MMM": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Cited among 'blue-chip stocks to buy' after strong Q2 2026 results",
+        "New Microsoft Azure AI data-center optical technology partnership announced",
+        "Only 4.7% below 52-week high, steady uptrend confirmed above both SMA50 and SMA200"
+      ],
+      "bear": [
+        "RSI 72.5 and stochastic 70.3 signal the stock is approaching overbought",
+        "Low volume ratio (0.5) on the recent move suggests weak conviction behind the rally"
+      ],
+      "summary": "3M continues a steady, well-supported uptrend near 52-week highs, reinforced by a fresh AI data-center partnership with Microsoft, though the move lacks strong volume confirmation.",
+      "key_risk": "A low-conviction rally stalls or reverses without a fresh volume-backed catalyst.",
+      "screener_score": 21.0
+    },
+    "MRVL": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Rebounding today (+2.3%) alongside a broad semiconductor/AI chip sector recovery",
+        "Still 39% above SMA200, the longer secular AI-chip uptrend remains structurally intact",
+        "Large positive momentum divergence (20.1) suggests the sharp correction may be stabilizing"
+      ],
+      "bear": [
+        "Revenue increasingly concentrated in data centers (~75%), raising customer/cyclical concentration risk",
+        "Down 23.5% over 20 days with MACD deeply negative (-17.8), a real trend break",
+        "21.7% below SMA50 — short-term momentum still clearly negative"
+      ],
+      "summary": "Marvell is correcting sharply within a much larger AI-chip uptrend, rebounding today with peers, but rising revenue concentration in data centers is a genuine overhang for a current holding.",
+      "key_risk": "A slowdown in hyperscaler data-center capex hits a business increasingly dependent on that single end market.",
+      "screener_score": 38.0
+    },
+    "NDAQ": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Q2 revenue beat, up 14.9% YoY, driven by AI adoption, IPO momentum and platform expansion",
+        "Only 6.8% below 52-week high with a steady uptrend above both SMA50 and SMA200",
+        "Positive sector commentary versus exchange peers (CME, ICE, CBOE) on rising trading activity"
+      ],
+      "bear": [
+        "Momentum divergence (-8.98) shows the 5-day move decelerating versus the 20-day trend",
+        "Valuation has run up alongside the broader exchange-sector rally, less margin of safety"
+      ],
+      "summary": "Nasdaq's structural growth drivers — IPO activity, tech investment, AI adoption — continue delivering double-digit revenue growth and support the steady uptrend, even as short-term momentum cools slightly.",
+      "key_risk": "A slowdown in IPO/listing activity or trading volumes removes a key growth driver.",
+      "screener_score": 17.2
+    },
+    "NOW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Sharp 5-day bounce (+12.6%) reclaiming the SMA50 level",
+        "Broader enterprise AI/cloud spending optimism (IBM, Salesforce, Datadog commentary) is a sector tailwind",
+        "RSI neutral at 50, no longer technically oversold"
+      ],
+      "bear": [
+        "Still 42.9% below 52-week high and below SMA200 (-11%) — the primary trend remains down",
+        "No company-specific catalyst confirmed in the news flow, the bounce looks sector-driven rather than NOW-specific"
+      ],
+      "summary": "ServiceNow's recent bounce rides a broader enterprise-AI-spending wave rather than a confirmed company-specific catalyst, leaving it unclear whether this is a trend change or a bear-market rally.",
+      "key_risk": "The bounce fades without a company-specific catalyst, resuming the longer downtrend below SMA200.",
+      "screener_score": 38.2
+    },
+    "NUE": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Record steel mill shipments and major growth projects underway",
+        "Resilient second-half 2026 demand outlook cited by management",
+        "Outperforming peer Albemarle, only 4.8% below 52-week high, well above SMA200 (+35%)"
+      ],
+      "bear": [
+        "RSI 71.1 and stochastic 68.2 signal overbought conditions near highs",
+        "Low volume ratio (0.52) raises questions about conviction behind the rally",
+        "Momentum divergence (-12.6) shows the 5-day pace cooling versus the 20-day trend"
+      ],
+      "summary": "Nucor's record shipments and resilient demand outlook support a genuine fundamental uptrend, though the move near 52-week highs lacks strong volume confirmation and is due for a pause.",
+      "key_risk": "Weak volume conviction near overbought levels precedes a near-term pullback despite solid fundamentals.",
+      "screener_score": 26.0
+    },
+    "TDG": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Continued disciplined bolt-on M&A — $1.07B Prince & Izant acquisition",
+        "Fair value estimates climbing per value-investor commentary (Vulcan Value Partners)",
+        "Aerospace aftermarket moat business with consistent execution"
+      ],
+      "bear": [
+        "Aerospace-wide supply-chain bottlenecks continue limiting new aircraft deliveries",
+        "Stock is range-bound (roughly flat vs SMA50/SMA200), no clear breakout catalyst yet",
+        "Still 17% below 52-week high"
+      ],
+      "summary": "TransDigm keeps compounding through disciplined bolt-on acquisitions and rising fair-value estimates from value investors, even as the stock consolidates and the sector wrestles with supply-chain constraints.",
+      "key_risk": "Persistent aerospace supply-chain bottlenecks delay the aftermarket/OEM demand recovery longer than expected.",
+      "screener_score": 16.0
+    },
+    "VRTX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "$10B Crinetics acquisition expands the endocrine/pipeline franchise meaningfully",
+        "Pipeline-expanding AbCellera collaboration on multispecific T-cell engagers",
+        "Still above both SMA50 (+1.9%) and SMA200 (+5.3%) despite the pullback — trend structurally intact",
+        "One analysis flags shares as a bargain versus a five-year 145% return track record"
+      ],
+      "bear": [
+        "Large $10B acquisition carries integration and capital-allocation risk",
+        "Q2 earnings preview creates near-term event risk before the print"
+      ],
+      "summary": "Vertex's aggressive $10B Crinetics deal and continued pipeline expansion keep the long-term growth story intact, with the stock still holding above its key moving averages despite a modest pullback.",
+      "key_risk": "Overpaying or slow integration of the Crinetics acquisition dilutes returns on invested capital.",
+      "screener_score": 9.2
+    }
+  }
+}
