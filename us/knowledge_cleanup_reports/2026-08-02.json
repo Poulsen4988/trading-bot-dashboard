@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-02",
+  "files_reviewed": 145,
+  "files_cleaned": 2,
+  "total_items_removed": 2,
+  "per_file": [
+    {
+      "path": "us/knowledge/MRVL.json",
+      "symbol": "MRVL",
+      "items_before": 132,
+      "items_after": 131,
+      "removed": [
+        {
+          "type": "low_value",
+          "title": "Chip Stocks Are Falling: Here Are 2 to Buy on the Dip",
+          "date": "2026-07-31",
+          "reason": "Generic listicle title, not MRVL-specific; summary only 23 chars ('Focus on the long game.')"
+        }
+      ]
+    },
+    {
+      "path": "us/knowledge/SNDK.json",
+      "symbol": "SNDK",
+      "items_before": 90,
+      "items_after": 89,
+      "removed": [
+        {
+          "type": "low_value",
+          "title": "Semiconductor stocks are going up in smoke. But the S&P 500 is holding strong.",
+          "date": "2026-07-29",
+          "reason": "Generic sector-wide commentary, not SNDK-specific; summary only 24 chars ('Score one for the bulls.')"
+        }
+      ]
+    }
+  ],
+  "summary": "Gennemgik 145 filer i us/knowledge/ (222 news-items i filer med kandidater). Fandt kun 2 low-value kandidater - ingen duplicate_url, duplicate_title eller stale-kandidater. Begge fjernede items var generiske, ikke-selskabsspecifikke markedskommentar-artikler med trivielle summaries under 30 tegn. Ingen earnings, M&A, kapitalstruktur, ledelsesskift, FDA-resultater, regulatoriske godkendelser eller andet materielt/langsigtet indhold blev fjernet eller berørt."
+}
