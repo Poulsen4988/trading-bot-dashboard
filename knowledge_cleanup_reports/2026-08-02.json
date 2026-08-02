@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-02",
+  "files_reviewed": 25,
+  "files_cleaned": 1,
+  "total_items_removed": 2,
+  "per_file": [
+    {
+      "path": "knowledge/TRYG_xcse.json",
+      "removed_count": 2,
+      "kept_count": 3,
+      "removed_items": [
+        {
+          "title": "Storaktionærmeddelelse",
+          "date": "2026-07-23",
+          "reason": "low_value"
+        },
+        {
+          "title": "Storkationærmeddelelse",
+          "date": "2026-07-16",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "path": "knowledge/NOVOb_xcse.json",
+      "reason": "file_too_large_for_channel",
+      "detail": "4 duplicate_url candidates identified and confirmed as safe near-duplicate wire-service reposts (same URL, near-identical headline, same date, first occurrence would be kept): index 13 (dup of 6, 2026-07-31, WSJ 'Novo Nordisk Shares Drop After Drug Candidate Fails in Trial/Cardiovascular Trial'), index 38 and 40 (dup of 30, 2026-07-24, Barron's Eli Lilly/Novo lawsuit coverage), index 146 (dup of 138, 2026-07-07, IBD Agios profit-taking piece). Not written this run: the file is ~2255 lines / ~160KB (321 news items), and the approved write channel (mcp__github__create_or_update_file / push_files) requires the full file content as a single literal parameter with no partial-update support. Transcribing the entire file through this interface for a 4-item removal carried disproportionate cost and risk of introducing a transcription error into a large, high-value knowledge file, so it was skipped per the conservative-when-in-doubt principle. No stale or other low_value candidates were found in this file worth removing (the one low_value hit, index 0, is a specific ZEUS phase 3 trial update and was kept). Recommend a dedicated follow-up pass scoped to just this file."
+    }
+  ],
+  "summary": "Gennemgik alle 25 knowledge/*.json filer. Ingen stale-kandidater fundet (alt indhold er under 180 dage gammelt). De fleste low_value-kandidater (kort summary) havde specifikke, materielle titler (earnings, FDA-godkendelser, ledelsesskift, prognose-opjusteringer, kontraktvind) og blev bevaret jf. konservativ tilgang. Eneste reelle fjernelse: TRYG_xcse.json — 2 generiske 'storaktionærmeddelelse'-poster hvor både titel og summary var indholdsløse pladsholdere uden konkret information. NOVOb_xcse.json havde 4 bekræftede duplicate_url-kandidater (nær-identiske genudgivelser af samme nyhedshistorie) som IKKE blev fjernet i denne kørsel pga. filens størrelse (se 'deferred' — kræver en dedikeret opfølgning)."
+}
