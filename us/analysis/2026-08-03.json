@@ -1,0 +1,206 @@
+{
+  "date": "2026-08-03",
+  "stocks": {
+    "FICO": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Q3 Scores revenue grew 26% YoY, beating estimates with a raised FY26 outlook",
+               "Analyst price targets ($1,250-$1,639) remain well above the current $1,045 price"],
+      "bear": ["Stock fell 17% in a single day on soft forward guidance and keeps sliding (-6.9% today)",
+               "Deeply broken technicals: RSI 36.6, price below both SMA50 and SMA200"],
+      "summary": "Strong Scores revenue growth is being overwhelmed by a guidance-driven crash and broken technicals, leaving the setup too mixed for a directional call.",
+      "key_risk": "Further guidance cuts or continued technical breakdown before the sell-off finds a floor.",
+      "screener_score": 70.0
+    },
+    "LII": {
+      "tier": "deep", "scout": false, "verdict": "BEAR", "confidence": 6,
+      "bull": ["RSI 21.1 is deeply oversold, raising bounce odds", "Commercial segment still posting gains"],
+      "bear": ["Cut FY26 EPS guidance to $23-24 on residential weakness, stock down 22.4% on the news",
+               "Price remains well below both SMA50 (-16.9%) and SMA200 (-14.1%)"],
+      "summary": "A guidance cut exposed real residential-demand weakness and the downtrend is intact despite an oversold bounce risk.",
+      "key_risk": "Residential HVAC demand stays soft into next quarter, forcing another guidance reset.",
+      "screener_score": 64.0
+    },
+    "ON": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Q2 beat on EPS ($0.74 vs $0.71) and revenue, with Q3 guidance above consensus",
+               "AI data-center revenue is now its fastest-growing segment"],
+      "bear": ["Still 23% below its 50-day average and broader semis under pressure from China competition fears"],
+      "summary": "A clean earnings beat and raised guidance, led by AI data-center growth, argue for a rebound from oversold levels.",
+      "key_risk": "Auto-chip demand (its core business) stays weak longer than the AI segment can offset.",
+      "screener_score": 64.0
+    },
+    "MAR": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Q2 RevPAR +5%, raised full-year guidance, new co-brand credit card deals worth $100-125M/yr by 2028"],
+      "bear": ["Outlook came in light as Middle East conflict curbs international travel demand",
+               "Stock fell 6.97% today and broke below technical support"],
+      "summary": "Solid U.S. lodging fundamentals are being offset by geopolitical drag on international travel, leaving no clear edge either way.",
+      "key_risk": "Middle East conflict escalates further and extends the hit to international RevPAR.",
+      "screener_score": 62.0
+    },
+    "ORCL": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Riding a sector-wide cloud-AI rally with a $638B backlog and today's cloud infrastructure optimism (+9.2%)",
+               "Momentum has clearly turned, with 5-day momentum +18.3% vs 20-day -1.0%"],
+      "bear": ["Still down 58.5% from its 52-week high and carrying AI-capex debt concerns; short-term technicals look stretched (stoch 95.9)"],
+      "summary": "A sharp momentum reversal on cloud-AI optimism gives Oracle room to keep recovering, though the bounce is already stretched short-term.",
+      "key_risk": "AI infrastructure spending fails to convert into earnings, reviving the 'too much AI debt' narrative.",
+      "screener_score": 62.0
+    },
+    "COIN": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Circle stablecoin partnership renewing on unchanged terms provides revenue stability",
+               "Analysts turning cautious on valuation still recommend buying the dip"],
+      "bear": ["Missed earnings again, extending a 63.6% drawdown from the 52-week high"],
+      "summary": "Another earnings miss keeps the trend negative even as partnership stability and analyst dip-buying calls offer some support.",
+      "key_risk": "Crypto trading volumes stay depressed, pressuring the next quarter's earnings again.",
+      "screener_score": 60.0
+    },
+    "LHX": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Q2 EPS beat ($3.13 vs $2.80 est.) and signed 7-year PAC-3/THAAD propulsion deals",
+               "Wall Street calling it 'the most attractive defense stock right now'"],
+      "bear": ["Stock keeps falling (-8.4% 5d) despite the beat, a disconnect that could persist if the market stays risk-off on defense names"],
+      "summary": "Fundamentals and new contract wins are clearly outrunning the stock price, a gap that looks like an opportunity if sentiment normalizes.",
+      "key_risk": "Defense budget or program-timing headlines keep suppressing the stock regardless of results.",
+      "screener_score": 60.0
+    },
+    "AXON": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 5,
+      "bull": ["Sharp momentum turn into Q2 earnings (+9.1% today, +9.6% 5d) with consensus expecting a beat",
+               "Consistent revenue growth across devices and software"],
+      "bear": ["Q2 results not yet reported — earnings-reaction risk is binary and the run-up raises the bar"],
+      "summary": "Momentum is strong heading into an expected earnings beat, but the pre-earnings setup cuts both ways.",
+      "key_risk": "Earnings miss expectations after this rally, triggering a sharp reversal.",
+      "screener_score": 56.0
+    },
+    "CHRW": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 5,
+      "bull": ["Q2 earnings beat on pricing, market-share gains and Lean AI productivity despite a weak freight market",
+               "RSI 21.5 is the most oversold name in the set, a strong mean-reversion signal"],
+      "bear": ["New $514M ESOP share issuance creates near-term dilution overhang"],
+      "summary": "An earnings beat in a weak freight market plus extreme oversold conditions make this a mean-reversion candidate.",
+      "key_risk": "Freight demand keeps deteriorating faster than pricing/AI productivity gains can offset.",
+      "screener_score": 56.0
+    },
+    "GDDY": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Q2 beat on earnings and revenue with accelerating Airo AI-tool adoption", "Bouncing +6.9% today"],
+      "bear": ["Plunged 21.1% on 7/31 after weak forward revenue guidance; Wedbush flags rising risk from the shift to agentic web building"],
+      "summary": "A solid quarter is offset by a guidance-driven selloff and a real structural question about AI disrupting GoDaddy's core business.",
+      "key_risk": "Agentic/AI web-building tools erode GoDaddy's core small-business customer base faster than Airo can offset.",
+      "screener_score": 56.0
+    },
+    "ADM": {
+      "tier": "deep", "scout": true, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Price sits above both SMA50 and SMA200, a longer-term uptrend intact despite the pullback",
+               "New oilseed crush capacity expansion (~700k tons by 2028-29) supports future growth"],
+      "bear": ["Stock fell 7.7% on the capex/COO-change news, and Q3 earnings tomorrow add binary risk"],
+      "summary": "Long-term trend and a capacity-expansion story are constructive, but tomorrow's earnings print is the swing factor.",
+      "key_risk": "Q3 earnings tomorrow disappoint or capex plans raise near-term margin concerns.",
+      "screener_score": 33.2
+    },
+    "MU": {
+      "tier": "deep", "scout": true, "verdict": "BULL", "confidence": 6,
+      "bull": ["Price is still 59% above its 200-day average, a powerful structural AI-memory uptrend",
+               "Bounced back Monday despite China competition headlines, showing resilience"],
+      "bear": ["China's CXMT is ramping fast and Apple is reportedly testing its chips, a real customer-diversification risk"],
+      "summary": "The AI memory demand supercycle remains intact and the pullback looks like an entry point despite rising Chinese competition noise.",
+      "key_risk": "Chinese memory competitors win meaningful share from key customers like Apple faster than expected.",
+      "screener_score": 33.2
+    },
+    "PG": {
+      "tier": "deep", "scout": true, "verdict": "NEUTRAL", "confidence": 3,
+      "bull": ["Dividend King with a 3% yield, trading only 5% above its 52-week low"],
+      "bear": ["Guided below estimates and just lost a senior exec to a competitor (Diageo)"],
+      "summary": "A defensive, cheap dividend name with no near-term catalyst strong enough to justify a directional call.",
+      "key_risk": "Guidance keeps slipping as consumer staples demand stays soft.",
+      "screener_score": 33.2
+    },
+    "AMZN": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Surged to near record highs (+22.75% 5d) on a strong earnings/AI-cloud beat",
+               "Momentum is unambiguously positive across all timeframes"],
+      "bear": ["Stochastic at 94.9 and RSI 68.5 signal an overbought, stretched short-term setup; AI capex is pressuring free cash flow, a metric the market is watching closely"],
+      "summary": "Powerful post-earnings momentum on AI-cloud strength is real, but the rally is stretched and vulnerable to a near-term pullback.",
+      "key_risk": "Free cash flow concerns around AI capex spending resurface and cap further upside.",
+      "screener_score": 55.0
+    },
+    "FLEX": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Revenue grew 20.6% YoY on AI data-center infrastructure demand, with guidance raised",
+               "Planned SpinCo separation of the cloud/power infrastructure business could unlock value"],
+      "bear": ["Market reacted cautiously despite the beat and shares are still down 15.3% over 20 days"],
+      "summary": "Strong AI-infrastructure growth and a value-unlocking spinoff plan support upside despite a muted market reaction so far.",
+      "key_risk": "SpinCo execution stumbles or AI data-center capex growth slows.",
+      "screener_score": 13.8
+    },
+    "GLW": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Truist upgraded to Buy after the 45% pullback, citing AI/data-center optical demand plus solar and auto growth (PT $175, ~19% upside)",
+               "Bouncing +6.1% today from oversold levels (RSI 31.2)"],
+      "bear": ["Still deeply broken technically, 19% below its 50-day average"],
+      "summary": "A fresh analyst upgrade tied to AI-driven optical demand plus an oversold bounce make this an attractive recovery candidate.",
+      "key_risk": "AI data-center optical demand growth disappoints relative to the bullish analyst thesis.",
+      "screener_score": 46.5
+    },
+    "MMM": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Steady uptrend near 52-week highs, named among 'buy after strong Q2' blue chips"],
+      "bear": ["RSI 75.1 is significantly overbought and a senior insider just sold 15% of his direct stake"],
+      "summary": "The uptrend is real but the stock looks extended after a strong run, with insider selling adding a caution flag.",
+      "key_risk": "Overbought conditions trigger a mean-reversion pullback from highs.",
+      "screener_score": 23.4
+    },
+    "MRVL": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 5,
+      "bull": ["Announced a $250M India investment to expand AI chip R&D", "Still 43% above its 200-day average, a strong longer-term uptrend, and recovering with peers (SK Hynix, Samsung)"],
+      "bear": ["China memory competition overhang (CXMT ramp) is pressuring the whole sector"],
+      "summary": "New AI R&D investment and a sector-wide chip recovery support a bullish lean despite the lingering China competition risk.",
+      "key_risk": "Chinese memory competitors erode AI chip market share faster than expected.",
+      "screener_score": 32.7
+    },
+    "NDAQ": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 5,
+      "bull": ["Simply Wall St estimates the stock is ~14% undervalued after Q2 results, dividend and buyback completion",
+               "Resolved a multi-year patent dispute with Miami International, removing a legal overhang"],
+      "bear": ["RSI 66 is approaching overbought after a steady climb"],
+      "summary": "A resolved legal overhang plus an analyst undervaluation call support further upside in an already steady uptrend.",
+      "key_risk": "Valuation catch-up stalls if RSI reaches overbought and momentum cools.",
+      "screener_score": 11.2
+    },
+    "NOW": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 5,
+      "bull": ["Stock rallied on planned job cuts (read as margin-positive), and software is catching a sector-rotation tailwind out of semis"],
+      "bear": ["Still 41% below its 52-week high, and the rotation-driven rally could reverse quickly if sentiment shifts back"],
+      "summary": "A margin-efficiency signal plus a software-sector rotation tailwind support continued near-term strength.",
+      "key_risk": "Sector rotation reverses back into semiconductors, removing the tailwind.",
+      "screener_score": 39.3
+    },
+    "NUE": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Strong structural tailwind from trade-policy/tariff dynamics benefiting domestic steel", "Powerful uptrend, price 36.7% above its 200-day average"],
+      "bear": ["RSI 72.4 is overbought with negative momentum divergence, raising pullback risk near 52-week highs"],
+      "summary": "The trade-policy tailwind and trend strength are real, but the stock looks overbought after an extended run.",
+      "key_risk": "Overbought conditions trigger a near-term pullback from 52-week highs.",
+      "screener_score": 35.7
+    },
+    "TDG": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 5,
+      "bull": ["Active bolt-on M&A ($1.07B Prince & Izant deal) and rising fair-value estimates from institutional holders",
+               "Aerospace aftermarket demand and defense backlog remain structurally strong"],
+      "bear": ["Trades at a historically rich valuation, and Q3 results (due soon) add event risk"],
+      "summary": "Structural aerospace aftermarket demand and disciplined bolt-on M&A support the bullish case heading into earnings.",
+      "key_risk": "Q3 earnings disappoint against a demanding valuation.",
+      "screener_score": 20.0
+    },
+    "VRTX": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Raised FY2026 guidance and beat Q2 revenue estimates (+12.5% YoY)"],
+      "bear": ["Shares dipped anyway on a 'mixed' report and remain down 11.1% over 20 days"],
+      "summary": "Solid headline numbers and raised guidance are being met with a cautious market reaction, leaving no clear directional edge.",
+      "key_risk": "Whatever drove the mixed reaction to otherwise good results (e.g., pipeline or segment softness) proves more material than headline numbers suggest.",
+      "screener_score": 24.0
+    }
+  }
+}
