@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 14692.85,
+    "cash": 13793.35,
     "currency": "DKK",
     "positions": [
       {
@@ -9,7 +9,7 @@
         "name": "Royal Unibrew",
         "shares": 38,
         "purchase_price": 412.6,
-        "current_price": 474.6,
+        "current_price": 486.2,
         "purchase_date": "2026-06-23",
         "investment_plan": {
           "term": "medium",
@@ -17,17 +17,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Value/vaekst-kombination, men rallyet er endnu ikke bekraeftet teknisk (under SMA200). Stop fastholdes ved 470 for at beskytte gevinsten frem mod Q-regnskabet.",
+          "thesis": "Vaerdi/vaekst-kombination, men rallyet er endnu ikke bekraeftet teknisk (under SMA200). Stop fastholdes ved 470 for at beskytte gevinsten frem mod Q-regnskabet.",
           "price_target": 502,
           "stop_loss": 470,
-          "expected_return_pct": 6,
-          "timeframe": "3-6 maaneder",
+          "expected_return_pct": 3.2,
+          "timeframe": "1-2 maaneder frem mod Q2-regnskab 17/8",
           "exit_conditions": "Saelg ved brud under 470. Tag profit naer SMA200 (502). Reducer ved Q-rapport med omsaetningsskuffelse (2026-08-17)."
         },
         "last_review": {
-          "date": "2026-08-05",
-          "reasoning": "Thesis intakt: staerk indtjeningsvaekst (+40% YoY) til en moderat 12.5x forward PE, understoettet af aktivt buyback og kapitalnedsaettelse. Stop (470) er ikke brudt, men ligger taet paa — fastholdes uaendret frem mod Q-regnskabet 17/8.",
-          "confidence": 5
+          "date": "2026-08-06",
+          "reasoning": "Staerk indtjeningsvaekst (+40% YoY) og positivt momentum fortsaetter taet paa target 502, men kursen har endnu ikke bekraeftet sig over SMA200. Fastholder position og stop uaendret frem mod Q-regnskabet 17/8.",
+          "confidence": 7
         }
       },
       {
@@ -35,7 +35,7 @@
         "name": "ISS",
         "shares": 13,
         "purchase_price": 284.6,
-        "current_price": 284.2,
+        "current_price": 281.6,
         "purchase_date": "2026-07-03",
         "investment_plan": {
           "term": "medium",
@@ -46,14 +46,14 @@
           "thesis": "Sjaelden trifecta af positive katalysatorer, men flad organisk vaekst og et muligt distributionssignal begraenser opsiden herfra.",
           "price_target": 320,
           "stop_loss": 265,
-          "expected_return_pct": 13,
-          "timeframe": "3-6 maaneder",
+          "expected_return_pct": 13.6,
+          "timeframe": "til Q-regnskab 11/8 og derefter",
           "exit_conditions": "Saelg ved brud under 265. Tag profit naer 320. Revurder ved skuffende Capital Markets Day-opfoelgning eller vedvarende flad omsaetningsvaekst, saerligt omkring Q-regnskabet 11/8."
         },
         "last_review": {
-          "date": "2026-08-05",
-          "reasoning": "Trifecta af katalysatorer (guidance, buyback, Deutsche Telekom-forlaengelse) samt en 29% valuation-rabat til sektoren fastholder thesis. Flad omsaetningsvaekst betyder dog at re-rating afhaenger af multiple-ekspansion, saa positionen holdes uaendret og revurderes ved Q-regnskabet 11/8.",
-          "confidence": 6
+          "date": "2026-08-06",
+          "reasoning": "Flad organisk vaekst og svagt 5-dages momentum, men langsigtet uptrend intakt og aktien er kortsigtet oversolgt (stoch 8.5). Afventer Q-regnskab 11/8 foer ny vurdering.",
+          "confidence": 5
         }
       },
       {
@@ -61,7 +61,7 @@
         "name": "Coloplast B",
         "shares": 15,
         "purchase_price": 396.5,
-        "current_price": 431.9,
+        "current_price": 429.0,
         "purchase_date": "2026-07-15",
         "investment_plan": {
           "term": "medium",
@@ -72,40 +72,14 @@
           "thesis": "Deep-value sundhedsnavn med et frisk regulatorisk katalysator (FDA-godkendelse) og velbegrundet udbytte. Naer target, saa stop fastholdes haevet for at beskytte gevinsten.",
           "price_target": 450,
           "stop_loss": 405,
-          "expected_return_pct": 4.2,
-          "timeframe": "3-6 maaneder",
+          "expected_return_pct": 4.9,
+          "timeframe": "frem mod Q-regnskab 18/8",
           "exit_conditions": "Saelg ved brud under 405. Tag profit naer 450. Revurder hvis SMA200-afstanden fortsat udvides uden fundamental bedring."
         },
         "last_review": {
-          "date": "2026-08-05",
-          "reasoning": "Teknisk forbedring (RSI 62, +8.71% over SMA50) og solidt 5.26% udbytte fastholder thesis, men aktien er stadig -33% fra 52-ugers hoejeste og under SMA200. Naer target (450) — stop fastholdes ved 405 for at beskytte gevinsten frem mod regnskabet 18/8.",
+          "date": "2026-08-06",
+          "reasoning": "Attraktivt udbytte (5.3%) og forbedret kortsigtet momentum, men kursen ligger stadig 9.4% under SMA200 og value-casen afhaenger af en indtjeningsbedring der endnu ikke er materialiseret. Naer target, saa den haevede stop fastholdes for at beskytte gevinsten.",
           "confidence": 5
-        }
-      },
-      {
-        "symbol": "ROCK-B.CO",
-        "name": "Rockwool B",
-        "shares": 50,
-        "purchase_price": 190.9,
-        "current_price": 215.8,
-        "purchase_date": "2026-07-21",
-        "investment_plan": {
-          "term": "medium",
-          "basis": [
-            "technical",
-            "fundamental"
-          ],
-          "thesis": "Value/mean-reversion-position i en tidligere ekstremt oversolgt aktie, der nu handler taet paa target. Stop haeves til 208 for at beskytte den store gevinst (+13%) foran Q2-regnskabet, da teknikken er strakt.",
-          "price_target": 225,
-          "stop_loss": 208,
-          "expected_return_pct": 4.3,
-          "timeframe": "1-3 maaneder",
-          "exit_conditions": "Saelg ved brud under 208. Tag profit naer 225. Revurder hvis nedtrenden fortsaetter uden stabiliseringstegn, eller ved svag Q2-rapport (2026-08-19)."
-        },
-        "last_review": {
-          "date": "2026-08-05",
-          "reasoning": "Staerkt momentum (Stoch 98.5, RSI 56) og haevede analytiker-fair-value-estimater understoetter thesis, men trailing indtjening er naer nul/negativ og omsaetningsvaeksten er flad — rallyet loeber foran fundamentale data. Taet paa target (225) og ekstremt overkoebt, saa stop haeves yderligere til 208 for at laase mere af gevinsten inde frem mod Q2-regnskabet 19/8.",
-          "confidence": 6
         }
       },
       {
@@ -113,24 +87,24 @@
         "name": "Danske Bank",
         "shares": 20,
         "purchase_price": 364.6,
-        "current_price": 377.9,
+        "current_price": 376.6,
         "purchase_date": "2026-07-22",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "fundamental",
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Danske Bank leverede staerke H1-resultater med opjusteret helaarsguidance, understoettet af en sund uptrend. Fastholdes uaendret for at undgaa yderligere koncentration i Financial Services-sektoren.",
           "price_target": 400,
           "stop_loss": 350,
-          "expected_return_pct": 5.9,
-          "timeframe": "3-6 maaneder",
+          "expected_return_pct": 6.2,
+          "timeframe": "frem mod naeste regnskab 29/10",
           "exit_conditions": "Saelg ved brud under 350. Tag profit naer 400. Revurder ved guidance-nedjustering eller brud i kreditkvaliteten."
         },
         "last_review": {
-          "date": "2026-08-05",
-          "reasoning": "Staerkt bekraeftet thesis efter haevet FY26-guidance (23-25 mia. kr.) og 14% ROE i H1, med fortsatte ugentlige buybacks. Ingen ny kapital tilfoejes i dag: Financial Services-eksponeringen er allerede 13.9% (sammen med Sydbank), og dagens ene nye koeb prioriteres til Novo Nordisk efter det staerke regnskab. Positionen fastholdes uaendret.",
+          "date": "2026-08-06",
+          "reasoning": "Opjusteret 2026-guidance, staerk indtjeningsvaekst (+15.2% YoY) og en bekraeftet uptrend understoettet af loebende buybacks. Aktien er overkoebt naer 52-ugers-hoejeste, men den fundamentale historie er fortsat intakt, saa positionen fastholdes uaendret for at undgaa yderligere koncentration i Financial Services.",
           "confidence": 7
         }
       },
@@ -139,24 +113,24 @@
         "name": "Vestas Wind Systems",
         "shares": 41,
         "purchase_price": 173.55,
-        "current_price": 175.2,
+        "current_price": 172.0,
         "purchase_date": "2026-07-27",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "fundamental",
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Tidlig fundamental turnaround: eksplosiv indtjeningsvaekst signalerer at ordreindtag og marginer er ved at vende. Teknisk endnu ikke bekraeftet og handler taet paa stop-loss foran Q-regnskabet — overvaages dagligt.",
           "price_target": 205,
           "stop_loss": 163,
-          "expected_return_pct": 17,
-          "timeframe": "3-6 maaneder",
+          "expected_return_pct": 19.2,
+          "timeframe": "frem mod Q-regnskab 12/8 og videre",
           "exit_conditions": "Saelg ved brud under 163 (taet paa nuvaerende pris - overvaag dagligt). Tag profit naer 205. Revurder hvis indtjeningsvaeksten viser sig enkeltstaaende, eller hvis prisen ikke genobre SMA50 inden kvartalsrapport 2026-08-12."
         },
         "last_review": {
-          "date": "2026-08-05",
-          "reasoning": "Tidlig fundamental turnaround-thesis (indtjening +1516% YoY pga. baseeffekt, omsaetning +14.4%) er endnu ikke teknisk bekraeftet (negativ MACD, pris lige under SMA50). Positionen holdes uaendret med taet overvaagning frem mod Q-regnskabet 12/8, hvor thesis enten bekraeftes eller udfordres.",
+          "date": "2026-08-06",
+          "reasoning": "Indtjenings- og omsaetningsvaekst peger paa en reel turnaround, men kursen ligger taet paa stop-loss lige foran Q-regnskabet 12/8. Overvaages taet, men ingen aktion foer regnskabet eller et brud under 163.",
           "confidence": 6
         }
       },
@@ -165,7 +139,7 @@
         "name": "Sydbank",
         "shares": 12,
         "purchase_price": 607.0,
-        "current_price": 636.0,
+        "current_price": 639.5,
         "purchase_date": "2026-07-27",
         "investment_plan": {
           "term": "medium",
@@ -176,14 +150,14 @@
           "thesis": "Kombination af billig vaerdiansaettelse og staerkt momentum, men marginpres (indtjening -26.8% YoY trods omsaetningsvaekst) er en reel risiko der skal afklares ved naeste regnskab.",
           "price_target": 680,
           "stop_loss": 600,
-          "expected_return_pct": 6.9,
-          "timeframe": "3-6 maaneder",
+          "expected_return_pct": 6.3,
+          "timeframe": "frem mod Q-regnskab 26/8",
           "exit_conditions": "Saelg ved brud under 600. Tag profit naer 680. Revurder hvis marginpresset forvaerres yderligere uden stabilisering, eller ved svag kvartalsrapport 2026-08-26."
         },
         "last_review": {
-          "date": "2026-08-05",
-          "reasoning": "Billig vaerdiansaettelse (10.4x forward PE) og konsekvente buybacks fastholder thesis, men indtjeningen faldt faktisk -26.8% YoY trods staerk omsaetningsvaekst — en divergens der skal foelges taet. Teknikken er strakt (Stoch 100), saa positionen fastholdes uaendret uden ny kapital frem mod regnskabet 26/8.",
-          "confidence": 5
+          "date": "2026-08-06",
+          "reasoning": "Staerkt momentum og eksceptionel omsaetningsvaekst (+65% YoY), men indtjeningen er stadig presset (-26.8% YoY) og aktien er overkoebt. Fastholder uaendret frem mod regnskabet 26/8.",
+          "confidence": 6
         }
       },
       {
@@ -191,7 +165,7 @@
         "name": "Novo Nordisk B",
         "shares": 109.0,
         "purchase_price": 305.655,
-        "current_price": 307.6,
+        "current_price": 294.3,
         "purchase_date": "2026-08-04",
         "investment_plan": {
           "term": "medium",
@@ -199,21 +173,47 @@
             "fundamental",
             "technical"
           ],
-          "thesis": "Deep-value-udbygning i en kvalitets-GLP-1-leder efter et bekraeftet Q2-regnskab med guidance-oploeftning. Den oprindelige mindre foerste-indgang (foer regnskab) udbygges nu som planlagt, da resultatet bekraeftede thesis. RSI 35.9 indikerer at selloff'et er overdrevet i forhold til det fundamentale beat.",
+          "thesis": "Deep-value-position i en kvalitets-GLP-1-leder efter et bekraeftet Q2-regnskab med guidance-oploeftning. Positionen er nu fuldt udbygget til 29.5% af porteføljen — ingen yderligere tilkoeb, kun overvaagning af koncentrationsrisiko.",
           "price_target": 345,
           "stop_loss": 285,
-          "expected_return_pct": 12.1,
+          "expected_return_pct": 17.2,
           "timeframe": "3-6 maaneder",
           "exit_conditions": "Saelg ved brud under 285. Tag profit naer 345. Revurder efter Eli Lillys regnskab og ved nye pipeline-skuffelser eller accelereret GLP-1-markedsandelstab til Lilly."
         },
         "last_review": {
-          "date": "2026-08-05",
-          "reasoning": "Thesis bekraeftet: Q2-regnskabet (offentliggjort i gaar) slog forventningerne med justeret driftsresultat paa DKK 33.389mia. og haevet helaarsguidance, mens aktien alligevel er presset ned til RSI 35.9 efter en 8.3% femdages-selloff. Forward PE 14.3x er en 43% rabat til Healthcare-sektornormen trods +67% YoY indtjeningsvaekst. Som planlagt ved den oprindelige mindre foerste-indgang udbygges positionen nu efter regnskabsbekraeftelsen, sizet til det tilgaengelige koebsbudget (min. 2.500 kr. kontant-reserve bevaret).",
-          "confidence": 7
+          "date": "2026-08-06",
+          "reasoning": "Q2-regnskabet bekraeftede thesis med opjusteret guidance trods Wegovy-miss, og aktien er nu dybt oversolgt (RSI 30.8) til en 45% rabat til sektoren. Positionen udgoer allerede 29.5% af porteføljen efter gaarsdagens udbygning, saa der koebes ikke mere — fastholdes uaendret og overvaages for koncentrationsrisiko.",
+          "confidence": 6
+        }
+      },
+      {
+        "symbol": "DSV.CO",
+        "name": "DSV",
+        "shares": 9,
+        "purchase_price": 1335.5,
+        "current_price": 1335.5,
+        "purchase_date": "2026-08-06",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "fundamental",
+            "technical"
+          ],
+          "thesis": "Kontrarisk indgang i en kvalitetslogistikaktoer efter et fundamentalt staerkt Q2-regnskab (rekord-EBIT, opjusteret guidance) blev overskygget af negativ sentiment og tung institutionel salgsvolumen. Ekstrem oversolgt teknik plus rimelig forward-vaerdiansaettelse giver et attraktivt risk/reward for en mean-reversion.",
+          "price_target": 1550,
+          "stop_loss": 1212,
+          "expected_return_pct": 16.1,
+          "timeframe": "3-6 maaneder",
+          "exit_conditions": "Saelg ved brud under 1212 (2x ATR stop). Tag profit naer 1550 (SMA50-genobring). Revurder hvis den institutionelle salgsvolumen fortsaetter uden stabilisering, eller ved svaghed i naeste regnskab (2026-10-21)."
+        },
+        "last_review": {
+          "date": "2026-08-06",
+          "reasoning": "Dybt oversolgt (RSI 14.9, stoch 4.3) trods et Q2-regnskab med rekord-EBIT og opjusteret guidance i Schenker-integrationen — Zacks' 'Bear of the Day'-stempel afspejler sentiment, ikke fundamentals. Forward PE 15.8x er taet paa sektornormen, og momentum-divergensen (+14.1pp) tyder paa at udsalget er ved at aftage. Sizet til det tilgaengelige koebsbudget (min. 2.500 kr. kontant-reserve bevaret).",
+          "confidence": 6
         }
       }
     ],
-    "last_updated": "2026-08-05 22:52 UTC"
+    "last_updated": "2026-08-06 07:52 UTC"
   },
   "history": [
     {
@@ -503,6 +503,10 @@
     {
       "date": "2026-08-05",
       "portfolio_value": 109592.35
+    },
+    {
+      "date": "2026-08-06",
+      "portfolio_value": 108720.95
     }
   ],
   "trades": [
@@ -6835,6 +6839,154 @@
         "summary": "Thesis bekraeftet: Q2-regnskabet (offentliggjort i gaar) slog forventningerne med justeret driftsresultat paa DKK 33.389mia. og haevet helaarsguidance, mens aktien alligevel er presset ned til RSI 35.9 efter en 8.3% femdages-selloff. Forwar"
       },
       "id": 391,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "HOLD",
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "shares": null,
+      "price": 486.2,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 7,
+        "summary": "Staerk indtjeningsvaekst (+40% YoY) og positivt momentum fortsaetter taet paa target 502, men kursen har endnu ikke bekraeftet sig over SMA200. Fastholder position og stop uaendret frem mod Q-regnskabet 17/8."
+      },
+      "id": 392,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "HOLD",
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "shares": null,
+      "price": 281.6,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Flad organisk vaekst og svagt 5-dages momentum, men langsigtet uptrend intakt og aktien er kortsigtet oversolgt (stoch 8.5). Afventer Q-regnskab 11/8 foer ny vurdering."
+      },
+      "id": 393,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "HOLD",
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "shares": null,
+      "price": 429.0,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Attraktivt udbytte (5.3%) og forbedret kortsigtet momentum, men kursen ligger stadig 9.4% under SMA200 og value-casen afhaenger af en indtjeningsbedring der endnu ikke er materialiseret. Naer target, saa den haevede stop fastholdes for at b"
+      },
+      "id": 394,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "SELL",
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "shares": 50,
+      "price": 222.4,
+      "value": 11120.0,
+      "reasoning": {
+        "verdict": "SELL",
+        "confidence": 5,
+        "summary": "Kursen er naaet praktisk talt helt op til target (222.4 vs. 225) efter en kraftig rally, og stokastikken er maksimalt overkoebt (100) mens trailing-indtjeningen forbliver negligibel og omsaetningsvaeksten flad. Tager gevinsten (+16.5%) hjem"
+      },
+      "cost_basis_dkk": 9545.0,
+      "realized_pnl_dkk": 1575.0,
+      "realized_pnl_pct": 16.5,
+      "holding_days": 16,
+      "id": 395,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "HOLD",
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "shares": null,
+      "price": 376.6,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 7,
+        "summary": "Opjusteret 2026-guidance, staerk indtjeningsvaekst (+15.2% YoY) og en bekraeftet uptrend understoettet af loebende buybacks. Aktien er overkoebt naer 52-ugers-hoejeste, men den fundamentale historie er fortsat intakt, saa positionen fasthol"
+      },
+      "id": 396,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "HOLD",
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "shares": null,
+      "price": 172.0,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Indtjenings- og omsaetningsvaekst peger paa en reel turnaround, men kursen ligger taet paa stop-loss lige foran Q-regnskabet 12/8. Overvaages taet, men ingen aktion foer regnskabet eller et brud under 163."
+      },
+      "id": 397,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "HOLD",
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "shares": null,
+      "price": 639.5,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Staerkt momentum og eksceptionel omsaetningsvaekst (+65% YoY), men indtjeningen er stadig presset (-26.8% YoY) og aktien er overkoebt. Fastholder uaendret frem mod regnskabet 26/8."
+      },
+      "id": 398,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "HOLD",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "shares": null,
+      "price": 294.3,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Q2-regnskabet bekraeftede thesis med opjusteret guidance trods Wegovy-miss, og aktien er nu dybt oversolgt (RSI 30.8) til en 45% rabat til sektoren. Positionen udgoer allerede 29.5% af porteføljen efter gaarsdagens udbygning, saa der koebes"
+      },
+      "id": 399,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-06",
+      "action": "BUY",
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "shares": 9,
+      "price": 1335.5,
+      "value": 12019.5,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 6,
+        "summary": "Dybt oversolgt (RSI 14.9, stoch 4.3) trods et Q2-regnskab med rekord-EBIT og opjusteret guidance i Schenker-integrationen — Zacks' 'Bear of the Day'-stempel afspejler sentiment, ikke fundamentals. Forward PE 15.8x er taet paa sektornormen, "
+      },
+      "id": 400,
       "is_new": true
     }
   ],
@@ -9699,5 +9851,5 @@
     "Healthcare": 42.2,
     "Financial Services": 16.0
   },
-  "last_executed_decisions": "2026-08-05"
+  "last_executed_decisions": "2026-08-06"
 }
