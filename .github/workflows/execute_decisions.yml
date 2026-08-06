@@ -44,6 +44,7 @@ jobs:
           if [ -f "decisions/$TODAY.json" ]; then
             python paper_trader.py
             python sync_dashboard.py
+            python trade_review.py
           else
             echo "Ingen decisions/$TODAY.json - DK springes over."
           fi
@@ -54,6 +55,7 @@ jobs:
           if [ -f "us/decisions/$TODAY.json" ]; then
             python us/paper_trader.py
             python us/sync_dashboard.py
+            python us/trade_review.py
           else
             echo "Ingen us/decisions/$TODAY.json - US springes over."
           fi
