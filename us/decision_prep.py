@@ -252,6 +252,21 @@ def main() -> None:
         ),
     }
 
+    # --- Track record from closed trades (us/lessons.json is written by trade_review.py) ---
+    lessons_doc, _ = github_store.get_json("us/lessons.json", default={})
+    if (lessons_doc or {}).get("stats"):
+        out["track_record"] = {
+            "stats": lessons_doc["stats"],
+            "recent_closed_trades": [
+                {k: l.get(k) for k in (
+                    "date", "symbol", "sector", "holding_days", "timeframe",
+                    "expected_return_pct", "realized_pnl_pct",
+                    "target_hit", "stop_hit", "thesis_verdict", "thesis", "lesson",
+                )}
+                for l in lessons_doc.get("lessons", [])[-10:]
+            ],
+        }
+
     out["instructions"] = (
         "EFFICIENCY (IMPORTANT — this routine has failed before by spending too long before writing output): "
         "Be decisive and concise. Read this output ONCE; do not repeat it in your reasoning. "
@@ -267,6 +282,8 @@ def main() -> None:
         "Material changes in fundamentals give free right to sell. "
         "next_earnings_date is shown on candidates — consider timing, but no trading ban. "
         "sector_exposure_pct shows current sector distribution — assess concentration risk yourself. "
+        "track_record is your own verified result on closed trades (win rate, sector stats, thesis verdicts HELD/PARTIAL/FAILED). "
+        "Use it actively: repeat setups that historically HELD, and be critical of patterns that FAILED. "
         "Tier-based analysis: 'deep' = thorough + recent_news, 'scan' = short assessment without news. "
         "All open positions MUST have an entry (HOLD or SELL). "
         "Then run python paper_trader.py."
