@@ -251,6 +251,21 @@ def main() -> None:
         ),
     }
 
+    # --- Track record fra lukkede handler (lessons.json skrives af trade_review.py) ---
+    lessons_doc, _ = github_store.get_json("lessons.json", default={})
+    if (lessons_doc or {}).get("stats"):
+        out["track_record"] = {
+            "stats": lessons_doc["stats"],
+            "recent_closed_trades": [
+                {k: l.get(k) for k in (
+                    "date", "symbol", "sector", "holding_days", "timeframe",
+                    "expected_return_pct", "realized_pnl_pct",
+                    "target_hit", "stop_hit", "thesis_verdict", "thesis", "lesson",
+                )}
+                for l in lessons_doc.get("lessons", [])[-10:]
+            ],
+        }
+
     out["instructions"] = (
         "EFFEKTIVITET (VIGTIGT — denne rutine har tidligere fejlet ved at bruge for lang tid før output blev skrevet): "
         "Vær beslutsom og kortfattet. Læs dette output ÉN gang; gentag det ikke i din tænkning. "
@@ -266,6 +281,8 @@ def main() -> None:
         "Materielle ændringer i fundamentale forhold giver fri ret til at sælge. "
         "next_earnings_date vises på kandidater — overvej timing, men intet handelsforbud. "
         "sector_exposure_pct viser nuværende sektorfordeling — vurder selv koncentrationsrisiko. "
+        "track_record er dit eget facit på lukkede handler (win rate, sektor-stats, thesis-domme HOLDT/DELVIST/HOLDT IKKE). "
+        "Brug det aktivt: gentag setups der historisk HOLDT, og vær kritisk over for mønstre der HOLDT IKKE. "
         "Tier-baseret analyse: 'deep' = grundig + recent_news, 'scan' = kort vurdering uden news. "
         "Alle åbne positioner SKAL have en entry (HOLD eller SELL). "
         "Derefter køres python paper_trader.py."
