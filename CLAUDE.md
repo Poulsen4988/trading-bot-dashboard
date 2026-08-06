@@ -42,6 +42,7 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 | `paper_trader.py` | Læser `decisions/DATO.json`, eksekverer mekanisk, beregner realiseret P&L, opdaterer `data.json` |
 | `sync_dashboard.py` | Bygger stocks-data + benchmark-historik + sektoreksponering + pusher dashboard til GitHub Pages |
 | `kb_review.py` | Analyserer videnbase for duplikater/stale/low-value items (input til KB Cleanup-rutinen) |
+| `trade_review.py` | Læringsloop: post-mortem på hver lukket handel (thesis vs. udfald) → `lessons.json`. Kører i execute_decisions-workflowet efter paper_trader. Findes også som `us/trade_review.py` |
 | `github_store.py` | Al GitHub-kommunikation (read/write) — bruges af rutiner |
 | `prices/latest.json` | C25-priser — opdateres automatisk af GitHub Actions |
 | `prices/benchmarks.json` | Benchmark-priser (^OMXC25, EUNL.DE) — opdateres af GitHub Actions |
@@ -51,6 +52,7 @@ Brug DASHBOARD_PAT fra `.env` til autentificering.
 | `analysis/DATO.json` | Tier-baseret bull/bear-analyse (alle 25) — input til `decision_prep.py` |
 | `decisions/DATO.json` | AI-beslutninger — input til `paper_trader.py` |
 | `data.json` | Dashboard-data (portfolio, trades, stocks, benchmarks, sector_exposure_pct, latest_decisions) |
+| `lessons.json` | Læringsloop-output: én lesson pr. lukket handel (antagelser vs. udfald, thesis-dom) + aggregeret statistik (win rate, per sektor). `decision_prep.py` sender stats + seneste 10 med til handels-AI'en som `track_record` |
 
 ## Claude Code Routines
 Kører som "Remote" på Anthropic-infrastruktur — PC behøver ikke være tændt.
