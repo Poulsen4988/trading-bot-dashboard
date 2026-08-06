@@ -1,0 +1,111 @@
+{
+  "updated": "2026-08-06",
+  "stats": {
+    "closed_trades": 3,
+    "wins": 1,
+    "losses": 2,
+    "win_rate_pct": 33.3,
+    "avg_win_pct": 1.71,
+    "avg_loss_pct": -8.09,
+    "avg_pnl_pct": -4.82,
+    "avg_holding_days": 6.7,
+    "total_realized_usd": -1730.91,
+    "target_hits": 0,
+    "stop_hits": 1,
+    "thesis_verdicts": {
+      "FAILED": 2,
+      "PARTIAL": 1
+    },
+    "by_sector": {
+      "Information Technology": {
+        "n": 1,
+        "wins": 0,
+        "avg_pnl_pct": -12.58
+      },
+      "Communication Services": {
+        "n": 1,
+        "wins": 1,
+        "avg_pnl_pct": 1.71
+      },
+      "Real Estate": {
+        "n": 1,
+        "wins": 0,
+        "avg_pnl_pct": -3.59
+      }
+    }
+  },
+  "lessons": [
+    {
+      "trade_key": "id:30",
+      "date": "2026-07-24",
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "sector": "Information Technology",
+      "buy_date": "2026-07-13",
+      "holding_days": 11,
+      "shares": 103,
+      "buy_price": 131.54,
+      "sell_price": 114.99,
+      "realized_pnl_usd": -1704.65,
+      "realized_pnl_pct": -12.58,
+      "expected_return_pct": 44.4,
+      "price_target": 190.0,
+      "stop_loss": 116.78,
+      "timeframe": "6-9 måneder",
+      "term": "medium",
+      "thesis": "Ekstremt oversolgt (tre samstemmende signaler) i en fundamentalt intakt AI-cloud-vækstcase (OCI +93% å/å, $638 mia. backlog). Flere analytikere (Evercore, Piper Sandler, Dan Ives) forsvarer aktivt aktien midt i udsalget som en generationskøbsmulighed.",
+      "target_hit": false,
+      "stop_hit": true,
+      "thesis_verdict": "FAILED",
+      "lesson": "ORCL: -12.6% over 11 days — assumption FAILED. Expected +44.4%. Plan horizon: 6-9 måneder. Exited at/below stop-loss."
+    },
+    {
+      "trade_key": "id:61",
+      "date": "2026-07-30",
+      "symbol": "TMUS",
+      "name": "T-Mobile US",
+      "sector": "Communication Services",
+      "buy_date": "2026-07-23",
+      "holding_days": 7,
+      "shares": 2,
+      "buy_price": 170.42,
+      "sell_price": 173.34,
+      "realized_pnl_usd": 5.84,
+      "realized_pnl_pct": 1.71,
+      "expected_return_pct": 8.6,
+      "price_target": 185.0,
+      "stop_loss": 156.85,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Overdrevet salg på et beat-and-raise-regnskab (EPS-beat + hævet FCF-guidance) giver et attraktivt, mindre ekstremt oversolgt entry-punkt end resten af porteføljens dybt oversolgte navne, samtidig med at det diversificerer sektoreksponeringen ind i telekom, som porteføljen ellers ikke har.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "PARTIAL",
+      "lesson": "TMUS: +1.7% over 7 days — assumption PARTIAL. Expected +8.6%. Plan horizon: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:74",
+      "date": "2026-07-31",
+      "symbol": "CSGP",
+      "name": "CoStar Group",
+      "sector": "Real Estate",
+      "buy_date": "2026-07-29",
+      "holding_days": 2,
+      "shares": 30,
+      "buy_price": 29.83,
+      "sell_price": 28.76,
+      "realized_pnl_usd": -32.1,
+      "realized_pnl_pct": -3.59,
+      "expected_return_pct": 20.68,
+      "price_target": 36.0,
+      "stop_loss": 26.21,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Profitbeat og tidlig teknisk stabilisering efter et ekstremt fald giver en asymmetrisk entry, men den svage omsætningsguidance og scout-tier-status kalder på en lille, konservativ startposition frem for fuld ATR-sizing.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "FAILED",
+      "lesson": "CSGP: -3.6% over 2 days — assumption FAILED. Expected +20.7%. Plan horizon: 3-6 måneder."
+    }
+  ]
+}
