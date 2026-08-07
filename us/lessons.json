@@ -1,26 +1,27 @@
 {
-  "updated": "2026-08-06",
+  "updated": "2026-08-07",
   "stats": {
-    "closed_trades": 3,
-    "wins": 1,
+    "closed_trades": 4,
+    "wins": 2,
     "losses": 2,
-    "win_rate_pct": 33.3,
-    "avg_win_pct": 1.71,
+    "win_rate_pct": 50.0,
+    "avg_win_pct": 18.77,
     "avg_loss_pct": -8.09,
-    "avg_pnl_pct": -4.82,
-    "avg_holding_days": 6.7,
-    "total_realized_usd": -1730.91,
-    "target_hits": 0,
+    "avg_pnl_pct": 5.34,
+    "avg_holding_days": 8.8,
+    "total_realized_usd": -1335.63,
+    "target_hits": 1,
     "stop_hits": 1,
     "thesis_verdicts": {
       "FAILED": 2,
-      "PARTIAL": 1
+      "PARTIAL": 1,
+      "HELD": 1
     },
     "by_sector": {
       "Information Technology": {
-        "n": 1,
-        "wins": 0,
-        "avg_pnl_pct": -12.58
+        "n": 2,
+        "wins": 1,
+        "avg_pnl_pct": 11.62
       },
       "Communication Services": {
         "n": 1,
@@ -106,6 +107,30 @@
       "stop_hit": false,
       "thesis_verdict": "FAILED",
       "lesson": "CSGP: -3.6% over 2 days — assumption FAILED. Expected +20.7%. Plan horizon: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:102",
+      "date": "2026-08-07",
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "sector": "Information Technology",
+      "buy_date": "2026-07-23",
+      "holding_days": 15,
+      "shares": 12,
+      "buy_price": 91.94,
+      "sell_price": 124.88,
+      "realized_pnl_usd": 395.28,
+      "realized_pnl_pct": 35.83,
+      "expected_return_pct": 13.1,
+      "price_target": 104.0,
+      "stop_loss": 79.56,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Kapitulationsagtigt oversolgt niveau (RSI 29.7, stoch 1.8, BB 1.1%) midt i et bekræftet Q2-beat med kursmålshævninger — markedet sælger en god kvartalsrapport ind i en panisk bredere tape, hvilket giver asymmetrisk risk/reward. Lille spejderstørrelse pga. begrænset ledig cash i dag.",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HELD",
+      "lesson": "NOW: +35.8% over 15 days — assumption HELD. Expected +13.1%. Plan horizon: 3-6 måneder. Price target reached."
     }
   ]
 }
