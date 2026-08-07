@@ -1,0 +1,189 @@
+{
+  "date": "2026-08-07",
+  "stocks": {
+    "TTD": {
+      "tier": "deep", "scout": false, "verdict": "BEAR", "confidence": 7,
+      "bull": ["RSI 29.9 is deeply oversold, raising odds of a relief bounce", "Stock already down ~76% from its 52-week high, much bad news may be priced in"],
+      "bear": ["Guidance points to a 12% revenue decline and a downgrade avalanche followed (Wedbush cites macro AND structural issues)", "Price is 51% below its 200-day average with a 22% single-day crash on 5x+ volume"],
+      "summary": "Guidance cut to a 12% revenue decline plus a wave of analyst downgrades signal structural ad-tech share loss, not just a macro blip.",
+      "key_risk": "Structural loss of ad-tech market share to AppLovin/Amazon rather than a cyclical dip",
+      "screener_score": 82.0
+    },
+    "APP": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Grew 53% and beat on profit; held firm while rival Trade Desk crashed 28% on guidance", "RSI 32 still oversold after the broader ad-tech selloff, room to re-rate"],
+      "bear": ["Still 33% below its 200-day average and 20d momentum is deeply negative (-31.6%)", "Ad-tech sector sentiment is fragile post-TTD guidance cut; contagion risk if growth decelerates"],
+      "summary": "Beat-and-raise growth of 53% and relative strength versus Trade Desk's crash make AppLovin look like the ad-tech share gainer, not the loser.",
+      "key_risk": "Sector-wide ad-tech de-rating drags APP down even without company-specific bad news",
+      "screener_score": 71.0
+    },
+    "ZTS": {
+      "tier": "deep", "scout": false, "verdict": "BEAR", "confidence": 6,
+      "bull": ["New GE Healthcare CFO hire adds operational bench strength", "Valuation reset after the drop may attract value buyers"],
+      "bear": ["Guidance cut alongside earnings, with management flagging deeper companion-animal demand pressure", "33% below its 200-day average with no clear technical support yet (RSI 41, not oversold)"],
+      "summary": "Guidance cut plus explicit management commentary on weakening companion-animal demand points to a real, not just sentiment-driven, growth slowdown.",
+      "key_risk": "Continued softening in pet-owner spending erodes the core companion-animal franchise",
+      "screener_score": 71.0
+    },
+    "ABNB": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["17% single-day surge on a dovish jobs report puts shares near 52-week highs, 24% above the 50-day average", "20-day momentum is strongly positive (+19.8%) confirming a real breakout, not just noise"],
+      "bear": ["RSI 79.6 is deeply overbought after the spike, raising near-term pullback risk", "Move looks macro-driven (rate-cut bets) rather than company-specific, so it can reverse fast"],
+      "summary": "A powerful macro-driven breakout to near 52-week highs is real but RSI near 80 means it's stretched and vulnerable to a pullback.",
+      "key_risk": "A reversal in rate-cut expectations quickly unwinds today's macro-driven pop",
+      "screener_score": 65.0
+    },
+    "APTV": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Sharp 7% single-day bounce and some brokers now flag the stock as undervalued after the slide", "RSI 34 is approaching oversold territory"],
+      "bear": ["Still down 18% over 20 days and 29% below its 200-day average — the primary trend remains down", "Surging implied volatility signals the market still expects large swings, not stabilization"],
+      "summary": "Today's bounce and undervaluation calls are encouraging, but the stock remains in a steep, unresolved downtrend.",
+      "key_risk": "Auto-supplier demand weakness (EV/ICE production cuts) keeps pressuring the stock despite today's bounce",
+      "screener_score": 60.0
+    },
+    "SRE": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Q2 earnings beat estimates and RSI 25.7 is deeply oversold, favoring a bounce", "Utility with a data-center demand growth story still intact long-term"],
+      "bear": ["Revenue fell year-over-year despite the earnings beat", "Oncor's data-center load pipeline (~300GW) faces a Texas freeze that threatens the key growth driver"],
+      "summary": "An EPS beat is offset by falling revenue and a Texas data-center connection freeze that directly threatens Sempra's headline growth pipeline.",
+      "key_risk": "Texas regulatory freeze on data-center interconnections stalls the load-growth thesis",
+      "screener_score": 58.0
+    },
+    "WDC": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Management called earnings 'excellent'; still 27% above its 200-day average despite the pullback", "20-day slide looks like a sector-wide memory-stock rotation (SNDK also down), not company-specific"],
+      "bear": ["Sharp 25% 20-day drop and 3.8% single-day drop show real selling pressure", "Memory pricing/rally sustainability questioned by 'beat and raise is not enough' commentary"],
+      "summary": "Excellent fundamentals aren't translating into price action as the whole memory-stock cohort de-rates; the long-term uptrend (still above its 200-day average) is intact but under near-term pressure.",
+      "key_risk": "A broader memory-chip pricing rollover overwhelms company-specific earnings strength",
+      "screener_score": 58.0
+    },
+    "PSKY": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["UK regulator cleared the $110B Paramount-Warner Bros Discovery merger, removing a major deal-risk overhang", "5-day momentum positive (+15.5%) as the deal path clears"],
+      "bear": ["Stock still 55% below its 52-week high; large integration/execution risk remains post-merger", "Low absolute share price ($9.19) reflects lingering market skepticism"],
+      "summary": "UK clearance of the $110B Warner Bros Discovery merger removes a key overhang and gives the stock a clear positive catalyst.",
+      "key_risk": "Post-merger integration execution disappoints even though regulatory approval is secured",
+      "screener_score": 56.0
+    },
+    "TPL": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Record quarterly revenue reported alongside earnings, and RSI 28.7 is oversold", "Long-term land/royalty model remains structurally advantaged in the Permian"],
+      "bear": ["Sales came in below analyst estimates despite the record revenue headline, triggering the selloff", "14% 20-day decline confirms a real trend break, not just noise"],
+      "summary": "A record-revenue quarter still missed estimates, and the market punished the miss over the headline growth — the 20-day downtrend confirms sentiment has soured.",
+      "key_risk": "Continued deceleration in Permian Basin royalty volumes/pricing versus already-high expectations",
+      "screener_score": 56.0
+    },
+    "NRG": {
+      "tier": "deep", "scout": false, "verdict": "BEAR", "confidence": 6,
+      "bull": ["Long-term data-center power-demand growth story remains intact if this selloff proves overdone", "RSI 41.8 is not yet oversold, leaving room but also no clear support signal yet"],
+      "bear": ["Headlines explicitly describe shares as 'crashing this week'", "15.6% 20-day decline confirms a deteriorating trend, not a one-day event"],
+      "summary": "Multiple headlines describe an active crash this week, and the 20-day chart confirms a real, ongoing deterioration in sentiment.",
+      "key_risk": "Power-demand growth assumptions (data centers) get repriced lower across the independent power producer group",
+      "screener_score": 55.3
+    },
+    "OTIS": {
+      "tier": "deep", "scout": true, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Service-segment momentum is building even as equipment demand stays weak, a favorable mix shift", "Some analysts see the stock as ~25% undervalued after the YTD slide following Q2 beat"],
+      "bear": ["Earlier guidance cuts and a 19% YTD slide reflect still-soft new-equipment demand", "9% below its 200-day average with no strong momentum catalyst yet"],
+      "summary": "A scout candidate: service-revenue strength is offsetting weak equipment demand, and value investors are starting to flag undervaluation after the YTD slide.",
+      "key_risk": "New-equipment demand stays weak for longer than the service-segment offset can compensate for",
+      "screener_score": 31.2
+    },
+    "DIS": {
+      "tier": "deep", "scout": true, "verdict": "BULL", "confidence": 7,
+      "bull": ["NFL content deal is 'paying major dividends' and Wall Street raised price targets after the latest report", "Disney Bundle churn is falling and subscriber growth improving per Warner Bros Discovery's own commentary"],
+      "bear": ["RSI 70.1 signals the rally is getting stretched near-term"],
+      "summary": "A scout candidate turning into a real story: the NFL deal and bundle strategy are visibly working, with churn falling and Street price targets rising.",
+      "key_risk": "Streaming bundle economics or NFL content costs erode the margin gains investors are currently rewarding",
+      "screener_score": 31.2
+    },
+    "LHX": {
+      "tier": "deep", "scout": true, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Peer read-throughs (Motorola Solutions guidance, Intuitive Machines defense-spacecraft wins) point to a resilient defense-spending cycle", "5-day momentum modestly positive (+3.5%)"],
+      "bear": ["No company-specific catalyst in today's news flow", "Still 9% below its 200-day average with range-bound price action"],
+      "summary": "A scout candidate riding a generally strong defense-sector news cycle by association, but without a company-specific catalyst yet.",
+      "key_risk": "Defense-budget or program-timing headlines disappoint despite the currently upbeat sector narrative",
+      "screener_score": 31.1
+    },
+    "AMZN": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Steady uptrend, only 4.4% off its 52-week high and well above both moving averages (+11% vs 50d, +16% vs 200d)", "Broad AI-capex tailwind (per Dimon's comments on AI/economy) supports AWS growth narrative"],
+      "bear": ["OpenAI is reportedly developing a $300+ AI speaker to directly challenge Alexa, a threat to Amazon's smart-home franchise"],
+      "summary": "A current holding in a healthy uptrend near its highs, though OpenAI's reported push into AI speakers is an emerging competitive threat to Alexa.",
+      "key_risk": "OpenAI's hardware push accelerates share loss in Amazon's smart-home/voice-assistant business",
+      "screener_score": 19.0
+    },
+    "FLEX": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Still 35% above its 200-day average despite the recent pullback, long-term trend intact", "Sector peer Jabil surging suggests contract-manufacturing demand remains healthy"],
+      "bear": ["Down 14% over the past 3 months and analysts are actively debating buy/hold/offload", "10.6% 20-day decline shows near-term momentum has turned negative"],
+      "summary": "A current holding whose long-term uptrend remains intact even as a 3-month, 14% slide has analysts questioning the near-term case.",
+      "key_risk": "Contract-manufacturing demand softens further, extending the multi-month slide",
+      "screener_score": 25.9
+    },
+    "GLW": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 7,
+      "bull": ["Proposed US solar tariffs/price floors on polysilicon are a direct policy tailwind, driving a 5.4% single-day pop", "19.8% 5-day rally and still 21% above its 200-day average"],
+      "bear": ["Still down 13% over 20 days, and the tariff proposal is not yet enacted policy"],
+      "summary": "A current holding getting a direct, catalyst-driven boost from proposed US solar tariffs and price floors on polysilicon.",
+      "key_risk": "Proposed tariffs/price floors fail to pass or get watered down, removing the current catalyst",
+      "screener_score": 49.2
+    },
+    "MMM": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Strong 20-day uptrend (+16.1%) near 52-week highs, alongside broad industrial-sector earnings beats (GFF, ITT, CSL)", "Momentum remains positive with a further 1.2% gain today"],
+      "bear": ["RSI 78.5 is deeply overbought, raising pullback risk", "A recent SEC filing showed insider selling at the industrial giant"],
+      "summary": "A current holding in a strong uptrend near 52-week highs, but extremely overbought RSI plus reported insider selling argue for caution chasing further here.",
+      "key_risk": "Overbought technicals combined with insider selling precede a near-term pullback",
+      "screener_score": 29.4
+    },
+    "MRVL": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["58% above its 200-day average, riding the broader AI/chip cycle alongside NVDA's rally", "Strong 5-day bounce (+16.6%) and positive move today (+3.9%)"],
+      "bear": ["No MRVL-specific catalyst in today's news flow, still down 7.3% over 20 days", "Highly correlated to broader AI-chip sentiment, which can reverse quickly"],
+      "summary": "A current holding whose powerful long-term AI-chip-cycle uptrend continues, though today's move looks driven by sector sentiment (NVDA) rather than a company-specific catalyst.",
+      "key_risk": "A reversal in AI-chip capex sentiment (a broad NVDA-led move) drags MRVL down with it",
+      "screener_score": 50.5
+    },
+    "NDAQ": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 4,
+      "bull": ["Steady uptrend above both moving averages, and one analysis flags the stock as ~14% undervalued on earnings/dividend", "New D-Wave/Verafin quantum computing deal for financial-crime detection is a modest positive"],
+      "bear": ["Lowest screener score (4.0) in the deep set reflects limited near-term momentum or catalyst"],
+      "summary": "A current holding drifting steadily higher with little fresh news, and the lowest screener score in the set suggests limited near-term catalyst either way.",
+      "key_risk": "No clear near-term catalyst; performance likely tracks broad exchange/fintech sentiment rather than company-specific news",
+      "screener_score": 4.0
+    },
+    "NOW": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Sharp 6.4% bounce today and strong 20-day momentum (+15.9%) despite sector jitters", "Still above its 200-day average"],
+      "bear": ["Broader SaaS group (Figma, Datadog, HubSpot) is selling off on AI-pricing model concerns that could eventually pressure NOW's own AI monetization story", "Multiple headlines explicitly group NOW with software peers sliding on AI-pricing questions"],
+      "summary": "A current holding bouncing today even as the broader software group sells off on AI-pricing concerns that could eventually reach ServiceNow's own AI products.",
+      "key_risk": "AI-pricing model concerns hitting SaaS peers (Datadog, HubSpot) spread to ServiceNow's own AI monetization narrative",
+      "screener_score": 49.0
+    },
+    "NUE": {
+      "tier": "deep", "scout": false, "verdict": "BULL", "confidence": 6,
+      "bull": ["Surging quarterly earnings, a 213th straight quarterly dividend, and trade-policy (tariff) tailwinds are driving a breakout near 52-week highs", "20-day momentum strongly positive (+19.9%)"],
+      "bear": ["RSI 81.5 is extremely overbought, raising the odds of a near-term pullback/consolidation"],
+      "summary": "A current holding breaking out to near 52-week highs on strong earnings and tariff tailwinds, but RSI above 80 means it's very stretched near-term.",
+      "key_risk": "Extremely overbought technicals (RSI 81.5) trigger a sharp near-term consolidation",
+      "screener_score": 37.6
+    },
+    "TDG": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["Continues aggressive bolt-on M&A ($1.07B aerospace materials deal), consistent with its long-running margin-expansion playbook"],
+      "bear": ["Down 2.9% today and 5.1% over 20 days, showing near-term weakness despite the M&A news", "Roughly flat versus its 200-day average, lacking a clear trend"],
+      "summary": "A current holding continuing its M&A-driven margin playbook with a new $1.07B aerospace deal, though shares are slipping near-term with no clear trend.",
+      "key_risk": "Integration or overpayment risk on the new $1.07B acquisition weighs on margins",
+      "screener_score": 47.0
+    },
+    "VRTX": {
+      "tier": "deep", "scout": false, "verdict": "NEUTRAL", "confidence": 5,
+      "bull": ["UBS sees Vertex well positioned ahead of upcoming pipeline catalysts", "Steady uptrend above both moving averages, up 2.5% today"],
+      "bear": ["Emerging competitive threat to its core cystic-fibrosis franchise from smaller biotech rivals per recent coverage"],
+      "summary": "A current holding with UBS positive on upcoming pipeline catalysts, tempered by emerging competitive threats to its core cystic-fibrosis franchise.",
+      "key_risk": "A smaller biotech rival encroaches on Vertex's core cystic-fibrosis market share",
+      "screener_score": 17.7
+    }
+  }
+}
