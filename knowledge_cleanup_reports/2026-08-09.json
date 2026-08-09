@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-09",
+  "files_reviewed": 25,
+  "files_cleaned": 4,
+  "total_items_removed": 5,
+  "per_file": [
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 20,
+      "removed_items": [
+        {
+          "title": "Genmab shares jump 8% after upbeat results prompt 2026 outlook raise",
+          "date": "2026-08-06",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/TRYG_xcse.json",
+      "removed_count": 2,
+      "kept_count": 3,
+      "removed_items": [
+        {
+          "title": "Storaktionærmeddelelse",
+          "date": "2026-07-30",
+          "reason": "low_value"
+        },
+        {
+          "title": "Storkationærmeddelelse",
+          "date": "2026-07-16",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/VWS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 21,
+      "removed_items": [
+        {
+          "title": "Vestas - Q2 2026 conference call",
+          "date": "2026-08-05",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/ORSTED_xcse.json",
+      "removed_count": 1,
+      "kept_count": 5,
+      "removed_items": [
+        {
+          "title": "Ørsted præsenterer resultat for andet kvartal 2026 den 13. august",
+          "date": "2026-08-06",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/NOVOb_xcse.json",
+      "removed_count": 0,
+      "kept_count": 351,
+      "removed_items": [],
+      "note": "15 duplicate_url items were identified (repeated URLs across NOVOb news entries, e.g. shared Yahoo/Barron's/Nasdaq-live-update links referenced by multiple headlines) but could NOT be applied. NOVOb_xcse.json is ~168KB/2360 lines; the GitHub Contents API requires the complete new file content in a single write call, and that content exceeds the available single-turn output budget for this tool. File was left completely unmodified on GitHub (no partial or corrupted write occurred) to avoid risking data loss. Retry with a larger output-token allowance or a different write mechanism recommended."
+    }
+  ],
+  "summary": "Fjernede 5 poster på tværs af 4 filer (GMAB, TRYG, VWS, ORSTED): 1 duplicate_url og 4 lav-værdi poster uden reelt indhold (to generiske 'Storaktionærmeddelelse'-notitser for TRYG uden navn/andel, en Vestas-konferenceopkalds-invitation og en Ørsted-kalendermeddelelse om kommende regnskabsdato). Substantielle poster med kort summary-felt (earnings, ledelsesskift, guidance-opjusteringer, FDA/EU-godkendelser, kontraktvind) er bevaret uændret i alle filer, da titlen bar den reelle information. NOVOb_xcse.json (351 news-poster) blev IKKE renset i denne kørsel: 15 duplicate_url-kandidater blev identificeret, men filen er for stor til at skrives i ét MCP-værktøjskald inden for den tilgængelige output-grænse. Filen er urørt — ingen data gik tabt eller blev korrumperet. Bør tages op igen i en fremtidig kørsel."
+}
