@@ -1,0 +1,399 @@
+{
+  "date": "2026-08-10",
+  "stocks": {
+    "TTD": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 7,
+      "bull": [
+        "RSI 29.9 og Stoch 8.3 er dybt oversolgt — teknisk bounce-risiko for shortsælgere",
+        "Kun 4.4% over 52-ugers lav, så meget af nedturen er allerede prisfastsat"
+      ],
+      "bear": [
+        "HSBC nedgraderede og halverede kursmål efter skuffende kvartal",
+        "Momentum kollapset: -32% på 20 dage, pris 52.6% under SMA200 — strukturel trend nedad",
+        "Stigende konkurrence i ad-tech presser væksthistorien"
+      ],
+      "summary": "Trade Desk er i frit fald efter et skuffende regnskab og en bølge af analytiker-nedgraderinger; teknisk oversolgt, men uden katalysator til vending er faldende kniv-risikoen høj.",
+      "key_risk": "Fortsat marginpres og tab af markedsandele til konkurrenter i den åbne web-annoncemarked.",
+      "screener_score": 72.0
+    },
+    "APP": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 6,
+      "bull": [
+        "Omsætning steg 53% å/å — den underliggende forretning vokser stærkt",
+        "RSI 29.7 oversolgt efter kraftigt fald, muligt indgangspunkt hvis sælgepresset aftager"
+      ],
+      "bear": [
+        "Aktien styrtdykkede 20% TRODS stærk vækst — markedet frygter guidance/kvalitet af væksten",
+        "Pris 28% under SMA50 og 34% under SMA200 — teknisk trend klart negativ"
+      ],
+      "summary": "AppLovin leverer stadig imponerende topline-vækst, men markedets reaktion på regnskabet (-20%) signalerer bekymring om bæredygtigheden; for tidligt at kalde bunden.",
+      "key_risk": "Hvis væksten fortsætter med at skuffe relativt til forventninger, kan multiple-kompressionen fortsætte.",
+      "screener_score": 64.0
+    },
+    "DUK": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Solidt Q2-regnskab slog forventningerne",
+        "Kun 9% under 52-ugers high — defensiv utility med stabil profil"
+      ],
+      "bear": [
+        "USD 10 mia. egenkapitalplan varsler udvanding af eksisterende aktionærer",
+        "RSI 36.7 og negativ MACD antyder svag kortsigtet momentum"
+      ],
+      "summary": "Duke Energy er en stabil utility-forretning, men den store kapitalrejsning skaber udvandingsrisiko der modvirker det stærke regnskab.",
+      "key_risk": "Udvanding fra egenkapitalplanen kan tynge EPS-væksten de kommende kvartaler.",
+      "screener_score": 59.0
+    },
+    "NTAP": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Stærkt AI/hardware-momentum ('chipflation') løfter sektoren og analytikere bliver mere positive",
+        "Pris 62% over SMA200 — robust langsigtet opadgående trend"
+      ],
+      "bear": [
+        "RSI 82.3 og Stoch 90.9 er kraftigt overkøbt — høj risiko for kortsigtet korrektion"
+      ],
+      "summary": "NetApp rider med på en stærk AI-hardware-bølge og analytiker-opgraderinger, men det ekstremt overkøbte niveau øger risikoen for en indhentning på kort sigt.",
+      "key_risk": "Overkøbt teknisk billede kan udløse en hurtig pullback selv uden fundamentale nyheder.",
+      "screener_score": 59.0
+    },
+    "VRSK": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "RSI 38.6 nærmer sig oversolgt territorium efter nylig svaghed",
+        "Data-monopol-forretningsmodel i forsikringsbranchen giver strukturel modstandsdygtighed"
+      ],
+      "bear": [
+        "Delaware-domstol blokerede exit fra 2.35 mia. USD AccuLynx-aftale — juridisk usikkerhed",
+        "CEO solgte aktier for 550.000 USD — svagt insider-signal",
+        "34% under 52-ugers high med negativ 20-dages trend"
+      ],
+      "summary": "Verisk kæmper med en ugunstig retsafgørelse om AccuLynx-aftalen og insidersalg, hvilket overskygger den ellers stærke data-forretning.",
+      "key_risk": "Uafklaret retssag om AccuLynx-dealen kan trække ud og skabe fortsat usikkerhed om kapitalallokering.",
+      "screener_score": 58.0
+    },
+    "LII": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "bull": [
+        "RSI 24.8 er dybt oversolgt — teknisk bounce-potentiale",
+        "Kun 2.9% over 52-ugers lav; det meste af den negative nyhed er formentlig prisfastsat"
+      ],
+      "bear": [
+        "Nedjusterede 2026 EPS-guidance pga. svaghed i boligsegmentet — aktien faldt 22% på nyheden",
+        "Stærkt negativt momentum: -23% på 20 dage, pris 18% under SMA50"
+      ],
+      "summary": "Lennox skuffede med en guidance-nedjustering drevet af svag efterspørgsel i boligsektoren; teknisk oversolgt, men den fundamentale historie er forværret.",
+      "key_risk": "Fortsat svaghed i det amerikanske boligmarked kan presse indtjeningen yderligere ned.",
+      "screener_score": 56.3
+    },
+    "PSKY": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Guidance blev opjusteret ifølge Simply Wall St., og aktien handler under fair value-estimater",
+        "Stærkt 5-dages momentum (+12.8%) med Stoch 89.7"
+      ],
+      "bear": [
+        "Fair value-estimatet er efterfølgende blevet skåret pga. deal-risiko, hvilket skaber usikkerhed",
+        "Stadig 55% under 52-ugers high — dyb strukturel usikkerhed om medieforretningen"
+      ],
+      "summary": "Paramount Skydance viser tegn på fremgang med opjusteret guidance, men vedvarende deal-relateret usikkerhed holder analytikernes fair value-vurderinger i konstant bevægelse.",
+      "key_risk": "Uafklaret deal-struktur/-risiko kan fortsat skabe volatilitet i værdiansættelsen.",
+      "screener_score": 56.3
+    },
+    "MRNA": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "FDA-godkendelse af mFLUSIVA styrker Modernas mRNA-portefølje ud over covid-vacciner",
+        "Omkostningsbesparelser og pipeline-milepæle fremhævet i seneste regnskab"
+      ],
+      "bear": [
+        "Stadig 30% under 52-ugers high — tillid til væksthistorien er ikke genoprettet",
+        "Biotek-volatilitet betyder store enkeltnyhedsudsving (jf. konkurrenters kollaps i sektoren)"
+      ],
+      "summary": "Moderna får en ny vækstmotor med FDA-godkendelsen af flu-vaccinen og viser omkostningsdisciplin, men aktien mangler stadig at overbevise markedet fuldt ud efter det store fald fra toppen.",
+      "key_risk": "Langsommere-end-ventet kommerciel lancering af mFLUSIVA eller nye pipeline-tilbageslag.",
+      "screener_score": 56.0
+    },
+    "TPL": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Unik jord/royalty-model i Permian giver strukturel moat",
+        "Data center-relateret efterspørgsel efter land i Texas skaber ny optionalitet"
+      ],
+      "bear": [
+        "RSI 27.2 oversolgt og -36% under 52-ugers high — svagt kortsigtet momentum",
+        "Løbende debat om overvurdering trods datacenter-narrativet"
+      ],
+      "summary": "Texas Pacific Land har et unikt aktiv i olie- og datacenter-landrush i Texas, men aktien er i en klar nedtrend og værdiansættelsen er omdiskuteret.",
+      "key_risk": "Hvis datacenter-efterspørgslen efter jord ikke materialiserer sig som ventet, mister aktien en vigtig vækstkatalysator.",
+      "screener_score": 56.0
+    },
+    "ABNB": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Kraftigt momentum: +22.6% på 5 dage og kun 0.7% under 52-ugers high",
+        "AI-drevet produktstrategi fremhævet positivt af CEO og investorer"
+      ],
+      "bear": [
+        "RSI 82.9, Stoch 97.4 og BB-position 126% — ekstremt overkøbt med høj korrektionsrisiko",
+        "BMO's kursmål ligger under den aktuelle kurs, hvilket signalerer at markedet er foran fundamentalerne"
+      ],
+      "summary": "Airbnb har stærkt momentum drevet af en positiv AI-fortælling, men det ekstremt overkøbte tekniske billede og et kursmål under den aktuelle pris advarer om overophedning.",
+      "key_risk": "En kortsigtet korrektion er sandsynlig givet de overkøbte niveauer, selv hvis den langsigtede historie forbliver intakt.",
+      "screener_score": 55.0
+    },
+    "CSGP": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "CEO Andrew Florance købte aktier for 2.5 mio. USD — stærkt insider-signal",
+        "Ledelsen ser industriel efterspørgsel overhale udbud mod 2027 — positiv strukturel prognose"
+      ],
+      "bear": [
+        "Stadig 67% under 52-ugers high — en af de største drawdowns i sættet",
+        "Optræder på lister over 'Wall Street-favoritter med advarselstegn'"
+      ],
+      "summary": "CoStar er en spejder-kandidat med et stærkt insiderkøbssignal og positive langsigtede efterspørgselsudsigter, men aktien bærer stadig arrene fra et massivt kursfald og analytikeradvarsler.",
+      "key_risk": "Fortsat eksekveringsrisiko i CoStar-forretningen som allerede har skuffet markedet betydeligt.",
+      "screener_score": 35.6
+    },
+    "COIN": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Cathie Wood (ARK) investerede 36.9 mio. USD — synligt institutionelt tillidssignal",
+        "RSI 32.7 oversolgt efter stort fald, muligt indgangspunkt"
+      ],
+      "bear": [
+        "63% under 52-ugers high afspejler vedvarende usikkerhed om krypto-cyklussen",
+        "Svaghed i tilstødende krypto-økosystem (Optimism skærer buyback markant) tyder på bredere modvind"
+      ],
+      "summary": "Coinbase er en spejder-kandidat med et stærkt institutionelt købssignal fra Cathie Wood, men det bredere krypto-økosystem viser tegn på svaghed der kan tynge aktien yderligere.",
+      "key_risk": "Krypto-markedsaktivitet og -priser er den primære swing-faktor og kan hurtigt vende sentimentet.",
+      "screener_score": 33.6
+    },
+    "FISV": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "BEAR",
+      "confidence": 5,
+      "bull": [
+        "Handler 63% under 52-ugers high — potentiel dyb value hvis restrukturering lykkes",
+        "Pres for at sælge dele af forretningen kan udløse værdiskabende porteføljeoprydning"
+      ],
+      "bear": [
+        "Nedjusterede 2026-outlook pga. marginpres kort efter regnskab",
+        "Zacks stiller spørgsmålstegn ved om aktien er 'worth buying' efter indtjeningsnedskæringer"
+      ],
+      "summary": "Fiserv er en spejder-kandidat i en dyb værdifælde efter guidance-nedjusteringer og marginpres, med et muligt opsidepotentiale hvis presset for forretningsfrasalg fører til værdiskabelse.",
+      "key_risk": "Fortsat marginerosion uden konkret handling på porteføljeoprydningen ville underminere value-tesen.",
+      "screener_score": 37.0
+    },
+    "AMZN": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Kun 3.2% under 52-ugers high med solidt momentum (+12.5% på 20 dage)",
+        "Bredere AI-capex-optimisme (Nvidia, Microsoft) løfter storcap tech-sentimentet",
+        "Pris 17% over SMA200 — sund langsigtet trend"
+      ],
+      "bear": [
+        "Værdiansættelsen er steget markant efter opturen, hvilket reducerer margin for fejl"
+      ],
+      "summary": "Amazon nyder godt af den brede AI-optimisme i storcap tech og handler tæt på 52-ugers high med solidt momentum og en sund teknisk trend.",
+      "key_risk": "En bredere afkøling i AI-relaterede tech-aktier kunne trække Amazon ned uafhængigt af egne fundamentaler.",
+      "screener_score": 31.2
+    },
+    "DIS": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Slog forventningerne på både parker og streaming i Q3",
+        "Streaming-churn falder og abonnenttilvækst forbedres ifølge Warner Bros. Discovery-kommentarer",
+        "Needham forbliver optimistisk trods øget konkurrence"
+      ],
+      "bear": [
+        "Stadig 12.6% under 52-ugers high — ikke fuldt genoprettet tillid"
+      ],
+      "summary": "Disney leverer solide resultater på tværs af parker og streaming med forbedrede abonnenttal, og analytikersentimentet forbliver positivt trods konkurrencepres.",
+      "key_risk": "Stigende konkurrence fra Netflix og andre streamingudbydere kan presse marginer og abonnentvækst.",
+      "screener_score": 18.6
+    },
+    "FLEX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 4,
+      "bull": [
+        "Op 150% fra 52-ugers lav — stærk langsigtet performance intakt",
+        "RSI 43.4 er neutral uden overkøbt/oversolgt pres, hvilket giver plads i begge retninger"
+      ],
+      "bear": [
+        "Ned 14% over 3 måneder ifølge Zacks, som selv stiller spørgsmål ved om man skal 'buy, hold or offload'",
+        "28% under 52-ugers high med negativt 20-dages momentum"
+      ],
+      "summary": "Flex har leveret stærk langsigtet performance, men den seneste 3-måneders svaghed og manglende klar katalysator gør risiko/afkast-billedet uklart lige nu.",
+      "key_risk": "Fortsat cyklisk svaghed i elektronikfremstilling kunne forlænge den nuværende nedtur.",
+      "screener_score": 8.6
+    },
+    "GLW": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Pris 15% over SMA200 — langsigtet trend fortsat intakt trods kortsigtet svaghed",
+        "RSI 47.6 er neutral, ikke oversolgt, hvilket tyder på at den seneste svaghed er kontrolleret"
+      ],
+      "bear": [
+        "Bred 'optics vs. memory'-debat i AI-hardware-sektoren skaber usikkerhed (jf. Coherent-fald)",
+        "Stigende skepsis om AI-investeringers afkast (Nvidia-relateret) tynger hele gruppen",
+        "42% under 52-ugers high med negativt 20-dages momentum"
+      ],
+      "summary": "Corning er fanget i en bredere sektor-bekymring om AI-hardware-investeringers rentabilitet, hvilket har presset kursen trods en fortsat intakt langsigtet opadgående trend.",
+      "key_risk": "Hvis 'AI-capex-skepsis'-narrativet fortsætter, kan det holde optics/hardware-aktier under pres uanset egne resultater.",
+      "screener_score": 36.7
+    },
+    "MMM": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Kun 1.6% under 52-ugers high med stærkt momentum",
+        "Styrke i Safety & Industrial-segmentet fremhævet som opsidedriver",
+        "Pris 15% over SMA200 — sund trend"
+      ],
+      "bear": [
+        "RSI 68.3 nærmer sig overkøbt territorium — begrænset albuerum for yderligere kortsigtet stigning"
+      ],
+      "summary": "3M viser fornyet styrke drevet af Safety & Industrial-segmentet og handler tæt på 52-ugers high med solid teknisk momentum.",
+      "key_risk": "RSI nær overkøbt niveau øger risikoen for en kortsigtet konsolidering eller pullback.",
+      "screener_score": 23.6
+    },
+    "MRVL": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "Pris 50% over SMA200 — stærk langsigtet AI/interconnect-vækststory intakt",
+        "Positiv sammenligning til AVGO/NVDA på AI-interconnect-vækst"
+      ],
+      "bear": [
+        "37% under 52-ugers high — betydelig kortsigtet svaghed",
+        "Spørgsmål om hvorvidt indtjeningen kan følge med den præmie-værdiansættelse markedet giver"
+      ],
+      "summary": "Marvell har en stærk langsigtet AI-interconnect-vækststory, men den store afstand til 52-ugers high og bekymringer om værdiansættelse vs. indtjening skaber et blandet billede.",
+      "key_risk": "Hvis indtjeningsvæksten ikke kan retfærdiggøre den præmie-multipel markedet allerede har prisfastsat, venter yderligere nedside.",
+      "screener_score": 36.6
+    },
+    "NDAQ": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 5,
+      "bull": [
+        "Kun 5.4% under 52-ugers high med stabilt positivt momentum",
+        "Ny Kalshi-aftale om overvågningsteknologi udvider forretningen ind i prediction markets",
+        "Diversificeret forretningsmodel (data, fintech, børs) giver stabilitet"
+      ],
+      "bear": [
+        "RSI 73.9 nærmer sig overkøbt niveau",
+        "Blandet analytikersentiment ifølge Barchart-overskriften"
+      ],
+      "summary": "Nasdaq Inc. viser stabilt momentum og udvider sin overvågningsteknologi-forretning ind i det voksende prediction markets-segment, om end det nærmer sig overkøbt territorium.",
+      "key_risk": "Overkøbt RSI kombineret med blandet analytikersentiment kan begrænse yderligere kortsigtet opside.",
+      "screener_score": 4.6
+    },
+    "NUE": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "bull": [
+        "Surgende kvartalsindtjening og 213 sammenhængende år med udbyttestigninger",
+        "Kun 2% under 52-ugers high — IBD fremhæver aktien nær buy point",
+        "Pris 41% over SMA200 — meget stærk trend"
+      ],
+      "bear": [
+        "RSI 81.3 er kraftigt overkøbt — høj risiko for kortsigtet tilbagetrækning"
+      ],
+      "summary": "Nucor leverer stærke resultater og et rekord-udbyttetrack record med aktien nær et teknisk buy point, men det ekstremt overkøbte RSI-niveau øger risikoen for en nærtstående korrektion.",
+      "key_risk": "Overkøbt teknisk billede kan udløse profithjemtagning selv med stærke fundamentaler.",
+      "screener_score": 37.6
+    },
+    "TDG": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "bull": [
+        "1.07 mia. USD M&A-aftale inden for aerospace materials udvider forretningen",
+        "Stærk efterspørgsel i aerospace-sektoren understøtter marginfokus"
+      ],
+      "bear": [
+        "16% under 52-ugers high med svagt 5-dages momentum (-4.8%)",
+        "Høj gearing og præmie-værdiansættelse gør aktien følsom over for integrations- eller makrorisiko"
+      ],
+      "summary": "TransDigm fortsætter sin M&A-drevne vækststrategi i aerospace med fokus på marginer, men den høje værdiansættelse og gearing kræver fortsat eksekvering uden fejltrin.",
+      "key_risk": "Integrationsrisiko fra det nye opkøb eller en cyklisk opbremsning i aerospace-efterspørgslen.",
+      "screener_score": 41.8
+    },
+    "VRTX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 7,
+      "bull": [
+        "Konkurrents aktie kollapsede 92% på dårlige studiedata — Vertex styrker sin konkurrenceposition markant",
+        "Stærkt momentum: BB-position 142% (godt over øvre bånd) og kun 4% under 52-ugers high",
+        "Op 34% på positive lægemiddelnyheder om hedeture-behandling"
+      ],
+      "bear": [
+        "RSI 70.6 og Stoch 72.6 nærmer sig overkøbt — risiko for konsolidering efter det kraftige hop"
+      ],
+      "summary": "Vertex Pharmaceuticals får et betydeligt konkurrencemæssigt løft efter en rivals dramatiske studie-fiasko, og aktien handler nær 52-ugers high på stærkt momentum.",
+      "key_risk": "Efter det kraftige hop er der risiko for profithjemtagning, og fremtidige studiedata for egen pipeline forbliver en binær risikofaktor.",
+      "screener_score": 50.0
+    }
+  }
+}
