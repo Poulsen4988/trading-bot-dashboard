@@ -9356,37 +9356,37 @@
     }
   ],
   "latest_decisions": {
-    "date": "2026-08-10",
-    "market_summary": "Roligt marked uden akutte makro-katalysatorer; fokus er porteføljepleje frem mod en tæt cluster af Q-regnskaber (ISS 11/8, VWS 12/8, RBREW 17/8, COLO-B 18/8, ALSYDB 26/8). Coloplast er tæt på sit kursmål og faar hævet stop for at beskytte gevinsten. Ingen nye køb i dag: Healthcare udgør allerede 36.2% af porteføljen (primært NOVO-B alene paa 30.2%), og de eneste nye BULL-kandidater uden position (GMAB, ROCK-B) er enten en yderligere Healthcare-forøgelse eller ekstremt overkøbt (RSI 76, Stoch 100) uden teknisk bekræftelse.",
+    "date": "2026-08-11",
+    "market_summary": "Bred fundamental styrke i porteføljen i dag - Danske Bank har opjusteret guidance, Vestas og DSV viser stærk indtjeningsvækst der endnu ikke er prisfastsat ind, og Sydbank fortsætter en sund uptrend. Novo Nordisk vipper til BEAR på et Phase 3-nederlag og ny prispres fra Amazon Pharmacy, hvilket øger risikoen i vores største enkeltposition (30.7%). Royal Unibrews stop-loss er udløst lige foran Q-regnskabet 17/8, og vi respekterer disciplinen. Dagens nye kandidater (GMAB, FLS) er begge overkøbte scan-tier-navne uden dybere nyhedsgrundlag og ville øge koncentrationen i allerede tunge sektorer - ingen nye køb i dag.",
     "decisions": [
       {
         "symbol": "RBREW.CO",
         "name": "Royal Unibrew",
-        "action": "HOLD",
-        "shares": 0,
-        "price": 482.2,
-        "confidence": 6,
-        "reasoning": "Staerk indtjeningsvaekst (+40% YoY) og billig vaerdiansaettelse fortsaetter, men kursen er endnu ikke bekraeftet over SMA200. Fastholder position og stop uaendret frem mod Q-regnskabet 17/8.",
+        "action": "SELL",
+        "shares": 38,
+        "price": 469.6,
+        "confidence": 65,
+        "reasoning": "Stop-loss ramt (469.6 mod stop 470) - stoppet blev bevidst sat netop her for at beskytte den optjente gevinst (+13.8%) frem mod Q-regnskabet 17/8. Kursen er stadig ikke teknisk bekræftet (-6.6% under SMA200), og 5-dages momentum er negativt. Vælger at overholde disciplinen og lukke positionen frem for at eksponere en allerede pæn gevinst for binær regnskabsrisiko om seks dage.",
         "bull": [
-          "Earnings growth of 40% YoY with a cheap forward PE of 12.7x",
-          "3.3% dividend yield plus active share buyback and capital-reduction program"
+          "Indtjeningsvækst +40% YoY trods -27% kursfald fra top - markant disconnect mellem fundamentals og kurs",
+          "Billig forward PE (12.5x), 3.32% udbytte og aktivt tilbagekøbsprogram"
         ],
         "bear": [
-          "Still 26% below its 52-week high and slightly under its 200-day average",
-          "Revenue growth modest at +3.3%"
+          "Stadig -6.6% under SMA200 - den langsigtede nedtrend er ikke bekræftet vendt",
+          "Stop-loss (470) triggeret - stoppet var eksplicit designet til at beskytte gevinsten foran Q-regnskabet 17/8"
         ],
         "investment_plan": {
-          "term": "medium",
+          "term": "closed",
           "basis": [
             "technical",
             "fundamental"
           ],
-          "thesis": "Vaerdi/vaekst-kombination der endnu ikke er teknisk bekraeftet (under SMA200). Stop fastholdes ved 470 for at beskytte den opnaaede gevinst frem mod Q-regnskabet.",
+          "thesis": "Position lukket via det bevidst satte stop ved 470 for at beskytte en optjent gevinst på ca. 13.8%, frem for at eksponere den for binær regnskabsrisiko 17/8 på en position der teknisk stadig handler under SMA200.",
           "price_target": 502,
           "stop_loss": 470,
-          "expected_return_pct": 4.1,
-          "timeframe": "1-2 maaneder frem mod Q2-regnskab 17/8",
-          "exit_conditions": "Saelg ved brud under 470. Tag profit naer SMA200 (502). Reducer ved Q-rapport 17/8 med omsaetningsskuffelse."
+          "expected_return_pct": 13.81,
+          "timeframe": "Lukket 2026-08-11",
+          "exit_conditions": "N/A - position lukket. Genovervej som ny kandidat hvis kursen bekræfter en vending over SMA200 efter Q-regnskabet 17/8."
         }
       },
       {
@@ -9394,15 +9394,16 @@
         "name": "ISS",
         "action": "HOLD",
         "shares": 0,
-        "price": 277.4,
-        "confidence": 5,
-        "reasoning": "Dybt oversolgt (RSI 24, stoch 11) med flad organisk vaekst. Q-regnskab 11/8 er en naer-forestaaende test af thesis; ingen stop-brud og ingen fundamental aendring, saa positionen fastholdes uaendret gennem regnskabet.",
+        "price": 282.2,
+        "confidence": 50,
+        "reasoning": "Halvårsrapport netop offentliggjort i dag (11/8) sammen med udvidelse af tilbagekøbsprogrammet med DKK 600m - men der er endnu ingen kursreaktion at vurdere ud fra. Positionen er lille (3.3% vægt), langt fra stop (265), og tabet er marginalt (-0.84%). Afventer markedets reaktion på regnskabet inden vi tager stilling til om thesis (trifecta af katalysatorer, men flad organisk vækst) stadig holder.",
         "bull": [
-          "Deeply oversold (RSI 24, stochastic 11.4, near the lower Bollinger band) — potential bounce setup",
-          "Still 52% above its 52-week low, forward PE 12.5x reasonable, ongoing buyback provides support"
+          "Halvårsrapport og udvidet tilbagekøbsprogram (DKK 600m ekstra) offentliggjort i dag - stærkt kapitaltilbageførsels-signal",
+          "Fortsat dybt oversolgt teknik (RSI 40.6, under lower Bollinger) giver plads til en bounce hvis regnskabet er nogenlunde"
         ],
         "bear": [
-          "Down 3.5% over 5 days with earnings and revenue growth essentially flat"
+          "Omsætnings- og indtjeningsvækst er begge stort set flad (~0%) - ingen bekræftet fundamental katalysator endnu",
+          "Ingen kursreaktion på dagens regnskab er endnu synlig i data - reel risiko i begge retninger i morgen"
         ],
         "investment_plan": {
           "term": "medium",
@@ -9410,12 +9411,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Saelden trifecta af positive katalysatorer, men flad organisk vaekst begraenser opsiden. Q-regnskab 11/8 er en naer-forestaaende test.",
+          "thesis": "Regnskab og udvidet tilbagekøb offentliggjort 11/8 - afventer kursreaktion før thesis revurderes. Flad omsætnings-/indtjeningsvækst begrænser stadig opsiden, men oversolgt teknik og aktiv kapitaltilbageførsel holder positionen åben et par dage mere.",
           "price_target": 320,
           "stop_loss": 265,
-          "expected_return_pct": 15.4,
-          "timeframe": "medium",
-          "exit_conditions": "Saelg ved brud under 265. Tag profit naer 320. Revurder ved skuffende Q-regnskab 11/8 eller vedvarende flad omsaetningsvaekst."
+          "expected_return_pct": 13.4,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under 265. Revurder hurtigt hvis kursen falder markant i morgen trods tilbagekøbsnyheden. Tag profit nær 320."
         }
       },
       {
@@ -9423,16 +9424,16 @@
         "name": "Coloplast B",
         "action": "HOLD",
         "shares": 0,
-        "price": 437.5,
-        "confidence": 5,
-        "reasoning": "Kort-sigtet uptrend (RSI 60) og attraktivt udbytte fortsaetter, positionen naermer sig kursmaal 450 (+10.3% p.t.). Haever stop fra 405 til 420 for at laase mere af gevinsten ind frem mod Q-regnskab 18/8.",
+        "price": 433.2,
+        "confidence": 60,
+        "reasoning": "Thesis intakt - deep-value sundhedsnavn med højt udbytte og positivt 20-dages momentum. Kursen nærmer sig target (450, ca. 4% væk), stoppet ved 420 beskytter allerede en pæn gevinst (+9.3%) frem mod Q-regnskabet 18/8. Ingen ny information der ændrer billedet i dag.",
         "bull": [
-          "Short-term uptrend building (RSI 60, +9.6% vs SMA50) with a 5.4% dividend yield drawing value-investor attention",
-          "Cited by a prominent value investor as an example of cheap, high-yield global stocks"
+          "Dyb værdiansættelsesrabat (forward PE 16.3x, 35% under sektornorm) kombineret med 5.26% udbytte",
+          "20-dages momentum er vendt positivt (+7.0%), fornyet value-investor-interesse (Barron's)"
         ],
         "bear": [
-          "Still 32% below its 52-week high and below its 200-day average (-7.3%)",
-          "Revenue growth minimal at +2.2%"
+          "Stadig -33.6% fra 52-ugers høj og -9.1% under SMA200 - langsigtet nedtrend ikke bekræftet vendt",
+          "Moderat omsætningsvækst (+2.2%) giver begrænset støtte til en revurdering af værdiansættelsen"
         ],
         "investment_plan": {
           "term": "medium",
@@ -9440,12 +9441,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Deep-value sundhedsnavn med et regulatorisk katalysator og velbegrundet udbytte. Naer target, stop haevet til 420 for at beskytte den opnaaede gevinst frem mod Q-regnskabet.",
+          "thesis": "Deep-value sundhedsnavn med et regulatorisk katalysator og velbegrundet udbytte. Nær target, stop fastholdt ved 420 for at beskytte den opnåede gevinst frem mod Q-regnskabet 18/8.",
           "price_target": 450,
           "stop_loss": 420,
-          "expected_return_pct": 2.9,
-          "timeframe": "1 maaned frem mod Q3-regnskab 18/8",
-          "exit_conditions": "Saelg ved brud under 420. Tag profit naer 450. Revurder ved Q-regnskab 18/8 hvis SMA200-afstanden fortsat udvides uden fundamental bedring."
+          "expected_return_pct": 3.9,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under 420. Tag profit nær 450. Revurder ved Q-regnskab 18/8 hvis SMA200-afstanden fortsat udvides uden fundamental bedring."
         }
       },
       {
@@ -9453,17 +9454,16 @@
         "name": "Danske Bank",
         "action": "HOLD",
         "shares": 0,
-        "price": 374.8,
-        "confidence": 7,
-        "reasoning": "Opjusteret helaarsguidance og sund uptrend (RSI 64, SMA200 +21.5%) understoetter thesis fortsat. Fastholdes uaendret for at undgaa yderligere koncentration i Financial Services.",
+        "price": 371.3,
+        "confidence": 70,
+        "reasoning": "Thesis fortsat stærk - opjusteret 2026-guidance og solide Q2-resultater understøttet af sund uptrend. Nær 52-ugers høj med god margin til stop (350). Ingen ny information der bryder casen; fastholdes uændret for at undgå yderligere koncentration i Financial Services-sektoren.",
         "bull": [
-          "2026 net profit guidance raised to DKK 23-25bn",
-          "Steady uptrend (RSI 64, SMA200 +21.5%) backed by an ongoing weekly buyback",
-          "4.49% dividend yield"
+          "Opjusteret 2026 nettoresultat-guidance til DKK 23-25bn efter stærkt Q2 (nettoindtægt DKK 6.201m, 14% ROE-mål) - reel indtjeningsacceleration",
+          "Nær 52-ugers høj med indtjeningsvækst +15.2%, omsætningsvækst +8%, ugentlige tilbagekøb og 4.52% udbytte"
         ],
         "bear": [
-          "Trading near its 52-week high (-0.6%), leaving limited near-term technical room",
-          "Broader bond market volatility around inflation data could pressure bank sentiment"
+          "Nær 52-ugers høj (RSI 62) med meget godt nyt allerede prisfastsat - mindre margin of safety",
+          "Bredere obligationsmarkeds-volatilitet kan lægge pres på banksektoren generelt"
         ],
         "investment_plan": {
           "term": "medium",
@@ -9471,12 +9471,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Staerke H1-resultater med opjusteret helaarsguidance, understoettet af en sund uptrend. Fastholdes uaendret for at undgaa yderligere koncentration i Financial Services-sektoren.",
+          "thesis": "Stærke H1-resultater med opjusteret helårsguidance, understøttet af en sund uptrend. Fastholdes uændret for at undgå yderligere koncentration i Financial Services-sektoren.",
           "price_target": 400,
           "stop_loss": 350,
-          "expected_return_pct": 6.7,
-          "timeframe": "medium",
-          "exit_conditions": "Saelg ved brud under 350. Tag profit naer 400. Revurder ved guidance-nedjustering eller brud i kreditkvaliteten."
+          "expected_return_pct": 7.7,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under 350. Tag profit nær 400. Revurder ved guidance-nedjustering eller brud i kreditkvaliteten."
         }
       },
       {
@@ -9484,17 +9484,16 @@
         "name": "Vestas Wind Systems",
         "action": "HOLD",
         "shares": 0,
-        "price": 178.05,
-        "confidence": 6,
-        "reasoning": "Eksplosiv indtjeningsvaekst (+1516% YoY) understoetter turnaround-thesis, men teknisk endnu ikke bekraeftet (RSI 45). Overvaages taet op til Q-regnskab 12/8; stop uaendret.",
+        "price": 176.55,
+        "confidence": 55,
+        "reasoning": "Thesis intakt - tidlig fundamental turnaround med stærk indtjeningsvækst og AI-drevet energi-tailwind. Q-regnskab i morgen (12/8) er en nær-forestående test, men stoppet (163) er placeret med rimelig margin (~2.3x ATR) til at absorbere normal volatilitet. Overvåges dagligt som planlagt.",
         "bull": [
-          "Major earnings turnaround (+1516% YoY) with revenue up 14.4%",
-          "New project wins (Latvia wind/battery) and a completed share buyback program",
-          "Well positioned within the AI-power-demand theme"
+          "Skarp indtjeningsvending sammen med solid omsætningsvækst (+14.4%), understøttet af AI-drevet energi-tailwind",
+          "Aktiv projektudførelse (Letland vind+batteri) og netop afsluttet tilbagekøb signalerer tillid"
         ],
         "bear": [
-          "Technical momentum still neutral (RSI 45), not yet confirmed",
-          "Forward PE 16.1x is not particularly cheap for the sector"
+          "Stadig -13.65% fra 52-ugers høj med stort set fladt momentum - markedet har endnu ikke belønnet indtjeningsvendingen",
+          "Q-regnskab i morgen (12/8) er en nær-forestående binær risiko for en position tæt på sit stop"
         ],
         "investment_plan": {
           "term": "medium",
@@ -9502,12 +9501,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Tidlig fundamental turnaround: eksplosiv indtjeningsvaekst signalerer at ordreindtag og marginer er ved at vende. Teknisk endnu ikke bekraeftet og handler taet paa stop-loss foran Q-regnskab 12/8 - overvaages dagligt.",
+          "thesis": "Tidlig fundamental turnaround: eksplosiv indtjeningsvækst signalerer at ordreindtag og marginer er ved at vende. Teknisk endnu ikke bekræftet og handler foran Q-regnskab 12/8 - overvåges dagligt.",
           "price_target": 205,
           "stop_loss": 163,
-          "expected_return_pct": 15.1,
-          "timeframe": "1-2 maaneder frem mod Q2-regnskab 12/8",
-          "exit_conditions": "Saelg ved brud under 163 (taet paa nuvaerende pris - overvaag dagligt). Tag profit naer 205. Revurder hvis indtjeningsvaeksten viser sig enkeltstaaende ved kvartalsrapport 12/8."
+          "expected_return_pct": 16.1,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under 163 (overvåg dagligt, især efter regnskab i morgen). Tag profit nær 205. Revurder hvis indtjeningsvæksten viser sig enkeltstående ved kvartalsrapporten."
         }
       },
       {
@@ -9515,17 +9514,16 @@
         "name": "Sydbank",
         "action": "HOLD",
         "shares": 0,
-        "price": 635.5,
-        "confidence": 6,
-        "reasoning": "Billig vaerdiansaettelse og staerkt momentum (RSI 66, SMA200 +17.6%) fortsaetter, men marginpres skal afklares ved naeste regnskab 26/8. Fastholdes uaendret.",
+        "price": 630.5,
+        "confidence": 58,
+        "reasoning": "Thesis intakt - sund uptrend nær 52-ugers høj understøttet af seks ugers konsistente tilbagekøb og billig værdiansættelse. Marginpres (negativ indtjeningsvækst trods stærk omsætningsvækst) er fortsat den centrale risiko, som næste regnskab 26/8 skal afklare. Ingen ny information i dag.",
         "bull": [
-          "Steady uptrend: RSI 66, price 17.6% above its 200-day average",
-          "Ongoing weekly share buyback program signals management confidence",
-          "Forward PE 10.4x is cheap with a 3.9% dividend yield"
+          "Sund uptrend nær 52-ugers høj (RSI 64, over både SMA50 og SMA200), understøttet af seks ugers konsistente tilbagekøb",
+          "Billig forward PE (10.4x) med 3.93% udbytte og stærk omsætningsvækst på +65.3% YoY"
         ],
         "bear": [
-          "Earnings growth turned negative (-26.8% YoY)",
-          "Trading near its 52-week high (-0.6%), limiting near-term upside room"
+          "Negativ indtjeningsvækst (-26.8%) trods stærk omsætningsvækst signalerer marginpres",
+          "RSI 64 nær 52-ugers høj efterlader begrænset kortsigtet opside før overkøbt territorium"
         ],
         "investment_plan": {
           "term": "medium",
@@ -9533,12 +9531,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Kombination af billig vaerdiansaettelse og staerkt momentum, men marginpres er en reel risiko der skal afklares ved naeste regnskab 26/8.",
+          "thesis": "Kombination af billig værdiansættelse og stærkt momentum, men marginpres er en reel risiko der skal afklares ved næste regnskab 26/8.",
           "price_target": 680,
           "stop_loss": 600,
-          "expected_return_pct": 7.0,
-          "timeframe": "medium frem mod Q2-regnskab 26/8",
-          "exit_conditions": "Saelg ved brud under 600. Tag profit naer 680. Revurder hvis marginpresset forvaerres yderligere uden stabilisering, eller ved svag kvartalsrapport 26/8."
+          "expected_return_pct": 7.9,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under 600. Tag profit nær 680. Revurder hvis marginpresset forværres yderligere uden stabilisering, eller ved svag kvartalsrapport 26/8."
         }
       },
       {
@@ -9546,16 +9544,16 @@
         "name": "Novo Nordisk B",
         "action": "HOLD",
         "shares": 0,
-        "price": 305.1,
-        "confidence": 5,
-        "reasoning": "Antitrust-sejr og billig vaerdiansaettelse er positivt, men konkurrencen fra Eli Lilly haarder til. Positionen er allerede 30.2% af porteføljen - ingen tilkoeb, kun overvaagning af koncentrationsrisiko.",
+        "price": 309.8,
+        "confidence": 45,
+        "reasoning": "Verdict vipper til BEAR i dag på to reelle katalysatorer - et Phase 3-nederlag i kardiovaskulær inflammation og Amazon Pharmacys nye $50/måned GLP-1-program der øger prispresset på kernefranchisen. Stop-loss (285) er ikke i nærheden, og positionen er kun marginalt i plus (+1.4%), men den er samtidig porteføljens klart største (30.7%) - koncentrationsrisikoen er nu forstærket af friske negative katalysatorer. Fastholder positionen (thesis om GLP-1-lederskab og værdiansættelse er ikke brudt, og 5.21% udbytte giver support), men strammer stoppet fra 285 til 295 for at beskytte mere af kapitalen mod yderligere nedside fra disse nye risici, i stedet for at panik-sælge på én dags verdict-skifte uden bekræftet kursbrud.",
         "bull": [
-          "Up 3.9% today after winning a key GLP-1 antitrust ruling (Texas judge dismissed claims)",
-          "5.42% dividend yield and cheap forward PE of 14.0x for the growth profile"
+          "Højt udbytte (5.21%) giver indkomststøtte mens aktien handler -25.3% under 52-ugers høj",
+          "Amazon Pharmacys nye $50/måned GLP-1-program for Medicare-patienter kan udvide det adresserbare marked i volumen"
         ],
         "bear": [
-          "CEO is resetting growth expectations for Wegovy just as Eli Lilly widens its lead with 91% Mounjaro growth",
-          "Stock is 25.6% below its 52-week high with earnings still contracting (-20.6%)"
+          "Phase 3-nederlag i den kardiovaskulære inflammations-hypotese er et reelt pipeline-tilbageslag, oveni -20.6% fald i indtjeningsvækst",
+          "Amazons billige GLP-1-lancering signalerer accelererende prispres på Novos kerne-vægttabsfranchise fra billigere alternativer"
         ],
         "investment_plan": {
           "term": "medium",
@@ -9563,12 +9561,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Deep-value-position i en kvalitets-GLP-1-leder efter et bekraeftet Q2-regnskab med guidance-opjustering. Positionen er nu fuldt udbygget til 30.2% af porteføljen - ingen yderligere tilkoeb, kun overvaagning af koncentrationsrisiko.",
+          "thesis": "Deep-value-position i en kvalitets-GLP-1-leder efter et bekræftet Q2-regnskab med guidance-opjustering. Positionen er fuldt udbygget (30.7% af porteføljen) - ingen yderligere tilkøb. Friske negative katalysatorer i dag (Phase 3-nederlag, Amazon-prispres) øger risikoen på den allerede store position, hvorfor stoppet strammes for at beskytte mere kapital.",
           "price_target": 345,
-          "stop_loss": 285,
-          "expected_return_pct": 13.1,
-          "timeframe": "medium",
-          "exit_conditions": "Saelg ved brud under 285. Tag profit naer 345. Revurder ved nye pipeline-skuffelser eller accelereret GLP-1-markedsandelstab til Lilly."
+          "stop_loss": 295,
+          "expected_return_pct": 11.4,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under 295 (strammet fra 285 pga. friske negative katalysatorer). Tag profit nær 345. Revurder ved yderligere pipeline-skuffelser eller accelereret GLP-1-markedsandelstab til Lilly/Amazon."
         }
       },
       {
@@ -9576,17 +9574,16 @@
         "name": "DSV",
         "action": "HOLD",
         "shares": 0,
-        "price": 1349.0,
-        "confidence": 5,
-        "reasoning": "Rekord-EBIT og opjusteret guidance staar i kontrast til den svage tekniske udvikling (RSI 18, Zacks 'Bear of the Day'). Mean-reversion-thesis er intakt, stop ikke ramt - fastholdes uaendret.",
+        "price": 1336.0,
+        "confidence": 58,
+        "reasoning": "Thesis intakt - kontrarisk mean-reversion-position efter et fundamentalt stærkt Q2-regnskab (rekord-EBIT, opjusteret guidance) der endnu ikke er reflekteret i den ekstremt oversolgte kurs (RSI 16.6). Stoppet (1212) er ikke i nærheden. Zacks' 'Bear of the Day'-flag er en sentiment-advarsel, ikke en fundamental ændring, og ændrer ikke vurderingen i dag.",
         "bull": [
-          "RSI 17.9 and stochastic 8.5 are deeply oversold — classic bounce-candidate setup",
-          "Record EBIT reported in Q2 with raised guidance and Schenker integration progressing",
-          "Forward PE 15.9x is far cheaper than the 44.8x trailing multiple"
+          "Q2-regnskab leverede rekord-EBIT og opjusteret guidance trods igangværende Schenker-integration - fundamental forbedring kursen endnu ikke reflekterer",
+          "Ekstremt oversolgt teknik (RSI 16.6, Stoch 6.7) efter -29.8% kursfald fra top opsætter en mean-reversion-kandidat"
         ],
         "bear": [
-          "Zacks flagged DSV as its 'Bear of the Day', citing a weakened near-term investment case",
-          "Down 18.7% over 20 days and trading well below both SMA50 (-13.1%) and SMA200 (-14.2%)"
+          "Zacks har flagget DSV som 'Bear of the Day', hvilket signalerer en svækket kortsigtet sentiment trods guidance-opjusteringen",
+          "Kursen er stadig -13.6% under SMA50 i en aktiv nedtrend, og insider-transaktioner i slutningen af juli bør overvåges"
         ],
         "investment_plan": {
           "term": "medium",
@@ -9594,12 +9591,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Kontrarisk indgang i en kvalitetslogistikaktoer efter et fundamentalt staerkt Q2-regnskab blev overskygget af negativ sentiment. Ekstrem oversolgt teknik plus rimelig forward-vaerdiansaettelse giver attraktivt risk/reward for en mean-reversion.",
+          "thesis": "Kontrarisk indgang i en kvalitetslogistikaktør efter et fundamentalt stærkt Q2-regnskab blev overskygget af negativ sentiment. Ekstrem oversolgt teknik plus rimelig forward-værdiansættelse giver attraktivt risk/reward for en mean-reversion.",
           "price_target": 1550,
           "stop_loss": 1212,
-          "expected_return_pct": 14.9,
-          "timeframe": "medium frem mod Q3-regnskab 21/10",
-          "exit_conditions": "Saelg ved brud under 1212 (2x ATR stop). Tag profit naer 1550 (SMA50-genobring). Revurder hvis den institutionelle salgsvolumen fortsaetter uden stabilisering, eller ved svaghed i naeste regnskab 21/10."
+          "expected_return_pct": 16.0,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved brud under 1212 (2x ATR stop). Tag profit nær 1550 (SMA50-genobring). Revurder hvis den institutionelle salgsvolumen fortsætter uden stabilisering, eller ved svaghed i næste regnskab 21/10."
         }
       }
     ]
@@ -9908,11 +9905,11 @@
         },
         {
           "date": "2026-08-10",
-          "portfolio_value": 105657.44
+          "portfolio_value": 105657.63
         },
         {
           "date": "2026-08-11",
-          "portfolio_value": 105657.44
+          "portfolio_value": 105880.87
         }
       ]
     },
@@ -10229,10 +10226,9 @@
     }
   ],
   "sector_exposure_pct": {
-    "Consumer Defensive": 19.0,
-    "Industrials": 23.9,
-    "Healthcare": 41.3,
-    "Financial Services": 15.7
+    "Industrials": 29.3,
+    "Healthcare": 51.5,
+    "Financial Services": 19.2
   },
   "last_executed_decisions": "2026-08-11"
 }
