@@ -1,22 +1,22 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "stats": {
-    "closed_trades": 23,
-    "wins": 14,
-    "losses": 8,
-    "win_rate_pct": 63.6,
-    "avg_win_pct": 10.18,
-    "avg_loss_pct": -4.6,
-    "avg_pnl_pct": 4.81,
-    "avg_holding_days": 23.4,
-    "total_realized_dkk": 9577.24,
-    "target_hits": 3,
+    "closed_trades": 25,
+    "wins": 15,
+    "losses": 9,
+    "win_rate_pct": 62.5,
+    "avg_win_pct": 10.97,
+    "avg_loss_pct": -4.32,
+    "avg_pnl_pct": 5.24,
+    "avg_holding_days": 22.5,
+    "total_realized_dkk": 10991.62,
+    "target_hits": 4,
     "stop_hits": 2,
     "thesis_verdicts": {
       "UKENDT": 1,
-      "HOLDT IKKE": 8,
+      "HOLDT IKKE": 9,
       "DELVIST": 11,
-      "HOLDT": 3
+      "HOLDT": 4
     },
     "by_sector": {
       "Consumer Defensive": {
@@ -25,9 +25,9 @@
         "avg_pnl_pct": 7.18
       },
       "Industrials": {
-        "n": 4,
-        "wins": 2,
-        "avg_pnl_pct": 0.38
+        "n": 5,
+        "wins": 3,
+        "avg_pnl_pct": 4.71
       },
       "Utilities": {
         "n": 3,
@@ -45,9 +45,9 @@
         "avg_pnl_pct": 7.52
       },
       "Healthcare": {
-        "n": 6,
+        "n": 7,
         "wins": 5,
-        "avg_pnl_pct": 6.5
+        "avg_pnl_pct": 5.28
       }
     }
   },
@@ -603,6 +603,54 @@
       "stop_hit": false,
       "thesis_verdict": "DELVIST",
       "lesson": "NOVO-B.CO: +0.5% på 8 dage — antagelse DELVIST. Forventet +12.1%. Plan-horisont: 3-6 maaneder."
+    },
+    {
+      "trade_key": "id:435",
+      "date": "2026-08-13",
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "sector": "Industrials",
+      "buy_date": "2026-07-27",
+      "holding_days": 17,
+      "shares": 41,
+      "buy_price": 173.55,
+      "sell_price": 211.8,
+      "realized_pnl_dkk": 1568.25,
+      "realized_pnl_pct": 22.04,
+      "expected_return_pct": 18.1,
+      "price_target": 205.0,
+      "stop_loss": 163.0,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Tidlig fundamental turnaround: eksplosiv indtjeningsvækst (+1516% å/å) og +14.4% omsætningsvækst signalerer at ordreindtag og marginer er ved at vende. Teknisk er aktien endnu ikke bekræftet, hvilket giver en tidlig indgangspris før markedet fuldt prisfastsætter turnaroundet. Diversificerer porteføljen mod Industrials/vedvarende energi.",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HOLDT",
+      "lesson": "VWS.CO: +22.0% på 17 dage — antagelse HOLDT. Forventet +18.1%. Plan-horisont: 3-6 måneder. Kursmål nået."
+    },
+    {
+      "trade_key": "id:437",
+      "date": "2026-08-13",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "sector": "Healthcare",
+      "buy_date": "2026-08-05",
+      "holding_days": 9,
+      "shares": 25,
+      "buy_price": 305.6548,
+      "sell_price": 299.5,
+      "realized_pnl_dkk": -153.87,
+      "realized_pnl_pct": -2.01,
+      "expected_return_pct": 12.1,
+      "price_target": 345.0,
+      "stop_loss": 285.0,
+      "timeframe": "3-6 maaneder",
+      "term": "medium",
+      "thesis": "Deep-value-udbygning i en kvalitets-GLP-1-leder efter et bekraeftet Q2-regnskab med guidance-oploeftning. Den oprindelige mindre foerste-indgang (foer regnskab) udbygges nu som planlagt, da resultatet bekraeftede thesis. RSI 35.9 indikerer at selloff'et er overdrevet i forhold til det fundamentale beat.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "HOLDT IKKE",
+      "lesson": "NOVO-B.CO: -2.0% på 9 dage — antagelse HOLDT IKKE. Forventet +12.1%. Plan-horisont: 3-6 maaneder."
     }
   ]
 }
