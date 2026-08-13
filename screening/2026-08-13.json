@@ -1,0 +1,312 @@
+{
+  "date": "2026-08-13",
+  "screened_at": "2026-08-13T07:27:12Z",
+  "price_data_date": "2026-08-12",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 75.0,
+      "price": 211.8,
+      "pct_1d": 19.66,
+      "pct_5d": 23.14,
+      "pct_20d": 17.93,
+      "volume_ratio": 5.63,
+      "rsi_proxy": 74.8,
+      "stoch_proxy": 96.5,
+      "bb_position": 148.7,
+      "sma50_vs_price": 19.84,
+      "sma200_vs_price": 23.7,
+      "macd_line": 2.2447,
+      "atr": 7.8357,
+      "momentum_divergence": 5.21,
+      "pe_forward": 19.18558,
+      "pct_from_52w_high": -0.8,
+      "pct_from_52w_low": 89.87,
+      "sector": "Industrials",
+      "earnings_growth": 15.162,
+      "revenue_growth": 0.144,
+      "div_yield": 0.42,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME SPIKE: 5.63x avg — extreme institutional activity",
+        "NEAR 52W HIGH: -0.8% — breakout territory",
+        "MOMENTUM SURGE: +23.1% in 5 days — sharp directional move",
+        "OVERBOUGHT: RSI proxy 75, Stoch proxy 96 — stretched, potential pullback",
+        "STRONG EARNINGS GROWTH: +1516% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "VWS.CO: volume running at 5.6x the daily average signals institutional-scale activity; a 23.1% five-day rally (20d: +17.9%) reveals strong directional pressure; stock is pressing against its 52-week high at -0.8% — breakout watch; +1516% earnings growth underpins the fundamental case; price is +19.8% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 55.0,
+      "price": 148.25,
+      "pct_1d": 3.42,
+      "pct_5d": 7.9,
+      "pct_20d": -1.4,
+      "volume_ratio": 1.41,
+      "rsi_proxy": 43.2,
+      "stoch_proxy": 71.5,
+      "bb_position": 64.5,
+      "sma50_vs_price": -0.94,
+      "sma200_vs_price": 2.49,
+      "macd_line": -2.1356,
+      "atr": 4.225,
+      "momentum_divergence": 9.3,
+      "pe_forward": 15.415058,
+      "pct_from_52w_high": -31.81,
+      "pct_from_52w_low": 44.18,
+      "sector": "Utilities",
+      "earnings_growth": -0.849,
+      "revenue_growth": 0.334,
+      "div_yield": null,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.41x avg",
+        "SIGNIFICANT DRAWDOWN: -31.8% from 52w high",
+        "MOMENTUM: +7.9% in 5 days — continued BUYING pressure",
+        "MOMENTUM DIVERGENCE: 5d/20d gap +9.3pp — emerging trend shift",
+        "MODEST DISCOUNT: Fwd PE 15.4x vs sector norm 20x",
+        "EARNINGS COLLAPSE: -85% YoY — risk/watch for stabilisation",
+        "REVENUE GROWTH: +33% YoY — top-line expansion"
+      ],
+      "screening_rationale": "ORSTED.CO: a 7.9% five-day rally (20d: -1.4%) reveals strong directional pressure; forward PE 15.4x represents a 23% discount to Utilities sector norm (20x); -85% earnings decline warrants caution but may create a contrarian entry; price is -0.9% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 51.0,
+      "price": 289.6,
+      "pct_1d": 1.9,
+      "pct_5d": 2.99,
+      "pct_20d": 4.7,
+      "volume_ratio": 2.12,
+      "rsi_proxy": 68.4,
+      "stoch_proxy": 95.2,
+      "bb_position": 91.5,
+      "sma50_vs_price": 7.58,
+      "sma200_vs_price": 28.08,
+      "macd_line": 4.4814,
+      "atr": 7.0857,
+      "momentum_divergence": -1.71,
+      "pe_forward": 18.757984,
+      "pct_from_52w_high": -0.41,
+      "pct_from_52w_low": 65.49,
+      "sector": "Healthcare",
+      "earnings_growth": -0.634,
+      "revenue_growth": 0.034,
+      "div_yield": null,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME ELEVATED: 2.12x avg — above-normal interest",
+        "NEAR 52W HIGH: -0.4% — breakout territory",
+        "MOMENTUM: +3.0% in 5 days",
+        "OVERBOUGHT: RSI proxy 68, Stoch proxy 95 — stretched, potential pullback",
+        "MODEST DISCOUNT: Fwd PE 18.8x vs sector norm 25x",
+        "EARNINGS COLLAPSE: -63% YoY — risk/watch for stabilisation"
+      ],
+      "screening_rationale": "DEMANT.CO: volume running at 2.1x the daily average signals institutional-scale activity; stock is pressing against its 52-week high at -0.4% — breakout watch; forward PE 18.8x represents a 25% discount to Healthcare sector norm (25x); -63% earnings decline warrants caution but may create a contrarian entry; price is +7.6% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 47.8,
+      "price": 464.8,
+      "pct_1d": -0.98,
+      "pct_5d": -4.4,
+      "pct_20d": -0.77,
+      "volume_ratio": 0.85,
+      "rsi_proxy": 40.6,
+      "stoch_proxy": 7.3,
+      "bb_position": 6.0,
+      "sma50_vs_price": 3.01,
+      "sma200_vs_price": -7.47,
+      "macd_line": 5.1016,
+      "atr": 9.5429,
+      "momentum_divergence": -3.63,
+      "pe_forward": 12.226148,
+      "pct_from_52w_high": -28.88,
+      "pct_from_52w_low": 17.79,
+      "sector": "Consumer Defensive",
+      "earnings_growth": 0.4,
+      "revenue_growth": 0.033,
+      "div_yield": 3.41,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM: -4.4% in 5 days",
+        "STOCHASTIC OVERSOLD: Stoch proxy 7 — price near annual support floor (RSI proxy 41)",
+        "UNDERVALUED: Fwd PE 12.2x vs sector norm 17x — 28% discount",
+        "STRONG EARNINGS GROWTH: +40% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "RBREW.CO: forward PE 12.2x represents a 28% discount to Consumer Defensive sector norm (17x); +40% earnings growth underpins the fundamental case; price is +3.0% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 46.0,
+      "price": 180.7,
+      "pct_1d": 2.03,
+      "pct_5d": 0.78,
+      "pct_20d": -0.66,
+      "volume_ratio": 1.13,
+      "rsi_proxy": 51.4,
+      "stoch_proxy": 83.7,
+      "bb_position": 61.2,
+      "sma50_vs_price": -0.17,
+      "sma200_vs_price": -5.9,
+      "macd_line": -1.3954,
+      "atr": 3.3071,
+      "momentum_divergence": 1.44,
+      "pe_forward": 17.953304,
+      "pct_from_52w_high": -26.18,
+      "pct_from_52w_low": 5.49,
+      "sector": "Healthcare",
+      "earnings_growth": -0.926,
+      "revenue_growth": -0.214,
+      "div_yield": null,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.13x avg",
+        "NEAR 52W LOW: +5.5% above annual support — critical level",
+        "UNDERVALUED: Fwd PE 18.0x vs sector norm 25x — 28% discount",
+        "EARNINGS COLLAPSE: -93% YoY — risk/watch for stabilisation"
+      ],
+      "screening_rationale": "BAVA.CO: price sits just +5.5% above the 52-week low (171.3) — a key decision zone; forward PE 18.0x represents a 28% discount to Healthcare sector norm (25x); -93% earnings decline warrants caution but may create a contrarian entry; price is -0.2% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 75.0
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 55.0
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 51.0
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 47.8
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 46.0
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 42.4
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 41.2
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 39.0
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 39.0
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 36.0
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 34.8
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 29.0
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 28.8
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 27.2
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 27.0
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 26.3
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 23.7
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 23.0
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 23.0
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 22.5
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 22.0
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 19.0
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 18.1
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 17.8
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 14.5
+    }
+  ]
+}
