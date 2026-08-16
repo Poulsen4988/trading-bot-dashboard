@@ -1,0 +1,147 @@
+{
+  "date": "2026-08-16",
+  "files_reviewed": 25,
+  "files_cleaned": 4,
+  "total_items_removed": 22,
+  "per_file": [
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 3,
+      "kept_count": 19,
+      "removed_items": [
+        {
+          "title": "Here Are Wednesday’s Top Wall Street Analyst Research Calls: The Gap, Genmab, Hilton Worldwide, Intuitive Surgical, Marriott International, Merck, Novo Nordisk, Okta, and More",
+          "date": "2026-08-12",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Selskabsvedtægter for Genmab A/S",
+          "date": "2026-08-12",
+          "reason": "low_value"
+        },
+        {
+          "title": "Genmab shares jump 8% after upbeat results prompt 2026 outlook raise",
+          "date": "2026-08-06",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 1,
+      "kept_count": 44,
+      "removed_items": [
+        {
+          "title": "Maersk Shares Rise as Higher Freight Rates Trigger Guidance Raise",
+          "date": "2026-08-13",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 44,
+      "removed_items": [
+        {
+          "title": "Maersk Shares Rise as Higher Freight Rates Trigger Guidance Raise",
+          "date": "2026-08-13",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/NOVOb_xcse.json",
+      "removed_count": 17,
+      "kept_count": 340,
+      "removed_items": [
+        {
+          "title": "Here Are Wednesday’s Top Wall Street Analyst Research Calls: The Gap, Genmab, Hilton Worldwide, Intuitive Surgical, Marriott International, Merck, Novo Nordisk, Okta, and More",
+          "date": "2026-08-12",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "This Biotech’s Drug Could Treat Hot Flashes. The Stock Is Up 34% on Good News.",
+          "date": "2026-08-10",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "European shares hover near record highs as earnings offset Mideast uncertainty",
+          "date": "2026-08-05",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Lilly's Mounjaro, Zepbound sales surge, widening lead over Novo Nordisk",
+          "date": "2026-08-05",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Eli Lilly Stock: The One Question in Otherwise Perfect Earnings and What It Means for Shares",
+          "date": "2026-08-05",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Novo Nordisk Is Exiting a ‘Rough Patch,’ CFO Says. Earnings Prove It.",
+          "date": "2026-08-05",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Pfizer Covid Pill Revenue Plunges 95%. That’s Just One Reason the Stock Is Slipping.",
+          "date": "2026-08-04",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Novo Nordisk Raises Earnings Guidance. The Stock Sinks.",
+          "date": "2026-08-04",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Earnings live updates: Snap stock surges as World Cup ads boost revenue, Whirlpool falls",
+          "date": "2026-08-03",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Earnings live updates: Caterpillar stock surges 9% as AI build-out boosts power unit",
+          "date": "2026-08-03",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Earnings live updates: SpaceX stock slides despite Starlink-driven revenue beat, Paramount stock slips",
+          "date": "2026-08-03",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Earnings live updates: Eli Lilly stock pops on upbeat guidance, Uber stock slides",
+          "date": "2026-08-03",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Novo Nordisk Shares Drop After Drug Candidate Fails in Trial",
+          "date": "2026-07-31",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Weight Loss Drug Stocks Slump. What Ozempic Maker Novo Nordisk Said.",
+          "date": "2026-07-31",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "As Eli Lilly and Novo Clash in Court, Wall Street Eyes This Bigger Prize",
+          "date": "2026-07-24",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Eli Lilly and Novo Nordisk Are Locked in a Legal War. Don’t Lose Sight of the Main Event.",
+          "date": "2026-07-24",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Why This Novo Nordisk Rival Just Soared To A Profit-Taking Zone",
+          "date": "2026-07-07",
+          "reason": "duplicate_url"
+        }
+      ]
+    }
+  ],
+  "summary": "Fjernede 22 unødige items pa tvers af 4 filer: 21 mekaniske dubletter (samme URL genfundet i flere snapshots - fx Reuters/Barron's live-artikler og fælles multi-selskabsartikler krydsposteret pa GMAB/NOVOb) samt ét generisk selskabsvedtægter-dokument (GMAB). Alle øvrige low_value-kandidater (halvarsrapporter, guidance-opjusteringer, ledelsesskift, FDA/forsogsresultater, partnerskaber, kreditvurdering) blev bevaret, da Nasdaq-feedets korte summary kun er en kategori-tag ('Halvarsrapport', 'Intern viden' mv.) - den reelle vaerdi ligger i titlen, som ikke er generisk. Ingen stale-kandidater fundet (ingen items > 180 dage)."
+}
