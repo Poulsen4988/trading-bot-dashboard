@@ -1,27 +1,27 @@
 {
-  "updated": "2026-08-07",
+  "updated": "2026-08-17",
   "stats": {
-    "closed_trades": 4,
-    "wins": 2,
+    "closed_trades": 5,
+    "wins": 3,
     "losses": 2,
-    "win_rate_pct": 50.0,
-    "avg_win_pct": 18.77,
+    "win_rate_pct": 60.0,
+    "avg_win_pct": 21.88,
     "avg_loss_pct": -8.09,
-    "avg_pnl_pct": 5.34,
-    "avg_holding_days": 8.8,
-    "total_realized_usd": -1335.63,
-    "target_hits": 1,
+    "avg_pnl_pct": 9.89,
+    "avg_holding_days": 10.6,
+    "total_realized_usd": -1259.65,
+    "target_hits": 2,
     "stop_hits": 1,
     "thesis_verdicts": {
       "FAILED": 2,
       "PARTIAL": 1,
-      "HELD": 1
+      "HELD": 2
     },
     "by_sector": {
       "Information Technology": {
-        "n": 2,
-        "wins": 1,
-        "avg_pnl_pct": 11.62
+        "n": 3,
+        "wins": 2,
+        "avg_pnl_pct": 17.11
       },
       "Communication Services": {
         "n": 1,
@@ -131,6 +131,30 @@
       "stop_hit": false,
       "thesis_verdict": "HELD",
       "lesson": "NOW: +35.8% over 15 days — assumption HELD. Expected +13.1%. Plan horizon: 3-6 måneder. Price target reached."
+    },
+    {
+      "trade_key": "id:165",
+      "date": "2026-08-17",
+      "symbol": "GLW",
+      "name": "Corning Inc.",
+      "sector": "Information Technology",
+      "buy_date": "2026-07-30",
+      "holding_days": 18,
+      "shares": 2,
+      "buy_price": 135.22,
+      "sell_price": 173.21,
+      "realized_pnl_usd": 75.98,
+      "realized_pnl_pct": 28.09,
+      "expected_return_pct": 18.3,
+      "price_target": 160.0,
+      "stop_loss": 108.87,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Skarp rebound drevet af AI-datacenter-optisk-efterspørgsel og en sektorbred halvlederrally efter et brutalt guidance-drevet fald.",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HELD",
+      "lesson": "GLW: +28.1% over 18 days — assumption HELD. Expected +18.3%. Plan horizon: 3-6 måneder. Price target reached."
     }
   ]
 }
