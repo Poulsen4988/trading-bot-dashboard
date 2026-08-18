@@ -1,28 +1,28 @@
 {
-  "updated": "2026-08-13",
+  "updated": "2026-08-18",
   "stats": {
-    "closed_trades": 25,
-    "wins": 15,
-    "losses": 9,
-    "win_rate_pct": 62.5,
-    "avg_win_pct": 10.97,
-    "avg_loss_pct": -4.32,
-    "avg_pnl_pct": 5.24,
-    "avg_holding_days": 22.5,
-    "total_realized_dkk": 10991.62,
+    "closed_trades": 27,
+    "wins": 16,
+    "losses": 10,
+    "win_rate_pct": 61.5,
+    "avg_win_pct": 10.8,
+    "avg_loss_pct": -4.67,
+    "avg_pnl_pct": 4.85,
+    "avg_holding_days": 22.2,
+    "total_realized_dkk": 10200.62,
     "target_hits": 4,
-    "stop_hits": 2,
+    "stop_hits": 3,
     "thesis_verdicts": {
       "UKENDT": 1,
-      "HOLDT IKKE": 9,
-      "DELVIST": 11,
+      "HOLDT IKKE": 10,
+      "DELVIST": 12,
       "HOLDT": 4
     },
     "by_sector": {
       "Consumer Defensive": {
-        "n": 4,
+        "n": 5,
         "wins": 2,
-        "avg_pnl_pct": 7.18
+        "avg_pnl_pct": 3.43
       },
       "Industrials": {
         "n": 5,
@@ -45,9 +45,9 @@
         "avg_pnl_pct": 7.52
       },
       "Healthcare": {
-        "n": 7,
-        "wins": 5,
-        "avg_pnl_pct": 5.28
+        "n": 8,
+        "wins": 6,
+        "avg_pnl_pct": 5.64
       }
     }
   },
@@ -651,6 +651,54 @@
       "stop_hit": false,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "NOVO-B.CO: -2.0% på 9 dage — antagelse HOLDT IKKE. Forventet +12.1%. Plan-horisont: 3-6 maaneder."
+    },
+    {
+      "trade_key": "id:442",
+      "date": "2026-08-18",
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "sector": "Healthcare",
+      "buy_date": "2026-07-15",
+      "holding_days": 34,
+      "shares": 15,
+      "buy_price": 396.5,
+      "sell_price": 428.7,
+      "realized_pnl_dkk": 483.0,
+      "realized_pnl_pct": 8.12,
+      "expected_return_pct": 13.5,
+      "price_target": 450.0,
+      "stop_loss": 376.0,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Deep-value sundhedsnavn med et frisk regulatorisk katalysator (FDA-godkendelse) og velbegrundet udbytte. Positionen er sized moderat (~5.5% af porteføljen) da SMA200-trenden endnu ikke er bekræftet vendt.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "DELVIST",
+      "lesson": "COLO-B.CO: +8.1% på 34 dage — antagelse DELVIST. Forventet +13.5%. Plan-horisont: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:448",
+      "date": "2026-08-18",
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "sector": "Consumer Defensive",
+      "buy_date": "2026-08-13",
+      "holding_days": 5,
+      "shares": 35,
+      "buy_price": 464.8,
+      "sell_price": 428.4,
+      "realized_pnl_dkk": -1274.0,
+      "realized_pnl_pct": -7.83,
+      "expected_return_pct": 16.2,
+      "price_target": 540.0,
+      "stop_loss": 445.0,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Oversolgt kvalitetsnavn med stærk indtjeningsvækst og aktiv kapitaltilbageførsel handles til rabat — indgang nær støtte for asymmetrisk risk/reward.",
+      "target_hit": false,
+      "stop_hit": true,
+      "thesis_verdict": "HOLDT IKKE",
+      "lesson": "RBREW.CO: -7.8% på 5 dage — antagelse HOLDT IKKE. Forventet +16.2%. Plan-horisont: 3-6 måneder. Exit på/under stop-loss."
     }
   ]
 }
