@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-19",
+  "updated": "2026-08-21",
   "stats": {
-    "closed_trades": 6,
-    "wins": 4,
+    "closed_trades": 7,
+    "wins": 5,
     "losses": 2,
-    "win_rate_pct": 66.7,
-    "avg_win_pct": 17.34,
+    "win_rate_pct": 71.4,
+    "avg_win_pct": 18.88,
     "avg_loss_pct": -8.09,
-    "avg_pnl_pct": 8.87,
-    "avg_holding_days": 17.5,
-    "total_realized_usd": -498.05,
-    "target_hits": 2,
+    "avg_pnl_pct": 11.18,
+    "avg_holding_days": 22.7,
+    "total_realized_usd": 1467.95,
+    "target_hits": 3,
     "stop_hits": 1,
     "thesis_verdicts": {
       "FAILED": 2,
       "PARTIAL": 2,
-      "HELD": 2
+      "HELD": 3
     },
     "by_sector": {
       "Information Technology": {
@@ -37,6 +37,11 @@
         "n": 1,
         "wins": 1,
         "avg_pnl_pct": 3.74
+      },
+      "Financials": {
+        "n": 1,
+        "wins": 1,
+        "avg_pnl_pct": 25.03
       }
     }
   },
@@ -184,6 +189,30 @@
       "stop_hit": false,
       "thesis_verdict": "PARTIAL",
       "lesson": "NUE: +3.7% over 52 days — assumption PARTIAL. Expected +14.0%. Plan horizon: 2-4 måneder."
+    },
+    {
+      "trade_key": "id:191",
+      "date": "2026-08-21",
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "buy_date": "2026-06-28",
+      "holding_days": 54,
+      "shares": 100,
+      "buy_price": 78.56,
+      "sell_price": 98.22,
+      "realized_pnl_usd": 1966.0,
+      "realized_pnl_pct": 25.03,
+      "expected_return_pct": 12.0,
+      "price_target": 88.0,
+      "stop_loss": 72.99,
+      "timeframe": "2-3 måneder",
+      "term": "medium",
+      "thesis": "Mean-reversion trade i oversold kvalitetsfranchise. Entry ved RSI 30.6 med analyst-estimater der stiger, mens kursen falder — klassisk divergens. Stop under 3 giver begrænset downside, mens SMA50 (8) giver 12% naturligt mål.",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HELD",
+      "lesson": "NDAQ: +25.0% over 54 days — assumption HELD. Expected +12.0%. Plan horizon: 2-3 måneder. Price target reached."
     }
   ]
 }
