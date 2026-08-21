@@ -1,0 +1,396 @@
+{
+  "date": "2026-08-21",
+  "market_summary": "NDAQ har passeret sit kursmål og er kraftigt overkøbt, så 40% af positionen sælges for at låse gevinsten og reducere den tunge Financials/single-stock-koncentration, mens resten beholdes for december-katalysatoren (23-timers handel) med hævet trailing-stop. De øvrige ni positioner holder alle stop og teser intakte og beholdes uændret. Provenuet fra NDAQ-salget finansierer to nye, diversificerende oversolgte-bounce-køb uden for de tunge Industrials- (33.1%) og Financials-sektorerne: Aflac (ekstremt oversolgt på en sektor-bred renteudløst selloff, ikke selskabsspecifik) og TJX (beat-and-raise overskygget af et isoleret Marmaxx-problem, bekræftet sundt af Ross Stores' stærke comps).",
+  "decisions": [
+    {
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "action": "SELL",
+      "shares": 100,
+      "price": 98.22,
+      "confidence": 6,
+      "reasoning": "Kursen ($98.22) har nu passeret kursmålet ($98), og aktien er teknisk stærkt overkøbt (RSI 72.5, Stoch 81.7, BB-position 99.5% - lige ved øvre bånd). Positionen er samtidig porteføljens største enkeltpost (23% vægt) i en sektor (Financials) der i forvejen udgør 23.3%. Tager delvis gevinst hjem (100 af 250 aktier, ca. 40%) for at låse profit og reducere koncentrationsrisiko, men beholder resten da den strukturelle 23-timers-handelskatalysator i december endnu ikke er indfriet og dagens verdict fortsat er BULL.",
+      "bull": [
+        "Trading near its 52-week high in a strong confirmed uptrend, with the planned 23-hour trading launch in December seen as a genuine new growth driver.",
+        "Consistently positive momentum across all timeframes (1d/5d/20d all up)."
+      ],
+      "bear": [
+        "RSI (72.5) and Stochastic (81.7) signal overbought conditions right at the upper Bollinger Band — limited near-term upside without a pullback.",
+        "The company's president selling shares, while modest, is a mild insider-sentiment flag worth noting."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Delvis gevinsthjemtagning ved kursmål; resterende 150 aktier holdes for december-katalysatoren (23-timers handel) med hævet trailing-stop for at beskytte den optjente gevinst.",
+        "price_target": 105,
+        "stop_loss": 94.48,
+        "expected_return_pct": 6.91,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Trailing stop hævet til $94.48 (2x ATR under nuværende kurs). Sælg resten ved close under stop eller markant eskalering af perpetual-futures-konkurrencetrussel."
+      }
+    },
+    {
+      "symbol": "TDG",
+      "name": "TransDigm Group",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1200.35,
+      "confidence": 5,
+      "reasoning": "Fortsat oversolgt (RSI 30.6, Stoch 11.4) efter et makro-/oliedrevet industriudsalg, ikke selskabsspecifik svaghed - Q3-regnskabet var reelt et beat-and-raise. Ingen stop- eller tesebrud. Industrials-sektoren er ganske vist tung (33.1% inkl. MMM), men holder uden at tilføje mere kapital.",
+      "bull": [
+        "RSI (30.6) and Stochastic (11.4) both point to an oversold setup after the pullback, and the aerospace-parts moat (essential, sole-source components) remains durable.",
+        "Only modestly below both moving averages, suggesting the pullback is contained rather than a trend break."
+      ],
+      "bear": [
+        "A covered-call income strategy being pitched on the stock implies options pricing expects limited near-term upside.",
+        "Negative MACD confirms recent momentum has turned down, and it's below both its 50- and 200-day averages."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Makro-/oliedrevet industriselloff, ikke selskabsspecifik svaghed - høj-margin aerospace-eftermarkedsforretning forbliver intakt.",
+        "price_target": 1350,
+        "stop_loss": 1166.19,
+        "expected_return_pct": 12.47,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $1166.19 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller brud på Zacks-opgraderingens antagelser."
+      }
+    },
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 237.04,
+      "confidence": 6,
+      "reasoning": "Tesen styrkes yderligere - Wedbush og Oppenheimer fremhæver begge fortsat opside fra Google-designvindingen og kommende AI-kunde-momentum. Det skarpe enkeltdags-dyk (-5.57%) efter en to-dages stigning er volatilitet, ikke tesebrud - stadig 28% under 52-ugers-højden trods den langsigtede opadgående trend (SMA200 +63%).",
+      "bull": [
+        "Massive long-term uptrend intact (+63% above its 200-day average) on custom AI silicon wins, with Wedbush flagging a bullish Google AI chip deal signal.",
+        "Oppenheimer sees potential upside surprise in the next quarterly report from AI and customer wins."
+      ],
+      "bear": [
+        "A sharp -5.57% single-day drop right after a two-day surge shows the stock is highly volatile and prone to violent round-trips on AI-chip headlines.",
+        "Still 28% below its 52-week high — the AI-chip re-rating hasn't fully recovered despite strong recent momentum."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Sektor-bred sympati-selloff i chip-komplekset giver dyb oversolgt entry i en langsigtet intakt AI-silicon-vækstcase, nu bekræftet af en konkret Google-designvinding.",
+        "price_target": 275,
+        "stop_loss": 162.53,
+        "expected_return_pct": 16.02,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $162.53 (2x ATR). Sælg hvis Kina-hukommelseskonkurrencen viser sig strukturel, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "MMM",
+      "name": "3M Company",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 178.96,
+      "confidence": 6,
+      "reasoning": "Sund, bekræftet opadgående trend nær 52-ugers-højden med positiv MACD - ikke overkøbt (RSI 54.5). Consumer-segmentets svage efterspørgsel er et kendt, isoleret svaghedspunkt, ikke et brud på hovedtesen (beat-and-raise + Azure-partnerskab). Ingen stopbrud.",
+      "bull": [
+        "Trading near its 52-week high (-3.2%) in a healthy, confirmed uptrend above both moving averages with a positive MACD.",
+        "Peer GE Aerospace's strong capital position and shareholder returns supports a constructive read-through for industrial conglomerates broadly."
+      ],
+      "bear": [
+        "3M's own Consumer segment is explicitly flagged as struggling with soft demand — a company-specific weak spot even as the stock trades near highs.",
+        "Peer Honeywell's persistent Process Automation weakness signals industrial end-market softness that could eventually catch up to 3M."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Ægte beat-and-raise-regnskab plus nyt Azure-partnerskab holder det tekniske billede bullish.",
+        "price_target": 195,
+        "stop_loss": 167.21,
+        "expected_return_pct": 8.96,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $167.21 (2x ATR). Sælg ved PFAS/høreværns-retssagsrisiko eskalerer yderligere, eller tilbagegang i organisk vækst/guidance."
+      }
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 548.05,
+      "confidence": 6,
+      "reasoning": "Kraftigt overkøbt (RSI 75.7, Stoch 91.9) efter en stærk periode, men kun 1.3% fra 52-ugers-højden og under det hævede kursmål ($590) - hverken stop eller tese er brudt. Cystisk fibrose-franchisen og opkøbstesen (Crinetics) forbliver intakte. Holder uden at tilføje mere kapital i det overkøbte niveau.",
+      "bull": [
+        "Powerful, confirmed uptrend near its 52-week high, with Wall Street broadly bullish on continued cystic-fibrosis franchise strength and strong free cash flow.",
+        "Consistently positive momentum across all timeframes with a strongly positive MACD."
+      ],
+      "bear": [
+        "RSI (75.7) and Stochastic (91.9) are firmly overbought — due for at least a pause or pullback after running hard.",
+        "Trading just 1.3% off its 52-week high leaves little margin of safety if sentiment shifts."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Dybt oversolgt i en teknisk intakt opadgående trend, med Crinetics-opkøb som signal om offensiv pipeline-udvidelse - tesen er siden bekræftet af hævet guidance og gennemført tilbagekøb, så kursmålet hæves.",
+        "price_target": 590,
+        "stop_loss": 448.95,
+        "expected_return_pct": 7.65,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $448.95 (2x ATR). Sælg hvis Crinetics-opkøbet viser overbetaling/integrationsproblemer, eller ved pipeline-skuffelse."
+      }
+    },
+    {
+      "symbol": "FLEX",
+      "name": "Flex Ltd.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 110.45,
+      "confidence": 5,
+      "reasoning": "Skarp 5-dages nedtur (-12.45%) og brud under 50-dages gennemsnittet skader momentum kortsigtet, men aktien er stadig 19.4% over 200-dages gennemsnittet - den langsigtede AI-infrastruktur-tese er intakt. Lille spejderposition (1.2% vægt), stop langt væk ($85.68). Holder.",
+      "bull": [
+        "Still well above its 200-day average (+19.4%) despite the recent slide — the long-term AI-infrastructure uptrend is intact, just a sharp pullback.",
+        "Continues to be framed positively versus peer Celestica on its integrated AI infrastructure platform (power and cooling)."
+      ],
+      "bear": [
+        "A steep 12.4% five-day drop and break below the 50-day average shows real near-term momentum damage, not just noise.",
+        "33.8% off its 52-week high — the \"AI infrastructure\" premium the stock enjoyed is being reassessed by the market."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Beat-and-raise-regnskab ignoreret af markedet i en bred tech-selloff giver en dybt oversolgt entry.",
+        "price_target": 135,
+        "stop_loss": 85.68,
+        "expected_return_pct": 22.23,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $85.68 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller fortsat makrodrevet selloff uden bundtegn."
+      }
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 258.63,
+      "confidence": 6,
+      "reasoning": "Konsoliderer i en fortsat intakt opadgående trend (over begge glidende gennemsnit, positiv MACD), kortsigtet oversolgt (RSI 24.5) foran Nvidias regnskab. Kuiper-vs-Starlink-bekymringen er en ny, men ikke tesebrydende, konkurrencerisiko. Kun ca. 2% fra stop - overvåges tæt, men ingen brud endnu.",
+      "bull": [
+        "Still above both key moving averages with a positive MACD despite a short-term pullback — an uptrend, not a breakdown.",
+        "RSI of 24.5 is oversold near-term, leaving room for a bounce heading into Nvidia's earnings catalyst next week."
+      ],
+      "bear": [
+        "Kuiper's satellite build-out is being unfavorably compared to Starlink's pace, undercutting a key future growth narrative.",
+        "Broader AI-capex sentiment risk (DeepSeek-style efficiency headlines) could pressure AWS-linked names into Nvidia's earnings."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Regnskabsdrevet breakout bekræfter AI-monetisering på tværs af cloud og retail.",
+        "price_target": 320,
+        "stop_loss": 253.07,
+        "expected_return_pct": 23.73,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $253.07 (2x ATR, lige under dagens breakout-niveau). Sælg ved skarp reversal uden opfølgning eller selskabsspecifik skuffelse."
+      }
+    },
+    {
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 107.78,
+      "confidence": 6,
+      "reasoning": "Stærk, bekræftet opadgående trend på streaming-momentum (NFL-aftale, bundle-strategi), men teknisk overkøbt (RSI 73.6, Stoch 92.0) - due for konsolidering. Stadig under 52-ugers-højden og under kursmålet. Ingen stopbrud - holder.",
+      "bull": [
+        "Strong, confirmed uptrend — above both moving averages with a positive MACD and a 13.6% 20-day gain.",
+        "Continued streaming expansion (Disney+ APAC) and favorable comparisons to a struggling Netflix support the growth narrative."
+      ],
+      "bear": [
+        "RSI (73.6) and Stochastic (92.0) signal an overbought condition — due for at least a consolidation after running hard.",
+        "Still below its 52-week high, so the \"20% discount justified\" debate flagged in the news isn't fully resolved."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "NFL-indholdsaftalen og bundle-strategien virker synligt - faldende churn, stigende abonnentvækst og analytiker-kursmålsforhøjelser efter femte regnskabsbeat i træk.",
+        "price_target": 115,
+        "stop_loss": 99.98,
+        "expected_return_pct": 6.7,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $99.98 (2x ATR). Sælg hvis streaming-bundle-økonomien eller NFL-indholdsomkostninger eroderer marginforbedringen, eller ved skarpt reversal uden opfølgning."
+      }
+    },
+    {
+      "symbol": "L",
+      "name": "Loews Corporation",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 109.83,
+      "confidence": 6,
+      "reasoning": "Ekstremt oversolgt (RSI 8.2, Stoch 0.4) - et sjældent teknisk bounce-setup - stadig over 200-dages gennemsnittet. Kun ca. 1.5% fra stop, men stoppet er ikke ramt endnu, og positionen er meget lille (0.3% vægt) så risikoen er begrænset. CNA-forsikringssvagheden overvåges. Holder.",
+      "bull": [
+        "RSI of 8.2 is an extreme oversold reading almost never sustained — a strong technical bounce setup, especially with the stock still above its 200-day average.",
+        "Reported higher Q2 profit with strength in hotels and pipelines, showing diversified earnings power."
+      ],
+      "bear": [
+        "Insurance underwriting softening at CNA (a core Loews holding) is a real earnings-quality concern worth monitoring.",
+        "Momentum is still negative (MACD -0.94) with no confirmed reversal yet despite the extreme oversold reading."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Solidt Q2-beat i hoteller/rørledninger og en ekstremt oversolgt RSI (9.2) relativt til det milde 5-dages fald peger på en teknisk bounce-mulighed i et fundamentalt sundt konglomerat.",
+        "price_target": 120.7,
+        "stop_loss": 108.22,
+        "expected_return_pct": 9.9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $108.22 (2x ATR). Sælg hvis CNA-forsikringsunderwriting svækkes markant yderligere, eller ved brud på RSI-bounce-tesen uden opfølgning."
+      }
+    },
+    {
+      "symbol": "KEYS",
+      "name": "Keysight Technologies",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 316.13,
+      "confidence": 6,
+      "reasoning": "Rekordkvartal og hævet guidance bekræfter fundamentet, men aktien er faldet skarpt kortsigtet (-11.65% på 5 dage) og under 50-dages gennemsnittet - et sentiment-/positioneringsdrevet fald, ikke selskabsspecifikt. Stadig langt fra stop ($289.67). Holder.",
+      "bull": [
+        "Reported record Q3 results with a raised full-year outlook, and remains well above its 200-day average — strong underlying fundamentals.",
+        "AI infrastructure and 6G test/measurement demand are structural growth drivers going forward."
+      ],
+      "bear": [
+        "A sharp 11.65% five-day drop despite the record results and raised guidance suggests a lot of good news had already been priced in.",
+        "Below its 50-day average now, so short-term momentum has turned negative."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Genuin fundamental forbedring (beat-and-raise på AI-infrastruktur) er maskeret af bred tech-sektor-selloff, hvilket giver et sentimentdrevet, ikke selskabsspecifikt, indgangspunkt.",
+        "price_target": 360,
+        "stop_loss": 289.67,
+        "expected_return_pct": 13.88,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $289.67 (2x ATR). Sælg ved bekræftet forværring af leveringsbegrænsninger eller selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "DHI",
+      "name": "D. R. Horton",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 148.35,
+      "confidence": 5,
+      "reasoning": "Konsoliderer stabilt omkring begge glidende gennemsnit uden ny katalysator - hverken bekræftet breakdown eller breakout. Berkshire-tesen (Greg Abel-køb) og det konstruktive tekniske setup forbliver gyldige. Ingen stopbrud. Holder uden at tilføje.",
+      "bull": [
+        "Consolidating right at both the 50- and 200-day averages with neutral RSI — a stable base rather than a breakdown.",
+        "Up 6.6% since its last earnings report signals a constructive initial market reaction to results."
+      ],
+      "bear": [
+        "Still 18.65% below its 52-week high with no clear new catalyst — homebuilders remain exposed to mortgage-rate sensitivity.",
+        "Momentum is essentially flat (MACD near zero), offering no strong directional edge right now."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Notabelt Berkshire-køb (Greg Abel) og et konstruktivt teknisk setup gør dette til en interessant scout-position, på trods af at stigende renter er en reel modvind for boligtesen.",
+        "price_target": 175,
+        "stop_loss": 142.59,
+        "expected_return_pct": 17.97,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $142.59 (2x ATR). Sælg hvis boligrentestigningen accelererer yderligere eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "AFL",
+      "name": "Aflac",
+      "action": "BUY",
+      "shares": 21,
+      "price": 116.07,
+      "confidence": 6,
+      "reasoning": "Ekstremt oversolgt (RSI 18.6, Stoch 2.4) på en bred sektor-selloff drevet af stigende renter, ikke selskabsspecifik svaghed - aktien handler stadig over sit 200-dages gennemsnit. 43 år i træk med udbyttestigninger og udsigt til Dividend King-status underbygger balancekvaliteten. Finansieret af NDAQ-gevinsthjemtagningen; moderat størrelse for at sprede risikoen bredere inden for Financials-sektoren.",
+      "bull": [
+        "A realistic path to Dividend King status underscores balance-sheet quality and shareholder-return discipline.",
+        "RSI (18.6) and Stochastic (2.4) are extreme oversold readings while the stock remains above its 200-day average — a pullback within an intact uptrend."
+      ],
+      "bear": [
+        "Broad insurance-sector pressure from surging yields and geopolitical risk is a macro headwind that could persist.",
+        "No stock-specific positive catalyst identified beyond the dividend-growth narrative."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Sektor-bred renteudløst selloff giver en dybt oversolgt entry i et kvalitetsforsikringsselskab med 43 år i træk med udbyttestigninger, stadig over 200-dages gennemsnittet.",
+        "price_target": 130,
+        "stop_loss": 111.84,
+        "expected_return_pct": 12.0,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $111.84 (2x ATR). Sælg hvis rentepresset på forsikringssektoren viser sig strukturelt vedvarende, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "TJX",
+      "name": "TJX Companies",
+      "action": "BUY",
+      "shares": 14,
+      "price": 140.53,
+      "confidence": 6,
+      "reasoning": "Slog Q2-forventningerne på trods af et 'selvforskyldt' Marmaxx-udførelsesproblem, og peer Ross Stores' +8% comp-vækst bekræfter at den underliggende off-price-efterspørgsel er intakt. RSI (21.5) er dybt oversolgt - den tekniske skade overgår den fundamentale. Diversificerer ind i Consumer Discretionary, en sektor der ikke i forvejen er overeksponeret.",
+      "bull": [
+        "Beat Q2 earnings expectations, and off-price peer Ross Stores' +8% comps show sector demand is intact.",
+        "RSI of 21.5 is deeply oversold — a technical bounce looks likely given fundamentals didn't actually disappoint."
+      ],
+      "bear": [
+        "Management's own \"self-inflicted\" apparel slump is a controllable-but-real execution issue investors are penalizing.",
+        "Broke below both the 50- and 200-day averages despite the earnings beat, showing technical damage outpacing fundamentals."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Beat-and-raise-kvartal overskygget af et isoleret Marmaxx-udførelsesproblem giver en dybt oversolgt entry i en fundamentalt sund off-price-leder, bekræftet af Ross Stores' stærke comps.",
+        "price_target": 158,
+        "stop_loss": 133.58,
+        "expected_return_pct": 12.43,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $133.58 (2x ATR). Sælg hvis Marmaxx-udførelsesproblemerne eskalerer yderligere eller ved bredere off-price-efterspørgselssvækkelse."
+      }
+    }
+  ]
+}
