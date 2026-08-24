@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 8602.13,
+    "cash": 5490.13,
     "currency": "USD",
     "positions": [
       {
@@ -9,7 +9,7 @@
         "name": "Nasdaq, Inc.",
         "shares": 150,
         "purchase_price": 78.56,
-        "current_price": 98.22,
+        "current_price": 98.79,
         "purchase_date": "2026-06-28",
         "investment_plan": {
           "term": "medium",
@@ -18,16 +18,16 @@
             "fundamental"
           ],
           "thesis": "Bekræftet teknisk vending + rekordstærkt IPO-halvår og AI-platform-adoption forbliver intakt.",
-          "price_target": 98,
-          "stop_loss": 90.38,
-          "expected_return_pct": 1.71,
+          "price_target": 108,
+          "stop_loss": 95.06,
+          "expected_return_pct": 9.3,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Stop ved $90.38 (2x ATR). Sælg ved close under stop eller markant eskalering af perpetual-futures-konkurrencetrussel."
+          "exit_conditions": "Trailing stop ved $95.06 (2x ATR fra nuværende niveau). Sælg ved close under stop eller markant eskalering af perpetual-futures-konkurrencetrussel."
         },
         "last_review": {
-          "date": "2026-08-19",
-          "reasoning": "Strukturel vækstkatalysator (næsten 23-timers handel fra december) og bekræftet opadgående trend (SMA50/SMA200 begge +7.75%/+7.97%) forbliver intakt. Prisen nærmer sig kursmålet ($96.35 vs. $98), men ingen stop- eller tesebrud - lader positionen løbe.",
-          "confidence": 6
+          "date": "2026-08-24",
+          "reasoning": "Aktien handler nu over det oprindelige kursmål ($98) med RSI 78.3 stærkt overkøbt, men den strukturelle vækstcase (23-timers handel fra 6. december, diversificeret indtjening) er intakt og ubrudt. Trailer stop op og hæver kursmål for at give plads til december-katalysatoren i stedet for at sælge mere ind i styrken.",
+          "confidence": 5
         }
       },
       {
@@ -35,7 +35,7 @@
         "name": "TransDigm Group",
         "shares": 16,
         "purchase_price": 1235.0,
-        "current_price": 1200.35,
+        "current_price": 1199.08,
         "purchase_date": "2026-07-13",
         "investment_plan": {
           "term": "medium",
@@ -46,14 +46,14 @@
           "thesis": "Makro-/oliedrevet industriselloff, ikke selskabsspecifik svaghed - høj-margin aerospace-eftermarkedsforretning forbliver intakt.",
           "price_target": 1350,
           "stop_loss": 1166.19,
-          "expected_return_pct": 12.47,
+          "expected_return_pct": 12.6,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $1166.19 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller brud på Zacks-opgraderingens antagelser."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Fortsat oversolgt (RSI 30.6, Stoch 11.4) efter et makro-/oliedrevet industriudsalg, ikke selskabsspecifik svaghed - Q3-regnskabet var reelt et beat-and-raise. Ingen stop- eller tesebrud. Industrials-sektoren er ganske vist tung (33.1% inkl. MMM), men holder uden at tilføje mere kapital.",
-          "confidence": 5
+          "date": "2026-08-24",
+          "reasoning": "Fortsat makro-/oliedrevet industriudsalg, ikke selskabsspecifik svaghed. RSI 32 oversolgt men momentum endnu ikke vendt - stop og tese begge intakte, holder uændret.",
+          "confidence": 4
         }
       },
       {
@@ -61,7 +61,7 @@
         "name": "Marvell Technology",
         "shares": 35,
         "purchase_price": 206.26,
-        "current_price": 237.04,
+        "current_price": 229.29,
         "purchase_date": "2026-07-15",
         "investment_plan": {
           "term": "medium",
@@ -72,13 +72,13 @@
           "thesis": "Sektor-bred sympati-selloff i chip-komplekset giver dyb oversolgt entry i en langsigtet intakt AI-silicon-vækstcase, nu bekræftet af en konkret Google-designvinding.",
           "price_target": 275,
           "stop_loss": 162.53,
-          "expected_return_pct": 16.02,
+          "expected_return_pct": 19.9,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $162.53 (2x ATR). Sælg hvis Kina-hukommelseskonkurrencen viser sig strukturel, eller ved selskabsspecifik indtjeningsskuffelse."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Tesen styrkes yderligere - Wedbush og Oppenheimer fremhæver begge fortsat opside fra Google-designvindingen og kommende AI-kunde-momentum. Det skarpe enkeltdags-dyk (-5.57%) efter en to-dages stigning er volatilitet, ikke tesebrud - stadig 28% under 52-ugers-højden trods den langsigtede opadgående trend (SMA200 +63%).",
+          "date": "2026-08-24",
+          "reasoning": "Det rapporterede $120 mia. Google-designvindings-samarbejde er en reel strukturel katalysator; dagens pullback er sektorbred halvlederssvaghed, ikke selskabsspecifik. Forhøjet earnings-eventrisiko taler for ikke at tilføje mere kapital nu, men tese og stop er intakte.",
           "confidence": 6
         }
       },
@@ -87,7 +87,7 @@
         "name": "3M Company",
         "shares": 90,
         "purchase_price": 170.76,
-        "current_price": 178.96,
+        "current_price": 179.01,
         "purchase_date": "2026-07-21",
         "investment_plan": {
           "term": "medium",
@@ -98,14 +98,14 @@
           "thesis": "Ægte beat-and-raise-regnskab plus nyt Azure-partnerskab holder det tekniske billede bullish.",
           "price_target": 195,
           "stop_loss": 167.21,
-          "expected_return_pct": 8.96,
+          "expected_return_pct": 8.9,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $167.21 (2x ATR). Sælg ved PFAS/høreværns-retssagsrisiko eskalerer yderligere, eller tilbagegang i organisk vækst/guidance."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Sund, bekræftet opadgående trend nær 52-ugers-højden med positiv MACD - ikke overkøbt (RSI 54.5). Consumer-segmentets svage efterspørgsel er et kendt, isoleret svaghedspunkt, ikke et brud på hovedtesen (beat-and-raise + Azure-partnerskab). Ingen stopbrud.",
-          "confidence": 6
+          "date": "2026-08-24",
+          "reasoning": "Fortsat resiliens nær 52-ugers højder trods et isoleret svagt punkt i forbrugersegmentet - ingen brud på beat-and-raise-tesen eller Azure-partnerskabet.",
+          "confidence": 5
         }
       },
       {
@@ -113,7 +113,7 @@
         "name": "Vertex Pharmaceuticals",
         "shares": 20,
         "purchase_price": 477.36,
-        "current_price": 548.05,
+        "current_price": 547.59,
         "purchase_date": "2026-07-24",
         "investment_plan": {
           "term": "medium",
@@ -124,13 +124,13 @@
           "thesis": "Dybt oversolgt i en teknisk intakt opadgående trend, med Crinetics-opkøb som signal om offensiv pipeline-udvidelse - tesen er siden bekræftet af hævet guidance og gennemført tilbagekøb, så kursmålet hæves.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 7.65,
+          "expected_return_pct": 7.7,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $448.95 (2x ATR). Sælg hvis Crinetics-opkøbet viser overbetaling/integrationsproblemer, eller ved pipeline-skuffelse."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Kraftigt overkøbt (RSI 75.7, Stoch 91.9) efter en stærk periode, men kun 1.3% fra 52-ugers-højden og under det hævede kursmål ($590) - hverken stop eller tese er brudt. Cystisk fibrose-franchisen og opkøbstesen (Crinetics) forbliver intakte. Holder uden at tilføje mere kapital i det overkøbte niveau.",
+          "date": "2026-08-24",
+          "reasoning": "Stærk bekræftet opadgående trend nær højder, tesen er allerede blevet bekræftet én gang af hævet guidance og gennemført tilbagekøb. RSI 74.1 overkøbt taler for ikke at tilføje mere, men ingen grund til at sælge - holder.",
           "confidence": 6
         }
       },
@@ -139,7 +139,7 @@
         "name": "Flex Ltd.",
         "shares": 12,
         "purchase_price": 103.02,
-        "current_price": 110.45,
+        "current_price": 106.65,
         "purchase_date": "2026-07-29",
         "investment_plan": {
           "term": "medium",
@@ -150,13 +150,13 @@
           "thesis": "Beat-and-raise-regnskab ignoreret af markedet i en bred tech-selloff giver en dybt oversolgt entry.",
           "price_target": 135,
           "stop_loss": 85.68,
-          "expected_return_pct": 22.23,
+          "expected_return_pct": 26.6,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $85.68 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller fortsat makrodrevet selloff uden bundtegn."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Skarp 5-dages nedtur (-12.45%) og brud under 50-dages gennemsnittet skader momentum kortsigtet, men aktien er stadig 19.4% over 200-dages gennemsnittet - den langsigtede AI-infrastruktur-tese er intakt. Lille spejderposition (1.2% vægt), stop langt væk ($85.68). Holder.",
+          "date": "2026-08-24",
+          "reasoning": "Skarpt teknisk breakdown (-18.2% under 50-dages), men den grundlæggende tese om et overset beat-and-raise-regnskab i en bred tech-selloff er ikke brudt, og aktien er langt over stop. Holder.",
           "confidence": 5
         }
       },
@@ -165,7 +165,7 @@
         "name": "Amazon.com, Inc.",
         "shares": 4,
         "purchase_price": 271.58,
-        "current_price": 258.63,
+        "current_price": 262.07,
         "purchase_date": "2026-07-31",
         "investment_plan": {
           "term": "medium",
@@ -176,14 +176,14 @@
           "thesis": "Regnskabsdrevet breakout bekræfter AI-monetisering på tværs af cloud og retail.",
           "price_target": 320,
           "stop_loss": 253.07,
-          "expected_return_pct": 23.73,
+          "expected_return_pct": 22.1,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $253.07 (2x ATR, lige under dagens breakout-niveau). Sælg ved skarp reversal uden opfølgning eller selskabsspecifik skuffelse."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Konsoliderer i en fortsat intakt opadgående trend (over begge glidende gennemsnit, positiv MACD), kortsigtet oversolgt (RSI 24.5) foran Nvidias regnskab. Kuiper-vs-Starlink-bekymringen er en ny, men ikke tesebrydende, konkurrencerisiko. Kun ca. 2% fra stop - overvåges tæt, men ingen brud endnu.",
-          "confidence": 6
+          "date": "2026-08-24",
+          "reasoning": "Hardware-prisstigninger pga. hukommelsesmangel er en reel, men afgrænset omkostningshovedvind - kernetesen om AI-monetisering via AWS/cloud er ikke ramt. Stop stadig et stykke væk, holder.",
+          "confidence": 5
         }
       },
       {
@@ -191,7 +191,7 @@
         "name": "Walt Disney Company (The)",
         "shares": 15,
         "purchase_price": 104.91,
-        "current_price": 107.78,
+        "current_price": 110.61,
         "purchase_date": "2026-08-07",
         "investment_plan": {
           "term": "medium",
@@ -202,14 +202,14 @@
           "thesis": "NFL-indholdsaftalen og bundle-strategien virker synligt - faldende churn, stigende abonnentvækst og analytiker-kursmålsforhøjelser efter femte regnskabsbeat i træk.",
           "price_target": 115,
           "stop_loss": 99.98,
-          "expected_return_pct": 6.7,
+          "expected_return_pct": 4.0,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $99.98 (2x ATR). Sælg hvis streaming-bundle-økonomien eller NFL-indholdsomkostninger eroderer marginforbedringen, eller ved skarpt reversal uden opfølgning."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Stærk, bekræftet opadgående trend på streaming-momentum (NFL-aftale, bundle-strategi), men teknisk overkøbt (RSI 73.6, Stoch 92.0) - due for konsolidering. Stadig under 52-ugers-højden og under kursmålet. Ingen stopbrud - holder.",
-          "confidence": 6
+          "date": "2026-08-24",
+          "reasoning": "NFL-aftalen og bundle-strategien fortsætter med at virke ifølge dækningen, men aktien er nu direkte navngivet som 'inflated' med RSI 76.8 - overkøbt nok til at undgå at tilføje mere. Ingen tesebrud, holder.",
+          "confidence": 5
         }
       },
       {
@@ -217,7 +217,7 @@
         "name": "Loews Corporation",
         "shares": 3,
         "purchase_price": 112.38,
-        "current_price": 109.83,
+        "current_price": 111.45,
         "purchase_date": "2026-08-17",
         "investment_plan": {
           "term": "medium",
@@ -228,14 +228,14 @@
           "thesis": "Solidt Q2-beat i hoteller/rørledninger og en ekstremt oversolgt RSI (9.2) relativt til det milde 5-dages fald peger på en teknisk bounce-mulighed i et fundamentalt sundt konglomerat.",
           "price_target": 120.7,
           "stop_loss": 108.22,
-          "expected_return_pct": 9.9,
+          "expected_return_pct": 8.3,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $108.22 (2x ATR). Sælg hvis CNA-forsikringsunderwriting svækkes markant yderligere, eller ved brud på RSI-bounce-tesen uden opfølgning."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Ekstremt oversolgt (RSI 8.2, Stoch 0.4) - et sjældent teknisk bounce-setup - stadig over 200-dages gennemsnittet. Kun ca. 1.5% fra stop, men stoppet er ikke ramt endnu, og positionen er meget lille (0.3% vægt) så risikoen er begrænset. CNA-forsikringssvagheden overvåges. Holder.",
-          "confidence": 6
+          "date": "2026-08-24",
+          "reasoning": "Q2-beat i hoteller/rørledninger og CNA-forsikringsbeat bekræfter fundamentet trods et mildt kursfald. Kun en uge inde i positionen - for tidligt at dømme RSI-bounce-tesen, holder.",
+          "confidence": 5
         }
       },
       {
@@ -243,7 +243,7 @@
         "name": "Keysight Technologies",
         "shares": 32,
         "purchase_price": 319.45,
-        "current_price": 316.13,
+        "current_price": 310.66,
         "purchase_date": "2026-08-19",
         "investment_plan": {
           "term": "medium",
@@ -254,14 +254,14 @@
           "thesis": "Genuin fundamental forbedring (beat-and-raise på AI-infrastruktur) er maskeret af bred tech-sektor-selloff, hvilket giver et sentimentdrevet, ikke selskabsspecifikt, indgangspunkt.",
           "price_target": 360,
           "stop_loss": 289.67,
-          "expected_return_pct": 13.88,
+          "expected_return_pct": 15.9,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $289.67 (2x ATR). Sælg ved bekræftet forværring af leveringsbegrænsninger eller selskabsspecifik indtjeningsskuffelse."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Rekordkvartal og hævet guidance bekræfter fundamentet, men aktien er faldet skarpt kortsigtet (-11.65% på 5 dage) og under 50-dages gennemsnittet - et sentiment-/positioneringsdrevet fald, ikke selskabsspecifikt. Stadig langt fra stop ($289.67). Holder.",
-          "confidence": 6
+          "date": "2026-08-24",
+          "reasoning": "Beat-and-raise-regnskabet bekræfter fundamentet; det skarpe 5-dages fald er sentimentdrevet sektorselloff i AI-infrastruktur-leverandører, ikke selskabsspecifikt. Godt over stop, holder.",
+          "confidence": 5
         }
       },
       {
@@ -269,7 +269,7 @@
         "name": "D. R. Horton",
         "shares": 68,
         "purchase_price": 151.86,
-        "current_price": 148.35,
+        "current_price": 148.97,
         "purchase_date": "2026-08-19",
         "investment_plan": {
           "term": "medium",
@@ -280,14 +280,14 @@
           "thesis": "Notabelt Berkshire-køb (Greg Abel) og et konstruktivt teknisk setup gør dette til en interessant scout-position, på trods af at stigende renter er en reel modvind for boligtesen.",
           "price_target": 175,
           "stop_loss": 142.59,
-          "expected_return_pct": 17.97,
+          "expected_return_pct": 17.5,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $142.59 (2x ATR). Sælg hvis boligrentestigningen accelererer yderligere eller ved selskabsspecifik indtjeningsskuffelse."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Konsoliderer stabilt omkring begge glidende gennemsnit uden ny katalysator - hverken bekræftet breakdown eller breakout. Berkshire-tesen (Greg Abel-køb) og det konstruktive tekniske setup forbliver gyldige. Ingen stopbrud. Holder uden at tilføje.",
-          "confidence": 5
+          "date": "2026-08-24",
+          "reasoning": "Konsoliderer omkring 200-dages gennemsnittet efter en post-earnings-stigning, momentum er fladt. Rentemodvind vedvarer som ventet, men ingen ny selskabsspecifik skuffelse - holder.",
+          "confidence": 4
         }
       },
       {
@@ -295,7 +295,7 @@
         "name": "Aflac",
         "shares": 21,
         "purchase_price": 116.07,
-        "current_price": 116.07,
+        "current_price": 118.2,
         "purchase_date": "2026-08-21",
         "investment_plan": {
           "term": "medium",
@@ -306,14 +306,14 @@
           "thesis": "Sektor-bred renteudløst selloff giver en dybt oversolgt entry i et kvalitetsforsikringsselskab med 43 år i træk med udbyttestigninger, stadig over 200-dages gennemsnittet.",
           "price_target": 130,
           "stop_loss": 111.84,
-          "expected_return_pct": 12.0,
+          "expected_return_pct": 10.0,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $111.84 (2x ATR). Sælg hvis rentepresset på forsikringssektoren viser sig strukturelt vedvarende, eller ved selskabsspecifik indtjeningsskuffelse."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Ekstremt oversolgt (RSI 18.6, Stoch 2.4) på en bred sektor-selloff drevet af stigende renter, ikke selskabsspecifik svaghed - aktien handler stadig over sit 200-dages gennemsnit. 43 år i træk med udbyttestigninger og udsigt til Dividend King-status underbygger balancekvaliteten. Finansieret af NDAQ-gevinsthjemtagningen; moderat størrelse for at sprede risikoen bredere inden for Financials-sektoren.",
-          "confidence": 6
+          "date": "2026-08-24",
+          "reasoning": "Fortsat over 200-dages gennemsnittet med kun et moderat fald fra toppen. Rentepresset på forsikringssektoren er bredt, ikke selskabsspecifikt - stop og tese intakte.",
+          "confidence": 5
         }
       },
       {
@@ -321,7 +321,7 @@
         "name": "TJX Companies",
         "shares": 14,
         "purchase_price": 140.53,
-        "current_price": 140.53,
+        "current_price": 140.71,
         "purchase_date": "2026-08-21",
         "investment_plan": {
           "term": "medium",
@@ -332,18 +332,44 @@
           "thesis": "Beat-and-raise-kvartal overskygget af et isoleret Marmaxx-udførelsesproblem giver en dybt oversolgt entry i en fundamentalt sund off-price-leder, bekræftet af Ross Stores' stærke comps.",
           "price_target": 158,
           "stop_loss": 133.58,
-          "expected_return_pct": 12.43,
+          "expected_return_pct": 12.3,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Stop ved $133.58 (2x ATR). Sælg hvis Marmaxx-udførelsesproblemerne eskalerer yderligere eller ved bredere off-price-efterspørgselssvækkelse."
         },
         "last_review": {
-          "date": "2026-08-21",
-          "reasoning": "Slog Q2-forventningerne på trods af et 'selvforskyldt' Marmaxx-udførelsesproblem, og peer Ross Stores' +8% comp-vækst bekræfter at den underliggende off-price-efterspørgsel er intakt. RSI (21.5) er dybt oversolgt - den tekniske skade overgår den fundamentale. Diversificerer ind i Consumer Discretionary, en sektor der ikke i forvejen er overeksponeret.",
+          "date": "2026-08-24",
+          "reasoning": "Dybt oversolgt (RSI 21.9) efter relativt svagere comps end Ross Stores, men stadig en fundamentalt sund off-price-leder uden nyt selskabsspecifikt brud. Holder.",
+          "confidence": 4
+        }
+      },
+      {
+        "symbol": "FCX",
+        "name": "Freeport-McMoRan",
+        "shares": 40,
+        "purchase_price": 77.8,
+        "current_price": 77.8,
+        "purchase_date": "2026-08-24",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Bekræftet teknisk opadgående trend i kobber på strukturel AI-datacenter-efterspørgsel, samtidig med at det diversificerer porteføljen ud af de tunge Industrials/Financials-sektorer og ind i Materials, som porteføljen ikke har eksponering mod i dag.",
+          "price_target": 90,
+          "stop_loss": 72.17,
+          "expected_return_pct": 15.7,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Stop ved $72.17 (2x ATR). Sælg ved skarp reversal uden opfølgning eller hvis AI-capex/kobbertemaet svækkes fundamentalt."
+        },
+        "last_review": {
+          "date": "2026-08-24",
+          "reasoning": "Bekræftet opadgående trend på strukturel AI/kobber-efterspørgsel, og diversificerer ind i Materials-sektoren som porteføljen ellers ikke har eksponering mod (0% i dag mod 33.1% i tunge Industrials). RSI 70.4/Stoch 91.9 overkøbt taler for en moderat, ikke fuld ATR-baseret startposition.",
           "confidence": 6
         }
       }
     ],
-    "last_updated": "2026-08-21 23:50 UTC"
+    "last_updated": "2026-08-24 22:51 UTC"
   },
   "history": [
     {
@@ -449,6 +475,10 @@
     {
       "date": "2026-08-21",
       "portfolio_value": 106819.49
+    },
+    {
+      "date": "2026-08-24",
+      "portfolio_value": 106538.56
     }
   ],
   "trades": [
@@ -3726,6 +3756,230 @@
         "summary": "Slog Q2-forventningerne på trods af et 'selvforskyldt' Marmaxx-udførelsesproblem, og peer Ross Stores' +8% comp-vækst bekræfter at den underliggende off-price-efterspørgsel er intakt. RSI (21.5) er dybt oversolgt - den tekniske skade overgå"
       },
       "id": 203,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "shares": null,
+      "price": 98.79,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Aktien handler nu over det oprindelige kursmål ($98) med RSI 78.3 stærkt overkøbt, men den strukturelle vækstcase (23-timers handel fra 6. december, diversificeret indtjening) er intakt og ubrudt. Trailer stop op og hæver kursmål for at giv"
+      },
+      "id": 204,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "TDG",
+      "name": "TransDigm Group",
+      "shares": null,
+      "price": 1199.08,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 4,
+        "summary": "Fortsat makro-/oliedrevet industriudsalg, ikke selskabsspecifik svaghed. RSI 32 oversolgt men momentum endnu ikke vendt - stop og tese begge intakte, holder uændret."
+      },
+      "id": 205,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "shares": null,
+      "price": 229.29,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Det rapporterede $120 mia. Google-designvindings-samarbejde er en reel strukturel katalysator; dagens pullback er sektorbred halvlederssvaghed, ikke selskabsspecifik. Forhøjet earnings-eventrisiko taler for ikke at tilføje mere kapital nu, "
+      },
+      "id": 206,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "MMM",
+      "name": "3M Company",
+      "shares": null,
+      "price": 179.01,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Fortsat resiliens nær 52-ugers højder trods et isoleret svagt punkt i forbrugersegmentet - ingen brud på beat-and-raise-tesen eller Azure-partnerskabet."
+      },
+      "id": 207,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 547.59,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Stærk bekræftet opadgående trend nær højder, tesen er allerede blevet bekræftet én gang af hævet guidance og gennemført tilbagekøb. RSI 74.1 overkøbt taler for ikke at tilføje mere, men ingen grund til at sælge - holder."
+      },
+      "id": 208,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "FLEX",
+      "name": "Flex Ltd.",
+      "shares": null,
+      "price": 106.65,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Skarpt teknisk breakdown (-18.2% under 50-dages), men den grundlæggende tese om et overset beat-and-raise-regnskab i en bred tech-selloff er ikke brudt, og aktien er langt over stop. Holder."
+      },
+      "id": 209,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "shares": null,
+      "price": 262.07,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Hardware-prisstigninger pga. hukommelsesmangel er en reel, men afgrænset omkostningshovedvind - kernetesen om AI-monetisering via AWS/cloud er ikke ramt. Stop stadig et stykke væk, holder."
+      },
+      "id": 210,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "shares": null,
+      "price": 110.61,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "NFL-aftalen og bundle-strategien fortsætter med at virke ifølge dækningen, men aktien er nu direkte navngivet som 'inflated' med RSI 76.8 - overkøbt nok til at undgå at tilføje mere. Ingen tesebrud, holder."
+      },
+      "id": 211,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "L",
+      "name": "Loews Corporation",
+      "shares": null,
+      "price": 111.45,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Q2-beat i hoteller/rørledninger og CNA-forsikringsbeat bekræfter fundamentet trods et mildt kursfald. Kun en uge inde i positionen - for tidligt at dømme RSI-bounce-tesen, holder."
+      },
+      "id": 212,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "KEYS",
+      "name": "Keysight Technologies",
+      "shares": null,
+      "price": 310.66,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Beat-and-raise-regnskabet bekræfter fundamentet; det skarpe 5-dages fald er sentimentdrevet sektorselloff i AI-infrastruktur-leverandører, ikke selskabsspecifikt. Godt over stop, holder."
+      },
+      "id": 213,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "DHI",
+      "name": "D. R. Horton",
+      "shares": null,
+      "price": 148.97,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 4,
+        "summary": "Konsoliderer omkring 200-dages gennemsnittet efter en post-earnings-stigning, momentum er fladt. Rentemodvind vedvarer som ventet, men ingen ny selskabsspecifik skuffelse - holder."
+      },
+      "id": 214,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "AFL",
+      "name": "Aflac",
+      "shares": null,
+      "price": 118.2,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Fortsat over 200-dages gennemsnittet med kun et moderat fald fra toppen. Rentepresset på forsikringssektoren er bredt, ikke selskabsspecifikt - stop og tese intakte."
+      },
+      "id": 215,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "HOLD",
+      "symbol": "TJX",
+      "name": "TJX Companies",
+      "shares": null,
+      "price": 140.71,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 4,
+        "summary": "Dybt oversolgt (RSI 21.9) efter relativt svagere comps end Ross Stores, men stadig en fundamentalt sund off-price-leder uden nyt selskabsspecifikt brud. Holder."
+      },
+      "id": 216,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-24",
+      "action": "BUY",
+      "symbol": "FCX",
+      "name": "Freeport-McMoRan",
+      "shares": 40,
+      "price": 77.8,
+      "value": 3112.0,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 6,
+        "summary": "Bekræftet opadgående trend på strukturel AI/kobber-efterspørgsel, og diversificerer ind i Materials-sektoren som porteføljen ellers ikke har eksponering mod (0% i dag mod 33.1% i tunge Industrials). RSI 70.4/Stoch 91.9 overkøbt taler for en"
+      },
+      "id": 217,
       "is_new": true
     }
   ],
@@ -9012,5 +9266,5 @@
     "Consumer Discretionary": 13.3,
     "Communication Services": 1.6
   },
-  "last_executed_decisions": "2026-08-21"
+  "last_executed_decisions": "2026-08-24"
 }
