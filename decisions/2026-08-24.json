@@ -1,0 +1,251 @@
+{
+  "date": "2026-08-24",
+  "market_summary": "Porteføljen er bredt sund — ingen af de otte åbne positioner har brudt stop-loss, og de fleste teser (buybacks, guidance-opjusteringer) er intakte. DSV skiller sig ud: dagens verdict er vendt til BEAR med en bekræftet teknisk nedtrend under begge glidende gennemsnit og et Zacks 'Bear of the Day'-flag, så gevinsten på +5% tages hjem. Blandt de nye BULL-kandidater er de fleste (BAVA, VWS, NSIS-B) ekstremt overkøbte efter kraftige rallies — Jyske Bank skiller sig positivt ud med en ny rekord-EPS, billig værdiansættelse (11.2x forward PE) og et roligt teknisk billede (RSI 54.9), og bliver dagens eneste nye køb."
+  ,
+  "decisions": [
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 292.0,
+      "confidence": 65,
+      "reasoning": "Thesis intakt: stærk H1-organisk vækst, margin­ekspansion og en netop udvidet DKK 600m tilbagekøbstranche. Stop ikke i nærheden, ingen fundamental brist — hold.",
+      "bull": [
+        "8.9% organisk vækst i Q2 og +27.1% YoY indtjeningsvækst, som outpacer omsætningsvæksten (margin­ekspansion)",
+        "Tilbagekøbsprogrammet netop udvidet med DKK 600m — signalerer ledelsestillid"
+      ],
+      "bear": [
+        "Valuation nu på linje med markedet (13.1x forward PE) — begrænset margin of safety",
+        "Kun -1.55% fra 52-ugers høj, hvilket reducerer kortsigtet opsiderum uden ny katalysator"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Trifecta af katalysatorer (regnskab, udvidet tilbagekøb, tidligere oversolgt teknik) fortsætter med at understøtte kursen. Flad organisk vækst i visse regioner begrænser opsidepotentialet, men aktiv kapitaltilbageførsel og rabat til sektoren holder positionen åben.",
+        "price_target": 320,
+        "stop_loss": 265,
+        "expected_return_pct": 9.6,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 265. Tag profit nær 320. Revurder hvis momentum fra tilbagekøbsnyheden fuldstændig fortaber sig uden yderligere kursreaktion."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 365.8,
+      "confidence": 65,
+      "reasoning": "Guidance-opjustering til DKK 23-25bn og 14% ROE-mål understøtter fortsat thesis. Kortsigtet oversolgt (RSI 26.6) inden for en intakt uptrend — ingen fundamental forringelse.",
+      "bull": [
+        "Guidance opjusteret til DKK 23-25bn nettoresultat med 14% ROE-mål efter stærkt Q2",
+        "Kortsigtet oversolgt (RSI 26.6, Stoch 7.4) inden for en langsigtet uptrend, +16.1% over SMA200"
+      ],
+      "bear": [
+        "Stigende obligationsrenter kan presse finanssektor-sentiment bredt",
+        "Tæt på 52-ugers høj (-3.6%), hvilket begrænser ren momentum-opside"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Sjælden kombination af fundamental og teknisk styrke: opjusteret guidance og aktiv kapitaltilbageførsel i en bekræftet uptrend.",
+        "price_target": 400,
+        "stop_loss": 350,
+        "expected_return_pct": 9.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 350. Tag profit nær 400. Revurder ved guidance-nedjustering eller brud i kreditkvaliteten."
+      }
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 645.0,
+      "confidence": 55,
+      "reasoning": "Regnskab lige om hjørnet (26/8) — netop den planlagte revurderingsdato. Stop ikke i nærheden og teknikken er stærk, så vi afventer det faktiske tal frem for at handle på forhånd.",
+      "bull": [
+        "Billig forward PE (10.6x) med 3.87% udbytte og konsistente ugentlige tilbagekøb",
+        "Stærk teknisk position — nær 52-ugers høj og godt over både SMA50 og SMA200 (+17.8%)"
+      ],
+      "bear": [
+        "Indtjeningsvækst faldet -26.8% YoY trods +65.3% omsætningsvækst — reelt marginpres",
+        "Regnskab 26/8 er den eksplicitte revurderingsdato — udfaldet er endnu ukendt"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kombination af billig værdiansættelse og stærkt momentum, men marginpres er en reel risiko der skal afklares ved næste regnskab 26/8.",
+        "price_target": 680,
+        "stop_loss": 600,
+        "expected_return_pct": 5.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 600. Tag profit nær 680. Revurder hvis marginpresset forværres uden stabilisering, eller ved svag kvartalsrapport 26/8."
+      }
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "action": "SELL",
+      "shares": 9,
+      "price": 1403.0,
+      "confidence": 62,
+      "reasoning": "Dagens verdict er vendt til BEAR: kursen er stadig under både SMA50 (-6.9%) og SMA200 (-10.8%) tre uger inde i positionen — nedtrenden er aldrig stabiliseret, som planen krævede for at blive. Zacks' 'Bear of the Day'-flag og negativ indtjeningsvækst trods Schenker-drevet omsætningsvækst bekræfter billedet. Tager +5.05% gevinst hjem frem for at vente på en teknisk vending der endnu ikke er kommet.",
+      "bull": [
+        "Rekord-EBIT og opjusteret guidance i Q2 trods den igangværende Schenker-integration",
+        "Stærk omsætningsvækst (+23.7%) drevet af Schenker-opkøbet"
+      ],
+      "bear": [
+        "Zacks har flagget DSV som 'Bear of the Day' — 'the near-term investment case has weakened considerably'",
+        "Kurs under både SMA50 (-6.9%) og SMA200 (-10.8%) — bekræftet teknisk nedtrend, ikke stabiliseret siden køb",
+        "Indtjeningsvækst negativ (-4%) trods stærk omsætningsvækst — integrationsomkostninger vejer stadig på bundlinjen"
+      ],
+      "investment_plan": {
+        "term": "closed",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Position lukket: den kontrariske indgang forudsatte at nedtrenden ville stabilisere sig, men den er tværtimod bekræftet af dagens BEAR-verdict, Zacks' negative flag og fortsat pris under begge glidende gennemsnit. Disciplin foretrækkes frem for at holde gennem en ubekræftet vending.",
+        "price_target": null,
+        "stop_loss": null,
+        "expected_return_pct": 5.05,
+        "timeframe": "afsluttet",
+        "exit_conditions": "Position lukket i dag — realiseret gevinst +5.05%. Genovervej kun hvis kursen bekræfter en vending over SMA50/SMA200 efter regnskab 21/10."
+      }
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 286.6,
+      "confidence": 60,
+      "reasoning": "Opjusteret FY-guidance drevet af Oticon Zeal og en ny premium-lancering understøtter fortsat thesis. Kortsigtet pullback (-2.65% på 5 dage) er ikke et brud på uptrenden — hold.",
+      "bull": [
+        "Opjusteret FY-guidance efter Oticon Zeal drev 15% H1-omsætningsvækst",
+        "Solidt over SMA200 (+25.4%) — bekræftet uptrend intakt"
+      ],
+      "bear": [
+        "Valuation mindre billig end peers (18.1x forward PE, tæt på sektornorm)",
+        "Indtjeningsvækst (+6.4%) haler efter omsætningsvækst (+14.8%) — antyder margin-/investeringstræk"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Guidance-opjustering og nyt produktlanceringsmomentum retfærdiggør indgang trods kortsigtet overkøbt teknik. Forward-værdiansættelsen giver plads til multipel-genopretning hvis guidance leveres.",
+        "price_target": 330,
+        "stop_loss": 273,
+        "expected_return_pct": 15.1,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 273. Tag profit nær 330. Revurder hvis den overkøbte teknik udløser et hurtigt tilbagefald uden ny fundamental forklaring."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 786.4,
+      "confidence": 50,
+      "reasoning": "Fortsat porteføljens største position (18.9%) med et friskt CFO-skifte og en storaktionærmeddelelse der endnu ikke er fuldt fortolket, men guidance er opjusteret og stop er ikke brudt. Holder mekanisk til stop, men tættere overvågning er berettiget givet vægt og negativ 5-dages momentum.",
+      "bull": [
+        "Guidance opjusteret efter Q2 organisk vækst på 3%, med indtjeningsvækst +13.6% YoY",
+        "Stadig godt over SMA200 (+27%) trods pullback — den langsigtede uptrend er intakt"
+      ],
+      "bear": [
+        "CFO-skifte (Anders Boyer går på pension, Paulo Garcia indtræder) skaber leder­skabs-/eksekveringsusikkerhed",
+        "Seneste 5-dages fald på -4.38% viser svækkende kortsigtet momentum, og positionen er porteføljens største (18.9%)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental", "risk_management"],
+        "thesis": "Momentum-fortsættelse i en fundamentalt understøttet uptrend, men positionen er allerede porteføljens største enkeltposition — koncentrationsrisiko taler imod yderligere tilkøb selv ved fortsat positiv nyhedsstrøm. Tæt på stop-loss efter uafklaret negativ nyhedsstrøm.",
+        "price_target": 910,
+        "stop_loss": 761,
+        "expected_return_pct": 15.7,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 761. Tag profit nær 910. Revurder ved svagt Q3-regnskab (04/11) eller hvis storaktionærmeddelelsen viser sig at være fundamentalt negativ."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 440.1,
+      "confidence": 62,
+      "reasoning": "Q3-opdateringen bekræftede thesis: 6% organisk vækst og reel marginekspansion (+82% indtjeningsvækst) til en 32% forward-PE-rabat til sektoren. Ledelsesskiftet er en kendt risiko, ikke en ny brist — hold.",
+      "bull": [
+        "Stærk Q3-opdatering: 6% organisk omsætningsvækst og 5% EBIT-vækst i konstante valutaer",
+        "+82% indtjeningsvækst YoY på +5.7% omsætningsvækst peger på reel marginekspansion, med 32% forward-PE-rabat og 5.24% udbytte"
+      ],
+      "bear": [
+        "US-refusionsmodvind og Kina-lagerjusteringer er fortsatte strukturelle risici",
+        "Nyt ledelsesteam-skifte tilføjer kortsigtet eksekveringsusikkerhed"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Deep-value sundhedsnavn med stærk indtjeningsvækst, betydelig rabat til sektoren og solidt udbytte, understøttet af en teknisk uptrend der er ved at bekræfte sig. Positionen sizes moderat (under ATR-forslag) grundet US-refusionsrisiko og ledelsesskiftet.",
+        "price_target": 520,
+        "stop_loss": 419,
+        "expected_return_pct": 18.2,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 419. Tag profit nær 520. Revurder hvis US-refusionsmodvinden eskalerer eller ledelsesskiftet skaber eksekveringsproblemer."
+      }
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 133.55,
+      "confidence": 52,
+      "reasoning": "Ledelsen fastholdt fuldårsguidance trods engangsnedskrivningerne, og pipeline-eksekveringen (Dadu 2, Hornsea 3-batteri) fortsætter uændret. Ingen ny fundamental brist ud over det allerede kendte indtjeningskollaps — hold den forsigtigt sizede position.",
+      "bull": [
+        "Fortsætter eksekvering på vækstpipeline — nyt 2GW Dadu 2 offshore-vindprojekt i Taiwan og UK-batterilager co-located med Hornsea 3",
+        "Ledelsen fastholdt fuldårsguidance trods profitmiss, med H1 EBITDA fortsat robust på DKK 15bn; deep value (28% forward-PE-rabat) og teknisk oversolgt (RSI 36)"
+      ],
+      "bear": [
+        "Nettoresultat kollapset -79% YoY på nedskrivninger — alvorlig fundamental forringelse, allerede kendt ved køb",
+        "Fortsat i en bekræftet nedtrend, -36% fra 52-ugers høj og under både SMA50 og SMA200"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kontrarisk value-position i en ekstremt oversolgt aktie efter et regnskab domineret af engangsnedskrivninger, hvor ledelsen alligevel fastholder guidance og nøgleprojektet (Hornsea 3) kører efter planen. Positionen sizes under ATR-forslaget da indtjeningskollapset og porteføljens hidtil svage Utilities-facit (0/3 vundne handler) taler for forsigtighed.",
+        "price_target": 158,
+        "stop_loss": 126.51,
+        "expected_return_pct": 18.3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 126.51. Tag profit nær 158. Revurder hvis US-regulatorisk/toldrelateret modvind eskalerer, eller hvis 'engangs'-nedskrivningerne viser sig at gentage sig."
+      }
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "action": "BUY",
+      "shares": 10,
+      "price": 1058.0,
+      "confidence": 62,
+      "reasoning": "Rekord-kvartals-EPS (DKK 22) drevet af stærk NII/gebyrindtægt til kun 11.2x forward PE, uden overkøbt teknik (RSI 54.9) — det eneste BULL-navn i dag der ikke allerede har kørt sig selv ind i en overkøbt tilstand. Sizet moderat inden for budgetrammen givet sektoren (Financial Services) allerede har 13.8% eksponering via Danske og Sydbank.",
+      "bull": [
+        "Rekord-kvartals-EPS (DKK 22) drevet af stærk nettorente- og gebyrindtægt, med +12.3% indtjeningsvækst YoY til kun 11.2x forward PE",
+        "Teknisk uudspændt (RSI 54.9, Stoch 65.2) tæt på 52-ugers høj — plads til at følge trenden uden at chase et overkøbt rally"
+      ],
+      "bear": [
+        "Ledelsen fastholdt (opjusterede ikke) fuldårsguidance trods rekordkvartalet — henviser til markedsusikkerhed",
+        "Financial Services-sektoren har allerede 13.8% porteføljeeksponering via Danske Bank og Sydbank"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Ny value/kvalitetsposition i en dansk bank med rekordindtjening og billig værdiansættelse, uden det overkøbte tekniske billede der udelukkede dagens øvrige BULL-kandidater (BAVA, VWS, NSIS-B). Sizet moderat for at holde samlet Financial Services-eksponering under kontrol.",
+        "price_target": 1180,
+        "stop_loss": 1025,
+        "expected_return_pct": 11.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 1025 (~2x ATR). Tag profit nær 1180. Revurder hvis Q3-regnskabet (28/10) viser fortsat forsigtig guidance uden fundamental forbedring."
+      }
+    }
+  ]
+}
