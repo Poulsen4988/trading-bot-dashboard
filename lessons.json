@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-19",
+  "updated": "2026-08-24",
   "stats": {
-    "closed_trades": 28,
-    "wins": 16,
+    "closed_trades": 29,
+    "wins": 17,
     "losses": 11,
-    "win_rate_pct": 59.3,
-    "avg_win_pct": 10.8,
+    "win_rate_pct": 60.7,
+    "avg_win_pct": 10.46,
     "avg_loss_pct": -4.59,
-    "avg_pnl_pct": 4.53,
-    "avg_holding_days": 22.0,
-    "total_realized_dkk": 9568.55,
+    "avg_pnl_pct": 4.55,
+    "avg_holding_days": 21.8,
+    "total_realized_dkk": 10176.05,
     "target_hits": 4,
     "stop_hits": 3,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 11,
-      "DELVIST": 12,
+      "DELVIST": 13,
       "HOLDT": 4
     },
     "by_sector": {
@@ -25,9 +25,9 @@
         "avg_pnl_pct": 3.43
       },
       "Industrials": {
-        "n": 5,
-        "wins": 3,
-        "avg_pnl_pct": 4.71
+        "n": 6,
+        "wins": 4,
+        "avg_pnl_pct": 4.77
       },
       "Utilities": {
         "n": 3,
@@ -723,6 +723,30 @@
       "stop_hit": false,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "NOVO-B.CO: -3.8% på 15 dage — antagelse HOLDT IKKE. Forventet +12.1%. Plan-horisont: 3-6 maaneder."
+    },
+    {
+      "trade_key": "id:476",
+      "date": "2026-08-24",
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "sector": "Industrials",
+      "buy_date": "2026-08-06",
+      "holding_days": 18,
+      "shares": 9,
+      "buy_price": 1335.5,
+      "sell_price": 1403.0,
+      "realized_pnl_dkk": 607.5,
+      "realized_pnl_pct": 5.05,
+      "expected_return_pct": 16.1,
+      "price_target": 1550.0,
+      "stop_loss": 1212.0,
+      "timeframe": "3-6 maaneder",
+      "term": "medium",
+      "thesis": "Kontrarisk indgang i en kvalitetslogistikaktoer efter et fundamentalt staerkt Q2-regnskab (rekord-EBIT, opjusteret guidance) blev overskygget af negativ sentiment og tung institutionel salgsvolumen. Ekstrem oversolgt teknik plus rimelig forward-vaerdiansaettelse giver et attraktivt risk/reward for en mean-reversion.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "DELVIST",
+      "lesson": "DSV.CO: +5.0% på 18 dage — antagelse DELVIST. Forventet +16.1%. Plan-horisont: 3-6 maaneder."
     }
   ]
 }
