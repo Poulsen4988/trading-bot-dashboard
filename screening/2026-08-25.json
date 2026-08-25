@@ -1,0 +1,309 @@
+{
+  "date": "2026-08-25",
+  "screened_at": "2026-08-25T07:24:26Z",
+  "price_data_date": "2026-08-25",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 58.0,
+      "price": 40.3,
+      "pct_1d": 2.54,
+      "pct_5d": 5.36,
+      "pct_20d": 6.61,
+      "volume_ratio": 1.23,
+      "rsi_proxy": 72.3,
+      "stoch_proxy": 93.3,
+      "bb_position": 126.6,
+      "sma50_vs_price": 4.86,
+      "sma200_vs_price": -8.34,
+      "macd_line": 0.2504,
+      "atr": 0.9357,
+      "momentum_divergence": -1.25,
+      "pe_forward": 9.518072,
+      "pct_from_52w_high": -37.13,
+      "pct_from_52w_low": 11.02,
+      "sector": "Technology",
+      "earnings_growth": null,
+      "revenue_growth": -0.057,
+      "div_yield": null,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.23x avg",
+        "SIGNIFICANT DRAWDOWN: -37.1% from 52w high",
+        "MOMENTUM: +5.4% in 5 days — continued BUYING pressure",
+        "OVERBOUGHT: RSI proxy 72, Stoch proxy 93 — stretched, potential pullback",
+        "DEEP VALUE: Fwd PE 9.5x vs sector norm 22x — 57% discount"
+      ],
+      "screening_rationale": "NNIT.CO: a 5.4% five-day rally (20d: +6.6%) reveals strong directional pressure; forward PE 9.5x represents a 57% discount to Technology sector norm (22x); price is +4.9% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 46.1,
+      "price": 440.4,
+      "pct_1d": 0.09,
+      "pct_5d": -5.09,
+      "pct_20d": -6.38,
+      "volume_ratio": 0.01,
+      "rsi_proxy": 31.5,
+      "stoch_proxy": 27.2,
+      "bb_position": 13.3,
+      "sma50_vs_price": -3.97,
+      "sma200_vs_price": -12.1,
+      "macd_line": -6.952,
+      "atr": 11.4143,
+      "momentum_divergence": 1.29,
+      "pe_forward": 11.689754,
+      "pct_from_52w_high": -32.61,
+      "pct_from_52w_low": 11.61,
+      "sector": "Consumer Defensive",
+      "earnings_growth": 0.038,
+      "revenue_growth": -0.003,
+      "div_yield": 3.64,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "SIGNIFICANT DRAWDOWN: -32.6% from 52w high",
+        "MOMENTUM: -5.1% in 5 days — continued SELLING pressure",
+        "OVERSOLD: RSI proxy 32, Stoch proxy 27 — watch for reversal",
+        "UNDERVALUED: Fwd PE 11.7x vs sector norm 17x — 31% discount"
+      ],
+      "screening_rationale": "RBREW.CO: a 5.1% five-day selloff (20d: -6.4%) reveals strong directional pressure; forward PE 11.7x represents a 31% discount to Consumer Defensive sector norm (17x); RSI proxy (32) and stochastic (27) in oversold territory support a bounce thesis; price is -4.0% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 44.6,
+      "price": 453.7,
+      "pct_1d": 3.44,
+      "pct_5d": 7.28,
+      "pct_20d": 8.0,
+      "volume_ratio": 0.07,
+      "rsi_proxy": 60.6,
+      "stoch_proxy": 86.9,
+      "bb_position": 122.2,
+      "sma50_vs_price": 10.51,
+      "sma200_vs_price": -2.37,
+      "macd_line": 8.0863,
+      "atr": 12.0643,
+      "momentum_divergence": -0.72,
+      "pe_forward": 17.448933,
+      "pct_from_52w_high": -29.83,
+      "pct_from_52w_low": 22.72,
+      "sector": "Healthcare",
+      "earnings_growth": 0.818,
+      "revenue_growth": 0.057,
+      "div_yield": 5.24,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM: +7.3% in 5 days — continued BUYING pressure",
+        "OVERBOUGHT: RSI proxy 61, Stoch proxy 87 — stretched, potential pullback",
+        "UNDERVALUED: Fwd PE 17.4x vs sector norm 25x — 30% discount",
+        "STRONG EARNINGS GROWTH: +82% YoY — fundamental tailwind",
+        "HIGH YIELD: 5.24% dividend provides downside cushion"
+      ],
+      "screening_rationale": "COLO-B.CO: a 7.3% five-day rally (20d: +8.0%) reveals strong directional pressure; forward PE 17.4x represents a 30% discount to Healthcare sector norm (25x); +82% earnings growth underpins the fundamental case; price is +10.5% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 44.2,
+      "price": 213.8,
+      "pct_1d": 2.1,
+      "pct_5d": 13.84,
+      "pct_20d": 22.24,
+      "volume_ratio": 0.02,
+      "rsi_proxy": 87.7,
+      "stoch_proxy": 100.0,
+      "bb_position": 120.1,
+      "sma50_vs_price": 16.9,
+      "sma200_vs_price": 12.59,
+      "macd_line": 5.7075,
+      "atr": 4.9929,
+      "momentum_divergence": -8.4,
+      "pe_forward": 20.323193,
+      "pct_from_52w_high": -12.27,
+      "pct_from_52w_low": 24.81,
+      "sector": "Healthcare",
+      "earnings_growth": 1.697,
+      "revenue_growth": 0.232,
+      "div_yield": null,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM SURGE: +13.8% in 5 days — sharp directional move",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -8.4pp — emerging trend shift",
+        "OVERBOUGHT: RSI proxy 88, Stoch proxy 100 — stretched, potential pullback",
+        "MODEST DISCOUNT: Fwd PE 20.3x vs sector norm 25x",
+        "STRONG EARNINGS GROWTH: +170% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "BAVA.CO: a 13.8% five-day rally (20d: +22.2%) reveals strong directional pressure; forward PE 20.3x represents a 19% discount to Healthcare sector norm (25x); +170% earnings growth underpins the fundamental case; price is +16.9% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 40.3,
+      "price": 206.0,
+      "pct_1d": 1.58,
+      "pct_5d": -10.75,
+      "pct_20d": 5.53,
+      "volume_ratio": 0.04,
+      "rsi_proxy": 44.1,
+      "stoch_proxy": 20.8,
+      "bb_position": 27.9,
+      "sma50_vs_price": -2.56,
+      "sma200_vs_price": 1.25,
+      "macd_line": 0.7728,
+      "atr": 9.3,
+      "momentum_divergence": -16.28,
+      "pe_forward": 13.662187,
+      "pct_from_52w_high": -17.58,
+      "pct_from_52w_low": 24.13,
+      "sector": "Industrials",
+      "earnings_growth": -0.333,
+      "revenue_growth": 0.096,
+      "div_yield": 2.05,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM SELLOFF: -10.8% in 5 days — sharp directional move",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -16.3pp — strong trend change signal",
+        "OVERSOLD: RSI proxy 44, Stoch proxy 21 — watch for reversal",
+        "MODEST DISCOUNT: Fwd PE 13.7x vs sector norm 18x"
+      ],
+      "screening_rationale": "ROCK-B.CO: a 10.8% five-day selloff (20d: +5.5%) reveals strong directional pressure; forward PE 13.7x represents a 24% discount to Industrials sector norm (18x); -33% earnings decline warrants caution but may create a contrarian entry; price is -2.6% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 58.0
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 46.1
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 44.6
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 44.2
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 40.3
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 39.6
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 39.6
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 39.2
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 36.0
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 34.1
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 33.5
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 33.2
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 31.1
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 30.2
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 28.6
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 27.1
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 26.2
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 26.2
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 24.3
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 20.2
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 18.3
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 15.5
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 14.2
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 11.1
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 0.2
+    }
+  ]
+}
