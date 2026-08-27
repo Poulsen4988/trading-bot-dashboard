@@ -1,0 +1,312 @@
+{
+  "date": "2026-08-27",
+  "screened_at": "2026-08-27T07:26:51Z",
+  "price_data_date": "2026-08-26",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 79.0,
+      "price": 66.05,
+      "pct_1d": -15.75,
+      "pct_5d": -13.21,
+      "pct_20d": -8.52,
+      "volume_ratio": 8.34,
+      "rsi_proxy": 34.8,
+      "stoch_proxy": 13.1,
+      "bb_position": -29.8,
+      "sma50_vs_price": -5.24,
+      "sma200_vs_price": -12.33,
+      "macd_line": 1.2106,
+      "atr": 2.5964,
+      "momentum_divergence": -4.69,
+      "pe_forward": 21.450867,
+      "pct_from_52w_high": -40.92,
+      "pct_from_52w_low": 17.42,
+      "sector": "Healthcare",
+      "earnings_growth": -0.352,
+      "revenue_growth": 0.012,
+      "div_yield": 0.52,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME SPIKE: 8.34x avg — extreme institutional activity",
+        "SIGNIFICANT DRAWDOWN: -40.9% from 52w high",
+        "MOMENTUM SELLOFF: -13.2% in 5 days — sharp directional move",
+        "STOCHASTIC OVERSOLD: Stoch proxy 13 — price near annual support floor (RSI proxy 35)",
+        "MODEST DISCOUNT: Fwd PE 21.5x vs sector norm 25x"
+      ],
+      "screening_rationale": "AMBU-B.CO: volume running at 8.3x the daily average signals institutional-scale activity; a 13.2% five-day selloff (20d: -8.5%) reveals strong directional pressure; stock has shed 41% from its 52-week high — potential deep value or extended downtrend; -35% earnings decline warrants caution but may create a contrarian entry; RSI proxy (35) and stochastic (13) in oversold territory support a bounce thesis; price is -5.2% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 53.0,
+      "price": 156.3,
+      "pct_1d": 0.58,
+      "pct_5d": 2.69,
+      "pct_20d": 1.23,
+      "volume_ratio": 1.1,
+      "rsi_proxy": 62.6,
+      "stoch_proxy": 91.7,
+      "bb_position": 109.8,
+      "sma50_vs_price": 2.62,
+      "sma200_vs_price": 3.0,
+      "macd_line": 0.5457,
+      "atr": 1.5714,
+      "momentum_divergence": 1.46,
+      "pe_forward": 15.248707,
+      "pct_from_52w_high": -7.62,
+      "pct_from_52w_low": 6.69,
+      "sector": "Financial Services",
+      "earnings_growth": -0.432,
+      "revenue_growth": 0.053,
+      "div_yield": 5.41,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.10x avg",
+        "NEAR 52W LOW: +6.7% above annual support — critical level",
+        "MOMENTUM: +2.7% in 5 days",
+        "OVERBOUGHT: RSI proxy 63, Stoch proxy 92 — stretched, potential pullback",
+        "EARNINGS COLLAPSE: -43% YoY — risk/watch for stabilisation",
+        "HIGH YIELD: 5.41% dividend provides downside cushion"
+      ],
+      "screening_rationale": "TRYG.CO: price sits just +6.7% above the 52-week low (146.5) — a key decision zone; forward PE 15.2x represents a 27% premium to Financial Services sector norm (12x); -43% earnings decline warrants caution but may create a contrarian entry; price is +2.6% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 53.0,
+      "price": 452.6,
+      "pct_1d": 1.03,
+      "pct_5d": 10.29,
+      "pct_20d": 8.86,
+      "volume_ratio": 1.35,
+      "rsi_proxy": 66.4,
+      "stoch_proxy": 89.8,
+      "bb_position": 94.9,
+      "sma50_vs_price": 8.21,
+      "sma200_vs_price": 14.87,
+      "macd_line": 9.0335,
+      "atr": 11.1886,
+      "momentum_divergence": 1.43,
+      "pe_forward": 25.476288,
+      "pct_from_52w_high": -1.18,
+      "pct_from_52w_low": 34.38,
+      "sector": "Basic Materials",
+      "earnings_growth": 0.267,
+      "revenue_growth": 0.096,
+      "div_yield": 1.47,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.35x avg",
+        "NEAR 52W HIGH: -1.2% — breakout territory",
+        "MOMENTUM SURGE: +10.3% in 5 days — sharp directional move",
+        "OVERBOUGHT: RSI proxy 66, Stoch proxy 90 — stretched, potential pullback",
+        "EARNINGS GROWTH: +27% YoY"
+      ],
+      "screening_rationale": "NSIS-B.CO: a 10.3% five-day rally (20d: +8.9%) reveals strong directional pressure; stock is pressing against its 52-week high at -1.2% — breakout watch; forward PE 25.5x represents a 59% premium to Basic Materials sector norm (16x); +27% earnings growth underpins the fundamental case; price is +8.2% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 52.0,
+      "price": 435.8,
+      "pct_1d": 0.51,
+      "pct_5d": -0.05,
+      "pct_20d": -9.7,
+      "volume_ratio": 1.11,
+      "rsi_proxy": 22.7,
+      "stoch_proxy": 21.3,
+      "bb_position": 16.4,
+      "sma50_vs_price": -5.1,
+      "sma200_vs_price": -12.95,
+      "macd_line": -8.5461,
+      "atr": 11.3143,
+      "momentum_divergence": 9.65,
+      "pe_forward": 11.562828,
+      "pct_from_52w_high": -33.31,
+      "pct_from_52w_low": 10.44,
+      "sector": "Consumer Defensive",
+      "earnings_growth": 0.038,
+      "revenue_growth": -0.003,
+      "div_yield": 3.69,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.11x avg",
+        "SIGNIFICANT DRAWDOWN: -33.3% from 52w high",
+        "MOMENTUM DIVERGENCE: 5d/20d gap +9.7pp — emerging trend shift",
+        "RSI OVERSOLD: RSI proxy 23, Stoch proxy 21 — momentum exhaustion signal",
+        "UNDERVALUED: Fwd PE 11.6x vs sector norm 17x — 32% discount"
+      ],
+      "screening_rationale": "RBREW.CO: forward PE 11.6x represents a 32% discount to Consumer Defensive sector norm (17x); RSI proxy (23) and stochastic (21) in oversold territory support a bounce thesis; price is -5.1% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 51.2,
+      "price": 212.6,
+      "pct_1d": -2.57,
+      "pct_5d": 9.98,
+      "pct_20d": 20.25,
+      "volume_ratio": 0.9,
+      "rsi_proxy": 86.6,
+      "stoch_proxy": 86.6,
+      "bb_position": 94.8,
+      "sma50_vs_price": 15.36,
+      "sma200_vs_price": 12.11,
+      "macd_line": 7.9953,
+      "atr": 5.4214,
+      "momentum_divergence": -10.27,
+      "pe_forward": 20.209126,
+      "pct_from_52w_high": -12.76,
+      "pct_from_52w_low": 24.11,
+      "sector": "Healthcare",
+      "earnings_growth": 1.697,
+      "revenue_growth": 0.232,
+      "div_yield": null,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM SURGE: +10.0% in 5 days — sharp directional move",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -10.3pp — emerging trend shift",
+        "OVERBOUGHT: RSI proxy 87, Stoch proxy 87 — stretched, potential pullback",
+        "MODEST DISCOUNT: Fwd PE 20.2x vs sector norm 25x",
+        "STRONG EARNINGS GROWTH: +170% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "BAVA.CO: a 10.0% five-day rally (20d: +20.2%) reveals strong directional pressure; forward PE 20.2x represents a 19% discount to Healthcare sector norm (25x); +170% earnings growth underpins the fundamental case; price is +15.4% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 79.0
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 53.0
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 53.0
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 52.0
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 51.2
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 51.0
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 48.0
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 45.6
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 41.0
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 40.0
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 40.0
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 35.0
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 34.8
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 34.3
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 33.6
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 33.5
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 33.0
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 32.5
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 31.0
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 27.0
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 26.4
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 25.9
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 23.3
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 11.2
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 4.4
+    }
+  ]
+}
