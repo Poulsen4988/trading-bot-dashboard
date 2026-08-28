@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-28",
   "stats": {
-    "closed_trades": 29,
-    "wins": 17,
+    "closed_trades": 30,
+    "wins": 18,
     "losses": 11,
-    "win_rate_pct": 60.7,
-    "avg_win_pct": 10.46,
+    "win_rate_pct": 62.1,
+    "avg_win_pct": 10.44,
     "avg_loss_pct": -4.59,
-    "avg_pnl_pct": 4.55,
-    "avg_holding_days": 21.8,
-    "total_realized_dkk": 10176.05,
+    "avg_pnl_pct": 4.74,
+    "avg_holding_days": 22.2,
+    "total_realized_dkk": 10908.05,
     "target_hits": 4,
     "stop_hits": 3,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 11,
-      "DELVIST": 13,
+      "DELVIST": 14,
       "HOLDT": 4
     },
     "by_sector": {
@@ -35,9 +35,9 @@
         "avg_pnl_pct": -2.01
       },
       "Financial Services": {
-        "n": 4,
-        "wins": 3,
-        "avg_pnl_pct": 8.67
+        "n": 5,
+        "wins": 4,
+        "avg_pnl_pct": 8.95
       },
       "Consumer Cyclical": {
         "n": 2,
@@ -747,6 +747,30 @@
       "stop_hit": false,
       "thesis_verdict": "DELVIST",
       "lesson": "DSV.CO: +5.0% på 18 dage — antagelse DELVIST. Forventet +16.1%. Plan-horisont: 3-6 maaneder."
+    },
+    {
+      "trade_key": "id:516",
+      "date": "2026-08-28",
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "sector": "Financial Services",
+      "buy_date": "2026-07-27",
+      "holding_days": 32,
+      "shares": 12,
+      "buy_price": 607.0,
+      "sell_price": 668.0,
+      "realized_pnl_dkk": 732.0,
+      "realized_pnl_pct": 10.05,
+      "expected_return_pct": 12.0,
+      "price_target": 680.0,
+      "stop_loss": 586.0,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Kombination af billig værdiansættelse og stærk momentum — pris nær 52-ugers højeste med markant omsætningsvækst. Marginpres er en reel risiko, men opvejes af den billige prissætning og den bekræftede uptrend.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "DELVIST",
+      "lesson": "ALSYDB.CO: +10.1% på 32 dage — antagelse DELVIST. Forventet +12.0%. Plan-horisont: 3-6 måneder."
     }
   ]
 }
