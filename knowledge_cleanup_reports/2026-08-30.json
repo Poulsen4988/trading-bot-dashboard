@@ -1,0 +1,86 @@
+{
+  "date": "2026-08-30",
+  "files_reviewed": 25,
+  "files_cleaned": 6,
+  "total_items_removed": 7,
+  "per_file": [
+    {
+      "path": "knowledge/CARLb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 15,
+      "removed_items": [
+        {
+          "title": "Carlsberg Lifts Lower End of Guidance as Nonalcoholic Drinks Offset Beer Declines",
+          "date": "2026-08-19",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 2,
+      "kept_count": 18,
+      "removed_items": [
+        {
+          "title": "Genmab to Participate in Upcoming Investor Conferences",
+          "date": "2026-08-25",
+          "reason": "low_value"
+        },
+        {
+          "title": "Genmab shares jump 8% after upbeat results prompt 2026 outlook raise",
+          "date": "2026-08-06",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKa_xcse.json",
+      "removed_count": 1,
+      "kept_count": 44,
+      "removed_items": [
+        {
+          "title": "Indberetning af ledende medarbejderes og disses nærtståendes transaktioner med A.P. Møller - Mærsk A/S aktier",
+          "date": "2026-08-14",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/MAERSKb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 44,
+      "removed_items": [
+        {
+          "title": "Indberetning af ledende medarbejderes og disses nærtståendes transaktioner med A.P. Møller - Mærsk A/S aktier",
+          "date": "2026-08-14",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/RBREW_xcse.json",
+      "removed_count": 1,
+      "kept_count": 6,
+      "removed_items": [
+        {
+          "title": "Royal Unibrew slumps on mixed H1 results, reiterates outlook",
+          "date": "2026-08-17",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/SYDB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 12,
+      "removed_items": [
+        {
+          "title": "Finanskalender",
+          "date": "2026-08-26",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "summary": "Gennemgik 25 knowledge-filer (568 nyheder). 6 filer renset for i alt 7 items: 5 reelle duplicate_url-dubletter (samme artikel-URL optrådte to gange i samme fil: CARLb, GMAB, MAERSKa, MAERSKb, RBREW) og 2 low-value items med generisk titel og trivielt indhold uden trading-relevans (GMAB 'Participate in Upcoming Investor Conferences' — rutine IR-notits; SYDB 'Finanskalender' — ren administrativ kalendermeddelelse). Alle øvrige low-value-kandidater (kort summary men substantielt indhold: halvårsrapporter, guidance-opjusteringer, aktietilbagekøb, ledelsesskift, storaktionærmeddelelser, produktlanceringer, forsøgsopdateringer) blev bevaret jf. konservativ politik, da titlerne ikke er generiske og emnerne falder ind under kategorier der skal bevares (earnings, kapitalstruktur, ledelsesskift, strategiske udmeldinger, prognose-revisioner). Ingen items var ældre end 180 dage (ingen stale-kandidater fundet)."
+}
