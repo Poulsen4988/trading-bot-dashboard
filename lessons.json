@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-08-31",
   "stats": {
-    "closed_trades": 30,
-    "wins": 18,
+    "closed_trades": 31,
+    "wins": 19,
     "losses": 11,
-    "win_rate_pct": 62.1,
-    "avg_win_pct": 10.44,
+    "win_rate_pct": 63.3,
+    "avg_win_pct": 10.04,
     "avg_loss_pct": -4.59,
-    "avg_pnl_pct": 4.74,
-    "avg_holding_days": 22.2,
-    "total_realized_dkk": 10908.05,
+    "avg_pnl_pct": 4.67,
+    "avg_holding_days": 21.6,
+    "total_realized_dkk": 11208.05,
     "target_hits": 4,
     "stop_hits": 3,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 11,
-      "DELVIST": 14,
+      "DELVIST": 15,
       "HOLDT": 4
     },
     "by_sector": {
@@ -35,9 +35,9 @@
         "avg_pnl_pct": -2.01
       },
       "Financial Services": {
-        "n": 5,
-        "wins": 4,
-        "avg_pnl_pct": 8.95
+        "n": 6,
+        "wins": 5,
+        "avg_pnl_pct": 7.93
       },
       "Consumer Cyclical": {
         "n": 2,
@@ -771,6 +771,30 @@
       "stop_hit": false,
       "thesis_verdict": "DELVIST",
       "lesson": "ALSYDB.CO: +10.1% på 32 dage — antagelse DELVIST. Forventet +12.0%. Plan-horisont: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:531",
+      "date": "2026-08-31",
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "sector": "Financial Services",
+      "buy_date": "2026-08-24",
+      "holding_days": 7,
+      "shares": 10,
+      "buy_price": 1058.0,
+      "sell_price": 1088.0,
+      "realized_pnl_dkk": 300.0,
+      "realized_pnl_pct": 2.84,
+      "expected_return_pct": 11.5,
+      "price_target": 1180.0,
+      "stop_loss": 1025.0,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Ny value/kvalitetsposition i en dansk bank med rekordindtjening og billig værdiansættelse, uden det overkøbte tekniske billede der udelukkede dagens øvrige BULL-kandidater (BAVA, VWS, NSIS-B). Sizet moderat for at holde samlet Financial Services-eksponering under kontrol.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "DELVIST",
+      "lesson": "JYSK.CO: +2.8% på 7 dage — antagelse DELVIST. Forventet +11.5%. Plan-horisont: 3-6 måneder."
     }
   ]
 }
