@@ -1,0 +1,268 @@
+{
+  "date": "2026-09-02",
+  "market_summary": "C25 fortsætter i en sund, regnskabsdrevet uptrend efter en stærk Q2-sæson, og ingen åbne positioner har brudt deres fundamentale thesis eller udløst stop-loss i dag. To positioner (Pandora, Coloplast) er nu så teknisk ekstreme (RSI 70+, Stoch 89-100) kombineret med reel koncentrationsrisiko, at de trimmes for at låse gevinst og reducere enkelt-navn/sektor-eksponering, uden at forlade den underliggende thesis. Blandt analysekandidaterne uden position er ingen BULL-vurderet i dag — alle øvrige C25-navne er NEUTRAL eller BEAR — så ingen nye køb.",
+  "decisions": [
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 285.8,
+      "confidence": 72,
+      "reasoning": "Thesis fuldt intakt: 8.9% organisk vækst, forbedrede marginer og udvidet buyback (anden tranche) understøtter fortsat casen til en 29% valuation-rabat vs. sektoren. RSI 45 er neutralt, ingen stop-risiko.",
+      "bull": [
+        "H1 2026: 8.9% organisk vækst i Q2, forbedrede marginer, styrket balance",
+        "Anden tranche af det forøgede DKK 600m-tilbagekøb er i gang"
+      ],
+      "bear": [
+        "Aktien presser mod 52-ugers højeste, hvilket kan give kortsigtet modstand"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Trifecta af katalysatorer (regnskab, udvidet tilbagekøb, tidligere oversolgt teknik) fortsætter med at understøtte kursen.",
+        "price_target": 320,
+        "stop_loss": 265,
+        "expected_return_pct": 12.0,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 265. Tag profit nær 320. Revurder hvis regionale udfordringer materialiserer sig i næste regnskab."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 370.4,
+      "confidence": 65,
+      "reasoning": "Ugentlige tilbagekøb fortsætter uafbrudt, og +15.2% indtjeningsvækst til kun 11.4x forward PE er fortsat attraktivt. Uptrend intakt +16.4% over SMA200, ingen brud på thesis.",
+      "bull": [
+        "Ugentlige tilbagekøb har kørt uafbrudt i over en måned",
+        "Indtjeningsvækst +15.2% og 4.55% udbytte til forward PE 11.4x"
+      ],
+      "bear": [
+        "Nærhed til 52-ugers højeste øger risikoen for kortsigtet modstand"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Sjælden kombination af fundamental og teknisk styrke: opjusteret guidance og aktiv kapitaltilbageførsel i en bekræftet uptrend.",
+        "price_target": 400,
+        "stop_loss": 350,
+        "expected_return_pct": 8.0,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 350. Tag profit nær 400. Revurder ved guidance-nedjustering eller brud i kreditkvaliteten."
+      }
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 289.4,
+      "confidence": 70,
+      "reasoning": "15% omsætningsvækst, opjusteret guidance og ny Oticon-premium-lancering giver fortsat en frisk vækstkatalysator. Valuation ikke billig (18.3x), men thesis er intakt og trenden bekræftet (+25.5% over SMA200).",
+      "bull": [
+        "H1 2026: 15% omsætningsvækst og opjusteret helårsguidance",
+        "Oticon lancerede nye premium-høreapparater — frisk produktcyklus-katalysator"
+      ],
+      "bear": [
+        "Indtjeningsvækst (+6.4%) halter efter omsætningsvækst (+14.8%), hvilket antyder marginpres"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Guidance-opjustering og nyt produktlanceringsmomentum retfærdiggør indgang trods kortsigtet overkøbt teknik.",
+        "price_target": 330,
+        "stop_loss": 273,
+        "expected_return_pct": 14.0,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 273. Tag profit nær 330. Revurder hvis overkøbt teknik udløser hurtigt tilbagefald uden ny fundamental forklaring."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "SELL",
+      "shares": 10,
+      "price": 870.0,
+      "confidence": 55,
+      "reasoning": "Fundamental thesis (opjusteret guidance, +13.6% indtjeningsvækst) er intakt, men aktien er maksimalt overkøbt (RSI 69.9, Stoch 100, BB 99.8%) efter et +5.9%-femdages-sprint, og positionen er porteføljens største (20.1% vægt, 20.1% af hele Consumer Cyclical-sektoren i ét navn). Trimmer ~38% for at låse gevinst og reducere koncentrationsrisiko før Q3-regnskab og CFO-skifte — beholder resten på uændret thesis med hævet trailing-stop.",
+      "bull": [
+        "Q2-guidance opjusteret på 3% organisk vækst i en bekræftet uptrend (+40% over SMA200)",
+        "Indtjeningsvækst +13.6% til stadig rimelig forward PE 18.2x"
+      ],
+      "bear": [
+        "Maksimalt overkøbt teknik (RSI 69.9, Stoch 100, BB-position 99.8%) efter kraftigt kortsigtet ryk",
+        "Ny CFO-transition tilføjer eksekveringsusikkerhed før Q3-regnskabet (04/11)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Momentum-fortsættelse i en fundamentalt understøttet uptrend, men positionen var blevet for stor — trimmer for at reducere koncentrationsrisiko og lås gevinst ind, mens resten holdes på uændret thesis.",
+        "price_target": 910,
+        "stop_loss": 814,
+        "expected_return_pct": 4.6,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg resten ved brud under 814 (hævet trailing-stop, ~2x ATR under nuværende kurs). Tag profit nær 910. Revurder ved svagt Q3-regnskab (04/11) eller yderligere deceleration i organisk vækst."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "action": "SELL",
+      "shares": 15,
+      "price": 469.4,
+      "confidence": 50,
+      "reasoning": "6% organisk vækst og 5.01% udbytte holder thesis i live, men aktien er teknisk stærkt overkøbt (RSI 70.4, Stoch 89.3, BB 95.2%) samtidig med at US-refusionsmodvind, Kina-lagerjusteringer og et ledelsesskifte alle er reelle, uafklarede risici. Positionen er porteføljens næststørste (18.7%) og udgør sammen med Demant hele Healthcare-sektorens 27.7% — trimmer ~33% for at reducere sektorkoncentration og hæver trailing-stop for at beskytte gevinsten på resten.",
+      "bull": [
+        "Q3 2025/26: 6% organisk vækst og 5% EBIT-vækst trods modvind, volumen kører 2.3x gennemsnit",
+        "Indtjeningsvækst +82% å/å til 28% rabat vs. Healthcare-sektoren (forward PE 18.0x)"
+      ],
+      "bear": [
+        "Teknisk stærkt overkøbt (RSI 70.4, Stoch 89.3, BB-position 95.2%) efter kraftigt ryk",
+        "US-refusionsmodvind, Kina-lagerjusteringer og ledelsesskifte er samtidige, uafklarede risici"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["fundamental", "technical"],
+        "thesis": "Deep-value sundhedsnavn med stærk indtjeningsvækst og solidt udbytte, men positionen var blevet for stor ift. Healthcare-sektorkoncentration — trimmer for at reducere risiko og lås gevinst ind, mens resten holdes på neutral konviktion.",
+        "price_target": 520,
+        "stop_loss": 445,
+        "expected_return_pct": 10.8,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg resten ved brud under 445 (hævet trailing-stop, ~2x ATR under nuværende kurs). Tag profit nær 520. Revurder/trim yderligere hvis US-refusionsmodvinden eskalerer eller ledelsesskiftet skaber eksekveringsproblemer."
+      }
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 137.6,
+      "confidence": 55,
+      "reasoning": "Borkum Riffgrund 3 er nu i kommerciel drift og ny Dadu 2-projekt i Taiwan bekræfter fortsat eksekvering, mens ledelsen fastholder guidance efter DKK 15bn H1-EBITDA. RSI 32 er oversolgt uden stop-risiko — kontrarisk thesis intakt.",
+      "bull": [
+        "Borkum Riffgrund 3 påbegyndte kommerciel drift; ~2.5GW installeret tysk offshore-kapacitet",
+        "H1 2026 EBITDA på DKK 15bn robust, helårsguidance fastholdt"
+      ],
+      "bear": [
+        "Indtjeningsvækst dybt negativ (-94.6% å/å) pga. tidligere nedskrivninger, kursen stadig -33.9% under 52-ugers højeste"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kontrarisk value-position i en oversolgt aktie efter et regnskab domineret af engangsnedskrivninger, hvor ledelsen fastholder guidance og Hornsea 3 kører efter planen.",
+        "price_target": 158,
+        "stop_loss": 126.51,
+        "expected_return_pct": 14.8,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 126.51. Tag profit nær 158. Revurder hvis US-regulatorisk/toldrelateret modvind eskalerer, eller hvis nedskrivningerne gentager sig i næste regnskab."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 874.4,
+      "confidence": 68,
+      "reasoning": "Guidance løftet i bunden på stærk soft drinks/alkoholfri-vækst (+7.8%) og Britvic-synergier ankommer før tid; sell-side fair value hævet til ~1068, over nuværende kurs. Stoch 11.1 viser fortsat oversolgt inden for den langsigtede uptrend — thesis intakt.",
+      "bull": [
+        "Guidance løftet i bunden på stærk soft drinks/alkoholfri-vækst (+7.8%), Britvic-synergier før tid",
+        "Analytiker-fair-value hævet fra DKK 1.045 til ~1.068, over nuværende kurs på 874.4"
+      ],
+      "bear": [
+        "Ølvolumener faldt en anelse, og kortsigtet trend er stadig ned (-4.3% vs. SMA50)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["fundamental", "technical"],
+        "thesis": "Oversolgt value/mean-reversion-indgang i en kvalitets-bryggerivirksomhed med solid indtjeningsvækst og opjusteret fair value.",
+        "price_target": 950,
+        "stop_loss": 842.3,
+        "expected_return_pct": 8.6,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 842.3 (~2x ATR). Tag profit nær 950 (SMA200-niveau). Revurder hvis downtrenden fortsætter uden stabilisering."
+      }
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 208.2,
+      "confidence": 58,
+      "reasoning": "Helårs-EBIT-margin-guidance netop opjusteret på stærkt Q2, og DCF peger på ~23% opside. Momentum er kølet kraftigt af (5d -1.4% vs. 20d +18.8%), men ingen stop-risiko og thesis om turnaround intakt.",
+      "bull": [
+        "Helårs-EBIT-margin-guidance opjusteret efter Q2 (salg €4.723m, nettoresultat €280m)",
+        "Indtjeningsvækst +833% å/å fra lav base, DCF peger på ~23% opside"
+      ],
+      "bear": [
+        "Momentum decelererer kraftigt: 5-dages afkast negativt (-1.4%) mod stærke +18.8% over 20 dage"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["fundamental", "technical"],
+        "thesis": "Fundamental guidance-opjustering i en tidligere succesfuld turnaround-setup. Teknikken er stærkt overkøbt efter rallyet, så positionen holdes uændret indtil en afkøling eller ny bekræftelse.",
+        "price_target": 235,
+        "stop_loss": 197.02,
+        "expected_return_pct": 12.9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 197.02 (~2x ATR). Tag profit nær 235. Revurder hvis rallyet vender skarpt uden ny fundamental bekræftelse."
+      }
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 452.3,
+      "confidence": 55,
+      "reasoning": "2026-outlook hævet sammen med H1-resultater og ny buyback annonceret, indtjeningsvækst +26.7%. Overkøbt (RSI 69.3) og rig valuation (25.4x), men den lille position (1.2% vægt) diversificerer ind i Basic Materials og holdes uændret.",
+      "bull": [
+        "2026-outlook hævet sammen med H1-resultater, ny buyback annonceret",
+        "Indtjeningsvækst +26.7% og omsætningsvækst +9.6% nær 52-ugers højeste"
+      ],
+      "bear": [
+        "Forward PE 25.4x er den rigeste værdiansættelse blandt nuværende beholdninger, RSI 69.3 overkøbt"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["fundamental", "technical"],
+        "thesis": "Kvalitetsvækstnavn med bekræftet fundamental forbedring der diversificerer porteføljen ind i Basic Materials, en sektor uden anden eksponering.",
+        "price_target": 500,
+        "stop_loss": 427.4,
+        "expected_return_pct": 10.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 427.4 (~2x ATR). Tag profit nær 500. Revurder hvis næste regnskab viser deceleration i indtjeningsvæksten."
+      }
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 423.4,
+      "confidence": 60,
+      "reasoning": "Dybt oversolgt (RSI 24.7, Stoch 2.9) med netop afsluttet DKK 300m-tilbagekøb og forbedrede marginer i H1-regnskabet trods input-omkostningsinflation. Forward PE 11.2x er 34% rabat vs. sektoren — mean-reversion-thesis intakt, kun 1 dag gammel.",
+      "bull": [
+        "Dybt oversolgt teknik (RSI 24.7, Stoch 2.9) lige over 52-ugers support",
+        "Afsluttet DKK 300m-tilbagekøb signalerer ledelsens tillid, forward PE 11.2x er 34% rabat vs. sektoren"
+      ],
+      "bear": [
+        "Aktien faldt på H1-regnskabet trods overskudsbeat, og downtrenden (-8.0% vs. SMA50) er ikke stoppet endnu"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kontrarisk mean-reversion-indgang i en statistisk billig aktie med aktivt tilbagekøb og forbedrede marginer, trods fortsat bekræftet downtrend.",
+        "price_target": 480,
+        "stop_loss": 409,
+        "expected_return_pct": 13.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 409 (~2x ATR). Tag profit nær 480 (SMA50-genvinding). Revurder hvis downtrenden fortsætter uden stabilisering, eller hvis volumenvækst udebliver."
+      }
+    }
+  ]
+}
