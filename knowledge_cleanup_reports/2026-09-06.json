@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-06",
+  "files_reviewed": 25,
+  "files_cleaned": 6,
+  "total_items_removed": 6,
+  "per_file": [
+    {
+      "path": "knowledge/CARLb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 10,
+      "removed_items": [
+        {
+          "title": "Carlsberg Lifts Lower End of Guidance as Nonalcoholic Drinks Offset Beer Declines",
+          "date": "2026-08-19",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 16,
+      "removed_items": [
+        {
+          "title": "Genmab shares jump 8% after upbeat results prompt 2026 outlook raise",
+          "date": "2026-08-06",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/RBREW_xcse.json",
+      "removed_count": 1,
+      "kept_count": 6,
+      "removed_items": [
+        {
+          "title": "Royal Unibrew slumps on mixed H1 results, reiterates outlook",
+          "date": "2026-08-17",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/SYDB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 12,
+      "removed_items": [
+        {
+          "title": "Finanskalender",
+          "date": "2026-08-26",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/PNDORA_xcse.json",
+      "removed_count": 1,
+      "kept_count": 3,
+      "removed_items": [
+        {
+          "title": "Major shareholder announcement",
+          "date": "2026-08-20",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/TRYG_xcse.json",
+      "removed_count": 1,
+      "kept_count": 2,
+      "removed_items": [
+        {
+          "title": "Storaktionærmeddelelse",
+          "date": "2026-08-05",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "summary": "Fjernede 3 duplicate_url items (samme artikel-URL genfundet samme dag under andet ord i overskriften: Carlsberg, Genmab, Royal Unibrew) og 3 low_value items med rent generiske titler og indholdslose summaries (Sydbank finanskalender, Pandora og Tryg storaktionaermeddelelser uden konkrete detaljer). Alle oevrige low_value-kandidater (kvartalsrapporter, guidance-opjusteringer, aktietilbagekoeb, ledelsesskift, FDA/forsoegsopdateringer, M&A) blev bevaret da de har substantielt indhold trods kort summary-felt. Ingen stale-kandidater fundet (intet content > 180 dage)."
+}
