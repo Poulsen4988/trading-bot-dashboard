@@ -1,0 +1,354 @@
+{
+  "date": "2026-09-07",
+  "market_summary": "Rolig dag: alle 13 åbne positioner har intakt eller kun let nedgraderet thesis, ingen stop-loss er ramt, og ingen fundamentale brud kalder på salg. Kontant købsbudget er meget stramt (~954 DKK efter min. kontantreserve), og den eneste nye BULL-kandidat uden position (BAVA.CO) er overkøbt (RSI 75, faldende momentum) med tynd scan-tier research, så der købes ikke nyt i dag. Fokus er fortsat porteføljepleje: Healthcare (21.3%) er største sektor, Utilities (ORSTED) har historisk svag track record og overvåges tæt op mod stop.",
+  "decisions": [
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 280.6,
+      "confidence": 7,
+      "reasoning": "Dybt oversolgt (RSI 23) trods stærk organisk vækst og udvidet tilbagekøb — thesis intakt, ingen stop-nærhed.",
+      "bull": [
+        "Dybt oversolgt teknik trods 8.9% organisk vækst i Q2",
+        "Udvidet tilbagekøb (DKK 600m) signalerer ledelsestillid"
+      ],
+      "bear": [
+        "Kortsigtet prissvaghed (-3.44% over 5 dage) trods gode fundamentale forhold"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Trifecta af katalysatorer (regnskab, udvidet tilbagekøb, oversolgt teknik) fortsætter med at understøtte kursen.",
+        "price_target": 320,
+        "stop_loss": 265,
+        "expected_return_pct": 14.0,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 265. Tag profit nær 320. Revurder hvis regionale udfordringer materialiserer sig i næste regnskab."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 374.4,
+      "confidence": 6,
+      "reasoning": "Grinder højere nær 52-ugers højeste på solid indtjening og aktivt tilbagekøb — uptrend bekræftet, ingen ændring.",
+      "bull": [
+        "Stabil indtjenings- og omsætningsvækst til moderat 11.5x forward PE",
+        "Ugentlige tilbagekøb og handel nær 52-ugers højeste"
+      ],
+      "bear": [
+        "Near-neutral teknik (RSI 50.5) — konsolidering snarere end breakout"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Sjælden kombination af fundamental og teknisk styrke: opjusteret guidance og aktiv kapitaltilbageførsel i en bekræftet uptrend.",
+        "price_target": 400,
+        "stop_loss": 350,
+        "expected_return_pct": 6.8,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 350. Tag profit nær 400. Revurder ved guidance-nedjustering eller brud i kreditkvaliteten."
+      }
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 291.8,
+      "confidence": 6,
+      "reasoning": "Bekræftet uptrend nær 52-ugers højeste drevet af Oticon Zeal-lancering og opjusteret guidance — thesis intakt.",
+      "bull": [
+        "Stærk H1-omsætningsvækst (+15%) fra Oticon Zeal-lancering",
+        "Opjusteret helårsguidance, over både SMA50 og SMA200"
+      ],
+      "bear": [
+        "Indtjeningsvækst (+6.4%) halter efter omsætningsvækst (+14.8%) — marginpres"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Guidance-opjustering og nyt produktlanceringsmomentum retfærdiggør indgang trods kortsigtet overkøbt teknik.",
+        "price_target": 330,
+        "stop_loss": 273,
+        "expected_return_pct": 13.1,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 273. Tag profit nær 330. Revurder hvis momentum bryder hurtigt ned uden ny fundamental forklaring."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 846.6,
+      "confidence": 6,
+      "reasoning": "Porteføljens største position (12.1%) — thesis intakt og nær højeste, men koncentrationsrisiko taler imod yderligere tilkøb.",
+      "bull": [
+        "Guidance opjusteret på 3% organisk vækst i Q2",
+        "Bekræftet stærk uptrend, over både SMA50 og SMA200"
+      ],
+      "bear": [
+        "Beskeden omsætningsvækst (+2%) trods guidance-opjustering",
+        "CFO-skifte tilføjer kortsigtet usikkerhed"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Momentum-fortsættelse i en fundamentalt understøttet uptrend, men positionen er allerede porteføljens største — koncentrationsrisiko taler imod yderligere tilkøb.",
+        "price_target": 910,
+        "stop_loss": 761,
+        "expected_return_pct": 7.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 761. Tag profit nær 910. Revurder ved svagt Q3-regnskab (04/11) eller yderligere deceleration i organisk vækst."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 454.7,
+      "confidence": 5,
+      "reasoning": "Neutral konviktion fastholdes — stærk indtjening og udbytte opvejes af US-refusionsmodvind og ledelsesskifte, men ingen stop-nærhed.",
+      "bull": [
+        "Stærk indtjeningsvækst (+81.8%) og 4.96% udbytte",
+        "Fremhævet af value-investor som attraktivt prissat"
+      ],
+      "bear": [
+        "US-refusionsmodvind og Kina-lagerjusteringer",
+        "Ledelsesskifte tilføjer eksekveringsrisiko"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Deep-value sundhedsnavn med stærk indtjeningsvækst og solidt udbytte, nedgraderet til neutral konviktion pga. US-refusionsmodvind, Kina-lagerjusteringer og ledelsesskifte.",
+        "price_target": 520,
+        "stop_loss": 419,
+        "expected_return_pct": 14.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 419. Tag profit nær 520. Trim hvis US-refusionsmodvinden eskalerer yderligere eller ledelsesskiftet skaber eksekveringsproblemer."
+      }
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 137.1,
+      "confidence": 5,
+      "reasoning": "Kontrarisk value-position uden nye brud på thesis — Utilities har svag historisk track record i porteføljen, så positionen overvåges tæt op mod stop.",
+      "bull": [
+        "Borkum Riffgrund 3 nu i kommerciel drift, tilføjer kapacitet",
+        "DCF antyder ~47% undervurdering"
+      ],
+      "bear": [
+        "Indtjeningsvækst dybt negativ (-94.6%)",
+        "Fortsat strukturelt svag trend under begge SMA'er"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kontrarisk value-position i en oversolgt aktie efter et regnskab domineret af engangsnedskrivninger, hvor ledelsen fastholder guidance og Hornsea 3 kører efter planen.",
+        "price_target": 158,
+        "stop_loss": 126.51,
+        "expected_return_pct": 15.2,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 126.51. Tag profit nær 158. Revurder hvis US-regulatorisk/toldrelateret modvind eskalerer, eller hvis nedskrivningerne gentager sig i næste regnskab."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 875.2,
+      "confidence": 6,
+      "reasoning": "Guidance løftet og Britvic-synergier foran plan trods stadig svag teknik — thesis intakt, ingen stop-nærhed.",
+      "bull": [
+        "Guidance løftet på lav ende; soft drinks/alkoholfri øl +7.8%",
+        "Britvic-synergier ankommer foran skema"
+      ],
+      "bear": [
+        "Kernevolumener i øl falder svagt",
+        "Teknik fortsat svag (RSI 36), downtrend ikke bekræftet vendt"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Oversolgt value/mean-reversion-indgang i en kvalitets-bryggerivirksomhed med solid indtjeningsvækst og opjusteret fair value.",
+        "price_target": 950,
+        "stop_loss": 842.3,
+        "expected_return_pct": 8.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 842.3 (~2x ATR). Tag profit nær 950 (SMA200-niveau). Revurder hvis downtrenden fortsætter uden stabilisering."
+      }
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 213.3,
+      "confidence": 7,
+      "reasoning": "Kraftig fundamental turnaround-cyklus fortsætter — samme thesis-type gav +22% på en tidligere VWS-handel (HOLDT). Ingen stop-nærhed.",
+      "bull": [
+        "Eksplosiv indtjeningsvækst (+833% å/å) og opjusteret EBIT-margin-guidance",
+        "Stærkt 20-dages momentum nær 52-ugers højeste"
+      ],
+      "bear": [
+        "Momentum-divergens antyder rallyet mister kortsigtet fart",
+        "Historisk volatil ordre-/margincyklus i vindmøllebranchen"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Fundamental guidance-opjustering i en tidligere succesfuld turnaround-setup. Teknikken er stærkt overkøbt efter rallyet, så positionen holdes uændret indtil en afkøling eller ny bekræftelse.",
+        "price_target": 235,
+        "stop_loss": 197.02,
+        "expected_return_pct": 10.2,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 197.02 (~2x ATR). Tag profit nær 235. Revurder hvis rallyet vender skarpt uden ny fundamental bekræftelse."
+      }
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 436.6,
+      "confidence": 5,
+      "reasoning": "Lille position (1.2%) med intakt thesis efter opjusteret outlook og nyt tilbagekøb, trods skarpt 5-dages tilbagefald.",
+      "bull": [
+        "Opjusteret 2026-outlook og nyt tilbagekøbsprogram",
+        "Fortsat over både SMA50 og SMA200"
+      ],
+      "bear": [
+        "Skarpt 5-dages tilbagefald (-5.7%) trods positiv outlook-opdatering",
+        "Rig værdiansættelse (24.5x forward PE)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kvalitetsvækstnavn med bekræftet fundamental forbedring der diversificerer porteføljen ind i Basic Materials, en sektor uden anden eksponering.",
+        "price_target": 500,
+        "stop_loss": 427.4,
+        "expected_return_pct": 14.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 427.4 (~2x ATR). Tag profit nær 500. Revurder hvis næste regnskab viser deceleration i indtjeningsvæksten."
+      }
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 419.2,
+      "confidence": 7,
+      "reasoning": "Dybt oversolgt mean-reversion-setup med aktivt tilbagekøb — bemærk at en tidligere RBREW-handel med samme thesis-type endte HOLDT IKKE (stop ramt), så stoppet overvåges tæt.",
+      "bull": [
+        "Dybt oversolgt (RSI 17) lige over 52-ugers lavpunkt",
+        "35% rabat til sektoren på forward PE, aktivt DKK 300m tilbagekøb"
+      ],
+      "bear": [
+        "Fortsat klar downtrend (-8.8% vs SMA50)",
+        "Tidligere RBREW mean-reversion-thesis (aug.) endte i stop-tab — mønster kræver disciplin"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kontrarisk mean-reversion-indgang i en statistisk billig aktie med aktivt tilbagekøb og forbedrede marginer, trods fortsat bekræftet downtrend.",
+        "price_target": 480,
+        "stop_loss": 409,
+        "expected_return_pct": 14.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 409 (~2x ATR). Tag profit nær 480 (SMA50-genvinding). Revurder hvis downtrenden fortsætter uden stabilisering, eller hvis volumenvækst udebliver."
+      }
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 156.2,
+      "confidence": 5,
+      "reasoning": "Stabil forsikringsaktie med højt udbytte i moderat uptrend — indtjeningsfaldet skyldes normal skadesvolatilitet, ikke strukturel svaghed. Tæt på stop, følges nøje.",
+      "bull": [
+        "Højt 5.33% udbytte med solid solvens og stabil omsætningsvækst",
+        "Moderat uptrend over både SMA50 og SMA200"
+      ],
+      "bear": [
+        "Indtjeningsvækst kraftigt negativ (-43.2%) pga. store skader",
+        "Skadesvolatilitet er et tilbagevendende risikoelement"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Stabil lavvolatil forsikringsaktie i bekræftet uptrend til rimelig værdiansættelse — diversificerer Financial Services-eksponeringen væk fra ren bankrisiko uden at øge Healthcare-koncentrationen.",
+        "price_target": 172,
+        "stop_loss": 154.41,
+        "expected_return_pct": 10.1,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 154.41 (~2x ATR). Tag profit nær 172. Revurder ved større vejrrelateret erstatningsudgift eller pludselig marginforringelse."
+      }
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1321.5,
+      "confidence": 5,
+      "reasoning": "Oversolgt kontrarisk indgang, kun 4 dage gammel — rekord-EBIT og opjusteret guidance opvejer Schenker-integrationsomkostninger. Ingen stop-nærhed endnu.",
+      "bull": [
+        "Oversolgt (RSI 30), lige over 52-ugers lavpunkt",
+        "Rekord-EBIT i Q2 2026 med opjusteret guidance"
+      ],
+      "bear": [
+        "Zacks har flagget DSV som 'Bear of the Day'",
+        "Fortsat downtrend: -10.2% vs SMA50, -15.9% vs SMA200"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Kontrarisk indgang i en kvalitetslogistikaktør efter rekord-EBIT i H1 blev overskygget af DB Schenker-integrationsomkostninger og negativ sentiment. Dybt oversolgt teknik giver attraktiv risk/reward for en mean-reversion mod SMA50.",
+        "price_target": 1480,
+        "stop_loss": 1253,
+        "expected_return_pct": 12.0,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 1253 (~2x ATR). Tag profit nær 1480 (SMA50-genvinding). Revurder hvis integrationsomkostningerne eskalerer yderligere eller downtrenden accelererer uden stabilisering."
+      }
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 39.8,
+      "confidence": 5,
+      "reasoning": "Deep-value turnaround kun 3 dage gammel — margingenopretning i USA er positivt, men omsætningsvending er endnu ubekræftet. Ingen stop-nærhed.",
+      "bull": [
+        "Deep value: forward PE 10.0x mod sektornorm 22x",
+        "Margingenopretning i USA og robust dansk offentlig vækst i Q2"
+      ],
+      "bear": [
+        "Omsætning stadig faldende (-6.7%)",
+        "Stadig -38% under 52-ugers højeste, under SMA200"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": ["technical", "fundamental"],
+        "thesis": "Deep-value turnaround i en dansk IT-serviceudbyder med tidlige tegn på US-margingenopretning og teknisk basedannelse efter 52-ugers lavpunkt. Moderat sizet grundet endnu ubekræftet omsætningsvending.",
+        "price_target": 47,
+        "stop_loss": 36.79,
+        "expected_return_pct": 18.1,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 36.79 (~2x ATR). Tag profit nær 47. Revurder hvis omsætningsfaldet accelererer eller transformationsstrategien ikke viser fremgang i næste regnskab."
+      }
+    }
+  ]
+}
