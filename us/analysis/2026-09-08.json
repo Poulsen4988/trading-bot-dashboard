@@ -1,0 +1,427 @@
+{
+  "date": "2026-09-08",
+  "stocks": {
+    "SYK": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "screener_score": 77.0,
+      "bull": [
+        "Bolt-on M&A (ZuriMED/FiberLocker) strengthens the shoulder portfolio and shows management still investing through the downturn.",
+        "Extremely oversold (RSI 22, stochastic 1.9) raises odds of a near-term technical bounce."
+      ],
+      "bear": [
+        "Executives flagged ongoing supply-chain problems in peripheral vascular and joint replacement, sending shares down 7.7% in a session.",
+        "Sector-wide device weakness (peer Boston Scientific also cut guidance) suggests a group problem, not just company-specific noise; trend is broken below both SMA50 and SMA200 with downside accelerating."
+      ],
+      "summary": "Stryker cratered on supply-chain guidance warnings and sector-wide device weakness, and while it's deeply oversold, the trend is broken and downside is accelerating.",
+      "key_risk": "Supply chain disruption in core ortho/vascular units persists into next quarters, compounding margin pressure."
+    },
+    "CDNS": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "screener_score": 72.0,
+      "bull": [
+        "Average brokerage recommendation is a Buy, and first-pass PCIe 6.0 IP compliance on TSMC N3 signals continued design-win momentum.",
+        "Oversold enough (RSI 35) for a technical bounce."
+      ],
+      "bear": [
+        "Simply Wall St flags shares as still overvalued on both market-multiple and intrinsic-value checks despite the pullback.",
+        "Falling alongside the whole EDA/chip-design group (Synopsys also weak) points to a sector de-rating, not an isolated dip; below both SMAs with negative MACD."
+      ],
+      "summary": "Cadence is being dragged down with peers in an EDA/semiconductor design-software selloff despite still-strong AI-driven demand and a bullish sell-side consensus.",
+      "key_risk": "Group-wide AI/semiconductor design-software de-rating continues even as fundamentals hold up, capping any bounce."
+    },
+    "STZ": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "screener_score": 71.0,
+      "bull": [
+        "Modelo is raising marketing spend (college football platform) as part of a premiumization strategy meant to drive share gains.",
+        "Deeply oversold (RSI 28) right at a 52-week low offers some valuation support."
+      ],
+      "bear": [
+        "Beer category volumes remain soft industry-wide, and the stock sitting at a 52-week low signals the market sees more than a cyclical dip.",
+        "Below both SMA50 and SMA200 with negative MACD; no confirmed bottom yet."
+      ],
+      "summary": "Constellation is oversold at a 52-week low on soft beer volumes, but its Modelo-led premiumization and marketing investment offer a credible, if unproven, recovery path.",
+      "key_risk": "Beer category volume softness proves structural rather than cyclical, capping any premiumization-led recovery."
+    },
+    "FICO": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 8,
+      "screener_score": 68.0,
+      "bull": [
+        "Post-selloff valuation checks (Simply Wall St) suggest shares may be trading below intrinsic value.",
+        "FICO retains a diversified analytics business beyond mortgage scoring, and the stock is now deeply oversold (RSI 34, stoch 16)."
+      ],
+      "bear": [
+        "FHFA ordered Fannie Mae and Freddie Mac to accept VantageScore, ending FICO's decades-long exclusive mortgage credit-scoring monopoly — a structural moat break, not sentiment.",
+        "Shares are down double digits over multiple sessions (-18.65% 5d, -53% from 52w high) with no sign yet of stabilization."
+      ],
+      "summary": "A regulatory order ending FICO's decades-long mortgage credit-scoring monopoly is a structural moat break, not a sentiment dip, and the stock likely has further re-rating to go despite being technically oversold.",
+      "key_risk": "Loss of mortgage-scoring exclusivity permanently impairs FICO's core pricing power and high-margin scoring revenue as lenders migrate to VantageScore."
+    },
+    "LULU": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 6,
+      "screener_score": 68.0,
+      "bull": [
+        "New CEO transition (Heidi O'Neill) is a re-rating catalyst if a credible turnaround plan emerges; today's +2.56% bounce hints at bottom-fishing interest.",
+        "Stock is already priced for distress at -54% from its 52-week high."
+      ],
+      "bear": [
+        "The new CEO inherits genuinely weak sales, tariff pressure, and intensifying athleisure competition (Nike also struggling).",
+        "Severely broken long-term trend — price is over 32% below the 200-day SMA."
+      ],
+      "summary": "Lululemon's new CEO faces a genuinely broken business — weak sales, tariffs, and competitive share loss — and while the stock is deeply washed out, there's no clear catalyst yet for a durable turn.",
+      "key_risk": "Turnaround under the new CEO takes multiple quarters to show results while competitive share loss continues to compound."
+    },
+    "LEN": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "screener_score": 64.0,
+      "bull": [
+        "Simply Wall St flags shares as potentially below fair value on traditional earnings multiples.",
+        "Continued community expansion (new openings in Alabama and Georgia) shows management still executing through the downturn."
+      ],
+      "bear": [
+        "Broader homebuilder sector remains pressured by affordability and rate concerns.",
+        "Price sits over 17% below the 200-day SMA with RSI only 39 — not yet showing a clear bottom."
+      ],
+      "summary": "Lennar looks statistically cheap after a steep decline, but persistent affordability headwinds keep the homebuilder sector's downtrend intact.",
+      "key_risk": "Elevated mortgage rates keep affordability-constrained buyers on the sidelines longer than expected, pressuring incentive-driven margins further."
+    },
+    "PTC": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "screener_score": 64.0,
+      "bull": [
+        "Trefis argues PTC has a \"cleaner\" AI-growth story than Oracle, with stronger growth and profitability.",
+        "Relatively resilient technicals versus peers — MACD slightly positive and price only 2.6% below the 50-day SMA."
+      ],
+      "bear": [
+        "Caught in a broader design-software/EDA-adjacent selloff (Autodesk, Cadence, Synopsys all weak), suggesting a thematic de-rating.",
+        "Down double digits over 5 days (-14.44%) despite the relatively cleaner fundamental narrative."
+      ],
+      "summary": "PTC is being caught in a design-software sector selloff despite arguably the cleanest AI growth narrative in the group, with technicals holding up better than peers.",
+      "key_risk": "Group-wide design-software valuation compression continues regardless of PTC's relatively cleaner fundamentals."
+    },
+    "SNPS": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 64.0,
+      "bull": [
+        "Morgan Stanley upgraded Synopsys to Overweight today specifically, citing widening valuation dispersion in chip stocks.",
+        "Revenue grew ~42% YoY per Trefis, and technicals are the least damaged in the peer group (RSI 46, near Bollinger midpoint)."
+      ],
+      "bear": [
+        "Trefis flags that the core EDA engine grew only 8.5%, much slower than headline revenue — a quality-of-growth concern.",
+        "Still down double digits over 5 days despite today's modest move, reflecting a persistent group-wide overhang."
+      ],
+      "summary": "A fresh Morgan Stanley upgrade to Overweight, decent relative technical resilience, and still-strong (if uneven-quality) revenue growth make Synopsys the most attractive relative recovery play in the beaten-down design-software group.",
+      "key_risk": "If underlying core EDA growth doesn't reaccelerate, the multiple re-rating from the Morgan Stanley upgrade could prove short-lived."
+    },
+    "BLDR": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BEAR",
+      "confidence": 7,
+      "screener_score": 63.0,
+      "bull": [
+        "Deep value after a -58% drawdown, sitting essentially at its 52-week low.",
+        "Index removal could prove a one-time technical flush rather than fresh fundamental deterioration."
+      ],
+      "bear": [
+        "Being removed from the S&P 500 (replaced by Illumina/Everpure effective September 21) triggers real, mechanical passive-fund selling into the rebalance date.",
+        "The removal itself signals relative business underperformance versus the broader market amid housing-products demand weakness."
+      ],
+      "summary": "Builders FirstSource's removal from the S&P 500 triggers mechanical index-fund selling into month-end, compounding an already severe housing-related drawdown.",
+      "key_risk": "Passive index-fund outflows around the September 21 S&P 500 removal date create continued technical selling pressure independent of fundamentals."
+    },
+    "IDXX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "screener_score": 63.0,
+      "bull": [
+        "Management itself raised 2026 EPS guidance on recurring diagnostics growth and margin improvement.",
+        "Wall Street analysts maintain a moderately bullish outlook, and the vet-diagnostics revenue base is largely recurring/non-cyclical."
+      ],
+      "bear": [
+        "Stock keeps sliding (-7.8% since last earnings) despite the raised guidance, suggesting the market is discounting FX and distributor-inventory risk.",
+        "Below both SMA50 and SMA200 with negative MACD; no clear bottom yet."
+      ],
+      "summary": "Idexx raised its own guidance on strong diagnostics growth, yet the stock keeps sliding — a disconnect that likely resolves once FX and distributor-inventory noise clears.",
+      "key_risk": "FX headwinds and distributor inventory destocking offset the recurring diagnostics growth story the guidance is built on."
+    },
+    "MGM": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 24.0,
+      "bull": [
+        "BetMGM is positioning for the NFL season against prediction-market competitors, and institutional investors have flagged acquisition-premium speculation in the name.",
+        "Still above its 200-day SMA (+2.78%) despite a short-term pullback below the 50-day, keeping the longer-term uptrend intact; RSI 26.5 is oversold."
+      ],
+      "bear": [
+        "Consumer discretionary/leisure spending exposure is vulnerable to any macro softness hitting Vegas visitation and sports betting handle.",
+        "Low screener score (24) reflects a weaker overall momentum/quality profile versus the top-10 names."
+      ],
+      "summary": "MGM is a scout candidate holding its long-term uptrend (above the 200-day SMA) into NFL season, with BetMGM positioning and M&A speculation providing upside catalysts despite an oversold short-term pullback.",
+      "key_risk": "A slowdown in consumer discretionary spending on gaming and travel undercuts both the Vegas and BetMGM segments simultaneously."
+    },
+    "PKG": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "screener_score": 24.0,
+      "bull": [
+        "Rising containerboard prices are a direct margin tailwind for the business.",
+        "Still above its 200-day SMA (+4.6%) despite the pullback, and Barchart flags a moderately bullish analyst outlook."
+      ],
+      "bear": [
+        "A containerboard price-fixing lawsuit was just cleared to proceed to discovery, adding legal and reputational overhang.",
+        "A facility closure (Gas City, Indiana) with layoffs signals demand softness in parts of the business."
+      ],
+      "summary": "Packaging Corp benefits from rising containerboard prices and holds its long-term uptrend, but a price-fixing lawsuit moving to discovery is a real overhang to watch.",
+      "key_risk": "Adverse discovery findings or a settlement in the containerboard price-fixing litigation create a legal/financial overhang."
+    },
+    "RL": {
+      "tier": "deep",
+      "scout": true,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 24.0,
+      "bull": [
+        "Zacks flags an oversold technical setup (RSI 26) combined with analysts raising earnings estimates — a classic actionable turnaround signal.",
+        "Continued AI/digital investment is improving customer experience and brand discovery, and the premium brand position is more resilient than mass apparel."
+      ],
+      "bear": [
+        "The Harvey Nichols wind-down creates a wholesale-channel loss in the UK for Ralph Lauren and other premium brands.",
+        "Still down meaningfully over the past month even after today's modest bounce."
+      ],
+      "summary": "Ralph Lauren looks oversold with Wall Street analysts raising estimates into the pullback, a classic contrarian turnaround setup despite a minor wholesale-channel hit from Harvey Nichols' wind-down.",
+      "key_risk": "A continued slowdown in luxury/premium consumer spending in Europe, compounded by wholesale partner losses like Harvey Nichols, overwhelms the brand's pricing power."
+    },
+    "AFL": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "screener_score": 24.0,
+      "bull": [
+        "Dividend Aristocrat status with a 25+ year raise streak underpins a durable capital-return profile.",
+        "Still above its 200-day SMA despite an oversold short-term reading (RSI 33)."
+      ],
+      "bear": [
+        "Barchart notes Aflac has trailed insurance peers over the past year and analysts are explicitly skeptical of the near-term outlook.",
+        "Below the 50-day SMA, showing near-term momentum has turned negative."
+      ],
+      "summary": "Aflac's Dividend Aristocrat durability and intact long-term uptrend are offset by analyst skepticism and relative underperformance versus insurance peers.",
+      "key_risk": "Continued underperformance versus insurance peers if Aflac's core supplemental insurance growth keeps decelerating."
+    },
+    "AMZN": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 7.1,
+      "bull": [
+        "New custom data-center chip partnership with Qualcomm deepens AWS's AI infrastructure moat, and the Amazon Leo/Delta in-flight wifi win shows optionality beyond core retail and AWS.",
+        "Technicals are healthy — above both SMA50 and SMA200 with a neutral RSI (47.5), not overbought or oversold."
+      ],
+      "bear": [
+        "Broader market skepticism about AI-capex ROI (e.g., questions about AI-office productivity payback) is a sector-wide overhang that could weigh on the AWS capex narrative."
+      ],
+      "summary": "Amazon's technicals remain healthy and it keeps stacking AI-infrastructure wins (Qualcomm chips, Leo/Delta), even as broader market skepticism about AI capex ROI is a sector-wide overhang.",
+      "key_risk": "Market sours further on AI-capex ROI skepticism, pressuring AWS's multiple even as the underlying deals are individually positive."
+    },
+    "CRWD": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 26.1,
+      "bull": [
+        "Revenue has nearly doubled over 8 quarters versus OKTA, showing structural competitive share gains, and the average broker recommendation is a Buy.",
+        "Massive long-term uptrend intact — price is nearly 47% above the 200-day SMA."
+      ],
+      "bear": [
+        "The software sector saw a $700M single-session ETF outflow (IGV) just before earnings volatility, showing skittish near-term positioning.",
+        "Price has pulled back just over 4% below the 50-day SMA, suggesting momentum is cooling after a huge run."
+      ],
+      "summary": "CrowdStrike's massive long-term uptrend and clear competitive share gains over OKTA remain intact through a mild pullback, even as broader software-sector fund flows turn choppy.",
+      "key_risk": "A software-sector-wide de-rating (as seen in the IGV outflow) drags CrowdStrike's premium multiple down even as fundamentals stay strong."
+    },
+    "DIS": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 22.8,
+      "bull": [
+        "A $60B parks and cruise investment pipeline supports durable long-term Experiences segment growth.",
+        "The healthiest technical setup in this group — above both the 50-day and 200-day SMAs with a neutral RSI (52.8)."
+      ],
+      "bear": [
+        "Disney is shutting down its online store in several major markets as part of a broader retail pullback, signaling ongoing consumer-products softness.",
+        "Rising park ticket prices (>$200/ticket) risk consumer pushback on attendance if affordability concerns grow."
+      ],
+      "summary": "Disney has the healthiest chart in this group, backed by a $60B parks investment pipeline, even as the online store closures point to ongoing consumer-products softness.",
+      "key_risk": "Higher park pricing and reduced e-commerce presence erode consumer goodwill and attendance if visitor demand softens."
+    },
+    "FCX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 7,
+      "screener_score": 22.0,
+      "bull": [
+        "Copper just hit a record high ($14,694/ton), and each 10-cent move is worth roughly $390M of annual EBITDA by management's own sensitivity model — a direct, quantified earnings tailwind.",
+        "Strong uptrend — price is nearly 26% above the 200-day SMA."
+      ],
+      "bear": [
+        "RSI at 68.4 after a sharp one-day 5.35% spike leaves the stock technically stretched and vulnerable to near-term profit-taking.",
+        "Part of the copper strength is tied to tariff-driven trade tension (Canada's retaliatory tariffs), a geopolitical variable that can reverse quickly."
+      ],
+      "summary": "Freeport-McMoRan is riding a genuine, quantifiable earnings tailwind from record copper prices, though the sharp one-day spike leaves it technically stretched near-term.",
+      "key_risk": "A sharp reversal in copper prices (e.g., tariff de-escalation or demand disappointment) would hit both the stock's momentum and the earnings tailwind simultaneously."
+    },
+    "FLEX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 30.8,
+      "bull": [
+        "The $4.4B EPC Power acquisition meaningfully expands Flex's exposure to AI data-center power conversion, a high-growth end market, and shares are rallying on the news.",
+        "Peer Jabil is also outperforming on AI-infrastructure diversification, validating the read-through for contract manufacturers moving into power/energy."
+      ],
+      "bear": [
+        "At $4.4B, the deal is large relative to Flex's size, creating real integration and leverage risk."
+      ],
+      "summary": "Flex's $4.4B EPC Power acquisition is a well-timed bet on AI data-center power demand, and the market is rewarding the move, though integration risk on a deal this size is real.",
+      "key_risk": "Integration execution or overpaying for EPC Power dilutes returns even if the strategic AI-power thesis is correct."
+    },
+    "KEYS": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 12.8,
+      "bull": [
+        "A new AI-safety research collaboration (with the Centre for Assuring Autonomy) extends Keysight's relevance in AI/autonomous-systems validation testing.",
+        "Healthy technicals — above both SMA50 and SMA200 with solid recent momentum (+3.32% over 5 days)."
+      ],
+      "bear": [
+        "Simply Wall St's framing ('is it still below fair value?') suggests the valuation debate remains unresolved.",
+        "Semiconductor and telecom test-equipment demand is inherently cyclical and tied to customer capex cycles."
+      ],
+      "summary": "Keysight's AI-safety research push and solid technical uptrend support a constructive near-term view, though test-equipment demand remains tied to a cyclical capex backdrop.",
+      "key_risk": "A slowdown in semiconductor or telecom capex spending reduces demand for Keysight's test-and-measurement equipment."
+    },
+    "L": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "NEUTRAL",
+      "confidence": 5,
+      "screener_score": 24.0,
+      "bull": [
+        "Q2 net income and book value per share both grew meaningfully year over year, and the conglomerate structure (insurance, pipelines, hotels) cushions single-segment weakness.",
+        "Oversold (RSI 31.5) right at flat 200-day SMA support."
+      ],
+      "bear": [
+        "Underwriting profitability is explicitly slipping per the latest report, a core insurance-quality metric.",
+        "Sitting right at 200-day SMA support with no clear catalyst yet to reverse the recent slide."
+      ],
+      "summary": "Loews grew profit and book value in Q2, but slipping underwriting results are a genuine quality concern even as the stock tests flat 200-day support.",
+      "key_risk": "Continued underwriting deterioration in the CNA insurance subsidiary offsets book-value growth from the pipeline/hospitality segments."
+    },
+    "MMM": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 25.6,
+      "bull": [
+        "Zacks flags genuine company-specific strength in the Transportation & Electronics segment (semiconductor, data-center, and aerospace exposure) supporting an upbeat 2026 outlook.",
+        "Still above the 200-day SMA (+5.02%), so the longer-term uptrend is intact despite a sharp near-term drop; RSI of 15.9 is an extreme, classic mean-reversion setup."
+      ],
+      "bear": [
+        "The extremity of the oversold reading, alongside a still-underperforming-the-Dow narrative, suggests a sharper deterioration in sentiment than one bright segment may offset."
+      ],
+      "summary": "3M is the most technically oversold name in the set (RSI 16) while still holding its 200-day uptrend, with genuine segment strength in semis, data-center, and aerospace exposure supporting a mean-reversion case.",
+      "key_risk": "If Transportation & Electronics strength doesn't broaden to other segments, the extreme oversold bounce fades quickly and the stock resumes underperforming the Dow."
+    },
+    "MRVL": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 32.6,
+      "bull": [
+        "Management raised revenue guidance again, and the stock is recovering (+8% over 20 days) within a massive long-term uptrend (nearly 48% above the 200-day SMA).",
+        "The custom AI silicon business remains a structurally growing market even amid rising competition."
+      ],
+      "bear": [
+        "Non-GAAP gross margin guidance did not rise alongside revenue — Trefis flags this as the market's key unresolved question about the quality of growth.",
+        "Competitive intensity is rising fast, with Broadcom and now Qualcomm/Amazon pushing further into custom AI silicon."
+      ],
+      "summary": "Marvell keeps raising revenue guidance and recovering within a huge long-term uptrend, but flat margin guidance amid intensifying custom AI-chip competition from Broadcom and Qualcomm is the key unresolved question.",
+      "key_risk": "Margin guidance stays flat even as competitors intensify custom AI-silicon competition, capping upside even if revenue keeps growing."
+    },
+    "NDAQ": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 6,
+      "screener_score": 26.0,
+      "bull": [
+        "Bill Ackman disclosed a major long position arguing the market has the AI threat to Nasdaq's business \"backwards\" — a high-profile bullish signal.",
+        "The Dasseti acquisition extends Nasdaq's AI-driven data/analytics moat within eVestment, and technicals are healthy above both SMAs."
+      ],
+      "bear": [
+        "The premise behind Ackman's bullish thesis (that AI could threaten exchange/data businesses) implies a real bear case already being priced by skeptics.",
+        "Five-day momentum is still negative (-3.62%) despite the bullish headline."
+      ],
+      "summary": "A high-profile Ackman investment arguing the AI threat to Nasdaq is overstated, plus the AI-focused Dasseti acquisition, support a constructive view despite a soft five-day stretch.",
+      "key_risk": "If AI-driven disintermediation of financial data and analytics products proves real rather than overstated, Nasdaq's higher-margin data segments face structural pressure."
+    },
+    "VRTX": {
+      "tier": "deep",
+      "scout": false,
+      "verdict": "BULL",
+      "confidence": 7,
+      "screener_score": 27.0,
+      "bull": [
+        "Goldman Sachs added Vertex to its Conviction List today — a fresh, high-conviction institutional bullish signal.",
+        "Technicals are solidly healthy, above both the 50-day and 200-day SMAs, with a diversified pipeline beyond the cystic fibrosis franchise."
+      ],
+      "bear": [
+        "Today's -3.15% drop despite the Goldman upgrade suggests some profit-taking or broader biotech-sector rotation.",
+        "Premium large-cap biotech valuation leaves less room for pipeline disappointment."
+      ],
+      "summary": "Goldman Sachs just added Vertex to its Conviction List, reinforcing an already technically healthy uptrend, even though today's dip hints at some near-term profit-taking.",
+      "key_risk": "A pipeline setback (e.g., in non-CF programs) would hit the stock hard given its premium, conviction-list valuation."
+    }
+  }
+}
