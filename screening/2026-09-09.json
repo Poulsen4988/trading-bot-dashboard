@@ -1,0 +1,309 @@
+{
+  "date": "2026-09-09",
+  "screened_at": "2026-09-09T07:20:01Z",
+  "price_data_date": "2026-09-08",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 52.2,
+      "price": 39.4,
+      "pct_1d": -1.01,
+      "pct_5d": -3.19,
+      "pct_20d": 5.07,
+      "volume_ratio": 0.77,
+      "rsi_proxy": 55.9,
+      "stoch_proxy": 43.9,
+      "bb_position": 51.8,
+      "sma50_vs_price": 2.08,
+      "sma200_vs_price": -8.79,
+      "macd_line": 0.3265,
+      "atr": 1.2107,
+      "momentum_divergence": -8.26,
+      "pe_forward": 9.874687,
+      "pct_from_52w_high": -37.46,
+      "pct_from_52w_low": 8.54,
+      "sector": "Technology",
+      "earnings_growth": null,
+      "revenue_growth": -0.067,
+      "div_yield": null,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "NEAR 52W LOW: +8.5% above annual support \u2014 critical level",
+        "MOMENTUM: -3.2% in 5 days",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -8.3pp \u2014 emerging trend shift",
+        "DEEP VALUE: Fwd PE 9.9x vs sector norm 22x \u2014 55% discount"
+      ],
+      "screening_rationale": "NNIT.CO: price sits just +8.5% above the 52-week low (36.3) \u2014 a key decision zone; forward PE 9.9x represents a 55% discount to Technology sector norm (22x); price is +2.1% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 50.4,
+      "price": 66.8,
+      "pct_1d": -1.84,
+      "pct_5d": -6.11,
+      "pct_20d": -8.3,
+      "volume_ratio": 0.67,
+      "rsi_proxy": 31.8,
+      "stoch_proxy": 18.0,
+      "bb_position": 7.2,
+      "sma50_vs_price": -5.95,
+      "sma200_vs_price": -10.52,
+      "macd_line": -0.8618,
+      "atr": 2.875,
+      "momentum_divergence": 2.19,
+      "pe_forward": 21.884706,
+      "pct_from_52w_high": -40.25,
+      "pct_from_52w_low": 18.76,
+      "sector": "Healthcare",
+      "earnings_growth": 0.283,
+      "revenue_growth": 0.088,
+      "div_yield": 0.61,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "SIGNIFICANT DRAWDOWN: -40.2% from 52w high",
+        "MOMENTUM: -6.1% in 5 days \u2014 continued SELLING pressure",
+        "OVERSOLD: RSI proxy 32, Stoch proxy 18 \u2014 watch for reversal",
+        "MODEST DISCOUNT: Fwd PE 21.9x vs sector norm 25x",
+        "EARNINGS GROWTH: +28% YoY"
+      ],
+      "screening_rationale": "AMBU-B.CO: a 6.1% five-day selloff (20d: -8.3%) reveals strong directional pressure; stock has shed 40% from its 52-week high \u2014 potential deep value or extended downtrend; +28% earnings growth underpins the fundamental case; RSI proxy (32) and stochastic (18) in oversold territory support a bounce thesis; price is -6.0% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 48.5,
+      "price": 281.8,
+      "pct_1d": 0.43,
+      "pct_5d": -2.22,
+      "pct_20d": 3.22,
+      "volume_ratio": 0.94,
+      "rsi_proxy": 27.6,
+      "stoch_proxy": 17.9,
+      "bb_position": 9.2,
+      "sma50_vs_price": -1.64,
+      "sma200_vs_price": 13.89,
+      "macd_line": -0.7186,
+      "atr": 4.2286,
+      "momentum_divergence": -5.44,
+      "pe_forward": 12.623378,
+      "pct_from_52w_high": -4.99,
+      "pct_from_52w_low": 49.1,
+      "sector": "Industrials",
+      "earnings_growth": 0.271,
+      "revenue_growth": 0.074,
+      "div_yield": 1.15,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "NEAR 52W HIGH: -5.0% \u2014 breakout territory",
+        "MOMENTUM: -2.2% in 5 days",
+        "OVERSOLD: RSI proxy 28, Stoch proxy 18 \u2014 watch for reversal",
+        "UNDERVALUED: Fwd PE 12.6x vs sector norm 18x \u2014 30% discount",
+        "EARNINGS GROWTH: +27% YoY"
+      ],
+      "screening_rationale": "ISS.CO: stock is pressing against its 52-week high at -5.0% \u2014 breakout watch; forward PE 12.6x represents a 30% discount to Industrials sector norm (18x); +27% earnings growth underpins the fundamental case; RSI proxy (28) and stochastic (18) in oversold territory support a bounce thesis; price is -1.6% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 44.8,
+      "price": 1320.0,
+      "pct_1d": -0.11,
+      "pct_5d": -2.76,
+      "pct_20d": -1.79,
+      "volume_ratio": 0.6,
+      "rsi_proxy": 34.1,
+      "stoch_proxy": 19.2,
+      "bb_position": 15.6,
+      "sma50_vs_price": -9.98,
+      "sma200_vs_price": -15.92,
+      "macd_line": -34.4814,
+      "atr": 27.5714,
+      "momentum_divergence": -0.97,
+      "pe_forward": 15.6411705,
+      "pct_from_52w_high": -31.02,
+      "pct_from_52w_low": 7.06,
+      "sector": "Industrials",
+      "earnings_growth": -0.04,
+      "revenue_growth": 0.237,
+      "div_yield": 0.53,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "NEAR 52W LOW: +7.1% above annual support \u2014 critical level",
+        "MOMENTUM: -2.8% in 5 days",
+        "OVERSOLD: RSI proxy 34, Stoch proxy 19 \u2014 watch for reversal",
+        "MODEST DISCOUNT: Fwd PE 15.6x vs sector norm 18x"
+      ],
+      "screening_rationale": "DSV.CO: price sits just +7.1% above the 52-week low (1233.0) \u2014 a key decision zone; RSI proxy (34) and stochastic (19) in oversold territory support a bounce thesis; price is -10.0% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 43.6,
+      "price": 219.1,
+      "pct_1d": 2.72,
+      "pct_5d": 2.48,
+      "pct_20d": 24.99,
+      "volume_ratio": 0.58,
+      "rsi_proxy": 63.6,
+      "stoch_proxy": 94.5,
+      "bb_position": 80.9,
+      "sma50_vs_price": 15.25,
+      "sma200_vs_price": 22.99,
+      "macd_line": 7.8453,
+      "atr": 5.8429,
+      "momentum_divergence": -22.51,
+      "pe_forward": 17.745628,
+      "pct_from_52w_high": -0.41,
+      "pct_from_52w_low": 95.71,
+      "sector": "Industrials",
+      "earnings_growth": 8.333,
+      "revenue_growth": 0.261,
+      "div_yield": 0.34,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "NEAR 52W HIGH: -0.4% \u2014 breakout territory",
+        "MOMENTUM: +2.5% in 5 days",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -22.5pp \u2014 strong trend change signal",
+        "OVERBOUGHT: RSI proxy 64, Stoch proxy 94 \u2014 stretched, potential pullback",
+        "STRONG EARNINGS GROWTH: +833% YoY \u2014 fundamental tailwind"
+      ],
+      "screening_rationale": "VWS.CO: stock is pressing against its 52-week high at -0.4% \u2014 breakout watch; +833% earnings growth underpins the fundamental case; price is +15.2% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 52.2
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 50.4
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 48.5
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 44.8
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 43.6
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 43.0
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 42.8
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 38.4
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. M\u00f8ller-M\u00e6rsk A",
+      "score": 38.1
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. M\u00f8ller-M\u00e6rsk B",
+      "score": 37.3
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 36.4
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 35.0
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 34.7
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 34.4
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 33.0
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 28.8
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 28.8
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 26.0
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "\u00d8rsted",
+      "score": 24.8
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 24.2
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 22.5
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 21.6
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 19.7
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 18.9
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 8.3
+    }
+  ]
+}
