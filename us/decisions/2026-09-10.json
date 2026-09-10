@@ -1,0 +1,470 @@
+{
+  "date": "2026-09-10",
+  "market_summary": "To positioner sælges på stop-disciplin: MMM (stop brudt -2,6%, tese nedgraderet til neutral pga. reel gælds- og forbrugssvaghed) og FCX (stop brudt -1,3%, tese nedgraderet til neutral trods sektorbred tarif-forklaring — samme mønster som den tidligere fejlede TDG-handel). AMZN holdes trods et marginalt stop-brud, da dagens Oracle/Nvidia-nyheder direkte bekræfter AI-cloud-tesen og positionen er triviel (1% vægt). Resten af porteføljen (MRVL, VRTX, FLEX, DIS, L, KEYS, AFL, CRWD, MGM, RL) holdes uændret — ingen yderligere brudte stops, og teserne forbliver intakte eller kun svagt svækket. To nye køb tilføjes: NDSN (frisk fundamental katalysator — 15% dividendehævning + beat-and-raise) genbruger noget af den ledige Industrials-plads efter MMM-salget, og INVH (ekstremt oversolgt REIT-turnaround med stigende analytikerestimater) diversificerer ind i det helt uvægtede Real Estate-segment.",
+  "decisions": [
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 226.96,
+      "confidence": 7,
+      "reasoning": "Hyperscaler-aftalen er netop udvidet til op til $120B over ~6,5 år — en strukturel vækstkatalysator der styrker tesen yderligere. Dagens -3,4% er profit-taking efter en +9,9% 5-dages-stigning, ikke en tesesvækkelse. Langt over SMA200 (+47%), stop ($162.53) er meget fjernt.",
+      "bull": [
+        "Hyperscaler AI-aftale udvidet til op til $120B i omsætning over ~6,5 år.",
+        "Dramatisk over SMA200 (+47,4%) trods dagens tilbagefald.",
+        "Flere uafhængige bull-teser bekræfter vækstnarrativet."
+      ],
+      "bear": [
+        "Dagens fald følger en stærk 5-dages-stigning — kan være profit-taking.",
+        "Aftalens indtjeningseffekt er bagudtung (kommer efter nærtidsperioden), hvilket øger 'sell the news'-risiko."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Sector-wide chip sympathy-selloff created a deeply oversold entry into a long-term intact AI-silicon growth case, since confirmed by a concrete Google design win and fresh acquisition news, and now a landmark hyperscaler AI deal.",
+        "price_target": 275,
+        "stop_loss": 162.53,
+        "expected_return_pct": 21.17,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $162.53 (2x ATR). Sælg hvis Kina-hukommelseskonkurrencen viser sig strukturel, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "MMM",
+      "name": "3M Company",
+      "action": "SELL",
+      "shares": 90,
+      "price": 162.86,
+      "confidence": 5,
+      "reasoning": "Stop brudt ($162.86 < $167.21, -2,6%) OG dagens verdict nedgraderet fra bull til neutral — Zacks flager nu reelle strukturelle bekymringer (høj gæld, svage forbrugersalg) ud over det tekniske brud (under SMA50, -11% 20-dages momentum). I tråd med etableret stop-disciplin (jf. TDG/DHI/TJX) sælges positionen — den største i porteføljen (14,4% vægt) — for at begrænse yderligere nedside.",
+      "bull": [
+        "RSI 14,4 er ekstremt oversolgt, historisk bounce-niveau.",
+        "Transportation & Electronics-segmentet giver reel AI-capex-eksponering.",
+        "Fortsat over SMA200 (+2,1%)."
+      ],
+      "bear": [
+        "Høj gæld og svage forbrugersalg er strukturelle bekymringer direkte flaget af Zacks.",
+        "20-dages momentum på -11% er en skarp forværring, og prisen er nu under SMA50."
+      ],
+      "investment_plan": {
+        "term": "n/a",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Position lukket: mekanisk stop brudt (-2,6% under $167.21) samtidig med at tesen nedgraderes til neutral pga. reelle strukturelle bekymringer (gæld, forbrugersvaghed) — stop-disciplinen vejer tungest for den største position i porteføljen.",
+        "price_target": 0,
+        "stop_loss": 0,
+        "expected_return_pct": 0,
+        "timeframe": "n/a",
+        "exit_conditions": "Solgt i dag — stop-loss brudt."
+      }
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 514.56,
+      "confidence": 6,
+      "reasoning": "Goldman Sachs har netop tilføjet VRTX til sin Conviction List — et stærkt institutionelt signal. Prisen holder sig over både SMA50 og SMA200 med positiv MACD-divergens trods den seneste svaghed. Stop ($448.95) er langt fra nuværende kurs.",
+      "bull": [
+        "Goldman Sachs tilføjede VRTX til sin Conviction List.",
+        "Over både SMA50 (+0,8%) og SMA200 (+10,1%), intakt optrend.",
+        "MACD forbliver positivt (+7,10), bullish divergens mod den seneste prissvaghed."
+      ],
+      "bear": [
+        "Vertex underperformede peers i det seneste kvartalsoverblik.",
+        "-7,6% over 5 dage er en mærkbar kortsigtet forværring."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Deeply oversold entry in a technically intact uptrend, with the Crinetics acquisition signaling offensive pipeline expansion — since confirmed by raised guidance, a completed buyback, and now a Goldman Sachs Conviction List addition.",
+        "price_target": 590,
+        "stop_loss": 448.95,
+        "expected_return_pct": 14.66,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $448.95 (2x ATR). Sælg hvis Crinetics-opkøbet viser overbetaling/integrationsproblemer, eller ved pipeline-skuffelse."
+      }
+    },
+    {
+      "symbol": "FLEX",
+      "name": "Flex Ltd.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 108.01,
+      "confidence": 5,
+      "reasoning": "Ingen ændring i tesen — stop ($85.68) er langt fra nuværende kurs, og EPC Power-integrationen forløber uden nye advarselstegn. Lille position (1,3% vægt), holdes uændret.",
+      "bull": [
+        "Beat-and-raise-kvartal understøtter fortsat vækst.",
+        "EPC Power-opkøbet giver en frisk AI-infrastruktur-katalysator."
+      ],
+      "bear": [
+        "Integration af EPC Power indebærer eksekveringsrisiko.",
+        "Bredere makrodrevet tech-selloff kan genopstå."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Beat-and-raise earnings ignored by the market in a broad tech selloff gave a deeply oversold entry; the EPC Power acquisition adds a fresh AI-infrastructure catalyst but also integration risk.",
+        "price_target": 135,
+        "stop_loss": 85.68,
+        "expected_return_pct": 24.99,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $85.68 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller fortsat makrodrevet selloff uden bundtegn, eller ved tegn på fejlslagen EPC Power-integration."
+      }
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 251.89,
+      "confidence": 6,
+      "reasoning": "Stop teknisk brudt, men kun marginalt (-0,5% under $253.07) og dagens verdict er STADIG bull (konfidens 6) — Oracles cloud-beat og Nvidias bullish AI-compute-kommentar i dag bekræfter direkte AWS/cloud-delen af tesen. I modsætning til MMM/FCX er tesen her IKKE nedgraderet, så positionen (kun 1,0% vægt) holdes med tæt overvågning af stoppet.",
+      "bull": [
+        "Fortsat over SMA200 (+5,1%), intakt langsigtet optrend.",
+        "Oracles cloud-beat og Nvidias bullish AI-compute-kommentar understøtter fortsat AWS-efterspørgsel.",
+        "RSI neutral (40,5), ingen ekstrem."
+      ],
+      "bear": [
+        "Lige under SMA50 — kortsigtet momentum er stoppet op.",
+        "Bredere AI-trade-nervøsitet (f.eks. Burrys afvikling af AI-relaterede positioner) signalerer rotationsrisiko."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Earnings-driven breakout confirmed AI monetization across cloud and retail, reinforced today by Oracle's cloud beat and Nvidia's bullish AI-compute commentary.",
+        "price_target": 320,
+        "stop_loss": 253.07,
+        "expected_return_pct": 27.04,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $253.07 (2x ATR, lige under breakout-niveau) — marginalt brudt i dag, overvåges meget tæt. Sælg ved bekræftet forværring eller selskabsspecifik skuffelse."
+      }
+    },
+    {
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 105.82,
+      "confidence": 6,
+      "reasoning": "Disneys CFO fremhævede streaming-marginer over 13% på en Goldman-konference i dag — en reel profitabilitetsinflektion der bekræfter tesen. Over begge glidende gennemsnit med positiv MACD. Stop ($99.98) er fjernt.",
+      "bull": [
+        "CFO fremhævede streaming-marginer over 13% ved Goldman-konference.",
+        "Over både SMA50 (+4,1%) og SMA200 (+2,4%) med positiv MACD.",
+        "Aktien steg 1,6% i dag direkte på den positive kommentar."
+      ],
+      "bear": [
+        "FCC-uenighed om Jimmy Kimmel tilføjer regulatorisk/politisk støj.",
+        "Comcast viser sektorbred kabel/bredbånds-erosion der på sigt kan smitte af."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "The NFL content deal and bundle strategy are visibly working — falling churn, rising subscriber growth and analyst target hikes after a fifth straight earnings beat, now reinforced by streaming margins above 13%.",
+        "price_target": 115,
+        "stop_loss": 99.98,
+        "expected_return_pct": 8.68,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $99.98 (2x ATR). Sælg hvis streaming-bundle-økonomien eller NFL-indholdsomkostninger eroderer marginforbedringen, eller ved skarpt reversal uden opfølgning."
+      }
+    },
+    {
+      "symbol": "L",
+      "name": "Loews Corporation",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 109.08,
+      "confidence": 5,
+      "reasoning": "Reel indtjenings- og bogført-værdi-vækst i kvartalet (nettoindkomst op til $444M fra $391M), selvom CNA-underwriting svækkes lidt. Prisen holder lige på SMA200 — stabil base, ikke et brud. Stop ($108.22) er kun ~1% væk, overvåges tæt, men ikke brudt. Lille position (0,3%).",
+      "bull": [
+        "Nettoindkomst op til $444M ($2,16/aktie) fra $391M året før, bogført værdi op til $93,52.",
+        "Diversificeret konglomeratstruktur udjævner enkeltsegment-svaghed.",
+        "Prisen handler lige ved SMA200 — stabil base."
+      ],
+      "bear": [
+        "Underwriting 'glider' hos CNA-forsikringsdatterselskabet.",
+        "Prisen er under SMA50, kortsigtet momentum er svagt."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Solid Q2 beat i hoteller/pipelines og en ekstremt oversolgt RSI relativt til det milde 5-dages fald peger på en teknisk bounce i et fundamentalt sundt konglomerat.",
+        "price_target": 120.7,
+        "stop_loss": 108.22,
+        "expected_return_pct": 10.65,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $108.22 (2x ATR) — kun ~1% fra nuværende kurs, meget tæt overvågning. Sælg hvis CNA-forsikringsunderwriting svækkes markant yderligere, eller ved brud på RSI-bounce-tesen uden opfølgning."
+      }
+    },
+    {
+      "symbol": "KEYS",
+      "name": "Keysight Technologies",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 325.65,
+      "confidence": 5,
+      "reasoning": "Nyt AI-sikkerhedssamarbejde udvider Keysights adresserbare marked. Fortsat solidt over SMA200 (+12%). Stoppet ($289.67) er langt fra nuværende kurs. Ingen ændring i tesen.",
+      "bull": [
+        "Nyt AI-sikkerhedsforskningssamarbejde udvider det adresserbare marked.",
+        "Solidt over SMA200 (+12%), intakt optrend.",
+        "RSI sund (58,3), ingen overkøbt-ekstrem."
+      ],
+      "bear": [
+        "Fladt mod SMA50 — kortsigtet momentum er gået i stå.",
+        "Halvlederudstyrs-peers underperformer generelt trods AI-medvind."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Genuine fundamental improvement (beat-and-raise on AI infrastructure) is masked by a broad tech-sector selloff, giving a sentiment-driven, not company-specific, entry point.",
+        "price_target": 360,
+        "stop_loss": 289.67,
+        "expected_return_pct": 10.55,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $289.67 (2x ATR). Sælg ved bekræftet forværring af leveringsbegrænsninger eller selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "AFL",
+      "name": "Aflac",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 114.47,
+      "confidence": 5,
+      "reasoning": "Ingen ny udvikling af betydning — defensiv dividende-aristokrat der stadig holder sig over SMA200. Stoppet ($111.84) er ikke brudt. Holdes uændret.",
+      "bull": [
+        "25+ års dividendeforhøjelser giver et defensivt indkomstgulv.",
+        "Fortsat over SMA200 (+0,8%)."
+      ],
+      "bear": [
+        "Aflac har underperformet forsikringspeers over det seneste år.",
+        "Værdiansættelsen beskrives som 'rig på indtjening' af Simply Wall St."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Sector-wide, rate-triggered selloff gave a deeply oversold entry into a quality insurer with 43 consecutive years of dividend raises, still above its 200-day average.",
+        "price_target": 130,
+        "stop_loss": 111.84,
+        "expected_return_pct": 13.57,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $111.84 (2x ATR). Sælg hvis renteforpresset på forsikringssektoren viser sig strukturelt vedvarende, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "FCX",
+      "name": "Freeport-McMoRan",
+      "action": "SELL",
+      "shares": 40,
+      "price": 71.21,
+      "confidence": 5,
+      "reasoning": "Stop brudt ($71.21 < $72.17) OG dagens verdict nedgraderet fra bull til neutral. Selvom faldet er sektorbredt (tarifpolitik-nyhed, ikke FCX-specifikt), er dette præcis samme mønster som den tidligere FEJLEDE TDG-handel ('makro-/oliedrevet industriselloff, ikke selskabsspecifik svaghed') der alligevel endte i stop-tab. Track record'et viser at 'det er bare makro'-argumentet historisk ikke har holdt som grund til at ignorere et brudt stop — sælges for at fastholde disciplinen.",
+      "bull": [
+        "Dagens fald er en sektorbred reaktion på en tarifpolitik-nyhed, ikke et FCX-specifikt problem.",
+        "Prisen er fortsat langt over SMA50 (+6%) og SMA200 (+16,3%).",
+        "Den strukturelle AI-datacenter-kobbertese er upåvirket af én politik-nyhed."
+      ],
+      "bear": [
+        "-6,6% på én dag med stigende volumen viser reel distribution, ikke bare støj.",
+        "Yderligere tarifpolitik-eskalering kan forlænge kobbersektor-resetet."
+      ],
+      "investment_plan": {
+        "term": "n/a",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Position lukket: mekanisk stop brudt (-1,3% under $72.17) samtidig med at tesen nedgraderes til neutral. Selvom faldet er sektorbredt/makrodrevet (tarifpolitik), gentager det mønstret fra den tidligere FEJLEDE TDG-handel, hvor samme 'det er bare makro'-argumentation ikke reddede positionen fra stop-tab — stop-disciplinen fastholdes.",
+        "price_target": 0,
+        "stop_loss": 0,
+        "expected_return_pct": 0,
+        "timeframe": "n/a",
+        "exit_conditions": "Solgt i dag — stop-loss brudt."
+      }
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 208.86,
+      "confidence": 7,
+      "reasoning": "Nvidias CEO udpegede i dag offentligt CrowdStrike som sin 'top security partner' for agentic AI — et direkte, stærkt efterspørgselssignal der styrker tesen yderligere. Teknisk billede er sundt (over begge glidende gennemsnit, positiv MACD). Stop ($205.13) er ikke i nærheden.",
+      "bull": [
+        "Nvidias CEO udpegede CrowdStrike som sin 'top security partner' for agentic AI.",
+        "Teknik bekræfter bullish setup: over begge glidende gennemsnit, positiv MACD, sund RSI (57,7).",
+        "Kundefeedback fra 15+ samtaler på Fal.Con bekræfter 'vendor of choice'-positionering."
+      ],
+      "bear": [
+        "Værdiansættelsen beskrives som 'rig' selv af bullish dækning.",
+        "Konkurrence i AI-sikkerhed (f.eks. Palo Alto Networks) intensiveres omkring samme tema."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Confirmed beat-and-raise quarter on AI-security demand with peer confirmation (PANW), now reinforced by a direct Nvidia CEO endorsement as 'top security partner' for agentic AI.",
+        "price_target": 260,
+        "stop_loss": 205.13,
+        "expected_return_pct": 24.49,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $205.13 (2x ATR). Sælg ved bekræftet mean-reversion under 50-dages SMA eller selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "MGM",
+      "name": "MGM Resorts",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 40.73,
+      "confidence": 5,
+      "reasoning": "Scout-position uden ny væsentlig udvikling — stoppet ($39.03) er ikke brudt, og NFL-sæson/BetMGM-katalysatoren består. Zacks flager fortsat konkrete modvinde (Vegas-efterspørgsel, digitale tab, Osaka-capex), så positionen holdes uændret uden at øges.",
+      "bull": [
+        "Oversolgt (RSI 27,7) efter 14% 3-måneders fald — Zacks rammer det som mulig købsmulighed.",
+        "BetMGM's sportsbetting-positionering foran NFL-sæsonen giver en nærtidskatalysator.",
+        "Fortsat over SMA200 (+2,5%)."
+      ],
+      "bear": [
+        "Zacks flager konkrete modvinde: ujævn Vegas-efterspørgsel, digitale tab og tung Osaka-capex.",
+        "Under SMA50, bekræfter kortsigtet nedtrend."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Scout-position: MGM holder sin langsigtede optrend ind i NFL-sæson, med BetMGM-positionering og M&A-spekulation som opsidekatalysatorer, trods et oversolgt kortsigtet tilbagefald.",
+        "price_target": 47,
+        "stop_loss": 39.03,
+        "expected_return_pct": 15.39,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $39.03 (2x ATR). Sælg hvis forbrugerudgifter til spil/rejser viser klar makro-drevet opbremsning, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "RL",
+      "name": "Ralph Lauren Corporation",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 336.67,
+      "confidence": 5,
+      "reasoning": "Prisen er nu under BÅDE SMA50 og SMA200 med et markant negativt MACD — bear-siden argumenterer at trenden er brudt ud over daglig støj. Stoppet ($327.37) er dog endnu ikke brudt (~2,7% væk), og Zacks bekræfter fortsat ægte brand-momentum/nykundevækst. Holdes med tæt overvågning givet den tekniske forværring; scout-position købt for kun 2 dage siden.",
+      "bull": [
+        "Zacks fremhæver ægte brand-momentum — luksuspositionering driver nykundetilgang og vækst i kategorier.",
+        "RSI oversolgt (25) efter 20-dages fald, plads til bounce.",
+        "Peers (Macy's) hæver priser succesfuldt på premium-varer i samme nyhedscyklus."
+      ],
+      "bear": [
+        "Under både SMA50 og SMA200 med markant negativ MACD (-11,6) — trenden er brudt ud over daglig støj.",
+        "Harvey Nichols-afviklingen giver et reelt, om end begrænset, tab fra en fejlet wholesale-partner."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Ralph Lauren fremstår oversolgt mens Wall Street hæver estimater ind i tilbagefaldet — et klassisk contrarian turnaround-setup, trods et mindre wholesale-kanaltab fra Harvey Nichols' lukning, og trods at teknikken nu er brudt under begge glidende gennemsnit.",
+        "price_target": 410,
+        "stop_loss": 327.37,
+        "expected_return_pct": 21.78,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $327.37 (2x ATR) — nærmer sig efter teknisk brud under begge SMA'er, overvåges meget tæt. Sælg ved fortsat opbremsning i europæisk luksusforbrug eller selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "NDSN",
+      "name": "Nordson Corporation",
+      "action": "BUY",
+      "shares": 50,
+      "price": 307.45,
+      "confidence": 6,
+      "reasoning": "Nordson har netop hævet dividenden 15% og slog Q2-estimater med opjusteret guidance — en frisk, reel fundamental katalysator, ikke bare teknisk oversolgt-bounce. Prisen er fortsat over både SMA50 og SMA200 trods et skarpt kortsigtet RSI-hul (16,4). Erstatter dele af den solgte MMM-eksponering i Industrials-sektoren (nu ledig efter salget), sizet under ATR-forslaget (118 aktier) for at holde sig inden for buy-budgettet og bevare cash-buffer.",
+      "bull": [
+        "Nordson hævede dividenden 15% til $0,94/aktie og slog Q2-estimater med opjusteret helårsguidance.",
+        "Nye AI-fokuserede emballageplatforme udvider produktlinjen ind i en voksende niche.",
+        "Fortsat over både SMA50 (+0,6%) og SMA200 (+10%), intakt optrend."
+      ],
+      "bear": [
+        "RSI 16,4 og stokastisk 1,6 viser et skarpt kortsigtet luftlomme der kan fortsætte før stabilisering.",
+        "Nogle analytikere flager en værdiansættelsesdebat om aktien allerede er fuldt prissat efter opturen."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Genuine fundamental catalyst — a 15% dividend hike plus a beat-and-raise Q2 with new AI-focused packaging platforms — masked by a sharp short-term technical air-pocket (RSI 16.4) within an intact uptrend above both SMA50 and SMA200.",
+        "price_target": 345,
+        "stop_loss": 294.59,
+        "expected_return_pct": 12.21,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $294,59 (2x ATR, jf. suggested_stop_usd_atr). Sælg ved bekræftet valuation-derating trods solide fundamentals, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "INVH",
+      "name": "Invitation Homes",
+      "action": "BUY",
+      "shares": 400,
+      "price": 27.56,
+      "confidence": 6,
+      "reasoning": "Zacks flager eksplicit et turnaround-setup: oversolgt (RSI 10,5) plus analytikere der hæver indtjeningsestimater. Prisen står stort set lige på SMA200 (+0,1%) — trenden er ikke brudt, kun et kortsigtet dyk. Diversificerer porteføljen ind i Real Estate, som ellers er helt uvægtet i dag. Sizet moderat (400 aktier, ~$11k) frem for fuld ATR- eller budget-størrelse pga. rentefølsomheden i REIT-sektoren og stigende renter i dag.",
+      "bull": [
+        "Zacks flager eksplicit et turnaround-setup: oversolgt plus analytikere der hæver indtjeningsestimater.",
+        "RSI 10,5 er ekstremt oversolgt.",
+        "Prisen står stort set på SMA200 (+0,1%) — trenden er ikke brudt.",
+        "Kapitallet infill-vækststrategi og en stærk balance understøtter den fundamentale tese."
+      ],
+      "bear": [
+        "REITs er rentefølsomme, og bredere marked viser stigende renter i dag — sektor-modvind.",
+        "Kortsigtet momentum (5d/20d) er fortsat negativt."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Invitation Homes is deeply oversold with Zacks explicitly flagging rising analyst earnings estimates and a technical turnaround setup, while the stock still sits essentially at its 200-day average rather than in a broken trend — a genuine diversification entry into an unweighted Real Estate sleeve.",
+        "price_target": 31,
+        "stop_loss": 26.66,
+        "expected_return_pct": 12.48,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $26,66 (2x ATR, jf. suggested_stop_usd_atr). Sælg hvis rentestigninger fortsætter med at presse REIT-værdiansættelser bredt, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    }
+  ]
+}
