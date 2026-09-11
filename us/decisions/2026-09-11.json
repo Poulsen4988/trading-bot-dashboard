@@ -1,0 +1,384 @@
+{
+ "date": "2026-09-11",
+ "market_summary": "Ingen af de 13 åbne positioner har brudt deres stop i dag. MRVL, VRTX, CRWD, FLEX, NDSN og INVH bull-teser bekræftes eller styrkes yderligere af friskt nyhedsflow (Piper Sandler på MRVL, Goldman Conviction List på VRTX, Nvidia-CEO-endorsement + Wedbush på CRWD). RL sælges proaktivt: den tekniske turnaround-tese er nu bekræftet invalideret (brud under begge SMA'er, forværret MACD, manglende ny bull-bekræftelse), og positionen lukkes før det mekaniske stop rammes. Resten af porteføljen (AMZN, DIS, L, KEYS, AFL, MGM) holdes uændret — neutrale eller kun let svækkede teser uden brudte stops. Alle 13 kandidater i dagens analyse er allerede eksisterende positioner, så ingen nye køb foretages i dag.",
+ "decisions": [
+  {
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 236.1,
+   "confidence": 7,
+   "reasoning": "Dagens dagsfald (-3,43%) er profit-taking efter en stærk uge (+9,9% på 5 dage), ikke en tesesvækkelse. Piper Sandler indleder i dag dækning med $270-kursmål, og flere uafhængige analyser bekræfter det langsigtede AI-silicon-narrativ. Langt over SMA200 (+52,6%), stop meget fjernt.",
+   "bull": [
+    "Piper Sandler indleder dækning med $270 kursmål og bullish 'Switzerland of AI silicon'-vinkel.",
+    "Massivt momentum intakt: +47% over SMA200, flere analytiker-artikler bekræfter AI-silicon-narrativet."
+   ],
+   "bear": [
+    "Kraftigt dagsfald (-3,43%) efter rallyet viser fortsat volatilitet og profit-taking-risiko.",
+    "Høj afhængighed af at AI-capex-cyklussen fortsætter i nuværende tempo."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Sector-wide chip sympathy-selloff created a deeply oversold entry into a long-term intact AI-silicon growth case, since confirmed by a concrete Google design win and fresh acquisition news, and now a landmark hyperscaler AI deal.",
+    "price_target": 275,
+    "stop_loss": 162.53,
+    "expected_return_pct": 16.48,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $162.53 (2x ATR). Sælg hvis Kina-hukommelseskonkurrencen viser sig strukturel, eller ved selskabsspecifik indtjeningsskuffelse."
+   }
+  },
+  {
+   "symbol": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 515.44,
+   "confidence": 6,
+   "reasoning": "Goldman Sachs' Conviction List-opgradering fra i fredags står stadig ved magt, og MACD forbliver kraftigt positivt trods et 5-dages fald på -7,6% — det ligner en sund pullback i en intakt trend, ikke en tesesvækkelse. Stop er fortsat langt væk (-12,9%).",
+   "bull": [
+    "Goldman Sachs har tilføjet VRTX til sin Conviction List med en stærk bull-case.",
+    "MACD forbliver stærkt positivt (+7,10) trods pullbacken, hvilket antyder den primære opadgående trend er intakt."
+   ],
+   "bear": [
+    "Det kraftige 5-dages fald viser reelt kortsigtet salgspres, som kan fortsætte ved brud under 50-dages SMA.",
+    "Biotek/farma har binær katalysatorrisiko (forsøgs-/reguleringsresultater) der kan tilsidesætte teknikken."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Deeply oversold entry in a technically intact uptrend, with the Crinetics acquisition signaling offensive pipeline expansion — since confirmed by raised guidance, a completed buyback, and now a Goldman Sachs Conviction List addition.",
+    "price_target": 590,
+    "stop_loss": 448.95,
+    "expected_return_pct": 14.47,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $448.95 (2x ATR). Sælg hvis Crinetics-opkøbet viser overbetaling/integrationsproblemer, eller ved pipeline-skuffelse."
+   }
+  },
+  {
+   "symbol": "FLEX",
+   "name": "Flex Ltd.",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 115.78,
+   "confidence": 6,
+   "reasoning": "Dagens BEAR-verdict afspejler kortsigtet distribution efter $4,4B EPC Power-aftalen (marked bekymret om kapitalbinding/eksekvering), men selve aftalen udvider AI-infrastruktur-eksponeringen som tesen forudsagde. Ingen selskabsspecifik skuffelse, stop fortsat langt væk (-26%), position stadig op +12,4%.",
+   "bull": [
+    "4,4 mia. USD EPC-aftale om datacenter-strøm udvider AI-infrastruktur-eksponering og diversificerer indtjeningen.",
+    "Fortsat over 200-dages SMA (+12,9%) viser at den langsigtede trend ikke er brudt."
+   ],
+   "bear": [
+    "Kraftigt dagsfald (-4,14%) på forhøjet volumen tyder på reel bekymring om eksekvering af den store aftale.",
+    "Solidt under 50-dages SMA (-10,27%) med stærkt negativ MACD bekræfter kortsigtet nedtrend."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Beat-and-raise earnings ignored by the market in a broad tech selloff gave a deeply oversold entry; the EPC Power acquisition adds a fresh AI-infrastructure catalyst but also integration risk.",
+    "price_target": 135,
+    "stop_loss": 85.68,
+    "expected_return_pct": 16.6,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $85,68 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller fortsat makrodrevet selloff uden bundtegn, eller ved tegn på fejlslagen EPC Power-integration."
+   }
+  },
+  {
+   "symbol": "AMZN",
+   "name": "Amazon.com, Inc.",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 256.78,
+   "confidence": 6,
+   "reasoning": "Prisen er nu igen over stop (var marginalt brudt i går), og dagens verdict forbliver bull. Oracle/Nvidia AI-compute-nyhedsflow bekræfter fortsat AWS-delen af tesen direkte. Position er triviel (1,0% vægt) — holdes med tæt overvågning af stoppet.",
+   "bull": [
+    "Handler nær nedre Bollinger-bånd efter -5,8% på 20 dage — oversolgt indenfor intakt opadgående trend (+7,1% over SMA200).",
+    "AI-infrastruktur-momentum fra Oracle/Nvidia-nyhedsflow understøtter AWS' vækstudsigter."
+   ],
+   "bear": [
+    "Under 50-dages SMA og negativ MACD viser kortsigtet svaghed.",
+    "Bred AI-capex-koncentrationsrisiko kan ramme høj-multipel mega-caps som AMZN."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Earnings-driven breakout confirmed AI monetization across cloud and retail, reinforced today by Oracle's cloud beat and Nvidia's bullish AI-compute commentary.",
+    "price_target": 320,
+    "stop_loss": 253.07,
+    "expected_return_pct": 24.62,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $253,07 (2x ATR, lige under breakout-niveau). Sælg ved bekræftet forværring eller selskabsspecifik skuffelse."
+   }
+  },
+  {
+   "symbol": "DIS",
+   "name": "Walt Disney Company (The)",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 106.55,
+   "confidence": 5,
+   "reasoning": "Neutral verdict uændret, position lille (1,5% vægt), stop fortsat fjernt (-6,2%). Ingen ny udvikling der ændrer billedet.",
+   "bull": [
+    "Diversificeret eksponering til streaming, parker og medier giver stabilitet."
+   ],
+   "bear": [
+    "Ingen klar nærtidskatalysator til opside."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Neutral konglomerat-position — ingen stærk katalysator i hverken retning, holdes for diversifikation og stabil eksponering til streaming/parker.",
+    "price_target": 115,
+    "stop_loss": 99.98,
+    "expected_return_pct": 7.93,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $99,98. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+   }
+  },
+  {
+   "symbol": "L",
+   "name": "Loews Corporation",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 108.79,
+   "confidence": 5,
+   "reasoning": "Fundamentalerne (nettoindkomst og bogført værdi i vækst) er uændrede siden i går. Prisen holder stadig lige på SMA200-støtte. Stop er kun ~0,5% væk — meget tæt overvågning, men ikke brudt. Triviel position (0,3% vægt).",
+   "bull": [
+    "Diversificeret konglomerat (forsikring, hoteller, rørledninger) med voksende overskud og bogført værdi.",
+    "Handler tæt på 200-dages SMA-støtte."
+   ],
+   "bear": [
+    "Svækkende underwriting-margin i kerneforsikringsforretningen er en reel fundamental bekymring.",
+    "Under 50-dages SMA med negativ MACD viser kortsigtet teknisk svaghed."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Solid Q2-beat i hoteller/pipelines og en ekstremt oversolgt RSI relativt til det milde 5-dages fald peger på en teknisk bounce i et fundamentalt sundt konglomerat.",
+    "price_target": 120.7,
+    "stop_loss": 108.22,
+    "expected_return_pct": 10.95,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $108,22 (2x ATR) — meget tæt, overvåges tæt. Sælg hvis CNA-forsikringsunderwriting svækkes markant yderligere, eller ved brud på RSI-bounce-tesen uden opfølgning."
+   }
+  },
+  {
+   "symbol": "KEYS",
+   "name": "Keysight Technologies",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 338.64,
+   "confidence": 5,
+   "reasoning": "Neutral verdict uændret, position op +6,0%, stop meget fjernt (-14,4%). Ingen ny udvikling der ændrer billedet.",
+   "bull": [
+    "Solid position i test- og målesegmentet med bred teknologieksponering."
+   ],
+   "bear": [
+    "Ingen klar nærtidskatalysator til opside."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Neutral position — solid teknologieksponering uden stærk aktuel katalysator, holdes for stabil P&L og sektorspredning i Information Technology.",
+    "price_target": 360,
+    "stop_loss": 289.67,
+    "expected_return_pct": 6.31,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $289,67. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+   }
+  },
+  {
+   "symbol": "AFL",
+   "name": "Aflac",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 115.28,
+   "confidence": 5,
+   "reasoning": "Neutral verdict uændret, position stort set flad (-0,7%), stop fjernt nok (-3,0%). Ingen ny udvikling der ændrer billedet.",
+   "bull": [
+    "Defensiv forsikringsforretning giver stabilitet i porteføljen."
+   ],
+   "bear": [
+    "Ingen klar nærtidskatalysator til opside."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Neutral position i et defensivt forsikringsnavn — holdes for stabilitet og sektorspredning i Financials.",
+    "price_target": 130,
+    "stop_loss": 111.84,
+    "expected_return_pct": 12.77,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $111,84. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+   }
+  },
+  {
+   "symbol": "CRWD",
+   "name": "CrowdStrike",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 206.74,
+   "confidence": 7,
+   "reasoning": "Tesen styrkes yderligere: Wedbush navngiver i dag CRWD som en af sine 'AI Cybersecurity Winners', og prisen er igen over 50-dages SMA med positiv MACD — en klar teknisk forbedring fra tidligere i ugen. Stop er ikke i nærheden. Den samlede negative P&L skyldes en højere indgangskurs, men tesen og momentum peger opad.",
+   "bull": [
+    "Nvidias CEO fremhævede CrowdStrike som deres primære sikkerhedspartner midt i AI-drevet cybersikkerhedsefterspørgsel.",
+    "Positiv MACD og pris tilbage over 50-dages SMA signalerer fornyet opadgående momentum; 45% over 200-dages SMA."
+   ],
+   "bear": [
+    "Høj værdiansættelse giver lidt plads til skuffelser.",
+    "20-dages fald på -8,3% viser fortsat volatilitet trods positivt nyhedsflow."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Confirmed beat-and-raise quarter on AI-security demand with peer confirmation (PANW), now reinforced by a direct Nvidia CEO endorsement as 'top security partner' for agentic AI.",
+    "price_target": 260,
+    "stop_loss": 205.13,
+    "expected_return_pct": 25.76,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $205,13 (2x ATR). Sælg ved bekræftet mean-reversion under 50-dages SMA eller selskabsspecifik indtjeningsskuffelse."
+   }
+  },
+  {
+   "symbol": "MGM",
+   "name": "MGM Resorts",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 39.89,
+   "confidence": 5,
+   "reasoning": "Neutral verdict uændret, lille negativ P&L (-2,1%). Stop er tæt på men ikke brudt — overvåges tæt næste session.",
+   "bull": [
+    "Rejse-/casinoefterspørgsel forbliver overordnet stabil."
+   ],
+   "bear": [
+    "Ingen klar nærtidskatalysator, og stoppet nærmer sig."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Neutral position i et casino/rejse-navn — holdes for sektorspredning i Consumer Discretionary, ingen stærk aktuel katalysator.",
+    "price_target": 47,
+    "stop_loss": 39.03,
+    "expected_return_pct": 17.82,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $39,03 — tæt (-2,2%), overvåges tæt. Sælg ved bekræftet nedgradering af tesen eller brud på stop."
+   }
+  },
+  {
+   "symbol": "RL",
+   "name": "Ralph Lauren Corporation",
+   "action": "SELL",
+   "shares": 30,
+   "price": 339.09,
+   "confidence": 6,
+   "reasoning": "Den oprindelige contrarian-turnaround-tese (oversolgt RSI + stigende analytikerestimater) er nu teknisk invalideret: prisen er brudt under BÅDE SMA50 og SMA200 med stærkt negativ MACD (-11,55, forværret fra i går), forhøjet salgsvolumen, og 20-dages momentum er accelereret til -12,5%. I modsætning til i går er der ingen ny bull-bekræftelse (Zacks-brand-momentum-referencen er væk) — kun konkurrenter som Reformation der viser tocifret vækst og tager relativt momentum fra RL. Bear-verdict-konfidensen er også steget til 6 fra 5. Stoppet ($327,37) er ikke brudt endnu, men det tekniske billede har bekræftet en reel nedtrend snarere end en midlertidig pullback, så positionen (9,9% vægt) sælges proaktivt for at begrænse yderligere nedside frem for at vente på det mekaniske stop.",
+   "bull": [
+    "RSI på 27 er dybt oversolgt, en potentiel kandidat til mean-reversion.",
+    "Luksusbrand-positionering kan give prissætningsmagt og modstandskraft i en afmatning."
+   ],
+   "bear": [
+    "Pris er brudt under BÅDE 50- og 200-dages SMA med stærkt negativ og forværret MACD (-11,55) — et bekræftet nedtrend.",
+    "Forhøjet salgsvolumen og konkurrenter som Reformation der viser tocifret vækst antyder RL taber relativt momentum, uden ny bull-bekræftelse siden i går."
+   ],
+   "investment_plan": {
+    "term": "n/a",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Position lukket: den tekniske turnaround-tese er invalideret af et bekræftet brud under begge glidende gennemsnit med forværret momentum og manglende ny bull-bekræftelse, solgt proaktivt før mekanisk stop.",
+    "price_target": 0,
+    "stop_loss": 0,
+    "expected_return_pct": 0,
+    "timeframe": "n/a",
+    "exit_conditions": "Solgt i dag."
+   }
+  },
+  {
+   "symbol": "NDSN",
+   "name": "Nordson Corporation",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 314.47,
+   "confidence": 6,
+   "reasoning": "Bull-verdict uændret, position op +2,3%, stop fjernt nok (-6,3%). Ingen ny udvikling der svækker tesen.",
+   "bull": [
+    "15% dividendehævning og beat-and-raise-kvartal understøtter fortsat fundamental styrke."
+   ],
+   "bear": [
+    "Industrials generelt følsom for makro-/handelsrisiko."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Frisk fundamental katalysator (15% dividendehævning + beat-and-raise) gør Nordson til en attraktiv Industrials-eksponering efter MMM-salget.",
+    "price_target": 345,
+    "stop_loss": 294.59,
+    "expected_return_pct": 9.71,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $294,59. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+   }
+  },
+  {
+   "symbol": "INVH",
+   "name": "Invitation Homes",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 27.54,
+   "confidence": 6,
+   "reasoning": "Bull-verdict uændret, position stort set flad (-0,07%), stop tæt nok til overvågning (-3,2%) men ikke brudt. Ingen ny udvikling der svækker tesen.",
+   "bull": [
+    "Stigende analytikerestimater understøtter REIT-turnaround-tesen."
+   ],
+   "bear": [
+    "Rentefølsomhed i REIT-sektoren forbliver en strukturel risiko."
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Ekstremt oversolgt REIT-turnaround med stigende analytikerestimater, diversificerer ind i det tidligere uvægtede Real Estate-segment.",
+    "price_target": 31,
+    "stop_loss": 26.66,
+    "expected_return_pct": 12.56,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Stop ved $26,66. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+   }
+  }
+ ]
+}
