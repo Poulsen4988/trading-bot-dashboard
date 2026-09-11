@@ -1,20 +1,20 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "stats": {
-    "closed_trades": 34,
+    "closed_trades": 35,
     "wins": 21,
-    "losses": 12,
-    "win_rate_pct": 63.6,
+    "losses": 13,
+    "win_rate_pct": 61.8,
     "avg_win_pct": 9.7,
-    "avg_loss_pct": -4.49,
-    "avg_pnl_pct": 4.54,
-    "avg_holding_days": 20.7,
-    "total_realized_dkk": 11793.55,
+    "avg_loss_pct": -4.57,
+    "avg_pnl_pct": 4.24,
+    "avg_holding_days": 20.5,
+    "total_realized_dkk": 11719.75,
     "target_hits": 4,
-    "stop_hits": 4,
+    "stop_hits": 5,
     "thesis_verdicts": {
       "UKENDT": 1,
-      "HOLDT IKKE": 12,
+      "HOLDT IKKE": 13,
       "DELVIST": 17,
       "HOLDT": 4
     },
@@ -48,6 +48,11 @@
         "n": 10,
         "wins": 7,
         "avg_pnl_pct": 4.78
+      },
+      "Basic Materials": {
+        "n": 1,
+        "wins": 0,
+        "avg_pnl_pct": -5.48
       }
     }
   },
@@ -867,6 +872,30 @@
       "stop_hit": true,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "TRYG.CO: -3.4% på 7 dage — antagelse HOLDT IKKE. Forventet +9.0%. Plan-horisont: 3-6 måneder. Exit på/under stop-loss."
+    },
+    {
+      "trade_key": "id:631",
+      "date": "2026-09-11",
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis",
+      "sector": "Basic Materials",
+      "buy_date": "2026-08-26",
+      "holding_days": 16,
+      "shares": 3,
+      "buy_price": 449.1,
+      "sell_price": 424.5,
+      "realized_pnl_dkk": -73.8,
+      "realized_pnl_pct": -5.48,
+      "expected_return_pct": 11.3,
+      "price_target": 500.0,
+      "stop_loss": 427.4,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Kvalitetsvækstnavn med bekræftet fundamental forbedring (opjusteret outlook, ny buyback, +27% indtjeningsvækst) der diversificerer porteføljen ind i Basic Materials, en sektor uden nuværende eksponering. Positionen sizes lille grundet begrænset dagsbudget (1491 DKK tilgængeligt) snarere end lav overbevisning.",
+      "target_hit": false,
+      "stop_hit": true,
+      "thesis_verdict": "HOLDT IKKE",
+      "lesson": "NSIS-B.CO: -5.5% på 16 dage — antagelse HOLDT IKKE. Forventet +11.3%. Plan-horisont: 3-6 måneder. Exit på/under stop-loss."
     }
   ]
 }
