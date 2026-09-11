@@ -1,19 +1,19 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "stats": {
-    "closed_trades": 13,
+    "closed_trades": 14,
     "wins": 6,
-    "losses": 7,
-    "win_rate_pct": 46.2,
+    "losses": 8,
+    "win_rate_pct": 42.9,
     "avg_win_pct": 19.23,
-    "avg_loss_pct": -6.82,
-    "avg_pnl_pct": 5.2,
-    "avg_holding_days": 28.7,
-    "total_realized_usd": 882.55,
+    "avg_loss_pct": -6.26,
+    "avg_pnl_pct": 4.66,
+    "avg_holding_days": 26.9,
+    "total_realized_usd": 638.35,
     "target_hits": 4,
     "stop_hits": 5,
     "thesis_verdicts": {
-      "FAILED": 7,
+      "FAILED": 8,
       "PARTIAL": 2,
       "HELD": 4
     },
@@ -49,9 +49,9 @@
         "avg_pnl_pct": -5.53
       },
       "Consumer Discretionary": {
-        "n": 2,
+        "n": 3,
         "wins": 0,
-        "avg_pnl_pct": -6.04
+        "avg_pnl_pct": -4.81
       }
     }
   },
@@ -367,6 +367,30 @@
       "stop_hit": true,
       "thesis_verdict": "FAILED",
       "lesson": "FCX: -8.5% over 17 days — assumption FAILED. Expected +15.7%. Plan horizon: 3-6 måneder. Exited at/below stop-loss."
+    },
+    {
+      "trade_key": "id:325",
+      "date": "2026-09-11",
+      "symbol": "RL",
+      "name": "Ralph Lauren Corporation",
+      "sector": "Consumer Discretionary",
+      "buy_date": "2026-09-08",
+      "holding_days": 3,
+      "shares": 30,
+      "buy_price": 347.23,
+      "sell_price": 339.09,
+      "realized_pnl_usd": -244.2,
+      "realized_pnl_pct": -2.34,
+      "expected_return_pct": 18.1,
+      "price_target": 410.0,
+      "stop_loss": 327.37,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Ralph Lauren fremstår oversolgt mens Wall Street hæver estimater ind i tilbagefaldet — et klassisk contrarian turnaround-setup, trods et mindre wholesale-kanaltab fra Harvey Nichols' lukning.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "FAILED",
+      "lesson": "RL: -2.3% over 3 days — assumption FAILED. Expected +18.1%. Plan horizon: 3-6 måneder."
     }
   ]
 }
