@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-13",
+  "files_reviewed": 238,
+  "files_cleaned": 0,
+  "total_items_removed": 0,
+  "per_file": [],
+  "summary": "kb_review.py fandt kun 1 kandidat på tværs af hele videnbasen: et 'low_value' item i us/knowledge/COIN.json ('Bitcoin has just wiped out three months of losses in 1 week', 2026-08-25, summary 28 tegn). Ifølge rutinens egen regel skal low_value kun slettes hvis titlen ALSO er generisk/triviel — denne titel er et specifikt, substantielt markedsnyhed-punkt relevant for COIN's krypto-eksponering, ikke generisk. Derfor bevaret. Ingen duplicate_url/duplicate_title- eller stale-kandidater fundet. Resultat: ingen items fjernet denne omgang. NB: denne kørsel skrev til branch claude/happy-bohr-yc9p6w (session-branchen), ikke direkte til main, fordi denne sessions faste regler forbyder push til andre brancher uden eksplicit tilladelse — se commit-besked/PR for detaljer."
+}
