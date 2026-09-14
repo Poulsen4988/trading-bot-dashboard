@@ -1,19 +1,19 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-14",
   "stats": {
-    "closed_trades": 14,
+    "closed_trades": 15,
     "wins": 6,
-    "losses": 8,
-    "win_rate_pct": 42.9,
+    "losses": 9,
+    "win_rate_pct": 40.0,
     "avg_win_pct": 19.23,
-    "avg_loss_pct": -6.26,
-    "avg_pnl_pct": 4.66,
-    "avg_holding_days": 26.9,
-    "total_realized_usd": 638.35,
+    "avg_loss_pct": -5.8,
+    "avg_pnl_pct": 4.21,
+    "avg_holding_days": 25.5,
+    "total_realized_usd": 553.35,
     "target_hits": 4,
     "stop_hits": 5,
     "thesis_verdicts": {
-      "FAILED": 8,
+      "FAILED": 9,
       "PARTIAL": 2,
       "HELD": 4
     },
@@ -49,9 +49,9 @@
         "avg_pnl_pct": -5.53
       },
       "Consumer Discretionary": {
-        "n": 3,
+        "n": 4,
         "wins": 0,
-        "avg_pnl_pct": -4.81
+        "avg_pnl_pct": -4.13
       }
     }
   },
@@ -391,6 +391,30 @@
       "stop_hit": false,
       "thesis_verdict": "FAILED",
       "lesson": "RL: -2.3% over 3 days — assumption FAILED. Expected +18.1%. Plan horizon: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:337",
+      "date": "2026-09-14",
+      "symbol": "MGM",
+      "name": "MGM Resorts",
+      "sector": "Consumer Discretionary",
+      "buy_date": "2026-09-08",
+      "holding_days": 6,
+      "shares": 100,
+      "buy_price": 40.74,
+      "sell_price": 39.89,
+      "realized_pnl_usd": -85.0,
+      "realized_pnl_pct": -2.09,
+      "expected_return_pct": 15.4,
+      "price_target": 47.0,
+      "stop_loss": 39.03,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Scout-position: MGM holder sin langsigtede optrend ind i NFL-sæson, med BetMGM-positionering og M&A-spekulation som opsidekatalysatorer, trods et oversolgt kortsigtet tilbagefald.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "FAILED",
+      "lesson": "MGM: -2.1% over 6 days — assumption FAILED. Expected +15.4%. Plan horizon: 3-6 måneder."
     }
   ]
 }
