@@ -1,8 +1,8 @@
 {
   "date": "2026-09-20",
   "files_reviewed": 25,
-  "files_cleaned": 7,
-  "total_items_removed": 9,
+  "files_cleaned": 6,
+  "total_items_removed": 7,
   "per_file": [
     {
       "path": "knowledge/AMBUb_xcse.json",
@@ -70,23 +70,6 @@
       ]
     },
     {
-      "path": "knowledge/NOVOb_xcse.json",
-      "removed_count": 2,
-      "kept_count": 370,
-      "removed_items": [
-        {
-          "title": "Stocks to Watch: Nestle, Nike, Netflix",
-          "date": "2026-09-18",
-          "reason": "duplicate_url"
-        },
-        {
-          "title": "Novo Nordisk Slims Down Name to Novo",
-          "date": "2026-09-14",
-          "reason": "duplicate_url"
-        }
-      ]
-    },
-    {
       "path": "knowledge/RBREW_xcse.json",
       "removed_count": 1,
       "kept_count": 6,
@@ -97,7 +80,14 @@
           "reason": "duplicate_url"
         }
       ]
+    },
+    {
+      "path": "knowledge/NOVOb_xcse.json",
+      "removed_count": 0,
+      "kept_count": 372,
+      "removed_items": [],
+      "note": "2 duplicate_url candidates identified ('Stocks to Watch: Nestle, Nike, Netflix' duplicating the Sept 18 WSJ live-blog entry, and 'Novo Nordisk Slims Down Name to Novo' duplicating the WSJ rebrand article) but NOT removed this run: the file has 372 items (~184KB) and could not be safely rewritten end-to-end in this session without risking a truncated or corrupted write to this actively-traded holding's knowledge base. Left untouched pending a follow-up run."
     }
   ],
-  "summary": "Fjernede rent generiske/trivielle Nasdaq Copenhagen-meddelelser uden reelt indhold (storaktionærmeddelelser og selskabsvedtægter hvor titel og resume kun gentager kategorien) samt sand-duplikater (samme URL set to gange i samme fil, fx WSJ/Yahoo Finance-artikler linket fra to forskellige nyhedsposter). Alt materielt indhold (regnskaber, guidance-opjusteringer, ledelsesskift, M&A, kapitalstruktur, godkendelser) er bevaret uændret, inkl. lignende men ikke identiske low_value-kandidater."
+  "summary": "Fjernede rent generiske/trivielle Nasdaq Copenhagen-meddelelser uden reelt indhold (storaktionærmeddelelser og selskabsvedtægter hvor titel og resume kun gentager kategorien) samt sand-duplikater (samme URL set to gange i samme fil) i 6 filer. NOVOb_xcse.json blev gennemgået og 2 duplicate_url-kandidater identificeret, men IKKE fjernet denne omgang af tekniske årsager (filstørrelse) — se note i per_file. Alt materielt indhold (regnskaber, guidance-opjusteringer, ledelsesskift, M&A, kapitalstruktur, godkendelser, retssager, kliniske forsøg) er bevaret uændret i alle filer, inkl. lignende men ikke identiske low_value-kandidater."
 }
