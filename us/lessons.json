@@ -1,19 +1,19 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "stats": {
-    "closed_trades": 15,
+    "closed_trades": 16,
     "wins": 6,
-    "losses": 9,
-    "win_rate_pct": 40.0,
+    "losses": 10,
+    "win_rate_pct": 37.5,
     "avg_win_pct": 19.23,
-    "avg_loss_pct": -5.8,
-    "avg_pnl_pct": 4.21,
-    "avg_holding_days": 25.5,
-    "total_realized_usd": 553.35,
+    "avg_loss_pct": -5.63,
+    "avg_pnl_pct": 3.69,
+    "avg_holding_days": 26.1,
+    "total_realized_usd": 539.52,
     "target_hits": 4,
-    "stop_hits": 5,
+    "stop_hits": 6,
     "thesis_verdicts": {
-      "FAILED": 9,
+      "FAILED": 10,
       "PARTIAL": 2,
       "HELD": 4
     },
@@ -39,9 +39,9 @@
         "avg_pnl_pct": -2.37
       },
       "Financials": {
-        "n": 2,
+        "n": 3,
         "wins": 2,
-        "avg_pnl_pct": 23.01
+        "avg_pnl_pct": 13.97
       },
       "Industrials": {
         "n": 2,
@@ -415,6 +415,30 @@
       "stop_hit": false,
       "thesis_verdict": "FAILED",
       "lesson": "MGM: -2.1% over 6 days — assumption FAILED. Expected +15.4%. Plan horizon: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:345",
+      "date": "2026-09-21",
+      "symbol": "L",
+      "name": "Loews Corporation",
+      "sector": "Financials",
+      "buy_date": "2026-08-17",
+      "holding_days": 35,
+      "shares": 3,
+      "buy_price": 112.38,
+      "sell_price": 107.77,
+      "realized_pnl_usd": -13.83,
+      "realized_pnl_pct": -4.1,
+      "expected_return_pct": 7.4,
+      "price_target": 120.7,
+      "stop_loss": 108.22,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Solidt Q2-beat i hoteller/rørledninger og en ekstremt oversolgt RSI (9.2) relativt til det milde 5-dages fald peger på en teknisk bounce-mulighed i et fundamentalt sundt konglomerat.",
+      "target_hit": false,
+      "stop_hit": true,
+      "thesis_verdict": "FAILED",
+      "lesson": "L: -4.1% over 35 days — assumption FAILED. Expected +7.4%. Plan horizon: 3-6 måneder. Exited at/below stop-loss."
     }
   ]
 }
