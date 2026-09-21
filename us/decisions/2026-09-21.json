@@ -1,0 +1,336 @@
+{
+  "date": "2026-09-21",
+  "market_summary": "Loews (L) rammer sit mekaniske stop ($108.22) og sælges: positionen var i forvejen meget lille (0,3%), bounce-tesen blev ikke bekræftet, og underwriting-marginerne i CNA-forretningen glider ifølge nyhedsflowet. De øvrige 10 positioner holdes uændret: KEYS, MRVL, VRTX, CRWD og INVH's BULL-teser bekræftes eller forbliver intakte trods kortsigtet overkøbte/oversolgte niveauer (bl.a. GlobalFoundries-aftale på MRVL, Nvidia-CEO-anbefaling af CRWD, stærkt AI-testudstyr-momentum på KEYS), mens FLEX, AMZN, DIS, AFL og NDSN forbliver NEUTRAL uden ny katalysator der bryder deres oprindelige teser. AMZN ($253.71) og INVH ($26.91) ligger begge meget tæt på deres stop-niveauer og overvåges tæt næste session. Dagens analyseunivers (11 aktier) overlapper fuldt med de eksisterende holdings, så ingen nye køb foretages i dag.",
+  "decisions": [
+    {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 244.25,
+      "confidence": 6,
+      "reasoning": "Tesen forbliver intakt og styrkes af frisk nyhedsflow (udvidet GlobalFoundries-aftale, GFS +7%), men Stoch 92.3 og en klar overkøbt kortsigtet tilstand efter det kraftige comeback taler for ikke at jage kursen yderligere her. Langt fra target ($275) og stop ($162.53) — holdes uændret.",
+      "bull": [
+        "Udvidet GlobalFoundries-aftale (SiGe-kapacitetsudvidelse) understøtter AI-datacom/photonics-efterspørgsel; GFS steg 7% på nyheden.",
+        "Stærkt momentum og solidt over begge glidende gennemsnit (+13.1%/+54.2%), drevet af AI-netværks-tailwind."
+      ],
+      "bear": [
+        "Stoch på 92.3 indikerer et kraftigt overkøbt niveau på kort sigt — risiko for tilbagetrækning.",
+        "Stadig -25.94% fra 52-ugers høj trods den seneste rally, hvilket viser betydelig volatilitet og cyklisk halvlederrisiko."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Sector-wide chip sympathy-selloff created a deeply oversold entry into a long-term intact AI-silicon growth case, since confirmed by a concrete Google design win and fresh acquisition news, and now a landmark hyperscaler AI deal.",
+        "price_target": 275,
+        "stop_loss": 162.53,
+        "expected_return_pct": 12.59,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $162.53 (2x ATR). Sælg hvis Kina-hukommelseskonkurrencen viser sig strukturel, eller ved selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 508.34,
+      "confidence": 6,
+      "reasoning": "Kraftigt teknisk oversolgt (RSI 29.7, Stoch 6.0) uden fundamentalt tesebrud — flere kilder kalder aktien 'too cheap to ignore' efter tilbagetrækningen, og 200-dages SMA-trenden er intakt. Ingen bekræftet bund endnu, men stop er fortsat langt væk ($448.95). Holdes.",
+      "bull": [
+        "Kraftigt oversolgt (RSI 29.7, Stoch 6.0, BB-position 10.9 nær nedre bånd) — flere artikler peger på at aktien er 'too cheap to ignore' efter tilbagetrækningen.",
+        "Fortsat over 200-dages SMA (+8.12%) — den langsigtede opadgående trend er intakt, og sektormomentum i gen-editing (CRISPR-rally) kan løfte sentiment."
+      ],
+      "bear": [
+        "Negativt momentum på alle horisonter og handler stort set på 50-dages SMA — ingen klar bekræftelse af en bund endnu.",
+        "Biotek-specifik pipeline-/regulatorisk risiko forbliver en iboende usikkerhedsfaktor."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Deeply oversold entry in a technically intact uptrend, with the Crinetics acquisition signaling offensive pipeline expansion — since confirmed by raised guidance, a completed buyback, and now a Goldman Sachs Conviction List addition.",
+        "price_target": 590,
+        "stop_loss": 448.95,
+        "expected_return_pct": 16.06,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $448.95 (2x ATR). Sælg hvis Crinetics-opkøbet viser overbetaling/integrationsproblemer, eller ved pipeline-skuffelse."
+      }
+    },
+    {
+      "symbol": "FLEX",
+      "name": "Flex Ltd.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 108.51,
+      "confidence": 5,
+      "reasoning": "Axiom-spinoff og $4.4 mia. AI-datacenteraftalen er fortsat en reel langsigtet katalysator, men markedet er skeptisk om eksekveringen på kort sigt (-6.28% over 5 dage, under 50-dages SMA). Ingen fundamental skuffelse — kun kortsigtet usikkerhed om spinoff-strukturen. Meget lille position (1.3%), holdes.",
+      "bull": [
+        "Axiom AI-infrastruktur-spinoff annonceret sammen med en $4.4 mia. AI-datacenteraftale — potentiel værdiskabelse hvis udført korrekt.",
+        "Fortsat solidt over 200-dages SMA (+11.6%), hvilket viser at den langsigtede opadgående trend er intakt."
+      ],
+      "bear": [
+        "Skarpt fald på 5 dage (-6.28%) tyder på markedsskepsis om spinoff-eksekveringen; handler under 50-dages SMA (-7.13%).",
+        "Kompleksiteten ved en spinoff introducerer eksekveringsrisiko og usikkerhed om værdiansættelsen af de to enheder."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Beat-and-raise earnings ignored by the market in a broad tech selloff gave a deeply oversold entry; the EPC Power acquisition adds a fresh AI-infrastructure catalyst but also integration risk.",
+        "price_target": 135,
+        "stop_loss": 85.68,
+        "expected_return_pct": 24.41,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $85,68 (2x ATR). Sælg ved selskabsspecifik indtjeningsskuffelse eller fortsat makrodrevet selloff uden bundtegn, eller ved tegn på fejlslagen EPC Power-integration."
+      }
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 253.71,
+      "confidence": 5,
+      "reasoning": "Kursen ($253.71) ligger kun $0.64 over stop ($253.07) — meget tæt og overvåges tæt næste session. AI/cloud-narrativet (Oracle-cloud-beat, Nvidia-kommentarer) er intakt og RSI 36.2 nær oversolgt, så der er ikke belæg for at sælge proaktivt endnu, men stop respekteres mekanisk hvis det brydes.",
+      "bull": [
+        "Nævnt som Nvidia-partner i 'breakout watch'-omtale — AI-infrastruktur-eksponering (AWS/datacentre) er en strukturel medvind.",
+        "Stadig solidt over 200-dages SMA (+5.58%), og dagens +1% antyder køb på dips omkring RSI 36 (nær oversolgt)."
+      ],
+      "bear": [
+        "Under 50-dages SMA (-0.83%) med negativt momentum de seneste 5/20 dage og MACD klart negativ.",
+        "Bredere AI-sentiment er skrøbeligt (Cathie Wood skærer og reverserer krypto-eksponering) — risikoappetit for AI-relaterede navne svinger."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Earnings-driven breakout confirmed AI monetization across cloud and retail, reinforced today by Oracle's cloud beat and Nvidia's bullish AI-compute commentary.",
+        "price_target": 320,
+        "stop_loss": 253.07,
+        "expected_return_pct": 26.13,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $253,07 (2x ATR, lige under breakout-niveau). Sælg ved bekræftet forværring eller selskabsspecifik skuffelse."
+      }
+    },
+    {
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 102.67,
+      "confidence": 4,
+      "reasoning": "Fortsat neutral uden stærk katalysator i nogen retning. Teknisk oversolgt (BB-position -3.4, RSI 35.6) efter en bred sektorsvækkelse i streaming (Netflix-nedgradering smitter af), men den nye CTO-ansættelse er en mulig langsigtet positiv. Stop ($99.98) er ikke i nærheden — holdes for diversifikation.",
+      "bull": [
+        "BB-position under nedre bånd (-3.4) indikerer teknisk oversolgt tilstand med potentiale for en bounce.",
+        "Ny CTO (Karandeep Anand, ex-YouTube) ansat til at drive streaming/AI-strategi — kan blive en positiv langsigtet katalysator."
+      ],
+      "bear": [
+        "Negativt momentum på alle horisonter (1d/5d/20d) og handler stort set fladt omkring både 50- og 200-dages SMA — svag trend.",
+        "Netflix-nedgradering trykker sentiment i hele streaming-sektoren og smitter af på DIS."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Neutral konglomerat-position — ingen stærk katalysator i hverken retning, holdes for diversifikation og stabil eksponering til streaming/parker.",
+        "price_target": 115,
+        "stop_loss": 99.98,
+        "expected_return_pct": 12.01,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $99,98. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+      }
+    },
+    {
+      "symbol": "L",
+      "name": "Loews Corporation",
+      "action": "SELL",
+      "shares": 3,
+      "price": 107.77,
+      "confidence": 5,
+      "reasoning": "Mekanisk stop-loss udløst: kursen ($107.77) er under stoppet ($108.22). Positionen var i forvejen meget lille (0.3% af porteføljen) og eksplicit markeret til tæt overvågning. Bounce-tesen (oversolgt RSI relativt til et mildt 5-dages fald) er ikke bekræftet, og nyhedsflowet peger på vigende underwriting-marginer i CNA-forsikringsforretningen — sælges nu i overensstemmelse med disciplinen frem for at håbe på en reversering.",
+      "bull": [
+        "Voksende overskud og bogført værdi; datterselskabet CNA Financial overgik Q2-forventningerne.",
+        "BB-position nær nedre bånd (9.4) og RSI 37.7 antyder et muligt værdiindgangspunkt i den diversificerede konglomeratstruktur."
+      ],
+      "bear": [
+        "Underwriting-marginer er ifølge nyheder ved at glide, hvilket kan lægge pres på forsikringsindtjeningen fremadrettet.",
+        "Handler under både 50- og 200-dages SMA med negativt momentum på tværs af horisonter, og kursen er nu under det mekaniske stop-niveau."
+      ],
+      "investment_plan": {
+        "term": "n/a",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Position lukket: mekanisk stop-loss ($108.22) udløst. Bounce-tesen om en teknisk reversering blev ikke bekræftet, og vigende underwriting-marginer i CNA-forretningen understøtter ikke at holde fast i en position der allerede var markeret til tæt overvågning.",
+        "price_target": 0,
+        "stop_loss": 0,
+        "expected_return_pct": 0,
+        "timeframe": "n/a",
+        "exit_conditions": "Solgt i dag — mekanisk stop-loss udløst."
+      }
+    },
+    {
+      "symbol": "KEYS",
+      "name": "Keysight Technologies",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 335.0,
+      "confidence": 7,
+      "reasoning": "BULL-tesen styrkes af AI-drevet testudstyr-efterspørgsel og M&A-optionalitet (analytikere ser op til ~30% opside), og trenden er solidt intakt over begge SMA'er. Stoch 84.9 og BB-position 89.1 signalerer dog kortsigtet overkøbt tilstand — ingen grund til at jage kursen yderligere her. Holdes uændret mod target ($360).",
+      "bull": [
+        "AI-drevet efterspørgsel på testudstyr og M&A-signaler fremhæves som en ny bull-case; analytikere forventer op til ~30% opside.",
+        "Solidt over både 50- og 200-dages SMA (+2.67%/+13.58%) med positiv 20-dages momentum (+5.84%)."
+      ],
+      "bear": [
+        "BB-position 89.1 og Stoch 84.9 nær øvre bånd indikerer kortsigtet overkøbt tilstand — risiko for konsolidering.",
+        "Høje analytikerforventninger (29.93% opside) sætter barren højt; skuffelse kunne udløse en hurtig korrektion."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Neutral position — solid teknologieksponering uden stærk aktuel katalysator, holdes for stabil P&L og sektorspredning i Information Technology.",
+        "price_target": 360,
+        "stop_loss": 289.67,
+        "expected_return_pct": 7.46,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $289,67. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+      }
+    },
+    {
+      "symbol": "AFL",
+      "name": "Aflac",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 116.33,
+      "confidence": 5,
+      "reasoning": "Fortsat neutral defensiv holding — den langsigtede opadgående trend over 200-dages SMA er intakt trods svagt kortsigtet momentum. Ingen ny katalysator i nogen retning; sektorpeer-omtale (GL) understøtter dividende-aristokrat-profilen. Holdes for stabilitet og sektorspredning.",
+      "bull": [
+        "Fortsat over 200-dages SMA (+2.2%) — den langsigtede opadgående trend er intakt trods kortsigtet svaghed.",
+        "Sektorpeer GL handles med rabat og fremhæves som købsmulighed; AFL har lignende dividende-aristokrat-profil med lang forhøjelsesstreak."
+      ],
+      "bear": [
+        "Under 50-dages SMA (-3.37%) og MACD negativ — kortsigtet momentum er svagt.",
+        "Cramer betegner aktien 'not great, not bad' — ingen klar positiv katalysator lige nu."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Neutral position i et defensivt forsikringsnavn — holdes for stabilitet og sektorspredning i Financials.",
+        "price_target": 130,
+        "stop_loss": 111.84,
+        "expected_return_pct": 11.75,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $111,84. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+      }
+    },
+    {
+      "symbol": "CRWD",
+      "name": "CrowdStrike",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 237.65,
+      "confidence": 7,
+      "reasoning": "BULL-tesen bekræftes yderligere af Nvidia-CEO'ens direkte anbefaling af CRWD som 'top security partner' for agentisk AI, samt kursmålsforhøjelser fra BofA/Stephens. Dagens -3.28% efter det kraftige 5-dages løb (+14.95%) er sund konsolidering, ikke tesebrud — men aktien er strakt langt over SMA'erne, så stop ($205.13) respekteres mekanisk hvis mean-reversion for alvor sætter ind. Holdes.",
+      "bull": [
+        "Stærk sektorrotation ind i cybersikkerhed efter 'AI freak-out'-momentet; CRWD nævnt blandt ledende navne med +14.95% på 5 dage.",
+        "Kursmålsforhøjelser fra BofA og Stephens, drevet af Falcon-platformens AI-sikkerhedsposition og Next-Gen SIEM-ekspansion."
+      ],
+      "bear": [
+        "Dagens -3.28% efter den kraftige stigning kan signalere kortsigtet udmattelse; BB-position 79.7 og Stoch 74.5 antyder overkøbt zone.",
+        "Aktien er strakt langt over både 50- og 200-dages SMA (+14.8%/+61.7%), hvilket øger risikoen for mean-reversion."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Confirmed beat-and-raise quarter on AI-security demand with peer confirmation (PANW), now reinforced by a direct Nvidia CEO endorsement as 'top security partner' for agentic AI.",
+        "price_target": 260,
+        "stop_loss": 205.13,
+        "expected_return_pct": 9.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $205,13 (2x ATR). Sælg ved bekræftet mean-reversion under 50-dages SMA eller selskabsspecifik indtjeningsskuffelse."
+      }
+    },
+    {
+      "symbol": "NDSN",
+      "name": "Nordson Corporation",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 311.57,
+      "confidence": 5,
+      "reasoning": "Fortsat kortsigtet svaghed efter regnskabet (-6.9% siden, RSI 35.4, negativt 20-dages momentum), men den underliggende recurring-revenue-model og automatiseringstemaet holder den langsigtede trend intakt over begge SMA'er. Stop ($294.59) er ikke i nærheden — ingen grund til at ændre positionen. Holdes.",
+      "bull": [
+        "Recurring-revenue-forretningsmodel fremhæves i 2026-outlook som drivkraft for holdbar langsigtet profitabilitet.",
+        "Fortsat over både 50- og 200-dages SMA (+1.39%/+10.87%) — den langsigtede trend er intakt trods den seneste svaghed."
+      ],
+      "bear": [
+        "Aktien er faldet 6.9% siden seneste regnskab, og nogle analytikere anbefaler at undgå NDSN til fordel for alternativer.",
+        "Negativt 20-dages momentum (-6.63%) og RSI 35.4 viser vedvarende kortsigtet svaghed."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Frisk fundamental katalysator (15% dividendehævning + beat-and-raise) gør Nordson til en attraktiv Industrials-eksponering efter MMM-salget.",
+        "price_target": 345,
+        "stop_loss": 294.59,
+        "expected_return_pct": 10.73,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $294,59. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+      }
+    },
+    {
+      "symbol": "INVH",
+      "name": "Invitation Homes",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 26.91,
+      "confidence": 6,
+      "reasoning": "Ekstremt oversolgt (RSI 4.0, Stoch 2.8) — et historisk stærkt setup for en mean-reversion-bounce, og flere analyser peger på et REIT-turnaround. Kursen ($26.91) ligger dog kun $0.25 over stop ($26.66) — meget tæt og overvåges tæt næste session. Thesis er stadig intakt, så positionen holdes, men stoppet respekteres mekanisk hvis det brydes.",
+      "bull": [
+        "Ekstremt oversolgt teknisk billede (RSI 4.0, Stoch 2.8) — historisk set et stærkt setup for en mean-reversion-bounce.",
+        "Flere analyseartikler peger på et muligt 'turnaround' og fremhæver INVH som en tilføjelse til porteføljen efter det seneste fald."
+      ],
+      "bear": [
+        "Negativt momentum på alle horisonter, herunder -11.1% over 20 dage, og handler under både 50- og 200-dages SMA.",
+        "Rentefølsom REIT-sektor kan forblive under pres hvis renteforventningerne strammer yderligere."
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Ekstremt oversolgt REIT-turnaround med stigende analytikerestimater, diversificerer ind i det tidligere uvægtede Real Estate-segment.",
+        "price_target": 31,
+        "stop_loss": 26.66,
+        "expected_return_pct": 15.2,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Stop ved $26,66. Sælg ved bekræftet nedgradering af tesen eller selskabsspecifik skuffelse."
+      }
+    }
+  ]
+}
