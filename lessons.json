@@ -1,28 +1,28 @@
 {
-  "updated": "2026-09-17",
+  "updated": "2026-09-22",
   "stats": {
-    "closed_trades": 36,
+    "closed_trades": 37,
     "wins": 21,
-    "losses": 14,
-    "win_rate_pct": 60.0,
+    "losses": 15,
+    "win_rate_pct": 58.3,
     "avg_win_pct": 9.7,
-    "avg_loss_pct": -4.56,
-    "avg_pnl_pct": 3.99,
-    "avg_holding_days": 20.3,
-    "total_realized_dkk": 11247.75,
+    "avg_loss_pct": -4.59,
+    "avg_pnl_pct": 3.75,
+    "avg_holding_days": 20.6,
+    "total_realized_dkk": 10858.95,
     "target_hits": 4,
     "stop_hits": 6,
     "thesis_verdicts": {
       "UKENDT": 1,
-      "HOLDT IKKE": 14,
+      "HOLDT IKKE": 15,
       "DELVIST": 17,
       "HOLDT": 4
     },
     "by_sector": {
       "Consumer Defensive": {
-        "n": 5,
+        "n": 6,
         "wins": 2,
-        "avg_pnl_pct": 3.43
+        "avg_pnl_pct": 1.77
       },
       "Industrials": {
         "n": 7,
@@ -920,6 +920,30 @@
       "stop_hit": true,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "DSV.CO: -4.5% på 14 dage — antagelse HOLDT IKKE. Forventet +13.0%. Plan-horisont: 3-6 måneder. Exit på/under stop-loss."
+    },
+    {
+      "trade_key": "id:684",
+      "date": "2026-09-22",
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "sector": "Consumer Defensive",
+      "buy_date": "2026-08-25",
+      "holding_days": 28,
+      "shares": 9,
+      "buy_price": 886.2,
+      "sell_price": 843.0,
+      "realized_pnl_dkk": -388.8,
+      "realized_pnl_pct": -4.87,
+      "expected_return_pct": 7.2,
+      "price_target": 950.0,
+      "stop_loss": 842.3,
+      "timeframe": "2-4 måneder",
+      "term": "medium",
+      "thesis": "Oversolgt value/mean-reversion-indgang i en kvalitets-bryggerivirksomhed med solid indtjeningsvækst og opjusteret fair value, der handler under både SMA50 og markedets forventning. Diversificerer porteføljen ind i Consumer Defensive, hvor eksponeringen aktuelt er 0%. Sizet moderat (under ATR-forslag) grundet begrænset dagsbudget og for at give plads til en anden diversificerende position (VWS.CO).",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "HOLDT IKKE",
+      "lesson": "CARL-B.CO: -4.9% på 28 dage — antagelse HOLDT IKKE. Forventet +7.2%. Plan-horisont: 2-4 måneder."
     }
   ]
 }
