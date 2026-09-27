@@ -1,0 +1,126 @@
+{
+  "date": "2026-09-27",
+  "files_reviewed": 25,
+  "files_cleaned": 10,
+  "total_items_removed": 14,
+  "per_file": [
+    {
+      "path": "knowledge/AMBUb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 5,
+      "removed_items": [
+        {
+          "title": "MAJOR SHAREHOLDER ANNOUNCEMENTS",
+          "date": "2026-09-09",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/CARLb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 14,
+      "removed_items": [
+        {
+          "title": "Carlsberg Lifts Lower End of Guidance as Nonalcoholic Drinks Offset Beer Declines",
+          "date": "2026-08-19",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/COLOb_xcse.json",
+      "removed_count": 1,
+      "kept_count": 5,
+      "removed_items": [
+        {
+          "title": "Coloplast A/S - Finanskalender 2026/27",
+          "date": "2026-09-24",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/DANSKE_xcse.json",
+      "removed_count": 1,
+      "kept_count": 22,
+      "removed_items": [
+        {
+          "title": "Sterling Edges Higher After U.K. Treasury Chief Speech",
+          "date": "2026-09-07",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/DSV_xcse.json",
+      "removed_count": 1,
+      "kept_count": 3,
+      "removed_items": [
+        {
+          "title": "DSV - Q3 2026 ANALYST CONFERENCE CALL",
+          "date": "2026-09-23",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/FLS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 8,
+      "removed_items": [
+        {
+          "title": "Invitation to FLSmidth's Capital Markets Day 2026",
+          "date": "2026-08-19",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 3,
+      "kept_count": 13,
+      "removed_items": [
+        {
+          "title": "Selskabsvedtægter for Genmab A/S",
+          "date": "2026-09-09",
+          "reason": "low_value"
+        },
+        {
+          "title": "Genmab to Participate in Upcoming Investor Conferences",
+          "date": "2026-08-25",
+          "reason": "low_value"
+        },
+        {
+          "title": "Genmab shares jump 8% after upbeat results prompt 2026 outlook raise",
+          "date": "2026-08-06",
+          "reason": "duplicate_url"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/NOVOb_xcse.json",
+      "removed_count": 3,
+      "kept_count": 300,
+      "removed_items": [
+        {
+          "title": "Viking Therapeutics Skyrockets On Obesity Drug Data. Lilly Rises, But Novo Falls.",
+          "date": "2026-09-22",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Stocks to Watch: Nestle, Nike, Netflix",
+          "date": "2026-09-18",
+          "reason": "duplicate_url"
+        },
+        {
+          "title": "Novo Nordisk Slims Down Name to Novo",
+          "date": "2026-09-14",
+          "reason": "duplicate_url"
+        }
+      ],
+      "note": "INCOMPLETE: target was 386 kept items (389 original minus these 3 duplicates), but the live file on main currently has only the first 300 of those 386 items. This file (~190KB) exceeds what a single write call can carry given a ~64,000-output-token-per-call ceiling versus the ~70,000 tokens required to transcribe the full array as literal tool-call content; two independent write attempts (by two separate subagents, one from a fresh context) both failed at the same wall while attempting the final full-content push. Items 300-385 (86 further real, legitimate news items, all dated 2026-07-28 through 2026-08-10, none of them part of the 3 intended removals) are consequently temporarily absent from the live file pending a follow-up write using a mechanism that does not require re-transcribing the full array as literal LLM output (e.g. a short script run through the normal github_store.py/DASHBOARD_PAT path, or a future session with a clean token budget). The fully correct 386-item target file remains available for that follow-up."
+    }
+  ],
+  "summary": "Fjernede rene dubletter (samme URL optrådt to gange i samme videnbase-fil, kun første forekomst bevaret) samt et lille antal generiske/administrative Nasdaq-meddelelser uden reelt informationsindhold (uspecificeret storaktionærmeddelelse uden navn, selskabsvedtægter, finanskalender, invitation til analytiker-call/kapitalmarkedsdag). Alle regnskaber, kapitalstruktur-ændringer, ledelsesskift, M&A, guidance-opjusteringer og regulatoriske/kliniske opdateringer er bevaret uændret, også når Nasdaq's eget summary-felt kun var en kort kategori-tag. OBS: knowledge/NOVOb_xcse.json kunne ikke færdiggøres i denne kørsel — filen er for stor (~190KB/386 items) til at kunne skrives i ét kald inden for den tilgængelige output-token-grænse (bekræftet ved to uafhængige forsøg). Live-filen indeholder pt. kun de første 300 af de tilsigtede 386 poster; de resterende 86 (reelle, ikke-duplikerede nyheder fra 2026-07-28 til 2026-08-10) mangler midlertidigt og bør genskrives i en opfølgende kørsel med en metode der ikke kræver fuld manuel gentransskribering af arrayet."
+}
