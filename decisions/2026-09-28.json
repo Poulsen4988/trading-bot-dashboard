@@ -1,0 +1,469 @@
+{
+  "date": "2026-09-28",
+  "market_summary": "C25 handler generelt i bekræftede optrends med flere positioner tæt på eller over 52-ugers højder (ISS, DANSKE, DEMANT, JYSK), mens et par navne (COLO-B, NNIT) endelig brød gennem deres stop-loss-niveauer efter ugers balancering lige på grænsen — disciplinen eksekveres mekanisk i dag. Ingen nye køb i dag: de eneste ikke-holdte BULL-kandidater (GN Store Nord, Maersk A/B) byder enten på svag fundamental overbevisning (GN: negativ omsætningsvækst, ingen indtjeningsdata, tilføjer til en allerede høj Healthcare-eksponering på 28.9%) eller er for dyre til meningsfuld positionsstørrelse (Maersk ~22-23k DKK/aktie) givet det ledige budget efter dagens salg.",
+  "decisions": [
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "action": "SELL",
+      "shares": 30,
+      "price": 417.6,
+      "confidence": 7,
+      "reasoning": "Stop-loss brudt (417.6 < 419) efter gentagne dage lige på grænsen. Dagens verdict er fortsat BULL (RSI 15.9, +82% indtjeningsvækst, 36% værdiansættelsesrabat), men exit-planen var eksplicit ufravigelig ('ingen undtagelse') ved brud under 419 — sælger hele positionen mekanisk som planlagt.",
+      "bull": [
+        "Deeply oversold (RSI 15.9) with +82% YoY earnings growth",
+        "36% valuation discount to sector plus 5.47% dividend yield"
+      ],
+      "bear": [
+        "Stop-loss udløst efter vedvarende nedtrend siden køb",
+        "US-refusionsmodvind og China-destocking er reelle nærtidsmodvind"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Position lukkes — stop-loss udløst som planlagt uden undtagelse, trods stærke fundamentals.",
+        "price_target": 520,
+        "stop_loss": 419,
+        "expected_return_pct": -5.2,
+        "timeframe": "N/A",
+        "exit_conditions": "Position lukket i dag."
+      }
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "action": "SELL",
+      "shares": 170,
+      "price": 36.75,
+      "confidence": 5,
+      "reasoning": "Stop-loss brudt (36.75 < 36.79) efter flere dage lige på grænsen. Revenue er fortsat kontraherende (-6.7% å/å) og den tekniske trendvending er ikke bekræftet — sælger positionen mekanisk som planlagt i exit-betingelserne.",
+      "bull": [
+        "Deeply oversold (RSI 20.6) at 52-week low, forward PE 9.2x",
+        "Q2 highlighted margin recovery in US and AI platform progress"
+      ],
+      "bear": [
+        "Revenue still contracting -6.7% YoY",
+        "Momentum divergence shows stock remains in a longer downtrend"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Position lukkes — stop-loss udløst. Turnaround-thesis var afhængig af teknisk trendvending, som ikke blev bekræftet inden bruddet.",
+        "price_target": 47,
+        "stop_loss": 36.79,
+        "expected_return_pct": -6.73,
+        "timeframe": "N/A",
+        "exit_conditions": "Position lukket i dag."
+      }
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 293.2,
+      "confidence": 6,
+      "reasoning": "Trifecta-katalysatorerne (nye mid-term mål, udvidet tilbagekøb, +27% indtjeningsvækst) forbliver intakte. Kursen er tæt på 52-ugers høj efter et stort løb, hvilket reducerer margin of safety, men SEC-overhænget er stadig kun en reel, ikke case-brydende risiko.",
+      "bull": [
+        "New mid-term financial targets confirm management's growth/margin ambition",
+        "+27.1% earnings growth at a still-reasonable 12.6x forward PE",
+        "Active buyback (second tranche, +DKK 600m) signals confidence"
+      ],
+      "bear": [
+        "Trading near 52-week highs after a big run leaves less margin of safety",
+        "SEC seeks client voting data from ISS's proxy-advisory unit — regulatory overhang"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Trifecta af katalysatorer (nye mid-term mål, udvidet tilbagekøb, oversolgt teknik) fortsætter med at understøtte kursen.",
+        "price_target": 320,
+        "stop_loss": 265,
+        "expected_return_pct": 9.1,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 265. Tag profit nær 320. Revurder hvis SEC-sagen eskalerer eller regionale udfordringer materialiserer sig i næste regnskab."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 377.6,
+      "confidence": 6,
+      "reasoning": "Bekræftet uptrend nær 52-ugers højeste understøttet af solid indtjeningsvækst (+15.2%), moderat værdiansættelse (11.5x forward PE) og opjusterede analytiker fair-value-estimater. AI-drevne fyringer er marginpositivt på sigt, ingen thesis-brud.",
+      "bull": [
+        "Strong uptrend, +15.1% above SMA200, RSI 56.1 non-overbought",
+        "+15.2% earnings growth at 11.5x forward PE, 4.51% dividend yield",
+        "Simply Wall St raised fair value estimate; BlackRock large stake"
+      ],
+      "bear": [
+        "Trading near 52-week highs leaves less margin of safety",
+        "AI-driven restructuring signals near-term execution risk"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Kvalitetsbank i bekræftet uptrend til solid indtjeningsvækst og udbytte, med opjusterede analytiker fair-value estimater.",
+        "price_target": 400,
+        "stop_loss": 350,
+        "expected_return_pct": 5.9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 350. Tag profit nær 400. Revurder ved guidance-nedjustering eller brud i kreditkvaliteten."
+      }
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 307.2,
+      "confidence": 6,
+      "reasoning": "Genuin momentum- og fundamental-standout i europæisk medtech (Bernstein top-pick, opjusteret guidance, nyt produktlanceringscyklus), men teknikken er overkøbt (RSI 72.5, Stoch 78.5) efter et stort løb — ingen tilkøb, hold eksisterende position.",
+      "bull": [
+        "Bernstein names Demant a top European medtech pick for H2",
+        "H1 2026 beat with 15% revenue growth and raised guidance; new Oticon launches",
+        "Standout outperformer vs. Stoxx 600 in European medtech"
+      ],
+      "bear": [
+        "RSI 72.5 / Stoch 78.5 signal overbought — pullback risk after the run",
+        "Earnings growth (+6.4%) lags the stock's re-rating (+29.2% above SMA200)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Guidance-opjustering og ny produktlinje understøtter fortsat momentum i en bekræftet uptrend.",
+        "price_target": 330,
+        "stop_loss": 273,
+        "expected_return_pct": 7.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 273. Tag profit nær 330. Revurder hvis momentum bryder hurtigt ned uden ny fundamental forklaring."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 836.2,
+      "confidence": 6,
+      "reasoning": "Guidance blev opjusteret efter Q2's 3% organiske vækst, og momentum reaccelererer (+6.25% 5d). Tynd omsætningsvækst og CFO-skifte er værd at overvåge, men bryder ikke thesis.",
+      "bull": [
+        "Guidance upgraded following Q2's 3% organic growth",
+        "Momentum reaccelerating (+6.25% 5d vs -2.08% 20d)",
+        "+13.6% earnings growth at reasonable 17.1x forward PE, 2.62% yield"
+      ],
+      "bear": [
+        "Revenue growth thin at +2.0% YoY",
+        "CFO transition (Boyer retiring, Garcia incoming) introduces continuity risk"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Momentum-fortsættelse i en fundamentalt understøttet uptrend efter opjusteret guidance.",
+        "price_target": 910,
+        "stop_loss": 761,
+        "expected_return_pct": 8.8,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 761. Tag profit nær 910. Revurder ved svagt Q3-regnskab (04/11) eller yderligere deceleration i organisk vækst."
+      }
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 137.0,
+      "confidence": 5,
+      "reasoning": "Positionen forbliver neutral: den favorable UK-skatteafgørelse fjerner en overhæng og omsætningen vokser fortsat stærkt (+20.5%), men indtjeningskollapset (-94.6% å/å) og en stadig svag teknisk trend under begge SMA'er holder billedet balanceret snarere end klart bullish.",
+      "bull": [
+        "Favorable UK tax ruling on Walney Extension/Hornsea 1 removes legal overhang",
+        "Revenue growth remains strong at +20.5% YoY",
+        "Positioned within the European renewables 'grid spending boom' theme"
+      ],
+      "bear": [
+        "Earnings growth -94.6% YoY reflects severe profitability pressure",
+        "Price remains below SMA50 (-2.1%) and SMA200 (-6.7%)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Neutral position afventer bekræftelse på om de nye katalysatorer (skatteafgørelse, partnerskab) kan vende den svage indtjenings- og tekniske trend.",
+        "price_target": 158,
+        "stop_loss": 126.51,
+        "expected_return_pct": 15.3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 126,51. Tag profit nær 158. Revurder ved næste regnskab eller væsentlige sektornyheder."
+      }
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 198.5,
+      "confidence": 7,
+      "reasoning": "Teknisk ekstremt oversolgt (Stoch 5.2, under nedre Bollinger) lige over SMA50-støtte, mens den fundamentale turnaround er genuin (+833% indtjeningsvækst, ny V182-turbine vinder ordrer). Thesis intakt, holder gennem den kortsigtede volatilitet.",
+      "bull": [
+        "Extremely oversold — Stoch 5.2, below lower Bollinger, still above SMA50 support",
+        "Massive earnings inflection (+833% YoY) with +26.1% revenue growth",
+        "New V182-7.2MW turbine already winning orders (first Swedish order)"
+      ],
+      "bear": [
+        "-4.1% five-day pullback shows active selling pressure near support",
+        "Very low dividend yield (0.37%) — no income cushion"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Fortsat kommerciel og teknologisk eksekution i et gunstigt sektormiljø understøtter uptrenden.",
+        "price_target": 235,
+        "stop_loss": 197.02,
+        "expected_return_pct": 18.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 197,02 (~2x ATR). Tag profit nær 235. Revurder hvis rallyet vender skarpt uden ny fundamental bekræftelse."
+      }
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 414.8,
+      "confidence": 5,
+      "reasoning": "Billig værdiansættelse (11.0x forward PE, 3.84% yield) og aktive tilbagekøb understøtter fortsat hold, men aktien er stadig i en klar nedtrend (-7% under SMA50, -15.5% under SMA200) uden bekræftet vending — tæt overvågning fortsætter.",
+      "bull": [
+        "Cheap at 11.0x forward PE with 3.84% dividend yield; Stoch 24.0 oversold in range",
+        "H1 2026 cited 'profitable growth and market share gains' despite flat revenue",
+        "Consistent, active buyback programs signal management confidence"
+      ],
+      "bear": [
+        "Revenue growth essentially flat (-0.3% YoY)",
+        "Stock remains -7.0% below SMA50 and -15.5% below SMA200, no confirmed reversal"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Margineksekvering og kapitaltilbageførsel til billig værdiansættelse afventer stabilisering af den tekniske nedtrend.",
+        "price_target": 480,
+        "stop_loss": 409,
+        "expected_return_pct": 15.7,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 409 (~2x ATR). Tag profit nær 480 (SMA50-genvinding). Revurder hvis downtrenden fortsætter uden stabilisering, eller hvis volumenvækst udebliver."
+      }
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 68.2,
+      "confidence": 6,
+      "reasoning": "Genuin operationel momentum — 16% organisk vækst i endoskopi, forbedret EBIT-margin, gennemført tilbagekøb og opjusteret outlook. Neutral teknik (RSI 52.2) efterlader plads til videre opside. Thesis intakt.",
+      "bull": [
+        "Buyback finalized and updated 2025/26 outlook signal confidence",
+        "Q3 delivered 16% organic growth in endoscopy with improving EBIT margin",
+        "+28.3% earnings growth YoY with neutral RSI 52.2, room to run"
+      ],
+      "bear": [
+        "Stock remains -39% below its 52-week high; forward PE 22.5x not cheap for sector",
+        "FX and tariff headwinds explicitly cited as ongoing challenges"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Fortsat organisk vækst og marginforbedring i endoskopi understøttet af ledelsens tilbagekøbsaktivitet.",
+        "price_target": 78,
+        "stop_loss": 61.94,
+        "expected_return_pct": 14.4,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 61,94 (~2x ATR). Tag profit nær 78. Revurder hvis FX/toldmodvinden eskalerer yderligere eller næste regnskab (05/11) viser deceleration i endoskopivæksten."
+      }
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 133.15,
+      "confidence": 5,
+      "reasoning": "Høj 7.32% udbytteyield giver nedsidedæmpning, stabil optrend (+8.7% over SMA200) og Zacks-momentum-pick understøtter fortsat hold. Moderat vækst betyder positionen er mere en indkomst-/stabilitetsholding end en vækstkatalysator — thesis intakt.",
+      "bull": [
+        "Exceptionally high 7.32% dividend yield provides downside cushion",
+        "Zacks flagged Nordea as a top momentum stock pick",
+        "Stable uptrend (+8.7% over SMA200), neutral RSI 47.9"
+      ],
+      "bear": [
+        "Earnings (+2.9%) and revenue (+1.5%) growth are modest",
+        "Low volume ratio (0.4x) suggests limited conviction behind price action"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Højt udbytte og stabil uptrend afventer om indtjeningsvæksten kan genfinde fart.",
+        "price_target": 145,
+        "stop_loss": 127.86,
+        "expected_return_pct": 8.9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 127,86 (~2x ATR). Tag profit nær 145. Revurder hvis dividenden skæres eller indtjeningsvæksten bliver negativ."
+      }
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 424.3,
+      "confidence": 5,
+      "reasoning": "Langsigtet biosolutions-vækstcase (Patalganga-udvidelse, stærk indtjeningsvækst) forbliver intakt. Ingen stop-nærhed, ingen ny negativ katalysator siden købet.",
+      "bull": [
+        "€600m Patalganga expansion signals growth investment",
+        "Strong earnings growth and new buyback program",
+        "Valuable sector diversification (Basic Materials)"
+      ],
+      "bear": [
+        "Position still young; technical timing not yet confirmed",
+        "No major fresh catalyst since purchase"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Langsigtet biosolutions-vækstinvestering via Patalganga-udvidelsen afventer bedre teknisk timing.",
+        "price_target": 475,
+        "stop_loss": 411.22,
+        "expected_return_pct": 11.9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 411,22 (~2x ATR). Tag profit nær 475. Revurder hvis enzym-/biosolutions-efterspørgslen aftager, eller næste regnskab viser deceleration i indtjeningsvæksten."
+      }
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1107.0,
+      "confidence": 5,
+      "reasoning": "Stabil optrend understøttet af vedvarende tilbagekøb og en Simply Wall St-vurdering under fair value. Tynd omsætningsvækst betyder indtjeningen er mere marginsdrevet end organisk, men ingen thesis-brud og god afstand til stop.",
+      "bull": [
+        "Simply Wall St flags discount to fair value; steady buyback activity",
+        "Uptrend intact, +17.9% above SMA200, healthy RSI 54.5",
+        "+12.3% earnings growth at 11.6x forward PE"
+      ],
+      "bear": [
+        "Revenue growth thin (+1.3% YoY) — earnings gains margin-driven",
+        "Near 52-week highs, limiting immediate margin of safety"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Moderat undervurderet bank med stabile tilbagekøb afventer en ny katalysator for at bryde det flade tekniske billede.",
+        "price_target": 1250,
+        "stop_loss": 1079.71,
+        "expected_return_pct": 12.9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 1079,71 (~2x ATR). Tag profit nær 1250. Revurder ved svagt Q3-regnskab (28/10) eller hvis banksektor-momentum vender."
+      }
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 217.8,
+      "confidence": 6,
+      "reasoning": "Klar optrend backed af eksplosiv indtjeningsvækst (+169.7% å/å) og aktivt tilbagekøb. Ny CEO-æra og en fordoblet forward PE (fra allerede stærke resultater) er værd at overvåge, men bryder ikke thesis endnu.",
+      "bull": [
+        "Uptrend intact — above SMA50 (+10.6%) and SMA200 (+13.6%), healthy RSI 57.5",
+        "+169.7% YoY earnings growth reflects a genuine fundamental inflection",
+        "Active multi-tranche buyback; Simply Wall St DCF flags stock as still cheap"
+      ],
+      "bear": [
+        "New CEO appointment introduces leadership-transition risk",
+        "Forward PE nearly doubled from trailing (11.2x to 20.7x)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Fundamental momentum-position i en vaccine-/biotekvirksomhed med eksplosiv indtjeningsvækst, aktivt tilbagekøb og en ny CEO-æra, sizet moderat grundet sektorkoncentration og kortsigtet overkøbt teknik.",
+        "price_target": 250,
+        "stop_loss": 212.46,
+        "expected_return_pct": 14.8,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 212,46 (~2x ATR). Tag profit nær 250. Revurder hvis CEO-transitionen skaber eksekveringsproblemer eller indtjeningsvæksten decelererer markant i næste regnskab (13/11)."
+      }
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 253.0,
+      "confidence": 6,
+      "reasoning": "Historisk billig (11.6x forward PE, 54% sektorrabat) og teknisk dybt oversolgt efter et 38% kursfald. Konkurrenceintensiteten fra Lilly/Viking og fortsat negativ indtjeningsvækst betyder bunden ikke er bekræftet endnu, men deep-value-thesis er intakt.",
+      "bull": [
+        "Extreme technical oversold (RSI 18.6, Stoch 11.6) after 38% drawdown",
+        "Forward PE 11.6x, a 54% discount to Healthcare sector norm",
+        "$1.3B Nanexa drug-delivery licensing deal signals active pipeline investment"
+      ],
+      "bear": [
+        "Competitive intensity in GLP-1 intensifying (Lilly, Viking Therapeutics)",
+        "-20.6% earnings growth YoY confirms fundamentals still deteriorating"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Deep-value-indgang i sektorlederen inden for GLP-1/obesity efter et 38% kursfald har presset værdiansættelsen til et niveau hvor markedet ikke længere priser nogen vækst ind. Nye regulatoriske godkendelser og NYSE-notering-optionalitet giver konkrete nærtidskatalysatorer oven på den ekstreme tekniske oversolgthed.",
+        "price_target": 320,
+        "stop_loss": 236.82,
+        "expected_return_pct": 26.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg ved brud under 236.82 (~2x ATR). Tag profit nær 320. Revurder ved yderligere markedsandelstab til GLP-1/GIP-konkurrenter eller svagt Q3-regnskab (04/11)."
+      }
+    }
+  ]
+}
