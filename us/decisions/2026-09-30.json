@@ -1,0 +1,216 @@
+{
+ "date": "2026-09-30",
+ "market_summary": "Porteføljen er i overvejende opadgående trend, men flere positioner (MRVL, KEYS, NDSN) er kortsigtet overkøbte ved øvre Bollinger. Ingen nye BULL-kandidater uden for eksisterende positioner i dag, så ingen nye køb; alle positioner holdes med intakte stops. Kontantandel er høj (~50%), hvilket giver plads til at købe pullbacks.",
+ "decisions": [
+  {
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 263.27,
+   "confidence": 60,
+   "reasoning": "Kraftig AI-silicon-case intakt, men stærkt udstrakt (18% over SMA50, stoch 92) og tæt på kursmål 275. Hold; ingen tilføjelse.",
+   "bull": [
+    "Custom AI-silicon shipments til Google og forventet højere AI-omsætningsguidance",
+    "Kraftig trend: +24% 20d og 60% over SMA200"
+   ],
+   "bear": [
+    "Ekstremt udstrakt: 18% over SMA50, stoch 92, nær øvre Bollinger efter +4.5% i dag",
+    "Stor kundekoncentration hos få hyperscalers; 20% under 52w-high viser volatilitet"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Sector-wide chip sympathy-selloff created a deeply oversold entry into a long-term intact AI-silicon growth case, since confirmed by a concrete Google design win and fresh acquisition news, and now a landmark hyperscaler AI deal.",
+    "price_target": 275,
+    "stop_loss": 162.53,
+    "expected_return_pct": 4.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved brud af stop eller selskabsspecifik skuffelse; overvej delvis gevinsthjemtagning ved kursmål 275."
+   }
+  },
+  {
+   "symbol": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 526.73,
+   "confidence": 60,
+   "reasoning": "Sund trend over SMA50/200, pipeline-optionalitet intakt; konsoliderer. Hold.",
+   "bull": [
+    "Pipeline-udvidelse udover CF (nyresygdomme, povetacicept/inaxaplin)",
+    "Over SMA50/200 med neutral RSI 55.7 og plads til 52w-high (-6%)"
+   ],
+   "bear": [
+    "MACD flad/negativ og -3.3% seneste 20d; lav volumen",
+    "Biotek-binær pipelinerisiko"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Deeply oversold entry in a technically intact uptrend, with the Crinetics acquisition signaling offensive pipeline expansion — since confirmed by raised guidance, a completed buyback, and now a Goldman Sachs Conviction List addition.",
+    "price_target": 590,
+    "stop_loss": 448.95,
+    "expected_return_pct": 12.0,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop 448,95 eller fundamentalt brud."
+   }
+  },
+  {
+   "symbol": "FLEX",
+   "name": "Flex Ltd.",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 113.83,
+   "confidence": 60,
+   "reasoning": "AI-infrastruktur-tese intakt, momentum stagneret ved SMA50. Hold, lille position.",
+   "bull": [
+    "AI data center-efterspørgsel, avanceret networking og strøm-infrastruktur; Axiom spin-off kan frigøre værdi",
+    "Kurs 15% over SMA200 og +4% seneste 20d"
+   ],
+   "bear": [
+    "Stadig ca. 32% under 52w-high og lidt under SMA50 med negativ MACD",
+    "Høj ATR (5.5) giver store udsving; spin-off-eksekveringsrisiko"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Beat-and-raise earnings ignored by the market in a broad tech selloff gave a deeply oversold entry; the EPC Power acquisition adds a fresh AI-infrastructure catalyst but also integration risk.",
+    "price_target": 135,
+    "stop_loss": 85.68,
+    "expected_return_pct": 18.6,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop 85,68."
+   }
+  },
+  {
+   "symbol": "DIS",
+   "name": "Walt Disney Company (The)",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 105.41,
+   "confidence": 60,
+   "reasoning": "Teknisk neutral uden trigger, tese uændret. Hold.",
+   "bull": [
+    "Prisstigning på Disney+/Hulu ad-free (13%) og fokus på streaming-profit; ny CTO",
+    "Kurs over både SMA50 og SMA200 med neutral RSI 53.6"
+   ],
+   "bear": [
+    "Lav volumen og negativ 20d-momentum (-2%)",
+    "Kurs klistret til SMA50/200 uden tydelig breakout"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Neutral konglomerat-position — ingen stærk katalysator i hverken retning, holdes for diversifikation og stabil eksponering til streaming/parker.",
+    "price_target": 115,
+    "stop_loss": 99.98,
+    "expected_return_pct": 9.1,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop 99,98."
+   }
+  },
+  {
+   "symbol": "KEYS",
+   "name": "Keysight Technologies",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 360.65,
+   "confidence": 60,
+   "reasoning": "Uptrend med estimatopjusteringer, men overkøbt og tæt på kursmål 360. Hold, køb ikke mere.",
+   "bull": [
+    "Stærk trend: +11.8% 20d, 20% over SMA200, positive MACD og AI-drevne estimatrevisioner",
+    "Nær 52w-high (-3.8%)"
+   ],
+   "bear": [
+    "Overkøbt nær øvre Bollinger (bb_position 89.7, stoch 88.8) og vurderet fuldt prissat",
+    "Lav volumen bag op-bevægelsen"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Neutral position — solid teknologieksponering uden stærk aktuel katalysator, holdes for stabil P&L og sektorspredning i Information Technology.",
+    "price_target": 360,
+    "stop_loss": 289.67,
+    "expected_return_pct": -0.2,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop 289,67 eller trendbrud; stram stop hvis kurs lukker under SMA50."
+   }
+  },
+  {
+   "symbol": "AFL",
+   "name": "Aflac",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 113.66,
+   "confidence": 60,
+   "reasoning": "Tester SMA200-støtte, stop 111.84 ikke udløst, ingen klar katalysator. Hold.",
+   "bull": [
+    "Kurs ved nedre Bollinger-bånd (bb_position 14.8) og tæt på SMA200 (114.08) giver mulig mean-reversion",
+    "Stabil forsikringsmodel med dividendeprofil"
+   ],
+   "bear": [
+    "Under SMA50 (119.27), MACD negativ og -12% fra 52w-high: svagt momentum",
+    "Halter efter S&P 500 (+5% vs +21% over 6 mdr)"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Neutral position i et defensivt forsikringsnavn — holdes for stabilitet og sektorspredning i Financials.",
+    "price_target": 130,
+    "stop_loss": 111.84,
+    "expected_return_pct": 14.4,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop 111,84."
+   }
+  },
+  {
+   "symbol": "NDSN",
+   "name": "Nordson Corporation",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 329.53,
+   "confidence": 60,
+   "reasoning": "Rekordresultater og hævet guidance, men overkøbt (BB 99%) og største position (15.6%). Hold, tilføj ikke.",
+   "bull": [
+    "Rekord Q3 og hævet guidance; semiconductor packaging-efterspørgsel",
+    "Kurs over SMA50 og SMA200, kun 2.5% under 52w-high"
+   ],
+   "bear": [
+    "Overkøbt: kurs ved øvre Bollinger (99%), RSI 68.6 og beskrevet som fuldt værdisat",
+    "Cyklisk eksponering mod elektronik/halvleder"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Frisk fundamental katalysator (15% dividendehævning + beat-and-raise) gør Nordson til en attraktiv Industrials-eksponering efter MMM-salget.",
+    "price_target": 345,
+    "stop_loss": 294.59,
+    "expected_return_pct": 4.7,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop 294,59."
+   }
+  }
+ ]
+}
