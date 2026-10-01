@@ -1,19 +1,19 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-10-01",
   "stats": {
-    "closed_trades": 19,
+    "closed_trades": 20,
     "wins": 7,
-    "losses": 12,
-    "win_rate_pct": 36.8,
+    "losses": 13,
+    "win_rate_pct": 35.0,
     "avg_win_pct": 18.47,
-    "avg_loss_pct": -5.7,
-    "avg_pnl_pct": 3.21,
-    "avg_holding_days": 27.1,
-    "total_realized_usd": 438.51,
+    "avg_loss_pct": -5.54,
+    "avg_pnl_pct": 2.86,
+    "avg_holding_days": 27.8,
+    "total_realized_usd": 348.42,
     "target_hits": 4,
-    "stop_hits": 8,
+    "stop_hits": 9,
     "thesis_verdicts": {
-      "FAILED": 12,
+      "FAILED": 13,
       "PARTIAL": 3,
       "HELD": 4
     },
@@ -39,9 +39,9 @@
         "avg_pnl_pct": -2.37
       },
       "Financials": {
-        "n": 3,
+        "n": 4,
         "wins": 2,
-        "avg_pnl_pct": 13.97
+        "avg_pnl_pct": 9.55
       },
       "Industrials": {
         "n": 2,
@@ -511,6 +511,30 @@
       "stop_hit": true,
       "thesis_verdict": "FAILED",
       "lesson": "INVH: -3.9% over 15 days — assumption FAILED. Expected +12.5%. Plan horizon: 3-6 måneder. Exited at/below stop-loss."
+    },
+    {
+      "trade_key": "id:391",
+      "date": "2026-10-01",
+      "symbol": "AFL",
+      "name": "Aflac",
+      "sector": "Financials",
+      "buy_date": "2026-08-21",
+      "holding_days": 41,
+      "shares": 21,
+      "buy_price": 116.07,
+      "sell_price": 111.78,
+      "realized_pnl_usd": -90.09,
+      "realized_pnl_pct": -3.7,
+      "expected_return_pct": 12.0,
+      "price_target": 130.0,
+      "stop_loss": 111.84,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Sektor-bred renteudløst selloff giver en dybt oversolgt entry i et kvalitetsforsikringsselskab med 43 år i træk med udbyttestigninger, stadig over 200-dages gennemsnittet.",
+      "target_hit": false,
+      "stop_hit": true,
+      "thesis_verdict": "FAILED",
+      "lesson": "AFL: -3.7% over 41 days — assumption FAILED. Expected +12.0%. Plan horizon: 3-6 måneder. Exited at/below stop-loss."
     }
   ]
 }
