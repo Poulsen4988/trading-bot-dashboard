@@ -1,0 +1,178 @@
+{
+ "date": "2026-10-08",
+ "market_summary": "Ingen BULL-kandidater udenfor porteføljen; resten er NEUTRAL/BEAR i nedtrend. Tech-positioner er stærkt overkøbte, så vi tager delvis profit i MRVL og hæver stops, og beholder ~60k USD kontanter til bedre indgange.",
+ "decisions": [
+  {
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
+   "action": "SELL",
+   "shares": 9,
+   "price": 287.01,
+   "confidence": 70,
+   "reasoning": "Delvis profit (9 af 18) som planlagt: kurs 287 er over 275-triggeren og tæt på target 290, RSI 83 og 85x earnings. Resten kører videre med hævet stop.",
+   "bull": [
+    "AI data-center momentum, +27% 20d",
+    "Far above SMA50/200"
+   ],
+   "bear": [
+    "RSI 83, at upper Bollinger, 85x earnings valuation"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "AI-silicon vækstcase intakt, bekræftet af hyperscaler-aftaler.",
+    "price_target": 300,
+    "stop_loss": 265,
+    "expected_return_pct": 4.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud eller selskabsspecifik skuffelse; delvis profit ved 275."
+   }
+  },
+  {
+   "symbol": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 502.31,
+   "confidence": 65,
+   "reasoning": "Sund langsigtet trend, kortsigtet pullback (RSI 40); thesis intakt, stop ikke ramt.",
+   "bull": [
+    "Analysts see 20% upside, above SMA200",
+    "Kidney pipeline"
+   ],
+   "bear": [
+    "Below SMA50, -4.6% 5d, MACD negative"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Stabil biotek-compounder med pipeline-upside.",
+    "price_target": 590,
+    "stop_loss": 448.95,
+    "expected_return_pct": 17.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud eller klinisk/regulatorisk tilbageslag."
+   }
+  },
+  {
+   "symbol": "FLEX",
+   "name": "Flex Ltd.",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 121.38,
+   "confidence": 65,
+   "reasoning": "BULL conf 6, reshoring-medvind intakt; overkøbt men trend stærk, lille position.",
+   "bull": [
+    "Above SMA50/200, reshoring tailwind",
+    "+6.6% 5d, MACD positive"
+   ],
+   "bear": [
+    "RSI 72.6 overbought, above upper Bollinger"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Supply-chain reshoring og netværk.",
+    "price_target": 135,
+    "stop_loss": 112,
+    "expected_return_pct": 11.2,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud eller fundamentalt brud."
+   }
+  },
+  {
+   "symbol": "DIS",
+   "name": "Walt Disney Company (The)",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 104.03,
+   "confidence": 65,
+   "reasoning": "Range-bound uden edge men thesis ikke brudt, stop 99.98 ikke ramt.",
+   "bull": [
+    "Near SMA50/200, stable",
+    "Cost cutting under CEO"
+   ],
+   "bear": [
+    "Flat momentum, streaming cost pressure"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Turnaround via cost cuts under ny CEO.",
+    "price_target": 115,
+    "stop_loss": 99.98,
+    "expected_return_pct": 10.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud eller svag streaming/parks-guidance."
+   }
+  },
+  {
+   "symbol": "KEYS",
+   "name": "Keysight Technologies",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 388.03,
+   "confidence": 65,
+   "reasoning": "Kraftig uptrend, RSI 96 ekstremt overkøbt; holder med stop hævet til 365 for at låse gevinst. Overvej trim ved svaghed.",
+   "bull": [
+    "Near 52w high, +16% 20d, strong trend"
+   ],
+   "bear": [
+    "RSI 96 extremely overbought, high pullback risk"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Test/måle-udstyr til AI-infrastruktur.",
+    "price_target": 420,
+    "stop_loss": 365,
+    "expected_return_pct": 8.2,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved brud under 365 eller fundamental skuffelse."
+   }
+  },
+  {
+   "symbol": "NDSN",
+   "name": "Nordson Corporation",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 334.22,
+   "confidence": 65,
+   "reasoning": "Stabil uptrend nær højder; stop 315 ikke ramt. Største position (15.6%), ingen tilkøb.",
+   "bull": [
+    "Near 52w high, above SMA50/200"
+   ],
+   "bear": [
+    "RSI 88 overbought"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Industriel kvalitet i optrend.",
+    "price_target": 360,
+    "stop_loss": 315,
+    "expected_return_pct": 7.7,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud eller fundamental svækkelse."
+   }
+  }
+ ]
+}
