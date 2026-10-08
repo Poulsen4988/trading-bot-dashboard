@@ -7281,6 +7281,64 @@
   ],
   "stocks": [
     {
+      "symbol": "ALL",
+      "name": "Allstate",
+      "tradeable": true,
+      "price": 224.27,
+      "pct_1d": -0.2,
+      "pct_5d": -0.51,
+      "pct_20d": -11.52,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 0.98,
+      "pct_from_52w_high": -18.76,
+      "pct_from_52w_low": 21.55,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Financials",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [],
+      "technical": {
+        "screening_date": "2026-10-08",
+        "score": 21.3,
+        "rsi": 13.2,
+        "rsi_proxy": 13.2,
+        "stoch_proxy": 13.5,
+        "bb_position": 25.6,
+        "sma50_vs_price": -10.89,
+        "sma200_vs_price": 0.46,
+        "macd_line": -8.5999,
+        "atr": 5.5814,
+        "momentum_divergence": 11.01,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "MOMENTUM DIVERGENCE: 5d/20d gap +11.0pp — emerging trend shift",
+          "DEEPLY OVERSOLD: RSI proxy 13, Stoch proxy 14 — bounce candidate"
+        ],
+        "rationale": "ALL: RSI proxy (13) and stochastic (14) in oversold territory support a bounce thesis; price is -10.9% vs SMA50."
+      },
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 3,
+        "bull": [
+          "RSI 13 oversold, still near SMA200"
+        ],
+        "bear": [
+          "-11.5% in 20d, below SMA50, no news"
+        ],
+        "summary": "Oversold insurer holding SMA200; scout without catalyst.",
+        "key_risk": "Catastrophe losses"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
+    },
+    {
       "symbol": "APP",
       "name": "AppLovin",
       "tradeable": true,
@@ -7291,7 +7349,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.82,
+      "volume_ratio": 0.67,
       "pct_from_52w_high": -62.23,
       "pct_from_52w_low": 4.47,
       "revenue_growth": null,
@@ -7361,8 +7419,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 54.4,
+        "screening_date": "2026-10-08",
+        "score": 53.2,
         "rsi": 30.0,
         "rsi_proxy": 30.0,
         "stoch_proxy": 17.0,
@@ -7381,7 +7439,110 @@
         "rationale": "APP: a 8.8% five-day selloff (20d: -10.7%) reveals strong directional pressure; price sits just +4.5% above the 52-week low (266.84) — a key decision zone; RSI proxy (30) and stochastic (17) in oversold territory support a bounce thesis; price is -14.4% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
+    },
+    {
+      "symbol": "BSX",
+      "name": "Boston Scientific",
+      "tradeable": true,
+      "price": 42.19,
+      "pct_1d": -0.5,
+      "pct_5d": -3.85,
+      "pct_20d": -6.2,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 0.97,
+      "pct_from_52w_high": -60.07,
+      "pct_from_52w_low": 0.6,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Health Care",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [
+        {
+          "date": "2026-09-11",
+          "title": "Is This BSX Stock Pullback Worth The Patience?",
+          "source": "Trefis",
+          "summary": "Boston Scientific (BSX) trades at about $43, roughly 17% below the recent high it set on 19th Aug, 2026. Its own history with sharp drops is encouraging. That history does not cover a cyberattack it says is likely to hit its 2026 results, and the stock is down about 60% over the past twelve months. Start with the history.",
+          "url": "https://www.trefis.com/articles/615053/is-this-bsx-stock-pullback-worth-the-patience/2026-09-11"
+        },
+        {
+          "date": "2026-09-11",
+          "title": "Is Boston Scientific (BSX) a Buy as Wall Street Analysts Look Optimistic?",
+          "source": "Zacks",
+          "summary": "The average brokerage recommendation (ABR) for Boston Scientific (BSX) is equivalent to a Buy. The overly optimistic recommendations of Wall Street analysts make the effectiveness of this highly sought-after metric questionable. So, is it worth buying the stock?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/boston-scientific-bsx-buy-wall-133002119.html"
+        },
+        {
+          "date": "2026-09-11",
+          "title": "Boston Scientific fully restores operations after cyberattack",
+          "source": "MedTech Dive",
+          "summary": "CEO Mike Mahoney gave more details at a Thursday investor conference, saying the company likely lost orders while its plants and distribution centers were shut down.",
+          "url": "https://www.medtechdive.com/news/boston-scientific-fully-restores-operations-after-cyberattack/830182/"
+        },
+        {
+          "date": "2026-09-10",
+          "title": "Why Boston Scientific (BSX) Dipped More Than Broader Market Today",
+          "source": "Zacks",
+          "summary": "Boston Scientific (BSX) reached $43.1 at the closing of the latest trading day, reflecting a -4.14% change compared to its last close.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-boston-scientific-bsx-dipped-220003966.html"
+        },
+        {
+          "date": "2026-09-10",
+          "title": "Boston Scientific Restores Key Operations After Cyberattack",
+          "source": "The Wall Street Journal",
+          "summary": "The company said products are moving through its distribution network at or above normal levels as the Marlborough, Mass., company works to fulfill customer orders, reduce backlogs and accelerate the delivery of products.",
+          "url": "https://www.wsj.com/business/telecom/boston-scientific-restores-key-operations-after-cyberattack-4303d27c?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-10",
+          "title": "1 of Wall Street’s Favorite Stocks with Promising Prospects and 2 Facing Challenges",
+          "source": "StockStory",
+          "summary": "Wall Street has set ambitious price targets for the stocks in this article. While this suggests attractive upside potential, it’s important to remain skeptical because analysts face institutional pressures that can sometimes lead to overly optimistic forecasts.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/1-wall-street-favorite-stocks-124104505.html"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "BSX Stock: Is It Time To Buy Or Sell Puts?",
+          "source": "Trefis",
+          "summary": "Trading near $45 a share, Boston Scientific (BSX) sits roughly 58% below its 52-week peak.  Instead of buying the dip outright, selling cash-secured put options allows investors to generate immediate income while locking in an even deeper entry point.  Sell a put option on BSX expiring 9/17/2027, with a strike price of $30.",
+          "url": "https://www.trefis.com/articles/614742/bsx-stock-is-it-time-to-buy-or-sell-puts/2026-09-09"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "2 Healthcare Stocks with Competitive Advantages and 1 We Question",
+          "source": "StockStory",
+          "summary": "Healthcare companies are pushing the status quo by innovating in areas like drug development and digital health. Those leading the charge have not only realized strong financial performance but also propelled the broader industry’s returns as healthcare stocks have gained 25.7% over the past six months while the S&P 500 was up 13.6%.",
+          "url": "https://finance.yahoo.com/healthcare/articles/2-healthcare-stocks-competitive-advantages-143438574.html"
+        }
+      ],
+      "technical": {
+        "screening_date": "2026-10-08",
+        "score": 50.2,
+        "rsi": 34.0,
+        "rsi_proxy": 34.0,
+        "stoch_proxy": 6.6,
+        "bb_position": 2.9,
+        "sma50_vs_price": -9.8,
+        "sma200_vs_price": -31.08,
+        "macd_line": -1.0844,
+        "atr": 1.0871,
+        "momentum_divergence": 2.35,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "AT 52W LOW: +0.6% above annual floor — breakdown or reversal imminent",
+          "MOMENTUM: -3.9% in 5 days",
+          "STOCHASTIC OVERSOLD: Stoch proxy 7 — price near annual support floor (RSI proxy 34)"
+        ],
+        "rationale": "BSX: price sits just +0.6% above the 52-week low (41.94) — a key decision zone; RSI proxy (34) and stochastic (7) in oversold territory support a bounce thesis; price is -9.8% vs SMA50."
+      },
+      "analysis": null,
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "CHRW",
@@ -7394,7 +7555,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 2.11,
+      "volume_ratio": 1.33,
       "pct_from_52w_high": -35.52,
       "pct_from_52w_low": 10.9,
       "revenue_growth": null,
@@ -7464,8 +7625,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 64.0,
+        "screening_date": "2026-10-08",
+        "score": 56.0,
         "rsi": 29.9,
         "rsi_proxy": 29.9,
         "stoch_proxy": 11.4,
@@ -7477,119 +7638,192 @@
         "momentum_divergence": 0.24,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME ELEVATED: 2.02x avg — above-normal interest",
+          "VOLUME NORMAL-HIGH: 1.27x avg",
           "SIGNIFICANT DRAWDOWN: -35.5% from 52w high",
           "MOMENTUM SELLOFF: -9.8% in 5 days — sharp directional move",
           "STOCHASTIC OVERSOLD: Stoch proxy 11 — price near annual support floor (RSI proxy 30)"
         ],
-        "rationale": "CHRW: volume running at 2.0x the daily average signals institutional-scale activity; a 9.8% five-day selloff (20d: -10.0%) reveals strong directional pressure; RSI proxy (30) and stochastic (11) in oversold territory support a bounce thesis; price is -9.5% vs SMA50."
+        "rationale": "CHRW: a 9.8% five-day selloff (20d: -10.0%) reveals strong directional pressure; RSI proxy (30) and stochastic (11) in oversold territory support a bounce thesis; price is -9.5% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "BEAR",
+        "confidence": 4,
+        "bull": [
+          "RSI 30, below lower Bollinger band"
+        ],
+        "bear": [
+          "-10% in 5d, below SMA50/200"
+        ],
+        "summary": "Falling hard; oversold but momentum negative.",
+        "key_risk": "Freight market weakness"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
-      "symbol": "CIEN",
-      "name": "Ciena",
+      "symbol": "CF",
+      "name": "CF Industries",
       "tradeable": true,
-      "price": 443.65,
-      "pct_1d": 13.85,
-      "pct_5d": 25.0,
-      "pct_20d": 29.99,
+      "price": 116.02,
+      "pct_1d": 0.0,
+      "pct_5d": 0.27,
+      "pct_20d": -13.63,
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 2.21,
-      "pct_from_52w_high": -30.41,
-      "pct_from_52w_low": 201.07,
+      "volume_ratio": 0.89,
+      "pct_from_52w_high": -18.1,
+      "pct_from_52w_low": 56.09,
       "revenue_growth": null,
       "earnings_growth": null,
       "market_cap": null,
-      "sector": "Information Technology",
+      "sector": "Materials",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [],
+      "technical": {
+        "screening_date": "2026-10-08",
+        "score": 28.0,
+        "rsi": 17.8,
+        "rsi_proxy": 17.8,
+        "stoch_proxy": 18.5,
+        "bb_position": 27.5,
+        "sma50_vs_price": -6.44,
+        "sma200_vs_price": 3.49,
+        "macd_line": -3.4534,
+        "atr": 3.8693,
+        "momentum_divergence": 13.9,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "VOLUME NORMAL-HIGH: 1.07x avg",
+          "MOMENTUM DIVERGENCE: 5d/20d gap +13.9pp — emerging trend shift",
+          "RSI OVERSOLD: RSI proxy 18, Stoch proxy 18 — momentum exhaustion signal"
+        ],
+        "rationale": "CF: RSI proxy (18) and stochastic (18) in oversold territory support a bounce thesis; price is -6.4% vs SMA50."
+      },
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 3,
+        "bull": [
+          "Above SMA200, +56% from 52w low",
+          "RSI 18 oversold"
+        ],
+        "bear": [
+          "-13.6% in 20d, below SMA50"
+        ],
+        "summary": "Pullback within longer uptrend; scout, no news catalyst.",
+        "key_risk": "Nitrogen price reversal"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
+    },
+    {
+      "symbol": "CHTR",
+      "name": "Charter Communications",
+      "tradeable": true,
+      "price": 108.64,
+      "pct_1d": 0.81,
+      "pct_5d": -1.83,
+      "pct_20d": -25.46,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 1.45,
+      "pct_from_52w_high": -60.93,
+      "pct_from_52w_low": 3.56,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Communication Services",
       "industry": null,
       "next_earnings_date": null,
       "overview": "",
       "fin_summary": "",
       "news": [
         {
-          "date": "2026-09-07",
-          "title": "AAOI Dips 46% in Three Months: Should You Buy the Stock Now or Wait?",
-          "source": "Zacks",
-          "summary": "Applied Optoelectronics plunges 46.3% in three months as supply constraints and a rich valuation offset surging AI-driven demand for 800G and 1.6T products.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/aaoi-dips-46-three-months-162800982.html"
+          "date": "2026-09-28",
+          "title": "Charter Communications Sees Higher Broadband Losses, Better Financial Trends, UBS Says",
+          "source": "MT Newswires",
+          "summary": "Charter Communications' (CHTR) Q3 results should show steeper broadband subscriber losses even as fi",
+          "url": "https://finance.yahoo.com/media-advertising/articles/charter-communications-sees-higher-broadband-184956501.html"
         },
         {
-          "date": "2026-09-04",
-          "title": "NetApp Raised Guidance as Ciena’s Revenue Jumped 37%. Are AI Networks and Storage Finally Converting Into Earnings?",
-          "source": "Insider Monkey",
-          "summary": "NetApp and Ciena delivered unusually strong results within a day of each other. NetApp’s fiscal Q1 revenue rose 30% to $2.03 billion, all-flash array sales grew 47% to $1.3 billion, and management raised full-year guidance. Ciena’s fiscal Q3 revenue climbed 37% to $1.67 billion, while adjusted earnings per share rose 215% to $2.11. NetApp, Inc. […]",
-          "url": "https://finance.yahoo.com/technology/ai/articles/netapp-raised-guidance-ciena-revenue-224652965.html"
+          "date": "2026-09-27",
+          "title": "Comcast’s Dividend Keeps Growing While the Market Treats It Like a Melting Ice Cube",
+          "source": "24/7 Wall St.",
+          "summary": "Comcast sits near a 52-week low with a fresh Sell rating, yet its free cash flow dwarfs what it costs to pay shareholders every quarter. Something in that math deserves a closer look before the market's verdict gets accepted as fact.",
+          "url": "https://247wallst.com/investing/2026/09/27/comcasts-dividend-keeps-growing-while-the-market-treats-it-like-a-melting-ice-cube/"
         },
         {
-          "date": "2026-09-04",
-          "title": "How Much Track Is Left For ANET Stock?",
+          "date": "2026-09-25",
+          "title": "Comcast Stock Hits Its Lowest Level in More Than a Decade. Why the Trouble Runs Deep.",
+          "source": "Barrons.com",
+          "summary": "Analysts at KeyBanc cite concerns about Comcast’s subscriber losses, slowdown in theme parks, and the NBCUniversal spinoff.",
+          "url": "https://www.barrons.com/articles/comcast-stock-sell-downgrade-charter-7658df5f?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "The Cheapest Stocks in the S&P 500: Are They a Bargain or a Trap?",
+          "source": "Barrons.com",
+          "summary": "Inflation is stubbornly high, but not in home broadband service.  There, telecom operators are making fiberoptic inroads in a business long dominated by cable television companies.  The result has been discounting:  UBS  reports that prices for various broadband service tiers are down 7% to 14% for fiber over the past year, and 17% to 27% for cable.",
+          "url": "https://www.barrons.com/articles/cable-stocks-cheap-telecom-inroads-4027cede?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "Are You Overpaying For Verizon Stock Versus Its Rivals?",
           "source": "Trefis",
-          "summary": "This AI networking star has a powerful business engine and a stock chart to match, but a recent pullback raises the question of whether the price of admission is simply too high.",
-          "url": "https://www.trefis.com/articles/614379/how-much-track-is-left-for-anet-stock/2026-09-04"
+          "summary": "A $10,000 stake in Verizon Communications (VZ) a year ago is now worth about $11,660, the top result in its group of five. Verizon ranks only third of the five on revenue growth and third again on operating margin. So are you paying for what Verizon earns today, or for a recovery it has only started to show.",
+          "url": "https://www.trefis.com/articles/616632/are-you-overpaying-for-verizon-stock-versus-its-rivals/2026-09-25"
         },
         {
-          "date": "2026-09-04",
-          "title": "Don't Overlook These 2 AI-Driven Tech Stocks After Earnings: CIEN, NTAP",
-          "source": "Zacks",
-          "summary": "While mega-cap AI stocks tend to grab most of the attention, investors shouldn't overlook Ciena (CIEN) and NetApp (NTAP) following record earnings reports this week.",
-          "url": "https://finance.yahoo.com/technology/ai/articles/dont-overlook-2-ai-driven-185500208.html"
+          "date": "2026-09-24",
+          "title": "Vecima Networks Q4 Earnings Call Highlights",
+          "source": "MarketBeat",
+          "summary": "Vecima Networks (TSE:VCM) reported record fourth-quarter revenue and adjusted EBITDA for fiscal 2026, driven by accelerating deliveries of its distributed access architecture, or DAA, broadband products and higher demand from cable and fiber network operators. President and CEO Sumit Kumar said the",
+          "url": "https://www.marketbeat.com/instant-alerts/transcript-vecima-networks-q4-earnings-call-highlights-2026-09-24/?utm_source=yahoofinance&utm_medium=yahoofinance"
         },
         {
-          "date": "2026-09-04",
-          "title": "Ciena Q3 Earnings Call Flags Supply as Key Constraint on 2027 Growth",
-          "source": "Zacks",
-          "summary": "CIEN sees at least 30% fiscal 2027 revenue growth as backlog heads above $10B, but component supply remains the key constraint on converting demand.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ciena-q3-earnings-call-flags-140000577.html"
+          "date": "2026-09-24",
+          "title": "‘They Are Gouging the Remaining Customers’: Clark to Internet Users on Autopay",
+          "source": "24/7 Wall St.",
+          "summary": "Consumer advocate Clark Howard says autopay subscribers are funding a quiet price creep that most households never notice until the damage is done. Find out what your current bill actually says versus what you agreed to pay.",
+          "url": "https://247wallst.com/personal-finance/2026/09/24/they-are-gouging-the-remaining-customers-clark-to-internet-users-on-autopay/"
         },
         {
-          "date": "2026-09-04",
-          "title": "Ciena Outlines Strong 2027 Outlook: What's Fueling the Momentum?",
-          "source": "Zacks",
-          "summary": "CIEN's AI-driven optical demand, record backlog and supply agreements underpin strong growth through fiscal 2027.",
-          "url": "https://finance.yahoo.com/technology/articles/ciena-outlines-strong-2027-outlook-132000731.html"
-        },
-        {
-          "date": "2026-09-04",
-          "title": "US Stock Market Today: S&P 500 Futures Edge Higher As Yields Ease Before Jobs",
-          "source": "Simply Wall St.",
-          "summary": "The Morning Bull - US Market Morning Update Friday, Sep, 4 2026 US stock futures are slightly higher this morning, with key contracts on the S&P 500 and Nasdaq 100 up around 0.1% to 0.2%, as investors balance easing bond pressure with mixed global growth signals. The US 10 year Treasury yield has slipped back toward 4.78%, which means borrowing costs for mortgages, credit cards and companies are a",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-market-today-p-081915564.html"
-        },
-        {
-          "date": "2026-09-04",
-          "title": "Ciena (CIEN) Stock Gets Fair Value Trim As Analysts Weigh AI Demand And Supply Limits",
-          "source": "Simply Wall St.",
-          "summary": "Ciena’s updated analyst model now reflects a fair value move from US$565.71 to US$551.86, signalling a modest reset of price expectations. This shift comes as recent research highlights a wide spread of views on where the stock should trade, even with many analysts pointing to strong AI and data center demand, solid order backlog, and ongoing supply constraints that influence reported results. Rea",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ciena-cien-stock-gets-fair-050724051.html"
+          "date": "2026-09-24",
+          "title": "An 8-Day Losing Streak Has Charter Communications Stock Down 20%",
+          "source": "Trefis",
+          "summary": "Charter Communications (CHTR) stock has now moved lower for 8 consecutive trading days, a cumulative loss of 20%. That streak has erased about $3.5 billion from the company's market value, which now stands at about $14 billion. For anyone holding the stock, the persistent selling has pushed the price to a new low for the year.",
+          "url": "https://www.trefis.com/articles/616412/an-8-day-losing-streak-has-charter-communications-stock-down-20/2026-09-24"
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 57.0,
-        "rsi": 81.0,
-        "rsi_proxy": 81.0,
-        "stoch_proxy": 97.6,
-        "bb_position": 130.6,
-        "sma50_vs_price": 18.22,
-        "sma200_vs_price": 12.77,
-        "macd_line": 7.3815,
-        "atr": 21.6443,
-        "momentum_divergence": -4.99,
+        "screening_date": "2026-10-08",
+        "score": 51.0,
+        "rsi": 8.0,
+        "rsi_proxy": 8.0,
+        "stoch_proxy": 11.9,
+        "bb_position": 22.4,
+        "sma50_vs_price": -22.11,
+        "sma200_vs_price": -37.52,
+        "macd_line": -9.6343,
+        "atr": 5.02,
+        "momentum_divergence": 23.63,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME ELEVATED: 2.33x avg — above-normal interest",
-          "SIGNIFICANT DRAWDOWN: -30.4% from 52w high",
-          "MOMENTUM SURGE: +25.0% in 5 days — sharp directional move",
-          "OVERBOUGHT: RSI proxy 81, Stoch proxy 98 — stretched, potential pullback"
+          "VOLUME NORMAL-HIGH: 1.20x avg",
+          "NEAR 52W LOW: +3.6% above annual support — critical level",
+          "MOMENTUM DIVERGENCE: 5d/20d gap +23.6pp — strong trend change signal",
+          "DEEPLY OVERSOLD: RSI proxy 8, Stoch proxy 12 — bounce candidate"
         ],
-        "rationale": "CIEN: volume running at 2.3x the daily average signals institutional-scale activity; a 25.0% five-day rally (20d: +30.0%) reveals strong directional pressure; price is +18.2% vs SMA50."
+        "rationale": "CHTR: price sits just +3.6% above the 52-week low (104.91) — a key decision zone; RSI proxy (8) and stochastic (12) in oversold territory support a bounce thesis; price is -22.1% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "CMCSA",
@@ -7602,7 +7836,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.71,
+      "volume_ratio": 0.9,
       "pct_from_52w_high": -32.73,
       "pct_from_52w_low": 1.32,
       "revenue_growth": null,
@@ -7672,8 +7906,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 49.8,
+        "screening_date": "2026-10-08",
+        "score": 51.5,
         "rsi": 15.3,
         "rsi_proxy": 15.3,
         "stoch_proxy": 9.5,
@@ -7681,7 +7915,7 @@
         "sma50_vs_price": -12.54,
         "sma200_vs_price": -17.86,
         "macd_line": -1.0094,
-        "atr": 0.5911,
+        "atr": 0.5907,
         "momentum_divergence": 17.93,
         "indicator_method": "yfinance_historical",
         "signals": [
@@ -7692,7 +7926,111 @@
         "rationale": "CMCSA: price sits just +1.3% above the 52-week low (21.28) — a key decision zone; RSI proxy (15) and stochastic (10) in oversold territory support a bounce thesis; price is -12.5% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
+    },
+    {
+      "symbol": "CAG",
+      "name": "Conagra Brands",
+      "tradeable": true,
+      "price": 13.45,
+      "pct_1d": 1.97,
+      "pct_5d": -4.81,
+      "pct_20d": -11.86,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 1.08,
+      "pct_from_52w_high": -31.38,
+      "pct_from_52w_low": 8.56,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Consumer Staples",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [
+        {
+          "date": "2026-09-30",
+          "title": "Stocks to Watch Recap: Micron, Boeing, Robinhood, Mattel",
+          "source": "The Wall Street Journal",
+          "summary": "🔎 Micron Technology (MU): The semiconductor company said profit and revenue surged in the fiscal fourth quarter, as its memory chips remained a hot commodity amid the build-out of artificial-intelligence infrastructure.",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-30-2026/card/stocks-to-watch-boeing-robinhood-micron-Zh5aqWdDbnLhaNy9BEHm?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Conagra Brands Inc (CAG) (Q1 2027) Earnings Call Highlights: Pricing Actions Kick In as ...",
+          "source": "GuruFocus.com",
+          "summary": "Conagra Brands Inc (CAG) reaffirms its full-year outlook as Q1 beats on EPS, but a 2% Q2 organic sales decline and higher transportation inflation keep the consumer environment muted.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/conagra-brands-inc-cag-q1-210049762.html"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Conagra Increases Prices to Cope With Soaring Transportation Costs",
+          "source": "The Wall Street Journal",
+          "summary": "Food giant Conagra had been planning for higher prices for beef, edible oils and packaging.  Now its inflation rate tied to transportation is doubling.  The maker of Slim Jim meat sticks and Orville Redenbacher’s popcorn on Wednesday pushed its inflation outlook for the current fiscal year to the higher end of its 5% to 6% range.",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-30-2026/card/conagra-increases-prices-to-cope-with-soaring-transportation-costs-LULLvQqYmeVxjCLbjg0V?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Conagra Sees Inflation Rising Due to High Transportation Costs",
+          "source": "The Wall Street Journal",
+          "summary": "The food manufacturer, which owns Orville Redenbacher’s popcorn and Slim Jim meat sticks, said fiscal first-quarter profit rose to $174.3 million, or 36 cents a share, from $164.5 million, or 34 cents a share, a year earlier.",
+          "url": "https://www.wsj.com/business/retail/conagra-profit-grows-despite-lower-sales-ccc6c415?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Conagra Brands Q1 Earnings Call Highlights",
+          "source": "MarketBeat",
+          "summary": "Conagra Brands (NYSE:CAG) reported a first-quarter fiscal 2027 organic net sales decline of 1.1%, while adjusted profit measures came in ahead of the company’s expectations. The maker of frozen meals, snacks and grocery staples reaffirmed its full-year outlook as it works through consumer spending p",
+          "url": "https://www.marketbeat.com/instant-alerts/transcript-conagra-brands-q1-earnings-call-highlights-2026-09-30/?utm_source=yahoofinance&utm_medium=yahoofinance"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Conagra Q1 Earnings & Revenues Beat Estimates on Lower SG&A",
+          "source": "Zacks",
+          "summary": "CAG beats fiscal first-quarter estimates as lower SG&A and higher equity income lifted earnings despite softer sales and volumes.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/conagra-q1-earnings-revenues-beat-155000910.html"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "What Conagra Brands (CAG) Said on Its Q1 Earnings Call",
+          "source": "MarketBeat",
+          "summary": "Conagra Brands (NYSE:CAG) executives said the company’s fiscal 2027 outlook remains unchanged following a first-quarter earnings beat, while emphasizing that transportation inflation, the rollout of pricing actions and investments in advertising will shape results in coming quarters. During the com",
+          "url": "https://www.marketbeat.com/instant-alerts/transcript-what-conagra-brands-cag-said-on-its-q1-earnings-call-2026-09-30/?utm_source=yahoofinance&utm_medium=yahoofinance"
+        },
+        {
+          "date": "2026-09-30",
+          "title": "Conagra shares fall as sales decline, overshadowing first-quarter profit beat",
+          "source": "Proactive",
+          "summary": "Conagra Brands Inc (NYSE:CAG) shares fell 4.6% after the packaged food maker reported a 1.4% drop in first-quarter revenue to $2.6 billion, with organic net sales down 1.1%, even as adjusted earnings topped Wall Street estimates. Revenue was slightly ahead of the $2.59 billion analysts...",
+          "url": "https://www.proactiveinvestors.com/companies/news/1099389/conagra-shares-fall-as-sales-decline-overshadowing-first-quarter-profit-beat-1099389.html"
+        }
+      ],
+      "technical": {
+        "screening_date": "2026-10-08",
+        "score": 51.0,
+        "rsi": 16.3,
+        "rsi_proxy": 16.3,
+        "stoch_proxy": 23.1,
+        "bb_position": 15.3,
+        "sma50_vs_price": -10.88,
+        "sma200_vs_price": -11.48,
+        "macd_line": -0.5275,
+        "atr": 0.435,
+        "momentum_divergence": 7.05,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "VOLUME NORMAL-HIGH: 1.01x avg",
+          "NEAR 52W LOW: +8.6% above annual support — critical level",
+          "MOMENTUM: -4.8% in 5 days",
+          "RSI OVERSOLD: RSI proxy 16, Stoch proxy 23 — momentum exhaustion signal"
+        ],
+        "rationale": "CAG: price sits just +8.6% above the 52-week low (12.39) — a key decision zone; RSI proxy (16) and stochastic (23) in oversold territory support a bounce thesis; price is -10.9% vs SMA50."
+      },
+      "analysis": null,
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "STZ",
@@ -7705,7 +8043,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 2.61,
+      "volume_ratio": 2.76,
       "pct_from_52w_high": -30.39,
       "pct_from_52w_low": 4.58,
       "revenue_growth": null,
@@ -7775,7 +8113,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 59.0,
         "rsi": 22.8,
         "rsi_proxy": 22.8,
@@ -7788,119 +8126,29 @@
         "momentum_divergence": 6.96,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME ELEVATED: 2.49x avg — above-normal interest",
+          "VOLUME ELEVATED: 2.42x avg — above-normal interest",
           "NEAR 52W LOW: +4.6% above annual support — critical level",
           "MOMENTUM: +2.6% in 5 days",
           "RSI OVERSOLD: RSI proxy 23, Stoch proxy 38 — momentum exhaustion signal"
         ],
-        "rationale": "STZ: volume running at 2.5x the daily average signals institutional-scale activity; price sits just +4.6% above the 52-week low (110.6) — a key decision zone; RSI proxy (23) and stochastic (38) in oversold territory support a bounce thesis; price is -8.5% vs SMA50."
+        "rationale": "STZ: volume running at 2.4x the daily average signals institutional-scale activity; price sits just +4.6% above the 52-week low (110.6) — a key decision zone; RSI proxy (23) and stochastic (38) in oversold territory support a bounce thesis; price is -8.5% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
-    },
-    {
-      "symbol": "CEG",
-      "name": "Constellation Energy",
-      "tradeable": true,
-      "price": 300.4,
-      "pct_1d": 12.25,
-      "pct_5d": 13.54,
-      "pct_20d": 0.45,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 4.14,
-      "pct_from_52w_high": -26.8,
-      "pct_from_52w_low": 31.59,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Utilities",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-07-10",
-          "title": "‘Staggering’: Goldman Sachs Says China’s Oil Demand May Never Fully Recover",
-          "source": "24/7 Wall St.",
-          "summary": "Goldman Sachs is warning that a collapse in Chinese oil demand may be only partly reversible, and the reason has less to do with the Strait of Hormuz than with what Chinese drivers and truckers are quietly doing right now.",
-          "url": "https://247wallst.com/investing/2026/07/10/staggering-goldman-sachs-says-chinas-oil-demand-may-never-fully-recover/"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "Energy Transition Update - Statkraft Expands With Major Wind Project In Brazil",
-          "source": "Simply Wall St.",
-          "summary": "Statkraft has announced its investment in a 280 MW onshore wind project, Gran Sul, located in Rio Grande do Sul, Brazil. This project marks a significant addition to Statkraft’s renewable energy endeavors in a key international growth market. Boasting robust wind resources in southern Brazil, the Gran Sul project will contribute to the country's electricity grid and support the energy transition b",
-          "url": "https://finance.yahoo.com/energy/articles/energy-transition-statkraft-expands-major-113712429.html"
-        },
-        {
-          "date": "2026-07-09",
-          "title": "AI Stocks Look Expensive. These 3 ETFs Could Help Investors Stay in the Game.",
-          "source": "Barchart",
-          "summary": "Investors don't have to own just chip stocks to benefit from the AI boom.",
-          "url": "https://www.barchart.com/story/news/3201847/ai-stocks-look-expensive-these-3-etfs-could-help-investors-stay-in-the-game"
-        },
-        {
-          "date": "2026-07-08",
-          "title": "Constellation Energy Corporation (CEG) Gains As Market Dips: What You Should Know",
-          "source": "Zacks",
-          "summary": "The latest trading day saw Constellation Energy Corporation (CEG) settling at $244.52, representing a +2.01% change from its previous close.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/constellation-energy-corporation-ceg-gains-214505464.html"
-        },
-        {
-          "date": "2026-07-08",
-          "title": "Best Stocks to Buy Now in July: CEG for Value, Growth, and 70% Upside",
-          "source": "Zacks",
-          "summary": "Buy Constellation Energy (CEG) stock now for long-term growth, dividends, value, and 70% upside as the nuclear power giant and 21st-Century energy star attempts to find its footing at a key technical level.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/best-stocks-buy-now-july-212000473.html"
-        },
-        {
-          "date": "2026-07-08",
-          "title": "XLU vs. VPU: Which Utilities ETF Best Powers the AI Data-Center Boom?",
-          "source": "24/7 Wall St.",
-          "summary": "The AI data-center power crunch has turned utilities from bond proxies into growth stocks, and two funds sit at the center of that trade: the Utilities Select Sector SPDR Fund (NYSEARCA:XLU) and the Vanguard Utilities Index Fund ETF (NYSEARCA:VPU). They look nearly identical on a screener, but they make different bets on who actually captures ... XLU vs. VPU: Which Utilities ETF Best Powers the AI",
-          "url": "https://247wallst.com/investing/etf/2026/07/08/xlu-vs-vpu-which-utilities-etf-best-powers-the-ai-data-center-boom/"
-        },
-        {
-          "date": "2026-07-08",
-          "title": "CEG Stock Trails Industry in the Past Year: Time to Buy, Hold or Sell?",
-          "source": "Zacks",
-          "summary": "CEG's cheaper valuation, lower debt use and improving earnings outlook may offer a favorable entry point despite recent share price weakness.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ceg-stock-trails-industry-past-160600944.html"
-        },
-        {
-          "date": "2026-07-08",
-          "title": "Nvidia Is Allegedly Delaying Its Kyber Rack-Scale Architecture by More Than 12 Months. What This Means for NVDA Stock.",
-          "source": "Barchart",
-          "summary": "Nvidia's decision is due to manufacturing challenges with high-speed circuit boards and optical components, though the broader AI chip roadmap remains on track.",
-          "url": "https://www.barchart.com/story/news/3187711/nvidia-is-allegedly-delaying-its-kyber-rack-scale-architecture-by-more-than-12-months-what-this-means-for-nvda-stock"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-10-06",
-        "score": 59.0,
-        "rsi": 72.4,
-        "rsi_proxy": 72.4,
-        "stoch_proxy": 85.0,
-        "bb_position": 115.0,
-        "sma50_vs_price": 10.51,
-        "sma200_vs_price": 4.9,
-        "macd_line": -0.5728,
-        "atr": 12.8707,
-        "momentum_divergence": 13.09,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 3.77x avg — extreme institutional activity",
-          "MOMENTUM SURGE: +13.5% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +13.1pp — emerging trend shift",
-          "OVERBOUGHT: RSI proxy 72, Stoch proxy 85 — stretched, potential pullback"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 5,
+        "bull": [
+          "Volume 2.8x with positive day, RSI 23 oversold",
+          "Beer premiumization"
         ],
-        "rationale": "CEG: volume running at 3.8x the daily average signals institutional-scale activity; a 13.5% five-day rally (20d: +0.5%) reveals strong directional pressure; price is +10.5% vs SMA50."
+        "bear": [
+          "Below SMA50/200, -30% from high"
+        ],
+        "summary": "Oversold with volume-backed bounce but trend still down.",
+        "key_risk": "Weak consumer demand for beer"
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "CPRT",
@@ -7913,7 +8161,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.11,
+      "volume_ratio": 0.82,
       "pct_from_52w_high": -41.56,
       "pct_from_52w_low": 0.68,
       "revenue_growth": null,
@@ -7983,8 +8231,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 51.9,
+        "screening_date": "2026-10-08",
+        "score": 49.8,
         "rsi": 12.3,
         "rsi_proxy": 12.3,
         "stoch_proxy": 4.3,
@@ -7992,7 +8240,7 @@
         "sma50_vs_price": -11.85,
         "sma200_vs_price": -19.65,
         "macd_line": -1.1307,
-        "atr": 0.6871,
+        "atr": 0.6879,
         "momentum_divergence": 16.55,
         "indicator_method": "yfinance_historical",
         "signals": [
@@ -8003,7 +8251,7 @@
         "rationale": "CPRT: price sits just +0.7% above the 52-week low (26.64) — a key decision zone; RSI proxy (12) and stochastic (4) in oversold territory support a bounce thesis; price is -11.8% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "CTVA",
@@ -8016,7 +8264,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 8.02,
+      "volume_ratio": 7.14,
       "pct_from_52w_high": -84.69,
       "pct_from_52w_low": 18.48,
       "revenue_growth": null,
@@ -8086,7 +8334,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 70.0,
         "rsi": 5.3,
         "rsi_proxy": 5.3,
@@ -8099,119 +8347,29 @@
         "momentum_divergence": 1.67,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME ELEVATED: 1.93x avg — above-normal interest",
+          "VOLUME ELEVATED: 1.63x avg — above-normal interest",
           "DEEP DRAWDOWN: -84.7% from 52w high — severe compression, mean-reversion potential",
           "MOMENTUM SELLOFF: -82.1% in 5 days — sharp directional move",
           "DEEPLY OVERSOLD: RSI proxy 5, Stoch proxy 3 — bounce candidate"
         ],
-        "rationale": "CTVA: volume running at 1.9x the daily average signals institutional-scale activity; a 82.1% five-day selloff (20d: -83.8%) reveals strong directional pressure; stock has shed 85% from its 52-week high — potential deep value or extended downtrend; RSI proxy (5) and stochastic (3) in oversold territory support a bounce thesis; price is -81.6% vs SMA50."
+        "rationale": "CTVA: volume running at 1.6x the daily average signals institutional-scale activity; a 82.1% five-day selloff (20d: -83.8%) reveals strong directional pressure; stock has shed 85% from its 52-week high — potential deep value or extended downtrend; RSI proxy (5) and stochastic (3) in oversold territory support a bounce thesis; price is -81.6% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
-    },
-    {
-      "symbol": "EQT",
-      "name": "EQT Corporation",
-      "tradeable": true,
-      "price": 52.47,
-      "pct_1d": 2.64,
-      "pct_5d": 7.34,
-      "pct_20d": -4.81,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 0.76,
-      "pct_from_52w_high": -22.66,
-      "pct_from_52w_low": 9.79,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Energy",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-09-03",
-          "title": "Why Is EOG Resources (EOG) Up 11% Since Last Earnings Report?",
-          "source": "Zacks",
-          "summary": "EOG Resources (EOG) reported earnings 30 days ago. What's next for the stock? We take a look at earnings estimates for some clues.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-eog-resources-eog-11-153012782.html"
-        },
-        {
-          "date": "2026-08-31",
-          "title": "EQT (EQT): 3 Reasons We Love This Stock",
-          "source": "StockStory",
-          "summary": "Over the last six months, EQT’s shares have sunk to $54.63, producing a disappointing 11.4% loss - a stark contrast to the S&P 500’s 12.3% gain. This might have investors contemplating their next move.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/eqt-eqt-3-reasons-love-163824978.html"
-        },
-        {
-          "date": "2026-08-28",
-          "title": "Comstock (CRK) Up 15.1% Since Last Earnings Report: Can It Continue?",
-          "source": "Zacks",
-          "summary": "Comstock (CRK) reported earnings 30 days ago. What's next for the stock? We take a look at earnings estimates for some clues.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/comstock-crk-15-1-since-153005516.html"
-        },
-        {
-          "date": "2026-08-25",
-          "title": "Is CRK Stock Worth Buying Despite Heavy Spending and Weak Estimates?",
-          "source": "Zacks",
-          "summary": "Comstock's improving production and deep inventory offer upside, but heavy spending, leverage and weaker estimates keep the near-term case in check.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/crk-stock-worth-buying-despite-172800549.html"
-        },
-        {
-          "date": "2026-08-25",
-          "title": "3 Contrarian Trades for a Market That Looks Too Hot",
-          "source": "MarketBeat",
-          "summary": "TradeSmith's Jeff Clark favors call options over shares on TLT, UNG and SMH to limit risk, citing Treasury bonds, natural gas and semiconductors as contrarian plays as major indexes trade near record highs.",
-          "url": "https://www.marketbeat.com/articles/3-contrarian-trades-for-a-market-that-looks-too-hot/?utm_source=yahoofinance&utm_medium=yahoofinance"
-        },
-        {
-          "date": "2026-08-24",
-          "title": "EQT (EQT) Stock May Be Undervalued After A 10 Year Gas Deal",
-          "source": "Simply Wall St.",
-          "summary": "EQT stock has delivered a very strong 218.5% return over the past five years, yet the current valuation checks still suggest the shares lean cheap rather than fully priced in. With recent news highlighting both contract visibility and balance sheet progress, investors are weighing how much of that story is already reflected in the price. A 218.5% gain over five years shows EQT has already created ",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/eqt-eqt-stock-may-undervalued-160940429.html"
-        },
-        {
-          "date": "2026-08-24",
-          "title": "Why EQT (EQT) Is Getting Attention Today",
-          "source": "Simply Wall St.",
-          "summary": "EQT (EQT) reported better than expected adjusted profit for the fourth quarter as higher natural gas prices and stronger sales volumes lifted results. Increased demand from data centers and liquefied natural gas exports played a central role in this performance. See our latest analysis for EQT. Even with the fourth quarter beat, EQT's recent share price performance has been mixed, with a 90 day sh",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-eqt-eqt-getting-attention-151244460.html"
-        },
-        {
-          "date": "2026-08-24",
-          "title": "How Investors Are Reacting To EQT (EQT) Earnings Beat On Higher Gas Prices And Data Center Demand",
-          "source": "Simply Wall St.",
-          "summary": "EQT Corporation recently reported quarterly results that exceeded Wall Street profit estimates, supported by higher realized natural gas prices and stronger sales volumes tied to power-hungry data centers and growing LNG exports. This performance highlights how EQT’s scale in Appalachian natural gas production can translate rising demand into stronger cash generation and operating efficiency. We’l",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-eqt-eqt-earnings-120851031.html"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-10-06",
-        "score": 49.1,
-        "rsi": 60.8,
-        "rsi_proxy": 60.8,
-        "stoch_proxy": 98.5,
-        "bb_position": 65.9,
-        "sma50_vs_price": -0.57,
-        "sma200_vs_price": -5.01,
-        "macd_line": -0.7104,
-        "atr": 1.3196,
-        "momentum_divergence": 12.15,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "NEAR 52W LOW: +9.8% above annual support — critical level",
-          "MOMENTUM: +7.3% in 5 days — continued BUYING pressure",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +12.2pp — emerging trend shift",
-          "OVERBOUGHT: RSI proxy 61, Stoch proxy 98 — stretched, potential pullback"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 3,
+        "bull": [
+          "Raised FY2026 outlook on seed strength",
+          "Split plans on track"
         ],
-        "rationale": "EQT: a 7.3% five-day rally (20d: -4.8%) reveals strong directional pressure; price sits just +9.8% above the 52-week low (47.79) — a key decision zone; price is -0.6% vs SMA50."
+        "bear": [
+          "-82% in 5d looks like a spin-off/split price artifact, data unreliable"
+        ],
+        "summary": "Price drop likely reflects corporate separation not a real crash; data unreliable so avoid trading.",
+        "key_risk": "Bad price data from separation distorting signals"
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "FICO",
@@ -8224,8 +8382,8 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 3.69,
-      "pct_from_52w_high": -63.03,
+      "volume_ratio": 3.89,
+      "pct_from_52w_high": -62.59,
       "pct_from_52w_low": 18.67,
       "revenue_growth": null,
       "earnings_growth": null,
@@ -8294,7 +8452,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 69.0,
         "rsi": 21.3,
         "rsi_proxy": 21.3,
@@ -8303,20 +8461,34 @@
         "sma50_vs_price": -30.85,
         "sma200_vs_price": -42.42,
         "macd_line": -106.2004,
-        "atr": 54.9119,
+        "atr": 54.9136,
         "momentum_divergence": 38.04,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.37x avg",
-          "DEEP DRAWDOWN: -63.0% from 52w high — severe compression, mean-reversion potential",
+          "VOLUME NORMAL-HIGH: 1.41x avg",
+          "DEEP DRAWDOWN: -62.6% from 52w high — severe compression, mean-reversion potential",
           "MOMENTUM SURGE: +12.6% in 5 days — sharp directional move",
           "MOMENTUM DIVERGENCE: 5d/20d gap +38.0pp — strong trend change signal",
           "RSI OVERSOLD: RSI proxy 21, Stoch proxy 27 — momentum exhaustion signal"
         ],
         "rationale": "FICO: a 12.6% five-day rally (20d: -25.5%) reveals strong directional pressure; stock has shed 63% from its 52-week high — potential deep value or extended downtrend; RSI proxy (21) and stochastic (27) in oversold territory support a bounce thesis; price is -30.9% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "bull": [
+          "Best margins/growth vs peers; RSI 21 deeply oversold",
+          "+12.6% 5d bounce on 3.9x volume"
+        ],
+        "bear": [
+          "-62% from high, below SMA50/200, falling credit-bureau peers"
+        ],
+        "summary": "Oversold bounce attempt inside a heavy downtrend with no company-specific news; wait for confirmation.",
+        "key_risk": "Sector-wide credit-scoring derating continues"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "FLEX",
@@ -8329,7 +8501,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.56,
+      "volume_ratio": 0.62,
       "pct_from_52w_high": -27.26,
       "pct_from_52w_low": 128.72,
       "revenue_growth": null,
@@ -8399,8 +8571,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 25.9,
+        "screening_date": "2026-10-08",
+        "score": 26.6,
         "rsi": 72.6,
         "rsi_proxy": 72.6,
         "stoch_proxy": 96.8,
@@ -8418,37 +8590,36 @@
         "rationale": "FLEX: a 6.6% five-day rally (20d: +6.2%) reveals strong directional pressure; price is +6.3% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-10-07",
+        "analysis_date": "2026-10-08",
         "tier": "deep",
         "verdict": "BULL",
         "confidence": 6,
         "bull": [
-          "AI-datacenter/networking-efterspørgsel og reshoring-medvind",
-          "Stærk trend: pris 21% over SMA200, MACD positiv"
+          "Above SMA50/200, reshoring tailwind",
+          "+6.6% 5d, MACD positive"
         ],
         "bear": [
-          "RSI 72.6 og over øvre Bollinger-bånd antyder kortsigtet overophedning",
-          "Lav volumen bag udbruddet (0.56-0.86x)"
+          "RSI 72.6 overbought, above upper Bollinger"
         ],
-        "summary": "Stærk AI-drevet optrend, men kortsigtet overkøbt; momentum favoriserer hold med risiko for pullback.",
-        "key_risk": "Pullback mod SMA50 (~114) ved AI-capex-skuffelse eller tariffer."
+        "summary": "Uptrend with tariff-driven reshoring tailwind, but overbought short term.",
+        "key_risk": "Pullback from overbought levels"
       },
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
-      "symbol": "FTNT",
-      "name": "Fortinet",
+      "symbol": "GEN",
+      "name": "Gen Digital",
       "tradeable": true,
-      "price": 191.27,
-      "pct_1d": 3.88,
-      "pct_5d": 8.7,
-      "pct_20d": 21.46,
+      "price": 22.8,
+      "pct_1d": 2.33,
+      "pct_5d": 9.35,
+      "pct_20d": -23.52,
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.73,
-      "pct_from_52w_high": -0.59,
-      "pct_from_52w_low": 160.05,
+      "volume_ratio": 2.23,
+      "pct_from_52w_high": -27.96,
+      "pct_from_52w_low": 29.47,
       "revenue_growth": null,
       "earnings_growth": null,
       "market_cap": null,
@@ -8457,31 +8628,87 @@
       "next_earnings_date": null,
       "overview": "",
       "fin_summary": "",
-      "news": [],
+      "news": [
+        {
+          "date": "2026-09-29",
+          "title": "Gen Digital (GEN) Loses 32.7% in 4 Weeks, Here's Why a Trend Reversal May be Around the Corner",
+          "source": "Zacks",
+          "summary": "The heavy selling pressure might have exhausted for Gen Digital (GEN) as it is technically in oversold territory now. In addition to this technical measure, strong agreement among Wall Street analysts in revising earnings estimates higher indicates that the stock is ripe for a trend reversal.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/gen-digital-gen-loses-32-123502837.html"
+        },
+        {
+          "date": "2026-09-28",
+          "title": "Gen Digital CEO addresses GoDaddy acquisition rumors",
+          "source": "Investing.com",
+          "summary": "Investing.com -- Gen Digital Inc. (NASDAQ:GEN) shares rose 5% in after-hours trading Monday after CEO Vincent Pilette addressed recent acquisition speculation and highlighted the company’s recently raised fiscal 2027 outlook.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/gen-digital-ceo-addresses-godaddy-211119483.html"
+        },
+        {
+          "date": "2026-09-27",
+          "title": "GoDaddy Jumps on Takeover Report While the Would-Be Buyer’s Stock Sinks",
+          "source": "24/7 Wall St.",
+          "summary": "When a takeover report sends the would-be buyer's stock tumbling far harder than the target's rises, the market is saying something worth listening to about who really benefits from this deal.",
+          "url": "https://247wallst.com/investing/2026/09/27/godaddy-jumps-on-takeover-report-while-the-would-be-buyers-stock-sinks/"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "US Equity Markets End Higher Amid Falling Oil Prices Following Iran's Proposal to Reopen Strait of Hormuz",
+          "source": "MT Newswires",
+          "summary": "US equity indexes were higher Friday after crude oil prices declined following Iran's conditional pr",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-end-higher-201555554.html"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "Gen Digital Potential GoDaddy Deal Could Be Transformational, RBC Says",
+          "source": "MT Newswires",
+          "summary": "Gen Digital's (GEN) potential acquisition of GoDaddy (GDDY) could be a sizable, transformational dea",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/gen-digital-potential-godaddy-deal-152923060.html"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "Is Gen Digital (GEN) Undervalued On GoDaddy Bid Speculation?",
+          "source": "Simply Wall St.",
+          "summary": "Gen Digital (GEN) is back in focus after reports that the cyber safety group has made a takeover approach for GoDaddy, a move that would pair internet security tools with a large domain and hosting customer base. The reported GoDaddy approach has come after a sharp pullback in Gen Digital’s trading performance, with the stock down 12.05% on a 1-day share price return basis and 20.48% over 7 days. ",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/gen-digital-gen-undervalued-godaddy-121050676.html"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "Update: Market Chatter: Gen Digital Makes Initial Takeover Approach for GoDaddy",
+          "source": "MT Newswires",
+          "summary": "(Updates with Gen Digital's and GoDaddy's responses in the fourth paragraph, and each stock's premar",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/market-chatter-gen-digital-makes-115248934.html"
+        },
+        {
+          "date": "2026-09-25",
+          "title": "Gen Digital (GEN) Wants to Buy GoDaddy. So Why Did Its Own Stock Crash 12%?",
+          "source": "Insider Monkey",
+          "summary": "Gen Digital Inc. (NASDAQ:GEN) offers consumer cyber-safety software that protects home computers and personal identities. On September 24, 2026, reports surfaced that Gen had made a preliminary approach to buy web-services provider GoDaddy in a transaction valued at $12 billion. While GoDaddy’s stock jumped, Gen’s fell 12% to $23.07, the day’s biggest large-cap decline. As […]",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/gen-digital-gen-wants-buy-234051847.html"
+        }
+      ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 51.0,
-        "rsi": 75.5,
-        "rsi_proxy": 75.5,
-        "stoch_proxy": 95.7,
-        "bb_position": 101.9,
-        "sma50_vs_price": 15.88,
-        "sma200_vs_price": 59.87,
-        "macd_line": 6.069,
-        "atr": 6.1379,
-        "momentum_divergence": -12.76,
+        "rsi": 18.7,
+        "rsi_proxy": 18.7,
+        "stoch_proxy": 23.5,
+        "bb_position": 28.9,
+        "sma50_vs_price": -18.02,
+        "sma200_vs_price": -6.47,
+        "macd_line": -1.9839,
+        "atr": 1.3957,
+        "momentum_divergence": 32.87,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.06x avg",
-          "NEAR 52W HIGH: -0.6% — breakout territory",
-          "MOMENTUM SURGE: +8.7% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap -12.8pp — emerging trend shift",
-          "OVERBOUGHT: RSI proxy 76, Stoch proxy 96 — stretched, potential pullback"
+          "VOLUME NORMAL-HIGH: 1.13x avg",
+          "MOMENTUM SURGE: +9.3% in 5 days — sharp directional move",
+          "MOMENTUM DIVERGENCE: 5d/20d gap +32.9pp — strong trend change signal",
+          "RSI OVERSOLD: RSI proxy 19, Stoch proxy 24 — momentum exhaustion signal"
         ],
-        "rationale": "FTNT: a 8.7% five-day rally (20d: +21.5%) reveals strong directional pressure; stock is pressing against its 52-week high at -0.6% — breakout watch; price is +15.9% vs SMA50."
+        "rationale": "GEN: a 9.3% five-day rally (20d: -23.5%) reveals strong directional pressure; RSI proxy (19) and stochastic (24) in oversold territory support a bounce thesis; price is -18.0% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "GIS",
@@ -8494,8 +8721,8 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.19,
-      "pct_from_52w_high": -33.32,
+      "volume_ratio": 1.17,
+      "pct_from_52w_high": -32.89,
       "pct_from_52w_low": 3.21,
       "revenue_growth": null,
       "earnings_growth": null,
@@ -8564,8 +8791,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 50.7,
+        "screening_date": "2026-10-08",
+        "score": 50.4,
         "rsi": 19.4,
         "rsi_proxy": 19.4,
         "stoch_proxy": 16.6,
@@ -8573,7 +8800,7 @@
         "sma50_vs_price": -13.07,
         "sma200_vs_price": -15.03,
         "macd_line": -1.6059,
-        "atr": 1.0036,
+        "atr": 1.0043,
         "momentum_divergence": 9.77,
         "indicator_method": "yfinance_historical",
         "signals": [
@@ -8585,7 +8812,55 @@
         "rationale": "GIS: price sits just +3.2% above the 52-week low (31.18) — a key decision zone; RSI proxy (19) and stochastic (17) in oversold territory support a bounce thesis; price is -13.1% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
+    },
+    {
+      "symbol": "HPE",
+      "name": "Hewlett Packard Enterprise",
+      "tradeable": true,
+      "price": 70.48,
+      "pct_1d": 3.1,
+      "pct_5d": 14.62,
+      "pct_20d": 26.11,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 1.07,
+      "pct_from_52w_high": -1.04,
+      "pct_from_52w_low": 260.14,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Information Technology",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [],
+      "technical": {
+        "screening_date": "2026-10-08",
+        "score": 51.0,
+        "rsi": 81.8,
+        "rsi_proxy": 81.8,
+        "stoch_proxy": 94.8,
+        "bb_position": 101.0,
+        "sma50_vs_price": 24.77,
+        "sma200_vs_price": 89.58,
+        "macd_line": 3.5814,
+        "atr": 3.5851,
+        "momentum_divergence": -11.49,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "VOLUME NORMAL-HIGH: 1.15x avg",
+          "NEAR 52W HIGH: -1.0% — breakout territory",
+          "MOMENTUM SURGE: +14.6% in 5 days — sharp directional move",
+          "MOMENTUM DIVERGENCE: 5d/20d gap -11.5pp — emerging trend shift",
+          "OVERBOUGHT: RSI proxy 82, Stoch proxy 95 — stretched, potential pullback"
+        ],
+        "rationale": "HPE: a 14.6% five-day rally (20d: +26.1%) reveals strong directional pressure; stock is pressing against its 52-week high at -1.0% — breakout watch; price is +24.8% vs SMA50."
+      },
+      "analysis": null,
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "INTU",
@@ -8598,7 +8873,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.95,
+      "volume_ratio": 0.96,
       "pct_from_52w_high": -57.55,
       "pct_from_52w_low": 15.13,
       "revenue_growth": null,
@@ -8668,8 +8943,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 60.8,
+        "screening_date": "2026-10-08",
+        "score": 60.7,
         "rsi": 31.6,
         "rsi_proxy": 31.6,
         "stoch_proxy": 44.7,
@@ -8677,7 +8952,7 @@
         "sma50_vs_price": -10.24,
         "sma200_vs_price": -25.31,
         "macd_line": -13.0426,
-        "atr": 11.1239,
+        "atr": 11.1243,
         "momentum_divergence": 17.26,
         "indicator_method": "yfinance_historical",
         "signals": [
@@ -8688,8 +8963,21 @@
         ],
         "rationale": "INTU: a 8.1% five-day rally (20d: -9.1%) reveals strong directional pressure; stock has shed 58% from its 52-week high — potential deep value or extended downtrend; RSI proxy (32) and stochastic (45) in oversold territory support a bounce thesis; price is -10.2% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "bull": [
+          "+8% 5d bounce from oversold RSI 32"
+        ],
+        "bear": [
+          "-57% from high, below SMA50/200, MACD negative"
+        ],
+        "summary": "Early bounce in a deep downtrend; no confirmed reversal yet.",
+        "key_risk": "Software sector derating"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "KEYS",
@@ -8702,7 +8990,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.08,
+      "volume_ratio": 0.76,
       "pct_from_52w_high": -0.49,
       "pct_from_52w_low": 144.37,
       "revenue_growth": null,
@@ -8772,8 +9060,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 45.0,
+        "screening_date": "2026-10-08",
+        "score": 40.5,
         "rsi": 96.0,
         "rsi_proxy": 96.0,
         "stoch_proxy": 96.9,
@@ -8785,7 +9073,6 @@
         "momentum_divergence": -8.79,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.36x avg",
           "NEAR 52W HIGH: -0.5% — breakout territory",
           "MOMENTUM: +7.6% in 5 days — continued BUYING pressure",
           "MOMENTUM DIVERGENCE: 5d/20d gap -8.8pp — emerging trend shift",
@@ -8794,22 +9081,20 @@
         "rationale": "KEYS: a 7.6% five-day rally (20d: +16.4%) reveals strong directional pressure; stock is pressing against its 52-week high at -0.5% — breakout watch; price is +15.2% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-10-07",
+        "analysis_date": "2026-10-08",
         "tier": "deep",
-        "verdict": "NEUTRAL",
+        "verdict": "BULL",
         "confidence": 5,
         "bull": [
-          "Positive estimatrevisioner og AI-drevet testefterspørgsel",
-          "Nær 52-ugers high med øget volumen"
+          "Near 52w high, +16% 20d, strong trend"
         ],
         "bear": [
-          "RSI 96 er ekstremt overkøbt; pris 15% over SMA50",
-          "Op ca. 144% fra 52-ugers low – høj risiko for mean reversion"
+          "RSI 96 extremely overbought, high pullback risk"
         ],
-        "summary": "Fundamentalt stærk men teknisk ekstremt strakt; gevinstsikring/stram stop er rimeligt.",
-        "key_risk": "Skarp tilbagegang fra ekstrem overkøbthed (RSI 96)."
+        "summary": "Strong uptrend but extremely overbought; consider trimming into strength.",
+        "key_risk": "Sharp mean reversion"
       },
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "KHC",
@@ -8822,7 +9107,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.28,
+      "volume_ratio": 0.98,
       "pct_from_52w_high": -20.33,
       "pct_from_52w_low": 8.31,
       "revenue_growth": null,
@@ -8835,8 +9120,8 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 53.4,
+        "screening_date": "2026-10-08",
+        "score": 51.8,
         "rsi": 8.1,
         "rsi_proxy": 8.1,
         "stoch_proxy": 7.8,
@@ -8855,7 +9140,7 @@
         "rationale": "KHC: a 6.1% five-day selloff (20d: -11.5%) reveals strong directional pressure; price sits just +8.3% above the 52-week low (20.34) — a key decision zone; RSI proxy (8) and stochastic (8) in oversold territory support a bounce thesis; price is -10.5% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "LVS",
@@ -8868,7 +9153,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.97,
+      "volume_ratio": 0.94,
       "pct_from_52w_high": -47.56,
       "pct_from_52w_low": 0.64,
       "revenue_growth": null,
@@ -8938,7 +9223,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 61.6,
         "rsi": 14.8,
         "rsi_proxy": 14.8,
@@ -8958,8 +9243,125 @@
         ],
         "rationale": "LVS: a 5.2% five-day selloff (20d: -17.4%) reveals strong directional pressure; price sits just +0.6% above the 52-week low (36.08) — a key decision zone; RSI proxy (15) and stochastic (4) in oversold territory support a bounce thesis; price is -16.4% vs SMA50."
       },
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "BEAR",
+        "confidence": 4,
+        "bull": [
+          "RSI 14.8 extremely oversold, near 52w low"
+        ],
+        "bear": [
+          "Below SMA50 and SMA200, uneven Vegas/Macau demand"
+        ],
+        "summary": "Persistent downtrend near 52w low; oversold bounce possible but trend is negative.",
+        "key_risk": "Weak gaming demand"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
+    },
+    {
+      "symbol": "LDOS",
+      "name": "Leidos",
+      "tradeable": true,
+      "price": 116.69,
+      "pct_1d": -2.31,
+      "pct_5d": -5.21,
+      "pct_20d": -9.42,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 1.35,
+      "pct_from_52w_high": -42.63,
+      "pct_from_52w_low": 18.42,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Industrials",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [
+        {
+          "date": "2026-08-04",
+          "title": "Leidos Holdings Inc (LDOS) (Q2 2026) Earnings Call Highlights: Record Revenue and Raised ...",
+          "source": "GuruFocus.com",
+          "summary": "Defense segment surges with 2.2 book-to-bill ratio, while VA incentive suspension and MHS Genesis uncertainty temper overall growth outlook.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/leidos-holdings-inc-ldos-q2-190241577.html"
+        },
+        {
+          "date": "2026-08-04",
+          "title": "Is Leidos Holdings (LDOS) Cheap Following Its Earnings Beat And Higher Guidance?",
+          "source": "Simply Wall St.",
+          "summary": "Leidos Holdings (LDOS) reported second quarter 2026 results and updated its outlook, giving investors fresh data on revenue, earnings and guidance after a run of new contract wins and capital returns. See our latest analysis for Leidos Holdings. The recent earnings beat, higher full year guidance and a series of defense and AI related contract wins have helped Leidos Holdings shares post a 9.1% 30",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/leidos-holdings-ldos-cheap-following-161254956.html"
+        },
+        {
+          "date": "2026-08-04",
+          "title": "Leidos' Q2 Earnings Surpass Estimates, Revenues Improve Y/Y",
+          "source": "Zacks",
+          "summary": "LDOS beats Q2 earnings and revenue estimates as defense, homeland and intelligence demand fuel growth, prompting higher 2026 guidance.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/leidos-q2-earnings-surpass-estimates-142900964.html"
+        },
+        {
+          "date": "2026-08-04",
+          "title": "Compared to Estimates, Leidos (LDOS) Q2 Earnings: A Look at Key Metrics",
+          "source": "Zacks",
+          "summary": "The headline numbers for Leidos (LDOS) give insight into how the company performed in the quarter ended June 2026, but it may be worthwhile to compare some of its key metrics to Wall Street estimates and the year-ago actuals.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/compared-estimates-leidos-ldos-q2-133004250.html"
+        },
+        {
+          "date": "2026-08-04",
+          "title": "Leidos Shares Jump After Strong Second-Quarter Results and Higher Full-Year Guidance",
+          "source": "InvestorsHub",
+          "summary": "Leidos Holdings Inc. (NYSE:LDOS) reported second-quarter 2026 results that comfortably exceeded Wall Street expectations, prompting the defence and technology contractor to raise its financial outlook for the full year.",
+          "url": "https://investorshub.advfn.com/market-news/article/33324/leidos-shares-jump-after-strong-second-quarter-results-and-higher-full-year-guidance"
+        },
+        {
+          "date": "2026-08-04",
+          "title": "Leidos (LDOS) Q2 Earnings and Revenues Top Estimates",
+          "source": "Zacks",
+          "summary": "Leidos (LDOS) delivered earnings and revenue surprises of +12.41% and +4.50%, respectively, for the quarter ended June 2026. Do the numbers hold clues to what lies ahead for the stock?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/leidos-ldos-q2-earnings-revenues-111002874.html"
+        },
+        {
+          "date": "2026-08-04",
+          "title": "Leidos (NYSE:LDOS) Exceeds Q2 CY2026 Expectations, Stock Soars",
+          "source": "StockStory",
+          "summary": "Defense contractor Leidos (NYSE:LDOS) beat Wall Street’s revenue expectations in Q2 CY2026, with sales up 7.2% year on year to $4.56 billion. The company expects the full year’s revenue to be around $18.3 billion, close to analysts’ estimates. Its non-GAAP profit of $3.26 per share was 12.1% above analysts’ consensus estimates.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/leidos-nyse-ldos-exceeds-q2-102847657.html"
+        },
+        {
+          "date": "2026-08-04",
+          "title": "SpaceX’s First Earnings Offer a Chance to Reverse Stock’s Plunge",
+          "source": "Bloomberg",
+          "summary": "(Bloomberg) -- SpaceX’s first earnings report following its blockbuster initial public offering is one of the most anticipated events of the summer on Wall Street. Whether it’ll give investors a reason to buy the sinking stock is another matter.Most Read from BloombergBeer Dynasty Families Sell €731 Million Stake in AB InBevApple’s New CEO Taps Retired Hardware Executive for Management TeamTaco Be",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-first-earnings-offer-chance-082619954.html"
+        }
+      ],
+      "technical": {
+        "screening_date": "2026-10-08",
+        "score": 50.0,
+        "rsi": 25.1,
+        "rsi_proxy": 25.1,
+        "stoch_proxy": 5.6,
+        "bb_position": 1.4,
+        "sma50_vs_price": -10.49,
+        "sma200_vs_price": -19.9,
+        "macd_line": -3.3607,
+        "atr": 3.2936,
+        "momentum_divergence": 4.21,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "VOLUME NORMAL-HIGH: 1.24x avg",
+          "SIGNIFICANT DRAWDOWN: -42.6% from 52w high",
+          "MOMENTUM: -5.2% in 5 days — continued SELLING pressure",
+          "STOCHASTIC OVERSOLD: Stoch proxy 6 — price near annual support floor (RSI proxy 25)"
+        ],
+        "rationale": "LDOS: a 5.2% five-day selloff (20d: -9.4%) reveals strong directional pressure; stock has shed 43% from its 52-week high — potential deep value or extended downtrend; RSI proxy (25) and stochastic (6) in oversold territory support a bounce thesis; price is -10.5% vs SMA50."
+      },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "MRVL",
@@ -8972,7 +9374,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 2.03,
+      "volume_ratio": 0.94,
       "pct_from_52w_high": -12.97,
       "pct_from_52w_low": 306.3,
       "revenue_growth": null,
@@ -9042,8 +9444,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 62.0,
+        "screening_date": "2026-10-08",
+        "score": 44.0,
         "rsi": 83.2,
         "rsi_proxy": 83.2,
         "stoch_proxy": 78.2,
@@ -9055,30 +9457,29 @@
         "momentum_divergence": -18.31,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME SPIKE: 2.72x avg — extreme institutional activity",
+          "VOLUME NORMAL-HIGH: 1.25x avg",
           "MOMENTUM SURGE: +9.0% in 5 days — sharp directional move",
           "MOMENTUM DIVERGENCE: 5d/20d gap -18.3pp — strong trend change signal",
           "OVERBOUGHT: RSI proxy 83, Stoch proxy 78 — stretched, potential pullback"
         ],
-        "rationale": "MRVL: volume running at 2.7x the daily average signals institutional-scale activity; a 9.0% five-day rally (20d: +27.3%) reveals strong directional pressure; price is +24.7% vs SMA50."
+        "rationale": "MRVL: a 9.0% five-day rally (20d: +27.3%) reveals strong directional pressure; price is +24.7% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-10-07",
+        "analysis_date": "2026-10-08",
         "tier": "deep",
-        "verdict": "NEUTRAL",
+        "verdict": "BULL",
         "confidence": 5,
         "bull": [
-          "AI-datacenter-chip med massiv momentum (+27% på 20 dage) og høj volumen",
-          "Bred sektorstyrke (AMD, AI-capex)"
+          "AI data-center momentum, +27% 20d",
+          "Far above SMA50/200"
         ],
         "bear": [
-          "RSI 83, ved øvre Bollinger-bånd; 70% over SMA200",
-          "Værdiansættelse ca. 80-85x earnings kræver perfekt eksekvering"
+          "RSI 83, at upper Bollinger, 85x earnings valuation"
         ],
-        "summary": "Parabolsk AI-rally med dyr værdiansættelse; momentum stærkt men asymmetrisk downside ved reversal.",
-        "key_risk": "Skarpt fald ved AI-sentiment-skift eller skuffende guidance (ATR ca. 13)."
+        "summary": "Powerful AI-driven uptrend but stretched valuation and overbought.",
+        "key_risk": "AI sentiment reversal"
       },
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "MKC",
@@ -9161,7 +9562,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 54.0,
         "rsi": 27.0,
         "rsi_proxy": 27.0,
@@ -9170,11 +9571,11 @@
         "sma50_vs_price": -11.83,
         "sma200_vs_price": -16.99,
         "macd_line": -1.8709,
-        "atr": 1.3856,
+        "atr": 1.3857,
         "momentum_divergence": 6.32,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.02x avg",
+          "VOLUME NORMAL-HIGH: 1.00x avg",
           "NEAR 52W LOW: +5.0% above annual support — critical level",
           "MOMENTUM: -6.2% in 5 days — continued SELLING pressure",
           "OVERSOLD: RSI proxy 27, Stoch proxy 30 — watch for reversal"
@@ -9182,7 +9583,7 @@
         "rationale": "MKC: a 6.2% five-day selloff (20d: -12.5%) reveals strong directional pressure; price sits just +5.0% above the 52-week low (43.25) — a key decision zone; RSI proxy (27) and stochastic (30) in oversold territory support a bounce thesis; price is -11.8% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "MGM",
@@ -9195,7 +9596,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.97,
+      "volume_ratio": 1.23,
       "pct_from_52w_high": -40.8,
       "pct_from_52w_low": 4.62,
       "revenue_growth": null,
@@ -9265,8 +9666,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 52.6,
+        "screening_date": "2026-10-08",
+        "score": 58.0,
         "rsi": 13.6,
         "rsi_proxy": 13.6,
         "stoch_proxy": 6.5,
@@ -9278,6 +9679,7 @@
         "momentum_divergence": 21.93,
         "indicator_method": "yfinance_historical",
         "signals": [
+          "VOLUME NORMAL-HIGH: 1.02x avg",
           "NEAR 52W LOW: +4.6% above annual support — critical level",
           "MOMENTUM: -3.1% in 5 days",
           "MOMENTUM DIVERGENCE: 5d/20d gap +21.9pp — strong trend change signal",
@@ -9285,8 +9687,21 @@
         ],
         "rationale": "MGM: price sits just +4.6% above the 52-week low (29.19) — a key decision zone; RSI proxy (14) and stochastic (6) in oversold territory support a bounce thesis; price is -24.3% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "BEAR",
+        "confidence": 4,
+        "bull": [
+          "RSI 13.6 extremely oversold"
+        ],
+        "bear": [
+          "-25% in 20d, below SMA50/200, uneven Vegas demand and Osaka spending"
+        ],
+        "summary": "Steep downtrend; oversold but no catalyst.",
+        "key_risk": "Vegas demand weakness"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "MOS",
@@ -9299,7 +9714,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.87,
+      "volume_ratio": 1.41,
       "pct_from_52w_high": -39.69,
       "pct_from_52w_low": 6.67,
       "revenue_growth": null,
@@ -9369,8 +9784,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 57.0,
+        "screening_date": "2026-10-08",
+        "score": 62.0,
         "rsi": 23.1,
         "rsi_proxy": 23.1,
         "stoch_proxy": 10.4,
@@ -9378,10 +9793,11 @@
         "sma50_vs_price": -10.45,
         "sma200_vs_price": -13.06,
         "macd_line": -0.7617,
-        "atr": 1.0421,
+        "atr": 1.0429,
         "momentum_divergence": 13.8,
         "indicator_method": "yfinance_historical",
         "signals": [
+          "VOLUME NORMAL-HIGH: 1.39x avg",
           "NEAR 52W LOW: +6.7% above annual support — critical level",
           "MOMENTUM: -6.6% in 5 days — continued SELLING pressure",
           "MOMENTUM DIVERGENCE: 5d/20d gap +13.8pp — emerging trend shift",
@@ -9389,8 +9805,22 @@
         ],
         "rationale": "MOS: a 6.6% five-day selloff (20d: -20.4%) reveals strong directional pressure; price sits just +6.7% above the 52-week low (19.63) — a key decision zone; RSI proxy (23) and stochastic (10) in oversold territory support a bounce thesis; price is -10.4% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "bull": [
+          "RSI 23 oversold, debt refinancing done",
+          "Below lower Bollinger band area"
+        ],
+        "bear": [
+          "-20% in 20d, below SMA50/200"
+        ],
+        "summary": "Oversold in a downtrend; fertilizer cost swings keep outlook unclear.",
+        "key_risk": "Fertilizer price/demand weakness"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "NTAP",
@@ -9403,7 +9833,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.13,
+      "volume_ratio": 1.19,
       "pct_from_52w_high": -1.49,
       "pct_from_52w_low": 145.83,
       "revenue_growth": null,
@@ -9473,7 +9903,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 51.0,
         "rsi": 85.2,
         "rsi_proxy": 85.2,
@@ -9486,7 +9916,7 @@
         "momentum_divergence": -11.58,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.10x avg",
+          "VOLUME NORMAL-HIGH: 1.14x avg",
           "NEAR 52W HIGH: -1.5% — breakout territory",
           "MOMENTUM SURGE: +9.2% in 5 days — sharp directional move",
           "MOMENTUM DIVERGENCE: 5d/20d gap -11.6pp — emerging trend shift",
@@ -9495,7 +9925,7 @@
         "rationale": "NTAP: a 9.2% five-day rally (20d: +20.8%) reveals strong directional pressure; stock is pressing against its 52-week high at -1.5% — breakout watch; price is +17.4% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "NDSN",
@@ -9508,7 +9938,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.7,
+      "volume_ratio": 1.27,
       "pct_from_52w_high": -1.17,
       "pct_from_52w_low": 51.55,
       "revenue_growth": null,
@@ -9578,41 +10008,40 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 21.2,
+        "screening_date": "2026-10-08",
+        "score": 27.0,
         "rsi": 88.3,
         "rsi_proxy": 88.3,
-        "stoch_proxy": 86.3,
+        "stoch_proxy": 86.4,
         "bb_position": 86.5,
         "sma50_vs_price": 5.65,
         "sma200_vs_price": 16.61,
         "macd_line": 5.3224,
-        "atr": 5.7881,
+        "atr": 5.7879,
         "momentum_divergence": -4.4,
         "indicator_method": "yfinance_historical",
         "signals": [
+          "VOLUME NORMAL-HIGH: 1.36x avg",
           "NEAR 52W HIGH: -1.2% — breakout territory",
           "OVERBOUGHT: RSI proxy 88, Stoch proxy 86 — stretched, potential pullback"
         ],
         "rationale": "NDSN: stock is pressing against its 52-week high at -1.2% — breakout watch; price is +5.7% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-10-07",
+        "analysis_date": "2026-10-08",
         "tier": "deep",
-        "verdict": "NEUTRAL",
+        "verdict": "BULL",
         "confidence": 5,
         "bull": [
-          "Bred forretningsstyrke, opkøb og aktionærafkast; halvleder-eksponering",
-          "Nær 52-ugers high i stabil optrend"
+          "Near 52w high, above SMA50/200"
         ],
         "bear": [
-          "RSI 88 – kraftigt overkøbt",
-          "Værdiansættelse beskrevet som fair efter 52% rally"
+          "RSI 88 overbought"
         ],
-        "summary": "Kvalitetsaktie i solid trend, men overkøbt og lidt udstrakt; begrænset kortsigtet upside.",
-        "key_risk": "Cyklisk nedgang i halvleder/industri og mean reversion fra RSI 88."
+        "summary": "Steady uptrend near highs but overbought.",
+        "key_risk": "Pullback from overbought levels"
       },
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "NOC",
@@ -9625,7 +10054,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.16,
+      "volume_ratio": 0.82,
       "pct_from_52w_high": -37.02,
       "pct_from_52w_low": 2.78,
       "revenue_growth": null,
@@ -9695,8 +10124,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 56.0,
+        "screening_date": "2026-10-08",
+        "score": 49.8,
         "rsi": 20.4,
         "rsi_proxy": 20.4,
         "stoch_proxy": 20.1,
@@ -9704,11 +10133,10 @@
         "sma50_vs_price": -9.58,
         "sma200_vs_price": -18.54,
         "macd_line": -14.8911,
-        "atr": 11.615,
+        "atr": 11.6164,
         "momentum_divergence": 2.58,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.04x avg",
           "AT 52W LOW: +2.8% above annual floor — breakdown or reversal imminent",
           "MOMENTUM: -4.3% in 5 days",
           "RSI OVERSOLD: RSI proxy 20, Stoch proxy 20 — momentum exhaustion signal"
@@ -9716,7 +10144,7 @@
         "rationale": "NOC: price sits just +2.8% above the 52-week low (470.06) — a key decision zone; RSI proxy (20) and stochastic (20) in oversold territory support a bounce thesis; price is -9.6% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "NRG",
@@ -9729,7 +10157,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.82,
+      "volume_ratio": 2.1,
       "pct_from_52w_high": -45.1,
       "pct_from_52w_low": 10.97,
       "revenue_growth": null,
@@ -9799,7 +10227,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 59.0,
         "rsi": 43.4,
         "rsi_proxy": 43.4,
@@ -9808,19 +10236,33 @@
         "sma50_vs_price": -8.02,
         "sma200_vs_price": -25.8,
         "macd_line": -4.6308,
-        "atr": 3.9582,
+        "atr": 3.9586,
         "momentum_divergence": 20.03,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME ELEVATED: 1.54x avg — above-normal interest",
+          "VOLUME ELEVATED: 1.72x avg — above-normal interest",
           "DEEP DRAWDOWN: -45.1% from 52w high — severe compression, mean-reversion potential",
           "MOMENTUM: +6.6% in 5 days — continued BUYING pressure",
           "MOMENTUM DIVERGENCE: 5d/20d gap +20.0pp — strong trend change signal"
         ],
-        "rationale": "NRG: volume running at 1.5x the daily average signals institutional-scale activity; a 6.6% five-day rally (20d: -13.4%) reveals strong directional pressure; stock has shed 45% from its 52-week high — potential deep value or extended downtrend; price is -8.0% vs SMA50."
+        "rationale": "NRG: volume running at 1.7x the daily average signals institutional-scale activity; a 6.6% five-day rally (20d: -13.4%) reveals strong directional pressure; stock has shed 45% from its 52-week high — potential deep value or extended downtrend; price is -8.0% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 5,
+        "bull": [
+          "+7% day on 2.1x volume, rebounding",
+          "Power demand tailwind"
+        ],
+        "bear": [
+          "-45% from high, far below SMA200"
+        ],
+        "summary": "Sharp rebound in a broken downtrend; wait for follow-through.",
+        "key_risk": "Power price/AI-demand sentiment reversal"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "PEP",
@@ -9833,7 +10275,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.28,
+      "volume_ratio": 1.68,
       "pct_from_52w_high": -24.46,
       "pct_from_52w_low": 1.2,
       "revenue_growth": null,
@@ -9903,7 +10345,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 56.0,
         "rsi": 18.9,
         "rsi_proxy": 18.9,
@@ -9912,11 +10354,11 @@
         "sma50_vs_price": -7.33,
         "sma200_vs_price": -12.92,
         "macd_line": -3.0951,
-        "atr": 2.3132,
+        "atr": 2.3129,
         "momentum_divergence": 6.88,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.07x avg",
+          "VOLUME NORMAL-HIGH: 1.38x avg",
           "AT 52W LOW: +1.2% above annual floor — breakdown or reversal imminent",
           "MOMENTUM: -2.3% in 5 days",
           "DEEPLY OVERSOLD: RSI proxy 19, Stoch proxy 14 — bounce candidate"
@@ -9924,7 +10366,112 @@
         "rationale": "PEP: price sits just +1.2% above the 52-week low (124.22) — a key decision zone; RSI proxy (19) and stochastic (14) in oversold territory support a bounce thesis; price is -7.3% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
+    },
+    {
+      "symbol": "PCG",
+      "name": "PG&E Corporation",
+      "tradeable": true,
+      "price": 12.5,
+      "pct_1d": 1.21,
+      "pct_5d": 3.05,
+      "pct_20d": -15.31,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 1.55,
+      "pct_from_52w_high": -34.11,
+      "pct_from_52w_low": 6.66,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Utilities",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [
+        {
+          "date": "2026-09-02",
+          "title": "PG&E price sinks amid $2 billion investment slash: AlphaSpace breakdown",
+          "source": "Yahoo Finance Video",
+          "summary": "Yahoo Finance Senior Reporter Brooke DiPalma joins host Josh Lipton to go over the day's trending prices, including PG&E (PCG), BP (BP), and Brown-Forman (BF-B).",
+          "url": "https://finance.yahoo.com/video/pg-e-price-sinks-amid-200718720.html"
+        },
+        {
+          "date": "2026-09-02",
+          "title": "Credo, Dell, Palo Alto, PG&E, Uber, MongoDB, and More Stocks That Explain Today’s Market",
+          "source": "Barrons.com",
+          "summary": "Dell’s second-quarter earnings top expectations thanks to the AI boom, but Palo Alto Networks tumbles as investors take profits.",
+          "url": "https://www.barrons.com/articles/stock-movers-4fed2750?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-02",
+          "title": "Update: PG&E Shares Fall After $2 Billion 2027 Investment Deferral Plan, Strategic Review",
+          "source": "MT Newswires",
+          "summary": "(Updates with recent share movement in the headline and the first paragraph.) PG&E (PCG) shares f",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/pg-e-shares-fall-2-194001514.html"
+        },
+        {
+          "date": "2026-09-02",
+          "title": "PG&E (PCG) Wildfire Bill Rejection Leaves Liability Risks Unresolved",
+          "source": "Simply Wall St.",
+          "summary": "PG&E (NYSE:PCG) faces ongoing wildfire liability uncertainty after California lawmakers rejected a key wildfire bill that aimed to clarify utility exposure. The bill's defeat leaves the existing framework for allocating wildfire costs and financing recovery efforts unchanged for now. Investors lose a potential legislative backstop that many had expected to reshape PG&E's long term risk profile aro",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/pg-e-pcg-wildfire-bill-161220970.html"
+        },
+        {
+          "date": "2026-09-02",
+          "title": "In Surprise Twist, California Lawmakers Fail to Pass Watered-Down Wildfire Bill",
+          "source": "The Wall Street Journal",
+          "summary": "The debate over who pays for damage from fires, including utilities linked to major blazes, remains unresolved.",
+          "url": "https://www.wsj.com/politics/policy/in-surprise-twist-california-lawmakers-fail-to-pass-watered-down-wildfire-bill-f54df9bc?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-02",
+          "title": "Why PG&E Stock Keeps Going Down",
+          "source": "Motley Fool",
+          "summary": "California just put PG&E in a Catch-22.",
+          "url": "https://www.fool.com/investing/2026/09/02/why-pge-stock-keeps-going-down/"
+        },
+        {
+          "date": "2026-09-02",
+          "title": "Pacific Gas & Electric Launches Strategic Review, Cuts 2027 Capital Plan by $2B",
+          "source": "MarketBeat",
+          "summary": "Pacific Gas & Electric (NYSE:PCG) said its board has authorized a strategic review of regulatory, financial, operational and strategic alternatives after California’s legislative session ended without wildfire liability reform. Chief Executive Officer Patti Poppe said the review will examine ho",
+          "url": "https://www.marketbeat.com/instant-alerts/event-pacific-gas-electric-launches-strategic-review-cuts-2027-capital-plan-by-2b-2026-09-02/?utm_source=yahoofinance&utm_medium=yahoofinance"
+        },
+        {
+          "date": "2026-09-02",
+          "title": "Uber Cuts Jobs; Dell Raises Revenue Forecast | Stock Movers",
+          "source": "Bloomberg",
+          "summary": "On this episode of Stock Movers: - Uber Technologies (UBER) is cutting about 3,300 roles, or 10% of its staff globally, in a massive restructuring aimed at reducing management layers and reallocating spending into its ride-sharing, delivery and robotaxi businesses. - Dell Technologies (DELL) shares gain after the company's second-quarter results beat expectations and it raised its full-year revenu",
+          "url": "https://finance.yahoo.com/video/uber-cuts-jobs-dell-raises-144725661.html"
+        }
+      ],
+      "technical": {
+        "screening_date": "2026-10-08",
+        "score": 54.0,
+        "rsi": 32.4,
+        "rsi_proxy": 32.4,
+        "stoch_proxy": 42.9,
+        "bb_position": 37.5,
+        "sma50_vs_price": -17.78,
+        "sma200_vs_price": -23.7,
+        "macd_line": -0.832,
+        "atr": 0.3561,
+        "momentum_divergence": 18.36,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "VOLUME NORMAL-HIGH: 1.04x avg",
+          "NEAR 52W LOW: +6.7% above annual support — critical level",
+          "MOMENTUM: +3.0% in 5 days",
+          "MOMENTUM DIVERGENCE: 5d/20d gap +18.4pp — strong trend change signal",
+          "OVERSOLD: RSI proxy 32, Stoch proxy 43 — watch for reversal"
+        ],
+        "rationale": "PCG: price sits just +6.7% above the 52-week low (11.72) — a key decision zone; RSI proxy (32) and stochastic (43) in oversold territory support a bounce thesis; price is -17.8% vs SMA50."
+      },
+      "analysis": null,
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "PEG",
@@ -9937,7 +10484,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 2.98,
+      "volume_ratio": 1.98,
       "pct_from_52w_high": -16.01,
       "pct_from_52w_low": 8.44,
       "revenue_growth": null,
@@ -10007,8 +10554,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 63.0,
+        "screening_date": "2026-10-08",
+        "score": 55.0,
         "rsi": 55.9,
         "rsi_proxy": 55.9,
         "stoch_proxy": 97.6,
@@ -10016,123 +10563,20 @@
         "sma50_vs_price": -0.86,
         "sma200_vs_price": -7.51,
         "macd_line": -1.1223,
-        "atr": 1.2854,
+        "atr": 1.2857,
         "momentum_divergence": 8.48,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME ELEVATED: 2.18x avg — above-normal interest",
+          "VOLUME NORMAL-HIGH: 1.40x avg",
           "NEAR 52W LOW: +8.4% above annual support — critical level",
           "MOMENTUM: +6.0% in 5 days — continued BUYING pressure",
           "MOMENTUM DIVERGENCE: 5d/20d gap +8.5pp — emerging trend shift",
           "OVERBOUGHT: RSI proxy 56, Stoch proxy 98 — stretched, potential pullback"
         ],
-        "rationale": "PEG: volume running at 2.2x the daily average signals institutional-scale activity; a 6.0% five-day rally (20d: -2.5%) reveals strong directional pressure; price sits just +8.4% above the 52-week low (66.15) — a key decision zone; price is -0.9% vs SMA50."
+        "rationale": "PEG: a 6.0% five-day rally (20d: -2.5%) reveals strong directional pressure; price sits just +8.4% above the 52-week low (66.15) — a key decision zone; price is -0.9% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
-    },
-    {
-      "symbol": "STX",
-      "name": "Seagate Technology",
-      "tradeable": true,
-      "price": 805.63,
-      "pct_1d": -9.18,
-      "pct_5d": -11.8,
-      "pct_20d": -10.85,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 1.67,
-      "pct_from_52w_high": -29.53,
-      "pct_from_52w_low": 287.73,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Information Technology",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-07-16",
-          "title": "US Equity Markets End Lower Amid Tech Sell-Off, Iran's Threat to Block Red Sea",
-          "source": "MT Newswires",
-          "summary": "US equity indexes closed lower on Thursday amid a sell-off in technology stocks, and Iran threatened",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-end-lower-202416303.html"
-        },
-        {
-          "date": "2026-07-16",
-          "title": "Sector Update: Tech Stocks Fall Thursday Afternoon",
-          "source": "MT Newswires",
-          "summary": "Tech stocks were lower Thursday afternoon, with the State Street Technology Select Sector SPDR ETF (",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-fall-thursday-172254349.html"
-        },
-        {
-          "date": "2026-07-16",
-          "title": "The Chip-Stock Slide Isn’t Over. The AI Trade Is Still Under Pressure. But ‘No One Is Short’",
-          "source": "Investopedia",
-          "summary": "The chips are down, extending what’s been a rough stretch for the AI trade lately.",
-          "url": "https://www.investopedia.com/chip-stocks-slide-despite-solid-results-adding-pressure-on-the-ai-trade-12020486"
-        },
-        {
-          "date": "2026-07-16",
-          "title": "Seagate Technology Holdings plc (STX) Returned 100% on Strong Execution",
-          "source": "Insider Monkey",
-          "summary": "Janus Henderson Investors, an investment management company, released its second-quarter 2026 investor letter for the “Global Sustainable Equity Fund”. A copy of the letter can be downloaded here. Global equities experienced a robust quarter, with the Fund returning 16.17%, outperforming the Index’s 13.16% gain and the Peer Group’s 12.98% return. An overweight in information technology, particular",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/seagate-technology-holdings-plc-stx-141657411.html"
-        },
-        {
-          "date": "2026-07-16",
-          "title": "Which Stocks Are Hurting the Most?",
-          "source": "The Wall Street Journal",
-          "summary": "The Nasdaq composite is down more than 1% this morning. Here are the stocks on the index that are getting hit hard: 💾 Chips, memory makers: Sandisk, Micron, AMD, SK Hynix's ADRs, Intel, Western Digital, Seagate, Arm, Broadcom, Nvidia and Marvell are all deep in the red.",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-07-16-2026/card/which-stocks-are-hurting-the-most--i0mCntXKwUJ9MzdcRrTv?siteid=yhoof2&yptr=yahoo"
-        },
-        {
-          "date": "2026-07-16",
-          "title": "Update: US Equity Futures Edging Lower Pre-Bell as Traders Cautious on Tech, US Strikes Iran Targets Anew",
-          "source": "MT Newswires",
-          "summary": "(Updates with economic data, recent oil price movement, world markets' overview and corporate stock",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-edging-lower-125609965.html"
-        },
-        {
-          "date": "2026-07-16",
-          "title": "Dow Jones Futures Rise But AI Woes Continue; Taiwan Semi, GE, UnitedHealth Are Key Earnings Movers",
-          "source": "Investor's Business Daily",
-          "summary": "Dow Jones futures: Taiwan Semiconductor and GE Aero fell despite strong earnings as the AI stock sell-off continues.",
-          "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-apple-google-dell-sandisk-micron-sell-off-spacex-ipo-price-taiwan-semiconductor-ge-aero/?src=A00220&yptr=yahoo"
-        },
-        {
-          "date": "2026-07-16",
-          "title": "Stock Market Today: Nasdaq, S&P 500 Decline as Chip Stocks Drop; UnitedHealth Shares Aid Dow",
-          "source": "Investopedia",
-          "summary": "Major stock indexes were mostly lower in early trading on a busy earnings Thursday, as shares of chipmakers weighed on the Nasdaq Composite and S&P 500, but those of UnitedHealth Group helped keep the Dow Jones Industrial Average slightly in positive territory.",
-          "url": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-07162026-12020420"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-10-06",
-        "score": 52.0,
-        "rsi": 52.7,
-        "rsi_proxy": 52.7,
-        "stoch_proxy": 14.2,
-        "bb_position": 19.7,
-        "sma50_vs_price": -5.73,
-        "sma200_vs_price": 22.93,
-        "macd_line": 7.4303,
-        "atr": 57.6093,
-        "momentum_divergence": -0.95,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME ELEVATED: 1.60x avg — above-normal interest",
-          "MOMENTUM SELLOFF: -11.8% in 5 days — sharp directional move",
-          "STOCHASTIC OVERSOLD: Stoch proxy 14 — price near annual support floor (RSI proxy 53)"
-        ],
-        "rationale": "STX: volume running at 1.6x the daily average signals institutional-scale activity; a 11.8% five-day selloff (20d: -10.8%) reveals strong directional pressure; price is -5.7% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "TXT",
@@ -10145,7 +10589,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.02,
+      "volume_ratio": 1.53,
       "pct_from_52w_high": -25.59,
       "pct_from_52w_low": 0.33,
       "revenue_growth": null,
@@ -10215,8 +10659,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 50.6,
+        "screening_date": "2026-10-08",
+        "score": 56.0,
         "rsi": 26.3,
         "rsi_proxy": 26.3,
         "stoch_proxy": 3.8,
@@ -10224,10 +10668,11 @@
         "sma50_vs_price": -8.26,
         "sma200_vs_price": -15.57,
         "macd_line": -1.7945,
-        "atr": 1.5871,
+        "atr": 1.5886,
         "momentum_divergence": 2.31,
         "indicator_method": "yfinance_historical",
         "signals": [
+          "VOLUME NORMAL-HIGH: 1.26x avg",
           "AT 52W LOW: +0.3% above annual floor — breakdown or reversal imminent",
           "MOMENTUM: -2.7% in 5 days",
           "STOCHASTIC OVERSOLD: Stoch proxy 4 — price near annual support floor (RSI proxy 26)"
@@ -10235,7 +10680,65 @@
         "rationale": "TXT: price sits just +0.3% above the 52-week low (75.28) — a key decision zone; RSI proxy (26) and stochastic (4) in oversold territory support a bounce thesis; price is -8.3% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
+    },
+    {
+      "symbol": "VZ",
+      "name": "Verizon",
+      "tradeable": true,
+      "price": 45.98,
+      "pct_1d": 0.28,
+      "pct_5d": 0.0,
+      "pct_20d": -8.79,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 0.58,
+      "pct_from_52w_high": -11.01,
+      "pct_from_52w_low": 25.8,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Communication Services",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [],
+      "technical": {
+        "screening_date": "2026-10-08",
+        "score": 21.8,
+        "rsi": 18.5,
+        "rsi_proxy": 18.5,
+        "stoch_proxy": 14.7,
+        "bb_position": 25.7,
+        "sma50_vs_price": -4.76,
+        "sma200_vs_price": 0.77,
+        "macd_line": -0.8308,
+        "atr": 0.8786,
+        "momentum_divergence": 8.79,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "MOMENTUM DIVERGENCE: 5d/20d gap +8.8pp — emerging trend shift",
+          "DEEPLY OVERSOLD: RSI proxy 18, Stoch proxy 15 — bounce candidate"
+        ],
+        "rationale": "VZ: RSI proxy (18) and stochastic (15) in oversold territory support a bounce thesis; price is -4.8% vs SMA50."
+      },
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "bull": [
+          "Above SMA200, RSI 18.5 oversold, defensive"
+        ],
+        "bear": [
+          "Below SMA50, -8.8% in 20d, low volume"
+        ],
+        "summary": "Defensive dip near SMA200; modest upside only.",
+        "key_risk": "Subscriber competition"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "VRTX",
@@ -10248,9 +10751,9 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.57,
+      "volume_ratio": 0.59,
       "pct_from_52w_high": -10.34,
-      "pct_from_52w_low": 25.31,
+      "pct_from_52w_low": 24.77,
       "revenue_growth": null,
       "earnings_growth": null,
       "market_cap": null,
@@ -10318,8 +10821,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 21.2,
+        "screening_date": "2026-10-08",
+        "score": 21.5,
         "rsi": 40.2,
         "rsi_proxy": 40.2,
         "stoch_proxy": 18.3,
@@ -10327,7 +10830,7 @@
         "sma50_vs_price": -3.25,
         "sma200_vs_price": 5.94,
         "macd_line": -4.1832,
-        "atr": 11.8482,
+        "atr": 11.8479,
         "momentum_divergence": 0.39,
         "indicator_method": "yfinance_historical",
         "signals": [
@@ -10337,126 +10840,21 @@
         "rationale": "VRTX: price is -3.2% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-10-07",
+        "analysis_date": "2026-10-08",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Positiv Phase 2 nyredata og analytikermål ca. +20%",
-          "Nær nedre Bollinger-bånd (6%) og stokastisk 18 – oversolgt kortsigtet"
+          "Analysts see 20% upside, above SMA200",
+          "Kidney pipeline"
         ],
         "bear": [
-          "Under SMA50 med negativ MACD og -5% over 5 dage",
-          "Ingen teknisk bundbekræftelse endnu"
+          "Below SMA50, -4.6% 5d, MACD negative"
         ],
-        "summary": "Svag kortsigtet trend men oversolgt med solid pipeline; afvent stabilisering over SMA50.",
-        "key_risk": "Brud under SMA200 (~474) hvis pipeline- eller salgsnyheder skuffer."
+        "summary": "Healthy long-term trend with short-term pullback.",
+        "key_risk": "Pipeline/trial setbacks"
       },
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
-    },
-    {
-      "symbol": "VST",
-      "name": "Vistra Corp.",
-      "tradeable": true,
-      "price": 160.5,
-      "pct_1d": 10.77,
-      "pct_5d": 13.97,
-      "pct_20d": 5.96,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 3.72,
-      "pct_from_52w_high": -25.64,
-      "pct_from_52w_low": 21.35,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Utilities",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-08-24",
-          "title": "Peter Thiel’s $418 Million Bet On These 8 Companies Reveals AI’s Biggest Bottleneck",
-          "source": "24/7 Wall St.",
-          "summary": "Peter Thiel's firm just filed a strikingly focused $418 million portfolio that ignores chips entirely and bets everything on a single constraint choking the AI boom before it can fully ignite.",
-          "url": "https://247wallst.com/investing/2026/08/24/peter-thiels-418-million-bet-on-these-8-companies-reveals-ais-biggest-bottleneck/"
-        },
-        {
-          "date": "2026-08-24",
-          "title": "Vistra Corp. Stock: Is Wall Street Bullish or Bearish?",
-          "source": "Barchart",
-          "summary": "Vistra Corp. has underperformed the broader market over the past year, yet analysts remain highly bullish about the stock’s prospects.",
-          "url": "https://www.barchart.com/story/news/3999453/vistra-corp-stock-is-wall-street-bullish-or-bearish"
-        },
-        {
-          "date": "2026-08-23",
-          "title": "Vistra Is the Quietest Big Winner of the AI Power Boom. Here's Why.",
-          "source": "Motley Fool",
-          "summary": "Vistra's business model positions it to thrive as data center power demands surge.",
-          "url": "https://www.fool.com/investing/2026/08/23/vistra-is-the-quietest-big-winner-of-the-ai-power/"
-        },
-        {
-          "date": "2026-08-21",
-          "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Friday as Bitcoin Moves Past $77,000",
-          "source": "MT Newswires",
-          "summary": "The broad market exchange-traded fund SPDR S&P 500 ETF Trust (SPY) was up 0.4% and the actively trad",
-          "url": "https://finance.yahoo.com/markets/articles/exchange-traded-funds-equity-futures-131505482.html"
-        },
-        {
-          "date": "2026-08-21",
-          "title": "Constellation Energy vs. Vistra: Who Leads the AI Power Revenue Race?",
-          "source": "Motley Fool",
-          "summary": "Constellation Energy and Vistra are both top bets on the AI nuclear power demand, but their revenue divergence reveals an interesting story.",
-          "url": "https://www.fool.com/coverage/charts/2026/08/21/constellation-energy-vs-vistra-who-leads-the-ai-power-revenue-race/"
-        },
-        {
-          "date": "2026-08-21",
-          "title": "S&P 500 Posts First Weekly Loss Since July Amid US Warning to Iran",
-          "source": "MT Newswires",
-          "summary": "The Standard & Poor's 500 index fell 1.4% this week, its first weekly loss in a month, as US Preside",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-first-weekly-204508360.html"
-        },
-        {
-          "date": "2026-08-20",
-          "title": "KKR Data Center Chief Vaults to Prominence With Nvidia Pact",
-          "source": "Bloomberg",
-          "summary": "When some of Wall Street’s most prominent CEOs recently appeared on TV with Nvidia Corp.’s Jensen Huang, touting their $500 billion pact to finance AI chips, one participant stood out.",
-          "url": "https://finance.yahoo.com/technology/ai/articles/kkr-data-center-chief-vaults-113000247.html"
-        },
-        {
-          "date": "2026-08-19",
-          "title": "Pennsylvania Sets New Data-Center Rules—and Some Energy Companies Can Actually Benefit",
-          "source": "Barrons.com",
-          "summary": "Gov. Josh Shapiro’s new rules require data-center operators to pay for energy generation and transmission.",
-          "url": "https://www.barrons.com/articles/pennsylvanias-new-data-center-rules-arent-all-bad-for-power-companies-3ef9661a?siteid=yhoof2&yptr=yahoo"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-10-06",
-        "score": 59.0,
-        "rsi": 77.0,
-        "rsi_proxy": 77.0,
-        "stoch_proxy": 92.5,
-        "bb_position": 133.4,
-        "sma50_vs_price": 12.37,
-        "sma200_vs_price": 4.0,
-        "macd_line": 0.7564,
-        "atr": 5.7035,
-        "momentum_divergence": 8.01,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 2.98x avg — extreme institutional activity",
-          "MOMENTUM SURGE: +14.0% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +8.0pp — emerging trend shift",
-          "OVERBOUGHT: RSI proxy 77, Stoch proxy 92 — stretched, potential pullback"
-        ],
-        "rationale": "VST: volume running at 3.0x the daily average signals institutional-scale activity; a 14.0% five-day rally (20d: +6.0%) reveals strong directional pressure; price is +12.4% vs SMA50."
-      },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "DIS",
@@ -10469,7 +10867,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.6,
+      "volume_ratio": 0.72,
       "pct_from_52w_high": -9.87,
       "pct_from_52w_low": 13.71,
       "revenue_growth": null,
@@ -10539,8 +10937,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 5.7,
+        "screening_date": "2026-10-08",
+        "score": 6.8,
         "rsi": 41.2,
         "rsi_proxy": 41.2,
         "stoch_proxy": 43.9,
@@ -10555,22 +10953,21 @@
         "rationale": "DIS: price is -0.6% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-10-07",
+        "analysis_date": "2026-10-08",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Pris over SMA200 (103.26) og analytikerkonsensus bullish (mål ca. 127)",
-          "Omkostningsbesparelser via jobnedskæringer støtter marginer"
+          "Near SMA50/200, stable",
+          "Cost cutting under CEO"
         ],
         "bear": [
-          "Svagt momentum, MACD negativ og pris under SMA50",
-          "Lav volumen og ingen klar katalysator; medie-sektoren udfordret"
+          "Flat momentum, streaming cost pressure"
         ],
-        "summary": "Konsolideringsfase omkring SMA50/200 uden klar retning; hold og afvent breakout eller earnings.",
-        "key_risk": "Brud under SMA200 (~103) og svagere streaming/parks-guidance."
+        "summary": "Range-bound holding with no clear edge.",
+        "key_risk": "Streaming/parks weakness"
       },
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "WDC",
@@ -10583,7 +10980,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.62,
+      "volume_ratio": 0.83,
       "pct_from_52w_high": -48.59,
       "pct_from_52w_low": 265.99,
       "revenue_growth": null,
@@ -10653,8 +11050,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 66.0,
+        "screening_date": "2026-10-08",
+        "score": 52.7,
         "rsi": 48.5,
         "rsi_proxy": 48.5,
         "stoch_proxy": 18.3,
@@ -10666,15 +11063,14 @@
         "momentum_divergence": 4.52,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME ELEVATED: 1.67x avg — above-normal interest",
           "DEEP DRAWDOWN: -48.6% from 52w high — severe compression, mean-reversion potential",
           "MOMENTUM SELLOFF: -9.4% in 5 days — sharp directional move",
           "OVERSOLD: RSI proxy 48, Stoch proxy 18 — watch for reversal"
         ],
-        "rationale": "WDC: volume running at 1.7x the daily average signals institutional-scale activity; a 9.4% five-day selloff (20d: -13.9%) reveals strong directional pressure; stock has shed 49% from its 52-week high — potential deep value or extended downtrend; price is -11.2% vs SMA50."
+        "rationale": "WDC: a 9.4% five-day selloff (20d: -13.9%) reveals strong directional pressure; stock has shed 49% from its 52-week high — potential deep value or extended downtrend; price is -11.2% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "WY",
@@ -10687,7 +11083,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 2.25,
+      "volume_ratio": 2.04,
       "pct_from_52w_high": -31.19,
       "pct_from_52w_low": 1.86,
       "revenue_growth": null,
@@ -10757,7 +11153,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
+        "screening_date": "2026-10-08",
         "score": 68.0,
         "rsi": 14.6,
         "rsi_proxy": 14.6,
@@ -10766,20 +11162,34 @@
         "sma50_vs_price": -18.15,
         "sma200_vs_price": -21.62,
         "macd_line": -1.2204,
-        "atr": 0.5279,
+        "atr": 0.5286,
         "momentum_divergence": 13.17,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME ELEVATED: 1.74x avg — above-normal interest",
+          "VOLUME ELEVATED: 1.51x avg — above-normal interest",
           "AT 52W LOW: +1.9% above annual floor — breakdown or reversal imminent",
           "MOMENTUM: -4.9% in 5 days",
           "MOMENTUM DIVERGENCE: 5d/20d gap +13.2pp — emerging trend shift",
           "DEEPLY OVERSOLD: RSI proxy 15, Stoch proxy 9 — bounce candidate"
         ],
-        "rationale": "WY: volume running at 1.7x the daily average signals institutional-scale activity; price sits just +1.9% above the 52-week low (18.26) — a key decision zone; RSI proxy (15) and stochastic (9) in oversold territory support a bounce thesis; price is -18.1% vs SMA50."
+        "rationale": "WY: volume running at 1.5x the daily average signals institutional-scale activity; price sits just +1.9% above the 52-week low (18.26) — a key decision zone; RSI proxy (15) and stochastic (9) in oversold territory support a bounce thesis; price is -18.1% vs SMA50."
       },
-      "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "analysis": {
+        "analysis_date": "2026-10-08",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 4,
+        "bull": [
+          "RSI 14.6 deeply oversold near 52w low",
+          "Timberland base and housing exposure"
+        ],
+        "bear": [
+          "Lumber prices falling, below SMA50/200"
+        ],
+        "summary": "Oversold but lumber weakness and downtrend lack a catalyst.",
+        "key_risk": "Further lumber price decline"
+      },
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     },
     {
       "symbol": "WYNN",
@@ -10792,7 +11202,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.23,
+      "volume_ratio": 1.46,
       "pct_from_52w_high": -42.71,
       "pct_from_52w_low": 1.15,
       "revenue_growth": null,
@@ -10862,8 +11272,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-10-06",
-        "score": 54.6,
+        "screening_date": "2026-10-08",
+        "score": 55.8,
         "rsi": 28.5,
         "rsi_proxy": 28.5,
         "stoch_proxy": 8.9,
@@ -10883,26 +11293,27 @@
         "rationale": "WYNN: price sits just +1.1% above the 52-week low (75.75) — a key decision zone; RSI proxy (28) and stochastic (9) in oversold territory support a bounce thesis; price is -16.6% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-10-06T23:40:42.683585+00:00"
+      "prices_age": "2026-10-08T00:05:16.825826+00:00"
     }
   ],
   "latest_decisions": {
-    "date": "2026-10-07",
-    "market_summary": "AI/tech-momentum er kraftigt overkøbt (RSI 83-96 i flere positioner), så der tages delvis profit i MRVL og stops strammes i KEYS/FLEX. Ingen nye BULL-kandidater uden for porteføljen i dag; ca. 55k USD kontant bevares.",
+    "date": "2026-10-08",
+    "market_summary": "Ingen BULL-kandidater udenfor porteføljen; resten er NEUTRAL/BEAR i nedtrend. Tech-positioner er stærkt overkøbte, så vi tager delvis profit i MRVL og hæver stops, og beholder ~60k USD kontanter til bedre indgange.",
     "decisions": [
       {
         "symbol": "MRVL",
         "name": "Marvell Technology",
         "action": "SELL",
-        "shares": 17,
+        "shares": 9,
         "price": 287.01,
         "confidence": 70,
-        "reasoning": "Kursen er ved målet (290), RSI 83 og 70% over SMA200 med ~85x earnings. Sælger ca. halvdelen for at sikre gevinst som planlagt; resten kører med strammet stop.",
+        "reasoning": "Delvis profit (9 af 18) som planlagt: kurs 287 er over 275-triggeren og tæt på target 290, RSI 83 og 85x earnings. Resten kører videre med hævet stop.",
         "bull": [
-          "AI-silicon momentum og hyperscaler-aftaler"
+          "AI data-center momentum, +27% 20d",
+          "Far above SMA50/200"
         ],
         "bear": [
-          "Parabolsk rally, dyr værdiansættelse, asymmetrisk downside"
+          "RSI 83, at upper Bollinger, 85x earnings valuation"
         ],
         "investment_plan": {
           "term": "medium",
@@ -10910,12 +11321,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "AI-silicon case intakt, men delvis profit sikres ved målkurs.",
-          "price_target": 320,
-          "stop_loss": 262,
-          "expected_return_pct": 11,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg resten ved brud under 262 eller selskabsspecifik skuffelse."
+          "thesis": "AI-silicon vækstcase intakt, bekræftet af hyperscaler-aftaler.",
+          "price_target": 300,
+          "stop_loss": 265,
+          "expected_return_pct": 4.5,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved stop-brud eller selskabsspecifik skuffelse; delvis profit ved 275."
         }
       },
       {
@@ -10924,13 +11335,14 @@
         "action": "HOLD",
         "shares": 0,
         "price": 502.31,
-        "confidence": 55,
-        "reasoning": "Thesis intakt (positive fase 2-data), kortsigtet oversolgt, langt over stop 448.95.",
+        "confidence": 65,
+        "reasoning": "Sund langsigtet trend, kortsigtet pullback (RSI 40); thesis intakt, stop ikke ramt.",
         "bull": [
-          "Pipeline-upside, analytikermål +20%"
+          "Analysts see 20% upside, above SMA200",
+          "Kidney pipeline"
         ],
         "bear": [
-          "Under SMA50, negativ MACD"
+          "Below SMA50, -4.6% 5d, MACD negative"
         ],
         "investment_plan": {
           "term": "medium",
@@ -10941,7 +11353,7 @@
           "thesis": "Stabil biotek-compounder med pipeline-upside.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 17,
+          "expected_return_pct": 17.5,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud eller klinisk/regulatorisk tilbageslag."
         }
@@ -10952,13 +11364,14 @@
         "action": "HOLD",
         "shares": 0,
         "price": 121.38,
-        "confidence": 62,
-        "reasoning": "BULL-verdict, stærk AI-drevet trend; lille position. Stop hæves til 112 for at låse gevinst.",
+        "confidence": 65,
+        "reasoning": "BULL conf 6, reshoring-medvind intakt; overkøbt men trend stærk, lille position.",
         "bull": [
-          "AI-datacenter/networking og reshoring"
+          "Above SMA50/200, reshoring tailwind",
+          "+6.6% 5d, MACD positive"
         ],
         "bear": [
-          "Overkøbt RSI 72.6, lav volumen"
+          "RSI 72.6 overbought, above upper Bollinger"
         ],
         "investment_plan": {
           "term": "medium",
@@ -10969,8 +11382,8 @@
           "thesis": "Supply-chain reshoring og netværk.",
           "price_target": 135,
           "stop_loss": 112,
-          "expected_return_pct": 11,
-          "timeframe": "2-4 måneder",
+          "expected_return_pct": 11.2,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud eller fundamentalt brud."
         }
       },
@@ -10980,13 +11393,14 @@
         "action": "HOLD",
         "shares": 0,
         "price": 104.03,
-        "confidence": 50,
-        "reasoning": "Konsolidering ved SMA200, stop 99.98 ikke ramt, ingen brud på thesis.",
+        "confidence": 65,
+        "reasoning": "Range-bound uden edge men thesis ikke brudt, stop 99.98 ikke ramt.",
         "bull": [
-          "Omkostningsbesparelser, analytikerkonsensus bullish"
+          "Near SMA50/200, stable",
+          "Cost cutting under CEO"
         ],
         "bear": [
-          "Svagt momentum, ingen katalysator"
+          "Flat momentum, streaming cost pressure"
         ],
         "investment_plan": {
           "term": "medium",
@@ -10997,8 +11411,8 @@
           "thesis": "Turnaround via cost cuts under ny CEO.",
           "price_target": 115,
           "stop_loss": 99.98,
-          "expected_return_pct": 10,
-          "timeframe": "2-4 måneder",
+          "expected_return_pct": 10.5,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud eller svag streaming/parks-guidance."
         }
       },
@@ -11008,13 +11422,13 @@
         "action": "HOLD",
         "shares": 0,
         "price": 388.03,
-        "confidence": 55,
-        "reasoning": "Fundamentalt stærk men RSI 96; stop hæves til 365 for at sikre størstedelen af gevinsten. Største position (11.6%), ingen yderligere køb.",
+        "confidence": 65,
+        "reasoning": "Kraftig uptrend, RSI 96 ekstremt overkøbt; holder med stop hævet til 365 for at låse gevinst. Overvej trim ved svaghed.",
         "bull": [
-          "Positive estimatrevisioner, AI-testefterspørgsel"
+          "Near 52w high, +16% 20d, strong trend"
         ],
         "bear": [
-          "RSI 96, 15% over SMA50, mean-reversion-risiko"
+          "RSI 96 extremely overbought, high pullback risk"
         ],
         "investment_plan": {
           "term": "medium",
@@ -11025,8 +11439,8 @@
           "thesis": "Test/måle-udstyr til AI-infrastruktur.",
           "price_target": 420,
           "stop_loss": 365,
-          "expected_return_pct": 8,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 8.2,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved brud under 365 eller fundamental skuffelse."
         }
       },
@@ -11036,13 +11450,13 @@
         "action": "HOLD",
         "shares": 0,
         "price": 334.22,
-        "confidence": 55,
-        "reasoning": "Stabil optrend, rekord-Q3; RSI 88 men stop 310 giver plads. Stor position (15.6%), ingen tilkøb.",
+        "confidence": 65,
+        "reasoning": "Stabil uptrend nær højder; stop 315 ikke ramt. Største position (15.6%), ingen tilkøb.",
         "bull": [
-          "Rekordresultater, halvleder-eksponering"
+          "Near 52w high, above SMA50/200"
         ],
         "bear": [
-          "RSI 88, fair værdiansat"
+          "RSI 88 overbought"
         ],
         "investment_plan": {
           "term": "medium",
@@ -11053,8 +11467,8 @@
           "thesis": "Industriel kvalitet i optrend.",
           "price_target": 360,
           "stop_loss": 315,
-          "expected_return_pct": 8,
-          "timeframe": "2-4 måneder",
+          "expected_return_pct": 7.7,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud eller fundamental svækkelse."
         }
       }
@@ -11252,7 +11666,11 @@
         },
         {
           "date": "2026-10-07",
-          "portfolio_value": 105087.07
+          "portfolio_value": 104856.44
+        },
+        {
+          "date": "2026-10-08",
+          "portfolio_value": 104856.44
         }
       ]
     },
@@ -11443,20 +11861,24 @@
         },
         {
           "date": "2026-10-06",
-          "portfolio_value": 104869.68
+          "portfolio_value": 104868.96
         },
         {
           "date": "2026-10-07",
-          "portfolio_value": 104869.68
+          "portfolio_value": 104652.69
+        },
+        {
+          "date": "2026-10-08",
+          "portfolio_value": 104652.69
         }
       ]
     }
   ],
   "sector_exposure_pct": {
-    "Information Technology": 40.2,
-    "Health Care": 21.2,
-    "Communication Services": 3.3,
-    "Industrials": 35.3
+    "Information Technology": 36.8,
+    "Health Care": 22.4,
+    "Communication Services": 3.5,
+    "Industrials": 37.3
   },
   "last_executed_decisions": "2026-10-08"
 }
