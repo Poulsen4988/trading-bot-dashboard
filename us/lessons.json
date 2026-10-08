@@ -1,27 +1,27 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "stats": {
-    "closed_trades": 21,
-    "wins": 8,
+    "closed_trades": 22,
+    "wins": 9,
     "losses": 13,
-    "win_rate_pct": 38.1,
-    "avg_win_pct": 21.05,
+    "win_rate_pct": 40.9,
+    "avg_win_pct": 23.07,
     "avg_loss_pct": -5.54,
-    "avg_pnl_pct": 4.59,
-    "avg_holding_days": 30.5,
-    "total_realized_usd": 1721.17,
-    "target_hits": 5,
+    "avg_pnl_pct": 6.16,
+    "avg_holding_days": 33.0,
+    "total_realized_usd": 2447.92,
+    "target_hits": 6,
     "stop_hits": 9,
     "thesis_verdicts": {
       "FAILED": 13,
       "PARTIAL": 3,
-      "HELD": 5
+      "HELD": 6
     },
     "by_sector": {
       "Information Technology": {
-        "n": 5,
-        "wins": 4,
-        "avg_pnl_pct": 20.88
+        "n": 6,
+        "wins": 5,
+        "avg_pnl_pct": 23.93
       },
       "Communication Services": {
         "n": 1,
@@ -559,6 +559,30 @@
       "stop_hit": false,
       "thesis_verdict": "HELD",
       "lesson": "MRVL: +39.1% over 84 days — assumption HELD. Expected +33.0%. Plan horizon: 3-6 måneder. Price target reached."
+    },
+    {
+      "trade_key": "id:422",
+      "date": "2026-10-08",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "sector": "Information Technology",
+      "buy_date": "2026-07-15",
+      "holding_days": 85,
+      "shares": 9,
+      "buy_price": 206.26,
+      "sell_price": 287.01,
+      "realized_pnl_usd": 726.75,
+      "realized_pnl_pct": 39.15,
+      "expected_return_pct": 33.0,
+      "price_target": 275.0,
+      "stop_loss": 162.53,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Sektor-bred (ikke selskabsspecifik) sympati-selloff i chip-komplekset giver en dyb oversolgt entry i en langsigtet intakt AI-silicon-vækstcase (60% over SMA200).",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HELD",
+      "lesson": "MRVL: +39.1% over 85 days — assumption HELD. Expected +33.0%. Plan horizon: 3-6 måneder. Price target reached."
     }
   ]
 }
