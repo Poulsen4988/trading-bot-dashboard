@@ -1,27 +1,27 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-14",
   "stats": {
-    "closed_trades": 22,
-    "wins": 9,
+    "closed_trades": 23,
+    "wins": 10,
     "losses": 13,
-    "win_rate_pct": 40.9,
-    "avg_win_pct": 23.07,
+    "win_rate_pct": 43.5,
+    "avg_win_pct": 21.52,
     "avg_loss_pct": -5.54,
-    "avg_pnl_pct": 6.16,
-    "avg_holding_days": 33.0,
-    "total_realized_usd": 2447.92,
+    "avg_pnl_pct": 6.22,
+    "avg_holding_days": 34.9,
+    "total_realized_usd": 2542.24,
     "target_hits": 6,
     "stop_hits": 9,
     "thesis_verdicts": {
       "FAILED": 13,
-      "PARTIAL": 3,
+      "PARTIAL": 4,
       "HELD": 6
     },
     "by_sector": {
       "Information Technology": {
-        "n": 6,
-        "wins": 5,
-        "avg_pnl_pct": 23.93
+        "n": 7,
+        "wins": 6,
+        "avg_pnl_pct": 21.6
       },
       "Communication Services": {
         "n": 1,
@@ -583,6 +583,30 @@
       "stop_hit": false,
       "thesis_verdict": "HELD",
       "lesson": "MRVL: +39.1% over 85 days — assumption HELD. Expected +33.0%. Plan horizon: 3-6 måneder. Price target reached."
+    },
+    {
+      "trade_key": "id:451",
+      "date": "2026-10-14",
+      "symbol": "FLEX",
+      "name": "Flex Ltd.",
+      "sector": "Information Technology",
+      "buy_date": "2026-07-29",
+      "holding_days": 77,
+      "shares": 12,
+      "buy_price": 103.02,
+      "sell_price": 110.88,
+      "realized_pnl_usd": 94.32,
+      "realized_pnl_pct": 7.63,
+      "expected_return_pct": 21.35,
+      "price_target": 125.0,
+      "stop_loss": 85.68,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Beat-and-raise-regnskab ignoreret af markedet i en bred tech-selloff giver en dybt oversolgt entry i et selskab med bekræftet fundamental momentum. Moderat position for at diversificere ind i IT-sektoren, som porteføljen ellers er underepresenteret i.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "PARTIAL",
+      "lesson": "FLEX: +7.6% over 77 days — assumption PARTIAL. Expected +21.4%. Plan horizon: 3-6 måneder."
     }
   ]
 }
