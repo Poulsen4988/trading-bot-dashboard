@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 56648.59,
+    "cash": 57979.15,
     "currency": "USD",
     "positions": [
       {
@@ -9,24 +9,25 @@
         "name": "Marvell Technology",
         "shares": 9,
         "purchase_price": 206.26,
-        "current_price": 265.86,
+        "current_price": 268.73,
         "purchase_date": "2026-07-15",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "AI-silicon vækstcase intakt.",
           "price_target": 290,
           "stop_loss": 248.76,
-          "expected_return_pct": 9.1,
+          "expected_return_pct": 7.9,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud eller selskabsspecifik skuffelse."
         },
         "last_review": {
-          "date": "2026-10-13",
-          "reasoning": "AI-silicon vækstcase intakt; trend stærk. Stop ikke udløst (265.86 vs stop 248.76); ingen fundamentalt brud.",
-          "confidence": 55
+          "date": "2026-10-14",
+          "reasoning": "Thesis intakt, trend stærk, kurs over stop 248,76. Hold.",
+          "confidence": 60
         }
       },
       {
@@ -34,49 +35,25 @@
         "name": "Vertex Pharmaceuticals",
         "shares": 20,
         "purchase_price": 477.36,
-        "current_price": 507.0,
+        "current_price": 485.22,
         "purchase_date": "2026-07-24",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Defensiv sundhedscase med vækst.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 16.4,
+          "expected_return_pct": 21.6,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud eller fundamentalt brud."
         },
         "last_review": {
-          "date": "2026-10-13",
-          "reasoning": "Kvalitets-biotek med pipeline-katalysatorer. Stop ikke udløst (507.0 vs stop 448.95); ingen fundamentalt brud.",
-          "confidence": 55
-        }
-      },
-      {
-        "symbol": "FLEX",
-        "name": "Flex Ltd.",
-        "shares": 12,
-        "purchase_price": 103.02,
-        "current_price": 117.24,
-        "purchase_date": "2026-07-29",
-        "investment_plan": {
-          "term": "medium",
-          "basis": [
-            "technical"
-          ],
-          "thesis": "Elektronikproduktion med AI/datacenter-medvind.",
-          "price_target": 135,
-          "stop_loss": 112,
-          "expected_return_pct": 15.1,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud."
-        },
-        "last_review": {
-          "date": "2026-10-13",
-          "reasoning": "Sund uptrend med strukturelle tailwinds. Stop ikke udløst (117.24 vs stop 112); ingen fundamentalt brud.",
-          "confidence": 55
+          "date": "2026-10-14",
+          "reasoning": "Oversolgt men trend svækket; stop 448,95 ikke ramt. Afvent stabilisering.",
+          "confidence": 50
         }
       },
       {
@@ -84,24 +61,25 @@
         "name": "Walt Disney Company (The)",
         "shares": 15,
         "purchase_price": 104.91,
-        "current_price": 108.49,
+        "current_price": 108.58,
         "purchase_date": "2026-08-07",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Underværdsat medie/parks-case.",
           "price_target": 115,
           "stop_loss": 99.98,
-          "expected_return_pct": 6.0,
+          "expected_return_pct": 5.9,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud."
         },
         "last_review": {
-          "date": "2026-10-13",
-          "reasoning": "Uptrend, begrænset opside kort sigt. Stop ikke udløst (108.49 vs stop 99.98); ingen fundamentalt brud.",
-          "confidence": 55
+          "date": "2026-10-14",
+          "reasoning": "Intakt optrend, stop 99,98 langt væk. Hold.",
+          "confidence": 60
         }
       },
       {
@@ -109,24 +87,25 @@
         "name": "Keysight Technologies",
         "shares": 32,
         "purchase_price": 319.45,
-        "current_price": 377.7,
+        "current_price": 370.22,
         "purchase_date": "2026-08-19",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Test/måle-udstyr med AI-/datacenter-efterspørgsel.",
           "price_target": 420,
           "stop_loss": 365,
-          "expected_return_pct": 11.2,
+          "expected_return_pct": 13.4,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud."
         },
         "last_review": {
-          "date": "2026-10-13",
-          "reasoning": "Stærkt momentum nær ATH; overkøbt men trend intakt. Stop ikke udløst (377.7 vs stop 365); ingen fundamentalt brud.",
-          "confidence": 55
+          "date": "2026-10-14",
+          "reasoning": "Stærk trend og estimatopjusteringer; stop 365 ikke ramt. Hold.",
+          "confidence": 60
         }
       },
       {
@@ -134,12 +113,13 @@
         "name": "Nordson Corporation",
         "shares": 50,
         "purchase_price": 307.45,
-        "current_price": 330.44,
+        "current_price": 330.58,
         "purchase_date": "2026-09-10",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Kvalitets-industrial med stabil vækst.",
           "price_target": 360,
@@ -149,9 +129,9 @@
           "exit_conditions": "Sælg ved stop-brud."
         },
         "last_review": {
-          "date": "2026-10-13",
-          "reasoning": "Kvalitetsværdi i uptrend. Stop ikke udløst (330.44 vs stop 315); ingen fundamentalt brud.",
-          "confidence": 55
+          "date": "2026-10-14",
+          "reasoning": "Kompounder i optrend nær 52-ugers højde; stop 315 ikke ramt. Hold.",
+          "confidence": 60
         }
       },
       {
@@ -159,28 +139,29 @@
         "name": "Mosaic Company (The)",
         "shares": 300,
         "purchase_price": 19.97,
-        "current_price": 18.85,
+        "current_price": 19.18,
         "purchase_date": "2026-10-09",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Mean-reversion bounce fra ekstremt oversolgt niveau mod SMA50 med lille positionsstørrelse.",
           "price_target": 23.3,
           "stop_loss": 17.85,
-          "expected_return_pct": 23.6,
+          "expected_return_pct": 21.5,
           "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved brud på 17,85 eller hvis gødningspriserne forværres yderligere."
         },
         "last_review": {
-          "date": "2026-10-13",
-          "reasoning": "Dybt oversolgt gødning; reversion-case, stop beskytter. Stop ikke udløst (18.85 vs stop 17.85); ingen fundamentalt brud.",
-          "confidence": 55
+          "date": "2026-10-14",
+          "reasoning": "Ekstremt oversolgt, men ingen vendingssignal; stop 17,85 ikke ramt. Lille position, hold.",
+          "confidence": 40
         }
       }
     ],
-    "last_updated": "2026-10-13 22:47 UTC"
+    "last_updated": "2026-10-14 22:46 UTC"
   },
   "history": [
     {
@@ -386,6 +367,10 @@
     {
       "date": "2026-10-13",
       "portfolio_value": 106478.96
+    },
+    {
+      "date": "2026-10-14",
+      "portfolio_value": 105860.86
     }
   ],
   "trades": [
@@ -7643,6 +7628,122 @@
         "summary": "Dybt oversolgt gødning; reversion-case, stop beskytter. Stop ikke udløst (18.85 vs stop 17.85); ingen fundamentalt brud."
       },
       "id": 448,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-14",
+      "action": "HOLD",
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "shares": null,
+      "price": 268.73,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Thesis intakt, trend stærk, kurs over stop 248,76. Hold."
+      },
+      "id": 449,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-14",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 485.22,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 50,
+        "summary": "Oversolgt men trend svækket; stop 448,95 ikke ramt. Afvent stabilisering."
+      },
+      "id": 450,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-14",
+      "action": "SELL",
+      "symbol": "FLEX",
+      "name": "Flex Ltd.",
+      "shares": 12,
+      "price": 110.88,
+      "value": 1330.56,
+      "reasoning": {
+        "verdict": "SELL",
+        "confidence": 50,
+        "summary": "Stop-loss 112 brudt (kurs 110,88) efter -5,4% på dagen og -8,7% på 5 dage på forhøjet volumen, brud under SMA50. Mekanisk stop respekteres; lukker position."
+      },
+      "cost_basis_usd": 1236.24,
+      "realized_pnl_usd": 94.32,
+      "realized_pnl_pct": 7.63,
+      "holding_days": 77,
+      "id": 451,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-14",
+      "action": "HOLD",
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "shares": null,
+      "price": 108.58,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Intakt optrend, stop 99,98 langt væk. Hold."
+      },
+      "id": 452,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-14",
+      "action": "HOLD",
+      "symbol": "KEYS",
+      "name": "Keysight Technologies",
+      "shares": null,
+      "price": 370.22,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Stærk trend og estimatopjusteringer; stop 365 ikke ramt. Hold."
+      },
+      "id": 453,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-14",
+      "action": "HOLD",
+      "symbol": "NDSN",
+      "name": "Nordson Corporation",
+      "shares": null,
+      "price": 330.58,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Kompounder i optrend nær 52-ugers højde; stop 315 ikke ramt. Hold."
+      },
+      "id": 454,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-14",
+      "action": "HOLD",
+      "symbol": "MOS",
+      "name": "Mosaic Company (The)",
+      "shares": null,
+      "price": 19.18,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 40,
+        "summary": "Ekstremt oversolgt, men ingen vendingssignal; stop 17,85 ikke ramt. Lille position, hold."
+      },
+      "id": 455,
       "is_new": true
     }
   ],
@@ -12403,5 +12504,5 @@
     "Industrials": 33.2,
     "Materials": 11.3
   },
-  "last_executed_decisions": "2026-10-13"
+  "last_executed_decisions": "2026-10-14"
 }
