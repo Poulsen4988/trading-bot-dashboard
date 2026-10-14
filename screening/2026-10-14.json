@@ -1,0 +1,314 @@
+{
+  "date": "2026-10-14",
+  "screened_at": "2026-10-14T07:16:51Z",
+  "price_data_date": "2026-10-13",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 62.0,
+      "price": 455.9,
+      "pct_1d": 2.15,
+      "pct_5d": 8.86,
+      "pct_20d": 8.63,
+      "volume_ratio": 1.2,
+      "rsi_proxy": 76.9,
+      "stoch_proxy": 90.7,
+      "bb_position": 126.6,
+      "sma50_vs_price": 4.88,
+      "sma200_vs_price": 3.15,
+      "macd_line": 1.9035,
+      "atr": 10.4071,
+      "momentum_divergence": 0.23,
+      "pe_forward": 17.501476,
+      "pct_from_52w_high": -27.8,
+      "pct_from_52w_low": 23.32,
+      "sector": "Healthcare",
+      "earnings_growth": 0.818,
+      "revenue_growth": 0.057,
+      "div_yield": 5.15,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.20x avg",
+        "MOMENTUM SURGE: +8.9% in 5 days — sharp directional move",
+        "OVERBOUGHT: RSI proxy 77, Stoch proxy 91 — stretched, potential pullback",
+        "UNDERVALUED: Fwd PE 17.5x vs sector norm 25x — 30% discount",
+        "STRONG EARNINGS GROWTH: +82% YoY — fundamental tailwind",
+        "HIGH YIELD: 5.15% dividend provides downside cushion"
+      ],
+      "screening_rationale": "COLO-B.CO: a 8.9% five-day rally (20d: +8.6%) reveals strong directional pressure; forward PE 17.5x represents a 30% discount to Healthcare sector norm (25x); +82% earnings growth underpins the fundamental case; price is +4.9% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 61.2,
+      "price": 38.2,
+      "pct_1d": 2.28,
+      "pct_5d": 12.85,
+      "pct_20d": 1.46,
+      "volume_ratio": 0.65,
+      "rsi_proxy": 55.3,
+      "stoch_proxy": 88.0,
+      "bb_position": 79.6,
+      "sma50_vs_price": 0.33,
+      "sma200_vs_price": -7.84,
+      "macd_line": -0.2885,
+      "atr": 1.4821,
+      "momentum_divergence": 11.39,
+      "pe_forward": 9.736627,
+      "pct_from_52w_high": -33.91,
+      "pct_from_52w_low": 15.58,
+      "sector": "Technology",
+      "earnings_growth": null,
+      "revenue_growth": -0.067,
+      "div_yield": 0.0,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "SIGNIFICANT DRAWDOWN: -33.9% from 52w high",
+        "MOMENTUM SURGE: +12.8% in 5 days — sharp directional move",
+        "MOMENTUM DIVERGENCE: 5d/20d gap +11.4pp — emerging trend shift",
+        "OVERBOUGHT: RSI proxy 55, Stoch proxy 88 — stretched, potential pullback",
+        "DEEP VALUE: Fwd PE 9.7x vs sector norm 22x — 56% discount"
+      ],
+      "screening_rationale": "NNIT.CO: a 12.8% five-day rally (20d: +1.5%) reveals strong directional pressure; forward PE 9.7x represents a 56% discount to Technology sector norm (22x); price is +0.3% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 57.5,
+      "price": 150.3,
+      "pct_1d": 1.55,
+      "pct_5d": 5.61,
+      "pct_20d": 0.01,
+      "volume_ratio": 0.94,
+      "rsi_proxy": 70.5,
+      "stoch_proxy": 100.0,
+      "bb_position": 85.8,
+      "sma50_vs_price": 1.1,
+      "sma200_vs_price": 0.96,
+      "macd_line": -0.8738,
+      "atr": 2.4156,
+      "momentum_divergence": 5.6,
+      "pe_forward": 13.797523,
+      "pct_from_52w_high": -9.89,
+      "pct_from_52w_low": 8.13,
+      "sector": "Financial Services",
+      "earnings_growth": 0.107,
+      "revenue_growth": 0.026,
+      "div_yield": 5.74,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "NEAR 52W LOW: +8.1% above annual support — critical level",
+        "MOMENTUM: +5.6% in 5 days — continued BUYING pressure",
+        "OVERBOUGHT: RSI proxy 70, Stoch proxy 100 — stretched, potential pullback",
+        "EARNINGS GROWTH: +11% YoY",
+        "HIGH YIELD: 5.74% dividend provides downside cushion"
+      ],
+      "screening_rationale": "TRYG.CO: a 5.6% five-day rally (20d: +0.0%) reveals strong directional pressure; price sits just +8.1% above the 52-week low (139.0) — a key decision zone; price is +1.1% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 56.0,
+      "price": 358.4,
+      "pct_1d": 2.17,
+      "pct_5d": 10.41,
+      "pct_20d": 21.16,
+      "volume_ratio": 1.42,
+      "rsi_proxy": 78.1,
+      "stoch_proxy": 98.2,
+      "bb_position": 114.9,
+      "sma50_vs_price": 19.27,
+      "sma200_vs_price": 46.55,
+      "macd_line": 12.9688,
+      "atr": 9.0429,
+      "momentum_divergence": -10.75,
+      "pe_forward": 21.337893,
+      "pct_from_52w_high": -0.28,
+      "pct_from_52w_low": 104.8,
+      "sector": "Healthcare",
+      "earnings_growth": 0.064,
+      "revenue_growth": 0.148,
+      "div_yield": 0.0,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.42x avg",
+        "NEAR 52W HIGH: -0.3% — breakout territory",
+        "MOMENTUM SURGE: +10.4% in 5 days — sharp directional move",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -10.8pp — emerging trend shift",
+        "OVERBOUGHT: RSI proxy 78, Stoch proxy 98 — stretched, potential pullback",
+        "MODEST DISCOUNT: Fwd PE 21.3x vs sector norm 25x"
+      ],
+      "screening_rationale": "DEMANT.CO: a 10.4% five-day rally (20d: +21.2%) reveals strong directional pressure; stock is pressing against its 52-week high at -0.3% — breakout watch; price is +19.3% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 55.0,
+      "price": 236.8,
+      "pct_1d": -1.82,
+      "pct_5d": 6.86,
+      "pct_20d": 18.16,
+      "volume_ratio": 1.03,
+      "rsi_proxy": 67.1,
+      "stoch_proxy": 82.0,
+      "bb_position": 91.9,
+      "sma50_vs_price": 13.74,
+      "sma200_vs_price": 22.11,
+      "macd_line": 7.6893,
+      "atr": 5.6857,
+      "momentum_divergence": -11.3,
+      "pe_forward": 21.784729,
+      "pct_from_52w_high": -2.83,
+      "pct_from_52w_low": 38.24,
+      "sector": "Healthcare",
+      "earnings_growth": 1.697,
+      "revenue_growth": 0.232,
+      "div_yield": 0.0,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.03x avg",
+        "NEAR 52W HIGH: -2.8% — breakout territory",
+        "MOMENTUM: +6.9% in 5 days — continued BUYING pressure",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -11.3pp — emerging trend shift",
+        "MODEST DISCOUNT: Fwd PE 21.8x vs sector norm 25x",
+        "STRONG EARNINGS GROWTH: +170% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "BAVA.CO: a 6.9% five-day rally (20d: +18.2%) reveals strong directional pressure; stock is pressing against its 52-week high at -2.8% — breakout watch; +170% earnings growth underpins the fundamental case; price is +13.7% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 62.0
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 61.2
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 57.5
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 56.0
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 55.0
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 45.3
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 44.0
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 43.3
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 41.6
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 38.0
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 36.8
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 34.4
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 33.4
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 33.0
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 31.8
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 24.8
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 23.0
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 22.7
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 22.2
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 21.2
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 21.1
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 18.1
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 17.6
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 16.6
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 13.5
+    }
+  ]
+}
