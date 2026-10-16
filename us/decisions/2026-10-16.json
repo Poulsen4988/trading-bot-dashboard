@@ -1,0 +1,69 @@
+{
+ "date": "2026-10-16",
+ "market_summary": "Analysegrundlaget dækker kun tre aktier, alle allerede i porteføljen, så der er ingen nye købskandidater i dag. Alle tre positioner er i profit med intakt thesis og stop ikke udløst; vi holder og bevarer høj kontantbeholdning.",
+ "decisions": [
+  {
+   "symbol": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 499.74,
+   "confidence": 55,
+   "reasoning": "Neutral verdict, pris 5% over SMA200 og langt over stop (448.95). Thesis intakt, ingen grund til at sælge.",
+   "bull": ["Positive Phase 2-nyheder (nyre)", "Pris over SMA200 med stigende volumen"],
+   "bear": ["Under SMA50, negativ MACD"],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Defensiv sundhedscase med vækst.",
+    "price_target": 590,
+    "stop_loss": 448.95,
+    "expected_return_pct": 18.1,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud eller pipeline-skuffelse."
+   }
+  },
+  {
+   "symbol": "DIS",
+   "name": "Walt Disney Company (The)",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 110.59,
+   "confidence": 50,
+   "reasoning": "Neutral og kortsigtet overkøbt, men trend intakt og nær kursmål 115; hold, stop ikke udløst.",
+   "bull": ["Over SMA50/SMA200, positivt momentum", "Omkostningsreduktioner, kursmål ~127"],
+   "bear": ["RSI 68, tæt på øvre Bollinger-bånd"],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Underværdsat medie/parks-case.",
+    "price_target": 115,
+    "stop_loss": 99.98,
+    "expected_return_pct": 4.0,
+    "timeframe": "1-3 måneder",
+    "exit_conditions": "Sælg ved stop-brud eller når kursmål nås uden momentum."
+   }
+  },
+  {
+   "symbol": "NDSN",
+   "name": "Nordson Corporation",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 322.31,
+   "confidence": 62,
+   "reasoning": "BULL-verdict, stærk trend over SMA200. Stop 315 er tæt (2%), men ikke udløst; positionen er allerede 15% af porteføljen, så ingen yderligere køb.",
+   "bull": ["Trend 11% over SMA200, positiv MACD", "Rekord Q3 og hævet guidance, halvlederefterspørgsel"],
+   "bear": ["Cyklisk, fuld værdiansættelse efter +49% fra lav"],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Kvalitets-industrial med stabil vækst.",
+    "price_target": 360,
+    "stop_loss": 315,
+    "expected_return_pct": 11.7,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud."
+   }
+  }
+ ]
+}
