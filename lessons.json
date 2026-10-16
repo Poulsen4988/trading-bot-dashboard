@@ -1,21 +1,21 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-16",
   "stats": {
-    "closed_trades": 44,
-    "wins": 21,
+    "closed_trades": 45,
+    "wins": 22,
     "losses": 22,
-    "win_rate_pct": 48.8,
-    "avg_win_pct": 9.7,
+    "win_rate_pct": 50.0,
+    "avg_win_pct": 9.68,
     "avg_loss_pct": -4.67,
-    "avg_pnl_pct": 2.35,
-    "avg_holding_days": 22.2,
-    "total_realized_dkk": 8205.85,
+    "avg_pnl_pct": 2.51,
+    "avg_holding_days": 21.9,
+    "total_realized_dkk": 8763.4,
     "target_hits": 4,
     "stop_hits": 11,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 22,
-      "DELVIST": 17,
+      "DELVIST": 18,
       "HOLDT": 4
     },
     "by_sector": {
@@ -55,9 +55,9 @@
         "avg_pnl_pct": -5.48
       },
       "Technology": {
-        "n": 1,
-        "wins": 0,
-        "avg_pnl_pct": -6.73
+        "n": 2,
+        "wins": 1,
+        "avg_pnl_pct": 1.29
       }
     }
   },
@@ -1117,6 +1117,30 @@
       "stop_hit": false,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "ORSTED.CO: -2.1% på 53 dage — antagelse HOLDT IKKE. Forventet +17.0%. Plan-horisont: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:902",
+      "date": "2026-10-16",
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "sector": "Technology",
+      "buy_date": "2026-10-07",
+      "holding_days": 9,
+      "shares": 177,
+      "buy_price": 33.85,
+      "sell_price": 37.0,
+      "realized_pnl_dkk": 557.55,
+      "realized_pnl_pct": 9.31,
+      "expected_return_pct": 13.7,
+      "price_target": 38.5,
+      "stop_loss": 31.83,
+      "timeframe": "1-3 måneder",
+      "term": "short",
+      "thesis": "Mean-reversion bounce fra ekstremt oversolgt niveau; lille spekulativ position.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "DELVIST",
+      "lesson": "NNIT.CO: +9.3% på 9 dage — antagelse DELVIST. Forventet +13.7%. Plan-horisont: 1-3 måneder."
     }
   ]
 }
