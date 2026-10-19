@@ -1,0 +1,303 @@
+{
+ "date": "2026-10-19",
+ "market_summary": "Porteføljen er i overvejende positiv trend, men flere aktier (Demant, Ambu, Coloplast, Bavarian Nordic) er overkøbte, og Healthcare udgør ca. 32% af porteføljen. Ingen nye køb i dag pga. sektorkoncentration og høje værdiansættelser; alle positioner holdes med uændrede stop.",
+ "decisions": [
+  {
+   "symbol": "ISS.CO",
+   "name": "ISS",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 301.2,
+   "confidence": 70,
+   "reasoning": "Thesis intakt, stop ikke udløst. ISS har sund trend, stærke estimater og nye vækst-/marginmål med tilbagekøb som støtte. +10% kræver brud over 52u-high mod ~330; downside er retest af SMA50 (~289, -4%).",
+   "bull": [
+    "Nye mid-term finansielle mål, indtjeningsvækst +27% og fwd PE 13x (28% under sektor)",
+    "1,3% fra 52u-high, over SMA50/SMA200, positiv MACD og aktivt tilbagekøb"
+   ],
+   "bear": [
+    "SEC-sag om udlevering af klientdata/stemmedata er overhængende overskriftsrisiko",
+    "Stoch 97 – kortsigtet overkøbt"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Intakt optrend, billig (fwd PE 12,7), nye mid-term mål; SEC-sagen overvåges. Hold.",
+    "price_target": 320,
+    "stop_loss": 265,
+    "expected_return_pct": 6.2,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 265, nær 320 eller ved SEC-eskalering."
+   }
+  },
+  {
+   "symbol": "DANSKE.CO",
+   "name": "Danske Bank",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 357.8,
+   "confidence": 50,
+   "reasoning": "Thesis intakt, stop ikke udløst. Regnskab 29/10 er nær; stop 350 ligger kun 2% under kurs. Hold med uændret stop.",
+   "bull": [
+    "Fwd PE 10,8x, udbytte 4,8% og løbende tilbagekøb; indtjeningsvækst +15%",
+    "RSI 29 – oversolgt; kurs over SMA200"
+   ],
+   "bear": [
+    "Kurs -4,7% på 20 dage og under SMA50, negativ MACD",
+    "Hele banksektoren (Nordea RSI 15) er under salgspres – sektorrisiko"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Oversolgt (RSI 29) men stop 350 ikke brudt og casen intakt; hold over regnskab 29/10.",
+    "price_target": 400,
+    "stop_loss": 350,
+    "expected_return_pct": 11.8,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 350 eller ved svagt regnskab."
+   }
+  },
+  {
+   "symbol": "DEMANT.CO",
+   "name": "Demant",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 358.8,
+   "confidence": 60,
+   "reasoning": "Thesis intakt, stop ikke udløst. Opjusteringen understøtter trenden, men aktien er langt foran sin SMA50. Fortsat opside mod ~395 kræver momentum; en normal tilbagetrækning mod ~330 er -8%.",
+   "bull": [
+    "Opjusterede 2026-forventninger og genoptaget aktietilbagekøb",
+    "Kurs ved 52u-high, 17,6% over SMA50, indtjenings- og omsætningsvækst; Bernstein-anbefaling"
+   ],
+   "bear": [
+    "RSI 75, +19% på 20 dage – meget udstrakt vs SMA50",
+    "Fwd PE 21x giver begrænset margin for skuffelse"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Stærk opjustering/buyback, men RSI 75 overkøbt; hold og lad vinderen løbe med stop 340.",
+    "price_target": 380,
+    "stop_loss": 340,
+    "expected_return_pct": 5.9,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 340 eller nær 380."
+   }
+  },
+  {
+   "symbol": "PNDORA.CO",
+   "name": "Pandora",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 847.0,
+   "confidence": 60,
+   "reasoning": "Thesis intakt, stop ikke udløst. Solid trend og guidance-opjustering, men lav organisk vækst. Opside mod ~930 kræver brud over 52u-high-zonen (~905); downside SMA50 (~817, -4%).",
+   "bull": [
+    "Opjusteret guidance, indtjeningsvækst +14% og trailing PE 12,5",
+    "Kurs 3,7% over SMA50 og 32% over SMA200; neutral RSI 50 giver plads"
+   ],
+   "bear": [
+    "Organisk vækst kun 3% – afhængig af forbrugerefterspørgsel og sølvpriser",
+    "CFO-skifte og tariffer/råvareomkostninger"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Langsigtet trend intakt, BULL, rimelig værdiansættelse; hold.",
+    "price_target": 910,
+    "stop_loss": 761,
+    "expected_return_pct": 7.4,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 761 eller nær 910."
+   }
+  },
+  {
+   "symbol": "AMBU-B.CO",
+   "name": "Ambu",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 78.35,
+   "confidence": 50,
+   "reasoning": "Thesis intakt, stop ikke udløst. Kursen har nået det gamle mål (78) efter stærk Q3; overkøbt, men trenden er intakt. Hæver mål til 86 (næste modstand) og holder stop 70.",
+   "bull": [
+    "Q3-rapport med stærk endoskopivækst og forbedret margin; tilbagekøb afsluttet",
+    "Indtjeningsvækst +28%, kurs +19% på 20 dage over SMA50"
+   ],
+   "bear": [
+    "RSI 80 og bb_position 97 – overkøbt; fwd PE 26x",
+    "Modstand omkring 86; 28% under 52u-high"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Lille position, stærk Q3-rebound; overkøbt på kort sigt, men thesis uændret. Hold med stop 70 og opjusteret mål 86.",
+    "price_target": 86,
+    "stop_loss": 70,
+    "expected_return_pct": 9.8,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 70, nær 86 eller ved tydeligt momentumbrud."
+   }
+  },
+  {
+   "symbol": "NSIS-B.CO",
+   "name": "NSIS-B.CO",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 454.8,
+   "confidence": 60,
+   "reasoning": "Thesis intakt, stop ikke udløst. Kvalitetsvækst med stærk trend og høj volumen, men høj værdiansættelse begrænser fejlmargin. Opside mod ~495; pullback mod SMA50 (~434, -5%).",
+   "bull": [
+    "Indtjeningsvækst +27%, omsætning +10%, nyt tilbagekøb og kapacitetsudvidelse",
+    "2% fra 52u-high, volumen 1,63x, over SMA50/200"
+   ],
+   "bear": [
+    "Fwd PE 25x er højt; RSI 70 og bb_position 95",
+    "Kurs -0,7% i dag efter +4,5% på 5 dage"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Bryder mod nye høje på volumen, vækst +27%; hold over stop.",
+    "price_target": 475,
+    "stop_loss": 411.22,
+    "expected_return_pct": 4.4,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 411.22 eller nær 475."
+   }
+  },
+  {
+   "symbol": "BAVA.CO",
+   "name": "Bavarian Nordic",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 237.0,
+   "confidence": 60,
+   "reasoning": "Thesis intakt, stop ikke udløst. Opjustering og stærk vækst bærer trenden, men ordrebaseret indtjening er lumpet og CEO-skifte er et usikkerhedsmoment. Ingen tilføjelse pga. healthcare-koncentration (~32%).",
+   "bull": [
+    "Opjusteret 2026-guidance, indtjeningsvækst +170% og omsætning +23%",
+    "Trailing PE 12 og kurs 2,8% fra 52u-high over SMA50/200 med aktivt tilbagekøb"
+   ],
+   "bear": [
+    "Fwd PE 21,8x indikerer forventet indtjeningsfald; CEO-skifte skaber usikkerhed",
+    "RSI 70 – 14% rally på 20 dage; kursen -0,8% i dag"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Opjusteret guidance og stærk momentum; hold, ingen tilføjelse pga. healthcare-koncentration.",
+    "price_target": 260,
+    "stop_loss": 222,
+    "expected_return_pct": 9.7,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 222 eller nær 260."
+   }
+  },
+  {
+   "symbol": "NOVO-B.CO",
+   "name": "Novo Nordisk",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 259.6,
+   "confidence": 40,
+   "reasoning": "Thesis svækket men stop ikke udløst. Billig men i klar nedtrend med faldende indtjening; vending kræver brud over SMA50 (~277, +7%) og positive pipeline-nyheder. Downside retest af 52u-lav ~224 (-14%); stop 236,82 begrænser tabet.",
+   "bull": [
+    "Fwd PE 11,8x og udbytte 4,4% – historisk lav værdiansættelse; tilbagekøb kører",
+    "Wegovy-pille-data og nyt BLA-spor kan skabe positive katalysatorer"
+   ],
+   "bear": [
+    "36,7% under 52u-high, 6,5% under SMA50 og under SMA200 – nedtrend",
+    "Indtjening -21%, MACD negativ, konkurrence fra Lilly"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Billig men nedtrend; stabiliseringstegn. Hold, ingen tilføjelse pga. healthcare-eksponering.",
+    "price_target": 320,
+    "stop_loss": 236.82,
+    "expected_return_pct": 23.3,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 236.82 eller nær 320."
+   }
+  },
+  {
+   "symbol": "COLO-B.CO",
+   "name": "Coloplast",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 472.2,
+   "confidence": 50,
+   "reasoning": "Thesis intakt, stop ikke udløst. RSI 83 overkøbt; hold med stop 398 over regnskab 3/11. Gevinst +12% bevares af stop.",
+   "bull": [
+    "Indtjeningsvækst +82% og 9M-regnskab med organisk vækst ~6%",
+    "Over SMA50 og SMA200, fwd PE 18x under sektor, udbytte 4,9%"
+   ],
+   "bear": [
+    "RSI 83 og bb_position 107 – ekstremt overkøbt efter +13% på 20 dage",
+    "Stadig 25% under 52u-high og lav volumen (0,77x) bag rallyet"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Teknisk bedring, men overkøbt på lav volumen; hold over regnskab 3/11 med stop 398.",
+    "price_target": 480,
+    "stop_loss": 398,
+    "expected_return_pct": 1.7,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 398 eller nær 480."
+   }
+  },
+  {
+   "symbol": "VWS.CO",
+   "name": "Vestas Wind Systems",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 189.95,
+   "confidence": 50,
+   "reasoning": "Thesis intakt, stop ikke udløst. Volumenspike og +3% i dag antyder interesse, men trenden er stadig nedad. +10% kræver brud over SMA50 (~203); downside mod SMA200 (~184, -3%).",
+   "bull": [
+    "Omsætning +26%, fwd PE 15x og kraftigt volumen (1,94x) med +3,2% i dag",
+    "Over SMA200 og kursen nær nedre Bollinger-bånd – potentiel bounce"
+   ],
+   "bear": [
+    "-8% på 20 dage, 6,4% under SMA50, negativ MACD – kortsigtet nedtrend",
+    "Politisk/renterisiko for vindsektoren og historisk volatile marginer"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Oversolgt, stærke fundamentals, SMA200 (~184) kritisk støtte; hold med stop 177.",
+    "price_target": 225,
+    "stop_loss": 177,
+    "expected_return_pct": 18.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 177 eller nær 225."
+   }
+  },
+  {
+   "symbol": "FLS.CO",
+   "name": "FLSmidth",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 588.5,
+   "confidence": 60,
+   "reasoning": "Thesis intakt, stop ikke udløst. Ordreindgang og sund trend støtter fortsat opside mod ~620-650. Neutral RSI 53 giver plads; downside er SMA50 (~565, -4%).",
+   "bull": [
+    "Flere nye ordrer (DKK 175-360m) og omsætningsvækst +17%",
+    "Over SMA50/SMA200, positiv MACD, 5% fra 52u-high, volumen 1,18x og tilbagekøb"
+   ],
+   "bear": [
+    "Fwd PE 17x – ikke billig; cyklisk minedrift-eksponering",
+    "Indtjeningsvækst ikke tilgængelig – begrænset indtjeningssynlighed"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": ["technical", "fundamental"],
+    "thesis": "Trendfølgende position i industrials med BULL-verdict og diversificering væk fra Healthcare.",
+    "price_target": 680,
+    "stop_loss": 560,
+    "expected_return_pct": 15.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg under 560, nær 680 eller ved brud på thesis/svagt regnskab."
+   }
+  }
+ ]
+}
