@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-20",
   "stats": {
-    "closed_trades": 45,
+    "closed_trades": 46,
     "wins": 22,
-    "losses": 22,
-    "win_rate_pct": 50.0,
+    "losses": 23,
+    "win_rate_pct": 48.9,
     "avg_win_pct": 9.68,
-    "avg_loss_pct": -4.67,
-    "avg_pnl_pct": 2.51,
-    "avg_holding_days": 21.9,
-    "total_realized_dkk": 8763.4,
+    "avg_loss_pct": -4.68,
+    "avg_pnl_pct": 2.34,
+    "avg_holding_days": 23.5,
+    "total_realized_dkk": 8144.9,
     "target_hits": 4,
-    "stop_hits": 11,
+    "stop_hits": 12,
     "thesis_verdicts": {
       "UKENDT": 1,
-      "HOLDT IKKE": 22,
+      "HOLDT IKKE": 23,
       "DELVIST": 18,
       "HOLDT": 4
     },
@@ -35,9 +35,9 @@
         "avg_pnl_pct": -2.04
       },
       "Financial Services": {
-        "n": 9,
+        "n": 10,
         "wins": 5,
-        "avg_pnl_pct": 4.14
+        "avg_pnl_pct": 3.24
       },
       "Consumer Cyclical": {
         "n": 3,
@@ -1141,6 +1141,30 @@
       "stop_hit": false,
       "thesis_verdict": "DELVIST",
       "lesson": "NNIT.CO: +9.3% på 9 dage — antagelse DELVIST. Forventet +13.7%. Plan-horisont: 1-3 måneder."
+    },
+    {
+      "trade_key": "id:925",
+      "date": "2026-10-20",
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "sector": "Financial Services",
+      "buy_date": "2026-10-06",
+      "holding_days": 90,
+      "shares": 35,
+      "buy_price": 365.9714,
+      "sell_price": 348.3,
+      "realized_pnl_dkk": -618.5,
+      "realized_pnl_pct": -4.83,
+      "expected_return_pct": 8.8,
+      "price_target": 400.0,
+      "stop_loss": 350.0,
+      "timeframe": "1-3 måneder",
+      "term": "medium",
+      "thesis": "Kvalitetsbank med tilbagekøb, nær nedre Bollinger; øger moderat før regnskab 29/10.",
+      "target_hit": false,
+      "stop_hit": true,
+      "thesis_verdict": "HOLDT IKKE",
+      "lesson": "DANSKE.CO: -4.8% på 90 dage — antagelse HOLDT IKKE. Forventet +8.8%. Plan-horisont: 1-3 måneder. Exit på/under stop-loss."
     }
   ]
 }
