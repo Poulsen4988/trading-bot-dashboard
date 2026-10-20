@@ -9,7 +9,7 @@
         "name": "Vertex Pharmaceuticals",
         "shares": 20,
         "purchase_price": 477.36,
-        "current_price": 499.74,
+        "current_price": 501.95,
         "purchase_date": "2026-07-24",
         "investment_plan": {
           "term": "medium",
@@ -20,13 +20,13 @@
           "thesis": "Defensiv sundhedscase med vækst.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 18,
+          "expected_return_pct": 17.5,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud eller pipeline-skuffelse."
+          "exit_conditions": "Sælg ved stop-brud (448,95), brud under SMA200 eller pipeline-skuffelse."
         },
         "last_review": {
-          "date": "2026-10-19",
-          "reasoning": "Thesis intakt (pipeline, nyredata), pris 11% over stop og over SMA200; kortsigtet svag men ingen fundamental brud.",
+          "date": "2026-10-20",
+          "reasoning": "Thesis intakt: +5,2%, 12% over stop (448,95), positiv pipeline-nyhed. Kortsigtet svag (under SMA50, negativ MACD), men over SMA200 – ingen grund til at sælge.",
           "confidence": 55
         }
       },
@@ -35,7 +35,7 @@
         "name": "Walt Disney Company (The)",
         "shares": 15,
         "purchase_price": 104.91,
-        "current_price": 110.59,
+        "current_price": 109.59,
         "purchase_date": "2026-08-07",
         "investment_plan": {
           "term": "medium",
@@ -46,14 +46,14 @@
           "thesis": "Underværdsat medie/parks-case.",
           "price_target": 115,
           "stop_loss": 99.98,
-          "expected_return_pct": 4,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 5,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud eller når kursmål nås uden momentum."
         },
         "last_review": {
-          "date": "2026-10-19",
-          "reasoning": "Trend intakt og i profit; kursmål 115 nærmer sig, men RSI 68 og BB 96% – behold, stop 99.98 uændret.",
-          "confidence": 50
+          "date": "2026-10-20",
+          "reasoning": "BULL-verdict, intakt optrend over SMA50/200, omkostningsbesparelser. Kortsigtet udstrakt men position er lille (1,6%) og stop (99,98) er langt væk.",
+          "confidence": 60
         }
       },
       {
@@ -61,7 +61,7 @@
         "name": "Nordson Corporation",
         "shares": 50,
         "purchase_price": 307.45,
-        "current_price": 322.31,
+        "current_price": 323.88,
         "purchase_date": "2026-09-10",
         "investment_plan": {
           "term": "medium",
@@ -72,18 +72,18 @@
           "thesis": "Kvalitets-industrial med stabil vækst.",
           "price_target": 360,
           "stop_loss": 315,
-          "expected_return_pct": 12,
+          "expected_return_pct": 11,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud."
+          "exit_conditions": "Sælg ved stop-brud (315) eller tydeligt brud under SMA50/nedre Bollinger."
         },
         "last_review": {
-          "date": "2026-10-19",
-          "reasoning": "Langsigtet optrend intakt og rekord-Q3; pris kun 2% over stop 315 men ikke brudt – behold, sælg mekanisk ved stop-brud.",
+          "date": "2026-10-20",
+          "reasoning": "Langsigtet optrend intakt, men momentum svækket; pris ca. 2,8% over stop (315) og lige over SMA50 (~321). Neutral verdict giver ikke grund til at sælge før stop rammes; største position (15,4%) overvåges tæt.",
           "confidence": 50
         }
       }
     ],
-    "last_updated": "2026-10-19 22:46 UTC"
+    "last_updated": "2026-10-20 22:47 UTC"
   },
   "history": [
     {
@@ -305,6 +305,10 @@
     {
       "date": "2026-10-19",
       "portfolio_value": 105102.66
+    },
+    {
+      "date": "2026-10-20",
+      "portfolio_value": 105210.36
     }
   ],
   "trades": [
@@ -7882,6 +7886,54 @@
         "summary": "Langsigtet optrend intakt og rekord-Q3; pris kun 2% over stop 315 men ikke brudt – behold, sælg mekanisk ved stop-brud."
       },
       "id": 467,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-20",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 501.95,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 55,
+        "summary": "Thesis intakt: +5,2%, 12% over stop (448,95), positiv pipeline-nyhed. Kortsigtet svag (under SMA50, negativ MACD), men over SMA200 – ingen grund til at sælge."
+      },
+      "id": 468,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-20",
+      "action": "HOLD",
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "shares": null,
+      "price": 109.59,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "BULL-verdict, intakt optrend over SMA50/200, omkostningsbesparelser. Kortsigtet udstrakt men position er lille (1,6%) og stop (99,98) er langt væk."
+      },
+      "id": 469,
+      "is_new": false
+    },
+    {
+      "date": "2026-10-20",
+      "action": "HOLD",
+      "symbol": "NDSN",
+      "name": "Nordson Corporation",
+      "shares": null,
+      "price": 323.88,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 50,
+        "summary": "Langsigtet optrend intakt, men momentum svækket; pris ca. 2,8% over stop (315) og lige over SMA50 (~321). Neutral verdict giver ikke grund til at sælge før stop rammes; største position (15,4%) overvåges tæt."
+      },
+      "id": 470,
       "is_new": true
     }
   ],
@@ -11585,5 +11637,5 @@
     "Communication Services": 6.0,
     "Industrials": 58.0
   },
-  "last_executed_decisions": "2026-10-19"
+  "last_executed_decisions": "2026-10-20"
 }
