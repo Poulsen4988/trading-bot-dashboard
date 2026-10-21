@@ -1,22 +1,22 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "stats": {
-    "closed_trades": 46,
-    "wins": 22,
+    "closed_trades": 47,
+    "wins": 23,
     "losses": 23,
-    "win_rate_pct": 48.9,
-    "avg_win_pct": 9.68,
+    "win_rate_pct": 50.0,
+    "avg_win_pct": 10.35,
     "avg_loss_pct": -4.68,
-    "avg_pnl_pct": 2.34,
-    "avg_holding_days": 23.5,
-    "total_realized_dkk": 8144.9,
-    "target_hits": 4,
+    "avg_pnl_pct": 2.84,
+    "avg_holding_days": 24.5,
+    "total_realized_dkk": 9375.7,
+    "target_hits": 5,
     "stop_hits": 12,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 23,
       "DELVIST": 18,
-      "HOLDT": 4
+      "HOLDT": 5
     },
     "by_sector": {
       "Consumer Defensive": {
@@ -45,9 +45,9 @@
         "avg_pnl_pct": 7.18
       },
       "Healthcare": {
-        "n": 11,
-        "wins": 7,
-        "avg_pnl_pct": 3.87
+        "n": 12,
+        "wins": 8,
+        "avg_pnl_pct": 5.64
       },
       "Basic Materials": {
         "n": 1,
@@ -1165,6 +1165,30 @@
       "stop_hit": true,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "DANSKE.CO: -4.8% på 90 dage — antagelse HOLDT IKKE. Forventet +8.8%. Plan-horisont: 1-3 måneder. Exit på/under stop-loss."
+    },
+    {
+      "trade_key": "id:928",
+      "date": "2026-10-21",
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "sector": "Healthcare",
+      "buy_date": "2026-08-13",
+      "holding_days": 69,
+      "shares": 17,
+      "buy_price": 289.6,
+      "sell_price": 362.0,
+      "realized_pnl_dkk": 1230.8,
+      "realized_pnl_pct": 25.0,
+      "expected_return_pct": 13.9,
+      "price_target": 330.0,
+      "stop_loss": 273.0,
+      "timeframe": "3-5 måneder",
+      "term": "medium",
+      "thesis": "Guidance-opjustering og nyt produktlanceringsmomentum retfærdiggør indgang trods kortsigtet overkøbt teknik. Forward-værdiansættelsen giver plads til multipel-genopretning hvis guidance leveres.",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HOLDT",
+      "lesson": "DEMANT.CO: +25.0% på 69 dage — antagelse HOLDT. Forventet +13.9%. Plan-horisont: 3-5 måneder. Kursmål nået."
     }
   ]
 }
