@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-01",
+  "files_reviewed": 25,
+  "files_cleaned": 7,
+  "total_items_removed": 8,
+  "per_file": [
+    {"path": "knowledge/COLOb_xcse.json", "removed_count": 1, "kept_count": 3, "removed_items": [{"title": "Coloplast A/S - FY 2025/26 Earnings Release - Invitation for conference call on 3 November 2026 at 11.00am CET", "date": "2026-10-21", "reason": "low_value"}]},
+    {"path": "knowledge/DSV_xcse.json", "removed_count": 1, "kept_count": 5, "removed_items": [{"title": "DSV, 1178 - MAJOR SHAREHOLDER ANNOUNCEMENT", "date": "2026-10-26", "reason": "low_value"}]},
+    {"path": "knowledge/JYSK_xcse.json", "removed_count": 1, "kept_count": 18, "removed_items": [{"title": "Finanskalender for 2027", "date": "2026-10-28", "reason": "low_value"}]},
+    {"path": "knowledge/NSISb_xcse.json", "removed_count": 1, "kept_count": 3, "removed_items": [{"title": "Major shareholder announcement", "date": "2026-10-26", "reason": "low_value"}]},
+    {"path": "knowledge/ORSTED_xcse.json", "removed_count": 1, "kept_count": 11, "removed_items": [{"title": "Ørsted to present Q3 2026 results on 5 November", "date": "2026-10-29", "reason": "low_value"}]},
+    {"path": "knowledge/TRYG_xcse.json", "removed_count": 2, "kept_count": 3, "removed_items": [{"title": "Storaktionærmeddelelse", "date": "2026-10-30", "reason": "low_value"}, {"title": "Tryg-aktier handles eksklusive udbytte", "date": "2026-10-12", "reason": "low_value"}]},
+    {"path": "knowledge/VWS_xcse.json", "removed_count": 1, "kept_count": 18, "removed_items": [{"title": "Vestas - Q3 2026 conference call", "date": "2026-10-26", "reason": "low_value"}]}
+  ],
+  "summary": "Kun 8 trivielle items fjernet (konferenceopkald-invitationer, finanskalender, storaktionærmeddelelser, ex-udbytte-notits, rapportdato-varsel). Øvrige 40 low_value-kandidater er materielle (opjusteringer, ordrer, ledelsesskift, M&A, kliniske data) med kort summary og blev bevaret. Ingen duplikater eller stale items fundet."
+}
