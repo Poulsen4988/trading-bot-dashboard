@@ -25,9 +25,9 @@
           "exit_conditions": "Sælg ved stop-brud (448,95), brud under SMA200 eller pipeline-skuffelse."
         },
         "last_review": {
-          "date": "2026-11-02",
-          "reasoning": "Thesis intakt: stærk trend over alle SMA'er, positive fase 2-nyredata, +17% P&L. Teknisk overkøbt (BB 116%, stoch 94), så ingen tilføjelse på toppen; stop 448,95 langt under kurs.",
-          "confidence": 60
+          "date": "2026-11-03",
+          "reasoning": "Thesis intakt, stærk trend over SMA50/200, stop 448,95 langt væk. Overkøbt kortsigtet (RSI 67, over øvre BB) men ingen grund til salg; vægt 10,5% er acceptabel.",
+          "confidence": 70
         }
       },
       {
@@ -47,13 +47,13 @@
           "price_target": 115,
           "stop_loss": 99.98,
           "expected_return_pct": 3.7,
-          "timeframe": "3-6 måneder",
+          "timeframe": "2-4 måneder",
           "exit_conditions": "Sælg ved stop-brud (99,98), nået kursmål med svækket momentum eller skuffende park-/streamingtal."
         },
         "last_review": {
-          "date": "2026-11-02",
-          "reasoning": "Intakt optrend, +5,8% P&L, kursmål 115 ikke nået. Lav volumen begrænser overbevisningen, men ingen grund til at sælge; ingen tilføjelse.",
-          "confidence": 58
+          "date": "2026-11-03",
+          "reasoning": "Intakt optrend, +5,8% og stop 99,98 ikke truet. Hold mod kursmål 115.",
+          "confidence": 60
         }
       },
       {
@@ -74,16 +74,16 @@
           "stop_loss": 315,
           "expected_return_pct": 11.6,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud (315), lukning under SMA200 (~292) eller svækket industri-/halvlederefterspørgsel."
+          "exit_conditions": "Sælg ved stop-brud (315), lukning under SMA200 (~292) eller svækket industri-/halvledereftersprøgsel."
         },
         "last_review": {
-          "date": "2026-11-02",
-          "reasoning": "Neutral dom, men kursen er 2,4% over stop (315) og 9,8% over SMA200; langsigtet trend intakt. Hold og lad stoppet styre risikoen; ingen tilføjelse før stabilisering.",
+          "date": "2026-11-03",
+          "reasoning": "Neutral verdict, kurs 322,67 ligger kun 2,4% over stop 315, men stop ikke brudt og kurs er stadig over SMA200. Hold med eksisterende stop; mekanisk exit ved brud.",
           "confidence": 50
         }
       }
     ],
-    "last_updated": "2026-11-02 22:46 UTC"
+    "last_updated": "2026-11-03 22:46 UTC"
   },
   "history": [
     {
@@ -344,6 +344,10 @@
     },
     {
       "date": "2026-11-02",
+      "portfolio_value": 106308.71
+    },
+    {
+      "date": "2026-11-03",
       "portfolio_value": 106308.71
     }
   ],
@@ -8402,6 +8406,54 @@
         "summary": "Neutral dom, men kursen er 2,4% over stop (315) og 9,8% over SMA200; langsigtet trend intakt. Hold og lad stoppet styre risikoen; ingen tilføjelse før stabilisering."
       },
       "id": 497,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-03",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": null,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 70,
+        "summary": "Thesis intakt, stærk trend over SMA50/200, stop 448,95 langt væk. Overkøbt kortsigtet (RSI 67, over øvre BB) men ingen grund til salg; vægt 10,5% er acceptabel."
+      },
+      "id": 498,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-03",
+      "action": "HOLD",
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "shares": null,
+      "price": null,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Intakt optrend, +5,8% og stop 99,98 ikke truet. Hold mod kursmål 115."
+      },
+      "id": 499,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-03",
+      "action": "HOLD",
+      "symbol": "NDSN",
+      "name": "Nordson Corporation",
+      "shares": null,
+      "price": null,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 50,
+        "summary": "Neutral verdict, kurs 322,67 ligger kun 2,4% over stop 315, men stop ikke brudt og kurs er stadig over SMA200. Hold med eksisterende stop; mekanisk exit ved brud."
+      },
+      "id": 500,
       "is_new": true
     }
   ],
@@ -12074,5 +12126,5 @@
     "Communication Services": 5.7,
     "Industrials": 55.7
   },
-  "last_executed_decisions": "2026-11-02"
+  "last_executed_decisions": "2026-11-03"
 }
