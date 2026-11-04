@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 77333.51,
+    "cash": 66202.71,
     "currency": "USD",
     "positions": [
       {
@@ -20,14 +20,14 @@
           "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 5.6,
-          "timeframe": "3-6 måneder",
+          "expected_return_pct": 0,
+          "timeframe": "1-3 måneder",
           "exit_conditions": "Sælg ved stop-brud (448,95), brud under SMA200 eller pipeline-skuffelse."
         },
         "last_review": {
-          "date": "2026-11-03",
-          "reasoning": "Thesis intakt, stærk trend over SMA50/200, stop 448,95 langt væk. Overkøbt kortsigtet (RSI 67, over øvre BB) men ingen grund til salg; vægt 10,5% er acceptabel.",
-          "confidence": 70
+          "date": "2026-11-04",
+          "reasoning": "Trend intakt, over SMA50/200, +11%. Dagens -4% på høj volumen er værd at holde øje med, men stop 448,95 er langt væk. Hold.",
+          "confidence": 60
         }
       },
       {
@@ -43,16 +43,16 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Omkostningsreduktion og stabil trend.",
+          "thesis": "Trendcase mod kursmål 115.",
           "price_target": 115,
           "stop_loss": 99.98,
-          "expected_return_pct": 3.7,
-          "timeframe": "2-4 måneder",
-          "exit_conditions": "Sælg ved stop-brud (99,98), nået kursmål med svækket momentum eller skuffende park-/streamingtal."
+          "expected_return_pct": 0,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved kursmål, stop-brud (99,98) eller trendbrud."
         },
         "last_review": {
-          "date": "2026-11-03",
-          "reasoning": "Intakt optrend, +5,8% og stop 99,98 ikke truet. Hold mod kursmål 115.",
+          "date": "2026-11-04",
+          "reasoning": "Tæt på kursmål 115 men i solid trend; ingen brud i thesis. Hold og lad kursmål/stop afgøre.",
           "confidence": 60
         }
       },
@@ -69,21 +69,46 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Kvalitetsindustri med halvlederexponering og stabilt udbytte.",
+          "thesis": "Industrial kvalitetscase i opadgående trend.",
           "price_target": 360,
           "stop_loss": 315,
-          "expected_return_pct": 11.6,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud (315), lukning under SMA200 (~292) eller svækket industri-/halvledereftersprøgsel."
+          "expected_return_pct": 0,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved stop-brud (315) eller trendbrud under SMA50."
         },
         "last_review": {
-          "date": "2026-11-03",
-          "reasoning": "Neutral verdict, kurs 322,67 ligger kun 2,4% over stop 315, men stop ikke brudt og kurs er stadig over SMA200. Hold med eksisterende stop; mekanisk exit ved brud.",
-          "confidence": 50
+          "date": "2026-11-04",
+          "reasoning": "Sund trend, ingen stop-trigger, momentum fladt. Hold.",
+          "confidence": 60
+        }
+      },
+      {
+        "symbol": "GOOG",
+        "name": "Alphabet Inc. (Class C)",
+        "shares": 40,
+        "purchase_price": 278.27,
+        "current_price": 278.27,
+        "purchase_date": "2026-11-04",
+        "investment_plan": {
+          "term": "short",
+          "basis": [
+            "technical"
+          ],
+          "thesis": "Mean-reversion rebound fra historisk oversolgt niveau i kvalitets-mega-cap.",
+          "price_target": 315,
+          "stop_loss": 258,
+          "expected_return_pct": 13.2,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved stop-brud (258), eller hvis kursen bryder 52-ugers lav uden bounce; tag gevinst nær 315/SMA50-gentest."
+        },
+        "last_review": {
+          "date": "2026-11-04",
+          "reasoning": "Ekstremt oversolgt mega-cap (RSI 13,8, stoch 4) ved nedre Bollinger. Halv ATR-størrelse (40 af 78) fordi trenden er brudt og der ikke er stabilisering endnu; stop 258 under 52-ugers lav.",
+          "confidence": 62
         }
       }
     ],
-    "last_updated": "2026-11-03 22:47 UTC"
+    "last_updated": "2026-11-04 22:46 UTC"
   },
   "history": [
     {
@@ -348,6 +373,10 @@
     },
     {
       "date": "2026-11-03",
+      "portfolio_value": 106308.71
+    },
+    {
+      "date": "2026-11-04",
       "portfolio_value": 106308.71
     }
   ],
@@ -8454,6 +8483,70 @@
         "summary": "Neutral verdict, kurs 322,67 ligger kun 2,4% over stop 315, men stop ikke brudt og kurs er stadig over SMA200. Hold med eksisterende stop; mekanisk exit ved brud."
       },
       "id": 500,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-04",
+      "action": "BUY",
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "shares": 40,
+      "price": 278.27,
+      "value": 11130.8,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 62,
+        "summary": "Ekstremt oversolgt mega-cap (RSI 13,8, stoch 4) ved nedre Bollinger. Halv ATR-størrelse (40 af 78) fordi trenden er brudt og der ikke er stabilisering endnu; stop 258 under 52-ugers lav."
+      },
+      "id": 501,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-04",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": null,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Trend intakt, over SMA50/200, +11%. Dagens -4% på høj volumen er værd at holde øje med, men stop 448,95 er langt væk. Hold."
+      },
+      "id": 502,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-04",
+      "action": "HOLD",
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "shares": null,
+      "price": null,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Tæt på kursmål 115 men i solid trend; ingen brud i thesis. Hold og lad kursmål/stop afgøre."
+      },
+      "id": 503,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-04",
+      "action": "HOLD",
+      "symbol": "NDSN",
+      "name": "Nordson Corporation",
+      "shares": null,
+      "price": null,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Sund trend, ingen stop-trigger, momentum fladt. Hold."
+      },
+      "id": 504,
       "is_new": true
     }
   ],
@@ -12643,5 +12736,5 @@
     "Communication Services": 5.7,
     "Industrials": 55.7
   },
-  "last_executed_decisions": "2026-11-03"
+  "last_executed_decisions": "2026-11-04"
 }
