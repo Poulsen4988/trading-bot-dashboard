@@ -9,7 +9,7 @@
         "name": "Vertex Pharmaceuticals",
         "shares": 20,
         "purchase_price": 477.36,
-        "current_price": 558.88,
+        "current_price": 549.04,
         "purchase_date": "2026-07-24",
         "investment_plan": {
           "term": "medium",
@@ -20,14 +20,14 @@
           "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 0,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 7.5,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud (448,95), brud under SMA200 eller pipeline-skuffelse."
         },
         "last_review": {
-          "date": "2026-11-04",
-          "reasoning": "Trend intakt, over SMA50/200, +11%. Dagens -4% på høj volumen er værd at holde øje med, men stop 448,95 er langt væk. Hold.",
-          "confidence": 60
+          "date": "2026-11-05",
+          "reasoning": "Stærk, defensiv position med positiv trend som relativt holder i et nedadgående marked. Behold.",
+          "confidence": 70
         }
       },
       {
@@ -35,7 +35,7 @@
         "name": "Walt Disney Company (The)",
         "shares": 15,
         "purchase_price": 104.91,
-        "current_price": 110.94,
+        "current_price": 118.95,
         "purchase_date": "2026-08-07",
         "investment_plan": {
           "term": "medium",
@@ -46,14 +46,14 @@
           "thesis": "Trendcase mod kursmål 115.",
           "price_target": 115,
           "stop_loss": 99.98,
-          "expected_return_pct": 0,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": -3.3,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved kursmål, stop-brud (99,98) eller trendbrud."
         },
         "last_review": {
-          "date": "2026-11-04",
-          "reasoning": "Tæt på kursmål 115 men i solid trend; ingen brud i thesis. Hold og lad kursmål/stop afgøre.",
-          "confidence": 60
+          "date": "2026-11-05",
+          "reasoning": "Aktuel position i stærk optrend, men kortsigtet overkøbt. Behold, men ingen tilkøb på dette niveau; stram stop.",
+          "confidence": 50
         }
       },
       {
@@ -61,7 +61,7 @@
         "name": "Nordson Corporation",
         "shares": 50,
         "purchase_price": 307.45,
-        "current_price": 322.67,
+        "current_price": 330.7,
         "purchase_date": "2026-09-10",
         "investment_plan": {
           "term": "medium",
@@ -72,13 +72,13 @@
           "thesis": "Industrial kvalitetscase i opadgående trend.",
           "price_target": 360,
           "stop_loss": 315,
-          "expected_return_pct": 0,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 8.9,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud (315) eller trendbrud under SMA50."
         },
         "last_review": {
-          "date": "2026-11-04",
-          "reasoning": "Sund trend, ingen stop-trigger, momentum fladt. Hold.",
+          "date": "2026-11-05",
+          "reasoning": "Stabil position i intakt optrend, uberørt af markedets dagsvolatilitet. Behold; defensiv kvalitet i et markedschok.",
           "confidence": 60
         }
       },
@@ -87,28 +87,29 @@
         "name": "Alphabet Inc. (Class C)",
         "shares": 40,
         "purchase_price": 278.27,
-        "current_price": 278.27,
+        "current_price": 287.3,
         "purchase_date": "2026-11-04",
         "investment_plan": {
           "term": "short",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Mean-reversion rebound fra historisk oversolgt niveau i kvalitets-mega-cap.",
           "price_target": 315,
           "stop_loss": 258,
-          "expected_return_pct": 13.2,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 9.6,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud (258), eller hvis kursen bryder 52-ugers lav uden bounce; tag gevinst nær 315/SMA50-gentest."
         },
         "last_review": {
-          "date": "2026-11-04",
-          "reasoning": "Ekstremt oversolgt mega-cap (RSI 13,8, stoch 4) ved nedre Bollinger. Halv ATR-størrelse (40 af 78) fordi trenden er brudt og der ikke er stabilisering endnu; stop 258 under 52-ugers lav.",
-          "confidence": 62
+          "date": "2026-11-05",
+          "reasoning": "Eksisterende position i stærkt oversolgt megacap med første grønne dag. Hold; bounce-potentiale, men trenden er ikke vendt.",
+          "confidence": 50
         }
       }
     ],
-    "last_updated": "2026-11-04 22:46 UTC"
+    "last_updated": "2026-11-05 22:46 UTC"
   },
   "history": [
     {
@@ -378,6 +379,10 @@
     {
       "date": "2026-11-04",
       "portfolio_value": 106308.71
+    },
+    {
+      "date": "2026-11-05",
+      "portfolio_value": 106994.76
     }
   ],
   "trades": [
@@ -8547,6 +8552,70 @@
         "summary": "Sund trend, ingen stop-trigger, momentum fladt. Hold."
       },
       "id": 504,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-05",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 549.04,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 70,
+        "summary": "Stærk, defensiv position med positiv trend som relativt holder i et nedadgående marked. Behold."
+      },
+      "id": 505,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-05",
+      "action": "HOLD",
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "shares": null,
+      "price": 118.95,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 50,
+        "summary": "Aktuel position i stærk optrend, men kortsigtet overkøbt. Behold, men ingen tilkøb på dette niveau; stram stop."
+      },
+      "id": 506,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-05",
+      "action": "HOLD",
+      "symbol": "NDSN",
+      "name": "Nordson Corporation",
+      "shares": null,
+      "price": 330.7,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Stabil position i intakt optrend, uberørt af markedets dagsvolatilitet. Behold; defensiv kvalitet i et markedschok."
+      },
+      "id": 507,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-05",
+      "action": "HOLD",
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "shares": null,
+      "price": 287.3,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 50,
+        "summary": "Eksisterende position i stærkt oversolgt megacap med første grønne dag. Hold; bounce-potentiale, men trenden er ikke vendt."
+      },
+      "id": 508,
       "is_new": true
     }
   ],
@@ -12658,5 +12727,5 @@
     "Communication Services": 31.9,
     "Industrials": 40.2
   },
-  "last_executed_decisions": "2026-11-04"
+  "last_executed_decisions": "2026-11-05"
 }
