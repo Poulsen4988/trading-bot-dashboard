@@ -1,21 +1,21 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-11-06",
   "stats": {
-    "closed_trades": 26,
-    "wins": 12,
+    "closed_trades": 28,
+    "wins": 14,
     "losses": 14,
-    "win_rate_pct": 46.2,
-    "avg_win_pct": 20.51,
+    "win_rate_pct": 50.0,
+    "avg_win_pct": 18.49,
     "avg_loss_pct": -5.49,
-    "avg_pnl_pct": 6.51,
-    "avg_holding_days": 36.8,
-    "total_realized_usd": 3826.86,
-    "target_hits": 6,
+    "avg_pnl_pct": 6.5,
+    "avg_holding_days": 39.5,
+    "total_realized_usd": 4163.51,
+    "target_hits": 7,
     "stop_hits": 9,
     "thesis_verdicts": {
       "FAILED": 14,
-      "PARTIAL": 6,
-      "HELD": 6
+      "PARTIAL": 7,
+      "HELD": 7
     },
     "by_sector": {
       "Information Technology": {
@@ -24,9 +24,9 @@
         "avg_pnl_pct": 20.23
       },
       "Communication Services": {
-        "n": 1,
-        "wins": 1,
-        "avg_pnl_pct": 1.71
+        "n": 2,
+        "wins": 2,
+        "avg_pnl_pct": 6.72
       },
       "Real Estate": {
         "n": 2,
@@ -44,9 +44,9 @@
         "avg_pnl_pct": 9.55
       },
       "Industrials": {
-        "n": 2,
-        "wins": 0,
-        "avg_pnl_pct": -5.53
+        "n": 3,
+        "wins": 1,
+        "avg_pnl_pct": -3.35
       },
       "Consumer Discretionary": {
         "n": 5,
@@ -679,6 +679,54 @@
       "stop_hit": false,
       "thesis_verdict": "FAILED",
       "lesson": "MOS: -4.8% over 6 days — assumption FAILED. Expected +16.7%. Plan horizon: 2-4 måneder."
+    },
+    {
+      "trade_key": "id:509",
+      "date": "2026-11-06",
+      "symbol": "NDSN",
+      "name": "Nordson Corporation",
+      "sector": "Industrials",
+      "buy_date": "2026-09-10",
+      "holding_days": 57,
+      "shares": 50,
+      "buy_price": 307.45,
+      "sell_price": 310.49,
+      "realized_pnl_usd": 152.0,
+      "realized_pnl_pct": 0.99,
+      "expected_return_pct": 12.21,
+      "price_target": 345.0,
+      "stop_loss": 294.59,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Genuine fundamental catalyst — a 15% dividend hike plus a beat-and-raise Q2 with new AI-focused packaging platforms — masked by a sharp short-term technical air-pocket (RSI 16.4) within an intact uptrend above both SMA50 and SMA200.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "PARTIAL",
+      "lesson": "NDSN: +1.0% over 57 days — assumption PARTIAL. Expected +12.2%. Plan horizon: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:510",
+      "date": "2026-11-06",
+      "symbol": "DIS",
+      "name": "Walt Disney Company (The)",
+      "sector": "Communication Services",
+      "buy_date": "2026-08-07",
+      "holding_days": 91,
+      "shares": 15,
+      "buy_price": 104.91,
+      "sell_price": 117.22,
+      "realized_pnl_usd": 184.65,
+      "realized_pnl_pct": 11.73,
+      "expected_return_pct": 9.6,
+      "price_target": 115.0,
+      "stop_loss": 99.98,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "NFL-indholdsaftalen og bundle-strategien virker synligt — faldende churn, stigende abonnentvækst og analytiker-kursmålsforhøjelser efter femte regnskabsbeat i træk, mens aktien stadig ligger ~10% i minus for året.",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HELD",
+      "lesson": "DIS: +11.7% over 91 days — assumption HELD. Expected +9.6%. Plan horizon: 3-6 måneder. Price target reached."
     }
   ]
 }
