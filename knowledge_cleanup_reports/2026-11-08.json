@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-08",
+  "files_reviewed": 25,
+  "files_cleaned": 7,
+  "total_items_removed": 7,
+  "per_file": [
+    {"path": "knowledge/DSV_xcse.json", "removed_count": 1, "kept_count": 6, "removed_items": [{"title": "DSV, 1178 - MAJOR SHAREHOLDER ANNOUNCEMENT", "date": "2026-10-26", "reason": "low_value"}]},
+    {"path": "knowledge/JYSK_xcse.json", "removed_count": 1, "kept_count": 15, "removed_items": [{"title": "Finanskalender for 2027", "date": "2026-10-28", "reason": "low_value"}]},
+    {"path": "knowledge/NSISb_xcse.json", "removed_count": 1, "kept_count": 4, "removed_items": [{"title": "Major shareholder announcement", "date": "2026-10-26", "reason": "low_value"}]},
+    {"path": "knowledge/ORSTED_xcse.json", "removed_count": 1, "kept_count": 7, "removed_items": [{"title": "Ørsted to present Q3 2026 results on 5 November", "date": "2026-10-29", "reason": "low_value"}]},
+    {"path": "knowledge/TRYG_xcse.json", "removed_count": 1, "kept_count": 3, "removed_items": [{"title": "Storaktionærmeddelelse", "date": "2026-10-30", "reason": "low_value"}]},
+    {"path": "knowledge/VWS_xcse.json", "removed_count": 1, "kept_count": 17, "removed_items": [{"title": "Vestas - Q3 2026 conference call", "date": "2026-10-26", "reason": "low_value"}]},
+    {"path": "knowledge/COLOb_xcse.json", "removed_count": 1, "kept_count": 6, "removed_items": [{"title": "Coloplast A/S - FY 2025/26 Earnings Release - Invitation for conference call on 3 November 2026 at 11.00am CET", "date": "2026-10-21", "reason": "low_value"}]}
+  ],
+  "summary": "kb_review.py markerede 45 kandidater i 19 filer (alle low_value; ingen duplikater eller stale). Kun 7 trivielle items blev fjernet: generiske storaktionærmeddelelser, finanskalender og invitationer/varsler om conference calls og regnskabsfremlæggelse uden selvstændigt indhold. De øvrige 38 kandidater blev bevaret, da deres titler angiver materielle begivenheder (opjusteringer, ledelsesskift, ordrer, M&A, regulatoriske godkendelser, årsrapporter, aktietilbagekøb)."
+}
