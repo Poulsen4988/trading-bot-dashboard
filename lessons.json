@@ -1,21 +1,21 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-11-09",
   "stats": {
-    "closed_trades": 48,
-    "wins": 23,
+    "closed_trades": 49,
+    "wins": 24,
     "losses": 24,
-    "win_rate_pct": 48.9,
-    "avg_win_pct": 10.35,
+    "win_rate_pct": 50.0,
+    "avg_win_pct": 10.22,
     "avg_loss_pct": -4.78,
-    "avg_pnl_pct": 2.62,
-    "avg_holding_days": 24.2,
-    "total_realized_dkk": 8730.7,
+    "avg_pnl_pct": 2.72,
+    "avg_holding_days": 24.8,
+    "total_realized_dkk": 8822.5,
     "target_hits": 5,
     "stop_hits": 13,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 24,
-      "DELVIST": 18,
+      "DELVIST": 19,
       "HOLDT": 5
     },
     "by_sector": {
@@ -50,9 +50,9 @@
         "avg_pnl_pct": 5.64
       },
       "Basic Materials": {
-        "n": 1,
-        "wins": 0,
-        "avg_pnl_pct": -5.48
+        "n": 2,
+        "wins": 1,
+        "avg_pnl_pct": 0.82
       },
       "Technology": {
         "n": 2,
@@ -1213,6 +1213,30 @@
       "stop_hit": true,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "FLS.CO: -7.2% på 8 dage — antagelse HOLDT IKKE. Forventet +13.4%. Plan-horisont: 3-6 måneder. Exit på/under stop-loss."
+    },
+    {
+      "trade_key": "id:1069",
+      "date": "2026-11-09",
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis",
+      "sector": "Basic Materials",
+      "buy_date": "2026-09-15",
+      "holding_days": 55,
+      "shares": 3,
+      "buy_price": 429.4,
+      "sell_price": 460.0,
+      "realized_pnl_dkk": 91.8,
+      "realized_pnl_pct": 7.13,
+      "expected_return_pct": 10.6,
+      "price_target": 475.0,
+      "stop_loss": 411.22,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Oversolgt momentum-indgang i et solidt indtjeningsvækst-navn (+26.7% YoY) med nyligt lanceret tilbagekøbsprogram — samtidig en ren sektordiversificering væk fra porteføljens tunge Healthcare- og Industrials-eksponering, da Basic Materials p.t. er 0% vægtet.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "DELVIST",
+      "lesson": "NSIS-B.CO: +7.1% på 55 dage — antagelse DELVIST. Forventet +10.6%. Plan-horisont: 3-6 måneder."
     }
   ]
 }
