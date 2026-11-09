@@ -9,7 +9,7 @@
         "name": "Vertex Pharmaceuticals",
         "shares": 20,
         "purchase_price": 477.36,
-        "current_price": 542.5,
+        "current_price": 547.09,
         "purchase_date": "2026-07-24",
         "investment_plan": {
           "term": "medium",
@@ -20,13 +20,13 @@
           "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 8.8,
-          "timeframe": "3-6 måneder",
+          "expected_return_pct": 7.8,
+          "timeframe": "2-4 måneder",
           "exit_conditions": "Sælg ved stop-brud (448,95), brud under SMA200 eller pipeline-skuffelse."
         },
         "last_review": {
-          "date": "2026-11-06",
-          "reasoning": "Tese intakt: over SMA50/SMA200, BULL-verdict, defensiv relativ styrke. Stop 448,95 ikke truet, kursmål 590 ikke nået.",
+          "date": "2026-11-09",
+          "reasoning": "Thesis intakt: pris over SMA50 og SMA200, positiv MACD, positive Phase 2 nyredata. Stop 448,95 ikke ramt; tæt på 52u-højde men ingen brud.",
           "confidence": 70
         }
       },
@@ -35,7 +35,7 @@
         "name": "Alphabet Inc. (Class C)",
         "shares": 40,
         "purchase_price": 278.27,
-        "current_price": 281.74,
+        "current_price": 283.93,
         "purchase_date": "2026-11-04",
         "investment_plan": {
           "term": "short",
@@ -45,18 +45,18 @@
           "thesis": "Mean-reversion rebound fra historisk oversolgt niveau i kvalitets-mega-cap.",
           "price_target": 315,
           "stop_loss": 258,
-          "expected_return_pct": 11.8,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 10.9,
+          "timeframe": "1-2 måneder",
           "exit_conditions": "Sælg ved stop-brud (258) eller 52u-lav-brud uden bounce; tag gevinst nær 315/SMA50."
         },
         "last_review": {
-          "date": "2026-11-06",
-          "reasoning": "Dybt oversolgt (RSI 21) mean-reversion-case; stop 258 ikke brudt (8% under kurs). Ingen grund til at sælge i bunden; afvent stabilisering.",
-          "confidence": 55
+          "date": "2026-11-09",
+          "reasoning": "Dybt oversolgt (RSI 20) med positiv 5-dages momentum; mean-reversion-thesis er ikke brudt og stop 258 ikke ramt. Købt for 5 dage siden, så giv den tid, men tilføj ikke i nedtrend.",
+          "confidence": 50
         }
       }
     ],
-    "last_updated": "2026-11-06 22:46 UTC"
+    "last_updated": "2026-11-09 22:46 UTC"
   },
   "history": [
     {
@@ -334,6 +334,10 @@
     {
       "date": "2026-11-06",
       "portfolio_value": 105605.11
+    },
+    {
+      "date": "2026-11-09",
+      "portfolio_value": 105784.51
     }
   ],
   "trades": [
@@ -8639,6 +8643,38 @@
         "summary": "Dybt oversolgt (RSI 21) mean-reversion-case; stop 258 ikke brudt (8% under kurs). Ingen grund til at sælge i bunden; afvent stabilisering."
       },
       "id": 512,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-09",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 547.09,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 70,
+        "summary": "Thesis intakt: pris over SMA50 og SMA200, positiv MACD, positive Phase 2 nyredata. Stop 448,95 ikke ramt; tæt på 52u-højde men ingen brud."
+      },
+      "id": 513,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-09",
+      "action": "HOLD",
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "shares": null,
+      "price": 283.93,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 50,
+        "summary": "Dybt oversolgt (RSI 20) med positiv 5-dages momentum; mean-reversion-thesis er ikke brudt og stop 258 ikke ramt. Købt for 5 dage siden, så giv den tid, men tilføj ikke i nedtrend."
+      },
+      "id": 514,
       "is_new": true
     }
   ],
@@ -12866,5 +12902,5 @@
     "Health Care": 49.1,
     "Communication Services": 50.9
   },
-  "last_executed_decisions": "2026-11-06"
+  "last_executed_decisions": "2026-11-09"
 }
