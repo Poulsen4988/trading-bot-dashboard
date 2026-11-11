@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 75378.67,
+    "cash": 50554.22,
     "currency": "USD",
     "positions": [
       {
@@ -9,7 +9,7 @@
         "name": "Vertex Pharmaceuticals",
         "shares": 20,
         "purchase_price": 477.36,
-        "current_price": 550.87,
+        "current_price": 547.89,
         "purchase_date": "2026-07-24",
         "investment_plan": {
           "term": "medium",
@@ -20,14 +20,14 @@
           "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 7.1,
-          "timeframe": "3-6 måneder",
+          "expected_return_pct": 7.7,
+          "timeframe": "1-3 måneder",
           "exit_conditions": "Sælg ved stop-brud (448,95), brud under SMA200 eller pipeline-skuffelse; overvej gevinsthjemtagning nær 590."
         },
         "last_review": {
-          "date": "2026-11-10",
-          "reasoning": "Thesis intakt: +15,4%, over SMA50/SMA200 med positiv MACD og dagens verdict BULL (7). Stop 448,95 langt væk; target 590 endnu ikke nået. Let overstrakt (RSI 63) men ingen grund til at sælge.",
-          "confidence": 75
+          "date": "2026-11-11",
+          "reasoning": "Thesis intakt: +14.8%, over SMA50/200, 3.7% fra 52u-high, dagens verdict BULL 7. Stop 448.95 langt væk; lad vinderen løbe mod 590.",
+          "confidence": 72
         }
       },
       {
@@ -35,10 +35,10 @@
         "name": "Alphabet Inc. (Class C)",
         "shares": 40,
         "purchase_price": 278.27,
-        "current_price": 286.01,
+        "current_price": 284.92,
         "purchase_date": "2026-11-04",
         "investment_plan": {
-          "term": "short",
+          "term": "medium",
           "basis": [
             "technical",
             "fundamental"
@@ -46,14 +46,14 @@
           "thesis": "Mean-reversion rebound fra historisk oversolgt niveau i kvalitets-mega-cap.",
           "price_target": 315,
           "stop_loss": 258,
-          "expected_return_pct": 10.1,
+          "expected_return_pct": 10.6,
           "timeframe": "1-3 måneder",
           "exit_conditions": "Sælg ved stop-brud (258) eller 52u-lav-brud uden bounce; tag gevinst nær 315/SMA50."
         },
         "last_review": {
-          "date": "2026-11-10",
-          "reasoning": "Mean-reversion-thesis intakt: RSI 22,9, +2,9% på 5 dage med momentum-divergens +21 som mulig bund; position +2,8% og stop 258 ikke ramt. Købt for 6 dage siden – giv tid, men tilføj ikke før bekræftelse.",
-          "confidence": 62
+          "date": "2026-11-11",
+          "reasoning": "Mean-reversion-thesis stadig mulig: RSI 24 med stabilisering +2.4% på 5 dage og position i plus (+2.4%). Stop 258 ikke ramt; ingen fundamentale brud.",
+          "confidence": 60
         }
       },
       {
@@ -61,10 +61,10 @@
         "name": "Coherent Corp.",
         "shares": 36,
         "purchase_price": 225.19,
-        "current_price": 225.19,
+        "current_price": 214.66,
         "purchase_date": "2026-11-10",
         "investment_plan": {
-          "term": "short",
+          "term": "medium",
           "basis": [
             "technical",
             "fundamental"
@@ -72,18 +72,70 @@
           "thesis": "Katalysator-drevet trendskifte i AI-optik fra oversolgt niveau; forventer gap-fortsættelse mod SMA50 når AI-derating stabiliserer.",
           "price_target": 265,
           "stop_loss": 182,
-          "expected_return_pct": 17.7,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg ved stop-brud (182) eller hvis dagens gap fyldes fuldt (luk under ~195) inden for 2 uger; tag gevinst nær 265/SMA50."
+          "expected_return_pct": 23.4,
+          "timeframe": "2-4 måneder",
+          "exit_conditions": "Sælg ved stop-brud (182) eller luk under ~195; tag gevinst nær 265/SMA50."
         },
         "last_review": {
-          "date": "2026-11-10",
-          "reasoning": "Eneste BULL-kandidat: +16,8% på 2,3x volumen (katalysator) med momentum-divergens +34 og plads til SMA50 (269). IT er historisk vores bedste sektor (8/9 vindere), og porteføljen har 0% IT. ATR-sizet (36 stk ≈ 8,1k USD, 1,5% risiko) pga. høj volatilitet og at trenden endnu ikke er bekræftet.",
+          "date": "2026-11-11",
+          "reasoning": "-4.7% men over den definerede gap-fill-grænse (~195) og stop 182; +3.5% på 5 dage og RSI 45 viser relativ stabilisering mens NVDA falder. Hold med stram risikostyring, intet tilkøb.",
+          "confidence": 50
+        }
+      },
+      {
+        "symbol": "MCK",
+        "name": "McKesson Corporation",
+        "shares": 15,
+        "purchase_price": 1082.59,
+        "current_price": 1082.59,
+        "purchase_date": "2026-11-11",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Defensiv trend-følge i sundhedsdistribution: kapital roterer fra AI-hardware til stabile indtjeningsnavne, og MCK's optrend forventes at fortsætte.",
+          "price_target": 1180,
+          "stop_loss": 1026.28,
+          "expected_return_pct": 9.0,
+          "timeframe": "2-4 måneder",
+          "exit_conditions": "Sælg ved stop-brud (1026,28) eller lukning under SMA50; tag gevinst nær 1180 eller ved regulatorisk prisindgreb."
+        },
+        "last_review": {
+          "date": "2026-11-11",
+          "reasoning": "Defensiv leder i klar optrend (over SMA50/200, 3.5% fra 52u-high) med relativ styrke i risk-off. Kortsigtet strakt (RSI 67), så positionen er reduceret fra ATR-forslaget 28 til 15 aktier (~16.2k USD) for at begrænse sundhedskoncentration.",
+          "confidence": 70
+        }
+      },
+      {
+        "symbol": "ZBH",
+        "name": "Zimmer Biomet",
+        "shares": 80,
+        "purchase_price": 107.32,
+        "current_price": 107.32,
+        "purchase_date": "2026-11-11",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Defensiv rotation ind i medtech: ZBH's breakout fra lav værdiansættelse fortsætter mod nye highs mens markedet søger stabile navne.",
+          "price_target": 120,
+          "stop_loss": 99.9,
+          "expected_return_pct": 11.8,
+          "timeframe": "2-4 måneder",
+          "exit_conditions": "Sælg ved stop-brud (99,90) eller hvis breakout fejler (lukning under SMA50); tag gevinst nær 120."
+        },
+        "last_review": {
+          "date": "2026-11-11",
+          "reasoning": "Momentum-breakout i defensiv medtech (+17% på 20 dage, over SMA50/200, 5% fra 52u-high) med lav værdiansættelse. RSI 68 efter +10.6% på 5 dage, så starter med en mindre position (80 vs. ATR-forslag 213) for at styre pullback-risiko og sektorkoncentration.",
           "confidence": 62
         }
       }
     ],
-    "last_updated": "2026-11-10 22:47 UTC"
+    "last_updated": "2026-11-11 22:50 UTC"
   },
   "history": [
     {
@@ -369,6 +421,10 @@
     {
       "date": "2026-11-10",
       "portfolio_value": 105943.31
+    },
+    {
+      "date": "2026-11-11",
+      "portfolio_value": 105461.03
     }
   ],
   "trades": [
@@ -8754,6 +8810,86 @@
         "summary": "Eneste BULL-kandidat: +16,8% på 2,3x volumen (katalysator) med momentum-divergens +34 og plads til SMA50 (269). IT er historisk vores bedste sektor (8/9 vindere), og porteføljen har 0% IT. ATR-sizet (36 stk ≈ 8,1k USD, 1,5% risiko) pga. høj"
       },
       "id": 517,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-11",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 547.89,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 72,
+        "summary": "Thesis intakt: +14.8%, over SMA50/200, 3.7% fra 52u-high, dagens verdict BULL 7. Stop 448.95 langt væk; lad vinderen løbe mod 590."
+      },
+      "id": 518,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-11",
+      "action": "HOLD",
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "shares": null,
+      "price": 284.92,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Mean-reversion-thesis stadig mulig: RSI 24 med stabilisering +2.4% på 5 dage og position i plus (+2.4%). Stop 258 ikke ramt; ingen fundamentale brud."
+      },
+      "id": 519,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-11",
+      "action": "HOLD",
+      "symbol": "COHR",
+      "name": "Coherent Corp.",
+      "shares": null,
+      "price": 214.66,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 50,
+        "summary": "-4.7% men over den definerede gap-fill-grænse (~195) og stop 182; +3.5% på 5 dage og RSI 45 viser relativ stabilisering mens NVDA falder. Hold med stram risikostyring, intet tilkøb."
+      },
+      "id": 520,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-11",
+      "action": "BUY",
+      "symbol": "MCK",
+      "name": "McKesson Corporation",
+      "shares": 15,
+      "price": 1082.59,
+      "value": 16238.85,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 70,
+        "summary": "Defensiv leder i klar optrend (over SMA50/200, 3.5% fra 52u-high) med relativ styrke i risk-off. Kortsigtet strakt (RSI 67), så positionen er reduceret fra ATR-forslaget 28 til 15 aktier (~16.2k USD) for at begrænse sundhedskoncentration."
+      },
+      "id": 521,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-11",
+      "action": "BUY",
+      "symbol": "ZBH",
+      "name": "Zimmer Biomet",
+      "shares": 80,
+      "price": 107.32,
+      "value": 8585.6,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 62,
+        "summary": "Momentum-breakout i defensiv medtech (+17% på 20 dage, over SMA50/200, 5% fra 52u-high) med lav værdiansættelse. RSI 68 efter +10.6% på 5 dage, så starter med en mindre position (80 vs. ATR-forslag 213) for at styre pullback-risiko og sekto"
+      },
+      "id": 522,
       "is_new": true
     }
   ],
@@ -12481,5 +12617,5 @@
     "Communication Services": 37.4,
     "Information Technology": 26.5
   },
-  "last_executed_decisions": "2026-11-10"
+  "last_executed_decisions": "2026-11-11"
 }
