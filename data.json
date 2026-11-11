@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 19467.5,
+    "cash": 6747.5,
     "currency": "DKK",
     "positions": [
       {
@@ -9,7 +9,7 @@
         "name": "ISS",
         "shares": 53.0,
         "purchase_price": 290.4868,
-        "current_price": 311.6,
+        "current_price": 297.0,
         "purchase_date": "2026-07-03",
         "investment_plan": {
           "term": "medium",
@@ -17,17 +17,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Billig quality-compounder med marginudvidelse; trend intakt.",
-          "price_target": 340,
-          "stop_loss": 295,
-          "expected_return_pct": 9,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg under 295, nær 340 eller ved tab af store kontrakter."
+          "thesis": "Billig quality-compounder med marginudvidelse; trend over SMA200 og SMA50.",
+          "price_target": 330,
+          "stop_loss": 280,
+          "expected_return_pct": 11.1,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg under 280, nær 320 eller ved SEC-eskalering."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Ren optrend efter stærk trading update og nye margin-targets; lav fwd P/E 13.5. Kortsigtet strakt, så stop hæves til 295 (≈2 ATR).",
-          "confidence": 65
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (280) ikke ramt. Dagens verdict BULL (7/10), P&L 2.24%. Ingen nye brud i casen; behold.",
+          "confidence": 70
         }
       },
       {
@@ -35,7 +35,7 @@
         "name": "Demant",
         "shares": 18,
         "purchase_price": 289.6,
-        "current_price": 369.0,
+        "current_price": 377.2,
         "purchase_date": "2026-08-13",
         "investment_plan": {
           "term": "medium",
@@ -43,17 +43,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Stærk vinder; lad løbe med stramt stop.",
+          "thesis": "Stærk vinder; lad løbe med hævet stop 365.",
           "price_target": 400,
           "stop_loss": 365,
-          "expected_return_pct": 8,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 6.0,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg under 365 eller nær 400."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Stærk vinder (+27%) med opjusteret guidance og buyback; RSI 55 giver plads. Stop fastholdes på 365 for at sikre gevinsten.",
-          "confidence": 62
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (365) ikke ramt. Dagens verdict BULL (6/10), P&L 30.25%. Ingen nye brud i casen; behold.",
+          "confidence": 60
         }
       },
       {
@@ -61,7 +61,7 @@
         "name": "Pandora",
         "shares": 16,
         "purchase_price": 817.0,
-        "current_price": 958.6,
+        "current_price": 901.6,
         "purchase_date": "2026-08-18",
         "investment_plan": {
           "term": "medium",
@@ -70,16 +70,16 @@
             "fundamental"
           ],
           "thesis": "Momentum efter Q3 og forbedret guidance; lad vinderen løbe med hævet stop.",
-          "price_target": 1020,
-          "stop_loss": 900,
-          "expected_return_pct": 6,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg under 900, nær 1020 eller ved svagt julesalg."
+          "price_target": 980,
+          "stop_loss": 835,
+          "expected_return_pct": 8.7,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg under 835, nær 980 eller ved svag guidance."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Q3 bekræftede casen (6% organisk vækst, guidance mod øvre ende) og kursen bryder op på volumen. Kraftigt overkøbt, så stop hæves til 900 for at låse gevinst; mål hæves til 1020.",
-          "confidence": 65
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (835) ikke ramt. Dagens verdict BULL (6/10), P&L 10.35%. Ingen nye brud i casen; behold.",
+          "confidence": 60
         }
       },
       {
@@ -87,7 +87,7 @@
         "name": "Ambu",
         "shares": 14,
         "purchase_price": 67.6,
-        "current_price": 86.4,
+        "current_price": 87.6,
         "purchase_date": "2026-09-08",
         "investment_plan": {
           "term": "medium",
@@ -95,17 +95,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Margin- og vækstrebound; gevinst sikret med stop 82.",
+          "thesis": "Margin- og vækstrebound; stop hævet til 82 for at sikre gevinst.",
           "price_target": 95,
           "stop_loss": 82,
-          "expected_return_pct": 10,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg under 82, nær 93-95 eller ved momentumbrud."
+          "expected_return_pct": 8.4,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg under 82, nær 92 eller ved momentumbrud."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Årsrapport og nyt buyback understøtter trenden; lille position. Stop 82 fastholdes.",
-          "confidence": 60
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (82) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 29.59%. Ingen nye brud i casen; behold.",
+          "confidence": 50
         }
       },
       {
@@ -113,7 +113,7 @@
         "name": "Bavarian Nordic",
         "shares": 20,
         "purchase_price": 222.2,
-        "current_price": 241.6,
+        "current_price": 241.0,
         "purchase_date": "2026-09-24",
         "investment_plan": {
           "term": "medium",
@@ -121,17 +121,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Positiv revision; regnskab 13/11 afgør næste ben.",
+          "thesis": "Breakout efter guidance-opjustering; positiv revision. Regnskab 13/11 er katalysator/risiko.",
           "price_target": 270,
           "stop_loss": 240,
-          "expected_return_pct": 12,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg under 240, nær 270 eller ved skuffende 2027-signaler."
+          "expected_return_pct": 12.0,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg under 240 eller nær 270."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Regnskab 13/11 er katalysator; lav multipel og opjusteret guidance, men momentum er gået i stå. Stop 240 fastholdes — brydes det, sælges.",
-          "confidence": 52
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (240) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 8.46%. Ingen nye brud i casen; behold.",
+          "confidence": 50
         }
       },
       {
@@ -139,25 +139,25 @@
         "name": "Novo Nordisk",
         "shares": 12,
         "purchase_price": 253.0,
-        "current_price": 271.5,
+        "current_price": 269.45,
         "purchase_date": "2026-09-25",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "fundamental",
-            "technical"
+            "technical",
+            "fundamental"
           ],
-          "thesis": "Billig turnaround; tilføj ikke pga. healthcare-koncentration.",
+          "thesis": "Billig turnaround; afvent break over SMA200. Ingen tilføjelse pga. sektorkoncentration.",
           "price_target": 320,
-          "stop_loss": 250,
-          "expected_return_pct": 18,
+          "stop_loss": 236.82,
+          "expected_return_pct": 18.8,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 250 eller nær 320."
+          "exit_conditions": "Sælg under 236,82 eller nær 320."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Q3 med opjustering og ekstremt lav værdiansættelse; afventer brud over SMA200 (~280). Stop hæves til 250.",
-          "confidence": 62
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (236.82) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 6.5%. Ingen nye brud i casen; behold.",
+          "confidence": 50
         }
       },
       {
@@ -165,7 +165,7 @@
         "name": "Coloplast",
         "shares": 30,
         "purchase_price": 420.8,
-        "current_price": 489.1,
+        "current_price": 508.2,
         "purchase_date": "2026-09-29",
         "investment_plan": {
           "term": "medium",
@@ -173,17 +173,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Fundamentals bedres og trend intakt.",
+          "thesis": "Fundamentals bedres og trend intakt; hold med stop 480.",
           "price_target": 560,
           "stop_loss": 480,
-          "expected_return_pct": 14,
+          "expected_return_pct": 10.2,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 480, nær 560 eller ved negativ revision."
+          "exit_conditions": "Sælg under 480, nær 560 eller ved svagt regnskab."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Stabil efter årsregnskab; trend svagt positiv over begge SMA'er. Stop 480 fastholdes.",
-          "confidence": 55
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (480) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 20.77%. Ingen nye brud i casen; behold.",
+          "confidence": 50
         }
       },
       {
@@ -191,7 +191,7 @@
         "name": "Vestas Wind Systems",
         "shares": 80,
         "purchase_price": 189.7,
-        "current_price": 198.6,
+        "current_price": 209.9,
         "purchase_date": "2026-10-02",
         "investment_plan": {
           "term": "medium",
@@ -199,17 +199,43 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Fundamentalt solid breakout; regnskab 11/11 afgør.",
+          "thesis": "Fundamentalt solid breakout; stop hævet til 195 foran regnskab.",
           "price_target": 225,
           "stop_loss": 195,
-          "expected_return_pct": 13,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg under 195, nær 225 eller ved skuffende regnskab/ordreindgang."
+          "expected_return_pct": 7.2,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg under 195, nær 225 eller ved skuffende regnskab."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Q3-regnskab i dag (11/11) er binær katalysator; fundamentals stærke med buyback. Stop 195 fastholdes som beskyttelse mod skuffelse.",
-          "confidence": 52
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (195) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 10.65%. Ingen nye brud i casen; behold.",
+          "confidence": 50
+        }
+      },
+      {
+        "symbol": "NDA-DK.CO",
+        "name": "Nordea",
+        "shares": 100,
+        "purchase_price": 115.3,
+        "current_price": 122.25,
+        "purchase_date": "2026-10-20",
+        "investment_plan": {
+          "term": "short",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Mean-reversion-bounce i bank; mål 130 nær SMA50.",
+          "price_target": 130,
+          "stop_loss": 112,
+          "expected_return_pct": 6.3,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg under 112, nær 130 eller uden yderligere bounce omkring 1. dec."
+        },
+        "last_review": {
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (112) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 6.03%. Ingen nye brud i casen; behold.",
+          "confidence": 50
         }
       },
       {
@@ -217,7 +243,7 @@
         "name": "Carlsberg",
         "shares": 20,
         "purchase_price": 971.0,
-        "current_price": 1025.0,
+        "current_price": 1026.0,
         "purchase_date": "2026-11-02",
         "investment_plan": {
           "term": "medium",
@@ -226,15 +252,15 @@
             "fundamental"
           ],
           "thesis": "Momentum og rimelig værdiansættelse i defensiv aktie; ingen tilføjelse pga. vægt.",
-          "price_target": 1080,
-          "stop_loss": 975,
-          "expected_return_pct": 5,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg under 975, nær 1080 eller ved momentumbrud."
+          "price_target": 1060,
+          "stop_loss": 960,
+          "expected_return_pct": 3.3,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg under 960, nær 1060 eller ved momentumbrud."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Q3-rally holder nær 52-ugers high med rimelig fwd P/E 14.5; position er allerede den største. Stop hæves til 975 (2 ATR).",
+          "date": "2026-11-10",
+          "reasoning": "Thesis intakt, stop (960) ikke ramt. Dagens verdict BULL (6/10), P&L 5.66%. Ingen nye brud i casen; behold.",
           "confidence": 60
         }
       }
@@ -808,10 +834,170 @@
     },
     {
       "date": "2026-11-11",
-      "portfolio_value": 118322.5
+      "portfolio_value": 117766.5
     }
   ],
   "trades": [
+    {
+      "date": "2026-08-25",
+      "action": "HOLD",
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "shares": null,
+      "price": 810.0,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Thesis svækket men ikke brudt: guidance opjusteret, men organisk vækst decelereret til 3%, CFO-skifte og uafklaret storaktionærmeddelelse skaber usikkerhed. Positionen er allerede porteføljens største (19.1%) — ingen yderligere tilkøb, og t"
+      },
+      "id": 486,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-25",
+      "action": "HOLD",
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "shares": null,
+      "price": 453.7,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 7,
+        "summary": "Thesis intakt: +82% indtjeningsvækst YoY og 30% forward-PE-rabat til sektoren er stærkt fundament, understøttet af 6% organisk vækst i Q3. Overkøbt kortsigtet teknik (Stoch 87) og nyt ledelsesteam er kendte risici, ikke nye brud på thesis."
+      },
+      "id": 487,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-25",
+      "action": "HOLD",
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "shares": null,
+      "price": 137.2,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Thesis intakt men skrøbelig: indtjeningskollapset (-94.6% YoY) var allerede kendt og indregnet ved køb (engangsnedskrivninger), og ledelsen har siden bekræftet at alle projekter (inkl. Hornsea 3, Dadu 2) kører efter planen. Ingen nye negati"
+      },
+      "id": 488,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-25",
+      "action": "HOLD",
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "shares": null,
+      "price": 1075.0,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 5,
+        "summary": "Thesis intakt: rekord-EPS og stærk gebyrindtjening. Stoch 94 er ekstremt overkøbt og en analytiker har flaget aktien som 'fully valued' — ingen tilkøb, men ingen brud på thesis der udløser salg, og stop-loss (1025) er langt væk."
+      },
+      "id": 489,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-25",
+      "action": "BUY",
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "shares": 9,
+      "price": 886.2,
+      "value": 7975.8,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 6,
+        "summary": "Oversolgt (RSI 35, Stoch 23) kvalitetsnavn i Consumer Defensive — en sektor porteføljen aktuelt har 0% eksponering mod. Solid H1-indtjeningsvækst (+13%) og opjusteret analytiker fair value-estimat understøtter en mean-reversion-indgang. Sam"
+      },
+      "id": 490,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-25",
+      "action": "BUY",
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "shares": 16,
+      "price": 212.8,
+      "value": 3404.8,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 6,
+        "summary": "Opjusteret fuldårs-EBIT-margin-guidance på stærkt Q2-regnskab, med DCF-estimater der antyder yderligere opside trods rallyet. Diversificerer ind i Industrials, hvor porteføljen aktuelt kun har 3.5% eksponering (ISS). Et lignende tidligere V"
+      },
+      "id": 491,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-26",
+      "action": "HOLD",
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "shares": null,
+      "price": 291.8,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 7,
+        "summary": "Thesis intakt: 8.9% organisk Q2-vækst, forbedrede marginer og udvidet buyback (DKK 600m) understøtter fortsat en billig værdiansættelse med reel indtjeningsmomentum."
+      },
+      "id": 492,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-26",
+      "action": "HOLD",
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "shares": null,
+      "price": 373.8,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Ugentlige buybacks fortsætter uafbrudt, forward PE 11.5x med 4.57% udbytte og +15.2% indtjeningsvækst holder value+income-casen intakt trods fladt momentum."
+      },
+      "id": 493,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-26",
+      "action": "HOLD",
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "shares": null,
+      "price": 652.5,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Dagens regnskab ('fastholder momentum i andet kvartal') er ikke en guidance-skuffelse — buybacks og obligationsindfrielse fortsætter fra en position af styrke, så exit-triggeren fra planen er ikke udløst endnu."
+      },
+      "id": 494,
+      "is_new": false
+    },
+    {
+      "date": "2026-08-26",
+      "action": "HOLD",
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "shares": null,
+      "price": 285.2,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 6,
+        "summary": "Guidance-opjustering og Oticon Zeal-produktlanceringen er intakte katalysatorer; den kortsigtede kurstilbagegang ser ud som profithjemtagning snarere end fundamental svækkelse."
+      },
+      "id": 495,
+      "is_new": false
+    },
     {
       "date": "2026-08-26",
       "action": "HOLD",
@@ -10330,170 +10516,6 @@
         "summary": "Thesis intakt, stop (960) ikke ramt. Dagens verdict BULL (6/10), P&L 5.66%. Ingen nye brud i casen; behold."
       },
       "id": 1085,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "SELL",
-      "symbol": "NDA-DK.CO",
-      "name": "Nordea",
-      "shares": 100,
-      "price": 127.2,
-      "value": 12720.0,
-      "reasoning": {
-        "verdict": "SELL",
-        "confidence": 70,
-        "summary": "Mean-reversion-thesen er stort set indfriet (+10.3%, 2% fra mål 130). Teknisk overkøbt (RSI 73, over øvre Bollinger) med negativ MACD og faldende indtjening; dagens verdict NEUTRAL. Hjemtag gevinsten."
-      },
-      "cost_basis_dkk": 11530.0,
-      "realized_pnl_dkk": 1190.0,
-      "realized_pnl_pct": 10.32,
-      "holding_days": 22,
-      "id": 1086,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "ISS.CO",
-      "name": "ISS",
-      "shares": null,
-      "price": 311.6,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 65,
-        "summary": "Ren optrend efter stærk trading update og nye margin-targets; lav fwd P/E 13.5. Kortsigtet strakt, så stop hæves til 295 (≈2 ATR)."
-      },
-      "id": 1087,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "DEMANT.CO",
-      "name": "Demant",
-      "shares": null,
-      "price": 369.0,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 62,
-        "summary": "Stærk vinder (+27%) med opjusteret guidance og buyback; RSI 55 giver plads. Stop fastholdes på 365 for at sikre gevinsten."
-      },
-      "id": 1088,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "PNDORA.CO",
-      "name": "Pandora",
-      "shares": null,
-      "price": 958.6,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 65,
-        "summary": "Q3 bekræftede casen (6% organisk vækst, guidance mod øvre ende) og kursen bryder op på volumen. Kraftigt overkøbt, så stop hæves til 900 for at låse gevinst; mål hæves til 1020."
-      },
-      "id": 1089,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "AMBU-B.CO",
-      "name": "Ambu",
-      "shares": null,
-      "price": 86.4,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 60,
-        "summary": "Årsrapport og nyt buyback understøtter trenden; lille position. Stop 82 fastholdes."
-      },
-      "id": 1090,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "BAVA.CO",
-      "name": "Bavarian Nordic",
-      "shares": null,
-      "price": 241.6,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 52,
-        "summary": "Regnskab 13/11 er katalysator; lav multipel og opjusteret guidance, men momentum er gået i stå. Stop 240 fastholdes — brydes det, sælges."
-      },
-      "id": 1091,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "NOVO-B.CO",
-      "name": "Novo Nordisk",
-      "shares": null,
-      "price": 271.5,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 62,
-        "summary": "Q3 med opjustering og ekstremt lav værdiansættelse; afventer brud over SMA200 (~280). Stop hæves til 250."
-      },
-      "id": 1092,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "COLO-B.CO",
-      "name": "Coloplast",
-      "shares": null,
-      "price": 489.1,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 55,
-        "summary": "Stabil efter årsregnskab; trend svagt positiv over begge SMA'er. Stop 480 fastholdes."
-      },
-      "id": 1093,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "VWS.CO",
-      "name": "Vestas Wind Systems",
-      "shares": null,
-      "price": 198.6,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 52,
-        "summary": "Q3-regnskab i dag (11/11) er binær katalysator; fundamentals stærke med buyback. Stop 195 fastholdes som beskyttelse mod skuffelse."
-      },
-      "id": 1094,
-      "is_new": false
-    },
-    {
-      "date": "2026-11-11",
-      "action": "HOLD",
-      "symbol": "CARL-B.CO",
-      "name": "Carlsberg",
-      "shares": null,
-      "price": 1025.0,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 60,
-        "summary": "Q3-rally holder nær 52-ugers high med rimelig fwd P/E 14.5; position er allerede den største. Stop hæves til 975 (2 ATR)."
-      },
-      "id": 1095,
       "is_new": true
     }
   ],
@@ -10581,20 +10603,21 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
+        "verdict": "BULL",
+        "confidence": 6,
         "bull": [
-          "Hævet helårsguidance 4/11 på GLP-1 momentum",
-          "Fwd PE 12x og tilbagekøb"
+          "Q3: opjusteret helårsoutlook, justeret EBIT +27% ved CER (4/11) — GLP-1-momentum tilbage",
+          "Ekstremt lav værdiansættelse: P/E 10.7 trailing / 11.9 fwd for et globalt pharma-franchise; -34% fra 52-ugers high",
+          "Wegovy-pille-data og løbende tilbagekøb; insider-handler 5/11"
         ],
         "bear": [
-          "34% under 52-ugers high, kurs under SMA200",
-          "Earnings -16% YoY"
+          "Under SMA200 (-2.9%) — langsigtet trend endnu ikke vendt; kun +0.5% på 5d efter opjustering",
+          "Pris-/konkurrencepres fra Lilly og compounders; negativ indtjeningsvækst -16% YoY"
         ],
-        "summary": "Novo er billig og guidance er hævet, men aktien er i en langvarig nedtrend og under SMA200. Mulig turnaround, men ikke bekræftet teknisk.",
-        "key_risk": "Priskonkurrence og vækstafmatning i GLP-1."
+        "summary": "Novo har leveret en overraskende stærk Q3 med opjustering, og aktien handler på historisk lav multipel. Markedet har dog været lunkent (+0.5% på 5d), og kursen ligger stadig under SMA200. +10% kræver et brud over SMA200 (~280) og vedvarende volumen. Bull med moderat confidence.",
+        "key_risk": "Prispres i USA og markedsandelstab til Lilly kan holde multiplen nede trods god Q3."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -10680,41 +10703,43 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-10",
+        "screening_date": "2026-11-11",
         "score": 59.0,
-        "rsi_proxy": 16.5,
-        "stoch_proxy": 14.3,
-        "bb_position": -15.9,
-        "sma50_vs_price": -12.28,
-        "sma200_vs_price": 12.56,
-        "macd_line": -506.0529,
-        "atr": 881.7857,
-        "momentum_divergence": 6.43,
+        "rsi_proxy": 15.7,
+        "stoch_proxy": 11.8,
+        "bb_position": -7.8,
+        "sma50_vs_price": -16.11,
+        "sma200_vs_price": 7.04,
+        "macd_line": -835.7859,
+        "atr": 903.5714,
+        "momentum_divergence": 6.93,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.24x avg",
-          "MOMENTUM SELLOFF: -12.0% in 5 days — sharp directional move",
-          "DEEPLY OVERSOLD: RSI proxy 16, Stoch proxy 14 — bounce candidate",
-          "MODEST DISCOUNT: Fwd PE 14.1x vs sector norm 18x",
+          "VOLUME NORMAL-HIGH: 1.15x avg",
+          "MOMENTUM SELLOFF: -14.3% in 5 days — sharp directional move",
+          "DEEPLY OVERSOLD: RSI proxy 16, Stoch proxy 12 — bounce candidate",
+          "MODEST DISCOUNT: Fwd PE 13.8x vs sector norm 18x",
           "STRONG EARNINGS GROWTH: +199% YoY — fundamental tailwind"
         ],
-        "rationale": "MAERSK-B.CO: a 12.0% five-day selloff (20d: -18.4%) reveals strong directional pressure; forward PE 14.1x represents a 22% discount to Industrials sector norm (18x); +199% earnings growth underpins the fundamental case; RSI proxy (16) and stochastic (14) in oversold territory support a bounce thesis; price is -12.3% vs SMA50."
+        "rationale": "MAERSK-B.CO: a 14.3% five-day selloff (20d: -21.3%) reveals strong directional pressure; forward PE 13.8x represents a 24% discount to Industrials sector norm (18x); +199% earnings growth underpins the fundamental case; RSI proxy (16) and stochastic (12) in oversold territory support a bounce thesis; price is -16.1% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "NEUTRAL",
-        "confidence": 5,
+        "confidence": 6,
         "bull": [
-          "RSI 16 dybt oversolgt – teknisk bounce sandsynlig",
-          "Opjustering af 2026-forventninger 5/11 og fwd PE 14x"
+          "Dybt oversolgt (RSI 15.7, stoch 12) efter -14.3% på 5 dage — høj sandsynlighed for teknisk rebound mod 20.500–21.000",
+          "Opjusteret 2026-guidance 5/11, +199% indtjeningsvækst, fwd P/E 13.8 (24% rabat til sektor) og igangværende tilbagekøb",
+          "Over SMA200 (+7%) — langsigtet trend intakt; bedre likviditet end A-aktien"
         ],
         "bear": [
-          "-18% på 20 dage, 12% under SMA50, MACD kraftigt negativ",
-          "Fraktrater under pres når Suez-ruten genåbner"
+          "Markedet sælger trods opjustering — tegn på at fremadrettede fragtrater/kapacitet vejer tungere end 2026-tal",
+          "MACD -836 og -16% under SMA50; faldende kniv uden bekræftet vending",
+          "Høj ATR (~904 DKK, 4.7%) kræver bred stop og mindre position"
         ],
-        "summary": "Maersk er voldsomt oversolgt trods opjustering, så et teknisk rebound er muligt. Men trenden er klart nedadgående og markedet prisser faldende fraktrater ind; afvent stabilisering.",
-        "key_risk": "Fortsat fald i fraktrater/overkapacitet efter Suez-genåbning."
+        "summary": "Samme case som A-aktien men mere likvid og med lidt mere oversolgt profil: +10% kræver kun en tilbagevenden mod midten af Bollinger-båndet. Fundamentalt ser markedet 2026 som toppen i cyklussen, så en rebound er primært en taktisk handel. Neutral med opadgående skævhed på kort sigt.",
+        "key_risk": "Strukturelt faldende fragtrater pga. Suez-genåbning og ny tonnage kan trække kursen ned mod SMA200 (~18.100) før en bund dannes."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -10800,39 +10825,41 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-10",
-        "score": 54.0,
-        "rsi_proxy": 18.0,
-        "stoch_proxy": 22.4,
-        "bb_position": -15.9,
-        "sma50_vs_price": -9.69,
-        "sma200_vs_price": 14.78,
-        "macd_line": -365.0735,
-        "atr": 861.4286,
-        "momentum_divergence": 5.26,
+        "screening_date": "2026-11-11",
+        "score": 62.0,
+        "rsi_proxy": 16.0,
+        "stoch_proxy": 9.6,
+        "bb_position": -11.5,
+        "sma50_vs_price": -14.49,
+        "sma200_vs_price": 8.16,
+        "macd_line": -677.527,
+        "atr": 882.8571,
+        "momentum_divergence": 5.69,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.49x avg",
-          "MOMENTUM SELLOFF: -10.2% in 5 days — sharp directional move",
-          "RSI OVERSOLD: RSI proxy 18, Stoch proxy 22 — momentum exhaustion signal",
+          "VOLUME ELEVATED: 1.73x avg — above-normal interest",
+          "MOMENTUM SELLOFF: -13.7% in 5 days — sharp directional move",
+          "DEEPLY OVERSOLD: RSI proxy 16, Stoch proxy 10 — bounce candidate",
           "STRONG EARNINGS GROWTH: +199% YoY — fundamental tailwind"
         ],
-        "rationale": "MAERSK-A.CO: a 10.2% five-day selloff (20d: -15.5%) reveals strong directional pressure; +199% earnings growth underpins the fundamental case; RSI proxy (18) and stochastic (22) in oversold territory support a bounce thesis; price is -9.7% vs SMA50."
+        "rationale": "MAERSK-A.CO: volume running at 1.7x the daily average signals institutional-scale activity; a 13.7% five-day selloff (20d: -19.4%) reveals strong directional pressure; +199% earnings growth underpins the fundamental case; RSI proxy (16) and stochastic (10) in oversold territory support a bounce thesis; price is -14.5% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "RSI 18 oversolgt – bounce-kandidat",
-          "Opjusteret 2026-guidance og +199% earnings growth"
+          "Ekstremt oversolgt: RSI 16, stoch 10, kurs under nedre Bollinger (-11.5%) — klassisk set-up for teknisk rebound",
+          "Opjusterede forventninger til hele 2026 (5/11) og +199% indtjeningsvækst; trailing P/E ~10 og aktiv tilbagekøb",
+          "Kurs stadig +8% over SMA200 — den langsigtede optrend er ikke brudt endnu"
         ],
         "bear": [
-          "-15% på 20 dage, under SMA50, negativ MACD"
+          "Kraftigt salgspres trods opjustering (-13.7% på 5d, -19.4% på 20d, volumen 1.7x) tyder på at markedet prissætter faldende fragtrater/overkapacitet og Suez-genåbning",
+          "MACD dybt negativ og kurs -14.5% under SMA50 — ingen bekræftet bund; ATR ~883 DKK (4.6%) giver høj volatilitet"
         ],
-        "summary": "A-aktien følger B-aktien med samme oversolgte profil og samme fundamentale tailwind. Ingen trendvending endnu, så neutral indtil momentum stabiliserer.",
-        "key_risk": "Fraktrate-normalisering og fortsat salgspres."
+        "summary": "Mærsk er faldet ~19% på en måned trods opjusteret 2026-guidance, hvilket peger på at markedet ser en peak i fragtrater og indtjening. +10% kræver blot en teknisk mean-reversion mod SMA50 givet RSI 16, men der er endnu intet vendingssignal. Neutral med bounce-bias; A-aktien har lavere likviditet end B.",
+        "key_risk": "Fortsat fald i containerrater ved Suez-normalisering kan gøre 2026 til indtjeningstoppen og presse kursen mod SMA200 (~17.600)."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -10912,18 +10939,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Stærk 20d momentum"
+          "+24% på 20d og +11.6% over SMA50 med positiv MACD"
         ],
         "bear": [
-          "RSI 88, under SMA200"
+          "Stadig under SMA200 og -25% fra 52-ugers high; høj P/E 43"
         ],
-        "summary": "+26% på 20 dage, RSI 88 – ekstremt overkøbt, under SMA200.",
-        "key_risk": "Skarp korrektion efter ekstrem stigning."
+        "summary": "DSV har haft kraftig rebound men den langsigtede trend er ikke genetableret.",
+        "key_risk": "Afvisning ved SMA200 og svag fragtcyklus."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -10975,18 +11002,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "Stærkt momentum"
+          "+10% på 20d og over SMA50"
         ],
         "bear": [
-          "RSI 88 og svag SMA200-position"
+          "RSI 77 og stadig under SMA200; høj fundamental usikkerhed"
         ],
-        "summary": "+12,7% på 5 dage, men RSI 88 er ekstremt overkøbt.",
-        "key_risk": "Skarp tilbagetrækning efter overkøbt rally."
+        "summary": "Ørsted er i en overkøbt rebound under den langsigtede trend.",
+        "key_risk": "Afvisning ved SMA200 og fortsat projektrisiko."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11071,44 +11098,23 @@
           "url": "https://view.news.eu.nasdaq.com/view?id=b917f25c5a8e3d961d79c9eae7136e944&lang=en&src=listed"
         }
       ],
-      "technical": {
-        "screening_date": "2026-11-10",
-        "score": 49.8,
-        "rsi_proxy": 68.3,
-        "stoch_proxy": 86.8,
-        "bb_position": 89.2,
-        "sma50_vs_price": 13.64,
-        "sma200_vs_price": 15.95,
-        "macd_line": 34.4275,
-        "atr": 24.5714,
-        "momentum_divergence": -11.76,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "NEAR 52W HIGH: -1.4% — breakout territory",
-          "MOMENTUM: +5.7% in 5 days — continued BUYING pressure",
-          "MOMENTUM DIVERGENCE: 5d/20d gap -11.8pp — emerging trend shift",
-          "OVERBOUGHT: RSI proxy 68, Stoch proxy 87 — stretched, potential pullback",
-          "MODEST DISCOUNT: Fwd PE 14.4x vs sector norm 17x",
-          "EARNINGS GROWTH: +13% YoY"
-        ],
-        "rationale": "CARL-B.CO: a 5.7% five-day rally (20d: +17.4%) reveals strong directional pressure; stock is pressing against its 52-week high at -1.4% — breakout watch; forward PE 14.4x represents a 15% discount to Consumer Defensive sector norm (17x); price is +13.6% vs SMA50."
-      },
+      "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "BULL",
         "confidence": 6,
         "bull": [
-          "Nær 52-ugers high, 14% over SMA50 – stærk trend",
-          "Fwd PE 14,4x vs sektor 17x og stabil indtjeningsvækst +13%",
-          "Trading statement 29/10 bekræfter bane"
+          "Q3 trading statement (29/10) udløste rally: +14.5% på 20 dage, nu -1.4% fra 52-ugers high",
+          "Fwd P/E 14.5 — attraktiv vs. historik; positiv MACD og over begge SMA'er",
+          "Defensiv forbrugsprofil med prissætningskraft"
         ],
         "bear": [
-          "RSI 68 og Stoch 87 – tæt på overkøbt",
-          "Momentumdivergens: 20d +17% vs 5d +6% – aftagende fart"
+          "RSI 64 og kurs +12.8% over SMA50 — strakt efter rallyet; lav omsætningsvækst (+2.6%)",
+          "Russiske asset-beslaglæggelser (Nestlé, Metro) minder om geopolitisk eksponering og Britvic-integration"
         ],
-        "summary": "Carlsberg er i solid optrend med fornuftig værdiansættelse og udbytte på 2,8%. Aftagende kortsigtet momentum og tæt-på-overkøbt gør at gevinster kan blive afbrudt af konsolidering.",
-        "key_risk": "Pullback efter +17% på 20 dage; Rusland-relaterede risici."
+        "summary": "Carlsberg har fået et løft fra Q3 og handler nær 52-ugers high med pæn trend. Værdiansættelsen er rimelig, men organisk vækst er lav, så yderligere +10% kræver marginudvidelse fra Britvic-synergier. Bull med moderat confidence — behold.",
+        "key_risk": "Svag volumenudvikling i Europa/Asien og konsolidering efter 14% rally."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11144,23 +11150,42 @@
           "url": "https://view.news.eu.nasdaq.com/view?id=bd6359342c04bb43f9887a8b2d70d5408&lang=en&src=listed"
         }
       ],
-      "technical": null,
+      "technical": {
+        "screening_date": "2026-11-11",
+        "score": 55.0,
+        "rsi_proxy": 72.8,
+        "stoch_proxy": 96.4,
+        "bb_position": 113.8,
+        "sma50_vs_price": 15.39,
+        "sma200_vs_price": 44.51,
+        "macd_line": 26.4919,
+        "atr": 33.0071,
+        "momentum_divergence": -1.61,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "VOLUME ELEVATED: 1.64x avg — above-normal interest",
+          "NEAR 52W HIGH: -0.6% — breakout territory",
+          "MOMENTUM SURGE: +15.6% in 5 days — sharp directional move",
+          "OVERBOUGHT: RSI proxy 73, Stoch proxy 96 — stretched, potential pullback"
+        ],
+        "rationale": "PNDORA.CO: volume running at 1.6x the daily average signals institutional-scale activity; a 15.6% five-day rally (20d: +17.2%) reveals strong directional pressure; stock is pressing against its 52-week high at -0.6% — breakout watch; price is +15.4% vs SMA50."
+      },
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "BULL",
         "confidence": 6,
         "bull": [
-          "Q3 organisk vækst 6% og guidance mod øvre ende",
-          "+11% på 5 dage, 37% over SMA200, nær 52-ugers high",
-          "Fwd PE 19x rimelig"
+          "Q3: 6% organisk vækst og guidance indsnævret mod øvre ende (4/11) — fundamentalt momentum bekræftet",
+          "Stærk trend: +15.6% på 5d, +44% over SMA200, positiv MACD og volumen 1.6x — institutionel efterspørgsel",
+          "Rimelig værdiansættelse (trailing P/E 14, fwd 20) med 2.4% udbytte og ved 52-ugers high (-0.6%) — breakout-territorium"
         ],
         "bear": [
-          "Svag earnings growth (+9,5%)",
-          "Hurtig stigning kan udløse profit-taking"
+          "Kraftigt overkøbt: RSI 73, stoch 96, kurs over øvre Bollinger (113.8) — stor risiko for pullback/konsolidering",
+          "Følsom for sølvpriser og forbrugerefterspørgsel i USA forud for julehandlen"
         ],
-        "summary": "Pandora har positiv regnskabsreaktion og stærk teknisk trend uden at være overkøbt (RSI 61). Kan fortsætte højere, men kortsigtet hurtig stigning er en risiko.",
-        "key_risk": "Forbrugersvaghed og tarifrisici."
+        "summary": "Pandora har leveret et solidt Q3 med guidance mod øvre ende, og kursen bryder op mod 52-ugers high på høj volumen. Trenden er stærk, men den kortsigtede overkøbte tilstand gør en konsolidering mod ~920 sandsynlig før næste ben op. Hold position, men tilføj ikke på disse niveauer.",
+        "key_risk": "Pullback på 5–8% fra overkøbt niveau (RSI 73, over øvre Bollinger) eller skuffende julesalg."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11212,18 +11237,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Nær 52-ugers high i stærk trend"
+          "Over begge SMA'er og tæt på 52-ugers high; defensiv"
         ],
         "bear": [
-          "RSI 84 overkøbt"
+          "RSI 75 — overkøbt efter +8.7% på 20d"
         ],
-        "summary": "Kraftig stigning, men RSI 84 er ekstremt overkøbt.",
-        "key_risk": "Pullback-risiko fra ekstremt overkøbt niveau."
+        "summary": "Tryg er stabil og stærk men kortsigtet overkøbt.",
+        "key_risk": "Konsolidering fra overkøbt niveau."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11296,20 +11321,20 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "+16,6% på 20 dage efter årsregnskab, over SMA50/200",
-          "Earnings growth +36%"
+          "Årsregnskab 25/26 (2/11) + reviderede 2030-ambitioner; fwd P/E 18 er lav for Coloplast historisk",
+          "Over SMA50 (+8%) og SMA200 (+12%) med positiv MACD; ny fabrik i Portugal understøtter vækst"
         ],
         "bear": [
-          "RSI 69, -3,3% i dag – momentum knækker",
-          "Stadig 16,7% under 52-ugers high, fwd PE 18x"
+          "Reviderede 2030-ambitioner kan indebære lavere vækstmål — kurs -1.3% på 5d efter meddelelsen",
+          "Stadig -20% fra 52-ugers high; trailing P/E 36 og kun 7% omsætningsvækst"
         ],
-        "summary": "Coloplast har bounced kraftigt efter regnskabet, men dagens fald på 3,3% antyder udmattelse efter en hurtig stigning. Neutral mens der ventes på bekræftelse.",
-        "key_risk": "Tilbagefald efter hurtig rebound."
+        "summary": "Coloplast har stabiliseret sig efter regnskabet, men de reviderede ambitioner mod 2030 har ikke udløst et nyt løft. Teknisk er trenden svagt positiv (RSI 59). +10% kræver at markedet genvinder tillid til vækstmålene; Neutral — behold.",
+        "key_risk": "Nedjusterede langsigtede vækstambitioner fører til yderligere multipel-kompression."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11396,18 +11421,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
-        "verdict": "BEAR",
+        "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Stor trend over SMA200"
+          "Massivt momentum: +45% på 20d, +77% over SMA200"
         ],
         "bear": [
-          "Dyr og momentum knækker"
+          "RSI 72, +36% over SMA50 og -3.7% på 5d — tegn på udmattelse; P/E 48"
         ],
-        "summary": "-9,8% på 5 dage efter +44% på 20 dage, fwd PE 32x – udmattelse.",
-        "key_risk": "Dyr aktie med brudt kortsigtet momentum kan korrigere."
+        "summary": "Genmab har haft et ekstremt rally, men aktien er strakt og begynder at korrigere.",
+        "key_risk": "Kraftig mean-reversion efter parabolsk rally."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11445,18 +11470,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
+        "verdict": "BULL",
+        "confidence": 6,
         "bull": [
-          "Stærk trend, +383% earnings growth"
+          "+12% på 5d, +13% over SMA50 og +22% over SMA200; høj indtjeningsvækst"
         ],
         "bear": [
-          "Overkøbt og dyr"
+          "RSI 66 efter hurtigt rally; høj fwd P/E 26.6"
         ],
-        "summary": "+16% på 5 dage og RSI 74 – overstrakt og dyr på fwd PE 27x.",
-        "key_risk": "Mean reversion efter hurtig rally."
+        "summary": "GN har stærkt momentum og bred optrend.",
+        "key_risk": "Profit-taking efter kraftigt 5-dages rally."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11508,21 +11533,21 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "BULL",
         "confidence": 6,
         "bull": [
-          "Opjusteret forventninger 9/10 og genoptaget tilbagekøb",
-          "Meget stærk trend: 47% over SMA200, nær 52-ugers high",
-          "Q3-periodemeddelelse 3/11 uden negative overraskelser"
+          "Opjusterede 2026-forventninger og genoptaget aktietilbagekøb (9/10); Q3-periodemeddelelse 3/11",
+          "Stærk langsigtet trend: +42.6% over SMA200, +11% over SMA50, positiv MACD",
+          "Bernstein fremhæver Demant som en af få medtech-outperformers i 2026; omsætning +15%"
         ],
         "bear": [
-          "RSI 69 og 15% over SMA50 – overstrakt",
-          "Svag earnings growth (+6%), fwd PE 22x"
+          "Trailing P/E 32 er højt; kurs -2.1% i går — tegn på profit-taking",
+          "Kun +0.9% på 5d — momentum aftager nær 52-ugers high (-4.4%)"
         ],
-        "summary": "Demant er i klar optrend understøttet af opjustering og tilbagekøb. Overkøbt teknik og en høj værdiansættelse begrænser upside på kort sigt.",
-        "key_risk": "Pullback fra overkøbte niveauer; vækstdeceleration."
+        "summary": "Demant er en af sektorens stærkeste aktier med opjusteret guidance og buyback-støtte. RSI 55 giver plads, og +10% kræver et breakout over 52-ugers high (~386). Bull — behold.",
+        "key_risk": "Multipel-kompression i medtech-sektoren eller svagere høreapparat-marked i USA."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11567,18 +11592,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "+12% på 20 dage, fwd PE 12x"
+          "+11.9% på 20d og over SMA50 med positiv MACD; lav fwd P/E 12"
         ],
         "bear": [
-          "Under SMA200"
+          "Stadig under SMA200 og -30% fra 52-ugers high"
         ],
-        "summary": "Positiv 20d trend, men stadig 30% under 52-ugers high og under SMA200.",
-        "key_risk": "Langsigtet nedtrend ikke brudt."
+        "summary": "Royal Unibrew er i en rebound men har endnu ikke brudt den langsigtede nedtrend.",
+        "key_risk": "Afvisning ved SMA200."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11637,20 +11662,20 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Fwd PE 12,4x lav og analytiker-upgrade til Buy",
-          "RSI 68, +3,8% på 5 dage – momentum vender"
+          "+7.5% på 5 dage i tråd med nordisk bank-styrke (Danske); P/E 12.4 og høj udbyttekapacitet",
+          "Zacks-opgradering til Buy (sep.) på stigende estimater"
         ],
         "bear": [
-          "Kurs under SMA50 og SMA200",
-          "Earnings growth let negativ (-2,8%)"
+          "Indtjening -2.8% og omsætning -1.4% — faldende renter presser nettorenteindtægter",
+          "RSI 73 og over øvre Bollinger, men kun +0.5% på 20 dage og MACD negativ — rallyet mangler bredere trend"
         ],
-        "summary": "Nordea er billig og har fået opgradering, men teknisk ligger kursen stadig under de lange gennemsnit. Afvent brud over SMA50 før stærkere konviktion.",
-        "key_risk": "Renteudvikling presser nettorenteindtægter."
+        "summary": "Nordea har haft et kortsigtet hop men 20-dages afkastet er fladt, og indtjeningen falder svagt. Teknisk overkøbt uden bekræftet trend. Neutral — behold for udbytte, men begrænset upside.",
+        "key_risk": "Lavere renter i Norden reducerer NII yderligere og trækker estimaterne ned."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11735,20 +11760,43 @@
           "url": "https://view.news.eu.nasdaq.com/view?id=b0c26850ce414f22ca4032bb54cd7473c&lang=da&src=listed"
         }
       ],
-      "technical": null,
+      "technical": {
+        "screening_date": "2026-11-11",
+        "score": 49.0,
+        "rsi_proxy": 66.3,
+        "stoch_proxy": 94.1,
+        "bb_position": 113.3,
+        "sma50_vs_price": 1.91,
+        "sma200_vs_price": 9.07,
+        "macd_line": -0.1032,
+        "atr": 7.45,
+        "momentum_divergence": 3.66,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "VOLUME NORMAL-HIGH: 1.08x avg",
+          "NEAR 52W HIGH: -3.5% — breakout territory",
+          "MOMENTUM: +6.9% in 5 days — continued BUYING pressure",
+          "OVERBOUGHT: RSI proxy 66, Stoch proxy 94 — stretched, potential pullback",
+          "EARNINGS GROWTH: +18% YoY"
+        ],
+        "rationale": "DANSKE.CO: a 6.9% five-day rally (20d: +3.2%) reveals strong directional pressure; stock is pressing against its 52-week high at -3.5% — breakout watch; price is +1.9% vs SMA50."
+      },
       "analysis": {
-        "analysis_date": "2026-11-10",
-        "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
+        "analysis_date": "2026-11-11",
+        "tier": "deep",
+        "verdict": "BULL",
+        "confidence": 6,
         "bull": [
-          "Billig, voksende indtjening"
+          "Stærkt 1.-3. kvt. 2026 (resultat 18.3 mia.) med bred vækst og stærk kreditkvalitet",
+          "Lav værdiansættelse: fwd P/E 11.1 og 4.65% udbytte plus løbende ugentlige aktietilbagekøb",
+          "Over SMA50 og SMA200 og tæt på 52-ugers high (-3.5%) — +6.9% på 5 dage"
         ],
         "bear": [
-          "Kurs under SMA50"
+          "Kortsigtet overkøbt (stoch 94, kurs over øvre Bollinger) og MACD stadig flad/negativ (-0.10)",
+          "Faldende renter kan presse nettorenteindtægter i 2027"
         ],
-        "summary": "Lav fwd PE 11x og earnings +18%, men kurs under SMA50.",
-        "key_risk": "Ingen klar trend."
+        "summary": "Danske Bank kombinerer stærkt Q3, attraktiv udbyttes-/buyback-yield og lav P/E. +10% kræver et breakout over 52-ugers high (~384) — muligt givet tilbagekøbsstøtte, men kursen er kortsigtet strakt. Bull med moderat confidence; bedre indgang ved pullback mod 360.",
+        "key_risk": "Rentefald og indsnævrede marginer i 2027 kombineret med kortsigtet overkøbt teknisk billede."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11821,18 +11869,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
         "verdict": "NEUTRAL",
-        "confidence": 5,
+        "confidence": 4,
         "bull": [
-          "Over SMA200"
+          "Over SMA200 (+8.5%); omsætning +17%"
         ],
         "bear": [
-          "Negativ 5d momentum"
+          "Under SMA50, flad MACD og -3.8% på 20d"
         ],
-        "summary": "Svag kortsigtet kurs (-4% 5d), RSI 42, lidt under SMA50.",
-        "key_risk": "Fortsat svaghed hvis SMA200 brydes."
+        "summary": "FLSmidth konsoliderer uden klar retning.",
+        "key_risk": "Fortsat svaghed under SMA50."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -11917,40 +11965,22 @@
           "url": "https://finance.yahoo.com/energy/articles/3-european-renewable-energy-stocks-071354477.html"
         }
       ],
-      "technical": {
-        "screening_date": "2026-11-10",
-        "score": 51.5,
-        "rsi_proxy": 79.2,
-        "stoch_proxy": 97.1,
-        "bb_position": 116.7,
-        "sma50_vs_price": 5.32,
-        "sma200_vs_price": 13.57,
-        "macd_line": 1.9703,
-        "atr": 6.3714,
-        "momentum_divergence": 0.26,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "NEAR 52W HIGH: -4.7% — breakout territory",
-          "MOMENTUM SURGE: +10.9% in 5 days — sharp directional move",
-          "OVERBOUGHT: RSI proxy 79, Stoch proxy 97 — stretched, potential pullback",
-          "STRONG EARNINGS GROWTH: +833% YoY — fundamental tailwind"
-        ],
-        "rationale": "VWS.CO: a 10.9% five-day rally (20d: +10.7%) reveals strong directional pressure; stock is pressing against its 52-week high at -4.7% — breakout watch; +833% earnings growth underpins the fundamental case; price is +5.3% vs SMA50."
-      },
+      "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Nær 52-ugers high, +10,9% på 5 dage",
-          "Voldsom earnings-vækst og løbende aktietilbagekøb"
+          "Meget stærk indtjeningsvækst (+833%) og omsætning +26%; fwd P/E 16 og løbende aktietilbagekøb",
+          "Over SMA200 (+7%) og positiv MACD"
         ],
         "bear": [
-          "RSI 79 / Stoch 97 og kurs over øvre Bollinger – overkøbt"
+          "-4.1% i går og nu lige under SMA50 (-0.2%) — kortsigtet momentum brudt",
+          "Politisk risiko for vind (USA) og -10% fra 52-ugers high"
         ],
-        "summary": "Vestas har stærk momentum og fundamentals, men teknisk er aktien meget overstrakt efter en hurtig rally. Risiko for pullback på kort sigt taler for at afvente eller ikke jagte kursen.",
-        "key_risk": "Skarp tilbagetrækning efter overkøbt rally."
+        "summary": "Vestas har stærke fundamentale tal og buyback-støtte, men gårsdagens fald på 4% bragte kursen under SMA50. +10% kræver en ny ordre-katalysator; uden den er aktien i konsolidering. Neutral — behold, overvåg SMA50.",
+        "key_risk": "Brud under SMA50 udvikler sig til test af SMA200 (~185) ved negative politiske nyheder for vindenergi."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -12016,20 +12046,21 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
+        "verdict": "BULL",
+        "confidence": 6,
         "bull": [
-          "Q4-rapport og nyt tilbagekøbsprogram 5/11",
-          "Kraftig trend, +20% på 20 dage"
+          "Årsrapport 25/26 og outlook for 26/27 (5/11) fulgt af nyt aktietilbagekøbsprogram — ledelsen signalerer tillid",
+          "Indtjeningsvækst +117%, omsætning +16%; kurs +17.6% over SMA50 og +20.8% over SMA200 med positiv MACD",
+          "+13.4% på 20 dage — stærkt momentum efter regnskabet"
         ],
         "bear": [
-          "RSI 78,5, 20% over SMA50 – overstrakt",
-          "Fwd PE 28x er dyrt"
+          "RSI 71 — overkøbt; trailing P/E 36 / fwd 22 er højt prisfastsat",
+          "-7% fra 52-ugers high; risiko for profit-taking efter rally"
         ],
-        "summary": "Ambu har haft en stærk rapportreaktion og tilbagekøb, men aktien er meget overkøbt og dyr. Gevinster bør nok sikres frem for at købe mere.",
-        "key_risk": "Mean reversion efter +20% og høj værdiansættelse."
+        "summary": "Ambu har reageret positivt på årsregnskab og nyt buyback, med stærk trend over begge glidende gennemsnit. Værdiansættelsen er krævende og RSI overkøbt, så upside på kort sigt er begrænset til at genteste 52-ugers high (~93). Bull — behold.",
+        "key_risk": "Høj multipel sårbar over for enhver skuffelse i single-use endoskopi-væksten eller tariff-modvind i USA."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -12088,18 +12119,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "Over SMA50/200"
+          "Under nedre Bollinger og RSI 37 — oversolgt mod SMA200-støtte"
         ],
         "bear": [
-          "Dyr og falder i dag"
+          "-3.4% i går og under SMA50; høj P/E 40"
         ],
-        "summary": "-4,2% i dag, dyr (fwd PE 26x) uden momentum.",
-        "key_risk": "Værdiansættelse uden vækst-katalysator."
+        "summary": "Novonesis er under pres på kort sigt men stadig over SMA200 — afvent stabilisering.",
+        "key_risk": "Fortsat salgspres givet høj multipel."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -12158,18 +12189,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Positiv momentum"
+          "+16% på 20d over begge SMA'er med positiv MACD"
         ],
         "bear": [
-          "Earnings falder"
+          "RSI 76 og over øvre Bollinger; indtjening -33%"
         ],
-        "summary": "+14% på 20 dage, RSI 72, earnings -33%.",
-        "key_risk": "Svag indtjening trods rally."
+        "summary": "Rockwool er i stærk teknisk optrend men overkøbt med faldende indtjening.",
+        "key_risk": "Pullback fra overkøbt niveau."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -12242,20 +12273,20 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Opjusterede forventninger i oktober, over SMA50/200",
-          "Earnings growth +170%"
+          "Opjusterede 2026-forventninger (8/10) efter stærk Travel Health; indtjeningsvækst +170%, omsætning +23%",
+          "Over SMA50 (+6%) og SMA200 (+21.5%) med positiv MACD; trailing P/E 12.4 er lav for biotek"
         ],
         "bear": [
-          "Fwd PE 22x, svag kortsigtet momentum (-1,8% 5d)",
-          "Skift af CEO skaber usikkerhed"
+          "Aktietilbagekøb afsluttet (2/11) — fjerner en købsstøtte; kurs -2.1% i går og flad på 5d",
+          "CEO-skifte (Tarja Stenvall) skaber eksekveringsusikkerhed; mpox/public preparedness-ordrer er lumpy"
         ],
-        "summary": "Bavarian Nordic er i stabil optrend uden klart katalysator på kort sigt. Værdiansættelsen er ikke billig, og ledelsesskiftet er en uafklaret risiko.",
-        "key_risk": "CEO-skifte og ordreafhængighed."
+        "summary": "Bavarian Nordic har stærke 2026-tal og lav multipel, men momentum er gået i stå efter afsluttet buyback og RSI 48 er neutral. +10% kræver nye kontrakter eller 2027-guidance over forventning. Neutral — behold, men ingen tilkøb.",
+        "key_risk": "Fravær af nye regeringsordrer og svagere 2027-outlook under ny CEO."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -12342,18 +12373,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Stærk trend, fwd PE 11x"
+          "Ved 52-ugers high med lav fwd P/E 11.4"
         ],
         "bear": [
-          "Negativ earnings growth"
+          "RSI 76 — kraftigt overkøbt; faldende omsætning og indtjening"
         ],
-        "summary": "Nær 52-ugers high, men earnings -7,5% og RSI 68.",
-        "key_risk": "Indtjeningssvaghed."
+        "summary": "Jyske Bank er teknisk stærk men overkøbt med svage fundamentale trends.",
+        "key_risk": "Mean-reversion fra overkøbt niveau."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -12410,42 +12441,23 @@
           "url": "https://view.news.eu.nasdaq.com/view?id=be5bb44735574e84e283d7b6fc5c7995d&lang=en&src=listed"
         }
       ],
-      "technical": {
-        "screening_date": "2026-11-10",
-        "score": 63.0,
-        "rsi_proxy": 52.7,
-        "stoch_proxy": 73.1,
-        "bb_position": 65.4,
-        "sma50_vs_price": 2.36,
-        "sma200_vs_price": 12.32,
-        "macd_line": 1.709,
-        "atr": 7.3857,
-        "momentum_divergence": 0.43,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "VOLUME SPIKE: 2.55x avg — extreme institutional activity",
-          "NEAR 52W HIGH: -4.3% — breakout territory",
-          "MOMENTUM: +3.3% in 5 days",
-          "UNDERVALUED: Fwd PE 13.4x vs sector norm 18x — 26% discount",
-          "EARNINGS GROWTH: +27% YoY"
-        ],
-        "rationale": "ISS.CO: volume running at 2.5x the daily average signals institutional-scale activity; stock is pressing against its 52-week high at -4.3% — breakout watch; forward PE 13.4x represents a 26% discount to Industrials sector norm (18x); +27% earnings growth underpins the fundamental case; price is +2.4% vs SMA50."
-      },
+      "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "deep",
         "verdict": "BULL",
-        "confidence": 7,
+        "confidence": 6,
         "bull": [
-          "Volumen 2,5x gns. og kurs nær 52-ugers high (-4,3%) – breakout-setup",
-          "Fwd PE 13,4x vs sektor 18x, indtjening +27% og aktietilbagekøb kører",
-          "Trading update 4/11 + nye mellemlange mål understøtter margin-ekspansion"
+          "Trading update 1-9 2026 (4/11) og nye mid-term targets med marginudvidelse — kurs ved 52-ugers high (-0.6%)",
+          "Lav fwd P/E 13.5 og +27% indtjeningsvækst; løbende tilbagekøb",
+          "Over SMA50 (+7%) og SMA200 (+17.5%), positiv MACD — ren optrend"
         ],
         "bear": [
-          "Dagens -2,4% på høj volumen kan være distribution"
+          "Kurs over øvre Bollinger (111) — kortsigtet strakt",
+          "Lav omsætningsvækst (7%) gør casen afhængig af margin-eksekvering"
         ],
-        "summary": "ISS er teknisk stærk (over SMA50/200) og billig mod sektoren med positiv momentum fra nye finansielle mål. Et brud over 52-ugers high kan give +10%, men dagens fald på høj volumen kræver opmærksomhed.",
-        "key_risk": "Falsk breakout hvis kursen lukker under SMA50 (~290)."
+        "summary": "ISS er i en klar optrend med solid trading update og attraktiv værdiansættelse. Aktien er kortsigtet strakt over øvre Bollinger, men buyback og margin-targets understøtter. Bull — behold.",
+        "key_risk": "Tab af store kontrakter eller lønpres der underminerer marginmålene."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -12532,18 +12544,18 @@
       ],
       "technical": null,
       "analysis": {
-        "analysis_date": "2026-11-10",
+        "analysis_date": "2026-11-11",
         "tier": "scan",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
+        "verdict": "BULL",
+        "confidence": 6,
         "bull": [
-          "Over SMA50/200, fwd PE 12x"
+          "Ved 52-ugers high med +28% over SMA200 og positiv MACD"
         ],
         "bear": [
-          "Negativ earnings growth"
+          "Overkøbt: RSI 69 og over øvre Bollinger"
         ],
-        "summary": "Stabil optrend nær 52-ugers high, men svag earnings (-10%).",
-        "key_risk": "Rentefølsomhed."
+        "summary": "Sydbank er i stærk optrend ved 52-ugers high, men kortsigtet strakt.",
+        "key_risk": "Pullback fra overkøbt niveau."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     },
@@ -12586,42 +12598,94 @@
           "url": "https://view.news.eu.nasdaq.com/view?id=bf744a25c010ad754e67fbba9d0ded4fc&lang=en&src=listed"
         }
       ],
-      "technical": null,
+      "technical": {
+        "screening_date": "2026-11-11",
+        "score": 46.6,
+        "rsi_proxy": 38.6,
+        "stoch_proxy": 1.5,
+        "bb_position": 31.7,
+        "sma50_vs_price": 0.99,
+        "sma200_vs_price": -3.36,
+        "macd_line": 0.5117,
+        "atr": 1.8429,
+        "momentum_divergence": -8.75,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "MOMENTUM: -5.9% in 5 days — continued SELLING pressure",
+          "MOMENTUM DIVERGENCE: 5d/20d gap -8.8pp — emerging trend shift",
+          "STOCHASTIC OVERSOLD: Stoch proxy 2 — price near annual support floor (RSI proxy 39)",
+          "DEEP VALUE: Fwd PE 10.0x vs sector norm 22x — 54% discount"
+        ],
+        "rationale": "NNIT.CO: a 5.9% five-day selloff (20d: +2.9%) reveals strong directional pressure; forward PE 10.0x represents a 54% discount to Technology sector norm (22x); price is +1.0% vs SMA50."
+      },
       "analysis": {
-        "analysis_date": "2026-11-10",
-        "tier": "scan",
+        "analysis_date": "2026-11-11",
+        "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "Fwd PE 10x"
+          "Fwd P/E 10 — 54% rabat til tech-sektoren; stoch 1.5 tæt på støtte",
+          "Mulig frasalg af SCALES A/S (7/10) kan frigive kapital/forenkle forretningen; Q3 'progressing as planned'"
         ],
         "bear": [
-          "Svagt momentum"
+          "Negativ omsætningsvækst (-6.7%), under SMA200 og -28% fra 52-ugers high — strukturelt svag",
+          "Meget lav volumen (0.2x avg) og lille market cap — likviditetsrisiko, ikke en ægte C25-kvalitetsaktie",
+          "Momentumdivergens -8.8pp signalerer svækket trend"
         ],
-        "summary": "-6,7% på 5 dage og 26% under 52-ugers high; billig men svag.",
-        "key_risk": "Fortsat nedtrend."
+        "summary": "NNIT er billig på forward P/E, men omsætningen falder og aktien handler under SMA200 med meget lav likviditet. En +10% kræver en positiv afslutning på SCALES-frasalget; uden katalysator er det en value trap-risiko. Neutral med lav confidence.",
+        "key_risk": "Fortsat omsætningsfald og illikviditet — mislykket eller lavt prissat SCALES-frasalg."
       },
       "prices_age": "2026-11-10T21:17:11.715670+00:00"
     }
   ],
   "latest_decisions": {
-    "date": "2026-11-10",
-    "market_summary": "Porteføljen er veldiversificeret med mange vindere; flere positioner er teknisk overkøbte (Vestas, Ambu, Demant, Coloplast). Alle BULL-kandidater er allerede i porteføljen og kontantbufferen er lav, så ingen nye køb i dag; alle positioner holdes med uændrede stops.",
+    "date": "2026-11-11",
+    "market_summary": "C25 er i bred optrend efter en stærk Q3-regnskabssæson, men mange navne er kortsigtet overkøbte (banker, Pandora, ISS). Vi hjemtager gevinst i Nordea, hvor mean-reversion-thesen er indfriet, hæver stops på vindere og køber ikke nye strakte aktier; Vestas (11/11) og Bavarian Nordic (13/11) har regnskab.",
     "decisions": [
+      {
+        "symbol": "NDA-DK.CO",
+        "name": "Nordea",
+        "action": "SELL",
+        "shares": 100,
+        "price": 127.2,
+        "confidence": 70,
+        "reasoning": "Mean-reversion-thesen er stort set indfriet (+10.3%, 2% fra mål 130). Teknisk overkøbt (RSI 73, over øvre Bollinger) med negativ MACD og faldende indtjening; dagens verdict NEUTRAL. Hjemtag gevinsten.",
+        "bull": [
+          "+7.5% på 5 dage med nordisk bank-styrke",
+          "P/E 12.4 og høj udbytteevne"
+        ],
+        "bear": [
+          "RSI 73/stoch 96 og negativ MACD — rally uden trend",
+          "Indtjening -2.8% og pres på nettorenteindtægter"
+        ],
+        "investment_plan": {
+          "term": "short",
+          "basis": [
+            "technical"
+          ],
+          "thesis": "Mean-reversion-bounce indfriet; gevinst hjemtages.",
+          "price_target": 130,
+          "stop_loss": 112,
+          "expected_return_pct": 0,
+          "timeframe": "Lukket",
+          "exit_conditions": "Solgt nær mål."
+        }
+      },
       {
         "symbol": "ISS.CO",
         "name": "ISS",
         "action": "HOLD",
         "shares": 0,
-        "price": 297.0,
-        "confidence": 70,
-        "reasoning": "Thesis intakt, stop (280) ikke ramt. Dagens verdict BULL (7/10), P&L 2.24%. Ingen nye brud i casen; behold.",
+        "price": 311.6,
+        "confidence": 65,
+        "reasoning": "Ren optrend efter stærk trading update og nye margin-targets; lav fwd P/E 13.5. Kortsigtet strakt, så stop hæves til 295 (≈2 ATR).",
         "bull": [
-          "Volumen 2,5x gns. og kurs nær 52-ugers high (-4,3%) – breakout-setup",
-          "Fwd PE 13,4x vs sektor 18x, indtjening +27% og aktietilbagekøb kører"
+          "Trading update + nye mid-term targets (4/11)",
+          "Fwd P/E 13.5, tilbagekøb, over SMA50/200"
         ],
         "bear": [
-          "Dagens -2,4% på høj volumen kan være distribution"
+          "Over øvre Bollinger — strakt",
+          "Lav omsætningsvækst"
         ],
         "investment_plan": {
           "term": "medium",
@@ -12629,12 +12693,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Billig quality-compounder med marginudvidelse; trend over SMA200 og SMA50.",
-          "price_target": 330,
-          "stop_loss": 280,
-          "expected_return_pct": 11.1,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 280, nær 320 eller ved SEC-eskalering."
+          "thesis": "Billig quality-compounder med marginudvidelse; trend intakt.",
+          "price_target": 340,
+          "stop_loss": 295,
+          "expected_return_pct": 9,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg under 295, nær 340 eller ved tab af store kontrakter."
         }
       },
       {
@@ -12642,16 +12706,16 @@
         "name": "Demant",
         "action": "HOLD",
         "shares": 0,
-        "price": 377.2,
-        "confidence": 60,
-        "reasoning": "Thesis intakt, stop (365) ikke ramt. Dagens verdict BULL (6/10), P&L 30.25%. Ingen nye brud i casen; behold.",
+        "price": 369.0,
+        "confidence": 62,
+        "reasoning": "Stærk vinder (+27%) med opjusteret guidance og buyback; RSI 55 giver plads. Stop fastholdes på 365 for at sikre gevinsten.",
         "bull": [
-          "Opjusteret forventninger 9/10 og genoptaget tilbagekøb",
-          "Meget stærk trend: 47% over SMA200, nær 52-ugers high"
+          "Opjusteret 2026-guidance og buyback",
+          "+42.6% over SMA200, positiv MACD"
         ],
         "bear": [
-          "RSI 69 og 15% over SMA50 – overstrakt",
-          "Svag earnings growth (+6%), fwd PE 22x"
+          "Trailing P/E 32",
+          "Momentum aftager nær 52-ugers high"
         ],
         "investment_plan": {
           "term": "medium",
@@ -12659,11 +12723,11 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Stærk vinder; lad løbe med hævet stop 365.",
+          "thesis": "Stærk vinder; lad løbe med stramt stop.",
           "price_target": 400,
           "stop_loss": 365,
-          "expected_return_pct": 6.0,
-          "timeframe": "3-6 måneder",
+          "expected_return_pct": 8,
+          "timeframe": "1-3 måneder",
           "exit_conditions": "Sælg under 365 eller nær 400."
         }
       },
@@ -12672,16 +12736,16 @@
         "name": "Pandora",
         "action": "HOLD",
         "shares": 0,
-        "price": 901.6,
-        "confidence": 60,
-        "reasoning": "Thesis intakt, stop (835) ikke ramt. Dagens verdict BULL (6/10), P&L 10.35%. Ingen nye brud i casen; behold.",
+        "price": 958.6,
+        "confidence": 65,
+        "reasoning": "Q3 bekræftede casen (6% organisk vækst, guidance mod øvre ende) og kursen bryder op på volumen. Kraftigt overkøbt, så stop hæves til 900 for at låse gevinst; mål hæves til 1020.",
         "bull": [
-          "Q3 organisk vækst 6% og guidance mod øvre ende",
-          "+11% på 5 dage, 37% over SMA200, nær 52-ugers high"
+          "Guidance mod øvre ende",
+          "Breakout ved 52-ugers high på 1.6x volumen"
         ],
         "bear": [
-          "Svag earnings growth (+9,5%)",
-          "Hurtig stigning kan udløse profit-taking"
+          "RSI 73, over øvre Bollinger",
+          "Sølvpris- og USA-forbrugsrisiko"
         ],
         "investment_plan": {
           "term": "medium",
@@ -12690,11 +12754,11 @@
             "fundamental"
           ],
           "thesis": "Momentum efter Q3 og forbedret guidance; lad vinderen løbe med hævet stop.",
-          "price_target": 980,
-          "stop_loss": 835,
-          "expected_return_pct": 8.7,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 835, nær 980 eller ved svag guidance."
+          "price_target": 1020,
+          "stop_loss": 900,
+          "expected_return_pct": 6,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg under 900, nær 1020 eller ved svagt julesalg."
         }
       },
       {
@@ -12702,16 +12766,16 @@
         "name": "Ambu",
         "action": "HOLD",
         "shares": 0,
-        "price": 87.6,
-        "confidence": 50,
-        "reasoning": "Thesis intakt, stop (82) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 29.59%. Ingen nye brud i casen; behold.",
+        "price": 86.4,
+        "confidence": 60,
+        "reasoning": "Årsrapport og nyt buyback understøtter trenden; lille position. Stop 82 fastholdes.",
         "bull": [
-          "Q4-rapport og nyt tilbagekøbsprogram 5/11",
-          "Kraftig trend, +20% på 20 dage"
+          "Nyt buyback og outlook 26/27",
+          "Over SMA50/200, positiv MACD"
         ],
         "bear": [
-          "RSI 78,5, 20% over SMA50 – overstrakt",
-          "Fwd PE 28x er dyrt"
+          "RSI 71 og høj multipel",
+          "-7% fra 52-ugers high"
         ],
         "investment_plan": {
           "term": "medium",
@@ -12719,12 +12783,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Margin- og vækstrebound; stop hævet til 82 for at sikre gevinst.",
+          "thesis": "Margin- og vækstrebound; gevinst sikret med stop 82.",
           "price_target": 95,
           "stop_loss": 82,
-          "expected_return_pct": 8.4,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 82, nær 92 eller ved momentumbrud."
+          "expected_return_pct": 10,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg under 82, nær 93-95 eller ved momentumbrud."
         }
       },
       {
@@ -12732,16 +12796,16 @@
         "name": "Bavarian Nordic",
         "action": "HOLD",
         "shares": 0,
-        "price": 241.0,
-        "confidence": 50,
-        "reasoning": "Thesis intakt, stop (240) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 8.46%. Ingen nye brud i casen; behold.",
+        "price": 241.6,
+        "confidence": 52,
+        "reasoning": "Regnskab 13/11 er katalysator; lav multipel og opjusteret guidance, men momentum er gået i stå. Stop 240 fastholdes — brydes det, sælges.",
         "bull": [
-          "Opjusterede forventninger i oktober, over SMA50/200",
-          "Earnings growth +170%"
+          "Opjusteret 2026-guidance, P/E 12.4",
+          "Over SMA50/200"
         ],
         "bear": [
-          "Fwd PE 22x, svag kortsigtet momentum (-1,8% 5d)",
-          "Skift af CEO skaber usikkerhed"
+          "Buyback afsluttet, CEO-skifte",
+          "Lumpy ordrer; RSI 48"
         ],
         "investment_plan": {
           "term": "medium",
@@ -12749,12 +12813,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Breakout efter guidance-opjustering; positiv revision. Regnskab 13/11 er katalysator/risiko.",
+          "thesis": "Positiv revision; regnskab 13/11 afgør næste ben.",
           "price_target": 270,
           "stop_loss": 240,
-          "expected_return_pct": 12.0,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 240 eller nær 270."
+          "expected_return_pct": 12,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg under 240, nær 270 eller ved skuffende 2027-signaler."
         }
       },
       {
@@ -12762,29 +12826,29 @@
         "name": "Novo Nordisk",
         "action": "HOLD",
         "shares": 0,
-        "price": 269.45,
-        "confidence": 50,
-        "reasoning": "Thesis intakt, stop (236.82) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 6.5%. Ingen nye brud i casen; behold.",
+        "price": 271.5,
+        "confidence": 62,
+        "reasoning": "Q3 med opjustering og ekstremt lav værdiansættelse; afventer brud over SMA200 (~280). Stop hæves til 250.",
         "bull": [
-          "Hævet helårsguidance 4/11 på GLP-1 momentum",
-          "Fwd PE 12x og tilbagekøb"
+          "Opjusteret outlook, EBIT +27% CER",
+          "P/E ~11, tilbagekøb"
         ],
         "bear": [
-          "34% under 52-ugers high, kurs under SMA200",
-          "Earnings -16% YoY"
+          "Under SMA200",
+          "Konkurrence fra Lilly"
         ],
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical",
-            "fundamental"
+            "fundamental",
+            "technical"
           ],
-          "thesis": "Billig turnaround; afvent break over SMA200. Ingen tilføjelse pga. sektorkoncentration.",
+          "thesis": "Billig turnaround; tilføj ikke pga. healthcare-koncentration.",
           "price_target": 320,
-          "stop_loss": 236.82,
-          "expected_return_pct": 18.8,
+          "stop_loss": 250,
+          "expected_return_pct": 18,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 236,82 eller nær 320."
+          "exit_conditions": "Sælg under 250 eller nær 320."
         }
       },
       {
@@ -12792,16 +12856,16 @@
         "name": "Coloplast",
         "action": "HOLD",
         "shares": 0,
-        "price": 508.2,
-        "confidence": 50,
-        "reasoning": "Thesis intakt, stop (480) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 20.77%. Ingen nye brud i casen; behold.",
+        "price": 489.1,
+        "confidence": 55,
+        "reasoning": "Stabil efter årsregnskab; trend svagt positiv over begge SMA'er. Stop 480 fastholdes.",
         "bull": [
-          "+16,6% på 20 dage efter årsregnskab, over SMA50/200",
-          "Earnings growth +36%"
+          "Fwd P/E 18 lav historisk",
+          "Over SMA50/200, positiv MACD"
         ],
         "bear": [
-          "RSI 69, -3,3% i dag – momentum knækker",
-          "Stadig 16,7% under 52-ugers high, fwd PE 18x"
+          "Reviderede 2030-mål kan betyde lavere vækst",
+          "Kun 7% omsætningsvækst"
         ],
         "investment_plan": {
           "term": "medium",
@@ -12809,12 +12873,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Fundamentals bedres og trend intakt; hold med stop 480.",
+          "thesis": "Fundamentals bedres og trend intakt.",
           "price_target": 560,
           "stop_loss": 480,
-          "expected_return_pct": 10.2,
+          "expected_return_pct": 14,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 480, nær 560 eller ved svagt regnskab."
+          "exit_conditions": "Sælg under 480, nær 560 eller ved negativ revision."
         }
       },
       {
@@ -12822,15 +12886,16 @@
         "name": "Vestas Wind Systems",
         "action": "HOLD",
         "shares": 0,
-        "price": 209.9,
-        "confidence": 50,
-        "reasoning": "Thesis intakt, stop (195) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 10.65%. Ingen nye brud i casen; behold.",
+        "price": 198.6,
+        "confidence": 52,
+        "reasoning": "Q3-regnskab i dag (11/11) er binær katalysator; fundamentals stærke med buyback. Stop 195 fastholdes som beskyttelse mod skuffelse.",
         "bull": [
-          "Nær 52-ugers high, +10,9% på 5 dage",
-          "Voldsom earnings-vækst og løbende aktietilbagekøb"
+          "Indtjening +833%, omsætning +26%, fwd P/E 16",
+          "Buyback, over SMA200"
         ],
         "bear": [
-          "RSI 79 / Stoch 97 og kurs over øvre Bollinger – overkøbt"
+          "Lige under SMA50 efter -4.1%",
+          "Politisk vindrisiko i USA"
         ],
         "investment_plan": {
           "term": "medium",
@@ -12838,42 +12903,12 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Fundamentalt solid breakout; stop hævet til 195 foran regnskab.",
+          "thesis": "Fundamentalt solid breakout; regnskab 11/11 afgør.",
           "price_target": 225,
           "stop_loss": 195,
-          "expected_return_pct": 7.2,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 195, nær 225 eller ved skuffende regnskab."
-        }
-      },
-      {
-        "symbol": "NDA-DK.CO",
-        "name": "Nordea",
-        "action": "HOLD",
-        "shares": 0,
-        "price": 122.25,
-        "confidence": 50,
-        "reasoning": "Thesis intakt, stop (112) ikke ramt. Dagens verdict NEUTRAL (5/10), P&L 6.03%. Ingen nye brud i casen; behold.",
-        "bull": [
-          "Fwd PE 12,4x lav og analytiker-upgrade til Buy",
-          "RSI 68, +3,8% på 5 dage – momentum vender"
-        ],
-        "bear": [
-          "Kurs under SMA50 og SMA200",
-          "Earnings growth let negativ (-2,8%)"
-        ],
-        "investment_plan": {
-          "term": "short",
-          "basis": [
-            "technical",
-            "fundamental"
-          ],
-          "thesis": "Mean-reversion-bounce i bank; mål 130 nær SMA50.",
-          "price_target": 130,
-          "stop_loss": 112,
-          "expected_return_pct": 6.3,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 112, nær 130 eller uden yderligere bounce omkring 1. dec."
+          "expected_return_pct": 13,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg under 195, nær 225 eller ved skuffende regnskab/ordreindgang."
         }
       },
       {
@@ -12881,16 +12916,16 @@
         "name": "Carlsberg",
         "action": "HOLD",
         "shares": 0,
-        "price": 1026.0,
+        "price": 1025.0,
         "confidence": 60,
-        "reasoning": "Thesis intakt, stop (960) ikke ramt. Dagens verdict BULL (6/10), P&L 5.66%. Ingen nye brud i casen; behold.",
+        "reasoning": "Q3-rally holder nær 52-ugers high med rimelig fwd P/E 14.5; position er allerede den største. Stop hæves til 975 (2 ATR).",
         "bull": [
-          "Nær 52-ugers high, 14% over SMA50 – stærk trend",
-          "Fwd PE 14,4x vs sektor 17x og stabil indtjeningsvækst +13%"
+          "Fwd P/E 14.5, positiv MACD",
+          "Defensiv prissætningskraft"
         ],
         "bear": [
-          "RSI 68 og Stoch 87 – tæt på overkøbt",
-          "Momentumdivergens: 20d +17% vs 5d +6% – aftagende fart"
+          "Strakt +12.8% over SMA50",
+          "Lav organisk vækst; Rusland-risiko"
         ],
         "investment_plan": {
           "term": "medium",
@@ -12899,11 +12934,11 @@
             "fundamental"
           ],
           "thesis": "Momentum og rimelig værdiansættelse i defensiv aktie; ingen tilføjelse pga. vægt.",
-          "price_target": 1060,
-          "stop_loss": 960,
-          "expected_return_pct": 3.3,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg under 960, nær 1060 eller ved momentumbrud."
+          "price_target": 1080,
+          "stop_loss": 975,
+          "expected_return_pct": 5,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg under 975, nær 1080 eller ved momentumbrud."
         }
       }
     ]
@@ -13477,6 +13512,10 @@
         {
           "date": "2026-11-10",
           "portfolio_value": 115235.18
+        },
+        {
+          "date": "2026-11-11",
+          "portfolio_value": 115235.18
         }
       ]
     },
@@ -14048,6 +14087,10 @@
         {
           "date": "2026-11-10",
           "portfolio_value": 110306.1
+        },
+        {
+          "date": "2026-11-11",
+          "portfolio_value": 110306.1
         }
       ]
     }
@@ -14059,5 +14102,5 @@
     "Financial Services": 11.0,
     "Consumer Defensive": 18.5
   },
-  "last_executed_decisions": "2026-11-11"
+  "last_executed_decisions": "2026-11-10"
 }
