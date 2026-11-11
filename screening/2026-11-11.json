@@ -1,0 +1,308 @@
+{
+  "date": "2026-11-11",
+  "screened_at": "2026-11-11T07:16:26Z",
+  "price_data_date": "2026-11-10",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 62.0,
+      "price": 19070.0,
+      "pct_1d": -3.05,
+      "pct_5d": -13.71,
+      "pct_20d": -19.4,
+      "volume_ratio": 1.73,
+      "rsi_proxy": 16.0,
+      "stoch_proxy": 9.6,
+      "bb_position": -11.5,
+      "sma50_vs_price": -14.49,
+      "sma200_vs_price": 8.16,
+      "macd_line": -677.527,
+      "atr": 882.8571,
+      "momentum_divergence": 5.69,
+      "pe_forward": null,
+      "pct_from_52w_high": -21.46,
+      "pct_from_52w_low": 56.31,
+      "sector": "Industrials",
+      "earnings_growth": 1.986,
+      "revenue_growth": 0.274,
+      "div_yield": 2.44,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME ELEVATED: 1.73x avg — above-normal interest",
+        "MOMENTUM SELLOFF: -13.7% in 5 days — sharp directional move",
+        "DEEPLY OVERSOLD: RSI proxy 16, Stoch proxy 10 — bounce candidate",
+        "STRONG EARNINGS GROWTH: +199% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "MAERSK-A.CO: volume running at 1.7x the daily average signals institutional-scale activity; a 13.7% five-day selloff (20d: -19.4%) reveals strong directional pressure; +199% earnings growth underpins the fundamental case; RSI proxy (16) and stochastic (10) in oversold territory support a bounce thesis; price is -14.5% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 59.0,
+      "price": 19360.0,
+      "pct_1d": -2.54,
+      "pct_5d": -14.34,
+      "pct_20d": -21.27,
+      "volume_ratio": 1.15,
+      "rsi_proxy": 15.7,
+      "stoch_proxy": 11.8,
+      "bb_position": -7.8,
+      "sma50_vs_price": -16.11,
+      "sma200_vs_price": 7.04,
+      "macd_line": -835.7859,
+      "atr": 903.5714,
+      "momentum_divergence": 6.93,
+      "pe_forward": 13.766098,
+      "pct_from_52w_high": -23.72,
+      "pct_from_52w_low": 59.67,
+      "sector": "Industrials",
+      "earnings_growth": 1.986,
+      "revenue_growth": 0.274,
+      "div_yield": 2.42,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.15x avg",
+        "MOMENTUM SELLOFF: -14.3% in 5 days — sharp directional move",
+        "DEEPLY OVERSOLD: RSI proxy 16, Stoch proxy 12 — bounce candidate",
+        "MODEST DISCOUNT: Fwd PE 13.8x vs sector norm 18x",
+        "STRONG EARNINGS GROWTH: +199% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "MAERSK-B.CO: a 14.3% five-day selloff (20d: -21.3%) reveals strong directional pressure; forward PE 13.8x represents a 24% discount to Industrials sector norm (18x); +199% earnings growth underpins the fundamental case; RSI proxy (16) and stochastic (12) in oversold territory support a bounce thesis; price is -16.1% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 55.0,
+      "price": 958.6,
+      "pct_1d": 3.61,
+      "pct_5d": 15.58,
+      "pct_20d": 17.19,
+      "volume_ratio": 1.64,
+      "rsi_proxy": 72.8,
+      "stoch_proxy": 96.4,
+      "bb_position": 113.8,
+      "sma50_vs_price": 15.39,
+      "sma200_vs_price": 44.51,
+      "macd_line": 26.4919,
+      "atr": 33.0071,
+      "momentum_divergence": -1.61,
+      "pe_forward": 20.356348,
+      "pct_from_52w_high": -0.6,
+      "pct_from_52w_low": 122.93,
+      "sector": "Consumer Cyclical",
+      "earnings_growth": 0.095,
+      "revenue_growth": 0.068,
+      "div_yield": 2.38,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME ELEVATED: 1.64x avg — above-normal interest",
+        "NEAR 52W HIGH: -0.6% — breakout territory",
+        "MOMENTUM SURGE: +15.6% in 5 days — sharp directional move",
+        "OVERBOUGHT: RSI proxy 73, Stoch proxy 96 — stretched, potential pullback"
+      ],
+      "screening_rationale": "PNDORA.CO: volume running at 1.6x the daily average signals institutional-scale activity; a 15.6% five-day rally (20d: +17.2%) reveals strong directional pressure; stock is pressing against its 52-week high at -0.6% — breakout watch; price is +15.4% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 49.0,
+      "price": 370.2,
+      "pct_1d": 1.65,
+      "pct_5d": 6.87,
+      "pct_20d": 3.21,
+      "volume_ratio": 1.08,
+      "rsi_proxy": 66.3,
+      "stoch_proxy": 94.1,
+      "bb_position": 113.3,
+      "sma50_vs_price": 1.91,
+      "sma200_vs_price": 9.07,
+      "macd_line": -0.1032,
+      "atr": 7.45,
+      "momentum_divergence": 3.66,
+      "pe_forward": 11.134836,
+      "pct_from_52w_high": -3.52,
+      "pct_from_52w_low": 30.86,
+      "sector": "Financial Services",
+      "earnings_growth": 0.179,
+      "revenue_growth": 0.09,
+      "div_yield": 4.65,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.08x avg",
+        "NEAR 52W HIGH: -3.5% — breakout territory",
+        "MOMENTUM: +6.9% in 5 days — continued BUYING pressure",
+        "OVERBOUGHT: RSI proxy 66, Stoch proxy 94 — stretched, potential pullback",
+        "EARNINGS GROWTH: +18% YoY"
+      ],
+      "screening_rationale": "DANSKE.CO: a 6.9% five-day rally (20d: +3.2%) reveals strong directional pressure; stock is pressing against its 52-week high at -3.5% — breakout watch; price is +1.9% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 46.6,
+      "price": 39.3,
+      "pct_1d": -0.51,
+      "pct_5d": -5.87,
+      "pct_20d": 2.88,
+      "volume_ratio": 0.2,
+      "rsi_proxy": 38.6,
+      "stoch_proxy": 1.5,
+      "bb_position": 31.7,
+      "sma50_vs_price": 0.99,
+      "sma200_vs_price": -3.36,
+      "macd_line": 0.5117,
+      "atr": 1.8429,
+      "momentum_divergence": -8.75,
+      "pe_forward": 10.017,
+      "pct_from_52w_high": -27.76,
+      "pct_from_52w_low": 18.91,
+      "sector": "Technology",
+      "earnings_growth": null,
+      "revenue_growth": -0.067,
+      "div_yield": 0.0,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM: -5.9% in 5 days — continued SELLING pressure",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -8.8pp — emerging trend shift",
+        "STOCHASTIC OVERSOLD: Stoch proxy 2 — price near annual support floor (RSI proxy 39)",
+        "DEEP VALUE: Fwd PE 10.0x vs sector norm 22x — 54% discount"
+      ],
+      "screening_rationale": "NNIT.CO: a 5.9% five-day selloff (20d: +2.9%) reveals strong directional pressure; forward PE 10.0x represents a 54% discount to Technology sector norm (22x); price is +1.0% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 62.0
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 59.0
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 55.0
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 49.0
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 46.6
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 45.8
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 42.7
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 42.4
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 41.0
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 41.0
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 40.0
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 38.0
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 35.3
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 34.6
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 34.4
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 33.4
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 31.9
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 31.8
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 30.3
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 27.6
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 27.0
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 22.4
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 21.0
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 19.0
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 18.4
+    }
+  ]
+}
