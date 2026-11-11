@@ -1,0 +1,276 @@
+{
+ "date": "2026-11-11",
+ "stocks": {
+  "NVDA": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 19 og pris 12% under nedre Bollinger — ekstremt oversolgt, klassisk setup for relief-rally mod SMA200 (~204, +21%)",
+    "Volumen 2.7x tyder på kapitulation; 3% over 52u-lav giver klart stop-niveau"
+   ],
+   "bear": [
+    "Pris under både SMA50 og SMA200 med dybt negativ MACD — bred AI-hardware-afvikling i gang (-26% på 20 dage)",
+    "Ingen aktuelle nyheder til at forklare/stoppe faldet; ATR $9.3 (5.5%) giver høj risiko"
+   ],
+   "summary": "Kraftigt oversolgt AI-leder i kapitulationsagtig nedtur; reversal-potentiale er reelt men faldende kniv uden bekræftet bund.",
+   "key_risk": "Fortsat sektorbred AI-capex-frygt bryder 52u-lav og udløser nyt ben ned",
+   "screener_score": 82.0
+  },
+  "TTD": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "+27% på 20 dage på 3.3x volumen og over SMA50 — tydelig trendvending fra dybt lavpunkt",
+    "Stadig -66% fra 52u-high; short-covering og value-købere kan drive mod SMA200 (~+25%)"
+   ],
+   "bear": [
+    "RSI 73 og pris over øvre Bollinger (126%) — kortsigtet overkøbt efter +20% på 5 dage",
+    "Strukturel konkurrence (Amazon DSP) og tabt tillid; under SMA200"
+   ],
+   "summary": "Stærk momentum-reversal fra bund, men kortsigtet strakt — bedre indgang på pullback mod SMA50.",
+   "key_risk": "Mean reversion efter parabolsk 5-dages rally; tilbagefald på 10-15% inden for få dage",
+   "screener_score": 73.0
+  },
+  "AXON": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "RSI 24, stoch 7.5 og under nedre Bollinger — dybt oversolgt efter -27% på 5 dage",
+    "Langsigtet kvalitetsvækst (TASER/cloud); bounce mod SMA50 (~430) giver stort upside"
+   ],
+   "bear": [
+    "-54% fra top og 30-36% under SMA50/200 — trend tydeligt brudt, sandsynligvis fundamental skuffelse (guidance/multipel-kompression)",
+    "ATR $24 (8%) — meget volatil"
+   ],
+   "summary": "Kvalitetsnavn i voldsom de-rating; oversolgt men uden bekræftet bund — vent på stabilisering.",
+   "key_risk": "Fortsat multipel-kompression på højt-prissat vækstaktie ved stigende renter",
+   "screener_score": 72.0
+  },
+  "COIN": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "RSI 22 og stoch 6 — oversolgt, krypto-rebound kan give hurtige +15-20%"
+   ],
+   "bear": [
+    "-58% fra top, under SMA50/200, 2% over 52u-lav; mislykket krypto-lovgivning fjerner katalysator",
+    "Lav volumen-ratio (0.78) — ingen kapitulation/køberinteresse endnu",
+    "Høj beta til krypto i risk-off-miljø"
+   ],
+   "summary": "Strukturel nedtrend med regulatorisk modvind og ingen tegn på kapitulation; undgå indtil krypto stabiliseres.",
+   "key_risk": "Brud under 52u-lav udløser nyt krypto-drevet fald",
+   "screener_score": 71.2
+  },
+  "PSKY": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 5,
+   "bull": [
+    "Warner Bros.-fusion forliget med antitrust-myndigheder — fjerner deal-usikkerhed",
+    "Lav kurs og potentielle synergier"
+   ],
+   "bear": [
+    "-25% på 5 dage og nær 52u-lav; teknik mangler (kort historik) — svært at time",
+    "Massiv gældsbyrde fra $110B-fusionen og strukturelt faldende lineær-TV"
+   ],
+   "summary": "Fusionen er afklaret, men gæld og kursnedtur dominerer; for lidt data til en kontrær position.",
+   "key_risk": "Integrations- og gældsrisiko efter mega-fusion presser kursen yderligere",
+   "screener_score": 71.0
+  },
+  "CMI": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 21 — oversolgt cyklisk kvalitetsaktie; bounce mod SMA50 (~522) = +15%",
+    "Stærk position i data center-backup power (generatorer)"
+   ],
+   "bear": [
+    "Under SMA50/200, -38% fra top, -14% på 20 dage — cyklisk nedtur/AI-capex-frygt",
+    "Industri-cyklus svækkes ved høje renter"
+   ],
+   "summary": "Oversolgt kvalitets-industri, men trenden er klart negativ; kun interessant ved tegn på vending.",
+   "key_risk": "Svagere truck-/data center-ordreindgang bekræfter cyklisk top",
+   "screener_score": 69.0
+  },
+  "FIS": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 5,
+   "bull": [
+    "Lav værdiansættelse og udbytte; core banking-momentum ifølge tidligere nyheder"
+   ],
+   "bear": [
+    "-27% på 5 dage — tyder på skuffende regnskab/guidance; 1% over 52u-lav",
+    "-57% fra top og 33% under SMA200 — vedvarende de-rating af fintech-processor"
+   ],
+   "summary": "Gap-ned på fundamentale problemer med pris lige ved 52u-lav; value-fælde-risiko over bounce-potentiale.",
+   "key_risk": "Yderligere guidance-nedjustering eller tab af markedsandel i betalinger",
+   "screener_score": 69.0
+  },
+  "SNDK": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "Stadig +370% fra 52u-lav — NAND-cyklus og AI-storage-efterspørgsel bag den store trend",
+    "RSI 27 — oversolgt; bounce mod SMA200 (~1275) er stort"
+   ],
+   "bear": [
+    "-42% på 20 dage og 42% under SMA50 — parabolsk top er brudt, momentum-likvidering",
+    "ATR $108 (12.5%) — ekstrem volatilitet; hukommelsescykler vender hurtigt"
+   ],
+   "summary": "Tidligere momentum-raket i kraftig korrektion; oversolgt men cyklisk vendingsrisiko gør det til et spekulativt bounce-spil.",
+   "key_risk": "Signaler om NAND-pristop/overkapacitet forlænger nedturen",
+   "screener_score": 69.0
+  },
+  "TPL": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 17 — et af de mest oversolgte navne; asset-light royalty-model med høj margin",
+    "Datacenter-/vand-optionalitet i Permian"
+   ],
+   "bear": [
+    "-50% fra top og 31% under SMA200; Texas data center-moratorium-risiko",
+    "Afhængig af olie-/gasaktivitet i Permian"
+   ],
+   "summary": "Ekstremt oversolgt kvalitetsroyalty-selskab; kontrært interessant men trenden er stadig nedad.",
+   "key_risk": "Data center-moratorium i Texas og lavere olieaktivitet rammer vækstnarrativet",
+   "screener_score": 68.0
+  },
+  "SMCI": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 5,
+   "bull": [
+    "Under SMA200 kun -15%, +43% fra 52u-lav; oversolgt-ish (RSI 30)"
+   ],
+   "bear": [
+    "Under SMA50/200, -29% på 20 dage i AI-server-afvikling",
+    "Historisk regnskabs-/governance-risiko og lave marginer",
+    "Høj beta til NVDA-faldet"
+   ],
+   "summary": "Lav-margin AI-server-navn i sektorbred nedtur; svagere profil end NVDA på en bounce.",
+   "key_risk": "Margin-pres og fortsat AI-capex-frygt",
+   "screener_score": 65.0
+  },
+  "LVS": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "Over SMA50 med positiv MACD og +11% på 20 dage — relativ styrke i svagt marked",
+    "Macau/Singapore-genopretning; -40% fra top giver plads mod SMA200 (+16%)"
+   ],
+   "bear": [
+    "RSI 68 og nær øvre Bollinger — kortsigtet strakt",
+    "Under SMA200; Kina-makro-risiko"
+   ],
+   "summary": "Scout med ægte relativ styrke og trendvending; kandidat til kommende vinder hvis SMA200 brydes.",
+   "key_risk": "Svækket kinesisk forbrug/Macau-GGR",
+   "screener_score": 36.6
+  },
+  "MCK": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "BULL",
+   "confidence": 7,
+   "bull": [
+    "Kun 3.5% fra 52u-high, over SMA50 og SMA200 med stærk positiv MACD — klar optrend",
+    "Defensiv sundhedsdistributør med stabil indtjening — relativ styrke i risk-off"
+   ],
+   "bear": [
+    "RSI 67 og ved øvre Bollinger (98%) — kortsigtet strakt",
+    "Høj absolut kurs; regulatorisk prisrisiko på medicin"
+   ],
+   "summary": "Defensiv leder i stærk optrend midt i markedsfald — kvalitets-scout, men bedre indgang på lille pullback.",
+   "key_risk": "Medicinprisregulering eller GLP-1-marginpres",
+   "screener_score": 36.5
+  },
+  "ZBH": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "+17% på 20 dage, over SMA50/200, 5% fra 52u-high — momentum-breakout",
+    "Defensiv medtech med lav værdiansættelse"
+   ],
+   "bear": [
+    "RSI 68 — kortsigtet overkøbt efter +10.6% på 5 dage",
+    "Lav vækst-ortopædi; tidligere svag historik"
+   ],
+   "summary": "Scout i klar optrend og defensiv sektor; holder stand mens tech falder.",
+   "key_risk": "Mean reversion efter hurtigt rally eller svag procedurevolumen",
+   "screener_score": 36.1
+  },
+  "COHR": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "+3.5% på 5 dage trods -4.7% i dag — har stabiliseret sig mens NVDA kollapser; RSI 45 neutral",
+    "AI-optik-efterspørgsel (transceivere) er strukturel"
+   ],
+   "bear": [
+    "-26% på 20 dage, under SMA50/200, -51% fra top; MACD dybt negativ",
+    "ATR $22 (10%) — meget volatil; tæt korreleret med AI-hardware-afviklingen"
+   ],
+   "summary": "Beholdning i nedtrend men med kortsigtet stabilisering; hold med stram risikostyring, intet tilkøb.",
+   "key_risk": "Fortsat AI-hardware-salg trækker COHR mod 52u-lav-zonen",
+   "screener_score": 44.0
+  },
+  "GOOG": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 6,
+   "bull": [
+    "RSI 24 — oversolgt kvalitets-megacap; stabiliseret +2.4% på 5 dage",
+    "Stærke fundamenter (Search, Cloud, TPU) og lav volumen-ratio = ingen panik-salg"
+   ],
+   "bear": [
+    "-18.5% på 20 dage, under SMA50/200; MACD negativ",
+    "AI-capex-skepsis og regulatoriske sager"
+   ],
+   "summary": "Oversolgt kvalitets-holding der viser tegn på stabilisering; hold.",
+   "key_risk": "Markedsbred tech-de-rating trækker kursen mod 52u-lav (5% under)",
+   "screener_score": 50.6
+  },
+  "VRTX": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 7,
+   "bull": [
+    "Over SMA50/200, +13% på 20 dage og 3.7% fra 52u-high — stærk optrend",
+    "Defensiv biotech med monopol i CF og nyrepipeline; analytikere ser +20%"
+   ],
+   "bear": [
+    "RSI 59 — ikke billigt teknisk, nær top",
+    "Pipeline-binær risiko (kliniske data)"
+   ],
+   "summary": "Bedste beholdning: defensiv optrend uafhængig af tech-salget; hold.",
+   "key_risk": "Skuffende klinisk data i nyre-/smertepipeline",
+   "screener_score": 26.8
+  }
+ }
+}
