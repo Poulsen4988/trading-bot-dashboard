@@ -1,0 +1,306 @@
+{
+  "date": "2026-11-12",
+  "market_summary": "C25 er i en bred optrend efter Q3-sæsonen med mange opjusteringer og tilbagekøb, men flere vindere er teknisk overkøbte. Vi følger disciplinen: sælger de to positioner hvor stop er brudt (Vestas, Bavarian Nordic), hæver stops på vindere og tilføjer finanssektoren via AL Sydbank for bedre diversifikation.",
+  "decisions": [
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "action": "SELL",
+      "shares": 80,
+      "price": 191.05,
+      "confidence": 72,
+      "reasoning": "Stop-loss 195 er brudt (191,05) efter Q3; volumenspike 3,1x med -3,8% på rapportdagen og kurs under SMA50 tyder på institutionelt salg. Sidste VWS-handel (sep) endte -9,4% fordi vi ventede — vi følger stoppet.",
+      "bull": [
+        "Fwd PE 15,5x og kraftig indtjeningsvækst",
+        "Tilbagekøb kører, kurs over SMA200"
+      ],
+      "bear": [
+        "Stop brudt efter regnskab",
+        "MACD vender ned, under SMA50, negativ 5d/20d-divergens"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Breakout-thesis blev ikke bekræftet af Q3-reaktionen; exit.",
+        "price_target": 225,
+        "stop_loss": 195,
+        "expected_return_pct": 0,
+        "timeframe": "Afsluttet",
+        "exit_conditions": "Stop-loss udløst."
+      }
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "action": "SELL",
+      "shares": 20,
+      "price": 238.0,
+      "confidence": 65,
+      "reasoning": "Stop 240 brudt (238) dagen før regnskabet 13/11; tilbagekøbet er afsluttet og kursen ligger nær nedre Bollinger-bånd. Vi låser +7% gevinst frem for at tage binær regnskabsrisiko.",
+      "bull": [
+        "Opjusteret 2026, over SMA200"
+      ],
+      "bear": [
+        "Stop brudt, købsstøtte fra tilbagekøb væk",
+        "Binær regnskabsrisiko 13/11"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Positiv revision indfriet delvist; stop udløst før regnskab.",
+        "price_target": 270,
+        "stop_loss": 240,
+        "expected_return_pct": 0,
+        "timeframe": "Afsluttet",
+        "exit_conditions": "Stop-loss udløst."
+      }
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 311.6,
+      "confidence": 70,
+      "reasoning": "Thesis styrket af trading update 4/11 og breakout mod 52w-high; overkøbt kortsigtet, så ingen tilkøb. Stop hæves til 300 for at sikre gevinst.",
+      "bull": [
+        "Margin-mål bekræftet, fwd PE 13,5x",
+        "Stærk trend og tilbagekøb"
+      ],
+      "bear": [
+        "Stoch 95/BB 101 — pullback-risiko"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Billig quality-compounder med marginudvidelse; trend intakt.",
+        "price_target": 345,
+        "stop_loss": 300,
+        "expected_return_pct": 10.7,
+        "timeframe": "2-4 måneder",
+        "exit_conditions": "Sælg under 300, nær 345 eller ved tab af store kontrakter."
+      }
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 370.2,
+      "confidence": 64,
+      "reasoning": "Opjustering og tilbagekøb understøtter; momentum er fladet ud men trend stærk. Stramt stop 365 bevares for at beskytte +28% gevinst.",
+      "bull": [
+        "Opjusteret 2026, tilbagekøb",
+        "+43% over SMA200"
+      ],
+      "bear": [
+        "RSI 70 og stor afstand til SMA200",
+        "Momentum 5d negativt"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Stærk vinder; lad løbe med stramt stop.",
+        "price_target": 400,
+        "stop_loss": 365,
+        "expected_return_pct": 8.0,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 365 eller nær 400."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 960.0,
+      "confidence": 68,
+      "reasoning": "Q3 og guidance mod øvre ende bekræfter thesis; overkøbt (RSI 74), så stop hæves til 910 (~1,5 ATR) for at sikre gevinst ind i julesæsonen.",
+      "bull": [
+        "6% organisk vækst, guidance mod øvre ende",
+        "Breakout mod nye toppe"
+      ],
+      "bear": [
+        "RSI 74, BB 103",
+        "Sølv/told og US-forbruger"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Momentum efter Q3 og forbedret guidance; lad vinderen løbe med hævet stop.",
+        "price_target": 1040,
+        "stop_loss": 910,
+        "expected_return_pct": 8.3,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 910, nær 1040 eller ved svagt julesalg."
+      }
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 87.1,
+      "confidence": 66,
+      "reasoning": "Outlook og nyt tilbagekøb bekræfter margin-rebound; strakt teknisk men trend stærk. Stop 82 bevares.",
+      "bull": [
+        "Godt modtaget outlook, nyt tilbagekøb",
+        "Indtjeningsvækst +117%"
+      ],
+      "bear": [
+        "18% over SMA50",
+        "Fwd PE 22,6x"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Margin- og vækstrebound; gevinst sikret med stop 82.",
+        "price_target": 95,
+        "stop_loss": 82,
+        "expected_return_pct": 9.1,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 82, nær 93-95 eller ved momentumbrud."
+      }
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 272.7,
+      "confidence": 58,
+      "reasoning": "Opjusteret outlook og lav værdiansættelse holder turnaround-thesis intakt; kursen tæt på SMA200. Ingen tilkøb pga. healthcare-vægt.",
+      "bull": [
+        "Opjusteret outlook 4/11",
+        "Fwd PE 12x, tilbagekøb"
+      ],
+      "bear": [
+        "Under SMA200",
+        "Konkurrence/prispres"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Billig turnaround; tilføj ikke pga. healthcare-koncentration.",
+        "price_target": 320,
+        "stop_loss": 250,
+        "expected_return_pct": 17.3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 250 eller nær 320."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 493.2,
+      "confidence": 58,
+      "reasoning": "Trend intakt (over SMA50/200, positiv MACD) men -5,7% efter årsregnskab; stop 480 tæt på giver klar exit hvis nye ambitioner skuffer.",
+      "bull": [
+        "Nye finansielle ambitioner",
+        "Positiv MACD, over SMA50/200"
+      ],
+      "bear": [
+        "Svag reaktion på regnskab",
+        "Fwd PE 18x for lav vækst"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Fundamentals bedres og trend intakt.",
+        "price_target": 560,
+        "stop_loss": 480,
+        "expected_return_pct": 13.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 480, nær 560 eller ved negativ revision."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1008.0,
+      "confidence": 60,
+      "reasoning": "Konsolidering efter stærkt løb; defensiv trend og værdiansættelse intakt. Største position, så ingen tilføjelse; stop 975.",
+      "bull": [
+        "Pænt modtaget trading statement",
+        "Fwd PE 14,2x, over SMA50"
+      ],
+      "bear": [
+        "5d konsolidering",
+        "Svag volumen i Europa/Asien"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Momentum og rimelig værdiansættelse i defensiv aktie; ingen tilføjelse pga. vægt.",
+        "price_target": 1080,
+        "stop_loss": 975,
+        "expected_return_pct": 7.1,
+        "timeframe": "2-4 måneder",
+        "exit_conditions": "Sælg under 975, nær 1080 eller ved momentumbrud."
+      }
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "AL Sydbank",
+      "action": "BUY",
+      "shares": 20,
+      "price": 764.0,
+      "confidence": 63,
+      "reasoning": "Rekordkvartal og opjustering 5/11, fwd PE 11,8x, 3,3% udbytte og løbende tilbagekøb. Tilfører Financial Services (0% i porteføljen, historisk vores bedste sektor efter healthcare). Overkøbt, så positionen sizes under ATR-forslaget (20 vs 50).",
+      "bull": [
+        "Bedste kvartal nogensinde og opjustering",
+        "Fwd PE 11,8x, udbytte og tilbagekøb",
+        "Stærk trend +27,6% over SMA200"
+      ],
+      "bear": [
+        "RSI 75, BB 100 — pullback-risiko",
+        "EPS -10% YoY pga. fusionsudvanding",
+        "Rentefald presser NII"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Fusioneret bank med fundamental momentum og lav værdiansættelse re-rates; diversificerer væk fra healthcare/industri.",
+        "price_target": 850,
+        "stop_loss": 728,
+        "expected_return_pct": 11.3,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 728 (2 ATR), nær 850, ved negativ revision eller tegn på integrationsproblemer."
+      }
+    }
+  ]
+}
