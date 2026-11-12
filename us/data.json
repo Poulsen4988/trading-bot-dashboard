@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 50554.22,
+    "cash": 41148.62,
     "currency": "USD",
     "positions": [
       {
@@ -20,14 +20,14 @@
           "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
           "price_target": 590,
           "stop_loss": 448.95,
-          "expected_return_pct": 7.7,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 7.69,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud (448,95), brud under SMA200 eller pipeline-skuffelse; overvej gevinsthjemtagning nær 590."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Thesis intakt: +14.8%, over SMA50/200, 3.7% fra 52u-high, dagens verdict BULL 7. Stop 448.95 langt væk; lad vinderen løbe mod 590.",
-          "confidence": 72
+          "date": "2026-11-12",
+          "reasoning": "Thesis intakt: sund, ikke-overkøbt optrend (RSI 58,7) over SMA50/SMA200 og +14,8% siden køb; dagens verdict BULL. Stop ikke ramt, ingen fundamentale brud.",
+          "confidence": 74
         }
       },
       {
@@ -46,13 +46,13 @@
           "thesis": "Mean-reversion rebound fra historisk oversolgt niveau i kvalitets-mega-cap.",
           "price_target": 315,
           "stop_loss": 258,
-          "expected_return_pct": 10.6,
-          "timeframe": "1-3 måneder",
+          "expected_return_pct": 10.56,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud (258) eller 52u-lav-brud uden bounce; tag gevinst nær 315/SMA50."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Mean-reversion-thesis stadig mulig: RSI 24 med stabilisering +2.4% på 5 dage og position i plus (+2.4%). Stop 258 ikke ramt; ingen fundamentale brud.",
+          "date": "2026-11-12",
+          "reasoning": "Mean-reversion-casen virker indtil videre: aktien baser (+2,4% på 5 dage) mens resten af tech falder, og momentum-divergensen er positiv. Verdict NEUTRAL og lav volumen betyder hold — ikke opkøb. Stop 258 ikke ramt.",
           "confidence": 60
         }
       },
@@ -72,14 +72,14 @@
           "thesis": "Katalysator-drevet trendskifte i AI-optik fra oversolgt niveau; forventer gap-fortsættelse mod SMA50 når AI-derating stabiliserer.",
           "price_target": 265,
           "stop_loss": 182,
-          "expected_return_pct": 23.4,
-          "timeframe": "2-4 måneder",
+          "expected_return_pct": 23.45,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud (182) eller luk under ~195; tag gevinst nær 265/SMA50."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "-4.7% men over den definerede gap-fill-grænse (~195) og stop 182; +3.5% på 5 dage og RSI 45 viser relativ stabilisering mens NVDA falder. Hold med stram risikostyring, intet tilkøb.",
-          "confidence": 50
+          "date": "2026-11-12",
+          "reasoning": "Svageste position: -4,7% på 1,7x volumen i en sektor under likvidation, men relativ styrke på ugen (+3,5%) og kursen ligger over exit-niveauet ~195 og stop 182. Holder med disciplineret exit; ingen opkøb før AI-kæden stabiliserer.",
+          "confidence": 48
         }
       },
       {
@@ -99,13 +99,13 @@
           "price_target": 1180,
           "stop_loss": 1026.28,
           "expected_return_pct": 9.0,
-          "timeframe": "2-4 måneder",
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud (1026,28) eller lukning under SMA50; tag gevinst nær 1180 eller ved regulatorisk prisindgreb."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Defensiv leder i klar optrend (over SMA50/200, 3.5% fra 52u-high) med relativ styrke i risk-off. Kortsigtet strakt (RSI 67), så positionen er reduceret fra ATR-forslaget 28 til 15 aktier (~16.2k USD) for at begrænse sundhedskoncentration.",
-          "confidence": 70
+          "date": "2026-11-12",
+          "reasoning": "Købt i går; stærkeste chart i sættet og dagens verdict BULL. Kortsigtet strakt (bb 98), så en pause er sandsynlig, men trenden og rotationscasen er intakt.",
+          "confidence": 72
         }
       },
       {
@@ -124,18 +124,44 @@
           "thesis": "Defensiv rotation ind i medtech: ZBH's breakout fra lav værdiansættelse fortsætter mod nye highs mens markedet søger stabile navne.",
           "price_target": 120,
           "stop_loss": 99.9,
-          "expected_return_pct": 11.8,
-          "timeframe": "2-4 måneder",
+          "expected_return_pct": 11.82,
+          "timeframe": "3-6 måneder",
           "exit_conditions": "Sælg ved stop-brud (99,90) eller hvis breakout fejler (lukning under SMA50); tag gevinst nær 120."
         },
         "last_review": {
-          "date": "2026-11-11",
-          "reasoning": "Momentum-breakout i defensiv medtech (+17% på 20 dage, over SMA50/200, 5% fra 52u-high) med lav værdiansættelse. RSI 68 efter +10.6% på 5 dage, så starter med en mindre position (80 vs. ATR-forslag 213) for at styre pullback-risiko og sektorkoncentration.",
+          "date": "2026-11-12",
+          "reasoning": "Købt i går; bekræftet optrend på sundhedsrotationen og verdict BULL. Let overkøbt, så konsolidering forventes, men ingen grund til at sælge styrke.",
+          "confidence": 66
+        }
+      },
+      {
+        "symbol": "SRE",
+        "name": "Sempra",
+        "shares": 120,
+        "purchase_price": 78.38,
+        "current_price": 78.38,
+        "purchase_date": "2026-11-12",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Mean-reversion i oversolgt, lavvolatil reguleret forsyning tilbage mod SMA200 (~88), understøttet af defensiv rotation og reguleret indtjening.",
+          "price_target": 88,
+          "stop_loss": 74.92,
+          "expected_return_pct": 12.27,
+          "timeframe": "3-6 måneder",
+          "exit_conditions": "Sælg ved stop-brud (74,92 = 2x ATR) eller hvis lange renter fortsat stiger og aktien ikke stabiliserer inden for 2-3 uger; tag gevinst nær 88/SMA200."
+        },
+        "last_review": {
+          "date": "2026-11-12",
+          "reasoning": "Eneste BULL-kandidat i dag: lavvolatil reguleret forsyning, ordnet oversolgt (RSI 31, stoch 5,6) og en ny sektor der mindsker porteføljens Health Care-koncentration (34%). Størrelsen er bevidst skåret til ca. en fjerdedel af ATR-forslaget (457 stk.), fordi track record viser at oversolgte defensive køb i rentedrevne selloffs (INVH, AFL) er FEJLET, og aktien stadig falder (-8,2% på 5 dage).",
           "confidence": 62
         }
       }
     ],
-    "last_updated": "2026-11-11 22:50 UTC"
+    "last_updated": "2026-11-12 22:48 UTC"
   },
   "history": [
     {
@@ -424,6 +450,10 @@
     },
     {
       "date": "2026-11-11",
+      "portfolio_value": 105461.03
+    },
+    {
+      "date": "2026-11-12",
       "portfolio_value": 105461.03
     }
   ],
@@ -8890,6 +8920,102 @@
         "summary": "Momentum-breakout i defensiv medtech (+17% på 20 dage, over SMA50/200, 5% fra 52u-high) med lav værdiansættelse. RSI 68 efter +10.6% på 5 dage, så starter med en mindre position (80 vs. ATR-forslag 213) for at styre pullback-risiko og sekto"
       },
       "id": 522,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-12",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 547.89,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 74,
+        "summary": "Thesis intakt: sund, ikke-overkøbt optrend (RSI 58,7) over SMA50/SMA200 og +14,8% siden køb; dagens verdict BULL. Stop ikke ramt, ingen fundamentale brud."
+      },
+      "id": 523,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-12",
+      "action": "HOLD",
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "shares": null,
+      "price": 284.92,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Mean-reversion-casen virker indtil videre: aktien baser (+2,4% på 5 dage) mens resten af tech falder, og momentum-divergensen er positiv. Verdict NEUTRAL og lav volumen betyder hold — ikke opkøb. Stop 258 ikke ramt."
+      },
+      "id": 524,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-12",
+      "action": "HOLD",
+      "symbol": "COHR",
+      "name": "Coherent Corp.",
+      "shares": null,
+      "price": 214.66,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 48,
+        "summary": "Svageste position: -4,7% på 1,7x volumen i en sektor under likvidation, men relativ styrke på ugen (+3,5%) og kursen ligger over exit-niveauet ~195 og stop 182. Holder med disciplineret exit; ingen opkøb før AI-kæden stabiliserer."
+      },
+      "id": 525,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-12",
+      "action": "HOLD",
+      "symbol": "MCK",
+      "name": "McKesson Corporation",
+      "shares": null,
+      "price": 1082.59,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 72,
+        "summary": "Købt i går; stærkeste chart i sættet og dagens verdict BULL. Kortsigtet strakt (bb 98), så en pause er sandsynlig, men trenden og rotationscasen er intakt."
+      },
+      "id": 526,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-12",
+      "action": "HOLD",
+      "symbol": "ZBH",
+      "name": "Zimmer Biomet",
+      "shares": null,
+      "price": 107.32,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 66,
+        "summary": "Købt i går; bekræftet optrend på sundhedsrotationen og verdict BULL. Let overkøbt, så konsolidering forventes, men ingen grund til at sælge styrke."
+      },
+      "id": 527,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-12",
+      "action": "BUY",
+      "symbol": "SRE",
+      "name": "Sempra",
+      "shares": 120,
+      "price": 78.38,
+      "value": 9405.6,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 62,
+        "summary": "Eneste BULL-kandidat i dag: lavvolatil reguleret forsyning, ordnet oversolgt (RSI 31, stoch 5,6) og en ny sektor der mindsker porteføljens Health Care-koncentration (34%). Størrelsen er bevidst skåret til ca. en fjerdedel af ATR-forslaget ("
+      },
+      "id": 528,
       "is_new": true
     }
   ],
@@ -13171,5 +13297,5 @@
     "Communication Services": 20.8,
     "Information Technology": 14.1
   },
-  "last_executed_decisions": "2026-11-11"
+  "last_executed_decisions": "2026-11-12"
 }
