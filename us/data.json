@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 41148.62,
+    "cash": 13205.52,
     "currency": "USD",
     "positions": [
       {
@@ -9,25 +9,25 @@
         "name": "Vertex Pharmaceuticals",
         "shares": 20,
         "purchase_price": 477.36,
-        "current_price": 547.89,
+        "current_price": 542.62,
         "purchase_date": "2026-07-24",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical",
-            "fundamental"
+            "fundamental",
+            "technical"
           ],
           "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
           "price_target": 590,
-          "stop_loss": 448.95,
-          "expected_return_pct": 7.69,
+          "stop_loss": 470,
+          "expected_return_pct": 8.73,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud (448,95), brud under SMA200 eller pipeline-skuffelse; overvej gevinsthjemtagning nær 590."
+          "exit_conditions": "Sælg ved stop-brud (470) eller brud under SMA200/pipeline-skuffelse; overvej gevinsthjemtagning nær 590."
         },
         "last_review": {
-          "date": "2026-11-12",
-          "reasoning": "Thesis intakt: sund, ikke-overkøbt optrend (RSI 58,7) over SMA50/SMA200 og +14,8% siden køb; dagens verdict BULL. Stop ikke ramt, ingen fundamentale brud.",
-          "confidence": 74
+          "date": "2026-11-13",
+          "reasoning": "Uptrend intact (above SMA50/200, near 52w high), kidney pipeline news supportive; +13.7%, stop far below. Hold toward 590.",
+          "confidence": 72
         }
       },
       {
@@ -35,7 +35,7 @@
         "name": "Alphabet Inc. (Class C)",
         "shares": 40,
         "purchase_price": 278.27,
-        "current_price": 284.92,
+        "current_price": 295.35,
         "purchase_date": "2026-11-04",
         "investment_plan": {
           "term": "medium",
@@ -46,13 +46,13 @@
           "thesis": "Mean-reversion rebound fra historisk oversolgt niveau i kvalitets-mega-cap.",
           "price_target": 315,
           "stop_loss": 258,
-          "expected_return_pct": 10.56,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud (258) eller 52u-lav-brud uden bounce; tag gevinst nær 315/SMA50."
+          "expected_return_pct": 6.65,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved stop-brud (258); tag gevinst nær 315/SMA50."
         },
         "last_review": {
-          "date": "2026-11-12",
-          "reasoning": "Mean-reversion-casen virker indtil videre: aktien baser (+2,4% på 5 dage) mens resten af tech falder, og momentum-divergensen er positiv. Verdict NEUTRAL og lav volumen betyder hold — ikke opkøb. Stop 258 ikke ramt.",
+          "date": "2026-11-13",
+          "reasoning": "Mean-reversion thesis working (+6.1%, +4.8% 5d, RSI recovering from oversold); no thesis break.",
           "confidence": 60
         }
       },
@@ -61,7 +61,7 @@
         "name": "Coherent Corp.",
         "shares": 36,
         "purchase_price": 225.19,
-        "current_price": 214.66,
+        "current_price": 232.08,
         "purchase_date": "2026-11-10",
         "investment_plan": {
           "term": "medium",
@@ -69,17 +69,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Katalysator-drevet trendskifte i AI-optik fra oversolgt niveau; forventer gap-fortsættelse mod SMA50 når AI-derating stabiliserer.",
+          "thesis": "Katalysator-drevet trendskifte i AI-optik fra oversolgt niveau; forventer fortsættelse mod SMA50.",
           "price_target": 265,
           "stop_loss": 182,
-          "expected_return_pct": 23.45,
-          "timeframe": "3-6 måneder",
+          "expected_return_pct": 14.18,
+          "timeframe": "1-3 måneder",
           "exit_conditions": "Sælg ved stop-brud (182) eller luk under ~195; tag gevinst nær 265/SMA50."
         },
         "last_review": {
-          "date": "2026-11-12",
-          "reasoning": "Svageste position: -4,7% på 1,7x volumen i en sektor under likvidation, men relativ styrke på ugen (+3,5%) og kursen ligger over exit-niveauet ~195 og stop 182. Holder med disciplineret exit; ingen opkøb før AI-kæden stabiliserer.",
-          "confidence": 48
+          "date": "2026-11-13",
+          "reasoning": "Catalyst-driven rebound (+36.7% 5d) after earnings beat; still below SMA50 but momentum turned. Hold, wide ATR-based stop.",
+          "confidence": 58
         }
       },
       {
@@ -87,7 +87,7 @@
         "name": "McKesson Corporation",
         "shares": 15,
         "purchase_price": 1082.59,
-        "current_price": 1082.59,
+        "current_price": 1077.05,
         "purchase_date": "2026-11-11",
         "investment_plan": {
           "term": "medium",
@@ -95,17 +95,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Defensiv trend-følge i sundhedsdistribution: kapital roterer fra AI-hardware til stabile indtjeningsnavne, og MCK's optrend forventes at fortsætte.",
+          "thesis": "Defensiv trend-følge i sundhedsdistribution; MCK's optrend forventes at fortsætte.",
           "price_target": 1180,
           "stop_loss": 1026.28,
-          "expected_return_pct": 9.0,
+          "expected_return_pct": 9.56,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud (1026,28) eller lukning under SMA50; tag gevinst nær 1180 eller ved regulatorisk prisindgreb."
+          "exit_conditions": "Sælg ved stop-brud (1026,28) eller lukning under SMA50; tag gevinst nær 1180."
         },
         "last_review": {
-          "date": "2026-11-12",
-          "reasoning": "Købt i går; stærkeste chart i sættet og dagens verdict BULL. Kortsigtet strakt (bb 98), så en pause er sandsynlig, men trenden og rotationscasen er intakt.",
-          "confidence": 72
+          "date": "2026-11-13",
+          "reasoning": "Clean uptrend leader, BULL verdict; short-term stretched but trend intact. Bought 2 days ago, no reason to exit.",
+          "confidence": 65
         }
       },
       {
@@ -113,7 +113,7 @@
         "name": "Zimmer Biomet",
         "shares": 80,
         "purchase_price": 107.32,
-        "current_price": 107.32,
+        "current_price": 104.56,
         "purchase_date": "2026-11-11",
         "investment_plan": {
           "term": "medium",
@@ -121,17 +121,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Defensiv rotation ind i medtech: ZBH's breakout fra lav værdiansættelse fortsætter mod nye highs mens markedet søger stabile navne.",
+          "thesis": "Defensiv rotation ind i medtech: breakout fra lav værdiansættelse fortsætter.",
           "price_target": 120,
           "stop_loss": 99.9,
-          "expected_return_pct": 11.82,
+          "expected_return_pct": 14.77,
           "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud (99,90) eller hvis breakout fejler (lukning under SMA50); tag gevinst nær 120."
+          "exit_conditions": "Sælg ved stop-brud (99,90) eller lukning under SMA50; tag gevinst nær 120."
         },
         "last_review": {
-          "date": "2026-11-12",
-          "reasoning": "Købt i går; bekræftet optrend på sundhedsrotationen og verdict BULL. Let overkøbt, så konsolidering forventes, men ingen grund til at sælge styrke.",
-          "confidence": 66
+          "date": "2026-11-13",
+          "reasoning": "Small dip (-2.6%) within fresh uptrend; above SMA50/200 with positive MACD. Thesis intact.",
+          "confidence": 60
         }
       },
       {
@@ -139,7 +139,7 @@
         "name": "Sempra",
         "shares": 120,
         "purchase_price": 78.38,
-        "current_price": 78.38,
+        "current_price": 78.98,
         "purchase_date": "2026-11-12",
         "investment_plan": {
           "term": "medium",
@@ -147,21 +147,73 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Mean-reversion i oversolgt, lavvolatil reguleret forsyning tilbage mod SMA200 (~88), understøttet af defensiv rotation og reguleret indtjening.",
+          "thesis": "Mean-reversion i oversolgt, lavvolatil reguleret forsyning tilbage mod SMA200 (~88).",
           "price_target": 88,
           "stop_loss": 74.92,
-          "expected_return_pct": 12.27,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud (74,92 = 2x ATR) eller hvis lange renter fortsat stiger og aktien ikke stabiliserer inden for 2-3 uger; tag gevinst nær 88/SMA200."
+          "expected_return_pct": 11.42,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved stop-brud (74,92) eller hvis aktien ikke stabiliserer inden for 2-3 uger; tag gevinst nær 88."
         },
         "last_review": {
-          "date": "2026-11-12",
-          "reasoning": "Eneste BULL-kandidat i dag: lavvolatil reguleret forsyning, ordnet oversolgt (RSI 31, stoch 5,6) og en ny sektor der mindsker porteføljens Health Care-koncentration (34%). Størrelsen er bevidst skåret til ca. en fjerdedel af ATR-forslaget (457 stk.), fordi track record viser at oversolgte defensive køb i rentedrevne selloffs (INVH, AFL) er FEJLET, og aktien stadig falder (-8,2% på 5 dage).",
+          "date": "2026-11-13",
+          "reasoning": "Bought yesterday on oversold mean-reversion; verdict weakened to NEUTRAL 4 (Texas data-center freeze, yields), but stop 74.92 not hit and thesis needs 2-3 weeks. Hold, strict stop.",
+          "confidence": 48
+        }
+      },
+      {
+        "symbol": "ZBRA",
+        "name": "Zebra Technologies",
+        "shares": 40,
+        "purchase_price": 317.83,
+        "current_price": 317.83,
+        "purchase_date": "2026-11-13",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Kvalitets-industri-IT i langsigtet optrend er ekstremt oversolgt; forventer mean-reversion tilbage mod SMA50 (~360).",
+          "price_target": 358,
+          "stop_loss": 285.32,
+          "expected_return_pct": 12.64,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved stop-brud (285,32 = 2x ATR) eller fundamental guidance-sænkning; tag gevinst nær 358/SMA50."
+        },
+        "last_review": {
+          "date": "2026-11-13",
+          "reasoning": "Scout BULL 6: extreme oversold (RSI 16.6, stoch 8) while still +12% above SMA200, after record Q2 and rising estimates. Sized below ATR suggestion (40 vs 48) to limit IT concentration.",
+          "confidence": 64
+        }
+      },
+      {
+        "symbol": "CRM",
+        "name": "Salesforce",
+        "shares": 70,
+        "purchase_price": 217.57,
+        "current_price": 217.57,
+        "purchase_date": "2026-11-13",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Oversold pullback i langsigtet optrend; forventer rebound mod SMA50 (~236) og videre mod 245.",
+          "price_target": 242,
+          "stop_loss": 200.57,
+          "expected_return_pct": 11.23,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved stop-brud (200,57 = 2x ATR) eller hvis earnings viser svækket guidance/seat-erosion; tag gevinst nær 242."
+        },
+        "last_review": {
+          "date": "2026-11-13",
+          "reasoning": "Scout BULL 6: RSI 21.8 oversold while +10% above SMA200; heavy buybacks support. Sized below ATR suggestion (70 vs 93) for concentration and upcoming earnings (~early Dec).",
           "confidence": 62
         }
       }
     ],
-    "last_updated": "2026-11-12 22:48 UTC"
+    "last_updated": "2026-11-13 22:47 UTC"
   },
   "history": [
     {
@@ -455,6 +507,10 @@
     {
       "date": "2026-11-12",
       "portfolio_value": 105461.03
+    },
+    {
+      "date": "2026-11-13",
+      "portfolio_value": 106168.05
     }
   ],
   "trades": [
@@ -9016,6 +9072,134 @@
         "summary": "Eneste BULL-kandidat i dag: lavvolatil reguleret forsyning, ordnet oversolgt (RSI 31, stoch 5,6) og en ny sektor der mindsker porteføljens Health Care-koncentration (34%). Størrelsen er bevidst skåret til ca. en fjerdedel af ATR-forslaget ("
       },
       "id": 528,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-13",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 542.62,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 72,
+        "summary": "Uptrend intact (above SMA50/200, near 52w high), kidney pipeline news supportive; +13.7%, stop far below. Hold toward 590."
+      },
+      "id": 529,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-13",
+      "action": "HOLD",
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "shares": null,
+      "price": 295.35,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Mean-reversion thesis working (+6.1%, +4.8% 5d, RSI recovering from oversold); no thesis break."
+      },
+      "id": 530,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-13",
+      "action": "HOLD",
+      "symbol": "COHR",
+      "name": "Coherent Corp.",
+      "shares": null,
+      "price": 232.08,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 58,
+        "summary": "Catalyst-driven rebound (+36.7% 5d) after earnings beat; still below SMA50 but momentum turned. Hold, wide ATR-based stop."
+      },
+      "id": 531,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-13",
+      "action": "HOLD",
+      "symbol": "MCK",
+      "name": "McKesson Corporation",
+      "shares": null,
+      "price": 1077.05,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 65,
+        "summary": "Clean uptrend leader, BULL verdict; short-term stretched but trend intact. Bought 2 days ago, no reason to exit."
+      },
+      "id": 532,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-13",
+      "action": "HOLD",
+      "symbol": "ZBH",
+      "name": "Zimmer Biomet",
+      "shares": null,
+      "price": 104.56,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Small dip (-2.6%) within fresh uptrend; above SMA50/200 with positive MACD. Thesis intact."
+      },
+      "id": 533,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-13",
+      "action": "HOLD",
+      "symbol": "SRE",
+      "name": "Sempra",
+      "shares": null,
+      "price": 78.98,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 48,
+        "summary": "Bought yesterday on oversold mean-reversion; verdict weakened to NEUTRAL 4 (Texas data-center freeze, yields), but stop 74.92 not hit and thesis needs 2-3 weeks. Hold, strict stop."
+      },
+      "id": 534,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-13",
+      "action": "BUY",
+      "symbol": "ZBRA",
+      "name": "Zebra Technologies",
+      "shares": 40,
+      "price": 317.83,
+      "value": 12713.2,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 64,
+        "summary": "Scout BULL 6: extreme oversold (RSI 16.6, stoch 8) while still +12% above SMA200, after record Q2 and rising estimates. Sized below ATR suggestion (40 vs 48) to limit IT concentration."
+      },
+      "id": 535,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-13",
+      "action": "BUY",
+      "symbol": "CRM",
+      "name": "Salesforce",
+      "shares": 70,
+      "price": 217.57,
+      "value": 15229.9,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 62,
+        "summary": "Scout BULL 6: RSI 21.8 oversold while +10% above SMA200; heavy buybacks support. Sized below ATR suggestion (70 vs 93) for concentration and upcoming earnings (~early Dec)."
+      },
+      "id": 536,
       "is_new": true
     }
   ],
@@ -13370,5 +13554,5 @@
     "Information Technology": 12.0,
     "Utilities": 14.6
   },
-  "last_executed_decisions": "2026-11-12"
+  "last_executed_decisions": "2026-11-13"
 }
