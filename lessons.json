@@ -1,22 +1,22 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "stats": {
-    "closed_trades": 52,
-    "wins": 27,
+    "closed_trades": 53,
+    "wins": 28,
     "losses": 24,
-    "win_rate_pct": 52.9,
-    "avg_win_pct": 9.75,
+    "win_rate_pct": 53.8,
+    "avg_win_pct": 10.02,
     "avg_loss_pct": -4.78,
-    "avg_pnl_pct": 2.91,
-    "avg_holding_days": 25.6,
-    "total_realized_dkk": 10436.5,
-    "target_hits": 5,
+    "avg_pnl_pct": 3.19,
+    "avg_holding_days": 26.9,
+    "total_realized_dkk": 11332.9,
+    "target_hits": 6,
     "stop_hits": 13,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 24,
       "DELVIST": 22,
-      "HOLDT": 5
+      "HOLDT": 6
     },
     "by_sector": {
       "Consumer Defensive": {
@@ -45,9 +45,9 @@
         "avg_pnl_pct": 7.18
       },
       "Healthcare": {
-        "n": 13,
-        "wins": 9,
-        "avg_pnl_pct": 5.75
+        "n": 14,
+        "wins": 10,
+        "avg_pnl_pct": 6.57
       },
       "Basic Materials": {
         "n": 2,
@@ -1309,6 +1309,30 @@
       "stop_hit": false,
       "thesis_verdict": "DELVIST",
       "lesson": "BAVA.CO: +7.1% på 49 dage — antagelse DELVIST. Forventet +12.5%. Plan-horisont: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:1106",
+      "date": "2026-11-13",
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "sector": "Healthcare",
+      "buy_date": "2026-08-13",
+      "holding_days": 92,
+      "shares": 18,
+      "buy_price": 289.6,
+      "sell_price": 339.4,
+      "realized_pnl_dkk": 896.4,
+      "realized_pnl_pct": 17.2,
+      "expected_return_pct": 13.9,
+      "price_target": 330.0,
+      "stop_loss": 273.0,
+      "timeframe": "3-5 måneder",
+      "term": "medium",
+      "thesis": "Guidance-opjustering og nyt produktlanceringsmomentum retfærdiggør indgang trods kortsigtet overkøbt teknik. Forward-værdiansættelsen giver plads til multipel-genopretning hvis guidance leveres.",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HOLDT",
+      "lesson": "DEMANT.CO: +17.2% på 92 dage — antagelse HOLDT. Forventet +13.9%. Plan-horisont: 3-5 måneder. Kursmål nået."
     }
   ]
 }
