@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-15",
+  "files_reviewed": 25,
+  "files_cleaned": 2,
+  "total_items_removed": 2,
+  "per_file": [
+    {
+      "path": "knowledge/FLS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 8,
+      "removed_items": [
+        {
+          "title": "FLSmidth & Co. A/S financial calendar for 2027",
+          "date": "2026-11-11",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 16,
+      "removed_items": [
+        {
+          "title": "Selskabsvedtægter for Genmab A/S",
+          "date": "2026-11-11",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "summary": "40 kandidater gennemgået (alle low_value: summary var kun en kategori-label; ingen duplikater eller stale items). 38 bevaret, da titlerne er materielle (regnskaber, opjusteringer, ledelsesskift, M&A, kliniske resultater, ordrer, tilbagekøb). Fjernet 2 trivielle rutine-meddelelser uden informationsindhold: FLSmidth finanskalender 2027 (earnings-datoer hentes separat af fetch_prices) og Genmab opdaterede selskabsvedtægter (formel følge af EGM, som er bevaret)."
+}
