@@ -1,20 +1,20 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-16",
   "stats": {
-    "closed_trades": 28,
-    "wins": 14,
+    "closed_trades": 29,
+    "wins": 15,
     "losses": 14,
-    "win_rate_pct": 50.0,
-    "avg_win_pct": 18.49,
+    "win_rate_pct": 51.7,
+    "avg_win_pct": 17.6,
     "avg_loss_pct": -5.49,
-    "avg_pnl_pct": 6.5,
-    "avg_holding_days": 39.5,
-    "total_realized_usd": 4163.51,
+    "avg_pnl_pct": 6.45,
+    "avg_holding_days": 38.5,
+    "total_realized_usd": 4733.51,
     "target_hits": 7,
     "stop_hits": 9,
     "thesis_verdicts": {
       "FAILED": 14,
-      "PARTIAL": 7,
+      "PARTIAL": 8,
       "HELD": 7
     },
     "by_sector": {
@@ -24,9 +24,9 @@
         "avg_pnl_pct": 20.23
       },
       "Communication Services": {
-        "n": 2,
-        "wins": 2,
-        "avg_pnl_pct": 6.72
+        "n": 3,
+        "wins": 3,
+        "avg_pnl_pct": 6.19
       },
       "Real Estate": {
         "n": 2,
@@ -727,6 +727,30 @@
       "stop_hit": false,
       "thesis_verdict": "HELD",
       "lesson": "DIS: +11.7% over 91 days — assumption HELD. Expected +9.6%. Plan horizon: 3-6 måneder. Price target reached."
+    },
+    {
+      "trade_key": "id:538",
+      "date": "2026-11-16",
+      "symbol": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "sector": "Communication Services",
+      "buy_date": "2026-11-04",
+      "holding_days": 12,
+      "shares": 40,
+      "buy_price": 278.27,
+      "sell_price": 292.52,
+      "realized_pnl_usd": 570.0,
+      "realized_pnl_pct": 5.12,
+      "expected_return_pct": 13.2,
+      "price_target": 315.0,
+      "stop_loss": 258.0,
+      "timeframe": "1-3 måneder",
+      "term": "short",
+      "thesis": "Mean-reversion rebound fra historisk oversolgt niveau i kvalitets-mega-cap.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "PARTIAL",
+      "lesson": "GOOG: +5.1% over 12 days — assumption PARTIAL. Expected +13.2%. Plan horizon: 1-3 måneder."
     }
   ]
 }
