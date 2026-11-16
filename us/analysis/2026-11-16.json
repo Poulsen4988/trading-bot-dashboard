@@ -1,0 +1,325 @@
+{
+ "date": "2026-11-16",
+ "stocks": {
+  "COHR": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "5d momentum +13% bouncing off lower Bollinger; price back at BB mid ($218) with RSI 49 neutral — room to run",
+    "AI optics (800G/1.6T transceivers) and 300mm SiC demand intact; +10% needs reclaim toward $240 and then SMA50 $265"
+   ],
+   "bear": [
+    "Deep downtrend: -18% below SMA50 and -27% below SMA200, MACD -13.8; still -50% from 52w high",
+    "Very high volatility (ATR $24 ≈ 11%) and -6% last session shows rally is fragile"
+   ],
+   "summary": "Coherent is attempting a rebound inside a severe downtrend; momentum has improved short-term but the trend structure remains broken, so it is a hold-with-tight-risk rather than an add.",
+   "key_risk": "Failed rebound below $200 (BB-lower $181) as AI-optics sentiment sours; ATR 11% makes stop-outs violent",
+   "screener_score": null,
+   "technical": {
+    "method": "yfinance_historical",
+    "rsi": 49.2,
+    "rsi_proxy": 49.2,
+    "macd_line": -13.8238,
+    "bb_upper": 254.0287,
+    "bb_mid": 217.6285,
+    "bb_lower": 181.2283,
+    "bb_position": 50.7,
+    "atr": 24.08,
+    "stoch": 66.8,
+    "stoch_proxy": 66.8,
+    "sma50": 265.27,
+    "sma200": 296.81,
+    "sma50_vs_price": -17.76,
+    "sma200_vs_price": -26.5,
+    "volume_ratio": 1.0,
+    "momentum_5d": 13.14,
+    "momentum_20d": -6.33,
+    "momentum_divergence": 19.47,
+    "pct_from_52w_high": -50.42,
+    "pct_from_52w_low": 67.27
+   }
+  },
+  "CRM": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 22.5 and stoch 23 — deeply oversold near lower Bollinger ($205); mean-reversion to BB mid $230 is ~+6%",
+    "Still +10% above rising SMA200 ($197); Agentforce/AI and buyback support long-term trend"
+   ],
+   "bear": [
+    "-9.5% over 20d, below SMA50 $235 with negative MACD — short-term trend down",
+    "AI disruption fears on seat-based SaaS and M&A spending (Listen Labs $2B) weigh on sentiment"
+   ],
+   "summary": "Salesforce is oversold within an intact long-term uptrend; a bounce toward $230 is plausible but conviction is limited until it reclaims the SMA50.",
+   "key_risk": "Breakdown below $205 and the SMA200 (~$197) on continued SaaS de-rating",
+   "screener_score": null,
+   "technical": {
+    "method": "yfinance_historical",
+    "rsi": 22.5,
+    "rsi_proxy": 22.5,
+    "macd_line": -5.4308,
+    "bb_upper": 255.506,
+    "bb_mid": 230.4795,
+    "bb_lower": 205.453,
+    "bb_position": 24.7,
+    "atr": 8.2779,
+    "stoch": 22.9,
+    "stoch_proxy": 22.9,
+    "sma50": 235.21,
+    "sma200": 197.39,
+    "sma50_vs_price": -7.38,
+    "sma200_vs_price": 10.36,
+    "volume_ratio": 0.74,
+    "momentum_5d": 1.96,
+    "momentum_20d": -9.5,
+    "momentum_divergence": 11.46,
+    "pct_from_52w_high": -18.66,
+    "pct_from_52w_low": 49.14
+   }
+  },
+  "GOOG": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "5d +3% bounce with RSI 37 — oversold relief possible toward BB mid $301",
+    "Core search/cloud/AI franchise and cash generation remain strong long-term"
+   ],
+   "bear": [
+    "Below both SMA50 ($325) and SMA200 ($336) — trend has turned down; -13% over 20d, -28% from 52w high",
+    "Only 8% above 52w low with negative MACD; no fresh positive catalyst in the data"
+   ],
+   "summary": "Alphabet has broken below both major moving averages and sits near its 52-week low; the technical picture favours further weakness despite solid fundamentals.",
+   "key_risk": "Retest/break of 52w low (~$271) on AI-search competition or regulatory remedies",
+   "screener_score": null,
+   "technical": {
+    "method": "yfinance_historical",
+    "rsi": 37.3,
+    "rsi_proxy": 37.3,
+    "macd_line": -12.0966,
+    "bb_upper": 342.4937,
+    "bb_mid": 300.8855,
+    "bb_lower": 259.2773,
+    "bb_position": 39.9,
+    "atr": 11.7984,
+    "stoch": 40.1,
+    "stoch_proxy": 40.1,
+    "sma50": 325.11,
+    "sma200": 336.13,
+    "sma50_vs_price": -10.02,
+    "sma200_vs_price": -12.97,
+    "volume_ratio": 0.69,
+    "momentum_5d": 3.03,
+    "momentum_20d": -13.18,
+    "momentum_divergence": 16.21,
+    "pct_from_52w_high": -27.59,
+    "pct_from_52w_low": 8.06
+   }
+  },
+  "MCK": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "Strong uptrend: +15% above SMA50, +26% above SMA200, MACD +38, 1.7% from 52w high",
+    "Defensive drug-distribution earnings growth with consistent upward revisions"
+   ],
+   "bear": [
+    "RSI 76 and BB position 94 — overbought; short-term pullback toward $1,030 (BB mid) likely",
+    "Limited +10% upside without new catalyst after a +53% run off the lows"
+   ],
+   "summary": "McKesson is the portfolio's strongest trend leader; keep holding, but the overbought reading argues against adding at these levels.",
+   "key_risk": "Mean-reversion pullback of 5-7% or drug-pricing/policy headline",
+   "screener_score": null,
+   "technical": {
+    "method": "yfinance_historical",
+    "rsi": 76.1,
+    "rsi_proxy": 76.1,
+    "macd_line": 38.0869,
+    "bb_upper": 1112.4373,
+    "bb_mid": 1028.348,
+    "bb_lower": 944.2587,
+    "bb_position": 94.3,
+    "atr": 28.3764,
+    "stoch": 88.8,
+    "stoch_proxy": 88.8,
+    "sma50": 955.09,
+    "sma200": 873.12,
+    "sma50_vs_price": 15.47,
+    "sma200_vs_price": 26.31,
+    "volume_ratio": 0.74,
+    "momentum_5d": 3.96,
+    "momentum_20d": 9.75,
+    "momentum_divergence": -5.79,
+    "pct_from_52w_high": -1.67,
+    "pct_from_52w_low": 52.72
+   }
+  },
+  "SRE": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "RSI 32 and stoch 18 near lower Bollinger ($76.7) — oversold bounce toward $82 possible",
+    "Oncor/Texas load growth from data centers is a multi-year rate-base driver"
+   ],
+   "bear": [
+    "Below SMA200 ($88) and only 4% above 52w low — weak trend",
+    "Texas data-center interconnection freeze risks the growth narrative; rate-sensitive"
+   ],
+   "summary": "Sempra is oversold near its 52-week low with a damaged trend; low volatility limits downside but there is no clear catalyst for +10%.",
+   "key_risk": "Break of 52w low (~$76) on Texas regulatory setbacks or higher rates",
+   "screener_score": null,
+   "technical": {
+    "method": "yfinance_historical",
+    "rsi": 31.7,
+    "rsi_proxy": 31.7,
+    "macd_line": -0.8831,
+    "bb_upper": 88.1709,
+    "bb_mid": 82.4435,
+    "bb_lower": 76.7161,
+    "bb_position": 24.7,
+    "atr": 1.6964,
+    "stoch": 18.2,
+    "stoch_proxy": 18.2,
+    "sma50": 81.37,
+    "sma200": 88.06,
+    "sma50_vs_price": -2.24,
+    "sma200_vs_price": -9.68,
+    "volume_ratio": 0.74,
+    "momentum_5d": 1.75,
+    "momentum_20d": -4.64,
+    "momentum_divergence": 6.39,
+    "pct_from_52w_high": -20.05,
+    "pct_from_52w_low": 4.37
+   }
+  },
+  "VRTX": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "Healthy uptrend: above SMA50 ($522) and SMA200 ($483), MACD positive, 5% from 52w high",
+    "Pipeline catalysts (kidney/povetacicept, pain franchise) plus analysts seeing 20% upside"
+   ],
+   "bear": [
+    "Momentum cooling (-1.5% 5d, low volume) — could consolidate around $520-535",
+    "Binary clinical/regulatory risk typical of biotech"
+   ],
+   "summary": "Vertex retains a constructive trend and pipeline optionality; a breakout above $565 (BB upper) would put the 52w high and +10% in reach.",
+   "key_risk": "Pipeline setback or broader healthcare rotation pushing it below SMA50 $522",
+   "screener_score": null,
+   "technical": {
+    "method": "yfinance_historical",
+    "rsi": 59.2,
+    "rsi_proxy": 59.2,
+    "macd_line": 7.6409,
+    "bb_upper": 564.9309,
+    "bb_mid": 535.843,
+    "bb_lower": 506.7551,
+    "bb_position": 54.7,
+    "atr": 17.6328,
+    "stoch": 49.4,
+    "stoch_proxy": 49.4,
+    "sma50": 522.37,
+    "sma200": 483.34,
+    "sma50_vs_price": 3.11,
+    "sma200_vs_price": 11.43,
+    "volume_ratio": 0.49,
+    "momentum_5d": -1.55,
+    "momentum_20d": 7.78,
+    "momentum_divergence": -9.33,
+    "pct_from_52w_high": -5.29,
+    "pct_from_52w_low": 30.64
+   }
+  },
+  "ZBH": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 5,
+   "bull": [
+    "Above SMA50 ($95.7) and SMA200 ($92), MACD positive, +8.7% over 20d",
+    "Value valuation in medtech with improving procedure volumes"
+   ],
+   "bear": [
+    "-2.3% 5d pullback on above-average volume — momentum fading",
+    "Orthopedic share losses to SYK/robotics and pricing pressure cap upside"
+   ],
+   "summary": "Zimmer Biomet's trend has turned up and the recent dip looks like consolidation above rising averages; moderate bullish bias.",
+   "key_risk": "Loss of the SMA50 (~$96) on weak procedure/pricing commentary",
+   "screener_score": null,
+   "technical": {
+    "method": "yfinance_historical",
+    "rsi": 58.3,
+    "rsi_proxy": 58.3,
+    "macd_line": 3.2316,
+    "bb_upper": 111.0499,
+    "bb_mid": 100.6495,
+    "bb_lower": 90.2491,
+    "bb_position": 62.3,
+    "atr": 3.7579,
+    "stoch": 48.6,
+    "stoch_proxy": 48.6,
+    "sma50": 95.68,
+    "sma200": 92.16,
+    "sma50_vs_price": 7.87,
+    "sma200_vs_price": 11.99,
+    "volume_ratio": 1.05,
+    "momentum_5d": -2.25,
+    "momentum_20d": 8.66,
+    "momentum_divergence": -10.91,
+    "pct_from_52w_high": -8.3,
+    "pct_from_52w_low": 31.14
+   }
+  },
+  "ZBRA": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 21.8 and stoch 16.5 — extremely oversold near lower Bollinger ($298); +1.9% last session hints at a bounce",
+    "Still +14% above SMA200 ($284) with rising earnings estimates"
+   ],
+   "bear": [
+    "-12% over 20d, -10% below SMA50 with MACD -14 — sharp correction under way",
+    "Cyclical exposure to retail/logistics capex"
+   ],
+   "summary": "Zebra is deeply oversold within a still-positive long-term trend; a reflex bounce toward $355 is plausible but the correction has not yet shown a confirmed bottom.",
+   "key_risk": "Slide to SMA200 (~$284) if enterprise capex weakens",
+   "screener_score": null,
+   "technical": {
+    "method": "yfinance_historical",
+    "rsi": 21.8,
+    "rsi_proxy": 21.8,
+    "macd_line": -14.1233,
+    "bb_upper": 410.9927,
+    "bb_mid": 354.7355,
+    "bb_lower": 298.4783,
+    "bb_position": 22.7,
+    "atr": 16.2557,
+    "stoch": 16.5,
+    "stoch_proxy": 16.5,
+    "sma50": 361.71,
+    "sma200": 284.29,
+    "sma50_vs_price": -10.42,
+    "sma200_vs_price": 13.97,
+    "volume_ratio": 0.88,
+    "momentum_5d": 0.61,
+    "momentum_20d": -12.2,
+    "momentum_divergence": 12.81,
+    "pct_from_52w_high": -17.51,
+    "pct_from_52w_low": 62.77
+   }
+  }
+ }
+}
