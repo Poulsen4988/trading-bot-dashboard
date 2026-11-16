@@ -1,0 +1,245 @@
+{
+ "date": "2026-11-16",
+ "market_summary": "Analysen dækker kun de 8 eksisterende positioner — ingen nye BULL-kandidater i dag, så ingen nye køb. Sundhed (MCK, VRTX, ZBH) fører med intakte optrends, mens tech-positionerne (CRM, ZBRA) er dybt oversolgte og afventer rebound. Alphabet har brudt sine glidende gennemsnit og sælges med gevinst.",
+ "decisions": [
+  {
+   "symbol": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 538.6,
+   "confidence": 70,
+   "reasoning": "Thesis intakt: optrend over SMA50/SMA200, MACD positiv, dagens verdict BULL. +12,8% og et godt stykke over stop 470.",
+   "bull": [
+    "Healthy uptrend: above SMA50 ($522) and SMA200 ($483), MACD positive, 5% from 52w high",
+    "Pipeline catalysts (kidney/povetacicept, pain franchise) plus analysts seeing 20% upside"
+   ],
+   "bear": [
+    "Momentum cooling (-1.5% 5d, low volume) — could consolidate around $520-535",
+    "Binary clinical/regulatory risk typical of biotech"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
+    "price_target": 590,
+    "stop_loss": 470,
+    "expected_return_pct": 9.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (470) eller brud under SMA200/pipeline-skuffelse; overvej gevinsthjemtagning nær 590."
+   }
+  },
+  {
+   "symbol": "GOOG",
+   "name": "Alphabet Inc. (Class C)",
+   "action": "SELL",
+   "shares": 40,
+   "price": 292.52,
+   "confidence": 62,
+   "reasoning": "Dagens verdict skiftet til BEAR (6): under både SMA50 og SMA200, -13% over 20d og negativ MACD. Mean-reversion-thesis er ikke bekræftet; tag +5% gevinst frem for at risikere retest af 52w low (~271). Frigør kapital og reducerer koncentration.",
+   "bull": [
+    "5d +3% bounce with RSI 37 — oversold relief possible toward BB mid $301",
+    "Core search/cloud/AI franchise and cash generation remain strong long-term"
+   ],
+   "bear": [
+    "Below both SMA50 ($325) and SMA200 ($336) — trend has turned down; -13% over 20d, -28% from 52w high",
+    "Only 8% above 52w low with negative MACD; no fresh positive catalyst in the data"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical"
+    ],
+    "thesis": "Lukker position: trend brudt nedad, gevinst hjemtages.",
+    "price_target": 0,
+    "stop_loss": 0,
+    "expected_return_pct": 0,
+    "timeframe": "Lukket",
+    "exit_conditions": "Position lukkes nu."
+   }
+  },
+  {
+   "symbol": "COHR",
+   "name": "Coherent Corp.",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 218.15,
+   "confidence": 50,
+   "reasoning": "Rebound i gang (+13% 5d) men trend stadig brudt; NEUTRAL verdict. Holder med stop 182 — ingen tilkøb.",
+   "bull": [
+    "5d momentum +13% bouncing off lower Bollinger; price back at BB mid ($218) with RSI 49 neutral — room to run",
+    "AI optics (800G/1.6T transceivers) and 300mm SiC demand intact; +10% needs reclaim toward $240 and then SMA50 $265"
+   ],
+   "bear": [
+    "Deep downtrend: -18% below SMA50 and -27% below SMA200, MACD -13.8; still -50% from 52w high",
+    "Very high volatility (ATR $24 ≈ 11%) and -6% last session shows rally is fragile"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Katalysator-drevet trendskifte i AI-optik fra oversolgt niveau; forventer fortsættelse mod SMA50.",
+    "price_target": 265,
+    "stop_loss": 182,
+    "expected_return_pct": 21.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (182) eller luk under ~195; tag gevinst nær 265/SMA50."
+   }
+  },
+  {
+   "symbol": "MCK",
+   "name": "McKesson Corporation",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 1102.81,
+   "confidence": 68,
+   "reasoning": "Porteføljens stærkeste trend (BULL), 1,7% fra 52w high. Overkøbt (RSI 76), så intet tilkøb, men thesis intakt.",
+   "bull": [
+    "Strong uptrend: +15% above SMA50, +26% above SMA200, MACD +38, 1.7% from 52w high",
+    "Defensive drug-distribution earnings growth with consistent upward revisions"
+   ],
+   "bear": [
+    "RSI 76 and BB position 94 — overbought; short-term pullback toward $1,030 (BB mid) likely",
+    "Limited +10% upside without new catalyst after a +53% run off the lows"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Defensiv trend-følge i sundhedsdistribution; MCKs optrend forventes at fortsætte.",
+    "price_target": 1180,
+    "stop_loss": 1026.28,
+    "expected_return_pct": 7.0,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (1026,28) eller lukning under SMA50; tag gevinst nær 1180."
+   }
+  },
+  {
+   "symbol": "ZBH",
+   "name": "Zimmer Biomet",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 103.21,
+   "confidence": 58,
+   "reasoning": "Konsolidering over stigende SMA50/SMA200, dagens verdict BULL. Tæt på stop 99,90 — respekteres.",
+   "bull": [
+    "Above SMA50 ($95.7) and SMA200 ($92), MACD positive, +8.7% over 20d",
+    "Value valuation in medtech with improving procedure volumes"
+   ],
+   "bear": [
+    "-2.3% 5d pullback on above-average volume — momentum fading",
+    "Orthopedic share losses to SYK/robotics and pricing pressure cap upside"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Defensiv rotation ind i medtech: breakout fra lav værdiansættelse fortsætter.",
+    "price_target": 120,
+    "stop_loss": 99.9,
+    "expected_return_pct": 16.3,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (99,90) eller lukning under SMA50; tag gevinst nær 120."
+   }
+  },
+  {
+   "symbol": "SRE",
+   "name": "Sempra",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 79.54,
+   "confidence": 50,
+   "reasoning": "Oversolgt (RSI 32, stoch 18) nær nedre Bollinger; mean-reversion thesis ikke brudt endnu, stop 74,92 respekteres.",
+   "bull": [
+    "RSI 32 and stoch 18 near lower Bollinger ($76.7) — oversold bounce toward $82 possible",
+    "Oncor/Texas load growth from data centers is a multi-year rate-base driver"
+   ],
+   "bear": [
+    "Below SMA200 ($88) and only 4% above 52w low — weak trend",
+    "Texas data-center interconnection freeze risks the growth narrative; rate-sensitive"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Mean-reversion i oversolgt, lavvolatil reguleret forsyning tilbage mod SMA200 (~88).",
+    "price_target": 88,
+    "stop_loss": 74.92,
+    "expected_return_pct": 10.6,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (74,92) eller hvis aktien ikke stabiliserer inden for 2-3 uger; tag gevinst nær 88."
+   }
+  },
+  {
+   "symbol": "ZBRA",
+   "name": "Zebra Technologies",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 324.0,
+   "confidence": 55,
+   "reasoning": "Ekstremt oversolgt (RSI 22) i intakt langsigtet optrend; købt fredag, mean-reversion thesis uændret.",
+   "bull": [
+    "RSI 21.8 and stoch 16.5 — extremely oversold near lower Bollinger ($298); +1.9% last session hints at a bounce",
+    "Still +14% above SMA200 ($284) with rising earnings estimates"
+   ],
+   "bear": [
+    "-12% over 20d, -10% below SMA50 with MACD -14 — sharp correction under way",
+    "Cyclical exposure to retail/logistics capex"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Kvalitets-industri-IT i langsigtet optrend er ekstremt oversolgt; forventer mean-reversion tilbage mod SMA50 (~360).",
+    "price_target": 358,
+    "stop_loss": 285.32,
+    "expected_return_pct": 10.5,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (285,32 = 2x ATR) eller fundamental guidance-sænkning; tag gevinst nær 358/SMA50."
+   }
+  },
+  {
+   "symbol": "CRM",
+   "name": "Salesforce",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 217.84,
+   "confidence": 55,
+   "reasoning": "Dybt oversolgt (RSI 22,5) over stigende SMA200; købt fredag, thesis uændret, stop 200,57.",
+   "bull": [
+    "RSI 22.5 and stoch 23 — deeply oversold near lower Bollinger ($205); mean-reversion to BB mid $230 is ~+6%",
+    "Still +10% above rising SMA200 ($197); Agentforce/AI and buyback support long-term trend"
+   ],
+   "bear": [
+    "-9.5% over 20d, below SMA50 $235 with negative MACD — short-term trend down",
+    "AI disruption fears on seat-based SaaS and M&A spending (Listen Labs $2B) weigh on sentiment"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Oversold pullback i langsigtet optrend; forventer rebound mod SMA50 (~236) og videre mod 245.",
+    "price_target": 242,
+    "stop_loss": 200.57,
+    "expected_return_pct": 11.1,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (200,57 = 2x ATR) eller hvis earnings viser svækket guidance/seat-erosion; tag gevinst nær 242."
+   }
+  }
+ ]
+}
