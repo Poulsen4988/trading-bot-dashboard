@@ -1,0 +1,278 @@
+{
+  "date": "2026-11-18",
+  "market_summary": "C25 fortsætter optrenden efter en stærk Q3-sæson med opjusteringer og buybacks, men mange navne er kortsigtet overkøbte. Vi sælger FLSmidth, hvor stop-loss er brudt efter CFO-exit, holder resten med stramme stops (Novo-stop hæves) og venter med nye køb, da BULL-kandidaterne (fx DSV under SMA200) er strakte.",
+  "decisions": [
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "action": "SELL",
+      "shares": 15,
+      "price": 517.5,
+      "confidence": 70,
+      "reasoning": "Stop-loss 530 er brudt (517,5) efter -8,9% på CFO-exit på 2,5x volumen; kursen er nu under både SMA50 og SMA200 med negativ MACD. Fundamentet (ordreindgang +36%) er godt, men vi respekterer stoppet – track record viser at stop-disciplin begrænser tab.",
+      "bull": [
+        "Q3 ordreindgang +36% og opjusteret guidance",
+        "Teknisk ekstremt oversolgt (stoch 4, under nedre Bollinger)"
+      ],
+      "bear": [
+        "CFO-exit udløste kraftigt salg på høj volumen – ledelsesusikkerhed",
+        "Brud under SMA50 og SMA200 – trend vendt kortsigtet",
+        "Stop-loss 530 udløst"
+      ],
+      "investment_plan": {
+        "term": "short",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Pullback-thesis brudt af CFO-exit; stop udløst – position lukkes. Kan genovervejes ved genvinding af SMA200/SMA50.",
+        "price_target": 630,
+        "stop_loss": 530,
+        "expected_return_pct": 0,
+        "timeframe": "Lukket",
+        "exit_conditions": "Stop-loss udløst – sælges nu."
+      }
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 317.0,
+      "confidence": 65,
+      "reasoning": "Thesis intakt: optrend efter Q3-update, fwd PE 13,6x og buyback; tæt på 52w-high. Overkøbt (RSI 73), så stop holdes stramt på 305.",
+      "bull": [
+        "Indtjeningsvækst +27% YoY og buyback",
+        "Breakout-setup tæt på 52w-high med stigende volumen"
+      ],
+      "bear": [
+        "Overkøbt: RSI 73, bb 94",
+        "Lav omsætningsvækst 7%"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Billig quality-compounder med marginudvidelse; breakout til nyt high bekræfter trend.",
+        "price_target": 345,
+        "stop_loss": 305,
+        "expected_return_pct": 9,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 305, nær 345 eller ved tab af store kontrakter."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 935.0,
+      "confidence": 60,
+      "reasoning": "Q3 med 6% organisk vækst og guidance mod øvre ende; stærk trend ind i julesalget. Verdict NEUTRAL og overkøbt, så gevinsten beskyttes med stop 910.",
+      "bull": [
+        "Guidance indsnævret mod øvre ende",
+        "Stærk optrend, 39% over SMA200"
+      ],
+      "bear": [
+        "Overkøbt RSI 71 og lav volumen på stigning",
+        "Sølvpriser/told presser marginer"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Momentum efter Q3; lad vinderen løbe med stramt stop.",
+        "price_target": 1040,
+        "stop_loss": 910,
+        "expected_return_pct": 11,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 910, nær 1040 eller ved svagt julesalg."
+      }
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 91.3,
+      "confidence": 60,
+      "reasoning": "Lille position med +35% gevinst tæt på målet; stærk FY-outlook og buyback støtter. Meget overkøbt (RSI 77), så trailing stop 86 bevares.",
+      "bull": [
+        "+117% indtjeningsvækst og ny outlook",
+        "Løbende aktietilbagekøb"
+      ],
+      "bear": [
+        "RSI 77 og 21,6% over SMA50 – mean reversion-risiko",
+        "Momentum-divergens -16,6pp"
+      ],
+      "investment_plan": {
+        "term": "short",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Margin- og vækstrebound; gevinst sikret med trailing stop.",
+        "price_target": 97,
+        "stop_loss": 86,
+        "expected_return_pct": 6,
+        "timeframe": "0-2 måneder",
+        "exit_conditions": "Sælg under 86, nær 95-97 eller ved momentumbrud."
+      }
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 285.25,
+      "confidence": 68,
+      "reasoning": "Opjusteret helårsguidance og Q3 EBIT +27% CER; kursen er over SMA50 og SMA200 med positiv MACD. Thesis intakt, stop hæves til 265 for at beskytte gevinsten.",
+      "bull": [
+        "Opjusteret guidance, GLP-1-momentum intakt",
+        "Fwd PE 12,2x, udbytte + buyback",
+        "Trendvending over SMA200"
+      ],
+      "bear": [
+        "Kortsigtet strakt (bb 101, stoch 90)",
+        "Prispres og konkurrence fra Lilly i USA"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Billig turnaround med opjusteret outlook; genvinding af SMA200 kan udløse re-rating.",
+        "price_target": 320,
+        "stop_loss": 265,
+        "expected_return_pct": 12,
+        "timeframe": "2-4 måneder",
+        "exit_conditions": "Sælg under 265, nær 320 eller ved ny nedjustering/markant GLP-1-prispres."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 510.2,
+      "confidence": 65,
+      "reasoning": "Dagens verdict BULL efter 2030-mål og +36% indtjeningsvækst; trend intakt med plads til 52w-high. Stop 488 beskytter +21% gevinst.",
+      "bull": [
+        "Nye 2030-ambitioner modtaget positivt",
+        "Over SMA50/SMA200 med stærk MACD"
+      ],
+      "bear": [
+        "Trailing PE 37x kræver levering",
+        "12% over SMA50"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Stabil defensiv compounder med re-rating efter 2030-mål; fokus på at beskytte gevinst.",
+        "price_target": 545,
+        "stop_loss": 488,
+        "expected_return_pct": 7,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 488, nær 545 eller ved negativ revision."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1021.5,
+      "confidence": 58,
+      "reasoning": "Defensiv optrend efter Q3 trading statement og rimelig værdiansættelse (fwd PE 14,2x); ingen brud på casen. Stop 985 bevares.",
+      "bull": [
+        "Stabil optrend tæt på 52w-high",
+        "Fwd PE 14,2x"
+      ],
+      "bear": [
+        "Lav omsætningsvækst",
+        "Rusland/geopolitik-risiko"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Momentum og rimelig værdiansættelse i defensiv aktie.",
+        "price_target": 1080,
+        "stop_loss": 985,
+        "expected_return_pct": 6,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 985, nær 1080 eller ved momentumbrud."
+      }
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "AL Sydbank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 763.5,
+      "confidence": 60,
+      "reasoning": "Rekordkvartal, opjusteret 2026 og ugentlige buybacks; fusionen leverer. Overkøbt (RSI 77) men thesis uændret; stop 728.",
+      "bull": [
+        "Opjusteret 2026-forventning",
+        "Fwd PE 11,7x og løbende buyback"
+      ],
+      "bear": [
+        "Overkøbt RSI 77",
+        "Faldende renter presser NII"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Fusioneret bank med fundamental momentum og lav værdiansættelse re-rates; diversificerer porteføljen.",
+        "price_target": 850,
+        "stop_loss": 728,
+        "expected_return_pct": 11,
+        "timeframe": "2-4 måneder",
+        "exit_conditions": "Sælg under 728, nær 850, ved negativ revision eller integrationsproblemer."
+      }
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 239.4,
+      "confidence": 55,
+      "reasoning": "Pullback-køb efter stærkt Q3 og DKK 750 mio. buyback; kursen holder over SMA50/SMA200 og RSI 34 er nær oversolgt. CFO-exit i 2027 er en svag negativ; stop 224.",
+      "bull": [
+        "Stærk Travel Health og opjusteret guidance",
+        "Buyback ~4% af markedsværdien"
+      ],
+      "bear": [
+        "CFO fratræder 2027",
+        "Svagt kortsigtet momentum"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Pullback-køb i optrend efter stærkt Q3 og stort buyback; retur mod 52w-high giver +10%.",
+        "price_target": 262,
+        "stop_loss": 224,
+        "expected_return_pct": 9,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 224 (2 ATR / brud af SMA50), nær 262 eller ved negativ 2027-guidance."
+      }
+    }
+  ]
+}
