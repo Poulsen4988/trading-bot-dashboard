@@ -1,0 +1,336 @@
+{
+ "date": "2026-11-20",
+ "stocks": {
+  "NVDA": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "RSI 15.8 og stoch 3.5 — ekstremt oversolgt; kursen ligger nær nedre Bollinger ($143) og et relief-rally til ~$166 (+10%) kræver blot at AI-salgspresset pauser",
+    "Momentum-divergens +18.9: 5d-faldet aftager relativt til 20d — første tegn på udmattelse hos sælgerne"
+   ],
+   "bear": [
+    "Lodret nedtrend: -32% på 20d, -13% på 5d, 28% under SMA50 og 26% under SMA200, MACD -16.9",
+    "Faldet sker på forhøjet volumen (1.9x) lige ved 52w-lav — distribution, ikke kapitulation der er afsluttet; ATR $11.9 (7.9%)"
+   ],
+   "summary": "Nvidia er i et voldsomt AI-udsalg og handles 38% under toppen; ekstremt oversolgt, men uden bund-signal eller frisk katalysator er det et knivgreb — bounce-potentialet er reelt, men timingen er usikker.",
+   "key_risk": "Brud under 52w-lav (~$149) på høj volumen udløser ny salgsbølge mod $135-140.",
+   "screener_score": 76.0
+  },
+  "FIS": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "RSI 26.5 og stoch 0.1 — maksimalt oversolgt lige på 52w-lav; +10% til ~$29.4 er blot et teknisk tilbageløb",
+    "Ældre nyheder peger på solid kernebank-momentum (millioner nye konti, embedded banking-platform)"
+   ],
+   "bear": [
+    "Strukturel nedtrend: -60% fra 52w-høj, 22% under SMA50 og 35% under SMA200, MACD negativ",
+    "-27% på 20d uden synlig nyhedsforklaring i videnbasen (seneste nyheder fra september) — ukendt årsag er en risiko i sig selv"
+   ],
+   "summary": "FIS sætter nye bunde dagligt og har mistet 60% fra toppen; ekstremt oversolgt, men trenden er entydigt ned og årsagen til seneste kollaps er ikke dækket af nyhederne.",
+   "key_risk": "Fortsat brud under 52w-lav ($26.7) uden støtteniveauer nedenunder; skjult fundamental forværring.",
+   "screener_score": 71.4
+  },
+  "COIN": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "RSI 21.7 og stoch 1.3 — ekstremt oversolgt ved nedre Bollinger ($108) og 52w-lav; høj beta giver hurtigt +10% til ~$122 ved kryptostabilisering"
+   ],
+   "bear": [
+    "Frit fald: -38% på 20d, -19% på 5d, 34% under SMA50, MACD -14.4",
+    "Regulatorisk modvind efter fejlslagen kryptolov; ATR $10 (9%) = ekstrem volatilitet",
+    "Lav volumen (0.8x) i faldet — ingen kapitulations-signal endnu"
+   ],
+   "summary": "Coinbase falder fortsat med kryptomarkedet og er nu 61% under toppen; oversolgt uden trendvending eller katalysator — fortsat knivgreb.",
+   "key_risk": "Yderligere bitcoin-salg bryder 52w-lav ($110) og sender aktien mod $95-100.",
+   "screener_score": 71.3
+  },
+  "INTU": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "Relativ styrke: kun -6.7% på 20d mens tech-peers falder 25-40%; MACD stadig positiv (+2.4) og kursen kun 1.3% under SMA50",
+    "Stoch 3.5 og kurs under nedre Bollinger ($318) — kortsigtet oversolgt; +10% til ~$345 svarer til SMA200",
+    "25% over 52w-lav — bunden fra tidligere på året holder indtil videre"
+   ],
+   "bear": [
+    "-8.6% på 5d på stigende volumen (1.5x) — salgspresset er først lige begyndt at ramme",
+    "53% under 52w-høj og 9.5% under SMA200; software-sektoren presses af tvivl om AI-prissætning"
+   ],
+   "summary": "Intuit har holdt sig markant bedre end resten af tech i udsalget, men er nu begyndt at knække under SMA50; bedste risk/reward blandt screener-toppen, men kræver stabilisering før køb.",
+   "key_risk": "Brud under $300 bekræfter at aktien indhenter sektorens fald — næste støtte er 52w-lav ~$250.",
+   "screener_score": 70.0
+  },
+  "FCX": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "RSI 25.6, stoch 6.6 og kurs under nedre Bollinger ($53.4) — oversolgt; +10% til ~$56.6 kræver kun kobberstabilisering",
+    "Stadig 34% over 52w-lav — langsigtet kobber/AI-infrastruktur-tese ikke brudt"
+   ],
+   "bear": [
+    "-7% på én dag og -17% på 5d på høj volumen (1.7-1.9x) — accelererende salg, ikke udmattelse",
+    "23% under SMA50 og 21% under SMA200; kobber faldt fra rekord efter told-tvivl og AI-efterspørgselstesen er under pres"
+   ],
+   "summary": "Freeport sælges aggressivt i takt med kobberprisen og AI-nedturen; oversolgt, men salget accelererer på høj volumen — for tidligt at fange.",
+   "key_risk": "Fortsat kobberfald/recessionsfrygt sender aktien mod $45; ATR $3.3 (6.3%) giver store daglige udsving.",
+   "screener_score": 68.0
+  },
+  "HOOD": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 5,
+   "bull": [
+    "RSI 25.6 og kurs ved nedre Bollinger ($68.1); flad dag (-0.03%) efter -18% på 5d kan være første stabilisering",
+    "Høj beta: +10% til ~$76 kommer hurtigt ved risk-on/krypto-bounce"
+   ],
+   "bear": [
+    "-32% på 20d, 31% under SMA50 og 24% under SMA200, MACD -7.9",
+    "Indtjening tæt koblet til retail-handelsaktivitet og krypto, som begge svækkes i udsalget; ATR $5.2 (7.5%)"
+   ],
+   "summary": "Robinhood er halveret fra toppen i et bredt risk-off; dagens flade lukning er et spinkelt stabiliseringstegn, men trenden er ned og forretningen er cyklisk eksponeret mod netop det, der sælges.",
+   "key_risk": "Fortsat krypto- og tech-udsalg bryder $68 og åbner mod 52w-lav ~$63.5.",
+   "screener_score": 68.0
+  },
+  "CMI": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "RSI 19.4 og stoch 0.7 — ekstremt oversolgt på 52w-lav; +10% til ~$470 ligger stadig under Bollinger-midten ($480)"
+   ],
+   "bear": [
+    "-21% på 20d på høj volumen (1.9x), 16% under SMA50 og 28% under SMA200, MACD -24.5",
+    "Ingen nyheder i videnbasen til at forklare faldet — cyklisk industri sælges som recessions-/AI-datacenter-proxy",
+    "42% under 52w-høj og nye bunde dagligt"
+   ],
+   "summary": "Cummins sætter nye 52w-bunde på høj volumen; ekstremt oversolgt men uden støtte eller katalysator — afvent bundformation.",
+   "key_risk": "Recessionsfrygt og fald i datacenter-kraftefterspørgsel sender aktien under $400.",
+   "screener_score": 67.0
+  },
+  "CAT": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "RSI 31.7 og stoch 9.2 — oversolgt; +10% til ~$615 svarer til Bollinger-midten",
+    "5% over 52w-lav og momentum-divergens +17.2 — faldtempoet aftager"
+   ],
+   "bear": [
+    "-24% på 20d, 23% under SMA50 og 30% under SMA200, MACD -46.4",
+    "48% under 52w-høj: AI/datacenter-præmien fra sommerens rally afvikles; nyheder er forældede (juli)"
+   ],
+   "summary": "Caterpillar er næsten halveret fra toppen, efterhånden som AI-infrastrukturpræmien pilles ud af cykliske industriaktier; faldtempoet aftager, men ingen vending endnu.",
+   "key_risk": "Yderligere multipel-kontraktion mod $515 (nedre Bollinger); ATR $27.7 (5%).",
+   "screener_score": 65.0
+  },
+  "WDC": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "+1.7% i dag mod et faldende marked, RSI 27.6 og stoch stigende til 24.8 — første tegn på bounce",
+    "Stadig 118% over 52w-lav; AI-lagringsefterspørgsel var stærk ved seneste regnskab; +10% til ~$317 er under Bollinger-midten ($324)"
+   ],
+   "bear": [
+    "-24% på 20d, 24% under SMA50 og 32% under SMA200, MACD -28.3",
+    "64% under 52w-høj og ATR $27.3 (9.5%) — ekstrem volatilitet; memory/storage er cyklussens mest udsatte led hvis AI-capex skæres"
+   ],
+   "summary": "Western Digital viser dagens eneste grønne lukning blandt screener-toppen og kan være tidligt ude i et relief-rally, men volatiliteten er enorm og AI-capex-frygten er uforløst.",
+   "key_risk": "AI-capex-nedjusteringer rammer lagringsefterspørgslen; fald tilbage mod nedre Bollinger ~$242.",
+   "screener_score": 65.0
+  },
+  "NOW": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 6,
+   "bull": [
+    "RSI 25 og stoch 6.1 — dybt oversolgt; momentum-divergens +29 viser at faldtempoet aftager markant",
+    "+10% til ~$100 ligger langt under Bollinger-midten ($116) — rigelig plads til tilbageløb"
+   ],
+   "bear": [
+    "-41% på 20d — det største 20d-fald i deep-settet; 30% under SMA50 og 20% under SMA200, MACD -11.5",
+    "Software presses af tvivl om AI-prissætning/-omkostninger; ingen friske nyheder forklarer kollapset"
+   ],
+   "summary": "ServiceNow er kollapset 41% på en måned; oversolgt med aftagende faldtempo, men et så voldsomt fald uden kendt årsag i videnbasen kræver bekræftet stabilisering før indgang.",
+   "key_risk": "Fortsat software-derating og nyt lav under $81 (52w-lav).",
+   "screener_score": 64.7
+  },
+  "APP": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "+46% på 20d mod et kollapsende marked — markant relativ styrke; 27% over SMA50 og MACD +33.9",
+    "Fundamentalt stærk: 53% omsætningsvækst og rekordmarginer i seneste kvartal; +10% til ~$430 bringer den over SMA200 ($405)"
+   ],
+   "bear": [
+    "RSI 73.6 og stoch 85.6 — overkøbt; -3.4% på 5d på meget lav volumen (0.6x) tyder på at rallyet taber pusten",
+    "Afvist ved SMA200 ($405) og stadig 47% under 52w-høj; ATR $28.8 (7.4%) — højbeta-navn i et risk-off-marked"
+   ],
+   "summary": "Scout: AppLovin er en af få aktier med stærkt positivt momentum i udsalget og har fundamental medvind, men er overkøbt og kæmper under SMA200 — interessant kandidat på tilbagefald mod $340-350 frem for nu.",
+   "key_risk": "Momentum-vending: højbeta-vinder der sælges hårdt, hvis markedet tager de sidste stærke navne; fald mod SMA50 ~$307.",
+   "screener_score": 41.5
+  },
+  "IDXX": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "+26% på 20d og 22% over både SMA50 og SMA200 — klar optrend mens markedet falder; MACD +40.2",
+    "Defensiv sundhedsvækst med tilbagevendende diagnostik-omsætning og hævet 2026 EPS-guidance; kun 9% fra 52w-høj",
+    "Holder gevinsterne (-0.6% på 5d, +1.2% i dag) — konsolidering frem for vending"
+   ],
+   "bear": [
+    "RSI 71.5 og stoch 91.2 — overkøbt; lav volumen (0.6-0.7x) i konsolideringen",
+    "ATR $33.6 (4.8%) — tilbagefald mod Bollinger-midten ~$647 er muligt"
+   ],
+   "summary": "Scout: Idexx er en ægte relativ vinder — defensiv kvalitetsvækst i klar optrend, der konsoliderer roligt nær toppen mens resten af markedet kollapser; overkøbt på kort sigt, men den stærkeste køb-kandidat i deep-settet.",
+   "key_risk": "Rotation ud af defensive vindere ved et markedsbounce; svagere dyrlæge-trafik i USA.",
+   "screener_score": 16.6
+  },
+  "CLX": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "+30% på 20d, 22% over SMA50 og 12% over SMA200 — defensiv staples-rotation i fuld gang; MACD +6.1",
+    "Fortsætter op (+1.6% i dag, +1.4% på 5d) — ingen svaghedstegn endnu"
+   ],
+   "bear": [
+    "RSI 85.2 — ekstremt overkøbt, stoch 89; rallyet er strakt og sker på lav volumen (0.6-0.8x)",
+    "Fundamentalt svag vækstcase (omkostningspres, prisfølsomme forbrugere) — stigningen er flugt-til-sikkerhed, ikke indtjeningsdrevet"
+   ],
+   "summary": "Scout: Clorox nyder godt af flugten til defensive aktier, men RSI 85 efter +30% på en måned i en lavvækst-staple er for strakt til nykøb — afvent tilbagefald mod $98-100.",
+   "key_risk": "Skarp mean-reversion når risk-off aftager; fald mod Bollinger-midten ~$97.6 (-10%).",
+   "screener_score": 16.9
+  },
+  "LDOS": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 26.7, stoch 5.8 og kurs på nedre Bollinger ($126) — oversolgt i en ellers stabil aktie (kun -2.7% på 20d)",
+    "Stærke fundamentaler: rekordomsætning, forsvars-book-to-bill 2.2 og hævet 2026-guidance; kun 2.3% under SMA50",
+    "Lav volumen i faldet (0.7x) — ingen panik"
+   ],
+   "bear": [
+    "-6.1% på 5d og brud under SMA50; 8% under SMA200 og 38% under 52w-høj",
+    "Usikkerhed om VA-incitamenter og MHS Genesis dæmper vækstudsigterne"
+   ],
+   "summary": "Beholdning: Leidos er defensivt forsvars-IT med solid ordrebog, der har holdt sig langt bedre end markedet, men er nu gledet under SMA50 til nedre Bollinger — hold, og hold øje med om $125 holder.",
+   "key_risk": "Brud under $125 åbner mod $115; budget-/kontraktrisiko på sundhedssegmentet.",
+   "screener_score": 44.5
+  },
+  "MCK": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 7,
+   "bull": [
+    "Stærk optrend: 12% over SMA50 og 24% over SMA200, kun 3.3% fra 52w-høj, MACD +37.2",
+    "+6.8% på 20d i et marked hvor screener-toppen falder 25-40% — defensiv lægemiddeldistribution er det sikre hjørne",
+    "Rolig konsolidering (+0.4% på 5d) med lav ATR ($28 = 2.6%)"
+   ],
+   "bear": [
+    "RSI 78.6 — overkøbt; lav volumen (0.7x) og +10% til ~$1.193 kræver brud over øvre Bollinger ($1.135)",
+    "Ingen friske nyheder i videnbasen"
+   ],
+   "summary": "Beholdning: McKesson er porteføljens stærkeste position — defensiv kvalitet i ubrudt optrend nær all-time high; overkøbt, men trenden er intakt, så hold og lad vinderen løbe.",
+   "key_risk": "Rotation ud af defensive vindere ved markedsvending; tilbagefald mod Bollinger-midten ~$1.040.",
+   "screener_score": 21.9
+  },
+  "SRE": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "RSI 16.7 og stoch 3.4 — ekstremt oversolgt for en reguleret forsyningsaktie; lav ATR ($1.75 = 2.3%) begrænser nedsiden",
+    "Flad i dag og kun -0.9% på 5d — faldet er stoppet op lige over 52w-lav ($76.2)",
+    "Q2-indtjening slog estimaterne med 15%"
+   ],
+   "bear": [
+    "Under både SMA50 (-4.3%) og SMA200 (-11.9%), -7.2% på 20d — en forsyningsaktie der ikke fungerer som defensiv i udsalget",
+    "Texas' datacenter-pause rammer Oncors ~300 GW vækstpipeline; højere renter presser forsyning"
+   ],
+   "summary": "Beholdning: Sempra skuffer som defensiv position og ligger lige over 52w-lav, men er ekstremt oversolgt med lav volatilitet og tegn på stabilisering — hold med stram opmærksomhed på $76.",
+   "key_risk": "Brud under 52w-lav $76.2; rentestigninger og datacenter-efterspørgsel der forsvinder fra Texas-casen.",
+   "screener_score": 44.7
+  },
+  "VRTX": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "Over SMA50 (+2.7%) og SMA200 (+10.8%), MACD positiv og kun 5.7% fra 52w-høj — upåvirket af markedsudsalget",
+    "Positiv pipeline-nyhed (nyre-gennembrud) og analytikere ser +20%; biotek med egen indtjeningsdriver, ukorreleret med AI-nedturen",
+    "RSI 48 og stoch 22 — hverken overkøbt eller strakt; plads til +10% mod ~$590"
+   ],
+   "bear": [
+    "Sidelæns seneste måned (+2.3% på 20d, -1.9% på 5d) på lav volumen — mangler kortsigtet momentum",
+    "Kliniske/regulatoriske binære hændelser; ATR $16.6 (3.1%)"
+   ],
+   "summary": "Beholdning: Vertex er en rolig, ukorreleret kvalitetsposition i intakt optrend med frisk pipeline-medvind og uden at være overkøbt — hold, og en af få kandidater til at øge.",
+   "key_risk": "Skuffende kliniske data eller prispres på CF-franchisen; fald under SMA50 ~$523.",
+   "screener_score": 14.1
+  },
+  "ZBH": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "Optrend intakt: 7.5% over SMA50, 11.8% over SMA200, MACD +2.4 og +8.9% på 20d mod et faldende marked",
+    "RSI 58 og stoch 49 — sund, ikke overkøbt; +1.2% i dag efter tilbagefald, +10% til ~$114 er lige over øvre Bollinger ($111)",
+    "Defensiv medtech med lav konjunkturfølsomhed"
+   ],
+   "bear": [
+    "-3.9% på 5d — kortvarigt tilbagefald på lav volumen (0.7-0.8x)",
+    "Stadig 8% under 52w-høj; ortopædi møder konkurrence fra robotkirurgi-ledere"
+   ],
+   "summary": "Beholdning: Zimmer Biomet er en sund defensiv optrend uden at være strakt og har netop absorberet et lille tilbagefald — hold.",
+   "key_risk": "Brud under Bollinger-midten ~$101.7 vender trenden; volumen-/prispres i ortopædi.",
+   "screener_score": 16.6
+  },
+  "ZBRA": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "Stadig 12% over SMA200 ($285.5) og 61% over 52w-lav — den langsigtede optrend er ikke brudt",
+    "RSI 24.4 og +2.4% i dag — oversolgt bounce på vej; +10% til ~$352 er lige over Bollinger-midten ($345)",
+    "Rekordresultater i Q2 drevet af retail, produktion og sundhed"
+   ],
+   "bear": [
+    "-18% på 20d og 11% under SMA50, MACD -14.6 — tech-udsalget har ramt hårdt",
+    "Bounce på lav volumen (0.7x) er ikke overbevisende; ATR $16.1 (5%)"
+   ],
+   "summary": "Beholdning: Zebra er trukket 18% ned af tech-udsalget, men holder sig over SMA200 og viser begyndende bounce fra oversolgt niveau — hold så længe $290-300 holder, sælg ved brud.",
+   "key_risk": "Brud under SMA200/nedre Bollinger (~$286-289) ødelægger den langsigtede trend.",
+   "screener_score": 31.4
+  }
+ }
+}
