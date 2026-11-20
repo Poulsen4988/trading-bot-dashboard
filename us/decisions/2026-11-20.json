@@ -1,0 +1,189 @@
+{
+ "date": "2026-11-20",
+ "market_summary": "Bredt risk-off med kollaps i AI-, tech- og cykliske aktier (NVDA, NOW, CAT, COIN -25-40% på 20 dage), mens defensiv sundhed og staples er de eneste relative vindere. Porteføljen er defensivt positioneret med 31% kontant og ingen udløste stops. Ingen nye køb i dag: de eneste BULL-kandidater er overkøbte sundhedsaktier (IDXX RSI 71 efter +26%), og Health Care udgør allerede 34% — de oversolgte tech/cykliske navne mangler bundsignal.",
+ "decisions": [
+  {
+   "symbol": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 536.45,
+   "confidence": 68,
+   "reasoning": "HOLD. Thesis intakt: over SMA50/SMA200, +12,4%, ukorreleret med AI-udsalget og frisk pipeline-medvind; stop 470 langt væk.",
+   "bull": [
+    "Over SMA50 (+2.7%) og SMA200 (+10.8%), MACD positiv og kun 5.7% fra 52w-høj — upåvirket af markedsudsalget",
+    "Positiv pipeline-nyhed (nyre-gennembrud) og analytikere ser +20%; biotek med egen indtjeningsdriver, ukorreleret med AI-nedturen",
+    "RSI 48 og stoch 22 — hverken overkøbt eller strakt; plads til +10% mod ~$590"
+   ],
+   "bear": [
+    "Sidelæns seneste måned (+2.3% på 20d, -1.9% på 5d) på lav volumen — mangler kortsigtet momentum",
+    "Kliniske/regulatoriske binære hændelser; ATR $16.6 (3.1%)"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
+    "price_target": 590,
+    "stop_loss": 470,
+    "expected_return_pct": 10.0,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (470) eller brud under SMA200/pipeline-skuffelse; overvej gevinsthjemtagning nær 590."
+   }
+  },
+  {
+   "symbol": "MCK",
+   "name": "McKesson Corporation",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 1084.43,
+   "confidence": 70,
+   "reasoning": "HOLD. Porteføljens stærkeste trend (12% over SMA50, nær ATH). RSI 78,6 er overkøbt, men trenden er ubrudt — lad vinderen løbe, ingen forøgelse ved 15,8% vægt.",
+   "bull": [
+    "Stærk optrend: 12% over SMA50 og 24% over SMA200, kun 3.3% fra 52w-høj, MACD +37.2",
+    "+6.8% på 20d i et marked hvor screener-toppen falder 25-40% — defensiv lægemiddeldistribution er det sikre hjørne",
+    "Rolig konsolidering (+0.4% på 5d) med lav ATR ($28 = 2.6%)"
+   ],
+   "bear": [
+    "RSI 78.6 — overkøbt; lav volumen (0.7x) og +10% til ~$1.193 kræver brud over øvre Bollinger ($1.135)",
+    "Ingen friske nyheder i videnbasen"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical"
+    ],
+    "thesis": "Defensiv trend-følge i sundhedsdistribution; MCKs optrend forventes at fortsætte.",
+    "price_target": 1180,
+    "stop_loss": 1026.28,
+    "expected_return_pct": 8.8,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (1026,28) eller lukning under SMA50; tag gevinst nær 1180."
+   }
+  },
+  {
+   "symbol": "ZBH",
+   "name": "Zimmer Biomet",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 103.32,
+   "confidence": 62,
+   "reasoning": "HOLD. Optrend intakt (7,5% over SMA50), tilbagefaldet på 5d er sket på lav volumen og RSI 58 er sund; stop 99,90 respekteres.",
+   "bull": [
+    "Optrend intakt: 7.5% over SMA50, 11.8% over SMA200, MACD +2.4 og +8.9% på 20d mod et faldende marked",
+    "RSI 58 og stoch 49 — sund, ikke overkøbt; +1.2% i dag efter tilbagefald, +10% til ~$114 er lige over øvre Bollinger ($111)",
+    "Defensiv medtech med lav konjunkturfølsomhed"
+   ],
+   "bear": [
+    "-3.9% på 5d — kortvarigt tilbagefald på lav volumen (0.7-0.8x)",
+    "Stadig 8% under 52w-høj; ortopædi møder konkurrence fra robotkirurgi-ledere"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Defensiv rotation ind i medtech: breakout fra lav værdiansættelse fortsætter.",
+    "price_target": 120,
+    "stop_loss": 99.9,
+    "expected_return_pct": 16.1,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (99,90) eller lukning under SMA50; tag gevinst nær 120."
+   }
+  },
+  {
+   "symbol": "SRE",
+   "name": "Sempra",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 77.52,
+   "confidence": 48,
+   "reasoning": "HOLD. Ekstremt oversolgt (RSI 16,7) og faldet er stoppet op lige over 52w-lav 76,2; stop 74,92 er tæt på og begrænser tabet. Sælges hvis ingen stabilisering inden for planens 2-3 uger.",
+   "bull": [
+    "RSI 16.7 og stoch 3.4 — ekstremt oversolgt for en reguleret forsyningsaktie; lav ATR ($1.75 = 2.3%) begrænser nedsiden",
+    "Flad i dag og kun -0.9% på 5d — faldet er stoppet op lige over 52w-lav ($76.2)",
+    "Q2-indtjening slog estimaterne med 15%"
+   ],
+   "bear": [
+    "Under både SMA50 (-4.3%) og SMA200 (-11.9%), -7.2% på 20d — en forsyningsaktie der ikke fungerer som defensiv i udsalget",
+    "Texas' datacenter-pause rammer Oncors ~300 GW vækstpipeline; højere renter presser forsyning"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical"
+    ],
+    "thesis": "Mean-reversion i oversolgt, lavvolatil reguleret forsyning tilbage mod SMA200 (~88).",
+    "price_target": 88,
+    "stop_loss": 74.92,
+    "expected_return_pct": 13.5,
+    "timeframe": "1-3 måneder",
+    "exit_conditions": "Sælg ved stop-brud (74,92) eller hvis aktien ikke stabiliserer inden for 2-3 uger; tag gevinst nær 88."
+   }
+  },
+  {
+   "symbol": "ZBRA",
+   "name": "Zebra Technologies",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 319.61,
+   "confidence": 55,
+   "reasoning": "HOLD. Stadig 12% over SMA200 og begyndende bounce fra RSI 24; mean-reversion-thesis er uafklaret men ikke brudt — stop 285,32 gælder.",
+   "bull": [
+    "Stadig 12% over SMA200 ($285.5) og 61% over 52w-lav — den langsigtede optrend er ikke brudt",
+    "RSI 24.4 og +2.4% i dag — oversolgt bounce på vej; +10% til ~$352 er lige over Bollinger-midten ($345)",
+    "Rekordresultater i Q2 drevet af retail, produktion og sundhed"
+   ],
+   "bear": [
+    "-18% på 20d og 11% under SMA50, MACD -14.6 — tech-udsalget har ramt hårdt",
+    "Bounce på lav volumen (0.7x) er ikke overbevisende; ATR $16.1 (5%)"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical"
+    ],
+    "thesis": "Kvalitets-industri-IT i langsigtet optrend er ekstremt oversolgt; forventer mean-reversion tilbage mod SMA50 (~360).",
+    "price_target": 358,
+    "stop_loss": 285.32,
+    "expected_return_pct": 12.0,
+    "timeframe": "1-3 måneder",
+    "exit_conditions": "Sælg ved stop-brud (285,32 = 2x ATR) eller fundamental guidance-sænkning; tag gevinst nær 358/SMA50."
+   }
+  },
+  {
+   "symbol": "LDOS",
+   "name": "Leidos",
+   "action": "HOLD",
+   "shares": 0,
+   "price": 125.71,
+   "confidence": 55,
+   "reasoning": "HOLD. Købt i går; oversolgt (RSI 26,7) på lav volumen med stærk ordrebog og hævet guidance. Under SMA50, så 125-niveauet overvåges — stop 117,19.",
+   "bull": [
+    "RSI 26.7, stoch 5.8 og kurs på nedre Bollinger ($126) — oversolgt i en ellers stabil aktie (kun -2.7% på 20d)",
+    "Stærke fundamentaler: rekordomsætning, forsvars-book-to-bill 2.2 og hævet 2026-guidance; kun 2.3% under SMA50",
+    "Lav volumen i faldet (0.7x) — ingen panik"
+   ],
+   "bear": [
+    "-6.1% på 5d og brud under SMA50; 8% under SMA200 og 38% under 52w-høj",
+    "Usikkerhed om VA-incitamenter og MHS Genesis dæmper vækstudsigterne"
+   ],
+   "investment_plan": {
+    "term": "medium",
+    "basis": [
+     "technical",
+     "fundamental"
+    ],
+    "thesis": "Fundamentalt stærk statslig IT/forsvars-leverandør med hævet guidance; kortsigtet oversolgt pullback til SMA50 giver indgang til rebound mod ~141.",
+    "price_target": 141,
+    "stop_loss": 117.19,
+    "expected_return_pct": 12.2,
+    "timeframe": "3-6 måneder",
+    "exit_conditions": "Sælg ved stop-brud (117,19 = 2x ATR), budgetstop/kontrakt-tab eller lukning klart under SMA200; tag gevinst nær 141."
+   }
+  }
+ ]
+}
