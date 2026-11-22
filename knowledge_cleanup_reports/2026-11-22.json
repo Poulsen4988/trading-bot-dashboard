@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-22",
+  "files_reviewed": 25,
+  "files_cleaned": 2,
+  "total_items_removed": 2,
+  "per_file": [
+    {
+      "path": "knowledge/FLS_xcse.json",
+      "removed_count": 1,
+      "kept_count": 11,
+      "removed_items": [
+        {
+          "title": "FLSmidth & Co. A/S financial calendar for 2027",
+          "date": "2026-11-11",
+          "reason": "low_value"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/GMAB_xcse.json",
+      "removed_count": 1,
+      "kept_count": 16,
+      "removed_items": [
+        {
+          "title": "Selskabsvedtægter for Genmab A/S",
+          "date": "2026-11-11",
+          "reason": "low_value"
+        }
+      ]
+    }
+  ],
+  "summary": "41 kandidater gennemgået i 15 filer (alle low_value: summary var kun en kategori-label; ingen duplikater eller stale items). 39 bevaret, da titlerne er materielle (regnskaber, opjusteringer, ledelsesskift, M&A, kliniske resultater, ordrer, tilbagekøb, regulatoriske opdateringer). Fjernet 2 trivielle rutine-meddelelser uden informationsindhold: FLSmidth finanskalender 2027 (earnings-datoer hentes separat af fetch_prices) og Genmab selskabsvedtægter (formel følge af EGM, som er bevaret). BEMÆRK: De samme 2 items blev også fjernet i cleanup 2026-11-15, men er siden blevet genindsat af news.py — nyhedshentningen bør have en udelukkelsesliste/filter, ellers gentages dette hver uge."
+}
