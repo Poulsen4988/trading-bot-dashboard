@@ -1,21 +1,21 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-23",
   "stats": {
-    "closed_trades": 54,
-    "wins": 28,
-    "losses": 25,
-    "win_rate_pct": 52.8,
-    "avg_win_pct": 10.02,
-    "avg_loss_pct": -4.95,
-    "avg_pnl_pct": 2.96,
-    "avg_holding_days": 26.4,
-    "total_realized_dkk": 10575.4,
+    "closed_trades": 57,
+    "wins": 29,
+    "losses": 27,
+    "win_rate_pct": 51.8,
+    "avg_win_pct": 10.05,
+    "avg_loss_pct": -4.81,
+    "avg_pnl_pct": 2.89,
+    "avg_holding_days": 28.1,
+    "total_realized_dkk": 11145.5,
     "target_hits": 6,
-    "stop_hits": 14,
+    "stop_hits": 15,
     "thesis_verdicts": {
       "UKENDT": 1,
-      "HOLDT IKKE": 25,
-      "DELVIST": 22,
+      "HOLDT IKKE": 27,
+      "DELVIST": 23,
       "HOLDT": 6
     },
     "by_sector": {
@@ -35,19 +35,19 @@
         "avg_pnl_pct": -2.04
       },
       "Financial Services": {
-        "n": 11,
+        "n": 12,
         "wins": 6,
-        "avg_pnl_pct": 3.89
+        "avg_pnl_pct": 3.14
       },
       "Consumer Cyclical": {
-        "n": 3,
-        "wins": 3,
-        "avg_pnl_pct": 7.18
+        "n": 4,
+        "wins": 4,
+        "avg_pnl_pct": 8.16
       },
       "Healthcare": {
-        "n": 14,
+        "n": 15,
         "wins": 10,
-        "avg_pnl_pct": 6.57
+        "avg_pnl_pct": 6.05
       },
       "Basic Materials": {
         "n": 2,
@@ -1357,6 +1357,78 @@
       "stop_hit": true,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "FLS.CO: -8.9% på 1 dage — antagelse HOLDT IKKE. Forventet +10.9%. Plan-horisont: 2-4 måneder. Exit på/under stop-loss."
+    },
+    {
+      "trade_key": "id:1156",
+      "date": "2026-11-23",
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "sector": "Consumer Cyclical",
+      "buy_date": "2026-08-18",
+      "holding_days": 97,
+      "shares": 16,
+      "buy_price": 817.0,
+      "sell_price": 907.6,
+      "realized_pnl_dkk": 1449.6,
+      "realized_pnl_pct": 11.09,
+      "expected_return_pct": 11.4,
+      "price_target": 910.0,
+      "stop_loss": 761.0,
+      "timeframe": "2-3 måneder",
+      "term": "medium",
+      "thesis": "Momentum-fortsættelse i en fundamentalt understøttet uptrend, samtidig med at positionen giver eksponering til en hidtil urepræsenteret sektor med stærk track record. Moderat position sizet (2xATR-stop) grundet tyndere informationsgrundlag på scan-tier.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "DELVIST",
+      "lesson": "PNDORA.CO: +11.1% på 97 dage — antagelse DELVIST. Forventet +11.4%. Plan-horisont: 2-3 måneder."
+    },
+    {
+      "trade_key": "id:1157",
+      "date": "2026-11-23",
+      "symbol": "ALSYDB.CO",
+      "name": "AL Sydbank",
+      "sector": "Financial Services",
+      "buy_date": "2026-11-12",
+      "holding_days": 11,
+      "shares": 20,
+      "buy_price": 764.0,
+      "sell_price": 725.5,
+      "realized_pnl_dkk": -770.0,
+      "realized_pnl_pct": -5.04,
+      "expected_return_pct": 11.3,
+      "price_target": 850.0,
+      "stop_loss": 728.0,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Fusioneret bank med fundamental momentum og lav værdiansættelse re-rates; diversificerer væk fra healthcare/industri.",
+      "target_hit": false,
+      "stop_hit": true,
+      "thesis_verdict": "HOLDT IKKE",
+      "lesson": "ALSYDB.CO: -5.0% på 11 dage — antagelse HOLDT IKKE. Forventet +11.3%. Plan-horisont: 3-6 måneder. Exit på/under stop-loss."
+    },
+    {
+      "trade_key": "id:1158",
+      "date": "2026-11-23",
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk",
+      "sector": "Healthcare",
+      "buy_date": "2026-11-13",
+      "holding_days": 59,
+      "shares": 34,
+      "buy_price": 267.7206,
+      "sell_price": 264.5,
+      "realized_pnl_dkk": -109.5,
+      "realized_pnl_pct": -1.2,
+      "expected_return_pct": 16.0,
+      "price_target": 320.0,
+      "stop_loss": 258.0,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Billig turnaround med opjusteret outlook; test af SMA200 kan udløse re-rating. Healthcare-vægt holdes uændret via rotation fra Demant.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "HOLDT IKKE",
+      "lesson": "NOVO-B.CO: -1.2% på 59 dage — antagelse HOLDT IKKE. Forventet +16.0%. Plan-horisont: 3-6 måneder."
     }
   ]
 }
