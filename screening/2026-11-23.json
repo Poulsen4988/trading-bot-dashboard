@@ -1,0 +1,309 @@
+{
+  "date": "2026-11-23",
+  "screened_at": "2026-11-23T07:18:57Z",
+  "price_data_date": "2026-11-20",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 61.8,
+      "price": 264.5,
+      "pct_1d": -0.25,
+      "pct_5d": -5.01,
+      "pct_20d": 1.67,
+      "volume_ratio": 0.85,
+      "rsi_proxy": 45.9,
+      "stoch_proxy": 14.8,
+      "bb_position": 32.2,
+      "sma50_vs_price": 0.41,
+      "sma200_vs_price": -4.1,
+      "macd_line": 1.841,
+      "atr": 8.4,
+      "momentum_divergence": -6.68,
+      "pe_forward": 11.706695,
+      "pct_from_52w_high": -35.48,
+      "pct_from_52w_low": 17.95,
+      "sector": "Healthcare",
+      "earnings_growth": -0.158,
+      "revenue_growth": 0.056,
+      "div_yield": 4.41,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "SIGNIFICANT DRAWDOWN: -35.5% from 52w high",
+        "MOMENTUM: -5.0% in 5 days — continued SELLING pressure",
+        "STOCHASTIC OVERSOLD: Stoch proxy 15 — price near annual support floor (RSI proxy 46)",
+        "DEEP VALUE: Fwd PE 11.7x vs sector norm 25x — 53% discount"
+      ],
+      "screening_rationale": "NOVO-B.CO: a 5.0% five-day selloff (20d: +1.7%) reveals strong directional pressure; forward PE 11.7x represents a 53% discount to Healthcare sector norm (25x); price is +0.4% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 55.0,
+      "price": 173.45,
+      "pct_1d": -4.62,
+      "pct_5d": -10.85,
+      "pct_20d": -6.55,
+      "volume_ratio": 1.04,
+      "rsi_proxy": 36.7,
+      "stoch_proxy": 3.2,
+      "bb_position": -5.9,
+      "sma50_vs_price": -10.9,
+      "sma200_vs_price": -6.24,
+      "macd_line": -3.1061,
+      "atr": 8.0143,
+      "momentum_divergence": -4.3,
+      "pe_forward": 14.146501,
+      "pct_from_52w_high": -21.23,
+      "pct_from_52w_low": 17.95,
+      "sector": "Industrials",
+      "earnings_growth": 0.1,
+      "revenue_growth": 0.063,
+      "div_yield": 0.41,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.04x avg",
+        "MOMENTUM SELLOFF: -10.8% in 5 days — sharp directional move",
+        "STOCHASTIC OVERSOLD: Stoch proxy 3 — price near annual support floor (RSI proxy 37)",
+        "MODEST DISCOUNT: Fwd PE 14.1x vs sector norm 18x",
+        "EARNINGS GROWTH: +10% YoY"
+      ],
+      "screening_rationale": "VWS.CO: a 10.8% five-day selloff (20d: -6.5%) reveals strong directional pressure; forward PE 14.1x represents a 21% discount to Industrials sector norm (18x); price is -10.9% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 55.0,
+      "price": 1083.0,
+      "pct_1d": -1.46,
+      "pct_5d": -5.33,
+      "pct_20d": 5.25,
+      "volume_ratio": 1.62,
+      "rsi_proxy": 49.7,
+      "stoch_proxy": 12.2,
+      "bb_position": 29.9,
+      "sma50_vs_price": -0.86,
+      "sma200_vs_price": 9.83,
+      "macd_line": 8.4227,
+      "atr": 18.0714,
+      "momentum_divergence": -10.58,
+      "pe_forward": 10.766983,
+      "pct_from_52w_high": -6.23,
+      "pct_from_52w_low": 43.63,
+      "sector": "Financial Services",
+      "earnings_growth": -0.075,
+      "revenue_growth": -0.039,
+      "div_yield": 2.27,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME ELEVATED: 1.62x avg — above-normal interest",
+        "MOMENTUM: -5.3% in 5 days — continued SELLING pressure",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -10.6pp — emerging trend shift",
+        "STOCHASTIC OVERSOLD: Stoch proxy 12 — price near annual support floor (RSI proxy 50)",
+        "MODEST DISCOUNT: Fwd PE 10.8x vs sector norm 12x"
+      ],
+      "screening_rationale": "JYSK.CO: volume running at 1.6x the daily average signals institutional-scale activity; a 5.3% five-day selloff (20d: +5.2%) reveals strong directional pressure; price is -0.9% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 52.0,
+      "price": 133.8,
+      "pct_1d": -2.55,
+      "pct_5d": -5.74,
+      "pct_20d": 1.67,
+      "volume_ratio": 1.02,
+      "rsi_proxy": 48.0,
+      "stoch_proxy": 6.1,
+      "bb_position": 25.5,
+      "sma50_vs_price": -1.16,
+      "sma200_vs_price": -9.06,
+      "macd_line": 1.3331,
+      "atr": 4.4607,
+      "momentum_divergence": -7.41,
+      "pe_forward": 13.878502,
+      "pct_from_52w_high": -22.3,
+      "pct_from_52w_low": 18.41,
+      "sector": "Utilities",
+      "earnings_growth": null,
+      "revenue_growth": 0.726,
+      "div_yield": 0.0,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.02x avg",
+        "MOMENTUM: -5.7% in 5 days — continued SELLING pressure",
+        "STOCHASTIC OVERSOLD: Stoch proxy 6 — price near annual support floor (RSI proxy 48)",
+        "UNDERVALUED: Fwd PE 13.9x vs sector norm 20x — 31% discount",
+        "REVENUE GROWTH: +73% YoY — top-line expansion"
+      ],
+      "screening_rationale": "ORSTED.CO: a 5.7% five-day selloff (20d: +1.7%) reveals strong directional pressure; forward PE 13.9x represents a 31% discount to Utilities sector norm (20x); price is -1.2% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 49.0,
+      "price": 467.0,
+      "pct_1d": -5.43,
+      "pct_5d": -17.78,
+      "pct_20d": -16.76,
+      "volume_ratio": 1.25,
+      "rsi_proxy": 24.7,
+      "stoch_proxy": 2.2,
+      "bb_position": -7.2,
+      "sma50_vs_price": -17.55,
+      "sma200_vs_price": -11.3,
+      "macd_line": -21.6121,
+      "atr": 24.75,
+      "momentum_divergence": -1.02,
+      "pe_forward": 13.5660925,
+      "pct_from_52w_high": -24.62,
+      "pct_from_52w_low": 17.16,
+      "sector": "Industrials",
+      "earnings_growth": 0.043,
+      "revenue_growth": 0.1,
+      "div_yield": 0.81,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.25x avg",
+        "MOMENTUM SELLOFF: -17.8% in 5 days — sharp directional move",
+        "DEEPLY OVERSOLD: RSI proxy 25, Stoch proxy 2 — bounce candidate",
+        "MODEST DISCOUNT: Fwd PE 13.6x vs sector norm 18x"
+      ],
+      "screening_rationale": "FLS.CO: a 17.8% five-day selloff (20d: -16.8%) reveals strong directional pressure; forward PE 13.6x represents a 25% discount to Industrials sector norm (18x); RSI proxy (25) and stochastic (2) in oversold territory support a bounce thesis; price is -17.6% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 61.8
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 55.0
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 55.0
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 52.0
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 49.0
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 48.0
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 46.2
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 45.4
+    },
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 40.0
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 39.1
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 37.8
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 36.6
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 36.0
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 36.0
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 35.5
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 34.0
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 33.4
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 33.4
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 33.0
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 26.0
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 22.9
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 21.5
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 21.2
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 18.5
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 17.8
+    }
+  ]
+}
