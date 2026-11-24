@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 33609.3,
+    "cash": 19081.3,
     "currency": "DKK",
     "positions": [
       {
@@ -9,7 +9,7 @@
         "name": "ISS",
         "shares": 53.0,
         "purchase_price": 290.4868,
-        "current_price": 311.2,
+        "current_price": 316.6,
         "purchase_date": "2026-07-03",
         "investment_plan": {
           "term": "medium",
@@ -17,17 +17,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Billig quality-compounder med marginudvidelse; optrend nær 52-ugers top beskyttes med stramt stop.",
+          "thesis": "Billig quality-compounder med marginudvidelse; optrend nær 52-ugers top beskyttes med trailing stop.",
           "price_target": 345,
-          "stop_loss": 305,
-          "expected_return_pct": 10.9,
+          "stop_loss": 308,
+          "expected_return_pct": 9.0,
           "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg under 305, nær 345 eller ved tab af store kontrakter."
+          "exit_conditions": "Sælg under 308, nær 345 eller ved tab af store kontrakter."
         },
         "last_review": {
-          "date": "2026-11-23",
-          "reasoning": "Thesis intakt: en af de stærkeste aktier i C25 med relativ styrke i sidste uges salg og fwd P/E 13,4x. RSI er kølet af til 69; holder med uændret stop 305.",
-          "confidence": 64
+          "date": "2026-11-24",
+          "reasoning": "Thesis intakt: +1,7% i går, kun 1,7% fra 52-ugers top og fwd P/E 13,7x med 27% indtjeningsvækst. RSI 69 er strakt, så stoppet hæves fra 305 til 308 for at sikre mere af gevinsten (+9%).",
+          "confidence": 65
         }
       },
       {
@@ -35,7 +35,7 @@
         "name": "Ambu",
         "shares": 14,
         "purchase_price": 67.6,
-        "current_price": 87.8,
+        "current_price": 87.75,
         "purchase_date": "2026-09-08",
         "investment_plan": {
           "term": "medium",
@@ -43,7 +43,7 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Margin- og vækstrebound efter stærkt FY25/26; gevinst sikret med trailing stop.",
+          "thesis": "Margin- og vækstrebound efter stærkt FY25/26; gevinst (+30%) sikret med trailing stop.",
           "price_target": 97,
           "stop_loss": 86,
           "expected_return_pct": 10.5,
@@ -51,9 +51,9 @@
           "exit_conditions": "Sælg under 86, nær 95-97 eller ved momentumbrud."
         },
         "last_review": {
-          "date": "2026-11-23",
-          "reasoning": "Stærk post-regnskabs-optrend med 16% omsætningsvækst og nyt tilbagekøb; konsolideringen sker på lav volumen. Holder den lille position med trailing stop 86.",
-          "confidence": 62
+          "date": "2026-11-24",
+          "reasoning": "Optrend efter stærkt årsregnskab og nyt tilbagekøb er intakt; ugens tilbagefald (-3,9%) sker på lav volumen og ligner konsolidering. Lille position (1,1%) holdes med uændret trailing stop 86 lige under kursen.",
+          "confidence": 60
         }
       },
       {
@@ -61,7 +61,7 @@
         "name": "Coloplast",
         "shares": 30,
         "purchase_price": 420.8,
-        "current_price": 495.4,
+        "current_price": 500.2,
         "purchase_date": "2026-09-29",
         "investment_plan": {
           "term": "medium",
@@ -72,13 +72,13 @@
           "thesis": "Stabil defensiv compounder med re-rating efter 2030-mål; fokus på at beskytte gevinst.",
           "price_target": 545,
           "stop_loss": 488,
-          "expected_return_pct": 10.0,
+          "expected_return_pct": 9.0,
           "timeframe": "1-3 måneder",
           "exit_conditions": "Sælg under 488, nær 545 eller ved negativ revision."
         },
         "last_review": {
-          "date": "2026-11-23",
-          "reasoning": "Rolig genopretning efter årsregnskab og 2030-mål; trend over begge glidende gennemsnit og gevinst +17,7%. Holder med stop 488 der beskytter gevinsten.",
+          "date": "2026-11-24",
+          "reasoning": "Genopretningen efter årsregnskab og 2030-mål fortsætter roligt; kurs 8,4% over SMA50, neutral RSI 52 og 4,6% udbytte. Verdict NEUTRAL men ingen brud på casen – holder med stop 488 der låser ca. +16%.",
           "confidence": 60
         }
       },
@@ -87,7 +87,7 @@
         "name": "Carlsberg",
         "shares": 20,
         "purchase_price": 971.0,
-        "current_price": 985.6,
+        "current_price": 987.2,
         "purchase_date": "2026-11-02",
         "investment_plan": {
           "term": "medium",
@@ -95,17 +95,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Momentum og rimelig værdiansættelse (fwd P/E 13,9x) i defensiv aktie.",
+          "thesis": "Momentum og rimelig værdiansættelse (fwd P/E 14x) i defensiv aktie; positionen er på prøve lige over stoppet.",
           "price_target": 1080,
           "stop_loss": 985,
-          "expected_return_pct": 9.6,
+          "expected_return_pct": 9.4,
           "timeframe": "1-3 måneder",
           "exit_conditions": "Sælg under 985, nær 1080, ved momentumbrud eller negative Rusland-/volumennyheder."
         },
         "last_review": {
-          "date": "2026-11-23",
-          "reasoning": "Optrend intakt (5,9% over SMA50) og stochastic 15 giver rebound-mulighed, men kursen ligger lige over stoppet og mangler katalysator. Holder; brud under 985 udløser salg.",
-          "confidence": 55
+          "date": "2026-11-24",
+          "reasoning": "Kursen (987,2) ligger marginalt over stoppet 985, så stop er ikke udløst; optrenden er intakt (5,8% over SMA50) og stochastic 20 giver rebound-mulighed. Holder én dag mere med uændret stop – en lukning under 985 sælges uden diskussion.",
+          "confidence": 52
         }
       },
       {
@@ -113,7 +113,7 @@
         "name": "Bavarian Nordic",
         "shares": 55,
         "purchase_price": 237.2,
-        "current_price": 245.4,
+        "current_price": 249.8,
         "purchase_date": "2026-11-16",
         "investment_plan": {
           "term": "medium",
@@ -121,17 +121,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Pullback-køb i optrend efter stærkt Q3 og stort buyback; retur mod 52w-high giver ca. +8-10%.",
+          "thesis": "Pullback-køb i optrend efter stærkt Q3 og stort buyback; retur mod 52w-high giver resterende ca. +5%.",
           "price_target": 262,
-          "stop_loss": 224,
-          "expected_return_pct": 6.8,
+          "stop_loss": 236,
+          "expected_return_pct": 4.9,
           "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg under 224 (brud af SMA50), nær 262 eller ved negativ 2027-guidance."
+          "exit_conditions": "Sælg under 236, nær 262 eller ved negativ 2027-guidance."
         },
         "last_review": {
-          "date": "2026-11-23",
-          "reasoning": "Relativ styrke (+3,5% på 5 dage i faldende marked) efter stærkt Q3 og nyt tilbagekøb på 750 mio. kr. Thesis intakt; holder med stop 224 under SMA50.",
-          "confidence": 60
+          "date": "2026-11-24",
+          "reasoning": "Thesis spiller: +5,3% siden købet 16/11 og +4,3% på 5 dage i et faldende marked, drevet af stærkt Q3 og tilbagekøb på 750 mio. kr. Stochastic 94 nær 52-ugers top øger risikoen for tilbagefald, så stoppet hæves fra 224 til 236 (ca. 2x ATR, tæt på break-even).",
+          "confidence": 63
         }
       },
       {
@@ -139,7 +139,7 @@
         "name": "Tryg",
         "shares": 90,
         "purchase_price": 165.4,
-        "current_price": 165.4,
+        "current_price": 166.8,
         "purchase_date": "2026-11-23",
         "investment_plan": {
           "term": "medium",
@@ -150,18 +150,44 @@
           "thesis": "Defensiv kvalitetsforsikring i stabil optrend med højt udbytte; brud over 52-ugers top (ca. 168,5) giver fortsættelse mod 178.",
           "price_target": 178,
           "stop_loss": 161.4,
-          "expected_return_pct": 7.6,
+          "expected_return_pct": 6.7,
           "timeframe": "1-3 måneder",
           "exit_conditions": "Sælg under 161,4 (2x ATR), nær 178 eller ved storskade/negativ revision."
         },
         "last_review": {
-          "date": "2026-11-23",
-          "reasoning": "Defensiv aktie med relativ styrke: kun 1,8% fra 52-ugers top, +0,9% fredag på forhøjet volumen og 5,3% udbytte, mens markedet falder. Financial Services er vores næstbedste sektor historisk; køber 90 stk. (ca. 13% af porteføljen, klart under ATR-forslaget på 431) med stop 2x ATR.",
+          "date": "2026-11-24",
+          "reasoning": "Købt i går; casen er uændret – under 1% fra 52-ugers top, lav volatilitet og 5,2% udbytte med relativ styrke i svagt marked. Holder med uændret stop 161,4.",
           "confidence": 64
+        }
+      },
+      {
+        "symbol": "DANSKE.CO",
+        "name": "Danske Bank",
+        "shares": 40,
+        "purchase_price": 363.2,
+        "current_price": 363.2,
+        "purchase_date": "2026-11-24",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Billig storbank med indtjeningsvækst og højt udbytte genoptager optrenden efter sektor-tilbagefald; retur til og brud over 52-ugers top (ca. 382) giver +8-9%.",
+          "price_target": 395,
+          "stop_loss": 350.7,
+          "expected_return_pct": 8.8,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg under 350,7 (2x ATR), nær 395, eller ved markant stigende nedskrivninger/negativ guidance."
+        },
+        "last_review": {
+          "date": "2026-11-24",
+          "reasoning": "Billigste BULL-kandidat uden åben position: fwd P/E 10,9x, 4,8% udbytte og +18% indtjeningsvækst, og +2,3% i går på volumen over normalen efter sidste uges banksalg. Scan-tier uden nyheder og gårsdagens stop-out i AL Sydbank taler for forsigtighed, så positionen sizes til 40 stk. (ca. 14.500 kr., under 1/3 af ATR-forslaget) med 2x ATR-stop. Novo og AL Sydbank genkøbes ikke dagen efter stop; Royal Unibrew er for strakt (stochastic 87).",
+          "confidence": 58
         }
       }
     ],
-    "last_updated": "2026-11-23 22:47 UTC"
+    "last_updated": "2026-11-24 07:47 UTC"
   },
   "history": [
     {
@@ -763,121 +789,13 @@
     {
       "date": "2026-11-23",
       "portfolio_value": 114289.1
+    },
+    {
+      "date": "2026-11-24",
+      "portfolio_value": 115118.6
     }
   ],
   "trades": [
-    {
-      "date": "2026-09-03",
-      "action": "HOLD",
-      "symbol": "RBREW.CO",
-      "name": "Royal Unibrew",
-      "shares": null,
-      "price": 418.2,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 6,
-        "summary": "Fortsat det mest oversolgte C25-navn (RSI 18.5) med afsluttet tilbagekøb og 35% sektor-rabat — mean-reversion-thesis intakt, stop endnu ikke ramt."
-      },
-      "id": 565,
-      "is_new": false
-    },
-    {
-      "date": "2026-09-03",
-      "action": "BUY",
-      "symbol": "TRYG.CO",
-      "name": "Tryg",
-      "shares": 70,
-      "price": 157.8,
-      "value": 11046.0,
-      "reasoning": {
-        "verdict": "BUY",
-        "confidence": 6,
-        "summary": "Ren, lavvolatil uptrend nær 52-ugers højeste uden tekniske røde flag, til en fornuftig 13x forward PE. Diversificerer Financial Services (kun 6.6% i dag, udelukkende bank) mod et forsikringsnavn med lav korrelation til Danske Banks rentecyk"
-      },
-      "id": 566,
-      "is_new": false
-    },
-    {
-      "date": "2026-09-03",
-      "action": "BUY",
-      "symbol": "DSV.CO",
-      "name": "DSV",
-      "shares": 8,
-      "price": 1310.0,
-      "value": 10480.0,
-      "reasoning": {
-        "verdict": "BUY",
-        "confidence": 6,
-        "summary": "Dybt oversolgt (RSI 26) trods rekord-EBIT i H1 — markedet fokuserer på DB Schenker-integrationsomkostninger frem for den underliggende vækst. Moderat position da downtrenden endnu ikke er bekræftet vendt."
-      },
-      "id": 567,
-      "is_new": false
-    },
-    {
-      "date": "2026-09-04",
-      "action": "HOLD",
-      "symbol": "ISS.CO",
-      "name": "ISS",
-      "shares": null,
-      "price": 280.4,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 7,
-        "summary": "Thesis fuldt intakt og styrket: 8.9% organisk vækst, udvidet tilbagekøb (+DKK 600m) og RSI 20/stoch 0 peger på en overdreven, sentimentdrevet selloff i en aktie der stadig kun er 5.5% fra 52-ugers højeste. Stop-loss ikke udløst."
-      },
-      "id": 568,
-      "is_new": false
-    },
-    {
-      "date": "2026-09-04",
-      "action": "HOLD",
-      "symbol": "DANSKE.CO",
-      "name": "Danske Bank",
-      "shares": null,
-      "price": 373.4,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 6,
-        "summary": "Uptrend intakt med ugentlige tilbagekøb, 4.55% udbytte og 15% indtjeningsvækst til stadig moderat 11.5x forward PE. Ingen ny negativ katalysator siden sidste review."
-      },
-      "id": 569,
-      "is_new": false
-    },
-    {
-      "date": "2026-09-04",
-      "action": "HOLD",
-      "symbol": "DEMANT.CO",
-      "name": "Demant",
-      "shares": null,
-      "price": 293.8,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 6,
-        "summary": "Vækststory intakt (15% H1-vækst, opjusteret guidance, ny Oticon Zeal-lancering), men efter +68% fra lavpunktet og 18.5x forward PE uden udbytte er der ikke meget plads til skuffelser. Ingen ny negativ nyhed siden sidste review."
-      },
-      "id": 570,
-      "is_new": false
-    },
-    {
-      "date": "2026-09-04",
-      "action": "HOLD",
-      "symbol": "PNDORA.CO",
-      "name": "Pandora",
-      "shares": null,
-      "price": 839.2,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 5,
-        "summary": "Fortsat opjusteret guidance og uptrend nær 52-ugers højeste, men CFO-skifte og decelererende topline-vækst (+2%) mod en ~95% rally taler for ikke at bygge yderligere ud. Positionen er allerede porteføljens største (12.0%) — koncentrationsri"
-      },
-      "id": 571,
-      "is_new": false
-    },
     {
       "date": "2026-09-04",
       "action": "HOLD",
@@ -10460,6 +10378,118 @@
         "summary": "Defensiv aktie med relativ styrke: kun 1,8% fra 52-ugers top, +0,9% fredag på forhøjet volumen og 5,3% udbytte, mens markedet falder. Financial Services er vores næstbedste sektor historisk; køber 90 stk. (ca. 13% af porteføljen, klart unde"
       },
       "id": 1164,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-24",
+      "action": "HOLD",
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "shares": null,
+      "price": 316.6,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 65,
+        "summary": "Thesis intakt: +1,7% i går, kun 1,7% fra 52-ugers top og fwd P/E 13,7x med 27% indtjeningsvækst. RSI 69 er strakt, så stoppet hæves fra 305 til 308 for at sikre mere af gevinsten (+9%)."
+      },
+      "id": 1165,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-24",
+      "action": "HOLD",
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu",
+      "shares": null,
+      "price": 87.75,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Optrend efter stærkt årsregnskab og nyt tilbagekøb er intakt; ugens tilbagefald (-3,9%) sker på lav volumen og ligner konsolidering. Lille position (1,1%) holdes med uændret trailing stop 86 lige under kursen."
+      },
+      "id": 1166,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-24",
+      "action": "HOLD",
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "shares": null,
+      "price": 500.2,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 60,
+        "summary": "Genopretningen efter årsregnskab og 2030-mål fortsætter roligt; kurs 8,4% over SMA50, neutral RSI 52 og 4,6% udbytte. Verdict NEUTRAL men ingen brud på casen – holder med stop 488 der låser ca. +16%."
+      },
+      "id": 1167,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-24",
+      "action": "HOLD",
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "shares": null,
+      "price": 987.2,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 52,
+        "summary": "Kursen (987,2) ligger marginalt over stoppet 985, så stop er ikke udløst; optrenden er intakt (5,8% over SMA50) og stochastic 20 giver rebound-mulighed. Holder én dag mere med uændret stop – en lukning under 985 sælges uden diskussion."
+      },
+      "id": 1168,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-24",
+      "action": "HOLD",
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "shares": null,
+      "price": 249.8,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 63,
+        "summary": "Thesis spiller: +5,3% siden købet 16/11 og +4,3% på 5 dage i et faldende marked, drevet af stærkt Q3 og tilbagekøb på 750 mio. kr. Stochastic 94 nær 52-ugers top øger risikoen for tilbagefald, så stoppet hæves fra 224 til 236 (ca. 2x ATR, t"
+      },
+      "id": 1169,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-24",
+      "action": "HOLD",
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "shares": null,
+      "price": 166.8,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 64,
+        "summary": "Købt i går; casen er uændret – under 1% fra 52-ugers top, lav volatilitet og 5,2% udbytte med relativ styrke i svagt marked. Holder med uændret stop 161,4."
+      },
+      "id": 1170,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-24",
+      "action": "BUY",
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "shares": 40,
+      "price": 363.2,
+      "value": 14528.0,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 58,
+        "summary": "Billigste BULL-kandidat uden åben position: fwd P/E 10,9x, 4,8% udbytte og +18% indtjeningsvækst, og +2,3% i går på volumen over normalen efter sidste uges banksalg. Scan-tier uden nyheder og gårsdagens stop-out i AL Sydbank taler for forsi"
+      },
+      "id": 1171,
       "is_new": true
     }
   ],
@@ -14092,5 +14122,5 @@
     "Consumer Defensive": 24.4,
     "Financial Services": 18.5
   },
-  "last_executed_decisions": "2026-11-23"
+  "last_executed_decisions": "2026-11-24"
 }
