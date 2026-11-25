@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 16475.7,
+    "cash": 3599.2,
     "currency": "USD",
     "positions": [
       {
@@ -9,7 +9,7 @@
         "name": "Vertex Pharmaceuticals",
         "shares": 20,
         "purchase_price": 477.36,
-        "current_price": 538.54,
+        "current_price": 563.92,
         "purchase_date": "2026-07-24",
         "investment_plan": {
           "term": "medium",
@@ -17,17 +17,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Defensiv sundhedscase med vækst og stærk pipeline.",
+          "thesis": "Defensiv sundhedscase med vækst og stærk pipeline; trailing stop beskytter gevinst.",
           "price_target": 590,
-          "stop_loss": 470,
-          "expected_return_pct": 9.6,
-          "timeframe": "3-6 måneder",
-          "exit_conditions": "Sælg ved stop-brud (470) eller brud under SMA200/pipeline-skuffelse; overvej gevinsthjemtagning nær 590."
+          "stop_loss": 533,
+          "expected_return_pct": 4.6,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved stop-brud (533) eller pipeline-skuffelse; tag gevinst nær 590 eller hæv target ved breakout over 52-ugers top på volumen."
         },
         "last_review": {
-          "date": "2026-11-24",
-          "reasoning": "HOLD. Thesis intakt og styrket: +4,6% på 1,15x volumen, over SMA50 (+3,0%) og SMA200 (+11,0%), MACD positiv og RSI neutral (54). Position +12,8%; stop 470 er langt væk. Ingen forøgelse, da Health Care allerede er porteføljens største sektor.",
-          "confidence": 70
+          "date": "2026-11-25",
+          "reasoning": "HOLD med hævet stop. Position +18,1% og kun -0,8% fra 52-ugers top efter +4,7% i går; verdict BULL (7), +16% over SMA200. Kortsigtet overkøbt (BB 99%, stoch 99), så ingen forøgelse — Health Care er allerede 41% af porteføljen. Stoppet hæves fra 470 til 533 (2x ATR under kurs) for at beskytte gevinsten; target 590 fastholdes.",
+          "confidence": 75
         }
       },
       {
@@ -35,24 +35,25 @@
         "name": "McKesson Corporation",
         "shares": 15,
         "purchase_price": 1082.59,
-        "current_price": 1048.42,
+        "current_price": 1078.09,
         "purchase_date": "2026-11-11",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
           "thesis": "Defensiv trend-følge i sundhedsdistribution; MCKs optrend forventes at fortsætte.",
           "price_target": 1180,
           "stop_loss": 1026.28,
-          "expected_return_pct": 12.6,
+          "expected_return_pct": 9.5,
           "timeframe": "2-4 måneder",
           "exit_conditions": "Sælg ved stop-brud (1026,28) eller lukning under SMA50; tag gevinst nær 1180."
         },
         "last_review": {
-          "date": "2026-11-24",
-          "reasoning": "HOLD. Ordnet pullback (-5,1% på 5d) til 20-dages midtbånd i porteføljens stærkeste trend (7,3% over SMA50, 19,2% over SMA200); dagens verdict BULL. Kursen er dog kun 2,1% over stop 1026,28 — stoppet håndhæves uden tøven. Ingen forøgelse ved 15,4% vægt.",
-          "confidence": 62
+          "date": "2026-11-25",
+          "reasoning": "HOLD. Solid optrend (+22,5% over SMA200, +10% over SMA50, MACD +26) uden overkøbte signaler (RSI 52, stoch 45); +2,8% i går og verdict BULL (6). Position flad (-0,4%), stop 1026,28 er 4,8% væk og håndhæves.",
+          "confidence": 68
         }
       },
       {
@@ -60,7 +61,7 @@
         "name": "Zimmer Biomet",
         "shares": 80,
         "purchase_price": 107.32,
-        "current_price": 105.98,
+        "current_price": 108.99,
         "purchase_date": "2026-11-11",
         "investment_plan": {
           "term": "medium",
@@ -71,14 +72,14 @@
           "thesis": "Defensiv rotation ind i medtech: breakout fra lav værdiansættelse fortsætter.",
           "price_target": 120,
           "stop_loss": 99.9,
-          "expected_return_pct": 13.2,
+          "expected_return_pct": 10.1,
           "timeframe": "2-4 måneder",
           "exit_conditions": "Sælg ved stop-brud (99,90) eller lukning under SMA50; tag gevinst nær 120."
         },
         "last_review": {
-          "date": "2026-11-24",
-          "reasoning": "HOLD. Vendt fra gårsdagens stop-nære niveau: +4,5% på 5d på stigende volumen, fuld bullish trendstruktur (9,7% over SMA50, 14,4% over SMA200) og dagens verdict BULL. Afstand til stop 99,90 er nu 5,7%; næste test er modstanden 111,5-112,6.",
-          "confidence": 63
+          "date": "2026-11-25",
+          "reasoning": "HOLD. +13,5% på 20 dage, +12,5% over SMA50 og +17,5% over SMA200, +2,8% i går på 1,5x volumen; verdict BULL (6). Position +1,6%, stop 99,90 (8% væk) uændret.",
+          "confidence": 66
         }
       },
       {
@@ -86,7 +87,7 @@
         "name": "Sempra",
         "shares": 120,
         "purchase_price": 78.38,
-        "current_price": 77.72,
+        "current_price": 78.76,
         "purchase_date": "2026-11-12",
         "investment_plan": {
           "term": "short",
@@ -96,14 +97,14 @@
           "thesis": "Mean-reversion i oversolgt, lavvolatil reguleret forsyning; målet er en bounce-zone over SMA50.",
           "price_target": 84,
           "stop_loss": 74.92,
-          "expected_return_pct": 8.1,
-          "timeframe": "2-6 uger",
-          "exit_conditions": "Sælg ved stop-brud (74,92) eller hvis aktien ikke stabiliserer/generobrer SMA50 (~81) senest ca. 3. december; brug bounce mod 81-84 som exit."
+          "expected_return_pct": 6.7,
+          "timeframe": "1-3 uger",
+          "exit_conditions": "Sælg ved stop-brud (74,92) eller hvis SMA50 (~81) ikke generobres senest ca. 3. december; brug bounce mod 81-84 som exit."
         },
         "last_review": {
-          "date": "2026-11-24",
-          "reasoning": "HOLD med kort snor. Første konstruktive opdag fra 52-ugers lav med aftagende nedadgående momentum (RSI 23,9); verdict løftet fra BEAR til NEUTRAL, og en bounce mod SMA50/midtbånd ~80,6 er basisscenariet. Stop 74,92 (3,6% væk) og tidsfristen ca. 3. december for generobring af SMA50 står ved magt.",
-          "confidence": 42
+          "date": "2026-11-25",
+          "reasoning": "HOLD med kort snor. Verdict NEUTRAL (5); RSI 34, 5d-momentum +1,6% — bounce-scenariet lever, men kursen er stadig under SMA50 (-2,3%) og SMA200 (-10%). Position +0,5%, stop 74,92 håndhæves. Tidsstop: generobres SMA50 (~81) ikke senest ca. 3. december, sælges.",
+          "confidence": 52
         }
       },
       {
@@ -111,24 +112,25 @@
         "name": "Zebra Technologies",
         "shares": 40,
         "purchase_price": 317.83,
-        "current_price": 320.22,
+        "current_price": 314.97,
         "purchase_date": "2026-11-13",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
-          "thesis": "Kvalitets-industri-IT i langsigtet optrend er oversolgt; forventer mean-reversion tilbage mod SMA50 (~358).",
+          "thesis": "Kvalitets-industri-IT i langsigtet optrend er oversolgt; forventer mean-reversion mod SMA50.",
           "price_target": 358,
           "stop_loss": 285.32,
-          "expected_return_pct": 11.8,
+          "expected_return_pct": 13.7,
           "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg ved stop-brud (285,32 = 2x ATR) eller fundamental guidance-sænkning; tag gevinst nær 358/SMA50."
+          "exit_conditions": "Sælg ved stop-brud (285,32), fundamental guidance-sænkning, eller nyt 20-dages lav kombineret med fortsat BEAR-verdict; tag gevinst nær 358/SMA50."
         },
         "last_review": {
-          "date": "2026-11-24",
-          "reasoning": "HOLD. 6% rebound har bragt positionen i plus (+0,75%), men den kom på tynd volumen og midtbåndet ved 334 er endnu ikke generobret. Stadig 11,8% over SMA200 i langsigtet optrend; stop 285,32 gælder, ingen forøgelse før 334 er taget.",
-          "confidence": 52
+          "date": "2026-11-25",
+          "reasoning": "HOLD under observation. Dagens verdict er BEAR men med lav confidence (4); -17,5% på 20 dage og -11,7% under SMA50, men 5d-momentum er vendt svagt positivt (+0,9%) og kursen er fortsat +9,8% over SMA200. Positionen er kun -0,9%, og 2x-ATR-stoppet på 285,32 (9% væk) definerer risikoen. Ingen fundamentale brud (Q2 rekord). Sælges hvis verdict forbliver BEAR og kursen laver nyt 20-dages lav, eller ved stop-brud.",
+          "confidence": 48
         }
       },
       {
@@ -136,7 +138,7 @@
         "name": "Leidos",
         "shares": 110,
         "purchase_price": 128.25,
-        "current_price": 123.47,
+        "current_price": 128.37,
         "purchase_date": "2026-11-19",
         "investment_plan": {
           "term": "medium",
@@ -144,17 +146,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Fundamentalt stærk statslig IT/forsvars-leverandør med hævet guidance; kortsigtet oversolgt pullback giver rebound mod ~141.",
+          "thesis": "Fundamentalt stærk statslig IT/forsvars-leverandør; oversolgt pullback giver rebound mod ~141.",
           "price_target": 141,
           "stop_loss": 117.19,
-          "expected_return_pct": 14.2,
+          "expected_return_pct": 9.8,
           "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg ved stop-brud (117,19 = 2x ATR), budgetstop/kontrakt-tab eller fortsat brud under nedre Bollinger på høj volumen; tag gevinst nær 141."
+          "exit_conditions": "Sælg ved stop-brud (117,19), budgetstop/kontrakt-tab eller fornyet brud under SMA50 på høj volumen; tag gevinst nær 141."
         },
         "last_review": {
-          "date": "2026-11-24",
-          "reasoning": "HOLD. Fortsat oversolgt på nedre Bollinger (RSI 27,6, stoch 9), men salget tørrer ud på lav volumen, og relief mod SMA50 ~128 er basisscenariet. Position -3,7%; stop 117,19 (5,1% væk) håndhæves, og lukning under ~121 på høj volumen er advarselssignalet. Ingen forøgelse.",
-          "confidence": 48
+          "date": "2026-11-25",
+          "reasoning": "HOLD. Relief-rally mod SMA50 er indtruffet (+4% i går, kurs nu lige over SMA50); verdict løftet til NEUTRAL (5). Fundamentalt stærk (hævet guidance, defense book-to-bill 2,2). Position flad, stop 117,19 håndhæves; næste trin er at generobre SMA200 (~135).",
+          "confidence": 55
         }
       },
       {
@@ -162,7 +164,7 @@
         "name": "Idexx Laboratories",
         "shares": 10,
         "purchase_price": 687.02,
-        "current_price": 687.02,
+        "current_price": 712.08,
         "purchase_date": "2026-11-24",
         "investment_plan": {
           "term": "medium",
@@ -170,17 +172,17 @@
             "technical",
             "fundamental"
           ],
-          "thesis": "Trend-følge i kvalitets-diagnostik: breakout med hævet indtjeningsoutlook forventes at fortsætte mod tidligere 52-ugers top efter rolig konsolidering.",
+          "thesis": "Trend-følge i kvalitets-diagnostik: breakout fortsætter mod tidligere 52-ugers top.",
           "price_target": 760,
           "stop_loss": 639.71,
-          "expected_return_pct": 10.6,
-          "timeframe": "2-4 måneder",
-          "exit_conditions": "Sælg ved stop-brud (639,71 = 2x ATR) eller hvis breakoutet fader med gentagne lukninger under 20-dages midtbånd (~664) på stigende volumen; tag gevinst nær 760."
+          "expected_return_pct": 6.7,
+          "timeframe": "1-3 måneder",
+          "exit_conditions": "Sælg ved stop-brud (639,71) eller gentagne lukninger under 20-dages midtbånd (~664) på stigende volumen; tag gevinst nær 760."
         },
         "last_review": {
-          "date": "2026-11-24",
-          "reasoning": "KØB 10 stk. (~6.870 USD, ~6,7% af porteføljen). Scout-aktie med det reneste optrend-setup i dagens analyse: 20% breakout på en måned, nu rolig konsolidering på lav volumen med neutral RSI (54) over stigende SMA50/SMA200. Størrelsen er bevidst skåret til under en tredjedel af ATR-forslaget (32 stk.), fordi Health Care allerede udgør 34% af porteføljen — køb løfter sektoren til ca. 41%. Trend-følge i sundhed er det mønster, der aktuelt fungerer i porteføljen (VRTX, MCK, ZBH).",
-          "confidence": 62
+          "date": "2026-11-25",
+          "reasoning": "HOLD. Gårsdagens køb er allerede +3,6%; +3,7% i et svagt marked og verdict BULL (7). Stoch 98 tyder på kortsigtet pullback mod ~680-690, men stop 639,71 giver luft. Ingen forøgelse pga. Health Care-koncentration.",
+          "confidence": 72
         }
       },
       {
@@ -188,28 +190,55 @@
         "name": "Pentair",
         "shares": 120,
         "purchase_price": 69.94,
-        "current_price": 69.94,
+        "current_price": 71.27,
         "purchase_date": "2026-11-24",
         "investment_plan": {
           "term": "medium",
           "basis": [
-            "technical"
+            "technical",
+            "fundamental"
           ],
-          "thesis": "Lavvolatil recovery i kvalitets-industri (vandteknologi) presser mod SMA200; et brud over ~72,8 bekræfter trendskifte og åbner for fortsættelse mod 77-78.",
+          "thesis": "Lavvolatil recovery i kvalitets-industri presser mod SMA200; brud over ~72,8 bekræfter trendskifte.",
           "price_target": 77.5,
           "stop_loss": 65.75,
-          "expected_return_pct": 10.8,
+          "expected_return_pct": 8.7,
           "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg ved stop-brud (65,75 = 2x ATR) eller klar afvisning ved SMA200 efterfulgt af lukning under ~66; tag gevinst nær 77,5 — overvej at hæve målet ved bekræftet brud over SMA200."
+          "exit_conditions": "Sælg ved stop-brud (65,75) eller afvisning ved SMA200 efterfulgt af lukning under ~66; tag gevinst nær 77,5."
         },
         "last_review": {
-          "date": "2026-11-24",
-          "reasoning": "KØB 120 stk. (~8.393 USD, ~8,2% af porteføljen). Scout-aktie i stabil, lavvolatil recovery (+26,7% på 20d, RSI kun 50,7) med veldefineret risiko: stop 65,75 er 6% væk. Størrelsen er ca. en tredjedel af ATR-forslaget (366 stk.), fordi dobbeltmodstanden SMA200/øvre bånd ved ~72,8 endnu ikke er brudt, og fordi egne Industrials-handler historisk har været svage (1 af 3 vundet) — risiko ved stop er ~0,5% af porteføljen. Diversificerer væk fra Health Care.",
-          "confidence": 55
+          "date": "2026-11-25",
+          "reasoning": "HOLD. +1,9% siden køb; +14% på 20 dage og nu kun -1,9% under SMA200 (~72,7). Verdict BULL (6). Brud over SMA200 er det centrale signal; stop 65,75 uændret.",
+          "confidence": 65
+        }
+      },
+      {
+        "symbol": "PM",
+        "name": "Philip Morris International",
+        "shares": 70,
+        "purchase_price": 183.95,
+        "current_price": 183.95,
+        "purchase_date": "2026-11-25",
+        "investment_plan": {
+          "term": "short",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Mean-reversion i oversolgt defensiv kvalitetsaktie der holder SMA200; bounce mod SMA50 og videre.",
+          "price_target": 200,
+          "stop_loss": 176,
+          "expected_return_pct": 8.7,
+          "timeframe": "3-8 uger",
+          "exit_conditions": "Sælg ved stop-brud (176 = lukning tydeligt under SMA200); tag gevinst nær 200 / SMA50-zonen, hæv stop til break-even ved +5%."
+        },
+        "last_review": {
+          "date": "2026-11-25",
+          "reasoning": "KØB 70 stk. (~12.877 USD, ~12% af porteføljen). Scout-aktie og ny sektor (Consumer Staples) der mindsker Health Care-koncentrationen (41%). Defensiv lav-beta kvalitet, ekstremt oversolgt (RSI 17, stoch 8,5) mens kursen holder SMA200 (~181) — klassisk mean-reversion-setup i risk-off. Stop 176 under SMA200 giver ~560 USD risiko (0,5% af porteføljen), så størrelsen er under ATR-forslaget (142) og begrænset af kontantbufferen; efter købet ~3.600 USD kontant.",
+          "confidence": 64
         }
       }
     ],
-    "last_updated": "2026-11-24 22:48 UTC"
+    "last_updated": "2026-11-25 22:47 UTC"
   },
   "history": [
     {
@@ -531,6 +560,10 @@
     {
       "date": "2026-11-24",
       "portfolio_value": 102431.1
+    },
+    {
+      "date": "2026-11-25",
+      "portfolio_value": 104488.55
     }
   ],
   "trades": [
@@ -9904,6 +9937,150 @@
         "summary": "KØB 120 stk. (~8.393 USD, ~8,2% af porteføljen). Scout-aktie i stabil, lavvolatil recovery (+26,7% på 20d, RSI kun 50,7) med veldefineret risiko: stop 65,75 er 6% væk. Størrelsen er ca. en tredjedel af ATR-forslaget (366 stk.), fordi dobbel"
       },
       "id": 578,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 563.92,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 75,
+        "summary": "HOLD med hævet stop. Position +18,1% og kun -0,8% fra 52-ugers top efter +4,7% i går; verdict BULL (7), +16% over SMA200. Kortsigtet overkøbt (BB 99%, stoch 99), så ingen forøgelse — Health Care er allerede 41% af porteføljen. Stoppet hæves"
+      },
+      "id": 579,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "HOLD",
+      "symbol": "MCK",
+      "name": "McKesson Corporation",
+      "shares": null,
+      "price": 1078.09,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 68,
+        "summary": "HOLD. Solid optrend (+22,5% over SMA200, +10% over SMA50, MACD +26) uden overkøbte signaler (RSI 52, stoch 45); +2,8% i går og verdict BULL (6). Position flad (-0,4%), stop 1026,28 er 4,8% væk og håndhæves."
+      },
+      "id": 580,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "HOLD",
+      "symbol": "ZBH",
+      "name": "Zimmer Biomet",
+      "shares": null,
+      "price": 108.99,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 66,
+        "summary": "HOLD. +13,5% på 20 dage, +12,5% over SMA50 og +17,5% over SMA200, +2,8% i går på 1,5x volumen; verdict BULL (6). Position +1,6%, stop 99,90 (8% væk) uændret."
+      },
+      "id": 581,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "HOLD",
+      "symbol": "SRE",
+      "name": "Sempra",
+      "shares": null,
+      "price": 78.76,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 52,
+        "summary": "HOLD med kort snor. Verdict NEUTRAL (5); RSI 34, 5d-momentum +1,6% — bounce-scenariet lever, men kursen er stadig under SMA50 (-2,3%) og SMA200 (-10%). Position +0,5%, stop 74,92 håndhæves. Tidsstop: generobres SMA50 (~81) ikke senest ca. 3"
+      },
+      "id": 582,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "HOLD",
+      "symbol": "ZBRA",
+      "name": "Zebra Technologies",
+      "shares": null,
+      "price": 314.97,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 48,
+        "summary": "HOLD under observation. Dagens verdict er BEAR men med lav confidence (4); -17,5% på 20 dage og -11,7% under SMA50, men 5d-momentum er vendt svagt positivt (+0,9%) og kursen er fortsat +9,8% over SMA200. Positionen er kun -0,9%, og 2x-ATR-s"
+      },
+      "id": 583,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "HOLD",
+      "symbol": "LDOS",
+      "name": "Leidos",
+      "shares": null,
+      "price": 128.37,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 55,
+        "summary": "HOLD. Relief-rally mod SMA50 er indtruffet (+4% i går, kurs nu lige over SMA50); verdict løftet til NEUTRAL (5). Fundamentalt stærk (hævet guidance, defense book-to-bill 2,2). Position flad, stop 117,19 håndhæves; næste trin er at generobre"
+      },
+      "id": 584,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "HOLD",
+      "symbol": "IDXX",
+      "name": "Idexx Laboratories",
+      "shares": null,
+      "price": 712.08,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 72,
+        "summary": "HOLD. Gårsdagens køb er allerede +3,6%; +3,7% i et svagt marked og verdict BULL (7). Stoch 98 tyder på kortsigtet pullback mod ~680-690, men stop 639,71 giver luft. Ingen forøgelse pga. Health Care-koncentration."
+      },
+      "id": 585,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "HOLD",
+      "symbol": "PNR",
+      "name": "Pentair",
+      "shares": null,
+      "price": 71.27,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 65,
+        "summary": "HOLD. +1,9% siden køb; +14% på 20 dage og nu kun -1,9% under SMA200 (~72,7). Verdict BULL (6). Brud over SMA200 er det centrale signal; stop 65,75 uændret."
+      },
+      "id": 586,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-25",
+      "action": "BUY",
+      "symbol": "PM",
+      "name": "Philip Morris International",
+      "shares": 70,
+      "price": 183.95,
+      "value": 12876.5,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 64,
+        "summary": "KØB 70 stk. (~12.877 USD, ~12% af porteføljen). Scout-aktie og ny sektor (Consumer Staples) der mindsker Health Care-koncentrationen (41%). Defensiv lav-beta kvalitet, ekstremt oversolgt (RSI 17, stoch 8,5) mens kursen holder SMA200 (~181) "
+      },
+      "id": 587,
       "is_new": true
     }
   ],
@@ -14699,5 +14876,5 @@
     "Information Technology": 14.9,
     "Industrials": 25.6
   },
-  "last_executed_decisions": "2026-11-24"
+  "last_executed_decisions": "2026-11-25"
 }
