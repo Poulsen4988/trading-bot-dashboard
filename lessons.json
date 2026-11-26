@@ -1,22 +1,22 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-26",
   "stats": {
-    "closed_trades": 57,
-    "wins": 29,
+    "closed_trades": 58,
+    "wins": 30,
     "losses": 27,
-    "win_rate_pct": 51.8,
-    "avg_win_pct": 10.05,
+    "win_rate_pct": 52.6,
+    "avg_win_pct": 10.62,
     "avg_loss_pct": -4.81,
-    "avg_pnl_pct": 2.89,
-    "avg_holding_days": 28.1,
-    "total_realized_dkk": 11145.5,
-    "target_hits": 6,
+    "avg_pnl_pct": 3.31,
+    "avg_holding_days": 29.0,
+    "total_realized_dkk": 11401.0,
+    "target_hits": 7,
     "stop_hits": 15,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 27,
       "DELVIST": 23,
-      "HOLDT": 6
+      "HOLDT": 7
     },
     "by_sector": {
       "Consumer Defensive": {
@@ -45,9 +45,9 @@
         "avg_pnl_pct": 8.16
       },
       "Healthcare": {
-        "n": 15,
-        "wins": 10,
-        "avg_pnl_pct": 6.05
+        "n": 16,
+        "wins": 11,
+        "avg_pnl_pct": 7.36
       },
       "Basic Materials": {
         "n": 2,
@@ -1429,6 +1429,30 @@
       "stop_hit": false,
       "thesis_verdict": "HOLDT IKKE",
       "lesson": "NOVO-B.CO: -1.2% på 59 dage — antagelse HOLDT IKKE. Forventet +16.0%. Plan-horisont: 3-6 måneder."
+    },
+    {
+      "trade_key": "id:1179",
+      "date": "2026-11-26",
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu",
+      "sector": "Healthcare",
+      "buy_date": "2026-09-08",
+      "holding_days": 79,
+      "shares": 14,
+      "buy_price": 67.6,
+      "sell_price": 85.85,
+      "realized_pnl_dkk": 255.5,
+      "realized_pnl_pct": 27.0,
+      "expected_return_pct": 15.4,
+      "price_target": 78.0,
+      "stop_loss": 61.94,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Kontrarisk value-indgang i en kvalitets-medicoproducent efter et stærkt Q3-regnskab blev overskygget af FX/told-bekymringer og teknisk salgspres — deep-tier oversolgt bounce-setup med solid fundamental understøttelse.",
+      "target_hit": true,
+      "stop_hit": false,
+      "thesis_verdict": "HOLDT",
+      "lesson": "AMBU-B.CO: +27.0% på 79 dage — antagelse HOLDT. Forventet +15.4%. Plan-horisont: 3-6 måneder. Kursmål nået."
     }
   ]
 }
