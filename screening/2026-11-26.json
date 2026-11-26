@@ -1,0 +1,311 @@
+{
+  "date": "2026-11-26",
+  "screened_at": "2026-11-26T07:16:33Z",
+  "price_data_date": "2026-11-25",
+  "universe_size": 25,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 92.0,
+      "price": 178.0,
+      "pct_1d": -15.64,
+      "pct_5d": -14.01,
+      "pct_20d": -9.37,
+      "volume_ratio": 4.05,
+      "rsi_proxy": 27.1,
+      "stoch_proxy": 6.7,
+      "bb_position": -40.0,
+      "sma50_vs_price": -9.27,
+      "sma200_vs_price": -10.35,
+      "macd_line": 0.7856,
+      "atr": 7.7429,
+      "momentum_divergence": -4.64,
+      "pe_forward": 11.981926,
+      "pct_from_52w_high": -24.32,
+      "pct_from_52w_low": 7.25,
+      "sector": "Industrials",
+      "earnings_growth": -0.333,
+      "revenue_growth": 0.096,
+      "div_yield": 1.97,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME SPIKE: 4.05x avg — extreme institutional activity",
+        "NEAR 52W LOW: +7.2% above annual support — critical level",
+        "MOMENTUM SELLOFF: -14.0% in 5 days — sharp directional move",
+        "STOCHASTIC OVERSOLD: Stoch proxy 7 — price near annual support floor (RSI proxy 27)",
+        "UNDERVALUED: Fwd PE 12.0x vs sector norm 18x — 33% discount"
+      ],
+      "screening_rationale": "ROCK-B.CO: volume running at 4.0x the daily average signals institutional-scale activity; a 14.0% five-day selloff (20d: -9.4%) reveals strong directional pressure; price sits just +7.2% above the 52-week low (165.96) — a key decision zone; forward PE 12.0x represents a 33% discount to Industrials sector norm (18x); -33% earnings decline warrants caution but may create a contrarian entry; RSI proxy (27) and stochastic (7) in oversold territory support a bounce thesis; price is -9.3% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 80.0,
+      "price": 163.0,
+      "pct_1d": -3.92,
+      "pct_5d": -10.41,
+      "pct_20d": -15.39,
+      "volume_ratio": 1.08,
+      "rsi_proxy": 20.4,
+      "stoch_proxy": 0.0,
+      "bb_position": -5.0,
+      "sma50_vs_price": -15.34,
+      "sma200_vs_price": -11.83,
+      "macd_line": -6.27,
+      "atr": 7.6,
+      "momentum_divergence": 4.98,
+      "pe_forward": 13.294204,
+      "pct_from_52w_high": -25.98,
+      "pct_from_52w_low": 8.02,
+      "sector": "Industrials",
+      "earnings_growth": 0.1,
+      "revenue_growth": 0.063,
+      "div_yield": 0.44,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.08x avg",
+        "NEAR 52W LOW: +8.0% above annual support — critical level",
+        "MOMENTUM SELLOFF: -10.4% in 5 days — sharp directional move",
+        "DEEPLY OVERSOLD: RSI proxy 20, Stoch proxy 0 — bounce candidate",
+        "UNDERVALUED: Fwd PE 13.3x vs sector norm 18x — 26% discount",
+        "EARNINGS GROWTH: +10% YoY"
+      ],
+      "screening_rationale": "VWS.CO: a 10.4% five-day selloff (20d: -15.4%) reveals strong directional pressure; price sits just +8.0% above the 52-week low (150.9) — a key decision zone; forward PE 13.3x represents a 26% discount to Industrials sector norm (18x); RSI proxy (20) and stochastic (0) in oversold territory support a bounce thesis; price is -15.3% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 53.0,
+      "price": 18995.0,
+      "pct_1d": 0.74,
+      "pct_5d": -6.2,
+      "pct_20d": -19.44,
+      "volume_ratio": 1.41,
+      "rsi_proxy": 31.6,
+      "stoch_proxy": 18.6,
+      "bb_position": 18.1,
+      "sma50_vs_price": -15.72,
+      "sma200_vs_price": 3.44,
+      "macd_line": -928.6924,
+      "atr": 683.2143,
+      "momentum_divergence": 13.24,
+      "pe_forward": 14.265738,
+      "pct_from_52w_high": -25.16,
+      "pct_from_52w_low": 56.66,
+      "sector": "Industrials",
+      "earnings_growth": 1.986,
+      "revenue_growth": 0.274,
+      "div_yield": 2.55,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.41x avg",
+        "MOMENTUM: -6.2% in 5 days — continued SELLING pressure",
+        "MOMENTUM DIVERGENCE: 5d/20d gap +13.2pp — emerging trend shift",
+        "OVERSOLD: RSI proxy 32, Stoch proxy 19 — watch for reversal",
+        "MODEST DISCOUNT: Fwd PE 14.3x vs sector norm 18x",
+        "STRONG EARNINGS GROWTH: +199% YoY — fundamental tailwind"
+      ],
+      "screening_rationale": "MAERSK-B.CO: a 6.2% five-day selloff (20d: -19.4%) reveals strong directional pressure; forward PE 14.3x represents a 21% discount to Industrials sector norm (18x); +199% earnings growth underpins the fundamental case; RSI proxy (32) and stochastic (19) in oversold territory support a bounce thesis; price is -15.7% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 50.2,
+      "price": 37.35,
+      "pct_1d": 0.13,
+      "pct_5d": -5.8,
+      "pct_20d": -14.63,
+      "volume_ratio": 0.65,
+      "rsi_proxy": 27.6,
+      "stoch_proxy": 2.6,
+      "bb_position": 6.2,
+      "sma50_vs_price": -4.18,
+      "sma200_vs_price": -7.38,
+      "macd_line": -0.5636,
+      "atr": 1.0893,
+      "momentum_divergence": 8.83,
+      "pe_forward": 9.626288,
+      "pct_from_52w_high": -27.9,
+      "pct_from_52w_low": 13.01,
+      "sector": "Technology",
+      "earnings_growth": null,
+      "revenue_growth": -0.067,
+      "div_yield": 0.0,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM: -5.8% in 5 days — continued SELLING pressure",
+        "MOMENTUM DIVERGENCE: 5d/20d gap +8.8pp — emerging trend shift",
+        "STOCHASTIC OVERSOLD: Stoch proxy 3 — price near annual support floor (RSI proxy 28)",
+        "DEEP VALUE: Fwd PE 9.6x vs sector norm 22x — 56% discount"
+      ],
+      "screening_rationale": "NNIT.CO: a 5.8% five-day selloff (20d: -14.6%) reveals strong directional pressure; forward PE 9.6x represents a 56% discount to Technology sector norm (22x); RSI proxy (28) and stochastic (3) in oversold territory support a bounce thesis; price is -4.2% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 48.2,
+      "price": 451.8,
+      "pct_1d": -1.35,
+      "pct_5d": -6.85,
+      "pct_20d": -24.32,
+      "volume_ratio": 0.65,
+      "rsi_proxy": 29.5,
+      "stoch_proxy": 0.1,
+      "bb_position": 5.5,
+      "sma50_vs_price": -19.44,
+      "sma200_vs_price": -13.94,
+      "macd_line": -29.4056,
+      "atr": 24.6143,
+      "momentum_divergence": 17.47,
+      "pe_forward": 13.12454,
+      "pct_from_52w_high": -27.07,
+      "pct_from_52w_low": 13.35,
+      "sector": "Industrials",
+      "earnings_growth": 0.043,
+      "revenue_growth": 0.1,
+      "div_yield": 0.87,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM: -6.8% in 5 days — continued SELLING pressure",
+        "MOMENTUM DIVERGENCE: 5d/20d gap +17.5pp — strong trend change signal",
+        "STOCHASTIC OVERSOLD: Stoch proxy 0 — price near annual support floor (RSI proxy 30)",
+        "UNDERVALUED: Fwd PE 13.1x vs sector norm 18x — 27% discount"
+      ],
+      "screening_rationale": "FLS.CO: a 6.8% five-day selloff (20d: -24.3%) reveals strong directional pressure; forward PE 13.1x represents a 27% discount to Industrials sector norm (18x); RSI proxy (30) and stochastic (0) in oversold territory support a bounce thesis; price is -19.4% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 92.0
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 80.0
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 53.0
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 50.2
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 48.2
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 48.0
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 47.0
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 44.0
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 43.5
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 38.8
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 38.8
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 38.0
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 36.4
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 36.0
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 34.2
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 34.1
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 34.0
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 34.0
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 33.0
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 33.0
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 32.7
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 30.0
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg B",
+      "score": 28.3
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 22.3
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 16.0
+    }
+  ]
+}
