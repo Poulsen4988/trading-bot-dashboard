@@ -1,0 +1,244 @@
+{
+  "date": "2026-11-26",
+  "market_summary": "C25 er splittet: defensive kvalitetsnavne (Tryg, ISS, Coloplast, Carlsberg) holder optrenden, mens banker og cykliske industrials (Mærsk, FLS, Vestas, Rockwool) er under pres. Vi respekterer stop i Ambu, holder resten med uændrede stops og tilføjer Pandora for momentum og diversificering ind i Consumer Cyclical.",
+  "decisions": [
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu",
+      "action": "SELL",
+      "shares": 14,
+      "price": 85.85,
+      "confidence": 65,
+      "reasoning": "Kursen 85,85 har lukket under den planlagte trailing stop på 86 (momentum -3,8% på 5 dage, RSI 37). Planen respekteres og gevinsten på ca. +27% realiseres; positionen er kun 1% af porteføljen.",
+      "bull": [
+        "Indtjening +117% YoY og nyt tilbagekøb",
+        "Stadig over SMA50/SMA200"
+      ],
+      "bear": [
+        "Stop-loss på 86 brudt",
+        "Fwd PE 22x og aftagende momentum"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Gevinst sikres ved brud på trailing stop.",
+        "price_target": 97,
+        "stop_loss": 86,
+        "expected_return_pct": 0,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Positionen lukkes i dag ved stopbrud."
+      }
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 309.6,
+      "confidence": 62,
+      "reasoning": "Optrenden er intakt (over SMA50/SMA200, MACD positiv) med fwd PE 13,4x og løbende tilbagekøb. Kursen ligger lige over stoppet, så positionen er på prøve.",
+      "bull": [
+        "Fwd PE 13,4x og indtjening +27% YoY",
+        "Aktietilbagekøb og optrend nær 52-ugers top"
+      ],
+      "bear": [
+        "Kurs kun 0,5% over stop; ingen katalysator før årsrapport i februar"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Billig quality-compounder med marginudvidelse; optrend nær 52-ugers top beskyttes med trailing stop.",
+        "price_target": 345,
+        "stop_loss": 308,
+        "expected_return_pct": 11,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 308, nær 345 eller ved tab af store kontrakter."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 507.0,
+      "confidence": 64,
+      "reasoning": "Genopretning efter årsregnskab og nye 2030-mål med teknisk optrend og historisk lav værdiansættelse (fwd PE 18,9x). Thesis intakt, +20% i gevinst beskyttet af stop på 488.",
+      "bull": [
+        "Indtjening +36% YoY og FY26/27-guidance",
+        "+9% over SMA50 og MACD positiv"
+      ],
+      "bear": [
+        "Reviderede, lavere 2030-ambitioner kan begrænse re-rating"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Stabil defensiv compounder med re-rating efter 2030-mål; fokus på at beskytte gevinst.",
+        "price_target": 545,
+        "stop_loss": 488,
+        "expected_return_pct": 7.5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 488, nær 545 eller ved negativ revision."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1009.0,
+      "confidence": 58,
+      "reasoning": "Stabil optrend med fwd PE 14,3x og defensiv profil. Kremlins beslaglæggelser af vestlige aktiver er en påmindelse om Rusland-risikoen, men Carlsberg har allerede afskrevet Baltika; stoppet på 985 holdes stramt.",
+      "bull": [
+        "Over SMA50 og SMA200, MACD positiv",
+        "Fwd PE 14,3x og indtjening +13% YoY"
+      ],
+      "bear": [
+        "Russisk beslaglæggelses-retorik",
+        "Ingen katalysator før februar; størst vægt i porteføljen (17,6%)"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Momentum og rimelig værdiansættelse i defensiv aktie; positionen er på prøve lige over stoppet.",
+        "price_target": 1080,
+        "stop_loss": 985,
+        "expected_return_pct": 7,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 985, nær 1080, ved momentumbrud eller negative Rusland-/volumennyheder."
+      }
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 249.0,
+      "confidence": 60,
+      "reasoning": "Stærk Travel Health og tilbagekøb på op til 750 mio. DKK understøtter optrenden (+23,6% over SMA200). Thesis intakt; afventer brud over 257.",
+      "bull": [
+        "Tilbagekøb op til DKK 750 mio.",
+        "Travel Health-momentum bekræftet"
+      ],
+      "bear": [
+        "Indtjening -61% YoY; CFO fratræder i 2027",
+        "BB-position 75 — tæt på øvre bånd"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Pullback-køb i optrend efter stærkt Q3 og stort buyback; brud over 257 giver retur til/over 52-ugers high.",
+        "price_target": 262,
+        "stop_loss": 241,
+        "expected_return_pct": 5,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 241, nær 262 eller ved negativ 2027-guidance."
+      }
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 166.8,
+      "confidence": 62,
+      "reasoning": "Defensiv forsikring ved 52-ugers høj med lav volatilitet og højt udbytte. Thesis intakt; venter på udbrud over ca. 168,5.",
+      "bull": [
+        "Ved 52-ugers høj over SMA50/SMA200",
+        "Lav volatilitet og højt udbytte"
+      ],
+      "bear": [
+        "Tæt på øvre Bollinger-bånd; begrænset kortsigtet upside"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Defensiv kvalitetsforsikring i stabil optrend med højt udbytte; brud over 52-ugers top (ca. 168,5) giver fortsættelse mod 178.",
+        "price_target": 178,
+        "stop_loss": 161.4,
+        "expected_return_pct": 6.7,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 161,4, nær 178 eller ved storskade/negativ revision."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 353.1,
+      "confidence": 52,
+      "reasoning": "Billig (fwd PE 10,6x) med ugentlige tilbagekøb, men bankerne er under bredt pres og aktien er under SMA50. Holdes med uændret stop på 350,7; et brud udløser salg.",
+      "bull": [
+        "Fwd PE 10,6x og løbende tilbagekøb",
+        "Guidance 24-25 mia. og over SMA200"
+      ],
+      "bear": [
+        "Under SMA50, sektorsvaghed i danske banker",
+        "Rentefald presser NII i 2027"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Billig storbank med indtjeningsvækst og højt udbytte genoptager optrenden; retur til og brud over 52-ugers top (ca. 382) giver +8-9%.",
+        "price_target": 395,
+        "stop_loss": 350.7,
+        "expected_return_pct": 11.9,
+        "timeframe": "3-6 måneder",
+        "exit_conditions": "Sælg under 350,7, nær 395, eller ved markant stigende nedskrivninger/negativ guidance."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "BUY",
+      "shares": 17,
+      "price": 922.4,
+      "confidence": 62,
+      "reasoning": "Stærk optrend før julehandlen (+11,5% på 20 dage, +34% over SMA200, MACD positiv) og ny sektoreksponering: Consumer Cyclical er 0% i porteføljen og har historisk vores bedste track record (4/4 vindere). Størrelse begrænses af budget; stop ved 2x ATR.",
+      "bull": [
+        "Optrend over SMA50 og +34% over SMA200, MACD positiv",
+        "Julehandel som sæsonkatalysator",
+        "Diversificering væk fra Healthcare/Financials"
+      ],
+      "bear": [
+        "Fwd PE 19,8x og nær 52-ugers høj",
+        "Kun scan-analyse uden nyhedsdækning; forbrugsfølsom"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "momentum"
+        ],
+        "thesis": "Momentum-fortsættelse i kvalitets-smykkeselskab ind i julehandlen og Q4-rapporten; diversificerer porteføljen ind i Consumer Cyclical.",
+        "price_target": 1010,
+        "stop_loss": 870,
+        "expected_return_pct": 9.5,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 870, nær 1010, ved svag julehandels-update eller momentumbrud under SMA50."
+      }
+    }
+  ]
+}
