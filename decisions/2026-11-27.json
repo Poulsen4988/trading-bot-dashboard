@@ -1,0 +1,216 @@
+{
+  "date": "2026-11-27",
+  "market_summary": "C25 er blandet: defensive navne (forsikring, medtech, Pandora) holder optrenden, mens industri og shipping er under pres. ISS-stoppet er udløst og positionen lukkes; ingen nye køb i dag, da de eneste BULL-kandidater uden position er FLS (faldende kniv, stoppet ud 18/11) og Ambu (solgt ved kursmål i går).",
+  "decisions": [
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "action": "SELL",
+      "shares": 53,
+      "price": 298.6,
+      "confidence": 70,
+      "reasoning": "Stop-loss på 308 er udløst (kurs 298,6 efter -4,7% på 5 dage og brud ned på SMA50). Planens exit-regel følges disciplineret, og gevinsten på ca. +2,8% hjemtages; teknisk brud kan sende kursen mod 280-285.",
+      "bull": [
+        "Fwd P/E 12,9x og +27% indtjeningsvækst",
+        "Tilbagekøb og stabil Q3-update"
+      ],
+      "bear": [
+        "Stop-loss 308 brudt, test/brud af SMA50",
+        "-3,6% på én dag; mulig glidning mod 280-285"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "risk_management"
+        ],
+        "thesis": "Trailing stop udløst — positionen lukkes for at beskytte gevinst; kan genkøbes hvis SMA50 genvindes.",
+        "price_target": 345,
+        "stop_loss": 308,
+        "expected_return_pct": 0,
+        "timeframe": "Lukkes nu",
+        "exit_conditions": "Sælges i dag pga. udløst stop-loss."
+      }
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 512.8,
+      "confidence": 65,
+      "reasoning": "Optrend efter årsrapport og 2030-mål er intakt (+9,8% over SMA50, positiv MACD); +21,9% gevinst beskyttes med hævet stop.",
+      "bull": [
+        "Earnings +36%, fwd P/E 19x",
+        "Kurs over SMA50/SMA200, positiv MACD"
+      ],
+      "bear": [
+        "Stoch 86 — kortsigtet strakt",
+        "Prispres i sundhedssystemer"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Stabil defensiv compounder med re-rating efter 2030-mål; fokus på at beskytte gevinst.",
+        "price_target": 545,
+        "stop_loss": 490,
+        "expected_return_pct": 6,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 490, nær 545 eller ved negativ revision."
+      }
+    },
+    {
+      "symbol": "CARL-B.CO",
+      "name": "Carlsberg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 1009.0,
+      "confidence": 50,
+      "reasoning": "Seneste kendte kurs 1009 er over stoppet på 985, og der er ingen nye negative nyheder; dagens datahul (manglende prisdata) er ikke grund til at sælge. Positionen holdes med uændret stop.",
+      "bull": [
+        "Fwd P/E 14,3x og 2,9% udbytte",
+        "Earnings +13% YoY"
+      ],
+      "bear": [
+        "Manglende pris-/tekniske data i dag",
+        "Lav topline-vækst og Rusland-risiko i sektoren"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "fundamental",
+          "technical"
+        ],
+        "thesis": "Momentum og rimelig værdiansættelse i defensiv aktie; positionen er på prøve lige over stoppet.",
+        "price_target": 1080,
+        "stop_loss": 985,
+        "expected_return_pct": 7,
+        "timeframe": "2-4 måneder",
+        "exit_conditions": "Sælg under 985, nær 1080, ved momentumbrud eller negative Rusland-/volumennyheder."
+      }
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 251.8,
+      "confidence": 65,
+      "reasoning": "Stabil optrend støttet af stærk Travel Health-vækst og tilbagekøb på op til 750 mio.; kurs over stop og tæt på breakout-niveau 257.",
+      "bull": [
+        "Tilbagekøb op til DKK 750 mio.",
+        "Over SMA50/SMA200, positiv MACD"
+      ],
+      "bear": [
+        "BB-position 87 — tæt på øvre bånd",
+        "Earnings -61% YoY, CFO fratræder 2027"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Pullback-køb i optrend efter stærkt Q3 og stort buyback; brud over 257 giver retur til/over 52-ugers high.",
+        "price_target": 262,
+        "stop_loss": 241,
+        "expected_return_pct": 4,
+        "timeframe": "1-3 måneder",
+        "exit_conditions": "Sælg under 241, nær 262 eller ved negativ 2027-guidance."
+      }
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 167.5,
+      "confidence": 65,
+      "reasoning": "Lavvolatil defensiv beholdning i jævn optrend tæt på 52-ugers high; thesis intakt.",
+      "bull": [
+        "Over SMA50/SMA200, positiv MACD",
+        "Lav volatilitet og stabilt udbytte"
+      ],
+      "bear": [
+        "RSI 62/BB 82 — tæt på overkøbt",
+        "Lav vækst, fuldt prissat"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Defensiv kvalitetsforsikring i stabil optrend med højt udbytte; brud over 52-ugers top (ca. 168,5) giver fortsættelse mod 178.",
+        "price_target": 178,
+        "stop_loss": 161.4,
+        "expected_return_pct": 6,
+        "timeframe": "2-4 måneder",
+        "exit_conditions": "Sælg under 161,4, nær 178 eller ved storskade/negativ revision."
+      }
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 361.2,
+      "confidence": 58,
+      "reasoning": "Konsoliderer sidelæns på SMA50 lige efter køb; billig værdiansættelse og ugentlige tilbagekøb giver støtte, stop er ikke ramt.",
+      "bull": [
+        "Fwd P/E 10,9x, stærkt Q1-Q3",
+        "Løbende tilbagekøb"
+      ],
+      "bear": [
+        "Flad momentum, ingen kortsigtet katalysator",
+        "Faldende renter kan presse NII i 2027"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "fundamental",
+          "technical"
+        ],
+        "thesis": "Billig storbank med indtjeningsvækst og højt udbytte genoptager optrenden; retur til og brud over 52-ugers top (ca. 382) giver +8-9%.",
+        "price_target": 395,
+        "stop_loss": 350.7,
+        "expected_return_pct": 9,
+        "timeframe": "2-4 måneder",
+        "exit_conditions": "Sælg under 350,7, nær 395, eller ved markant stigende nedskrivninger/negativ guidance."
+      }
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "action": "HOLD",
+      "shares": 0,
+      "price": 935.4,
+      "confidence": 63,
+      "reasoning": "Købt i går; stærkt momentum efter Q3 og guidance mod øvre ende går ind i julesæsonen. Thesis uændret.",
+      "bull": [
+        "6% organisk vækst, guidance mod øvre ende",
+        "+9% over SMA50, positiv MACD"
+      ],
+      "bear": [
+        "Fwd P/E 20x efter stort rally",
+        "Råvarepres på bruttomargin"
+      ],
+      "investment_plan": {
+        "term": "medium",
+        "basis": [
+          "technical",
+          "fundamental"
+        ],
+        "thesis": "Momentum-fortsættelse i kvalitets-smykkeselskab ind i julehandlen og Q4-rapporten; diversificerer porteføljen ind i Consumer Cyclical.",
+        "price_target": 1010,
+        "stop_loss": 870,
+        "expected_return_pct": 8,
+        "timeframe": "2-3 måneder",
+        "exit_conditions": "Sælg under 870, nær 1010, ved svag julehandels-update eller momentumbrud under SMA50."
+      }
+    }
+  ]
+}
