@@ -1,21 +1,21 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "stats": {
-    "closed_trades": 58,
-    "wins": 30,
+    "closed_trades": 59,
+    "wins": 31,
     "losses": 27,
-    "win_rate_pct": 52.6,
-    "avg_win_pct": 10.62,
+    "win_rate_pct": 53.4,
+    "avg_win_pct": 10.37,
     "avg_loss_pct": -4.81,
-    "avg_pnl_pct": 3.31,
-    "avg_holding_days": 29.0,
-    "total_realized_dkk": 11401.0,
+    "avg_pnl_pct": 3.3,
+    "avg_holding_days": 31.1,
+    "total_realized_dkk": 11831.0,
     "target_hits": 7,
     "stop_hits": 15,
     "thesis_verdicts": {
       "UKENDT": 1,
       "HOLDT IKKE": 27,
-      "DELVIST": 23,
+      "DELVIST": 24,
       "HOLDT": 7
     },
     "by_sector": {
@@ -25,9 +25,9 @@
         "avg_pnl_pct": 0.87
       },
       "Industrials": {
-        "n": 11,
-        "wins": 5,
-        "avg_pnl_pct": -0.06
+        "n": 12,
+        "wins": 6,
+        "avg_pnl_pct": 0.18
       },
       "Utilities": {
         "n": 4,
@@ -1453,6 +1453,30 @@
       "stop_hit": false,
       "thesis_verdict": "HOLDT",
       "lesson": "AMBU-B.CO: +27.0% på 79 dage — antagelse HOLDT. Forventet +15.4%. Plan-horisont: 3-6 måneder. Kursmål nået."
+    },
+    {
+      "trade_key": "id:1187",
+      "date": "2026-11-27",
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "sector": "Industrials",
+      "buy_date": "2026-10-23",
+      "holding_days": 147,
+      "shares": 53,
+      "buy_price": 290.4868,
+      "sell_price": 298.6,
+      "realized_pnl_dkk": 430.0,
+      "realized_pnl_pct": 2.79,
+      "expected_return_pct": 9.4,
+      "price_target": 320.0,
+      "stop_loss": 265.0,
+      "timeframe": "3-6 måneder",
+      "term": "medium",
+      "thesis": "Intakt optrend, billig, nye mid-term mål; RSI 55 uden overkøb. Tilkøb til eksisterende position.",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "DELVIST",
+      "lesson": "ISS.CO: +2.8% på 147 dage — antagelse DELVIST. Forventet +9.4%. Plan-horisont: 3-6 måneder."
     }
   ]
 }
