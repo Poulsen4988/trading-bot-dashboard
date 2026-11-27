@@ -1,0 +1,394 @@
+{
+ "date": "2026-11-27",
+ "stocks": {
+  "DELL": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 46 og stoch 27 trods -40% på 20d: momentum er nulstillet uden ekstrem oversold, og volumen 3,3x antyder kapitulation/institutionel akkumulering",
+    "Kurs ~15% under SMA200 (350) og 50% under 52w-high — +10% til ~327 er kun tilbage mod BB-midten (348), et realistisk mean-reversion-mål",
+    "Inference-server-sortimentet (45W-produkter) giver AI-eksponering ud over træningsklynger"
+   ],
+   "bear": [
+    "SMA50 (456) falder kraftigt og MACD -44 er dybt negativ — trenden er stadig klart nedadgående",
+    "ATR 38,5 (~13% af kurs) betyder meget store daglige udsving; bredt AI-hardware-selloff kan trække videre ned mod BB-lower 253"
+   ],
+   "summary": "Dell er halveret fra toppen i et bredt AI-hardware-selloff (-40% på 20 dage). Den høje volumen (3,3x) og en RSI på 46 tyder på at det værste tvangssalg kan være overstået, og et rebound mod BB-midten (~348) vil give +15%. Men trenden er stadig nedadgående (pris under både SMA50 og SMA200, MACD stærkt negativ), og nyhedsstrømmen i datasættet er forældet (sept.), så der mangler en klar katalysator. Interessant mean-reversion-kandidat, men kræver stabilisering før indgang.",
+   "key_risk": "Fortsat AI-capex-nedtur og margin-pres fra stigende hukommelsespriser kan sende aktien mod 250.",
+   "screener_score": 69.0
+  },
+  "SNDK": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "RSI 27,9 og stoch 1,4 — ekstremt oversolgt efter -40% på 20d og -19% på 5d; teknisk rebound er sandsynligt",
+    "Fortsat +300% fra 52w-low; Wedbush-langsigtede mål og stærk guidance i august viser underliggende indtjeningskraft i NAND/enterprise-SSD",
+    "+10% til ~104 er stadig under BB-midten (127)"
+   ],
+   "bear": [
+    "Pris 41-45% under både SMA50 og SMA200 — momentum er brudt og hukommelsescyklussen kan være vendt",
+    "ATR 12,9 (~14% af kurs) — ekstrem volatilitet; faldende kniv uden bekræftet bund"
+   ],
+   "summary": "Sandisk er kollapset 68% fra toppen i hukommelsessektorens nedtur. Teknisk er aktien ekstremt oversolgt (stoch 1,4, RSI 28), hvilket gør et kortsigtet relief-rally sandsynligt, men det sker med meget høj volatilitet og ingen bekræftet vending. Nyhederne er fra august og afspejler ikke den aktuelle cyklus-frygt. Kun egnet til en lille, spekulativ position med stramt ATR-stop.",
+   "key_risk": "Hukommelsescyklussen vender ned (NAND-prisfald, kinesisk konkurrence) og aktien fortsætter mod 52w-low-territorium.",
+   "screener_score": 69.0
+  },
+  "ORCL": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BEAR",
+   "confidence": 3,
+   "bull": [
+    "BB-position 8,7 og stoch 14 — tæt på nedre bånd (100,75) som kan give teknisk support",
+    "Kun 4,6% over 52w-low; meget dårlige nyheder er prissat efter -58% fra toppen"
+   ],
+   "bear": [
+    "Force majeure på Project Jupiter-datacentret og Blue Owl-forsinkelse rejser alvorlige spørgsmål om AI-finansiering og gearing",
+    "-5,1% i dag og under SMA200 med 31% — vedvarende distribution, 52w-low er tæt på at blive brudt",
+    "Høj gæld til AI-capex gør aktien sårbar over for stigende renter"
+   ],
+   "summary": "Oracle er faldet 58% fra toppen og handler nær 52w-low. Problemerne er fundamentale: force majeure på et stort AI-datacenter og finansieringsproblemer hos partnere. Det rammer kernen af bull-casen (OCI-vækst). Trods teknisk oversolgte niveauer ses ingen tegn på bund — dagens -5% viser fortsat salgspres. +10% (~114) kræver troværdig opdatering om datacenter-tidsplan og finansiering.",
+   "key_risk": "Brud på 52w-low og nedgradering af kreditrating pga. AI-capex-gæld.",
+   "screener_score": 66.6
+  },
+  "COIN": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "RSI 22,6 — dybt oversolgt efter -36% på 20d; historisk giver sådanne niveauer skarpe relief-rallies i COIN",
+    "+10% (~114) er kun halvvejs til BB-midten (127); crypto-sentiment kan vende hurtigt",
+    "Dagens +1,3% kan være første tegn på stabilisering"
+   ],
+   "bear": [
+    "Kryptolovgivningen faldt i Senatet — regulatorisk usikkerhed består",
+    "Kun 9% over 52w-low og 40% under SMA200 — klar bear-trend afhængig af kryptopriser"
+   ],
+   "summary": "Coinbase følger kryptomarkedets nedtur og den mislykkede lovgivning. Dybt oversolgt teknisk (RSI 22,6) gør en teknisk rebound mulig, men aktien er i en tydelig nedtrend uden fundamental katalysator. Høj beta til bitcoin. Kun spekulativt.",
+   "key_risk": "Fortsat fald i kryptopriser og handelsvolumen presser omsætning; brud under 52w-low (~95).",
+   "screener_score": 65.0
+  },
+  "MU": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "RSI 45 på trods af -39% på 20d — momentum nulstillet; BB-position 10,7 nær nedre bånd (563)",
+    "Stadig +170% fra 52w-low: HBM/AI-efterspørgsel har bygget en markant højere indtjeningsbase",
+    "+10% til ~660 er realistisk ved sektor-relief"
+   ],
+   "bear": [
+    "-4,5% i dag, -15% på 5d — salgspresset accelererer; under SMA50 og SMA200",
+    "Kinesisk hukommelseskonkurrence (Apple tester kinesiske chips) og cyklisk prisfald",
+    "ATR 71 (~12%) — ekstrem volatilitet"
+   ],
+   "summary": "Micron er halveret fra toppen i et hukommelses-selloff. Accelererende fald på 5 dage og brud under SMA200 tyder på at markedet prissætter en cyklustop. Langsigtet AI-HBM-case er intakt, men kortsigtet er der ingen bund. Afvent stabilisering.",
+   "key_risk": "Hukommelsespriserne topper og kinesisk konkurrence presser marginer — aktien kan falde mod 500.",
+   "screener_score": 65.0
+  },
+  "CEG": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "BB-position 7,5 og stoch 8,8 — tæt på nedre bånd (231) som kan give support",
+    "Langsigtet atomkraft-efterspørgsel fra datacentre med PPA'er giver strukturel bull-case",
+    "+10% (~259) svarer præcist til BB-midten"
+   ],
+   "bear": [
+    "-3,9% i dag og -10% på 5d; kun 3% over 52w-low — risiko for brud",
+    "Texas datacenter-moratorie og AI-capex-tvivl rammer power-sektoren"
+   ],
+   "summary": "Constellation handler tæt på 52w-low efter at AI-power-narrativet er kølnet. Teknisk er aktien nær nedre BB-bånd, men momentum er negativt. Fundamentalt solid (atomflåde, langsigtede kontrakter), men sentimentet er dårligt. Rebound mod 259 muligt hvis 52w-low holder.",
+   "key_risk": "Brud under 52w-low (~228) og fortsat afsmitning fra AI-capex-skepsis.",
+   "screener_score": 64.0
+  },
+  "INTU": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 15,6, stoch 3,5, BB-position 2,3 — ekstremt oversolgt; statistisk høj sandsynlighed for relief",
+    "Kvalitetsvirksomhed (TurboTax, QuickBooks) med recurring revenue; -60% fra top er markant komprimeret værdiansættelse",
+    "+10% til ~299 stadig under SMA50 (313)"
+   ],
+   "bear": [
+    "-13% på 5d — fortsat aggressivt salg; frygt for AI-disruption af software-modeller",
+    "Under SMA200 med 21% — strukturel nedtrend"
+   ],
+   "summary": "Intuit er ekstremt oversolgt teknisk, og kombinationen med kvalitetsforretning gør den til en af de mere interessante mean-reversion-kandidater. Men selloffet er drevet af AI-disruptionsfrygt for software, som ikke forsvinder hurtigt. Mulig lille position efter første tegn på bund.",
+   "key_risk": "AI-agenter underminerer betalingsvilligheden for skat/bogførings-software; multipel-kompression fortsætter.",
+   "screener_score": 64.0
+  },
+  "TPL": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "+4% i dag på 2,5x volumen — mulig bundformation/akkumulering",
+    "Højmargin royalty-/vandforretning i Permian uden capex; nettokontant",
+    "+10% til ~288 = BB-midten"
+   ],
+   "bear": [
+    "Texas datacenter-moratorie truer vækst-narrativet om land/vand til datacentre",
+    "Under SMA200 med 34% og kun 6,6% over 52w-low"
+   ],
+   "summary": "TPL har haft en hård nedtur (-52% fra top), men dagens stærke stigning på høj volumen kan indikere vending. Forretningsmodellen er robust, men aktien handler på et datacenter-premium der er under pres. Interessant watch — kræver bekræftelse over SMA50-trend.",
+   "key_risk": "Lavere olie-/gasaktivitet i Permian og udeblivende datacenter-indtægter.",
+   "screener_score": 64.0
+  },
+  "ALB": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "RSI 20 — oversolgt; lithiumpriser er i forvejen depressive så meget er prissat",
+    "Stigende indtjeningsestimater (juli) og kapitaldisciplin",
+    "Kun 6,8% over 52w-low — begrænset yderligere downside hvis bunden holder"
+   ],
+   "bear": [
+    "Pris 42% under SMA200 — dyb nedtrend; lithium-overskud kan vare",
+    "Høj cyklisk eksponering mod EV-efterspørgsel"
+   ],
+   "summary": "Albemarle er oversolgt nær 52w-low. Lithium-cyklussen er svag, men forventninger er lave. Uden katalysator (lithiumprisstigning) er en +10%-bevægelse primært teknisk relief. Neutral.",
+   "key_risk": "Fortsat lithiumprisfald og svag EV-efterspørgsel presser indtjeningen.",
+   "screener_score": 62.0
+  },
+  "AMAT": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "RSI 48,5 — momentum nulstillet; BB-position 11 nær nedre bånd (298)",
+    "Strukturel AI-chipproduktion (GAA, HBM, advanced packaging) driver langsigtet WFE-efterspørgsel",
+    "+10% (~342) under BB-midten (357)"
+   ],
+   "bear": [
+    "-3,9% i dag og -11,5% på 5d; under SMA200 med 30% — halvleder-selloff",
+    "Kinesiske eksportrestriktioner og capex-nedskæringer hos kunder"
+   ],
+   "summary": "Applied Materials følger halvleder-sektorens fald (-58% fra top). Teknisk tæt på nedre BB-bånd men uden bundsignal. Langsigtet attraktiv, kortsigtet sektor-momentum negativt.",
+   "key_risk": "Chip-capex-cyklussen vender ned og Kina-restriktioner skærper.",
+   "screener_score": 62.0
+  },
+  "NRG": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 61 og pris tæt på SMA50 — relativ styrke vs. tech/power-selloff; har holdt sig stabil (-4,7% på 20d)",
+    "Retail-power + datacenter-PPA-potentiale; +15% fra 52w-low viser bundformation",
+    "+10% (~101) er inden for øvre BB (103)"
+   ],
+   "bear": [
+    "Stadig 29% under SMA200 og -51% fra top — langsigtet trend negativ",
+    "Sektorsentiment for AI-power er svagt"
+   ],
+   "summary": "Scout: NRG viser relativ styrke og en mulig bundformation efter en halvering. Teknisk neutralt-positivt kortsigtet (RSI 61, nær BB-midten). Kan være en tidlig vinder hvis power-sektoren vender, men SMA200 er langt over. Watchlist-kandidat.",
+   "key_risk": "Power-sektoren fortsætter ned og SMA50 (97) afviser kursen.",
+   "screener_score": 24.2
+  },
+  "V": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "BULL",
+   "confidence": 7,
+   "bull": [
+    "Pris over stigende SMA50 og SMA200; MACD positiv — klar optrend og tæt på 52w-high (-3,9%)",
+    "Defensiv kvalitet med prissætningskraft og høj margin; tydelig rotation fra tech til kvalitet",
+    "+10% (~467) kræver fortsat trend og brud over 52w-high"
+   ],
+   "bear": [
+    "Stoch 78 — kortsigtet strakt",
+    "Regulatorisk risiko (interchange-lovgivning) og stablecoin-konkurrence"
+   ],
+   "summary": "Scout: Visa er i en sund optrend og nyder rotation til defensiv kvalitet midt i tech-selloffet. Ikke billig, men momentum og fundamentale er stærke. Solid kandidat til porteføljen.",
+   "key_risk": "Interchange-regulering eller afmatning i forbrug.",
+   "screener_score": 24.2
+  },
+  "AZO": {
+   "tier": "deep",
+   "scout": true,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "Over SMA50 og SMA200, MACD positiv, +7,9% på 20d — momentum stærkt",
+    "Defensiv auto-parts-forretning nyder ældre bilpark og forbrugeres tilbageholdenhed",
+    "Analytikere fremhæver sektoren som undervurderet"
+   ],
+   "bear": [
+    "BB-position 109 og stoch 91 — overkøbt kortsigtet, risiko for pullback",
+    "Høj aktiekurs og gearing via buybacks"
+   ],
+   "summary": "Scout: AutoZone er brudt ud over øvre Bollinger-bånd med stærkt momentum og har defensive egenskaber. Kortsigtet overkøbt, så bedre indgang ved pullback mod 3.260.",
+   "key_risk": "Mean reversion efter overkøbt udbrud; svækket marginer.",
+   "screener_score": 24.0
+  },
+  "IDXX": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "+26% på 20d, over SMA50 og SMA200 — stærk optrend efter earnings",
+    "Kvalitets-diagnostik med recurring revenue",
+    "MACD positiv"
+   ],
+   "bear": [
+    "Stoch 91,5 — overkøbt; momentum-divergens -24 tyder på afmatning",
+    "Høj værdiansættelse"
+   ],
+   "summary": "Beholdning: IDEXX er i stærk optrend og tæt på 52w-high. Kortsigtet overkøbt, men trend intakt. Hold, overvej trailing stop.",
+   "key_risk": "Pullback efter stærk stigning; svag dyrlægebesøgsvækst.",
+   "screener_score": 19.5
+  },
+  "LDOS": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "+3,9% på 5d og over SMA50 — mulig stabilisering",
+    "Rekordomsætning og hævet guidance i Q2"
+   ],
+   "bear": [
+    "Under SMA200 og -36% fra top",
+    "Usikkerhed om forsvarsbudgetter"
+   ],
+   "summary": "Beholdning: Leidos stabiliserer sig efter en svær periode, med solide fundamentale. Neutral — hold med stop under BB-lower (120).",
+   "key_risk": "Budgetusikkerhed eller kontraktnedskæringer.",
+   "screener_score": 27.7
+  },
+  "MCK": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "Over SMA50 og SMA200; +12% på 20d — stabil optrend",
+    "Defensiv lægemiddeldistribution med GLP-1-medvind"
+   ],
+   "bear": [
+    "Momentum-divergens -12,8 — afmatning",
+    "Tæt på 52w-high — begrænset kortsigtet upside"
+   ],
+   "summary": "Beholdning: McKesson er en defensiv kvalitetsaktie i optrend. Hold.",
+   "key_risk": "Regulatorisk pres på lægemiddelpriser.",
+   "screener_score": 20.1
+  },
+  "PM": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "RSI 23,6 — oversolgt; stadig over SMA200 (181) som er support",
+    "Defensiv med vækst i røgfrie produkter (ZYN, IQOS)"
+   ],
+   "bear": [
+    "Under SMA50 og -9% på 20d — kortsigtet svaghed",
+    "Volumen 1,3x indikerer distribution"
+   ],
+   "summary": "Beholdning: Philip Morris er oversolgt men tester SMA200-support. Hold så længe 181 holder.",
+   "key_risk": "Brud under SMA200 og ZYN-vækst skuffer.",
+   "screener_score": 31.0
+  },
+  "PNR": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "+13% på 20d og nu over SMA200 — teknisk trendskifte",
+    "MACD positiv; stærkt momentum"
+   ],
+   "bear": [
+    "BB-position 104 og stoch 95 — overkøbt",
+    "-32% fra top — modstand ovenfor"
+   ],
+   "summary": "Beholdning: Pentair har brudt over SMA200 med stærkt momentum. Kortsigtet overkøbt, men trendskifte bekræftet. Hold.",
+   "key_risk": "Pullback fra overkøbt niveau og svag bolig-/pool-efterspørgsel.",
+   "screener_score": 37.6
+  },
+  "SRE": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 5,
+   "bull": [
+    "Stabil (+2% på 5d), defensiv utility",
+    "Oncor-vækst fra Texas-load-pipeline"
+   ],
+   "bear": [
+    "Under SMA200 med 10% og kun 4% over 52w-low",
+    "Texas datacenter-moratorie truer load-vækst"
+   ],
+   "summary": "Beholdning: Sempra er svag teknisk, nær 52w-low. Neutral — hold med stramt stop.",
+   "key_risk": "Brud under 52w-low og regulatoriske udfordringer i Texas.",
+   "screener_score": 36.3
+  },
+  "VRTX": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 7,
+   "bull": [
+    "Tæt på 52w-high, over SMA50/SMA200, MACD positiv — stærk optrend",
+    "Nyre-pipeline og analytikere ser +20% upside"
+   ],
+   "bear": [
+    "Stoch 87 og BB-position 93 — kortsigtet strakt",
+    "Pipeline-risiko"
+   ],
+   "summary": "Beholdning: Vertex er i en stærk optrend med fundamentale katalysatorer. Hold.",
+   "key_risk": "Klinisk skuffelse i pipeline.",
+   "screener_score": 36.9
+  },
+  "ZBH": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "BULL",
+   "confidence": 6,
+   "bull": [
+    "+14% på 20d, over SMA50/SMA200 — optrend",
+    "Billig medtech med forbedret momentum"
+   ],
+   "bear": [
+    "Stoch 96 — overkøbt",
+    "Tæt på 52w-high"
+   ],
+   "summary": "Beholdning: Zimmer Biomet er i stærk optrend. Kortsigtet overkøbt. Hold.",
+   "key_risk": "Pullback og svag procedurevolumen.",
+   "screener_score": 34.1
+  },
+  "ZBRA": {
+   "tier": "deep",
+   "scout": false,
+   "verdict": "NEUTRAL",
+   "confidence": 4,
+   "bull": [
+    "Over SMA200 (287) som support",
+    "Stigende indtjeningsestimater"
+   ],
+   "bear": [
+    "-17% på 20d og under SMA50 — momentum negativt",
+    "Lav screener-score (12)"
+   ],
+   "summary": "Beholdning: Zebra er i korrektion med negativt momentum, men holder over SMA200. Neutral — overvej exit ved brud under 287.",
+   "key_risk": "Brud under SMA200 og svag lager/logistik-efterspørgsel.",
+   "screener_score": 12.0
+  }
+ }
+}
