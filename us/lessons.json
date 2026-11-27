@@ -1,27 +1,27 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-27",
   "stats": {
-    "closed_trades": 31,
-    "wins": 15,
+    "closed_trades": 32,
+    "wins": 16,
     "losses": 16,
-    "win_rate_pct": 48.4,
-    "avg_win_pct": 17.6,
+    "win_rate_pct": 50.0,
+    "avg_win_pct": 16.51,
     "avg_loss_pct": -6.07,
-    "avg_pnl_pct": 5.38,
-    "avg_holding_days": 36.5,
-    "total_realized_usd": 2336.65,
+    "avg_pnl_pct": 5.22,
+    "avg_holding_days": 35.8,
+    "total_realized_usd": 2358.25,
     "target_hits": 7,
     "stop_hits": 10,
     "thesis_verdicts": {
       "FAILED": 16,
-      "PARTIAL": 8,
+      "PARTIAL": 9,
       "HELD": 7
     },
     "by_sector": {
       "Information Technology": {
-        "n": 11,
-        "wins": 8,
-        "avg_pnl_pct": 14.71
+        "n": 12,
+        "wins": 9,
+        "avg_pnl_pct": 13.5
       },
       "Communication Services": {
         "n": 3,
@@ -799,6 +799,30 @@
       "stop_hit": true,
       "thesis_verdict": "FAILED",
       "lesson": "CRM: -10.6% over 6 days — assumption FAILED. Expected +11.2%. Plan horizon: 1-3 måneder. Exited at/below stop-loss."
+    },
+    {
+      "trade_key": "id:601",
+      "date": "2026-11-27",
+      "symbol": "ZBRA",
+      "name": "Zebra Technologies",
+      "sector": "Information Technology",
+      "buy_date": "2026-11-13",
+      "holding_days": 14,
+      "shares": 40,
+      "buy_price": 317.83,
+      "sell_price": 318.37,
+      "realized_pnl_usd": 21.6,
+      "realized_pnl_pct": 0.17,
+      "expected_return_pct": 12.64,
+      "price_target": 358.0,
+      "stop_loss": 285.32,
+      "timeframe": "1-3 måneder",
+      "term": "medium",
+      "thesis": "Kvalitets-industri-IT i langsigtet optrend er ekstremt oversolgt; forventer mean-reversion tilbage mod SMA50 (~360).",
+      "target_hit": false,
+      "stop_hit": false,
+      "thesis_verdict": "PARTIAL",
+      "lesson": "ZBRA: +0.2% over 14 days — assumption PARTIAL. Expected +12.6%. Plan horizon: 1-3 måneder."
     }
   ]
 }
