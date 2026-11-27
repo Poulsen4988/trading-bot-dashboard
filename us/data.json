@@ -1,7 +1,7 @@
 {
   "portfolio": {
     "initial_cash": 100000,
-    "cash": 3599.2,
+    "cash": 2753.52,
     "currency": "USD",
     "positions": [
       {
@@ -25,9 +25,9 @@
           "exit_conditions": "Sælg ved stop-brud (533) eller pipeline-skuffelse; tag gevinst nær 590 eller hæv target ved breakout over 52-ugers top på volumen."
         },
         "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Thesis intakt: ny top-nær breakout, MACD positiv, dagens verdict BULL 7. +18% i gevinst; stop fastholdes på 533 (~2 ATR) for at sikre gevinsten. BB 93% antyder pause, men ingen grund til at sælge.",
-          "confidence": 74
+          "date": "2026-11-27",
+          "reasoning": "Stærk optrend tæt på 52w-high, BULL 7, +18% og et godt stykke over trailing stop 533. Thesis intakt.",
+          "confidence": 72
         }
       },
       {
@@ -51,9 +51,9 @@
           "exit_conditions": "Sælg ved stop-brud (1026,28) eller lukning under SMA50; tag gevinst nær 1180."
         },
         "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Stabil optrend (+9% over SMA50, +22% over SMA200), verdict BULL 6. Kun -0,5% fra købspris og langt over stop 1026. Thesis intakt.",
-          "confidence": 66
+          "date": "2026-11-27",
+          "reasoning": "Defensiv optrend over SMA50/SMA200, BULL 6; momentum-divergens noteres, men stop 1026 er langt væk.",
+          "confidence": 62
         }
       },
       {
@@ -77,9 +77,9 @@
           "exit_conditions": "Sælg ved stop-brud (99,90) eller lukning under SMA50; tag gevinst nær 120."
         },
         "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Medtech-rotation fortsætter: +14% på 20d, verdict BULL 6, tæt på 52-ugers top. Over købspris og stop 99,90. Hold.",
-          "confidence": 64
+          "date": "2026-11-27",
+          "reasoning": "Optrend +14% på 20d, BULL 6. Kortsigtet overkøbt, men breakout-thesis holder.",
+          "confidence": 62
         }
       },
       {
@@ -102,35 +102,9 @@
           "exit_conditions": "Sælg ved stop-brud (74,92) eller hvis SMA50 (~81) ikke generobres senest ca. 3. december; brug bounce mod 81-84 som exit."
         },
         "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Mean-reversion-case stabiliserer (+2% på 5d), men SMA50 (~81) endnu ikke generobret. Deadline ~3. december i planen fastholdes; stop 74,92 intakt. Texas-freeze tynger vækstcasen — sælges hvis SMA50 ikke generobres til tiden.",
-          "confidence": 52
-        }
-      },
-      {
-        "symbol": "ZBRA",
-        "name": "Zebra Technologies",
-        "shares": 40,
-        "purchase_price": 317.83,
-        "current_price": 318.37,
-        "purchase_date": "2026-11-13",
-        "investment_plan": {
-          "term": "medium",
-          "basis": [
-            "technical",
-            "fundamental"
-          ],
-          "thesis": "Kvalitets-industri-IT i langsigtet optrend er oversolgt; forventer mean-reversion mod SMA50.",
-          "price_target": 358,
-          "stop_loss": 285.32,
-          "expected_return_pct": 13.7,
-          "timeframe": "1-3 måneder",
-          "exit_conditions": "Sælg ved stop-brud (285,32), fundamental guidance-sænkning, eller nyt 20-dages lav kombineret med fortsat BEAR-verdict; tag gevinst nær 358/SMA50."
-        },
-        "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Svageste position (MACD -13, -10,6% under SMA50), men langsigtet trend over SMA200 intakt og ingen fundamental guidance-sænkning. Ingen bedre alternativ kandidat i dag og kun 1.099 USD købsbudget, så trimning giver ikke mening nu. Stop 285,32 fastholdes.",
-          "confidence": 45
+          "date": "2026-11-27",
+          "reasoning": "Svag teknisk (under SMA200), NEUTRAL 5. Mean-reversion-thesis har frist ca. 3/12. Holdes med stramt stop 74,92 indtil da.",
+          "confidence": 50
         }
       },
       {
@@ -154,9 +128,9 @@
           "exit_conditions": "Sælg ved stop-brud (117,19), budgetstop/kontrakt-tab eller fornyet brud under SMA50 på høj volumen; tag gevinst nær 141."
         },
         "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Stabiliserer omkring SMA50 (+3,9% på 5d) efter rekord-omsætning og hævet guidance. Ingen brud på thesis; stop 117,19.",
-          "confidence": 56
+          "date": "2026-11-27",
+          "reasoning": "Stabiliserer sig over SMA50, record-omsætning og hævet guidance. NEUTRAL 5. Hold med stop 117,19.",
+          "confidence": 55
         }
       },
       {
@@ -180,9 +154,9 @@
           "exit_conditions": "Sælg ved stop-brud (639,71) eller gentagne lukninger under 20-dages midtbånd (~664) på stigende volumen; tag gevinst nær 760."
         },
         "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Klar momentum (+26% på 20d, MACD +32), verdict BULL 7. Konsolidering mulig, men trend intakt over stop 639,71.",
-          "confidence": 72
+          "date": "2026-11-27",
+          "reasoning": "Stærk optrend efter earnings, BULL 6. Breakout-thesis intakt.",
+          "confidence": 64
         }
       },
       {
@@ -206,9 +180,9 @@
           "exit_conditions": "Sælg ved stop-brud (65,75) eller afvisning ved SMA200 efterfulgt af lukning under ~66; tag gevinst nær 77,5."
         },
         "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Frisk brud over SMA200 med stærkt momentum, verdict BULL 6. Over øvre BB-bånd, så kort tilbagefald mod ~70 forventes, men stop 65,75 giver plads. Hold.",
-          "confidence": 63
+          "date": "2026-11-27",
+          "reasoning": "Trendskifte over SMA200 bekræftet, BULL 6. Overkøbt kortsigtet, men +4% og stop 65,75 ligger langt under.",
+          "confidence": 62
         }
       },
       {
@@ -232,13 +206,39 @@
           "exit_conditions": "Sælg ved stop-brud (176 = lukning tydeligt under SMA200); tag gevinst nær 200 / SMA50-zonen, hæv stop til break-even ved +5%."
         },
         "last_review": {
-          "date": "2026-11-26",
-          "reasoning": "Købt i går som oversolgt defensiv mean-reversion (RSI 23,6) over SMA200. Thesis uændret — kræver at SMA200 holder; stop 176.",
-          "confidence": 58
+          "date": "2026-11-27",
+          "reasoning": "Oversolgt (RSI 24) men holder SMA200-support (~181). Holdes så længe stop 176 holder.",
+          "confidence": 55
+        }
+      },
+      {
+        "symbol": "V",
+        "name": "Visa Inc.",
+        "shares": 32,
+        "purchase_price": 424.39,
+        "current_price": 424.39,
+        "purchase_date": "2026-11-27",
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Trend-følge i defensiv kvalitets-betalingsnetværk: optrenden fortsætter med brud over 52w-high mod ~467, drevet af rotation fra tech til kvalitet.",
+          "price_target": 467,
+          "stop_loss": 405,
+          "expected_return_pct": 10.0,
+          "timeframe": "2-4 måneder",
+          "exit_conditions": "Sælg ved stop-brud (405, ca. 2x ATR) eller lukning under SMA50 på volumen. Sælg også ved negativ regulatorisk nyhed om interchange. Tag gevinst nær 467, eller hæv stoppet ved breakout over 52w-high."
+        },
+        "last_review": {
+          "date": "2026-11-27",
+          "reasoning": "Scout-kandidat, BULL 7: sund optrend over stigende SMA50/SMA200 med positiv MACD, 3,9% fra 52w-high, og drager fordel af rotationen til defensiv kvalitet. Køb af 32 aktier (~13.580 USD) finansieres af ZBRA-salget. Det er under ATR-forslaget på 85, men cash skal holdes over 2.500. Financials er en ny sektor (0% i dag), så Health Care-koncentrationen på 41% fortyndes, og sektoren har historisk været positiv (avg +9,6%).",
+          "confidence": 70
         }
       }
     ],
-    "last_updated": "2026-11-26 22:47 UTC"
+    "last_updated": "2026-11-27 22:48 UTC"
   },
   "history": [
     {
@@ -568,105 +568,13 @@
     {
       "date": "2026-11-26",
       "portfolio_value": 105182.6
+    },
+    {
+      "date": "2026-11-27",
+      "portfolio_value": 105182.6
     }
   ],
   "trades": [
-    {
-      "date": "2026-06-28",
-      "action": "BUY",
-      "symbol": "NUE",
-      "name": "Nucor",
-      "shares": 85,
-      "price": 239.78,
-      "value": 20381.3,
-      "reasoning": {
-        "verdict": "BUY",
-        "confidence": 78,
-        "summary": "NUE er deep-settets højest-scorende scout-kandidat. KeyBanc opgraderede til Overweight den 24. juni med 74 PT — 14% upside fra nuværende 39.78. Stærk Q2 EPS guidance (.70-4.80 per diluted share) bekræfter fundamentale fremgang. Aktien er ov"
-      },
-      "id": 1,
-      "is_new": false
-    },
-    {
-      "date": "2026-06-28",
-      "action": "BUY",
-      "symbol": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "shares": 250,
-      "price": 78.56,
-      "value": 19640.0,
-      "reasoning": {
-        "verdict": "BUY",
-        "confidence": 70,
-        "summary": "Nasdaq Inc. er en kvalitetsfranchise — børsoperatør + finansiel teknologi (Calypso, AxiomSL, Verafin) + data/analytics — der nu handles 22.3% under 52-ugers toppen med RSI 30.6 og Stoch 8.9 i oversold territorium. Zacks har udpeget aktien s"
-      },
-      "id": 2,
-      "is_new": false
-    },
-    {
-      "date": "2026-06-29",
-      "action": "HOLD",
-      "symbol": "NUE",
-      "name": "Nucor",
-      "shares": null,
-      "price": 239.78,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 72,
-        "summary": "Thesis fuldt intakt. KeyBanc opgraderede 24/6 til Overweight med kursmål 74 (+14.3% fra entry), og Q2 EPS guidance på .70-4.80 slår forventningerne. MACD +2.46 er bullish, og Stochastic 6.8 + BB-position 8.3% signalerer kortsigtet oversold "
-      },
-      "id": 3,
-      "is_new": false
-    },
-    {
-      "date": "2026-06-29",
-      "action": "HOLD",
-      "symbol": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "shares": null,
-      "price": 78.56,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 58,
-        "summary": "NDAQ er i en klar bearish primærtrend (MACD -2.437, kurs -11% under SMA50 og SMA200), men triple-oversold confluence — RSI 30.6, Stochastic 8.9 og Bollinger Band 4.4% — kombineret med høj volumen (3.04x) tyder på mulig capitulation. Positio"
-      },
-      "id": 4,
-      "is_new": false
-    },
-    {
-      "date": "2026-07-13",
-      "action": "HOLD",
-      "symbol": "NUE",
-      "name": "Nucor",
-      "shares": null,
-      "price": 233.0,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 6,
-        "summary": "Tese intakt: KeyBanc-opgradering til Overweight ($274 mål) og stærk Q2-guidance ($4.70-$4.80) opvejer den negative 20-dages momentum. Stop ikke udløst, langsigtet trend fortsat klart bullish (+27.4% over SMA200)."
-      },
-      "id": 5,
-      "is_new": false
-    },
-    {
-      "date": "2026-07-13",
-      "action": "HOLD",
-      "symbol": "NDAQ",
-      "name": "Nasdaq, Inc.",
-      "shares": null,
-      "price": 89.21,
-      "value": null,
-      "reasoning": {
-        "verdict": "HOLD",
-        "confidence": 7,
-        "summary": "Oprindeligt kursmål ($88) er nået og overgået; teknisk trend bekræftet bullish (over SMA50/SMA200) og Zacks-opgraderet, men Stochastic på 98.4 signalerer kortsigtet overkøbt. Hæver stop til $84 for at sikre gevinst og sætter nyt mål ved TD "
-      },
-      "id": 6,
-      "is_new": false
-    },
     {
       "date": "2026-07-13",
       "action": "BUY",
@@ -10229,6 +10137,170 @@
         "summary": "Købt i går som oversolgt defensiv mean-reversion (RSI 23,6) over SMA200. Thesis uændret — kræver at SMA200 holder; stop 176."
       },
       "id": 596,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "HOLD",
+      "symbol": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "shares": null,
+      "price": 564.12,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 72,
+        "summary": "Stærk optrend tæt på 52w-high, BULL 7, +18% og et godt stykke over trailing stop 533. Thesis intakt."
+      },
+      "id": 597,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "HOLD",
+      "symbol": "MCK",
+      "name": "McKesson Corporation",
+      "shares": null,
+      "price": 1077.32,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 62,
+        "summary": "Defensiv optrend over SMA50/SMA200, BULL 6; momentum-divergens noteres, men stop 1026 er langt væk."
+      },
+      "id": 598,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "HOLD",
+      "symbol": "ZBH",
+      "name": "Zimmer Biomet",
+      "shares": null,
+      "price": 110.06,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 62,
+        "summary": "Optrend +14% på 20d, BULL 6. Kortsigtet overkøbt, men breakout-thesis holder."
+      },
+      "id": 599,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "HOLD",
+      "symbol": "SRE",
+      "name": "Sempra",
+      "shares": null,
+      "price": 79.09,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 50,
+        "summary": "Svag teknisk (under SMA200), NEUTRAL 5. Mean-reversion-thesis har frist ca. 3/12. Holdes med stramt stop 74,92 indtil da."
+      },
+      "id": 600,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "SELL",
+      "symbol": "ZBRA",
+      "name": "Zebra Technologies",
+      "shares": 40,
+      "price": 318.37,
+      "value": 12734.8,
+      "reasoning": {
+        "verdict": "SELL",
+        "confidence": 62,
+        "summary": "Rotation: verdict faldet til NEUTRAL 4, -17% på 20d, under SMA50 med negativ MACD og lav screener-score. Mean-reversion mod SMA50 er udeblevet i 2 uger. Positionen sælges til ca. break-even, så kapitalen kan gå til en kandidat med højere ov"
+      },
+      "cost_basis_usd": 12713.2,
+      "realized_pnl_usd": 21.6,
+      "realized_pnl_pct": 0.17,
+      "holding_days": 14,
+      "id": 601,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "HOLD",
+      "symbol": "LDOS",
+      "name": "Leidos",
+      "shares": null,
+      "price": 130.62,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 55,
+        "summary": "Stabiliserer sig over SMA50, record-omsætning og hævet guidance. NEUTRAL 5. Hold med stop 117,19."
+      },
+      "id": 602,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "HOLD",
+      "symbol": "IDXX",
+      "name": "Idexx Laboratories",
+      "shares": null,
+      "price": 709.46,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 64,
+        "summary": "Stærk optrend efter earnings, BULL 6. Breakout-thesis intakt."
+      },
+      "id": 603,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "HOLD",
+      "symbol": "PNR",
+      "name": "Pentair",
+      "shares": null,
+      "price": 72.88,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 62,
+        "summary": "Trendskifte over SMA200 bekræftet, BULL 6. Overkøbt kortsigtet, men +4% og stop 65,75 ligger langt under."
+      },
+      "id": 604,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "HOLD",
+      "symbol": "PM",
+      "name": "Philip Morris International",
+      "shares": null,
+      "price": 184.32,
+      "value": null,
+      "reasoning": {
+        "verdict": "HOLD",
+        "confidence": 55,
+        "summary": "Oversolgt (RSI 24) men holder SMA200-support (~181). Holdes så længe stop 176 holder."
+      },
+      "id": 605,
+      "is_new": false
+    },
+    {
+      "date": "2026-11-27",
+      "action": "BUY",
+      "symbol": "V",
+      "name": "Visa Inc.",
+      "shares": 32,
+      "price": 424.39,
+      "value": 13580.48,
+      "reasoning": {
+        "verdict": "BUY",
+        "confidence": 70,
+        "summary": "Scout-kandidat, BULL 7: sund optrend over stigende SMA50/SMA200 med positiv MACD, 3,9% fra 52w-high, og drager fordel af rotationen til defensiv kvalitet. Køb af 32 aktier (~13.580 USD) finansieres af ZBRA-salget. Det er under ATR-forslaget"
+      },
+      "id": 606,
       "is_new": true
     }
   ],
@@ -15239,5 +15311,5 @@
     "Industrials": 22.8,
     "Consumer Staples": 12.7
   },
-  "last_executed_decisions": "2026-11-26"
+  "last_executed_decisions": "2026-11-27"
 }
