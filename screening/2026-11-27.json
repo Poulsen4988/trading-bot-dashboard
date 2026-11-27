@@ -1,0 +1,304 @@
+{
+  "date": "2026-11-27",
+  "screened_at": "2026-11-27T07:15:59Z",
+  "price_data_date": "2026-11-26",
+  "universe_size": 24,
+  "indicator_method": "yfinance_historical",
+  "selected": [
+    {
+      "priority": 1,
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 92.0,
+      "price": 175.1,
+      "pct_1d": -1.63,
+      "pct_5d": -15.74,
+      "pct_20d": -12.45,
+      "volume_ratio": 2.52,
+      "rsi_proxy": 24.6,
+      "stoch_proxy": 5.5,
+      "bb_position": -22.5,
+      "sma50_vs_price": -10.66,
+      "sma200_vs_price": -11.71,
+      "macd_line": -1.5781,
+      "atr": 8.0357,
+      "momentum_divergence": -3.29,
+      "pe_forward": 11.786715,
+      "pct_from_52w_high": -25.55,
+      "pct_from_52w_low": 5.51,
+      "sector": "Industrials",
+      "earnings_growth": -0.333,
+      "revenue_growth": 0.096,
+      "div_yield": 2.33,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME SPIKE: 2.52x avg — extreme institutional activity",
+        "NEAR 52W LOW: +5.5% above annual support — critical level",
+        "MOMENTUM SELLOFF: -15.7% in 5 days — sharp directional move",
+        "DEEPLY OVERSOLD: RSI proxy 25, Stoch proxy 6 — bounce candidate",
+        "UNDERVALUED: Fwd PE 11.8x vs sector norm 18x — 35% discount"
+      ],
+      "screening_rationale": "ROCK-B.CO: volume running at 2.5x the daily average signals institutional-scale activity; a 15.7% five-day selloff (20d: -12.4%) reveals strong directional pressure; price sits just +5.5% above the 52-week low (165.96) — a key decision zone; forward PE 11.8x represents a 35% discount to Industrials sector norm (18x); -33% earnings decline warrants caution but may create a contrarian entry; RSI proxy (25) and stochastic (6) in oversold territory support a bounce thesis; price is -10.7% vs SMA50."
+    },
+    {
+      "priority": 2,
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 51.0,
+      "price": 298.6,
+      "pct_1d": -3.55,
+      "pct_5d": -4.66,
+      "pct_20d": 4.19,
+      "volume_ratio": 1.06,
+      "rsi_proxy": 51.6,
+      "stoch_proxy": 9.3,
+      "bb_position": 24.8,
+      "sma50_vs_price": -0.02,
+      "sma200_vs_price": 10.79,
+      "macd_line": 3.9333,
+      "atr": 6.3857,
+      "momentum_divergence": -8.85,
+      "pe_forward": 12.89996,
+      "pct_from_52w_high": -7.27,
+      "pct_from_52w_low": 57.74,
+      "sector": "Industrials",
+      "earnings_growth": 0.271,
+      "revenue_growth": 0.074,
+      "div_yield": 1.03,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "VOLUME NORMAL-HIGH: 1.06x avg",
+        "MOMENTUM: -4.7% in 5 days",
+        "MOMENTUM DIVERGENCE: 5d/20d gap -8.8pp — emerging trend shift",
+        "STOCHASTIC OVERSOLD: Stoch proxy 9 — price near annual support floor (RSI proxy 52)",
+        "UNDERVALUED: Fwd PE 12.9x vs sector norm 18x — 28% discount",
+        "EARNINGS GROWTH: +27% YoY"
+      ],
+      "screening_rationale": "ISS.CO: forward PE 12.9x represents a 28% discount to Industrials sector norm (18x); +27% earnings growth underpins the fundamental case; price is -0.0% vs SMA50."
+    },
+    {
+      "priority": 3,
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 43.2,
+      "price": 3872.0,
+      "pct_1d": 2.68,
+      "pct_5d": 10.72,
+      "pct_20d": 2.22,
+      "volume_ratio": 0.52,
+      "rsi_proxy": 67.8,
+      "stoch_proxy": 97.0,
+      "bb_position": 97.5,
+      "sma50_vs_price": 30.08,
+      "sma200_vs_price": 82.66,
+      "macd_line": 201.5416,
+      "atr": 124.5714,
+      "momentum_divergence": 8.5,
+      "pe_forward": 33.073666,
+      "pct_from_52w_high": -1.9,
+      "pct_from_52w_low": 156.08,
+      "sector": "Healthcare",
+      "earnings_growth": -0.147,
+      "revenue_growth": 0.161,
+      "div_yield": 0.0,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "NEAR 52W HIGH: -1.9% — breakout territory",
+        "MOMENTUM SURGE: +10.7% in 5 days — sharp directional move",
+        "MOMENTUM DIVERGENCE: 5d/20d gap +8.5pp — emerging trend shift",
+        "OVERBOUGHT: RSI proxy 68, Stoch proxy 97 — stretched, potential pullback"
+      ],
+      "screening_rationale": "GMAB.CO: a 10.7% five-day rally (20d: +2.2%) reveals strong directional pressure; stock is pressing against its 52-week high at -1.9% — breakout watch; forward PE 33.1x represents a 32% premium to Healthcare sector norm (25x); price is +30.1% vs SMA50."
+    },
+    {
+      "priority": 4,
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 43.1,
+      "price": 467.2,
+      "pct_1d": 3.41,
+      "pct_5d": -5.39,
+      "pct_20d": -22.39,
+      "volume_ratio": 0.64,
+      "rsi_proxy": 33.6,
+      "stoch_proxy": 10.0,
+      "bb_position": 16.8,
+      "sma50_vs_price": -16.37,
+      "sma200_vs_price": -10.89,
+      "macd_line": -30.0416,
+      "atr": 25.0071,
+      "momentum_divergence": 17.0,
+      "pe_forward": 13.571903,
+      "pct_from_52w_high": -24.58,
+      "pct_from_52w_low": 17.21,
+      "sector": "Industrials",
+      "earnings_growth": 0.043,
+      "revenue_growth": 0.1,
+      "div_yield": 0.89,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM: -5.4% in 5 days — continued SELLING pressure",
+        "MOMENTUM DIVERGENCE: 5d/20d gap +17.0pp — strong trend change signal",
+        "STOCHASTIC OVERSOLD: Stoch proxy 10 — price near annual support floor (RSI proxy 34)",
+        "MODEST DISCOUNT: Fwd PE 13.6x vs sector norm 18x"
+      ],
+      "screening_rationale": "FLS.CO: a 5.4% five-day selloff (20d: -22.4%) reveals strong directional pressure; forward PE 13.6x represents a 25% discount to Industrials sector norm (18x); RSI proxy (34) and stochastic (10) in oversold territory support a bounce thesis; price is -16.4% vs SMA50."
+    },
+    {
+      "priority": 5,
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 41.6,
+      "price": 168.0,
+      "pct_1d": 3.07,
+      "pct_5d": -7.62,
+      "pct_20d": -12.64,
+      "volume_ratio": 0.58,
+      "rsi_proxy": 20.8,
+      "stoch_proxy": 10.6,
+      "bb_position": 10.4,
+      "sma50_vs_price": -12.36,
+      "sma200_vs_price": -9.14,
+      "macd_line": -6.8321,
+      "atr": 7.4429,
+      "momentum_divergence": 5.02,
+      "pe_forward": 13.702002,
+      "pct_from_52w_high": -23.71,
+      "pct_from_52w_low": 11.22,
+      "sector": "Industrials",
+      "earnings_growth": 0.1,
+      "revenue_growth": 0.063,
+      "div_yield": 0.45,
+      "indicator_method": "yfinance_historical",
+      "screening_signals": [
+        "MOMENTUM: -7.6% in 5 days — continued SELLING pressure",
+        "DEEPLY OVERSOLD: RSI proxy 21, Stoch proxy 11 — bounce candidate",
+        "MODEST DISCOUNT: Fwd PE 13.7x vs sector norm 18x",
+        "EARNINGS GROWTH: +10% YoY"
+      ],
+      "screening_rationale": "VWS.CO: a 7.6% five-day selloff (20d: -12.6%) reveals strong directional pressure; forward PE 13.7x represents a 24% discount to Industrials sector norm (18x); RSI proxy (21) and stochastic (11) in oversold territory support a bounce thesis; price is -12.4% vs SMA50."
+    }
+  ],
+  "all_scores": [
+    {
+      "symbol": "ROCK-B.CO",
+      "name": "Rockwool B",
+      "score": 92.0
+    },
+    {
+      "symbol": "ISS.CO",
+      "name": "ISS",
+      "score": 51.0
+    },
+    {
+      "symbol": "GMAB.CO",
+      "name": "Genmab",
+      "score": 43.2
+    },
+    {
+      "symbol": "FLS.CO",
+      "name": "FLSmidth",
+      "score": 43.1
+    },
+    {
+      "symbol": "VWS.CO",
+      "name": "Vestas Wind Systems",
+      "score": 41.6
+    },
+    {
+      "symbol": "MAERSK-B.CO",
+      "name": "A.P. Møller-Mærsk B",
+      "score": 40.0
+    },
+    {
+      "symbol": "NOVO-B.CO",
+      "name": "Novo Nordisk B",
+      "score": 39.6
+    },
+    {
+      "symbol": "MAERSK-A.CO",
+      "name": "A.P. Møller-Mærsk A",
+      "score": 39.5
+    },
+    {
+      "symbol": "TRYG.CO",
+      "name": "Tryg",
+      "score": 39.1
+    },
+    {
+      "symbol": "ALSYDB.CO",
+      "name": "Sydbank",
+      "score": 37.0
+    },
+    {
+      "symbol": "COLO-B.CO",
+      "name": "Coloplast B",
+      "score": 35.9
+    },
+    {
+      "symbol": "AMBU-B.CO",
+      "name": "Ambu B",
+      "score": 33.8
+    },
+    {
+      "symbol": "DSV.CO",
+      "name": "DSV",
+      "score": 32.4
+    },
+    {
+      "symbol": "NNIT.CO",
+      "name": "NNIT",
+      "score": 31.6
+    },
+    {
+      "symbol": "BAVA.CO",
+      "name": "Bavarian Nordic",
+      "score": 30.5
+    },
+    {
+      "symbol": "JYSK.CO",
+      "name": "Jyske Bank",
+      "score": 29.7
+    },
+    {
+      "symbol": "RBREW.CO",
+      "name": "Royal Unibrew",
+      "score": 27.5
+    },
+    {
+      "symbol": "ORSTED.CO",
+      "name": "Ørsted",
+      "score": 25.0
+    },
+    {
+      "symbol": "DEMANT.CO",
+      "name": "Demant",
+      "score": 24.6
+    },
+    {
+      "symbol": "NDA-DK.CO",
+      "name": "Nordea Bank",
+      "score": 23.8
+    },
+    {
+      "symbol": "PNDORA.CO",
+      "name": "Pandora",
+      "score": 20.2
+    },
+    {
+      "symbol": "GN.CO",
+      "name": "GN Store Nord",
+      "score": 16.2
+    },
+    {
+      "symbol": "NSIS-B.CO",
+      "name": "Novonesis B",
+      "score": 14.2
+    },
+    {
+      "symbol": "DANSKE.CO",
+      "name": "Danske Bank",
+      "score": 12.2
+    }
+  ]
+}
