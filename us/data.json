@@ -10316,7 +10316,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.58,
+      "volume_ratio": 1.59,
       "pct_from_52w_high": -38.34,
       "pct_from_52w_low": 115.72,
       "revenue_growth": null,
@@ -10386,7 +10386,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 52.0,
         "rsi": 50.2,
         "rsi_proxy": 50.2,
@@ -10399,7 +10399,7 @@
         "momentum_divergence": 6.4,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.09x avg",
+          "VOLUME NORMAL-HIGH: 1.10x avg",
           "SIGNIFICANT DRAWDOWN: -38.3% from 52w high",
           "MOMENTUM SELLOFF: -23.4% in 5 days — sharp directional move",
           "STOCHASTIC LOW: Stoch proxy 16 — lower range of annual band; RSI proxy 50 (momentum not yet oversold)"
@@ -10407,7 +10407,7 @@
         "rationale": "AMD: a 23.4% five-day selloff (20d: -29.8%) reveals strong directional pressure; price is -25.9% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "ALB",
@@ -10490,7 +10490,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 62.0,
         "rsi": 20.1,
         "rsi_proxy": 20.1,
@@ -10512,21 +10512,23 @@
         "rationale": "ALB: a 5.0% five-day selloff (20d: -15.9%) reveals strong directional pressure; price sits just +6.8% above the 52-week low (76.34) — a key decision zone; RSI proxy (20) and stochastic (21) in oversold territory support a bounce thesis; price is -16.6% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
-        "verdict": "BEAR",
+        "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "RSI 20 and BB 15% are oversold; a lithium-price bounce could quickly give +10% (~2 ATR)"
+          "RSI 20 — oversolgt; lithiumpriser er i forvejen depressive så meget er prissat",
+          "Stigende indtjeningsestimater (juli) og kapitaldisciplin",
+          "Kun 6,8% over 52w-low — begrænset yderligere downside hvis bunden holder"
         ],
         "bear": [
-          "-42.5% vs SMA200 and -63% from the high, only 7% above the 52w low: a structural lithium bear trend",
-          "News stale (July); no fundamental catalyst visible"
+          "Pris 42% under SMA200 — dyb nedtrend; lithium-overskud kan vare",
+          "Høj cyklisk eksponering mod EV-efterspørgsel"
         ],
-        "summary": "Oversold in a structural lithium bear trend with no catalyst; avoid.",
-        "key_risk": "Lithium oversupply persists and price breaks the 52w low (~76)"
+        "summary": "Albemarle er oversolgt nær 52w-low. Lithium-cyklussen er svag, men forventninger er lave. Uden katalysator (lithiumprisstigning) er en +10%-bevægelse primært teknisk relief. Neutral.",
+        "key_risk": "Fortsat lithiumprisfald og svag EV-efterspørgsel presser indtjeningen."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "AMAT",
@@ -10609,7 +10611,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 62.0,
         "rsi": 48.5,
         "rsi_proxy": 48.5,
@@ -10631,22 +10633,142 @@
         "rationale": "AMAT: a 11.5% five-day selloff (20d: -25.1%) reveals strong directional pressure; stock has shed 58% from its 52-week high — potential deep value or extended downtrend; price is -25.8% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "RSI 48.5 has reset; wafer-fab equipment benefits structurally from AI chip build-out (Aug news)",
-          "+10% (~342) is about one ATR (29.6)"
+          "RSI 48,5 — momentum nulstillet; BB-position 11 nær nedre bånd (298)",
+          "Strukturel AI-chipproduktion (GAA, HBM, advanced packaging) driver langsigtet WFE-efterspørgsel",
+          "+10% (~342) under BB-midten (357)"
         ],
         "bear": [
-          "-3.9% today, -11.5% in 5d; -26% vs SMA50 and -30% vs SMA200",
-          "Semi-capex cycle and China export restrictions; sector-wide de-rating"
+          "-3,9% i dag og -11,5% på 5d; under SMA200 med 30% — halvleder-selloff",
+          "Kinesiske eksportrestriktioner og capex-nedskæringer hos kunder"
         ],
-        "summary": "Semi-equipment is caught in the broad AI-hardware de-rating; long-term quality, but the short-term trend is negative.",
-        "key_risk": "WFE spending is cut on memory-cycle weakness"
+        "summary": "Applied Materials følger halvleder-sektorens fald (-58% fra top). Teknisk tæt på nedre BB-bånd men uden bundsignal. Langsigtet attraktiv, kortsigtet sektor-momentum negativt.",
+        "key_risk": "Chip-capex-cyklussen vender ned og Kina-restriktioner skærper."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
+    },
+    {
+      "symbol": "AZO",
+      "name": "AutoZone",
+      "tradeable": true,
+      "price": 3404.46,
+      "pct_1d": 1.45,
+      "pct_5d": 2.89,
+      "pct_20d": 7.85,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 0.85,
+      "pct_from_52w_high": -14.81,
+      "pct_from_52w_low": 24.68,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Consumer Discretionary",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [
+        {
+          "date": "2026-09-21",
+          "title": "Spencer Jakab | Why Auto Parts Retailers Might Be Worth a Look",
+          "source": "The Wall Street Journal",
+          "summary": "O’Reilly Automotive and AutoZone’s recent slumps leave them at modest premiums to their respective trailing 10-year averages of price to forward sales. Investors aren’t being offered quite the same bargains as they saw in auto-parts retailers back in 2008, but it’s time to start kicking the tires on the stocks.",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-21-2026/card/spencer-jakab-why-auto-parts-retailers-might-be-worth-a-look-BYQ1TiuFGzLFNT6Fny0i?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-21",
+          "title": "Update: Equities Rise Intraday as Chip Stocks Rally",
+          "source": "MT Newswires",
+          "summary": "(Updates with latest market prices and developments.) US benchmark equity indexes were higher int",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/equities-rise-intraday-chip-stocks-175229305.html"
+        },
+        {
+          "date": "2026-09-21",
+          "title": "Update: Oil Price Decline Lifts US Equity Futures Pre-Bell",
+          "source": "MT Newswires",
+          "summary": "(Updates with economic data, recent oil price movement, world markets' overview and corporate stock",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/oil-price-decline-lifts-us-124934982.html"
+        },
+        {
+          "date": "2026-09-21",
+          "title": "Equity Futures Rise Pre-Bell as Traders Look Ahead to Potential Trump-Xi Meeting",
+          "source": "MT Newswires",
+          "summary": "The benchmark US equity futures were tracking in the green before the opening bell Monday, as trader",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/equity-futures-rise-pre-bell-120115738.html"
+        },
+        {
+          "date": "2026-09-21",
+          "title": "Oil Price Decline Lifts US Equity Futures Pre-Bell",
+          "source": "MT Newswires",
+          "summary": "US equity futures were edging higher pre-bell Monday as oil prices declined to start the week. Do",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/oil-price-decline-lifts-us-115823786.html"
+        },
+        {
+          "date": "2026-09-21",
+          "title": "Auto Parts Retailers Can Turn the Corner",
+          "source": "The Wall Street Journal",
+          "summary": "If investors were asked a year ago to guess the most successful consumer stock since the global financial crisis, many would have said Apple.  AutoZone  which releases results tomorrow, was close behind.  The performance of those retailers was driven by smart financial stewardship and the resilience of their business models.",
+          "url": "https://www.wsj.com/finance/stocks/auto-parts-retailers-can-turn-the-corner-678e02c4?siteid=yhoof2&yptr=yahoo"
+        },
+        {
+          "date": "2026-09-21",
+          "title": "US Equity Investors to Focus on Fed Speak, Economic Health Data This Week Following Policy Tightening Forecasts in Economic Projections",
+          "source": "MT Newswires",
+          "summary": "US equity investors are expected to look out for Fed speak, purchasing managers' indexes, and Iran g",
+          "url": "https://finance.yahoo.com/economy/policy/articles/us-equity-investors-focus-fed-095023554.html"
+        },
+        {
+          "date": "2026-09-21",
+          "title": "Xi Jinping Goes to Washington: What to Watch This Week",
+          "source": "The Wall Street Journal",
+          "summary": "Monday  Meetings: G7 foreign ministers will convene for an informal meeting in New York City.   Federal Reserve speakers: Chicago Fed President Austan Goolsbee   Economic data: Chicago Fed national activity index   Tuesday   Fed speakers: Vice Chair Philip Jefferson, New York Fed President John Williams, Richmond Fed President Thomas Barkin.",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-21-2026/card/xi-jinping-goes-to-washington-what-to-watch-this-week-krYjPxZqdOpJBTSuowJ8?siteid=yhoof2&yptr=yahoo"
+        }
+      ],
+      "technical": {
+        "screening_date": "2026-11-27",
+        "score": 24.0,
+        "rsi": 60.5,
+        "rsi_proxy": 60.5,
+        "stoch_proxy": 91.4,
+        "bb_position": 109.0,
+        "sma50_vs_price": 10.44,
+        "sma200_vs_price": 5.54,
+        "macd_line": 65.3489,
+        "atr": 72.5893,
+        "momentum_divergence": -4.96,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "VOLUME NORMAL-HIGH: 1.28x avg",
+          "MOMENTUM: +2.9% in 5 days",
+          "OVERBOUGHT: RSI proxy 60, Stoch proxy 91 — stretched, potential pullback"
+        ],
+        "rationale": "AZO: price is +10.4% vs SMA50."
+      },
+      "analysis": {
+        "analysis_date": "2026-11-27",
+        "tier": "deep",
+        "verdict": "BULL",
+        "confidence": 6,
+        "bull": [
+          "Over SMA50 og SMA200, MACD positiv, +7,9% på 20d — momentum stærkt",
+          "Defensiv auto-parts-forretning nyder ældre bilpark og forbrugeres tilbageholdenhed",
+          "Analytikere fremhæver sektoren som undervurderet"
+        ],
+        "bear": [
+          "BB-position 109 og stoch 91 — overkøbt kortsigtet, risiko for pullback",
+          "Høj aktiekurs og gearing via buybacks"
+        ],
+        "summary": "Scout: AutoZone er brudt ud over øvre Bollinger-bånd med stærkt momentum og har defensive egenskaber. Kortsigtet overkøbt, så bedre indgang ved pullback mod 3.260.",
+        "key_risk": "Mean reversion efter overkøbt udbrud; svækket marginer."
+      },
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "AXON",
@@ -10729,7 +10851,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 62.0,
         "rsi": 40.2,
         "rsi_proxy": 40.2,
@@ -10751,7 +10873,7 @@
         "rationale": "AXON: a 14.1% five-day rally (20d: -18.9%) reveals strong directional pressure; stock has shed 48% from its 52-week high — potential deep value or extended downtrend; price is -12.0% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "AVGO",
@@ -10777,7 +10899,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 60.0,
         "rsi": 52.4,
         "rsi_proxy": 52.4,
@@ -10798,7 +10920,7 @@
         "rationale": "AVGO: a 15.0% five-day selloff (20d: -14.5%) reveals strong directional pressure; price sits just +8.2% above the 52-week low (278.0) — a key decision zone; price is -11.7% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "BG",
@@ -10824,7 +10946,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 54.0,
         "rsi": 34.0,
         "rsi_proxy": 34.0,
@@ -10845,7 +10967,7 @@
         "rationale": "BG: a 5.4% five-day selloff (20d: -11.9%) reveals strong directional pressure; price sits just +5.4% above the 52-week low (83.6) — a key decision zone; RSI proxy (34) and stochastic (24) in oversold territory support a bounce thesis; price is -13.4% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "CIEN",
@@ -10928,7 +11050,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 52.3,
         "rsi": 52.9,
         "rsi_proxy": 52.9,
@@ -10948,7 +11070,7 @@
         "rationale": "CIEN: a 8.9% five-day selloff (20d: -33.1%) reveals strong directional pressure; stock has shed 62% from its 52-week high — potential deep value or extended downtrend; price is -26.5% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "CI",
@@ -10974,7 +11096,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 59.0,
         "rsi": 27.2,
         "rsi_proxy": 27.2,
@@ -10995,7 +11117,7 @@
         "rationale": "CI: volume running at 2.1x the daily average signals institutional-scale activity; price sits just +6.9% above the 52-week low (253.96) — a key decision zone; RSI proxy (27) and stochastic (11) in oversold territory support a bounce thesis; price is -5.5% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "COIN",
@@ -11008,7 +11130,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.01,
+      "volume_ratio": 1.02,
       "pct_from_52w_high": -63.57,
       "pct_from_52w_low": 9.32,
       "revenue_growth": null,
@@ -11078,7 +11200,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 65.0,
         "rsi": 22.6,
         "rsi_proxy": 22.6,
@@ -11091,7 +11213,7 @@
         "momentum_divergence": 29.96,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.02x avg",
+          "VOLUME NORMAL-HIGH: 1.03x avg",
           "NEAR 52W LOW: +9.3% above annual support — critical level",
           "MOMENTUM: -6.1% in 5 days — continued SELLING pressure",
           "MOMENTUM DIVERGENCE: 5d/20d gap +30.0pp — strong trend change signal",
@@ -11100,21 +11222,23 @@
         "rationale": "COIN: a 6.1% five-day selloff (20d: -36.1%) reveals strong directional pressure; price sits just +9.3% above the 52-week low (94.88) — a key decision zone; RSI proxy (23) and stochastic (20) in oversold territory support a bounce thesis; price is -35.0% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
-        "verdict": "BEAR",
+        "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "RSI 22.6 and BB 15% are deeply oversold; COIN historically has explosive relief rallies (+10% is about 1.4 ATR)"
+          "RSI 22,6 — dybt oversolgt efter -36% på 20d; historisk giver sådanne niveauer skarpe relief-rallies i COIN",
+          "+10% (~114) er kun halvvejs til BB-midten (127); crypto-sentiment kan vende hurtigt",
+          "Dagens +1,3% kan være første tegn på stabilisering"
         ],
         "bear": [
-          "-40% vs SMA200, -64% from the high and only 9% above the 52w low: the crypto bear trend dominates",
-          "Sept: landmark crypto bill failed in the Senate, so regulatory uncertainty persists"
+          "Kryptolovgivningen faldt i Senatet — regulatorisk usikkerhed består",
+          "Kun 9% over 52w-low og 40% under SMA200 — klar bear-trend afhængig af kryptopriser"
         ],
-        "summary": "Oversold but in a clear crypto downtrend with a regulatory overhang; the bounce potential doesn't make up for the trend risk.",
-        "key_risk": "Further crypto drawdown sends price under the 52w low (~95)"
+        "summary": "Coinbase følger kryptomarkedets nedtur og den mislykkede lovgivning. Dybt oversolgt teknisk (RSI 22,6) gør en teknisk rebound mulig, men aktien er i en tydelig nedtrend uden fundamental katalysator. Høj beta til bitcoin. Kun spekulativt.",
+        "key_risk": "Fortsat fald i kryptopriser og handelsvolumen presser omsætning; brud under 52w-low (~95)."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "CEG",
@@ -11197,7 +11321,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 64.0,
         "rsi": 48.5,
         "rsi_proxy": 48.5,
@@ -11218,22 +11342,23 @@
         "rationale": "CEG: a 10.4% five-day selloff (20d: -8.7%) reveals strong directional pressure; price sits just +3.2% above the 52-week low (227.93) — a key decision zone; price is -11.2% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Utility/nuclear exposure to AI power demand; only -8.7% in 20d vs. tech names, so relatively defensive",
-          "BB 7.5% is near the lower band; +10% back to ~259 is near SMA50 (-11%)"
+          "BB-position 7,5 og stoch 8,8 — tæt på nedre bånd (231) som kan give support",
+          "Langsigtet atomkraft-efterspørgsel fra datacentre med PPA'er giver strukturel bull-case",
+          "+10% (~259) svarer præcist til BB-midten"
         ],
         "bear": [
-          "Only 3% above the 52w low and -15% vs SMA200; -3.9% today and -10.5% in 5d show selling pressure",
-          "AI-power trade is under pressure along with the AI-capex de-rating; news is very stale (July)"
+          "-3,9% i dag og -10% på 5d; kun 3% over 52w-low — risiko for brud",
+          "Texas datacenter-moratorie og AI-capex-tvivl rammer power-sektoren"
         ],
-        "summary": "Testing the 52w low on the AI-power unwind; a reasonable floor, but no turn yet.",
-        "key_risk": "Breaks the 52w low (~228) and the AI-power premium deflates further"
+        "summary": "Constellation handler tæt på 52w-low efter at AI-power-narrativet er kølnet. Teknisk er aktien nær nedre BB-bånd, men momentum er negativt. Fundamentalt solid (atomflåde, langsigtede kontrakter), men sentimentet er dårligt. Rebound mod 259 muligt hvis 52w-low holder.",
+        "key_risk": "Brud under 52w-low (~228) og fortsat afsmitning fra AI-capex-skepsis."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "GLW",
@@ -11316,7 +11441,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 54.0,
         "rsi": 48.1,
         "rsi_proxy": 48.1,
@@ -11336,23 +11461,8 @@
         ],
         "rationale": "GLW: a 7.3% five-day selloff (20d: -23.4%) reveals strong directional pressure; stock has shed 63% from its 52-week high — potential deep value or extended downtrend; price is -24.6% vs SMA50."
       },
-      "analysis": {
-        "analysis_date": "2026-11-26",
-        "tier": "deep",
-        "verdict": "NEUTRAL",
-        "confidence": 4,
-        "bull": [
-          "Scout: RSI 48 has reset; optical fiber for AI datacenters is a structural driver",
-          "+10% (~110) is about one ATR (9.1)"
-        ],
-        "bear": [
-          "-35.5% vs SMA200 and -63% from the high; MACD -8.6",
-          "Caught in the AI-hardware de-rating; Sept yield shock (10y >5%) hurt valuations"
-        ],
-        "summary": "Structurally interesting fiber/AI exposure, but in a deep downtrend with no reversal signal.",
-        "key_risk": "AI-capex digestion cuts fiber orders"
-      },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "analysis": null,
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "CSGP",
@@ -11435,7 +11545,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 59.0,
         "rsi": 58.0,
         "rsi_proxy": 58.0,
@@ -11457,7 +11567,7 @@
         "rationale": "CSGP: a 13.8% five-day rally (20d: +23.5%) reveals strong directional pressure; stock has shed 52% from its 52-week high — potential deep value or extended downtrend; price is +12.7% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "DDOG",
@@ -11540,7 +11650,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 59.0,
         "rsi": 37.6,
         "rsi_proxy": 37.6,
@@ -11562,7 +11672,7 @@
         "rationale": "DDOG: a 5.3% five-day selloff (20d: -43.2%) reveals strong directional pressure; stock has shed 47% from its 52-week high — potential deep value or extended downtrend; price is -32.5% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "DELL",
@@ -11575,7 +11685,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 3.25,
+      "volume_ratio": 3.28,
       "pct_from_52w_high": -50.05,
       "pct_from_52w_low": 171.16,
       "revenue_growth": null,
@@ -11645,7 +11755,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 69.0,
         "rsi": 46.4,
         "rsi_proxy": 46.4,
@@ -11658,7 +11768,7 @@
         "momentum_divergence": 34.71,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME SPIKE: 2.57x avg — extreme institutional activity",
+          "VOLUME SPIKE: 2.58x avg — extreme institutional activity",
           "DEEP DRAWDOWN: -50.0% from 52w high — severe compression, mean-reversion potential",
           "MOMENTUM: -5.1% in 5 days — continued SELLING pressure",
           "MOMENTUM DIVERGENCE: 5d/20d gap +34.7pp — strong trend change signal"
@@ -11666,22 +11776,23 @@
         "rationale": "DELL: volume running at 2.6x the daily average signals institutional-scale activity; a 5.1% five-day selloff (20d: -39.8%) reveals strong directional pressure; stock has shed 50% from its 52-week high — potential deep value or extended downtrend; price is -34.9% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Price is back near SMA200 (-15%) after a 40% 20d flush; stochastic 27 and BB 23% put it in a capitulation zone while volume ratio 2.6-3.3x hints at accumulation",
-          "AI server backlog narrative (Sept news: server revenue doubling) intact; +10% only needs a retrace to ~327, well inside one ATR (38.5)"
+          "RSI 46 og stoch 27 trods -40% på 20d: momentum er nulstillet uden ekstrem oversold, og volumen 3,3x antyder kapitulation/institutionel akkumulering",
+          "Kurs ~15% under SMA200 (350) og 50% under 52w-high — +10% til ~327 er kun tilbage mod BB-midten (348), et realistisk mean-reversion-mål",
+          "Inference-server-sortimentet (45W-produkter) giver AI-eksponering ud over træningsklynger"
         ],
         "bear": [
-          "MACD -44 and price 35% below SMA50 confirm a broken trend; AI-hardware de-rating is sector-wide",
-          "High ATR (13% of price) means stops are wide and downside to the lower BB (~253, -15%) is quick"
+          "SMA50 (456) falder kraftigt og MACD -44 er dybt negativ — trenden er stadig klart nedadgående",
+          "ATR 38,5 (~13% af kurs) betyder meget store daglige udsving; bredt AI-hardware-selloff kan trække videre ned mod BB-lower 253"
         ],
-        "summary": "Heavy-volume capitulation off an AI-hardware de-rating with price near the SMA200; a bounce is plausible but there's no confirmed reversal yet, and news is stale (Sept).",
-        "key_risk": "AI-capex digestion deepens and price loses the lower BB at ~253"
+        "summary": "Dell er halveret fra toppen i et bredt AI-hardware-selloff (-40% på 20 dage). Den høje volumen (3,3x) og en RSI på 46 tyder på at det værste tvangssalg kan være overstået, og et rebound mod BB-midten (~348) vil give +15%. Men trenden er stadig nedadgående (pris under både SMA50 og SMA200, MACD stærkt negativ), og nyhedsstrømmen i datasættet er forældet (sept.), så der mangler en klar katalysator. Interessant mean-reversion-kandidat, men kræver stabilisering før indgang.",
+        "key_risk": "Fortsat AI-capex-nedtur og margin-pres fra stigende hukommelsespriser kan sende aktien mod 250."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "ETN",
@@ -11707,7 +11818,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 58.0,
         "rsi": 47.0,
         "rsi_proxy": 47.0,
@@ -11729,7 +11840,7 @@
         "rationale": "ETN: a 6.1% five-day selloff (20d: -18.9%) reveals strong directional pressure; price sits just +5.4% above the 52-week low (301.43) — a key decision zone; price is -18.0% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "ECHO",
@@ -11798,7 +11909,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 52.0,
         "rsi": 45.3,
         "rsi_proxy": 45.3,
@@ -11819,7 +11930,7 @@
         "rationale": "ECHO: a 11.5% five-day selloff (20d: -9.1%) reveals strong directional pressure; stock has shed 42% from its 52-week high — potential deep value or extended downtrend; price is -8.1% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "FLEX",
@@ -11902,7 +12013,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 57.0,
         "rsi": 50.5,
         "rsi_proxy": 50.5,
@@ -11923,7 +12034,7 @@
         "rationale": "FLEX: a 10.2% five-day selloff (20d: -27.7%) reveals strong directional pressure; stock has shed 60% from its 52-week high — potential deep value or extended downtrend; price is -27.7% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "FCX",
@@ -12006,7 +12117,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 53.0,
         "rsi": 35.0,
         "rsi_proxy": 35.0,
@@ -12028,7 +12139,7 @@
         "rationale": "FCX: a 5.6% five-day selloff (20d: -27.1%) reveals strong directional pressure; RSI proxy (35) and stochastic (18) in oversold territory support a bounce thesis; price is -25.3% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "GS",
@@ -12054,7 +12165,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 60.0,
         "rsi": 37.0,
         "rsi_proxy": 37.0,
@@ -12075,7 +12186,7 @@
         "rationale": "GS: a 8.3% five-day selloff (20d: -13.4%) reveals strong directional pressure; price sits just +3.7% above the 52-week low (772.74) — a key decision zone; price is -10.5% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "IDXX",
@@ -12158,7 +12269,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 19.5,
         "rsi": 63.3,
         "rsi_proxy": 63.3,
@@ -12177,21 +12288,23 @@
         "rationale": "IDXX: price is +20.0% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "BULL",
-        "confidence": 7,
+        "confidence": 6,
         "bull": [
-          "Strong uptrend: +20% vs SMA50, +23.5% vs SMA200, MACD +32, +26% in 20d",
-          "Only -7.9% from the 52w high; RSI 63 is strong without being overbought, and defensive health-care rotation favors it"
+          "+26% på 20d, over SMA50 og SMA200 — stærk optrend efter earnings",
+          "Kvalitets-diagnostik med recurring revenue",
+          "MACD positiv"
         ],
         "bear": [
-          "After +26% in 20d, a consolidation is likely; +10% requires a new high (~780)"
+          "Stoch 91,5 — overkøbt; momentum-divergens -24 tyder på afmatning",
+          "Høj værdiansættelse"
         ],
-        "summary": "Holding with clear momentum and relative strength in defensive health care; keep holding, with a trailing stop around SMA50-adjacent support.",
-        "key_risk": "Profit-taking after the steep 20d run; valuation premium"
+        "summary": "Beholdning: IDEXX er i stærk optrend og tæt på 52w-high. Kortsigtet overkøbt, men trend intakt. Hold, overvej trailing stop.",
+        "key_risk": "Pullback efter stærk stigning; svag dyrlægebesøgsvækst."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "INTU",
@@ -12274,7 +12387,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 64.0,
         "rsi": 15.6,
         "rsi_proxy": 15.6,
@@ -12295,22 +12408,23 @@
         "rationale": "INTU: a 13.3% five-day selloff (20d: -17.2%) reveals strong directional pressure; price sits just +8.4% above the 52-week low (250.56) — a key decision zone; RSI proxy (16) and stochastic (4) in oversold territory support a bounce thesis; price is -13.3% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "RSI 15.6 and BB 2.3% are extreme oversold readings, the strongest mean-reversion setup in the deep set",
-          "Quality software franchise (TurboTax/QuickBooks) at -60% from the high; +10% (~299) is about 2 ATR"
+          "RSI 15,6, stoch 3,5, BB-position 2,3 — ekstremt oversolgt; statistisk høj sandsynlighed for relief",
+          "Kvalitetsvirksomhed (TurboTax, QuickBooks) med recurring revenue; -60% fra top er markant komprimeret værdiansættelse",
+          "+10% til ~299 stadig under SMA50 (313)"
         ],
         "bear": [
-          "-13% in 5d with price below the lower BB, so momentum is strongly negative; -21% vs SMA200",
-          "AI-disruption fear around software/tax-prep is weighing on the multiple"
+          "-13% på 5d — fortsat aggressivt salg; frygt for AI-disruption af software-modeller",
+          "Under SMA200 med 21% — strukturel nedtrend"
         ],
-        "summary": "Extremely oversold quality name; a tactical bounce is likely, but the trend is still down, so wait for a stabilization candle.",
-        "key_risk": "AI-disruption narrative sends the multiple even lower toward the 52w low (~251)"
+        "summary": "Intuit er ekstremt oversolgt teknisk, og kombinationen med kvalitetsforretning gør den til en af de mere interessante mean-reversion-kandidater. Men selloffet er drevet af AI-disruptionsfrygt for software, som ikke forsvinder hurtigt. Mulig lille position efter første tegn på bund.",
+        "key_risk": "AI-agenter underminerer betalingsvilligheden for skat/bogførings-software; multipel-kompression fortsætter."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "LRCX",
@@ -12393,7 +12507,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 62.0,
         "rsi": 49.9,
         "rsi_proxy": 49.9,
@@ -12415,7 +12529,7 @@
         "rationale": "LRCX: a 12.6% five-day selloff (20d: -27.1%) reveals strong directional pressure; stock has shed 58% from its 52-week high — potential deep value or extended downtrend; price is -29.6% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "LDOS",
@@ -12498,7 +12612,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 27.7,
         "rsi": 41.7,
         "rsi_proxy": 41.7,
@@ -12518,22 +12632,22 @@
         "rationale": "LDOS: price is +1.9% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "+3.9% in 5d and right around SMA50 (+1.9%); Aug: record revenue and raised guidance",
-          "Defensive government IT, low ATR (3.5% of price)"
+          "+3,9% på 5d og over SMA50 — mulig stabilisering",
+          "Rekordomsætning og hævet guidance i Q2"
         ],
         "bear": [
-          "-3.4% vs SMA200 and -36% from the high; MACD slightly negative",
-          "Government-budget/contract risk; low volume (0.59x) in the rebound"
+          "Under SMA200 og -36% fra top",
+          "Usikkerhed om forsvarsbudgetter"
         ],
-        "summary": "Stabilizing holding with solid fundamentals; no reason to sell, but no strong upside signal either.",
-        "key_risk": "Government-spending cuts / contract loss"
+        "summary": "Beholdning: Leidos stabiliserer sig efter en svær periode, med solide fundamentale. Neutral — hold med stop under BB-lower (120).",
+        "key_risk": "Budgetusikkerhed eller kontraktnedskæringer."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "LITE",
@@ -12546,7 +12660,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.0,
+      "volume_ratio": 1.01,
       "pct_from_52w_high": -58.3,
       "pct_from_52w_low": 70.78,
       "revenue_growth": null,
@@ -12559,7 +12673,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 59.8,
         "rsi": 46.9,
         "rsi_proxy": 46.9,
@@ -12580,7 +12694,7 @@
         "rationale": "LITE: a 13.5% five-day selloff (20d: -47.9%) reveals strong directional pressure; stock has shed 58% from its 52-week high — potential deep value or extended downtrend; price is -40.8% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "MRVL",
@@ -12593,7 +12707,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.06,
+      "volume_ratio": 1.07,
       "pct_from_52w_high": -60.29,
       "pct_from_52w_low": 85.4,
       "revenue_growth": null,
@@ -12663,7 +12777,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 59.5,
         "rsi": 49.0,
         "rsi_proxy": 49.0,
@@ -12684,7 +12798,7 @@
         "rationale": "MRVL: a 10.0% five-day selloff (20d: -48.0%) reveals strong directional pressure; stock has shed 60% from its 52-week high — potential deep value or extended downtrend; price is -39.1% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "MCK",
@@ -12710,7 +12824,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 20.1,
         "rsi": 51.6,
         "rsi_proxy": 51.6,
@@ -12729,21 +12843,22 @@
         "rationale": "MCK: stock is pressing against its 52-week high at -3.9% — breakout watch; price is +9.4% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "BULL",
         "confidence": 6,
         "bull": [
-          "Stable uptrend: +9.4% vs SMA50, +22% vs SMA200, MACD +25, only -3.9% from the 52w high",
-          "Defensive drug distributor with steady earnings growth; low volatility (ATR 2.2%)"
+          "Over SMA50 og SMA200; +12% på 20d — stabil optrend",
+          "Defensiv lægemiddeldistribution med GLP-1-medvind"
         ],
         "bear": [
-          "Near the 52w high, so +10% requires a breakout to new highs; RSI 52 flat in 5d"
+          "Momentum-divergens -12,8 — afmatning",
+          "Tæt på 52w-high — begrænset kortsigtet upside"
         ],
-        "summary": "Defensive, trend-strong holding near its highs; keep holding.",
-        "key_risk": "Drug-pricing policy/regulation hits distributor margins"
+        "summary": "Beholdning: McKesson er en defensiv kvalitetsaktie i optrend. Hold.",
+        "key_risk": "Regulatorisk pres på lægemiddelpriser."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "MU",
@@ -12756,7 +12871,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.35,
+      "volume_ratio": 1.37,
       "pct_from_52w_high": -52.08,
       "pct_from_52w_low": 171.52,
       "revenue_growth": null,
@@ -12826,7 +12941,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 65.0,
         "rsi": 45.5,
         "rsi_proxy": 45.5,
@@ -12839,7 +12954,7 @@
         "momentum_divergence": 24.1,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.42x avg",
+          "VOLUME NORMAL-HIGH: 1.43x avg",
           "DEEP DRAWDOWN: -52.1% from 52w high — severe compression, mean-reversion potential",
           "MOMENTUM SELLOFF: -14.8% in 5 days — sharp directional move",
           "MOMENTUM DIVERGENCE: 5d/20d gap +24.1pp — strong trend change signal",
@@ -12848,22 +12963,141 @@
         "rationale": "MU: a 14.8% five-day selloff (20d: -38.9%) reveals strong directional pressure; stock has shed 52% from its 52-week high — potential deep value or extended downtrend; price is -32.9% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "RSI 45.5 is neutral despite -39% in 20d (the indicator has reset); price is above its 52w low +171%, so the cycle profit is still large",
-          "AI/HBM demand structurally supported; +10% (~660) is within one ATR (71)"
+          "RSI 45 på trods af -39% på 20d — momentum nulstillet; BB-position 10,7 nær nedre bånd (563)",
+          "Stadig +170% fra 52w-low: HBM/AI-efterspørgsel har bygget en markant højere indtjeningsbase",
+          "+10% til ~660 er realistisk ved sektor-relief"
         ],
         "bear": [
-          "MACD -72, -33% vs SMA50 and -23% vs SMA200: the trend is broken, -4.5% today, -14.8% in 5d",
-          "Aug news: Chinese memory competition and Apple testing Chinese chips pressure pricing"
+          "-4,5% i dag, -15% på 5d — salgspresset accelererer; under SMA50 og SMA200",
+          "Kinesisk hukommelseskonkurrence (Apple tester kinesiske chips) og cyklisk prisfald",
+          "ATR 71 (~12%) — ekstrem volatilitet"
         ],
-        "summary": "Memory-cycle unwind in progress with new lows in the 5-day trend; HBM demand gives a floor in the longer run, but timing is poor.",
-        "key_risk": "Memory prices peak and Chinese competition squeezes margins"
+        "summary": "Micron er halveret fra toppen i et hukommelses-selloff. Accelererende fald på 5 dage og brud under SMA200 tyder på at markedet prissætter en cyklustop. Langsigtet AI-HBM-case er intakt, men kortsigtet er der ingen bund. Afvent stabilisering.",
+        "key_risk": "Hukommelsespriserne topper og kinesisk konkurrence presser marginer — aktien kan falde mod 500."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
+    },
+    {
+      "symbol": "NRG",
+      "name": "NRG Energy",
+      "tradeable": true,
+      "price": 91.94,
+      "pct_1d": 1.14,
+      "pct_5d": -1.84,
+      "pct_20d": -4.72,
+      "pe_forward": null,
+      "pe_trailing": null,
+      "div_yield": null,
+      "volume_ratio": 1.17,
+      "pct_from_52w_high": -51.04,
+      "pct_from_52w_low": 15.43,
+      "revenue_growth": null,
+      "earnings_growth": null,
+      "market_cap": null,
+      "sector": "Utilities",
+      "industry": null,
+      "next_earnings_date": null,
+      "overview": "",
+      "fin_summary": "",
+      "news": [
+        {
+          "date": "2026-09-15",
+          "title": "Clearway Energy (CWEN) Dips More Than Broader Market: What You Should Know",
+          "source": "Zacks",
+          "summary": "Clearway Energy (CWEN) reached $29.93 at the closing of the latest trading day, reflecting a -1.19% change compared to its last close.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/clearway-energy-cwen-dips-more-221504280.html"
+        },
+        {
+          "date": "2026-09-14",
+          "title": "Vistra’s Price Has Edged Downward Throught 2026: One Analyst Says It’s Due to Double Soon.",
+          "source": "24/7 Wall St.",
+          "summary": "Vistra has quietly shed a quarter of its value while its operating results kept beating expectations, and Wall Street's most bullish analyst thinks that disconnect points to something big coming in 2027.",
+          "url": "https://247wallst.com/investing/2026/09/14/vistras-price-has-edged-downward-throught-2026-one-analyst-says-its-due-to-double-soon/"
+        },
+        {
+          "date": "2026-09-11",
+          "title": "NRG Energy (NRG) Laps the Stock Market: Here's Why",
+          "source": "Zacks",
+          "summary": "NRG Energy (NRG) concluded the recent trading session at $113.46, signifying a +1.62% move from its prior day's close.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nrg-energy-nrg-laps-stock-215003187.html"
+        },
+        {
+          "date": "2026-09-11",
+          "title": "Can CEG's Expanding Generation Portfolio Drive Long-Term Growth?",
+          "source": "Zacks",
+          "summary": "Constellation Energy expands generation with a $715 million RISEC deal and long-term nuclear contracts to support reliability, returns and earnings growth.",
+          "url": "https://finance.yahoo.com/energy/articles/cegs-expanding-generation-portfolio-drive-164000250.html"
+        },
+        {
+          "date": "2026-09-10",
+          "title": "NRG Energy, Inc. (NRG) is Attracting Investor Attention: Here is What You Should Know",
+          "source": "Zacks",
+          "summary": "Zacks.com users have recently been watching NRG (NRG) quite a bit. Thus, it is worth knowing the facts that could determine the stock's prospects.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nrg-energy-inc-nrg-attracting-130002747.html"
+        },
+        {
+          "date": "2026-09-10",
+          "title": "Should You Buy Vistra Stock For Its Shrinking Share Count?",
+          "source": "Trefis",
+          "summary": "Vistra (VST) has fallen about 19% over the past twelve months and trades roughly 30% below its 52-week high, with softer ERCOT power prices and an expected pause in some Texas data-center reviews among the worries. Underneath that tape, the company keeps handing its owners a bigger slice of itself. That is no longer the reason to buy the stock.",
+          "url": "https://www.trefis.com/articles/614686/should-you-buy-vistra-stock-for-its-shrinking-share-count/2026-09-09"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "Why Clearway Energy (CWEN) Dipped More Than Broader Market Today",
+          "source": "Zacks",
+          "summary": "In the latest trading session, Clearway Energy (CWEN) closed at $32.07, marking a -3.14% move from the previous day.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-clearway-energy-cwen-dipped-221503582.html"
+        },
+        {
+          "date": "2026-09-09",
+          "title": "Vistra Has Edged Lower Throughout 2026: One Bank Says It’s On The Verge of Doubling",
+          "source": "24/7 Wall St.",
+          "summary": "Vistra has spent nine months drifting lower while Wall Street piled up bullish price targets, and at least one major bank now sees a setup that looks nothing like the slow bleed playing out on the chart.",
+          "url": "https://247wallst.com/investing/2026/09/09/vistra-has-edged-lower-throughout-2026-one-bank-says-its-on-the-verge-of-doubling/"
+        }
+      ],
+      "technical": {
+        "screening_date": "2026-11-27",
+        "score": 24.2,
+        "rsi": 61.3,
+        "rsi_proxy": 61.3,
+        "stoch_proxy": 54.6,
+        "bb_position": 43.4,
+        "sma50_vs_price": -5.42,
+        "sma200_vs_price": -28.71,
+        "macd_line": -1.5107,
+        "atr": 5.5271,
+        "momentum_divergence": 2.88,
+        "indicator_method": "yfinance_historical",
+        "signals": [
+          "DEEP DRAWDOWN: -51.0% from 52w high — severe compression, mean-reversion potential"
+        ],
+        "rationale": "NRG: stock has shed 51% from its 52-week high — potential deep value or extended downtrend; price is -5.4% vs SMA50."
+      },
+      "analysis": {
+        "analysis_date": "2026-11-27",
+        "tier": "deep",
+        "verdict": "NEUTRAL",
+        "confidence": 5,
+        "bull": [
+          "RSI 61 og pris tæt på SMA50 — relativ styrke vs. tech/power-selloff; har holdt sig stabil (-4,7% på 20d)",
+          "Retail-power + datacenter-PPA-potentiale; +15% fra 52w-low viser bundformation",
+          "+10% (~101) er inden for øvre BB (103)"
+        ],
+        "bear": [
+          "Stadig 29% under SMA200 og -51% fra top — langsigtet trend negativ",
+          "Sektorsentiment for AI-power er svagt"
+        ],
+        "summary": "Scout: NRG viser relativ styrke og en mulig bundformation efter en halvering. Teknisk neutralt-positivt kortsigtet (RSI 61, nær BB-midten). Kan være en tidlig vinder hvis power-sektoren vender, men SMA200 er langt over. Watchlist-kandidat.",
+        "key_risk": "Power-sektoren fortsætter ned og SMA50 (97) afviser kursen."
+      },
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "ORCL",
@@ -12876,7 +13110,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 1.25,
+      "volume_ratio": 1.26,
       "pct_from_52w_high": -58.19,
       "pct_from_52w_low": 4.57,
       "revenue_growth": null,
@@ -12946,8 +13180,8 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
-        "score": 66.5,
+        "screening_date": "2026-11-27",
+        "score": 66.6,
         "rsi": 41.5,
         "rsi_proxy": 41.5,
         "stoch_proxy": 14.4,
@@ -12967,21 +13201,23 @@
         "rationale": "ORCL: a 8.8% five-day selloff (20d: -28.1%) reveals strong directional pressure; price sits just +4.6% above the 52-week low (99.34) — a key decision zone; price is -20.1% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "BEAR",
         "confidence": 3,
         "bull": [
-          "BB position 8.7% and 58% below its 52w high give a low base; any positive news on AI-cloud financing could trigger a short squeeze toward the SMA50 (+20%)"
+          "BB-position 8,7 og stoch 14 — tæt på nedre bånd (100,75) som kan give teknisk support",
+          "Kun 4,6% over 52w-low; meget dårlige nyheder er prissat efter -58% fra toppen"
         ],
         "bear": [
-          "Only 4.6% above the 52w low and -31% vs SMA200: a persistent downtrend, -5.1% today",
-          "Sept force majeure on Project Jupiter and the Blue Owl financing delay point to AI-datacenter financing risk and a high debt load"
+          "Force majeure på Project Jupiter-datacentret og Blue Owl-forsinkelse rejser alvorlige spørgsmål om AI-finansiering og gearing",
+          "-5,1% i dag og under SMA200 med 31% — vedvarende distribution, 52w-low er tæt på at blive brudt",
+          "Høj gæld til AI-capex gør aktien sårbar over for stigende renter"
         ],
-        "summary": "Persistent downtrend near the 52w low with concrete financing risk on its AI build-out; no technical reversal signal.",
-        "key_risk": "Breaks the 52w low (~99) on more datacenter delays/credit concerns"
+        "summary": "Oracle er faldet 58% fra toppen og handler nær 52w-low. Problemerne er fundamentale: force majeure på et stort AI-datacenter og finansieringsproblemer hos partnere. Det rammer kernen af bull-casen (OCI-vækst). Trods teknisk oversolgte niveauer ses ingen tegn på bund — dagens -5% viser fortsat salgspres. +10% (~114) kræver troværdig opdatering om datacenter-tidsplan og finansiering.",
+        "key_risk": "Brud på 52w-low og nedgradering af kreditrating pga. AI-capex-gæld."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "PNR",
@@ -13064,7 +13300,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 37.6,
         "rsi": 61.3,
         "rsi_proxy": 61.3,
@@ -13084,22 +13320,22 @@
         "rationale": "PNR: a 6.6% five-day rally (20d: +13.2%) reveals strong directional pressure; price is +21.3% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "BULL",
         "confidence": 6,
         "bull": [
-          "Strong momentum: +6.6% in 5d, +13% in 20d, +21% vs SMA50, MACD positive; just reclaimed SMA200",
-          "Water infrastructure/dividend king with defensive quality"
+          "+13% på 20d og nu over SMA200 — teknisk trendskifte",
+          "MACD positiv; stærkt momentum"
         ],
         "bear": [
-          "BB position 104% means price is above the upper band and short-term overbought; a pullback toward ~70 is likely",
-          "Still -32% from the 52w high"
+          "BB-position 104 og stoch 95 — overkøbt",
+          "-32% fra top — modstand ovenfor"
         ],
-        "summary": "Holding with strong momentum and a fresh break above the SMA200; keep holding, but expect a short-term pullback from the upper band.",
-        "key_risk": "Mean reversion from overbought BB; residential pool/water demand weakens"
+        "summary": "Beholdning: Pentair har brudt over SMA200 med stærkt momentum. Kortsigtet overkøbt, men trendskifte bekræftet. Hold.",
+        "key_risk": "Pullback fra overkøbt niveau og svag bolig-/pool-efterspørgsel."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "PM",
@@ -13125,7 +13361,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 31.0,
         "rsi": 23.6,
         "rsi_proxy": 23.6,
@@ -13145,22 +13381,22 @@
         "rationale": "PM: RSI proxy (24) and stochastic (15) in oversold territory support a bounce thesis; price is -5.8% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "RSI 23.6 and BB 16% are oversold in a defensive staples name still above SMA200 (+1.6%)",
-          "Smoke-free (ZYN/IQOS) growth and dividend give a valuation floor"
+          "RSI 23,6 — oversolgt; stadig over SMA200 (181) som er support",
+          "Defensiv med vækst i røgfrie produkter (ZYN, IQOS)"
         ],
         "bear": [
-          "-9% in 20d with MACD -3.9; below SMA50 (-5.8%)",
-          "Currency/excise-tax risk; staples are underperforming"
+          "Under SMA50 og -9% på 20d — kortsigtet svaghed",
+          "Volumen 1,3x indikerer distribution"
         ],
-        "summary": "Oversold defensive holding testing its SMA200; mean reversion likely, but the SMA200 needs to hold.",
-        "key_risk": "Breaks the SMA200 (~181) and a downtrend sets in"
+        "summary": "Beholdning: Philip Morris er oversolgt men tester SMA200-support. Hold så længe 181 holder.",
+        "key_risk": "Brud under SMA200 og ZYN-vækst skuffer."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "HOOD",
@@ -13173,7 +13409,7 @@
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.78,
+      "volume_ratio": 0.79,
       "pct_from_52w_high": -52.93,
       "pct_from_52w_low": 7.38,
       "revenue_growth": null,
@@ -13243,7 +13479,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 54.0,
         "rsi": 34.1,
         "rsi_proxy": 34.1,
@@ -13256,7 +13492,7 @@
         "momentum_divergence": 23.15,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "VOLUME NORMAL-HIGH: 1.01x avg",
+          "VOLUME NORMAL-HIGH: 1.02x avg",
           "NEAR 52W LOW: +7.4% above annual support — critical level",
           "MOMENTUM: -4.9% in 5 days",
           "MOMENTUM DIVERGENCE: 5d/20d gap +23.1pp — strong trend change signal",
@@ -13265,7 +13501,7 @@
         "rationale": "HOOD: price sits just +7.4% above the 52-week low (61.26) — a key decision zone; RSI proxy (34) and stochastic (18) in oversold territory support a bounce thesis; price is -31.4% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "SNDK",
@@ -13348,7 +13584,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 69.0,
         "rsi": 27.9,
         "rsi_proxy": 27.9,
@@ -13370,22 +13606,23 @@
         "rationale": "SNDK: a 19.4% five-day selloff (20d: -40.1%) reveals strong directional pressure; stock has shed 68% from its 52-week high — potential deep value or extended downtrend; RSI proxy (28) and stochastic (1) in oversold territory support a bounce thesis; price is -44.7% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
-        "verdict": "BEAR",
+        "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "RSI 27.9 and BB 18% are deeply oversold after -40% in 20d; snapback rallies in memory names can easily be +10% (under one ATR of 12.9)",
-          "Aug guidance/Wedbush long-term targets point to strong earnings power in the cycle"
+          "RSI 27,9 og stoch 1,4 — ekstremt oversolgt efter -40% på 20d og -19% på 5d; teknisk rebound er sandsynligt",
+          "Fortsat +300% fra 52w-low; Wedbush-langsigtede mål og stærk guidance i august viser underliggende indtjeningskraft i NAND/enterprise-SSD",
+          "+10% til ~104 er stadig under BB-midten (127)"
         ],
         "bear": [
-          "Price 41-45% below both SMA50 and SMA200, MACD -21: a full trend breakdown, not a dip",
-          "-68% from the 52w high signals that the market is pricing a memory-cycle peak; falling knives in a cycle top rarely bottom on the first oversold reading"
+          "Pris 41-45% under både SMA50 og SMA200 — momentum er brudt og hukommelsescyklussen kan være vendt",
+          "ATR 12,9 (~14% af kurs) — ekstrem volatilitet; faldende kniv uden bekræftet bund"
         ],
-        "summary": "Extremely oversold, but the memory-cycle unwind has broken even the long-term trend; only a tactical bounce candidate, not a position buy.",
-        "key_risk": "NAND price drop / cycle peak gives a further leg down"
+        "summary": "Sandisk er kollapset 68% fra toppen i hukommelsessektorens nedtur. Teknisk er aktien ekstremt oversolgt (stoch 1,4, RSI 28), hvilket gør et kortsigtet relief-rally sandsynligt, men det sker med meget høj volatilitet og ingen bekræftet vending. Nyhederne er fra august og afspejler ikke den aktuelle cyklus-frygt. Kun egnet til en lille, spekulativ position med stramt ATR-stop.",
+        "key_risk": "Hukommelsescyklussen vender ned (NAND-prisfald, kinesisk konkurrence) og aktien fortsætter mod 52w-low-territorium."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "SRE",
@@ -13468,7 +13705,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 36.3,
         "rsi": 46.5,
         "rsi_proxy": 46.5,
@@ -13488,22 +13725,22 @@
         "rationale": "SRE: price sits just +4.1% above the 52-week low (75.97) — a key decision zone; price is -1.8% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "Defensive utility with low volatility (ATR 1.8%); +2% in 5d",
-          "Oncor/Texas load growth is a long-term driver"
+          "Stabil (+2% på 5d), defensiv utility",
+          "Oncor-vækst fra Texas-load-pipeline"
         ],
         "bear": [
-          "-9.9% vs SMA200 and only 4% above the 52w low; MACD slightly negative",
-          "Aug: Texas data-center freeze can reduce Oncor's ~300GW load pipeline; rate sensitivity"
+          "Under SMA200 med 10% og kun 4% over 52w-low",
+          "Texas datacenter-moratorie truer load-vækst"
         ],
-        "summary": "Holding near its 52w low with a stabilizing short-term trend; hold, but the Texas freeze is weighing on the growth thesis.",
-        "key_risk": "Breaks the 52w low (~76) on rate rises/Texas regulation"
+        "summary": "Beholdning: Sempra er svag teknisk, nær 52w-low. Neutral — hold med stramt stop.",
+        "key_risk": "Brud under 52w-low og regulatoriske udfordringer i Texas."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "TER",
@@ -13529,7 +13766,7 @@
       "fin_summary": "",
       "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 51.5,
         "rsi": 49.9,
         "rsi_proxy": 49.9,
@@ -13549,7 +13786,7 @@
         "rationale": "TER: a 9.8% five-day selloff (20d: -32.2%) reveals strong directional pressure; stock has shed 56% from its 52-week high — potential deep value or extended downtrend; price is -33.9% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "TPL",
@@ -13632,7 +13869,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 64.0,
         "rsi": 43.1,
         "rsi_proxy": 43.1,
@@ -13653,140 +13890,23 @@
         "rationale": "TPL: volume running at 1.8x the daily average signals institutional-scale activity; a 8.6% five-day selloff (20d: -21.3%) reveals strong directional pressure; price sits just +6.6% above the 52-week low (245.26) — a key decision zone; price is -18.8% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 5,
         "bull": [
-          "+4% today on 1.8x volume, a possible reversal attempt; BB 23%",
-          "Asset-light royalty/water/datacenter-land model; +10% (~288) is about 2 ATR"
+          "+4% i dag på 2,5x volumen — mulig bundformation/akkumulering",
+          "Højmargin royalty-/vandforretning i Permian uden capex; nettokontant",
+          "+10% til ~288 = BB-midten"
         ],
         "bear": [
-          "-34% vs SMA200 and -52% from the high; MACD -18.6",
-          "Aug: Texas data-center moratorium hits the land/power thesis; oil price exposure"
+          "Texas datacenter-moratorie truer vækst-narrativet om land/vand til datacentre",
+          "Under SMA200 med 34% og kun 6,6% over 52w-low"
         ],
-        "summary": "Reversal attempt on volume from a deep downtrend, but the Texas data-center moratorium is weighing on the growth case; needs follow-through.",
-        "key_risk": "Data-center moratorium becomes permanent / oil price falls"
+        "summary": "TPL har haft en hård nedtur (-52% fra top), men dagens stærke stigning på høj volumen kan indikere vending. Forretningsmodellen er robust, men aktien handler på et datacenter-premium der er under pres. Interessant watch — kræver bekræftelse over SMA50-trend.",
+        "key_risk": "Lavere olie-/gasaktivitet i Permian og udeblivende datacenter-indtægter."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
-    },
-    {
-      "symbol": "TTD",
-      "name": "Trade Desk (The)",
-      "tradeable": true,
-      "price": 14.09,
-      "pct_1d": 0.14,
-      "pct_5d": -9.21,
-      "pct_20d": 10.42,
-      "pe_forward": null,
-      "pe_trailing": null,
-      "div_yield": null,
-      "volume_ratio": 0.7,
-      "pct_from_52w_high": -65.64,
-      "pct_from_52w_low": 21.26,
-      "revenue_growth": null,
-      "earnings_growth": null,
-      "market_cap": null,
-      "sector": "Communication Services",
-      "industry": null,
-      "next_earnings_date": null,
-      "overview": "",
-      "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-09-28",
-          "title": "The Trade Desk (TTD) Declines More Than Market: Some Information for Investors",
-          "source": "Zacks",
-          "summary": "The Trade Desk (TTD) closed the most recent trading day at $12.35, moving 1.98% from the previous trading session.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-ttd-declines-more-204506678.html"
-        },
-        {
-          "date": "2026-09-28",
-          "title": "Trade Desk Is Down 68% This Year. Is It Time to Sell, or Is This a Lifetime Opportunity?",
-          "source": "24/7 Wall St.",
-          "summary": "One advertising technology stock climbed 46% this year while Trade Desk collapsed, and that split forces every shareholder to confront whether the buying side of programmatic advertising faces a temporary stumble or something far harder to recover from.",
-          "url": "https://247wallst.com/investing/2026/09/28/trade-desk-is-down-68-this-year-is-it-time-to-sell-or-is-this-a-lifetime-opportunity/"
-        },
-        {
-          "date": "2026-09-28",
-          "title": "AppLovin Jumps 4% as Buyers Return After Year-Long Slide; Trade Desk Nudges Higher, Digital Turbine Barely Budges",
-          "source": "24/7 Wall St.",
-          "summary": "AppLovin buyers are wading back in after a brutal year-long selloff, but ad tech peers are barely flinching, and the reasons behind that split reveal a high-stakes debate about whether the bleeding has truly stopped.",
-          "url": "https://247wallst.com/investing/2026/09/28/applovin-jumps-4-as-buyers-return-after-year-long-slide-trade-desk-nudges-higher-digital-turbine-barely-budges/"
-        },
-        {
-          "date": "2026-09-26",
-          "title": "Reddit vs. The Trade Desk: Here's the Better Media Stock to Buy in 2026",
-          "source": "Motley Fool",
-          "summary": "Reddit just turned profitable with a new AI licensing revenue stream, while The Trade Desk commands steady growth and stronger cash generation, but their valuations tell opposite stories.",
-          "url": "https://www.fool.com/coverage/better-buy/2026/09/26/reddit-vs-the-trade-desk-here-s-the-better-media-stock-to-buy-in-2026/"
-        },
-        {
-          "date": "2026-09-24",
-          "title": "The Trade Desk (TTD) Is a Trending Stock: Facts to Know Before Betting on It",
-          "source": "Zacks",
-          "summary": "The Trade Desk (TTD) has been one of the stocks most watched by Zacks.com users lately. So, it is worth exploring what lies ahead for the stock.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-ttd-trending-stock-120003655.html"
-        },
-        {
-          "date": "2026-09-24",
-          "title": "How Is The Trade Desk's Stock Performance Compared to Other Communication Stocks",
-          "source": "Barchart",
-          "summary": "The Trade Desk has underperformed other communication stocks, and analysts remain unsure about the stock’s outlook.",
-          "url": "https://www.barchart.com/story/news/4773545/how-is-the-trade-desk-s-stock-performance-compared-to-other-communication-stocks"
-        },
-        {
-          "date": "2026-09-23",
-          "title": "How Much Should One Number Worry AppLovin Stock Holders?",
-          "source": "Trefis",
-          "summary": "The number that should worry a holder of AppLovin (APP) stock is its revenue growth. Revenue rose 53% from a year earlier in the fiscal second quarter of 2026. That was the third quarter in a row of slower growth. The pace is still fast. But the stock is priced for growth to stay fast, which is why the slowdown matters.",
-          "url": "https://www.trefis.com/articles/616278/how-much-should-one-number-worry-applovin-stock-holders/2026-09-23"
-        },
-        {
-          "date": "2026-09-23",
-          "title": "Trade Desk (TTD) Stock May Be 33% Undervalued After Healthcare Ad Push",
-          "source": "Simply Wall St.",
-          "summary": "Trade Desk has seen its share price fall sharply in recent years, and that slide naturally raises a question for anyone looking at the stock today. Is the current valuation still in line with the cash flows the business is expected to generate, or has the market moved ahead of what its underlying economics can support? Over the past 3 years, Trade Desk shares have declined 82.3%, which puts the fo",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/trade-desk-ttd-stock-may-181557550.html"
-        }
-      ],
-      "technical": {
-        "screening_date": "2026-11-26",
-        "score": 49.6,
-        "rsi": 57.7,
-        "rsi_proxy": 57.7,
-        "stoch_proxy": 39.7,
-        "bb_position": 49.1,
-        "sma50_vs_price": 6.68,
-        "sma200_vs_price": -23.92,
-        "macd_line": 0.3158,
-        "atr": 1.0753,
-        "momentum_divergence": -19.63,
-        "indicator_method": "yfinance_historical",
-        "signals": [
-          "DEEP DRAWDOWN: -65.6% from 52w high — severe compression, mean-reversion potential",
-          "MOMENTUM SELLOFF: -9.2% in 5 days — sharp directional move",
-          "MOMENTUM DIVERGENCE: 5d/20d gap -19.6pp — strong trend change signal"
-        ],
-        "rationale": "TTD: a 9.2% five-day selloff (20d: +10.4%) reveals strong directional pressure; stock has shed 66% from its 52-week high — potential deep value or extended downtrend; price is +6.7% vs SMA50."
-      },
-      "analysis": {
-        "analysis_date": "2026-11-26",
-        "tier": "deep",
-        "verdict": "NEUTRAL",
-        "confidence": 5,
-        "bull": [
-          "Scout: the only name in the screener set above SMA50 (+6.7%) with positive MACD and +10% in 20d, an early bottoming pattern",
-          "+21% above its 52w low; RSI 57.7 is healthy, not overbought"
-        ],
-        "bear": [
-          "-24% vs SMA200 and -66% from the high; -9.2% in 5d shows the rebound is fragile",
-          "Low volume (0.58x) in the rebound; competition from Amazon/CTV pressures take-rate"
-        ],
-        "summary": "Most interesting scout: an early technical turn (above SMA50, MACD positive) from a deep low, but the 5d pullback and low volume require confirmation.",
-        "key_risk": "Rebound fails and price falls back under SMA50 toward the 52w low (~11.6)"
-      },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "VRTX",
@@ -13869,7 +13989,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 36.9,
         "rsi": 61.1,
         "rsi_proxy": 61.1,
@@ -13889,22 +14009,22 @@
         "rationale": "VRTX: a 5.2% five-day rally (20d: +6.5%) reveals strong directional pressure; stock is pressing against its 52-week high at -1.3% — breakout watch; price is +7.4% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "BULL",
         "confidence": 7,
         "bull": [
-          "Near its 52w high (-1.3%), +16% vs SMA200, MACD positive, +5% in 5d",
-          "Sept: kidney pipeline breakthrough plus analysts see 20%+ upside; defensive biotech rotation"
+          "Tæt på 52w-high, over SMA50/SMA200, MACD positiv — stærk optrend",
+          "Nyre-pipeline og analytikere ser +20% upside"
         ],
         "bear": [
-          "BB 93% puts it near the upper band, so a short-term pause is likely",
-          "Pipeline/clinical binary risk"
+          "Stoch 87 og BB-position 93 — kortsigtet strakt",
+          "Pipeline-risiko"
         ],
-        "summary": "Trend-strong holding with a pipeline catalyst and a breakout at new highs; keep holding.",
-        "key_risk": "Negative clinical data or pricing pressure"
+        "summary": "Beholdning: Vertex er i en stærk optrend med fundamentale katalysatorer. Hold.",
+        "key_risk": "Klinisk skuffelse i pipeline."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "VRT",
@@ -13987,7 +14107,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 60.2,
         "rsi": 48.8,
         "rsi_proxy": 48.8,
@@ -14008,125 +14128,68 @@
         "rationale": "VRT: a 10.8% five-day selloff (20d: -28.6%) reveals strong directional pressure; stock has shed 54% from its 52-week high — potential deep value or extended downtrend; price is -21.0% vs SMA50."
       },
       "analysis": null,
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
-      "symbol": "WDC",
-      "name": "Western Digital",
+      "symbol": "V",
+      "name": "Visa Inc.",
       "tradeable": true,
-      "price": 272.45,
-      "pct_1d": -0.55,
-      "pct_5d": -5.46,
-      "pct_20d": -31.27,
+      "price": 424.39,
+      "pct_1d": 1.83,
+      "pct_5d": 2.21,
+      "pct_20d": 6.13,
       "pe_forward": null,
       "pe_trailing": null,
       "div_yield": null,
-      "volume_ratio": 0.77,
-      "pct_from_52w_high": -65.93,
-      "pct_from_52w_low": 80.26,
+      "volume_ratio": 0.9,
+      "pct_from_52w_high": -3.86,
+      "pct_from_52w_low": 45.24,
       "revenue_growth": null,
       "earnings_growth": null,
       "market_cap": null,
-      "sector": "Information Technology",
+      "sector": "Financials",
       "industry": null,
       "next_earnings_date": null,
       "overview": "",
       "fin_summary": "",
-      "news": [
-        {
-          "date": "2026-09-15",
-          "title": "What Would It Take For Micron Technology Stock To Keep Climbing?",
-          "source": "Trefis",
-          "summary": "Micron Technology (MU) trades near $924, up more than 500% over the past year and still about 24% below its three-year high. The easy read on a $1 trillion memory maker is that the run is over. But Micron has signed 16 strategic customer agreements that commit customers to buy set volumes, the largest at prices held between a contracted floor and a ceiling set at the June-quarter market price. A t",
-          "url": "https://www.trefis.com/articles/615382/what-would-it-take-for-micron-technology-stock-to-keep-climbing/2026-09-15"
-        },
-        {
-          "date": "2026-09-15",
-          "title": "Western Digital (WDC): Buy, Sell, or Hold Post Q2 Earnings?",
-          "source": "StockStory",
-          "summary": "The past six months have been a windfall for Western Digital’s shareholders. The company’s stock price has jumped 50.5%, hitting $430.84 per share. This was partly thanks to its solid quarterly results, and the run-up might have investors contemplating their next move.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/western-digital-wdc-buy-sell-182331986.html"
-        },
-        {
-          "date": "2026-09-15",
-          "title": "Western Digital Falls 4% Despite Its AI Storage Pitch; Seagate Drops 5%, Micron Holds Steady",
-          "source": "24/7 Wall St.",
-          "summary": "Western Digital is pitching AI storage at a major conference this week, but the market is voting with sell orders instead. Whether today's slide is a buying opportunity or a warning about stretched valuations depends on one critical gap between marketing and signed contracts.",
-          "url": "https://247wallst.com/investing/2026/09/15/western-digital-falls-4-despite-its-ai-storage-pitch-seagate-drops-5-micron-holds-steady/"
-        },
-        {
-          "date": "2026-09-15",
-          "title": "Western Digital (WDC): The Fund’s Top Relative Contributor",
-          "source": "Insider Monkey",
-          "summary": "Fidelity Investments, an investment management company, recently released its second-quarter 2026 investor letter for the “Fidelity Dividend Growth Fund”. The letter can be downloaded here. The Fidelity Dividend Growth Fund is a diversified large-cap equity strategy focused on capital appreciation through investments in large- and mid-cap stocks with strong dividend growth prospects. The fund retu",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/western-digital-wdc-fund-top-151936638.html"
-        },
-        {
-          "date": "2026-09-15",
-          "title": "SNDK Stock Rewarded Dip Buyers Before, But Is It Still The Same Company?",
-          "source": "Trefis",
-          "summary": "SanDisk (SNDK) has fallen about 13% from its mid-August high, and the question is whether to buy. Its own record says buying a dip here has paid, though that record is one completed event. The catch: this fall is smaller than the ones the record measures. And SanDisk now sells much of its memory under multiyear contracts.",
-          "url": "https://www.trefis.com/articles/615405/sndk-stock-rewarded-dip-buyers-before-but-is-it-still-the-same-company/2026-09-15"
-        },
-        {
-          "date": "2026-09-15",
-          "title": "Why Western Digital (WDC) Stock Is Trading Lower Today",
-          "source": "StockStory",
-          "summary": "Shares of leading data storage manufacturer Western Digital (NASDAQ: WDC) fell 4.8% in the afternoon session after the company announced the redemption of all $109.5 million of its 3% convertible notes amid broader weakness across AI memory and storage stocks.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-western-digital-wdc-stock-002730490.html"
-        },
-        {
-          "date": "2026-09-14",
-          "title": "Western Digital (WDC) Falls More Steeply Than Broader Market: What Investors Need to Know",
-          "source": "Zacks",
-          "summary": "The latest trading day saw Western Digital (WDC) settling at $426.94, representing a -4.53% change from its previous close.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/western-digital-wdc-falls-more-215006353.html"
-        },
-        {
-          "date": "2026-09-14",
-          "title": "Should You Buy SanDisk Stock Because It Has Started Retiring Its Own Shares?",
-          "source": "Trefis",
-          "summary": "SanDisk (SNDK) shares have surged from below $80 to over $1,650 over the past twelve months—a more than twentyfold run—and while they have given back about 13% over the past three months, they remain roughly 30% below their $2,354 peak. The argument against them is about a ceiling on margins. The number that complicates it is the share count.",
-          "url": "https://www.trefis.com/articles/615225/should-you-buy-sandisk-stock-because-it-has-started-retiring-its-own-shares/2026-09-14"
-        }
-      ],
+      "news": [],
       "technical": {
-        "screening_date": "2026-11-26",
-        "score": 45.6,
-        "rsi": 51.2,
-        "rsi_proxy": 51.2,
-        "stoch_proxy": 37.3,
-        "bb_position": 28.2,
-        "sma50_vs_price": -25.35,
-        "sma200_vs_price": -35.48,
-        "macd_line": -25.2968,
-        "atr": 27.1493,
-        "momentum_divergence": 25.81,
+        "screening_date": "2026-11-27",
+        "score": 24.2,
+        "rsi": 52.0,
+        "rsi_proxy": 52.0,
+        "stoch_proxy": 78.2,
+        "bb_position": 67.1,
+        "sma50_vs_price": 6.99,
+        "sma200_vs_price": 21.49,
+        "macd_line": 4.0985,
+        "atr": 9.1995,
+        "momentum_divergence": -3.92,
         "indicator_method": "yfinance_historical",
         "signals": [
-          "DEEP DRAWDOWN: -65.9% from 52w high — severe compression, mean-reversion potential",
-          "MOMENTUM: -5.5% in 5 days — continued SELLING pressure",
-          "MOMENTUM DIVERGENCE: 5d/20d gap +25.8pp — strong trend change signal"
+          "NEAR 52W HIGH: -3.9% — breakout territory",
+          "MOMENTUM: +2.2% in 5 days"
         ],
-        "rationale": "WDC: a 5.5% five-day selloff (20d: -31.3%) reveals strong directional pressure; stock has shed 66% from its 52-week high — potential deep value or extended downtrend; price is -25.4% vs SMA50."
+        "rationale": "V: stock is pressing against its 52-week high at -3.9% — breakout watch; price is +7.0% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
-        "verdict": "NEUTRAL",
-        "confidence": 4,
+        "verdict": "BULL",
+        "confidence": 7,
         "bull": [
-          "RSI 51 and BB 28% are relatively firmer than the memory peers in 5d (-5.5% vs SNDK -19%); AI storage/HDD demand",
-          "Scout: could be the first memory/storage name to turn if the sector stabilizes; +10% (~300) is one ATR"
+          "Pris over stigende SMA50 og SMA200; MACD positiv — klar optrend og tæt på 52w-high (-3,9%)",
+          "Defensiv kvalitet med prissætningskraft og høj margin; tydelig rotation fra tech til kvalitet",
+          "+10% (~467) kræver fortsat trend og brud over 52w-high"
         ],
         "bear": [
-          "-35% vs SMA200 and -66% from the high; MACD -25",
-          "Sept: fell despite its AI storage pitch, so the market doesn't believe the story"
+          "Stoch 78 — kortsigtet strakt",
+          "Regulatorisk risiko (interchange-lovgivning) og stablecoin-konkurrence"
         ],
-        "summary": "Scout candidate with relative strength within storage, but no confirmation of a sector bottom; on the watchlist, not a buy.",
-        "key_risk": "Storage-cycle unwind pulls WDC down with SNDK/MU"
+        "summary": "Scout: Visa er i en sund optrend og nyder rotation til defensiv kvalitet midt i tech-selloffet. Ikke billig, men momentum og fundamentale er stærke. Solid kandidat til porteføljen.",
+        "key_risk": "Interchange-regulering eller afmatning i forbrug."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "ZBRA",
@@ -14209,7 +14272,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 12.0,
         "rsi": 48.3,
         "rsi_proxy": 48.3,
@@ -14227,21 +14290,22 @@
         "rationale": "ZBRA: price is -10.6% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "NEUTRAL",
         "confidence": 4,
         "bull": [
-          "Above SMA200 (+10.9%) and +60% from its 52w low; Aug: rising earnings estimates"
+          "Over SMA200 (287) som support",
+          "Stigende indtjeningsestimater"
         ],
         "bear": [
-          "-17% in 20d, -10.6% vs SMA50, MACD -13: medium-term momentum lost",
-          "Lowest screener score in the set (12); cyclical exposure to retail/logistics capex"
+          "-17% på 20d og under SMA50 — momentum negativt",
+          "Lav screener-score (12)"
         ],
-        "summary": "Weakest holding in the screening; the long-term trend is intact, but medium-term momentum is lost, a candidate for trimming if a better alternative appears.",
-        "key_risk": "Breaks the SMA200 (~287) on weaker logistics capex"
+        "summary": "Beholdning: Zebra er i korrektion med negativt momentum, men holder over SMA200. Neutral — overvej exit ved brud under 287.",
+        "key_risk": "Brud under SMA200 og svag lager/logistik-efterspørgsel."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     },
     {
       "symbol": "ZBH",
@@ -14324,7 +14388,7 @@
         }
       ],
       "technical": {
-        "screening_date": "2026-11-26",
+        "screening_date": "2026-11-27",
         "score": 34.1,
         "rsi": 56.6,
         "rsi_proxy": 56.6,
@@ -14344,26 +14408,27 @@
         "rationale": "ZBH: a 6.5% five-day rally (20d: +14.2%) reveals strong directional pressure; stock is pressing against its 52-week high at -2.2% — breakout watch; price is +13.3% vs SMA50."
       },
       "analysis": {
-        "analysis_date": "2026-11-26",
+        "analysis_date": "2026-11-27",
         "tier": "deep",
         "verdict": "BULL",
         "confidence": 6,
         "bull": [
-          "+6.5% in 5d, +14% in 20d, +18.6% vs SMA200, only -2.2% from the 52w high",
-          "Med-tech volume recovery; low ATR (3.1%)"
+          "+14% på 20d, over SMA50/SMA200 — optrend",
+          "Billig medtech med forbedret momentum"
         ],
         "bear": [
-          "BB 85% is near the upper band after a quick run; low volume (0.64x)"
+          "Stoch 96 — overkøbt",
+          "Tæt på 52w-high"
         ],
-        "summary": "Strong rotation into med-tech; a holding with momentum that should be kept.",
-        "key_risk": "Pullback after the steep run; procedure-volume slowdown"
+        "summary": "Beholdning: Zimmer Biomet er i stærk optrend. Kortsigtet overkøbt. Hold.",
+        "key_risk": "Pullback og svag procedurevolumen."
       },
-      "prices_age": "2026-11-26T02:42:56.425643+00:00"
+      "prices_age": "2026-11-27T02:43:09.483612+00:00"
     }
   ],
   "latest_decisions": {
-    "date": "2026-11-26",
-    "market_summary": "Thanksgiving — US-markedet er lukket i dag, og priserne er uændrede fra gårsdagens lukning. Den defensive rotation (sundhed, PNR, PM) er intakt, og ingen positioner nærmer sig stop. Ingen nye køb: kontanten (3.599 USD) giver kun ~1.100 USD over minimumsbufferen, og der er ingen nye BULL-kandidater uden for porteføljen; Health Care-vægt på 41% taler også imod at øge sektoren.",
+    "date": "2026-11-27",
+    "market_summary": "Black Friday-halvdag efter Thanksgiving. Priserne er fra seneste lukning, og den defensive rotation fra tech-selloffet til sundhed og kvalitet er intakt; ingen positioner nærmer sig stop. Én rotation: ZBRA (NEUTRAL 4, negativt momentum) sælges, og provenuet går til Visa (BULL 7) i Financials, så Health Care-koncentrationen på 41% fortyndes.",
     "decisions": [
       {
         "symbol": "VRTX",
@@ -14371,15 +14436,15 @@
         "action": "HOLD",
         "shares": 0,
         "price": 564.12,
-        "confidence": 74,
-        "reasoning": "Thesis intakt: ny top-nær breakout, MACD positiv, dagens verdict BULL 7. +18% i gevinst; stop fastholdes på 533 (~2 ATR) for at sikre gevinsten. BB 93% antyder pause, men ingen grund til at sælge.",
+        "confidence": 72,
+        "reasoning": "Stærk optrend tæt på 52w-high, BULL 7, +18% og et godt stykke over trailing stop 533. Thesis intakt.",
         "bull": [
-          "Near its 52w high (-1.3%), +16% vs SMA200, MACD positive, +5% in 5d",
-          "Sept: kidney pipeline breakthrough plus analysts see 20%+ upside; defensive biotech rotation"
+          "Tæt på 52w-high, over SMA50/SMA200, MACD positiv — stærk optrend",
+          "Nyre-pipeline og analytikere ser +20% upside"
         ],
         "bear": [
-          "BB 93% puts it near the upper band, so a short-term pause is likely",
-          "Pipeline/clinical binary risk"
+          "Stoch 87 og BB-position 93 — kortsigtet strakt",
+          "Pipeline-risiko"
         ],
         "investment_plan": {
           "term": "medium",
@@ -14401,14 +14466,15 @@
         "action": "HOLD",
         "shares": 0,
         "price": 1077.32,
-        "confidence": 66,
-        "reasoning": "Stabil optrend (+9% over SMA50, +22% over SMA200), verdict BULL 6. Kun -0,5% fra købspris og langt over stop 1026. Thesis intakt.",
+        "confidence": 62,
+        "reasoning": "Defensiv optrend over SMA50/SMA200, BULL 6; momentum-divergens noteres, men stop 1026 er langt væk.",
         "bull": [
-          "Stable uptrend: +9.4% vs SMA50, +22% vs SMA200, MACD +25, only -3.9% from the 52w high",
-          "Defensive drug distributor with steady earnings growth; low volatility (ATR 2.2%)"
+          "Over SMA50 og SMA200; +12% på 20d — stabil optrend",
+          "Defensiv lægemiddeldistribution med GLP-1-medvind"
         ],
         "bear": [
-          "Near the 52w high, so +10% requires a breakout to new highs; RSI 52 flat in 5d"
+          "Momentum-divergens -12,8 — afmatning",
+          "Tæt på 52w-high — begrænset kortsigtet upside"
         ],
         "investment_plan": {
           "term": "medium",
@@ -14430,14 +14496,15 @@
         "action": "HOLD",
         "shares": 0,
         "price": 110.06,
-        "confidence": 64,
-        "reasoning": "Medtech-rotation fortsætter: +14% på 20d, verdict BULL 6, tæt på 52-ugers top. Over købspris og stop 99,90. Hold.",
+        "confidence": 62,
+        "reasoning": "Optrend +14% på 20d, BULL 6. Kortsigtet overkøbt, men breakout-thesis holder.",
         "bull": [
-          "+6.5% in 5d, +14% in 20d, +18.6% vs SMA200, only -2.2% from the 52w high",
-          "Med-tech volume recovery; low ATR (3.1%)"
+          "+14% på 20d, over SMA50/SMA200 — optrend",
+          "Billig medtech med forbedret momentum"
         ],
         "bear": [
-          "BB 85% is near the upper band after a quick run; low volume (0.64x)"
+          "Stoch 96 — overkøbt",
+          "Tæt på 52w-high"
         ],
         "investment_plan": {
           "term": "medium",
@@ -14459,15 +14526,15 @@
         "action": "HOLD",
         "shares": 0,
         "price": 79.09,
-        "confidence": 52,
-        "reasoning": "Mean-reversion-case stabiliserer (+2% på 5d), men SMA50 (~81) endnu ikke generobret. Deadline ~3. december i planen fastholdes; stop 74,92 intakt. Texas-freeze tynger vækstcasen — sælges hvis SMA50 ikke generobres til tiden.",
+        "confidence": 50,
+        "reasoning": "Svag teknisk (under SMA200), NEUTRAL 5. Mean-reversion-thesis har frist ca. 3/12. Holdes med stramt stop 74,92 indtil da.",
         "bull": [
-          "Defensive utility with low volatility (ATR 1.8%); +2% in 5d",
-          "Oncor/Texas load growth is a long-term driver"
+          "Stabil (+2% på 5d), defensiv utility",
+          "Oncor-vækst fra Texas-load-pipeline"
         ],
         "bear": [
-          "-9.9% vs SMA200 and only 4% above the 52w low; MACD slightly negative",
-          "Aug: Texas data-center freeze can reduce Oncor's ~300GW load pipeline; rate sensitivity"
+          "Under SMA200 med 10% og kun 4% over 52w-low",
+          "Texas datacenter-moratorie truer load-vækst"
         ],
         "investment_plan": {
           "term": "short",
@@ -14485,17 +14552,18 @@
       {
         "symbol": "ZBRA",
         "name": "Zebra Technologies",
-        "action": "HOLD",
-        "shares": 0,
+        "action": "SELL",
+        "shares": 40,
         "price": 318.37,
-        "confidence": 45,
-        "reasoning": "Svageste position (MACD -13, -10,6% under SMA50), men langsigtet trend over SMA200 intakt og ingen fundamental guidance-sænkning. Ingen bedre alternativ kandidat i dag og kun 1.099 USD købsbudget, så trimning giver ikke mening nu. Stop 285,32 fastholdes.",
+        "confidence": 62,
+        "reasoning": "Rotation: verdict faldet til NEUTRAL 4, -17% på 20d, under SMA50 med negativ MACD og lav screener-score. Mean-reversion mod SMA50 er udeblevet i 2 uger. Positionen sælges til ca. break-even, så kapitalen kan gå til en kandidat med højere overbevisning (V) uden for de koncentrerede sektorer.",
         "bull": [
-          "Above SMA200 (+10.9%) and +60% from its 52w low; Aug: rising earnings estimates"
+          "Holder over SMA200 (~287)",
+          "Stigende indtjeningsestimater"
         ],
         "bear": [
-          "-17% in 20d, -10.6% vs SMA50, MACD -13: medium-term momentum lost",
-          "Lowest screener score in the set (12); cyclical exposure to retail/logistics capex"
+          "-17% på 20d, under SMA50, MACD negativ",
+          "Verdict nedgraderet til NEUTRAL 4; lav screener-score"
         ],
         "investment_plan": {
           "term": "medium",
@@ -14517,15 +14585,15 @@
         "action": "HOLD",
         "shares": 0,
         "price": 130.62,
-        "confidence": 56,
-        "reasoning": "Stabiliserer omkring SMA50 (+3,9% på 5d) efter rekord-omsætning og hævet guidance. Ingen brud på thesis; stop 117,19.",
+        "confidence": 55,
+        "reasoning": "Stabiliserer sig over SMA50, record-omsætning og hævet guidance. NEUTRAL 5. Hold med stop 117,19.",
         "bull": [
-          "+3.9% in 5d and right around SMA50 (+1.9%); Aug: record revenue and raised guidance",
-          "Defensive government IT, low ATR (3.5% of price)"
+          "+3,9% på 5d og over SMA50 — mulig stabilisering",
+          "Rekordomsætning og hævet guidance i Q2"
         ],
         "bear": [
-          "-3.4% vs SMA200 and -36% from the high; MACD slightly negative",
-          "Government-budget/contract risk; low volume (0.59x) in the rebound"
+          "Under SMA200 og -36% fra top",
+          "Usikkerhed om forsvarsbudgetter"
         ],
         "investment_plan": {
           "term": "medium",
@@ -14547,14 +14615,16 @@
         "action": "HOLD",
         "shares": 0,
         "price": 709.46,
-        "confidence": 72,
-        "reasoning": "Klar momentum (+26% på 20d, MACD +32), verdict BULL 7. Konsolidering mulig, men trend intakt over stop 639,71.",
+        "confidence": 64,
+        "reasoning": "Stærk optrend efter earnings, BULL 6. Breakout-thesis intakt.",
         "bull": [
-          "Strong uptrend: +20% vs SMA50, +23.5% vs SMA200, MACD +32, +26% in 20d",
-          "Only -7.9% from the 52w high; RSI 63 is strong without being overbought, and defensive health-care rotation favors it"
+          "+26% på 20d, over SMA50 og SMA200 — stærk optrend efter earnings",
+          "Kvalitets-diagnostik med recurring revenue",
+          "MACD positiv"
         ],
         "bear": [
-          "After +26% in 20d, a consolidation is likely; +10% requires a new high (~780)"
+          "Stoch 91,5 — overkøbt; momentum-divergens -24 tyder på afmatning",
+          "Høj værdiansættelse"
         ],
         "investment_plan": {
           "term": "medium",
@@ -14576,15 +14646,15 @@
         "action": "HOLD",
         "shares": 0,
         "price": 72.88,
-        "confidence": 63,
-        "reasoning": "Frisk brud over SMA200 med stærkt momentum, verdict BULL 6. Over øvre BB-bånd, så kort tilbagefald mod ~70 forventes, men stop 65,75 giver plads. Hold.",
+        "confidence": 62,
+        "reasoning": "Trendskifte over SMA200 bekræftet, BULL 6. Overkøbt kortsigtet, men +4% og stop 65,75 ligger langt under.",
         "bull": [
-          "Strong momentum: +6.6% in 5d, +13% in 20d, +21% vs SMA50, MACD positive; just reclaimed SMA200",
-          "Water infrastructure/dividend king with defensive quality"
+          "+13% på 20d og nu over SMA200 — teknisk trendskifte",
+          "MACD positiv; stærkt momentum"
         ],
         "bear": [
-          "BB position 104% means price is above the upper band and short-term overbought; a pullback toward ~70 is likely",
-          "Still -32% from the 52w high"
+          "BB-position 104 og stoch 95 — overkøbt",
+          "-32% fra top — modstand ovenfor"
         ],
         "investment_plan": {
           "term": "medium",
@@ -14606,15 +14676,15 @@
         "action": "HOLD",
         "shares": 0,
         "price": 184.32,
-        "confidence": 58,
-        "reasoning": "Købt i går som oversolgt defensiv mean-reversion (RSI 23,6) over SMA200. Thesis uændret — kræver at SMA200 holder; stop 176.",
+        "confidence": 55,
+        "reasoning": "Oversolgt (RSI 24) men holder SMA200-support (~181). Holdes så længe stop 176 holder.",
         "bull": [
-          "RSI 23.6 and BB 16% are oversold in a defensive staples name still above SMA200 (+1.6%)",
-          "Smoke-free (ZYN/IQOS) growth and dividend give a valuation floor"
+          "RSI 23,6 — oversolgt; stadig over SMA200 (181) som er support",
+          "Defensiv med vækst i røgfrie produkter (ZYN, IQOS)"
         ],
         "bear": [
-          "-9% in 20d with MACD -3.9; below SMA50 (-5.8%)",
-          "Currency/excise-tax risk; staples are underperforming"
+          "Under SMA50 og -9% på 20d — kortsigtet svaghed",
+          "Volumen 1,3x indikerer distribution"
         ],
         "investment_plan": {
           "term": "short",
@@ -14628,6 +14698,37 @@
           "expected_return_pct": 8.7,
           "timeframe": "3-8 uger",
           "exit_conditions": "Sælg ved stop-brud (176 = lukning tydeligt under SMA200); tag gevinst nær 200 / SMA50-zonen, hæv stop til break-even ved +5%."
+        }
+      },
+      {
+        "symbol": "V",
+        "name": "Visa Inc.",
+        "action": "BUY",
+        "shares": 32,
+        "price": 424.39,
+        "confidence": 70,
+        "reasoning": "Scout-kandidat, BULL 7: sund optrend over stigende SMA50/SMA200 med positiv MACD, 3,9% fra 52w-high, og drager fordel af rotationen til defensiv kvalitet. Køb af 32 aktier (~13.580 USD) finansieres af ZBRA-salget. Det er under ATR-forslaget på 85, men cash skal holdes over 2.500. Financials er en ny sektor (0% i dag), så Health Care-koncentrationen på 41% fortyndes, og sektoren har historisk været positiv (avg +9,6%).",
+        "bull": [
+          "Over stigende SMA50 og SMA200; MACD positiv, tæt på 52w-high",
+          "Defensiv kvalitet med prissætningskraft og høj margin",
+          "Diversificerer porteføljen ind i Financials"
+        ],
+        "bear": [
+          "Stoch 78, kortsigtet strakt",
+          "Regulatorisk risiko (interchange) og stablecoin-konkurrence"
+        ],
+        "investment_plan": {
+          "term": "medium",
+          "basis": [
+            "technical",
+            "fundamental"
+          ],
+          "thesis": "Trend-følge i defensiv kvalitets-betalingsnetværk: optrenden fortsætter med brud over 52w-high mod ~467, drevet af rotation fra tech til kvalitet.",
+          "price_target": 467,
+          "stop_loss": 405,
+          "expected_return_pct": 10.0,
+          "timeframe": "2-4 måneder",
+          "exit_conditions": "Sælg ved stop-brud (405, ca. 2x ATR) eller lukning under SMA50 på volumen. Sælg også ved negativ regulatorisk nyhed om interchange. Tag gevinst nær 467, eller hæv stoppet ved breakout over 52w-high."
         }
       }
     ]
@@ -14965,6 +15066,10 @@
         {
           "date": "2026-11-26",
           "portfolio_value": 96537.16
+        },
+        {
+          "date": "2026-11-27",
+          "portfolio_value": 96537.16
         }
       ]
     },
@@ -15295,21 +15400,25 @@
         },
         {
           "date": "2026-11-25",
-          "portfolio_value": 87479.82
+          "portfolio_value": 87479.83
         },
         {
           "date": "2026-11-26",
-          "portfolio_value": 87479.82
+          "portfolio_value": 87479.83
+        },
+        {
+          "date": "2026-11-27",
+          "portfolio_value": 87479.83
         }
       ]
     }
   ],
   "sector_exposure_pct": {
-    "Health Care": 42.7,
+    "Health Care": 42.3,
     "Utilities": 9.3,
-    "Information Technology": 12.5,
-    "Industrials": 22.8,
-    "Consumer Staples": 12.7
+    "Industrials": 22.6,
+    "Consumer Staples": 12.6,
+    "Financials": 13.3
   },
   "last_executed_decisions": "2026-11-27"
 }
